@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    background-color: black !important;
+    /* background-image: url(./assets/bg.png); */
+}
+
+:root {
+    --custom: #8C8C8C
+}
+
+i {
+    color: white;
+    font-size: 15px;
+}

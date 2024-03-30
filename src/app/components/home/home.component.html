@@ -1,0 +1,279 @@
+<div class="d-flex flex-column">
+    <!-- Section One -->
+    <div class="section1">
+        <div class="text-white container d-flex flex-column align-items-center justify-content-start">
+            <div class="container d-flex align-items-center justify-content-center my-3">
+                <h1 class="tagline text-center fw-bolder w-lg-50">Empowering Your
+                    <span class="linear-text">Digital Frontier</span>
+                </h1>
+            </div>
+            <div class="container d-flex align-items-center justify-content-center my-3">
+                <h1 class="text-center fs-5 fw-light w-lg-50">The full set of services around development and
+                    maintenance
+                    of complex business-critical applications.</h1>
+            </div>
+            <div class="container d-flex align-items-center justify-content-center my-3">
+                <button class="btn btn-primary fs-5 rounded">Learn More</button>
+            </div>
+        </div>
+    </div>
+    <!-- Section One Ends -->
+
+    <!-- Section Two -->
+    <div class="section2 container-fluid w-100 h-100">
+        <div class="categories">
+            <div class="container-fluid text-center text-white cursor-pointer">
+                <div class="row gap-lg-0 gap-3">
+                    <div *ngFor="let data of services"
+                        class=" position-relative col cards d-flex flex-column align-items-center justify-content-evenly">
+                        <i class="fa-solid fa-arrow-right  position-absolute text-secondary"
+                            style="transform: rotate(325deg); top:10px; right:10px"></i>
+                        <img [src]="data.img" alt="">
+                        <p>{{data.label}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Section Two Ends -->
+
+    <!-- Section Three -->
+    <div class="container-fluid d-flex flex-column mt-3">
+        <div class="section3 container-fluid w-100 h-100 d-flex flex-column flex-lg-row mt-3">
+            <div class="left-side">
+            </div>
+            <div class="right-side d-flex justify-content-start align-items-center">
+                <div class="container d-flex flex-column align-items-start justify-content-between text-white">
+                    <div class="text">
+                        <h1 class="section3-tagline">Building bridges between <span style="color: #92A7B0;">companies &
+                                customers</span>
+                        </h1>
+                    </div>
+                    <div>
+                        <p class="section3-desc">with evaluating in depth variety of data sets and including the speed
+                            of
+                            tech
+                            adaptation we can build birdges between any companies and their customers.</p>
+                    </div>
+                    <div class="container d-flex align-items-center justify-content-start my-3">
+                        <button class="btn fs-5 rounded d-flex align-items-center justify-content-between">View All
+                            <i class="fa-solid fa-arrow-right ms-3"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center align-items-center">
+            <div class="slider">
+                <div class="slide-track">
+                    <div class="slide" *ngFor="let img of brandLogo">
+                        <img style="filter:grayscale(100%)" height="100" width="100" [src]="img.img"
+                            class="d-block w-auto" alt="...">
+                    </div>
+                    <div class="slide" *ngFor="let img of brandLogo">
+                        <img style="filter:grayscale(100%)" height="100" width="100" [src]="img.img"
+                            class="d-block w-auto" alt="...">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Section Three Ends -->
+
+    <div class="section4 d-flex flex-column">
+        <div class="container services-section w-100 h-100 d-flex flex-column">
+            <div class="container heading w-75 h-100 d-flex flex-column align-items-center justify-content-center">
+                <div class="button">
+                    <button class="our-service-btn">
+                        Our Services
+                    </button>
+                </div>
+                <div class="sec4-headline text-white">
+                    <h1 class="service-tagline text-align-center">
+                        We Offer a Wide Variety
+                        of IT Services
+                    </h1>
+                </div>
+            </div>
+            <div class="container services w-100 h-100">
+                <div class="row">
+                    <div *ngFor="let service of ourServices"
+                        class="text-white col-md-4 d-flex flex-column align-items-center justify-content-center px-5 my-4">
+                        <div class="image my-3">
+                            <img [src]="service.img" alt="Mobile">
+                        </div>
+                        <div class="title my-3 ">
+                            <h4>
+                                {{service.title}}
+                            </h4>
+                        </div>
+                        <div class="description">
+                            <p class="fw-light text-align-center">
+                                {{service.desc}}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="container numbers w-100">
+            <div class="numbers-section container w-100">
+                <div class="row text-align-center justify-content-center align-content-center">
+                    <div *ngFor="let nums of sectionFourNums" class="col-3 text-white">
+                        <div class="miletone-number fw-bolder">{{nums.num}}</div>
+                        <div class="miletone-title fw-bolder text-uppercase">{{nums.heading}}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid section5">
+        <div class="container d-flex flex-column justify-content-between my-5 px-lg-5">
+            <div class="heading d-flex justify-content-between align-items-center">
+                <div class="text d-flex flex-column text-white">
+                    <div class="button">
+                        <button class="our-service-btn">
+                            Our Services
+                        </button>
+                    </div>
+                    <div class="txt">
+                        <h1>Our Successful Projects</h1>
+                    </div>
+                </div>
+                <div class="learnMore">
+                    <button class="btn fs-5 rounded d-flex align-items-center justify-content-between">View All
+                    </button>
+                </div>
+            </div>
+            <div class="projects-section d-flex flex-column flex-lg-row container">
+                <div class="container project-sec-one project-one flex-lg-grow-1 position-relative">
+                    <div
+                        class="project-one-details details d-flex justify-content-between align-items-center position-absolute px-3 text-white">
+                        <div class="w-auto">
+                            <div class=" w-auto">
+                                <h3 class="project-title">Website Design</h3>
+                            </div>
+                            <div style="color: #D1D4DC;" class="decs w-75">
+                                Lörem ipsum astrobel sar direlig. Kronde est konfoni med kelig. Terabel pov astrobel sar
+                            </div>
+                        </div>
+                        <div class="button">
+                            <button class="btn lm-btn  fw-lighter">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="h-100 container d-flex flex-column align-items-center justify-content-center">
+                    <div class="project-two project-sec-two position-relative">
+                        <div
+                            class="project-two-details details d-flex justify-content-between align-items-center position-absolute px-3 text-white">
+                            <div class="w-auto">
+                                <div>
+                                    <h3 class="project-title w-auto">Website</h3>
+                                </div>
+                                <div style="color: #D1D4DC;" class="decs w-75">
+                                    Lörem ipsum astrobel sar direlig. Kronde est konfoni med kelig. Terabel pov astrobel
+                                    sar
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-three project-sec-two position-relative">
+                        <div
+                            class="project-three-details details d-flex justify-content-between align-items-center position-absolute px-3 text-white">
+                            <div class="w-auto">
+                                <div>
+                                    <h3 class="project-title w-auto">Website</h3>
+                                </div>
+                                <div style="color: #D1D4DC;" class="decs w-75">
+                                    Lörem ipsum astrobel sar direlig. Kronde est konfoni med kelig. Terabel pov astrobel
+                                    sar
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 6 -->
+    <div class="section6 container">
+        <div class="container d-flex flex-column justify-content-between my-1 px-5 my-lg-5">
+            <div class="heading d-flex justify-content-between align-items-center">
+                <div class="sec6-text d-flex flex-column text-white">
+                    <div class="our-cust-button">
+                        <button class="our-service-btn">
+                            Our Customers
+                        </button>
+                    </div>
+                    <div>
+                        <h1 class="trusted-over-worldwild">Trusted Over Worldwild</h1>
+                    </div>
+                </div>
+                <div class="learnMore">
+                    <button class="btn rounded d-flex align-items-center justify-content-between">View All
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="our-customers d-flex container">
+
+        </div>
+    </div>
+
+    <!-- Section7 -->
+    <div class="container section7 w-100">
+        <div class="container h-100">
+            <div class="d-flex flex-column flex-lg-row h-100 w-100">
+                <div class="customer-feedback h-100 w-100 p-5">
+                    <div class="container text-white d-flex flex-column justify-content-around align-items-start">
+                        <div class="stars">
+                            <i class="fa-solid fa-star mx-1"></i>
+                            <i class="fa-solid fa-star mx-1"></i>
+                            <i class="fa-solid fa-star mx-1"></i>
+                            <i class="fa-solid fa-star mx-1"></i>
+                            <i class="fa-solid fa-star mx-1"></i>
+                        </div>
+                        <div class="feedback fw-lighter">First of all, I want to recommend Quantum it innovation,
+                            because they
+                            stay
+                            connected with you even after the project is delivered to ensure the maximum ROI. </div>
+                        <div class="customer d-flex justify-content-between w-100 align-items-end">
+                            <div class="customer-name">Peter</div>
+                            <div class="profile">
+                                <img height="50" width="50" style="border-radius: 50px;"
+                                    src="https://s3-alpha-sig.figma.com/img/8005/918c/a0609dabb684674fb55b4c2200b563ff?Expires=1712534400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=FAkFaQK-XqS0WwftfMasXQM9mgcKKq1H3WComc5EfDr90Ir0-Og8fhTa67SBEw~3fy9lB50r2A69cDrsHVXt-jy69iJNSBLbjcsENgFHEPj7MQYyqe86sLBaI-kDgAIOr5uDYipxltd2B0C44ZHUtG9iyq9ur0C2iT8G~hN3b392lIHIsU8QpM5dEwZbslyKrD9WSHD2xFN0-m7ufNM1O3ZWb99ctOkhEbMQZtmePSOOQn3cak0h~NtGR2jFivKFXUHzjWt~oHQU20pl1DHi9VqXVZyNemt9E5qm3XeNidDtjQtWSMyQBaMVG0doUk4-1KDZnK~Ny2LdSpqa-Pi6Lg__"
+                                    alt="profile">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="customer-feedback h-100 w-100 p-5">
+                    <div class="container text-white d-flex flex-column justify-content-around align-items-start">
+                        <div class="stars">
+                            <i class="fa-solid fa-star mx-1"></i>
+                            <i class="fa-solid fa-star mx-1"></i>
+                            <i class="fa-solid fa-star mx-1"></i>
+                            <i class="fa-solid fa-star mx-1"></i>
+                            <i class="fa-solid fa-star mx-1"></i>
+                        </div>
+                        <div class="feedback fw-lighter">First of all, I want to recommend Quantum it innovation,
+                            because they
+                            stay
+                            connected with you even after the project is delivered to ensure the maximum ROI. </div>
+                        <div class="customer d-flex justify-content-between w-100 align-items-end">
+                            <div class="customer-name">Peter</div>
+                            <div class="profile">
+                                <img height="50" width="50" style="border-radius: 50px;"
+                                    src="https://s3-alpha-sig.figma.com/img/8005/918c/a0609dabb684674fb55b4c2200b563ff?Expires=1712534400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=FAkFaQK-XqS0WwftfMasXQM9mgcKKq1H3WComc5EfDr90Ir0-Og8fhTa67SBEw~3fy9lB50r2A69cDrsHVXt-jy69iJNSBLbjcsENgFHEPj7MQYyqe86sLBaI-kDgAIOr5uDYipxltd2B0C44ZHUtG9iyq9ur0C2iT8G~hN3b392lIHIsU8QpM5dEwZbslyKrD9WSHD2xFN0-m7ufNM1O3ZWb99ctOkhEbMQZtmePSOOQn3cak0h~NtGR2jFivKFXUHzjWt~oHQU20pl1DHi9VqXVZyNemt9E5qm3XeNidDtjQtWSMyQBaMVG0doUk4-1KDZnK~Ny2LdSpqa-Pi6Lg__"
+                                    alt="profile">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

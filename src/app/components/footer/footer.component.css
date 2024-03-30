@@ -1,0 +1,91 @@
+footer {
+    /* position: fixed; */
+    bottom: 0;
+    height: auto;
+    background-color: #111111;
+    font-family: 'Plus Jakarta Sans';
+}
+
+* {
+    margin: 5px;
+}
+
+button {
+    height: 48px;
+    width: 48px;
+    background-color: #343538;
+}
+
+.social-icon {
+    height: 100px;
+    width: 170px;
+    border-radius: 6px;
+    position: relative;
+}
+
+.si-one::before {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    content: "";
+    background-image: url("../../../assets/socials/dribbble.png");
+    background-repeat: no-repeat;
+    background-position: top right;
+    border-radius: 0px 6px 0 0;
+    opacity: 20%;
+}
+
+.si-two::before {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    content: "";
+    background-image: url("../../../assets/socials/facebook.png");
+    background-repeat: no-repeat;
+    background-position: top right;
+    border-radius: 0px 6px 0 0;
+    opacity: 20%;
+}
+
+.si-three::before {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    content: "";
+    background-image: url("../../../assets/socials/youtube.png");
+    background-repeat: no-repeat;
+    background-position: top right;
+    border-radius: 0px 6px 0 0;
+    opacity: 20%;
+}
+
+.follow>span {
+    font-size: 13px;
+}
+
+.contact-value {
+    font-size: 1.25rem;
+}
+
+@media (max-width: 575.98px) {
+    footer {
+        height: 100%;
+    }
+
+    .contact-value {
+        font-size: 15px;
+    }
+
+    .social-platform {
+        font-size: 12px;
+    }
+
+    .follow>span {
+        font-size: 8px;
+    }
+
+    .social-icon {
+        height: 80px;
+        width: 100px;
+    }
+}

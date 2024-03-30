@@ -1,0 +1,66 @@
+<footer class="w-100 d-flex justify-content-center">
+    <div class="container d-flex p-1 p-lg-5 flex-md-row flex-column">
+        <div class="container-fluid d-flex flex-column justify-content-evenly">
+            <div class="quantum">
+                <div class="logo">
+                    <img height="49" width="114"
+                        src="https://s3-alpha-sig.figma.com/img/1e5c/b678/754d778e5d0decbbe1953d4cf0033c73?Expires=1711324800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=eJ1uuo3oBeRx5szCfA3CjRNoH9eA6UqlkHbpyreYNC4zEoirYQRuY07fY-SpkIGYUcJSw1Opmpg-ZasSaTXxcK~TlfQuhFNZ4VUtzgykkeCvqeQURhmv8SexxURLjaJEZ-vp6GLcenQqeuopiXbYFFni0PcsdqWs~nTWx5KHiEE8MicPF8q~zxsNSAZGjSlbX31~4KqS3Ho4wkx8NATDl-z54My0tVkpBPAL-QXaRVhb8oKkIuD0m8ZCzTba~ieTbTj99kHKE1Gqdf~XsInjUPRBf2xW0i~yen2nNv9beUCXldI7wvIqK5CPbe9UlQju2YCd~ZgO0WRSEEmSJwRWxA__"
+                        alt="">
+                </div>
+                <div class="tagline">
+                    <p class="text-secondary">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet iste
+                        repudiandae aspernatur,
+                        deserunt aliquid voluptatibus voluptas consequatur eum aliquam perspiciatis incidunt non
+                        doloremque at magni impedit neque, nostrum nobis ipsum.</p>
+                </div>
+            </div>
+            <div class="contact-info-div">
+                <div class="contanct-info-+content d-flex align-items-center" *ngFor="let contact of contacts">
+                    <button class="btn rounded-circle text-align-center"><i
+                            class="m-0 fs-6 fa-solid w-100 text-align-center" [class]="contact.icon"></i></button>
+                    <div>
+                        <label for="btn" class="text-secondary">
+                            {{contact.label}}
+                            <p class="m-0 text-white fw-semibold contact-value">{{contact.value}}</p>
+                        </label>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="d-flex flex-column">
+                <div class="container pages-container d-flex justify-content-evenly">
+                    <div class="d-flex flex-column justify-content-between" *ngFor="let page of pageLabels">
+                        <div class="heading">
+                            <h5 class="text-white fw-bold">{{page.heading}}</h5>
+                        </div>
+                        <div class="pages">
+                            <p class="text-secondary mb-4" *ngFor="let page of page.pages">{{page.label}}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container social-links-container d-flex">
+                    <div style="background-color: #F85895;" class="social-icon text-white si-one">
+                        <div class="follow container align-content-end py-2 w-100 h-100">
+                            <span class="fw-lighter follow-us">Follow Us On</span>
+                            <h5 class="social-platform">Dribble</h5>
+                        </div>
+                    </div>
+                    <div style="background-color: #1B76F2;" class="social-icon text-white si-two">
+                        <div class="follow container align-content-end py-2 w-100 h-100">
+                            <span class="fw-lighter follow-us">Follow Us On</span>
+                            <h5 class="social-platform">Facebook</h5>
+                        </div>
+                    </div>
+                    <div style="background-color: #F04444;" class="social-icon text-white si-three">
+                        <div class="follow container align-content-end py-2 w-100 h-100">
+                            <span class="fw-lighter follow-us">Follow Us On</span>
+                            <h5 class="social-platform">Youtube</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
