@@ -6,13 +6,17 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomeComponent } from './components/home/home.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { WebdevComponent } from './components/webdev/webdev.component';
+import { AiRobotComponent } from './components/ai-robot/ai-robot.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     HomeComponent,
-    FooterComponent
+    FooterComponent,
+    WebdevComponent,
+    AiRobotComponent
   ],
   imports: [
     BrowserModule,
