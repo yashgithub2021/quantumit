@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 body {
     background-color: black !important;
+    font-family: 'Plus Jakarta Sans';
     /* background-image: url(./assets/bg.png); */
 }
 

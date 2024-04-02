@@ -10,6 +10,7 @@
     content: "";
     height: 100%;
     width: 100%;
+    border-radius: 0 0 20px 20px;
 }
 
 .our-process-btn {
@@ -35,4 +36,125 @@
     background: linear-gradient(91.58deg, #43BAFF 0.52%, #7044B3 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.btn-lm {
+    color: white;
+    padding: 10px 20px;
+    background-color: #43BAFF;
+    border: none;
+    border-radius: 5px;
+}
+
+.ai-data {
+    background: #111111;
+    box-sizing: border-box;
+    height: 300px;
+    border: 1px solid #FFFFFF0F;
+    box-shadow: 0px 17px 25px 0px #07496F05;
+}
+
+.slider {
+    height: 100px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: auto;
+}
+
+.slider .slide-track {
+    animation: scroll 40s linear infinite;
+    display: flex;
+    width: calc(250px * 14);
+}
+
+.slider .slide {
+    height: 100px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.slide h5 {
+    background: #111111;
+    box-shadow: 0px 13px 12px 0px #B5B8C808;
+    padding: 10px 30px;
+    border-radius: 5px;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translate(calc(-250px*7));
+    }
+}
+
+.frame-4 {
+    height: 110vh;
+}
+
+.frame-4-image::before {
+    display: block;
+    height: 100%;
+    width: 100%;
+    content: "";
+    background-image: url("https://s3-alpha-sig.figma.com/img/5d3f/c756/2b3454b57dbfd13b639f4b550f37a55c?Expires=1713139200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=VnOqvhIFFWBmTy4aqCEqo79jhTD0Rwq4S5Jr2KFHruKGe9rY15QRwJr3YuIOoNNh9A2bi9z5m1GWWfeLenxmfgHvHOifzDrsA5wAXxtqqrZcFMDASZpShANVq1zd6jgVZOOs4HHEZ7r9IM93HiIglQogPDwrVZg45l-rJQsqVc24FFPItPhbIE7Zm1YvjhcxfTa-g2K~XnMH3jAL1i3IXO20y~DriigZdZaiNEVLWWZvevxcxYOVYmL75bAHDuSgrnNAqJmaMQUYMfRXikRyKV7GHxeoq3IBxTTUYH5sb4hpexuJ9tvjtbfsSBYTz3OpatfC5TtTunFQkPXPGRKkvA__");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 65%
+}
+
+.ai-showcase {
+    background: linear-gradient(0deg, rgba(4, 1, 21, 0.1), rgba(4, 1, 21, 0.1)),
+        radial-gradient(50% 50% at 50% 50%, rgba(168, 127, 255, 0.04) 0%, rgba(168, 127, 255, 0) 100%);
+    border: 1px solid #FFFFFF1A;
+    padding: 10px;
+    border-radius: 25px;
+    top: 30%;
+}
+
+.ai-showcase-inner {
+    background:
+        linear-gradient(0deg, rgba(4, 1, 21, 0.1), rgba(4, 1, 21, 0.1)),
+        radial-gradient(50% 50% at 50% 50%, rgba(168, 127, 255, 0.04) 0%, rgba(168, 127, 255, 0) 100%);
+    border: 1px solid #FFFFFF1A;
+    border-radius: 25px;
+    backdrop-filter: blur(10px);
+    /* Adds the frosted glass effect */
+}
+
+
+
+.showcase-txt {
+    font-size: 15px;
+}
+
+.magic-btn {
+    background: linear-gradient(90deg, #FC72FF 0%, #8F68FF 25%, #487BFF 50%, #2CD9FF 75%, #2CFFCC 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border: none;
+}
+
+.fa-check {
+    background: linear-gradient(237.17deg, #0FD2ED 16.7%, #008DF3 98.61%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.list-check {
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+.milestone-col {
+    border: 1px solid #FFFFFF0F;
+    background: #FFFFFF0A;
+    padding: 20px 0px;
+    border-radius: 5px;
 }

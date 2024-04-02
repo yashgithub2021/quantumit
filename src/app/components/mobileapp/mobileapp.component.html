@@ -1,0 +1,256 @@
+<div class="frames h-auto w-100">
+    <div class="container-fluid p-0 mobile-app w-100 frame-1">
+        <div class="header h-100 container-fluid p-0 d-flex">
+            <div class="headline h-100 w-100">
+                <div class="container h-100 d-flex flex-column justify-content-center align-items-center">
+                    <div
+                        class="heading pl-lg-5 w-100 h-100 d-flex flex-column align-items-center justify-content-center text-white">
+                        <h1 class="tagline text-left fw-bolder w-lg-50">Leading
+                            <span class="linear-text">Mobile App Development </span>Company
+                        </h1>
+                        <p class="fs-5 text-align-left">
+                            The full set of services around development and maintenance
+                            of complex business-critical applications.
+                        </p>
+                        <div class="buttons d-flex justify-content-start w-100">
+                            <button class="btn-lm btn-primary mx-3 px-4 py-3">Get Started</button>
+                            <button class="btn btn-outline-primary mx-3 px-4 py-3 text-uppercase text-white">learn
+                                More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="image h-100 w-100">
+                <img class="w-100" src="../../../assets/mobile/heading.svg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="frame-2 w-100 my-lg-5">
+        <div class="container d-flex align-items-center justify-content-center">
+            <div class="image h-100 w-100">
+                <img src="https://s3-alpha-sig.figma.com/img/7909/1ec5/26717e1277e59d2e0319b35f8d98207d?Expires=1713139200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=S7CgAqfEgUl1U7LZlxDrVC0IDRVTG7HfJu6Gv8lSu~sbF6b8FhjW8aGRiJhGpPw80neoe54QzP5RM3dJXt0DEvV2QvWLedbB0-c3TRSKB5ZeFCyt58D1NgUl~OBwDvcjpHZtRzQdkrti~EUHBnY0k2yYyaCd~KYeyPEqSVr-UxMLHOSUzM39JjOxR2i8Gc3Vi8p7kwFExBhG3-3bhcGawoaQptitgiQabGaIPWl6F7NGZMLWAMyfzjYj-oKS~i-mNpmi-S5M5eze-bzovTQLxHe9SL5PVgZMyPYBdMjvc1SniAk6MqFd0BXx09ytZABV7gZ6b5TqUYZ3StYudwqjzw__"
+                    alt="">
+            </div>
+            <div class="desc h-100 w-100 d-flex align-items-center justify-content-center">
+                <div class="heading text-white w-75">
+                    <div class="button my-lg-2">
+                        <button class="our-process-btn">Our Services</button>
+                    </div>
+
+                    <div class="our-process mb-lg-4">
+                        <h1>Let Our Dedicated Team Take the Responsibility</h1>
+                    </div>
+
+                    <div class="w-75 my-lg-3">
+                        <h3 class="fw-light">What We Do</h3>
+                    </div>
+
+                    <div class="list mb-lg-5">
+                        <ul class=" list-unstyled text-white">
+                            <li class=" d-flex align-items-center list-unstyled my-3" *ngFor="let data of list1">
+                                <i class="fa-regular fa-circle mx-lg-2"></i>
+                                <p class="fw-light m-0 list-check">{{data}}</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="w-75 my-lg-3">
+                        <h3 class="fw-light">What You Can Do</h3>
+                    </div>
+                    <div class="list">
+                        <ul class=" list-unstyled text-white">
+                            <li class=" d-flex align-items-center list-unstyled my-3" *ngFor="let data of list2">
+                                <i class="fa-regular fa-circle mx-lg-2"></i>
+                                <p class="fw-light m-0 list-check">{{data}}</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <button class="btn-lm mt-lg-5 fs-5 rounded d-flex align-items-center justify-content-between">View
+                        All
+                        <i class="fa-solid fa-arrow-right ms-3"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="frame-3 container-fluid p-lg-0 w-100 ">
+
+    </div>
+
+    <div class="container d-flex frame-2">
+        <div class="container d-flex flex-column justify-content-between my-5 px-lg-5">
+            <div class="heading d-flex justify-content-between align-items-center">
+                <div class="text w-50 d-flex flex-column text-white">
+                    <div class="button">
+                        <button class="our-process-btn">
+                            What We Do
+                        </button>
+                    </div>
+                    <div class="txt w-75">
+                        <h1>Development of all Artificial Intelligence</h1>
+                    </div>
+                </div>
+                <div class="learnMore">
+                    <button class="btn-lm fs-5 rounded d-flex align-items-center justify-content-between">View All
+                    </button>
+                </div>
+            </div>
+
+            <div class="what-we-do w-100 h-100 mt-lg-5">
+                <div class="row w-100 h-100 text-white g-4 align-items-center">
+                    <div *ngFor="let data of aiService" class="col-lg-4 col-12">
+                        <div
+                            class="col-details px-5 ai-data py-lg-2 d-flex align-items-start justify-content-evenly flex-column">
+                            <div class="serial-no">
+                                <h3 class="fw-light" style="color: #43BAFF;">{{data.num}}</h3>
+                            </div>
+                            <div class="title w-75">
+                                <h4 class="">{{data.title}}</h4>
+                            </div>
+                            <div class="desc w-100">
+                                <p style="color: #8990AC; line-height:30px">{{data.desc}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container numbers w-100">
+        <div class="numbers-section container w-100">
+            <div class="d-flex text-align-left justify-content-center align-items-center h-100 w-100">
+                <div class="text-white w-75">
+                    <div class="miletone-number fw-bold fs-1">Got A Project Or Idea?</div>
+                    <div class="miletone-title fw-lighter fs-4">Leave your details and we’ll be in touch
+                        within 24 hours.</div>
+                </div>
+                <div class="buttons d-flex justify-content-start w-25">
+                    <button class="btn-lm btn-primary mx-3 px-4 py-3">Get In Touch</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="frame-4 d-flex align-items-center justify-content-center mt-5">
+        <div class="container d-flex flex-column align-items-center justify-content-center">
+            <div class="head w-100 h-100 d-flex flex-column align-items-center justify-content-center">
+                <div class="button my-2">
+                    <button class="our-process-btn">Our Projects</button>
+                </div>
+
+                <div class="our-process my-2 text-white">
+                    <h1>Our Successful Projects</h1>
+                </div>
+
+                <div class="desc w-50 my-2 text-align-center">
+                    <p style="color:#999999">We help businesses from healthcare, transportation, real estate,
+                        communication,
+                        and other
+                        industries seize new opportunities, overcome business challenges.</p>
+                </div>
+            </div>
+
+            <div class="projects container">
+                <div class="container h-100 w-100">
+                    <div
+                        class="project-one project w-100 position-relative d-flex justify-content-center align-items-center">
+                        <div class="project-container h-75 w-100 position-absolute d-flex p-lg-5">
+                            <div class="app-details h-100 w-100 d-flex align-items-center justify-content-center">
+                                <div
+                                    class="app-details-container w-75 h-100 m-auto d-flex flex-column justify-content-lg-evenly text-white">
+                                    <div>
+                                        <button class="app-button app-button-one">App</button>
+                                    </div>
+                                    <div class="name">
+                                        <h2>UR Driver</h2>
+                                    </div>
+                                    <div class="details fw-lighter fs-5">
+                                        Our software development center provides
+                                        you with the best resources, expertise.
+                                    </div>
+                                    <div class="view-more fw-light d-flex align-items-center">
+                                        <p class="p-0 me-4 mb-0">View More Details</p>
+                                        <i class="fa fa-solid fa-arrow-right"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="app-image h-100 w-100">
+                                <div class="container project-img-container h-100 w-100 overflow-hidden p-0">
+                                    <img class="project-image border-white border-3 rounded-1 w-100"
+                                        src="https://s3-alpha-sig.figma.com/img/2637/4f83/5ed9b8991d05163a6724bb0763ade8de?Expires=1713139200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=HwXhQ81miJUCTwye99uQjbIwTsd8HhMolnw2tL14KtX8cPvMcDPEM46dOQBQUkgB4mxEGfGQ6yq~PWbfYWbREOxiKZq48OYvmGJL~UhjTXugHhuO4wyW72kI0fsqyh8qKhv1qHx9pTuzx2PeG7--u~feD8fE0DB99xejDT-5UoHgwDTPBvdobPLZtZ487FI4fmnanx0wSBMNwFKnUruLzNBEos54QD-H5MFhoDC8Go8jXFhywmk9UJL3J3yJBCKo4qPnwTMjjImtDJsrchT2tWHCSF-dDN0nHodmlmMy5G4fzleJxI570Ujq1VCxpRab3JKHojYRnoFV-sESHnGdzA__"
+                                        alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="project-two project w-100 position-relative d-flex justify-content-center align-items-center">
+                        <div class="project-container h-75 w-100 position-absolute d-flex p-lg-5 flex-row-reverse">
+                            <div class="app-details h-100 w-100 d-flex align-items-center justify-content-center">
+                                <div
+                                    class="app-details-container w-75 h-100 m-auto d-flex flex-column justify-content-lg-evenly text-white">
+                                    <div>
+                                        <button class="app-button app-button-two">App</button>
+                                    </div>
+                                    <div class="name">
+                                        <h2>AMPS</h2>
+                                    </div>
+                                    <div class="details fw-lighter fs-5">
+                                        Our software development center provides
+                                        you with the best resources, expertise.
+                                    </div>
+                                    <div class="view-more fw-light d-flex align-items-center">
+                                        <p class="p-0 me-4 mb-0">View More Details</p>
+                                        <i class="fa fa-solid fa-arrow-right"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="app-image h-100 w-100">
+                                <div class="container project-img-container h-100 w-100 overflow-hidden p-0">
+                                    <img class="project-image border-white border-3 rounded-1 w-100"
+                                        src="https://s3-alpha-sig.figma.com/img/fac6/f211/d88d61c92556ea37451190007f41fe92?Expires=1713139200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=iWSOX7XKvxRolHf02DG9FapWKIqyBzHEDepWnRqaqZbbnxnRfIX8rHhxi~iXIFkHc~f4yKlupH~UUtoIY1vdaOZhomk1pk6RzGW78nTVgft0bu9dVpfr-0NgXshN9gJvl6Z-2lZWB6-VIXf4Zvtkin1nMMSO5N-XsjtslPWxfc~dGZhSdWWSvsWAUPGmkR1F9hyUpiegSII0A9szM8b4MwjFOxnximfGnQVn-T~4puZpfncMvtXvbHWEsnue5fufk1ANWJEzy9h~BUM-BEhPov8fYg1esGeoUVMDy2W5~9~ioyHFrjh3-MsGbpYYYNhonrg5P9U4PdfZIHzoQCn4SQ__"
+                                        alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="project-three project w-100 position-relative d-flex justify-content-center align-items-center">
+                        <div class="project-container h-75 w-100 position-absolute d-flex p-lg-5">
+                            <div class="app-details h-100 w-100 d-flex align-items-center justify-content-center">
+                                <div
+                                    class="app-details-container w-75 h-100 m-auto d-flex flex-column justify-content-lg-evenly text-white">
+                                    <div>
+                                        <button class="app-button app-button-three">App</button>
+                                    </div>
+                                    <div class="name">
+                                        <h2>iM Booked</h2>
+                                    </div>
+                                    <div class="details fw-lighter fs-5">
+                                        Our software development center provides
+                                        you with the best resources, expertise.
+                                    </div>
+                                    <div class="view-more fw-light d-flex align-items-center">
+                                        <p class="p-0 me-4 mb-0">View More Details</p>
+                                        <i class="fa fa-solid fa-arrow-right"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="app-image h-100 w-100">
+                                <div class="container project-img-container h-100 w-100 overflow-hidden p-0">
+                                    <img class="project-image border-white border-3 rounded-1 w-100"
+                                        src="https://s3-alpha-sig.figma.com/img/e1e6/69d6/9c7c40fd7f0b953f4b6775f242745349?Expires=1713139200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=e5CqiQ2q0~Yqfnpjvobimeg3M9DvjPSCBkO9X0xbvdeszmvAgs~iJ0ubfb-Nc-FpkI4t6fKIblUj7ORDjvDbTqyC44Zvjx6QRPxbK7qmPPJiLkjGENdxpsnOYmW7Oz0t4PuuTanGoiGX6SH0WK1whGdllPvesCnWa4PwX9fvodq8GHcJG7WbZ~QG88YMJLx6U0rZNj-5nr95k00eu8DikKK3wQBc8qT9Mkz2g-hWgCUtMr5eZYWlGSKp-R8renQGQ9oq--732NQ6DkQf5THt-2t812Nhvh3-U~Xbc8L71bQm8nxtnLJe7Z95-x39CCzxkKiIIoK9HmUgxhQ7xx1Pxw__"
+                                        alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
