@@ -1,4 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+/* @import "../node_modules/bootstrap/scss/_mixins.scss"; */
+
 body {
     background-color: black !important;
     font-family: 'Plus Jakarta Sans';
@@ -6,7 +8,8 @@ body {
 }
 
 :root {
-    --custom: #8C8C8C
+    --custom: #8C8C8C;
+    --bs-table-bg: #000000 !important;
 }
 
 i {

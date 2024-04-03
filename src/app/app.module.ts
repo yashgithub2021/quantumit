@@ -9,6 +9,8 @@ import { FooterComponent } from './components/footer/footer.component';
 import { WebdevComponent } from './components/webdev/webdev.component';
 import { AiRobotComponent } from './components/ai-robot/ai-robot.component';
 import { MobileappComponent } from './components/mobileapp/mobileapp.component';
+import { DigitalMarketingComponent } from './components/digital-marketing/digital-marketing.component';
+import { FormComponent } from './components/form/form.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { MobileappComponent } from './components/mobileapp/mobileapp.component';
     FooterComponent,
     WebdevComponent,
     AiRobotComponent,
-    MobileappComponent
+    MobileappComponent,
+    DigitalMarketingComponent,
+    FormComponent
   ],
   imports: [
     BrowserModule,

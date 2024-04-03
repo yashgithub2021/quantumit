@@ -1,0 +1,237 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans';
+}
+
+.digital-marketing {
+    height: 100vh;
+}
+
+.digital-marketing::before {
+    background-image: url("../../../assets/backgroungimages/dm.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    content: "";
+    height: 100%;
+    width: 100%;
+    display: block;
+    position: absolute;
+    z-index: -1;
+}
+
+.our-process-btn {
+    padding: 7px 15px 7px 15px;
+    gap: 0px;
+    border-radius: 32px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    border: 1px solid #0099FF;
+    box-shadow: 0px -7px 11px 0px #A48FFF1F inset;
+    background: linear-gradient(91.58deg, #43BAFF 0.52%, #7044B3 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    backdrop-filter: blur(2px);
+}
+
+.tagline {
+    font-size: 68px;
+    line-height: 78px;
+}
+
+.linear-text {
+    background: linear-gradient(91.58deg, #43BAFF 0.52%, #7044B3 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.view-more {
+    color: #43BAFF;
+}
+
+.view-more .fa-arrow-right {
+    color: #43BAFF;
+}
+
+.steps-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.circles {
+    width: 80%;
+}
+
+.step-circle {
+    width: 40px;
+    height: 40px;
+    background: #000000;
+    border: 1px solid #7EA6BE;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.step-square {
+    width: 70px;
+    height: 60px;
+    background: #111111;
+    position: relative;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* Position for vertical line */
+}
+
+.step-square::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    /* Position the vertical line below the square */
+    left: 50%;
+    /* Position the vertical line in the middle of the square */
+    transform: translateX(-50%);
+    /* Center the vertical line horizontally */
+    height: 100%;
+    width: 1px;
+    /* Width of the vertical line */
+    background-color: #fff;
+    /* Color of the vertical line */
+}
+
+.step-text {
+    color: #fff;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.step-dashed-line {
+    flex-grow: 1;
+    height: 1px;
+    background-image: linear-gradient(to right, #fff 50%, transparent 50%);
+    background-size: 10px 1px;
+    background-repeat: repeat-x;
+    /* margin-top: 20px; */
+}
+
+.step-line {
+    flex-grow: 1;
+    height: 1px;
+    background-color: #fff;
+    background-size: 10px 1px;
+    background-repeat: repeat-x;
+    /* margin-top: 20px; */
+}
+
+.slider {
+    height: 100px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: auto;
+    background-color: #111111;
+}
+
+.slider .slide-track {
+    animation: scroll 40s linear infinite;
+    display: flex;
+    width: calc(250px * 14);
+}
+
+.slider .slide {
+    height: 100px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+}
+
+
+@keyframes scroll {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translate(calc(-250px*7));
+    }
+}
+
+.btn-lm {
+    color: white;
+    padding: 10px 20px;
+    background-color: #43BAFF;
+    border: none;
+    border-radius: 5px;
+}
+
+.table-bordered {
+    border: 1px solid #FFFFFF14 !important;
+}
+
+.table-dark {
+    border: 1px solid #FFFFFF14 !important;
+    background-color: #000000 !important;
+}
+
+.table-dark>tbody>tr:nth-child(odd)>td,
+.table-dark>tbody>tr:nth-child(odd)>th {
+    background-color: black;
+    border: 1px solid #FFFFFF14 !important;
+
+}
+
+.table-dark>tbody>tr:nth-child(even)>td,
+.table-dark>tbody>tr:nth-child(even)>th {
+    background-color: black;
+    border: 1px solid #FFFFFF14 !important;
+
+}
+
+.table-lm {
+    font-size: 13px;
+}
+
+.our-marketing-btn {
+    width: Hug (352px)px;
+    height: Hug (66px)px;
+    top: 524.35px;
+    left: 544px;
+    padding: 20px 40px 20px 40px;
+    gap: 20px;
+    border-radius: 50px 50px 0px 0px;
+    opacity: 0px;
+    background: #111111;
+    border: #000000;
+}
+
+.our-stories-col {
+    border-radius: 10px;
+    border: 1.5px solid #FFFFFF40
+}
+
+.frame-6 {
+    height: auto;
+}
+
+.our-gm-btn {
+    font-size: 12px;
+    padding: 7px 15px 7px 15px;
+    gap: 0px;
+    border-radius: 32px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    border: 1px solid #0099FF;
+    box-shadow: 0px -7px 11px 0px #A48FFF1F inset;
+    background: linear-gradient(91.58deg, #43BAFF 0.52%, #7044B3 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    backdrop-filter: blur(2px);
+}

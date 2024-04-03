@@ -1,0 +1,267 @@
+<div class="frames h-auto w-100 container-fluid p-0 d-flex flex-column">
+    <div class="digital-marketing d-flex align-items-center justify-content-center container-fluid p-0 w-100 frame-1">
+        <div class="container w-75 h-75">
+            <div class="heading w-100 h-100 d-flex flex-column align-items-center justify-content-start text-white">
+                <div class="button my-2">
+                    <button class="our-process-btn">Expertise You Can Turst</button>
+                </div>
+                <h1 class="tagline text-center fw-bolder w-lg-50 ">Explore Our Services To See The Future Of
+                    <span class="linear-text text-decoration-underline"> Digital Marketing</span>
+                </h1>
+                <p class=" text-align-center w-75" style="color: #EFEDFDB2;                ">
+                    Sed nisl eros, condimentum nec risus sit amet, finibus congue sem. Fusce fringilla est libero, sed
+                    tempus urna feugiat eu. Curabitur eu feugiat ligula. Suspendisse nectoraba porttitor velit go this
+                    week for work.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="frame-2 container d-flex">
+        <div class="container d-flex flex-column justify-content-center my-5 px-lg-5">
+            <div class="heading d-flex justify-content-center align-items-center">
+                <div class="text w-100 d-flex flex-column justify-content-center align-items-center text-white">
+                    <div class="button my-lg-3">
+                        <button class="our-process-btn">
+                            Our Process
+                        </button>
+                    </div>
+                    <div class="txt w-75 text-center my-lg-3">
+                        <h1>How Can We Help You?</h1>
+                    </div>
+                    <div class="txt w-75 text-center my-lg-3">
+                        <p class="fw-light" style="color: #EFEDFDB2;">Let's do great work together</p>
+                    </div>
+
+                    <div class="steps-container circles">
+                        <div class="step-circle"></div>
+                        <div class="step-dashed-line"></div>
+                        <div class="step-circle"></div>
+                        <div class="step-dashed-line"></div>
+                        <div class="step-circle"></div>
+                        <div class="step-dashed-line"></div>
+                        <div class="step-circle"></div>
+                        <!-- Add more circles and dashed lines as needed -->
+                    </div>
+                    <div class="steps-container w-100 mt-lg-4">
+                        <div class="step-title w-25 d-flex justify-content-center">
+                            <p class="w-50 fw-light text-align-center">Update Content on My Website</p>
+                        </div>
+                        <div class="step-dashed-line visually-hidden"></div>
+                        <div class="step-title w-25 d-flex justify-content-center">
+                            <p class="w-50 fw-light text-align-center">Improve User Experience</p>
+                        </div>
+                        <div class="step-dashed-line visually-hidden"></div>
+                        <div class="step-title w-25 d-flex justify-content-center">
+                            <p class="w-50 fw-light text-align-center">Request Free Website Review</p>
+                        </div>
+                        <div class="step-dashed-line visually-hidden"></div>
+                        <div class="step-title w-25 d-flex justify-content-center">
+                            <p class="w-50 fw-light text-align-center">Improve Your SEO Rankings</p>
+                        </div>
+                        <div class="step-dashed-line visually-hidden"></div>
+                    </div>
+
+                    <div class="view-more my-lg-4 fw-light d-flex align-items-center">
+                        <p class="p-0 me-4 mb-0 text-decoration-underline">See More</p>
+                        <i class="fa fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="frame-3 container-fluid">
+        <div class="d-flex justify-content-center align-items-center">
+            <div class="slider">
+                <div class="slide-track">
+                    <div class="slide" *ngFor="let img of brandLogo">
+                        <img style="filter:grayscale(100%)" height="100" width="100" [src]="img.img"
+                            class="d-block w-auto" alt="...">
+                    </div>
+                    <div class="slide" *ngFor="let img of brandLogo">
+                        <img style="filter:grayscale(100%)" height="100" width="100" [src]="img.img"
+                            class="d-block w-auto" alt="...">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="frame-4 container d-flex">
+        <div class="container d-flex flex-column justify-content-between my-5 px-lg-5">
+            <div class="heading d-flex justify-content-between align-items-center">
+                <div class="text w-50 d-flex flex-column text-white">
+                    <div class="button">
+                        <button class="our-process-btn">
+                            Our Services
+                        </button>
+                    </div>
+                    <div class="txt w-75">
+                        <h1>Explore Our Solutions</h1>
+                    </div>
+                </div>
+                <div class="learnMore">
+                    <button class="btn-lm fs-5 rounded d-flex align-items-center justify-content-between">View All
+                    </button>
+                </div>
+            </div>
+            <div class="what-we-do w-100 h-100 mt-lg-5">
+                <table class="table table-dark table-bordered">
+                    <tbody>
+                        <tr *ngFor="let data of tableData">
+                            <th scope="row" class="align-middle p-4">
+                                <img [src]="data.img" alt="">
+                            </th>
+                            <td class="align-middle p-4">
+                                <h4 class="fw-light">{{data.heading}}</h4>
+                                <p class="m-0 fw-lighter" style="color:#B5B5B5">{{data.tail}}</p>
+                            </td>
+                            <td class="align-middle p-4">
+                                <p class="m-0" style="color:#B5B5B5">Health and care consulting refers to the practice
+                                    of providing expert
+                                    advice and
+                                    guidance.</p>
+                            </td>
+                            <td class="align-middle py-4 px-2">
+                                <p class="m-0 table-lm fw-light">Learn More <i
+                                        class="fa-solid fa-arrow-right text-secondary"
+                                        style="transform: rotate(325deg);"></i></p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="frame-5 container">
+        <div class="text w-100 d-flex flex-column justify-content-center align-items-center text-white">
+            <div class="button my-lg-3">
+                <button class="our-process-btn">
+                    Our Process
+                </button>
+            </div>
+            <div class="txt w-50 text-center my-lg-3">
+                <h1>Our Work Progress In Digital Mastery.</h1>
+            </div>
+        </div>
+
+    </div>
+    <div class="steps-container squares w-100 mt-lg-5 mb-lg-3 text-white">
+        <div class="step-line"></div>
+        <div class="step-square">Step 01</div>
+        <div class="step-line"></div>
+        <div class="step-square">Step 02</div>
+        <div class="step-line"></div>
+        <div class="step-square">Step 03</div>
+        <div class="step-line"></div>
+    </div>
+    <div class="steps-container w-100 mt-lg-5 text-white">
+        <div class="step-title w-25 d-flex flex-column align-items-center justify-content-center">
+            <p class="w-50 fw-lighter fs-5 text-align-center">Client Consultation</p>
+            <p class="w-75 fw-lighter fs-6 text-align-center" style="color: #B5B5B5;">Sed accumsan sem cursus
+                luctus porta. amem Phasellu du
+                enim, efficitur quis velit ac, fringilla posuere leo fusci.</p>
+        </div>
+        <div class="step-dashed-line visually-hidden"></div>
+        <div class="step-title w-25 d-flex justify-content-center align-items-center flex-column">
+            <p class="w-50 fw-lighter fs-5 text-align-center">Strategy Development</p>
+            <p class="w-75 fw-lighter fs-6 text-align-center" style="color: #B5B5B5;">Sed accumsan sem cursus
+                luctus porta. amem Phasellu du
+                enim, efficitur quis velit ac, fringilla posuere leo fusci.</p>
+        </div>
+        <div class="step-dashed-line visually-hidden"></div>
+        <div class="step-title w-25 d-flex justify-content-center align-items-center flex-column">
+            <p class="w50 fw-lighter fs-5 text-align-center">Market Research</p>
+            <p class="w-75 fw-lighter fs-6 text-align-center" style="color: #B5B5B5;">Sed accumsan sem cursus
+                luctus porta. amem Phasellu du
+                enim, efficitur quis velit ac, fringilla posuere leo fusci.</p>
+        </div>
+        <div class="step-dashed-line visually-hidden"></div>
+    </div>
+
+    <div class="container button w-100 d-flex mt-5 align-items-center justify-content-center">
+        <button class="our-marketing-btn text-white">
+            <i class="fa-solid fa-arrow-left text-white mx-2"></i>
+            Our Marketing Challenge
+            <i class="fa-solid fa-arrow-right text-white mx-2"></i>
+        </button>
+    </div>
+
+    <div class="frame-6 d-flex container">
+        <div class="container w-100 h-100 my-5 d-flex flex-column justify-content-center align-items-center">
+            <div class="text w-100 d-flex flex-column justify-content-center align-items-center text-white">
+                <div class="button my-lg-3">
+                    <button class="our-process-btn">
+                        Our Stories
+                    </button>
+                </div>
+                <div class="txt w-50 text-center my-lg-3">
+                    <h1>Stories Of Growth Triumph</h1>
+                </div>
+            </div>
+
+            <div class="container w-100 h-100 mt-5 d-flex flex-column justify-content-center align-items-center">
+                <div class="container align-items-center d-flex g-3 h-100 w-100">
+                    <div class="mx-2 w-100 h-100 our-stories-col" *ngFor="let story of our_stories">
+                        <div class="container d-flex h-100 flex-column p-4">
+                            <div class="blank w-100 h-100">
+                                <div class="text opacity-0 d-flex flex-column text-white">
+                                    <div class="name my-2">
+                                        <h2>{{story.name}}</h2>
+                                    </div>
+                                    <div class="num my-2">
+                                        <h2>{{story.num}}</h2>
+                                    </div>
+                                    <div class="buttons d-flex my-2">
+                                        <button class="our-process-btn">
+                                            Organic Social Media
+                                        </button>
+                                        <button class="our-process-btn">
+                                            Paid Social
+                                        </button>
+                                        <button class="our-process-btn">
+                                            SEO
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="details w-100 h-100">
+                                <div class="text d-flex flex-column text-white">
+                                    <div class="name my-2">
+                                        <h3>{{story.name}}</h3>
+                                    </div>
+                                    <div class="num my-2">
+                                        <h2 class="fw-light" style="color:#43BAFF">{{story.num}}</h2>
+                                    </div>
+                                    <div class="buttons d-flex justify-content-between my-2">
+                                        <button class="our-gm-btn">
+                                            Organic Social Media
+                                        </button>
+                                        <button class="our-gm-btn">
+                                            Paid Social
+                                        </button>
+                                        <button class="our-gm-btn">
+                                            SEO
+                                        </button>
+                                    </div>
+                                    <div class="desc my-2">
+                                        <p>Read the Success Stories</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="learnMore d-flex align-items-center justify-content-center">
+        <button class="btn-lm fs-5 rounded d-flex align-items-center justify-content-between">View All
+        </button>
+    </div>
+</div>
+
+<app-form></app-form>

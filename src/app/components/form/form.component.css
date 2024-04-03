@@ -1,0 +1,23 @@
+.form {
+    height: 100vh;
+}
+
+.opt {
+    padding: 0px 10px;
+}
+
+.opt1 {
+    border-left: 3px solid #43BAFF;
+    color: #43BAFF;
+    border-radius: 5px 0 0 5px;
+}
+
+.bg-dark {
+    background-color: #111111 !important;
+}
+
+input,
+textarea {
+    border-radius: 0;
+    border: 1px solid #636D79 !important;
+}
