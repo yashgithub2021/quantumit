@@ -1,11 +1,18 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import AOS from 'aos';
 
 @Component({
   selector: 'app-mobileapp',
   templateUrl: './mobileapp.component.html',
   styleUrls: ['./mobileapp.component.css']
 })
-export class MobileappComponent {
+export class MobileappComponent implements OnInit {
+
+  ngOnInit(): void {
+    AOS.init({
+      duration: 2000,
+    })
+  }
 
   list1 = ["Upgrade your engineering capacity", "Employ global development work standards.", "Utilize cutting-edge technologies and tools", "Maintains transparency throughout the project."]
   list2 = ["Cut additional costs", "Increase the speed of delivery", "Access expertise that is not available in-house", "Solely focus on your business objectives"]

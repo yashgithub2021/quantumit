@@ -197,3 +197,68 @@
 .app-button-three {
     background: #1D2546;
 }
+
+@media (max-width: 575.98px) {
+
+    .frame-1 {
+        padding: 0;
+
+    }
+
+    .tagline {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .frame-2-text {
+        font-size: 35px;
+    }
+
+    .frame-3 {
+        height: auto;
+    }
+
+    .f3-container {
+        width: 100% !important;
+    }
+
+    .heading-process {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .desc {
+        width: 100% !important;
+    }
+
+    p {
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .project-container {
+        height: 100% !important;
+    }
+
+    .project-one::before,
+    .project-two::before,
+    .project-three::before {
+        width: 100%;
+        height: 80%;
+        background-size: cover;
+    }
+
+    .app-details-container {
+        width: 100% !important;
+    }
+
+    .project-img-container {
+        height: 75% !important;
+        width: 85% !important;
+    }
+
+    .app-image {
+        height: 50% !important;
+    }
+}

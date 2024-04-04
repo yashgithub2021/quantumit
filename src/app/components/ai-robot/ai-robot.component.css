@@ -162,3 +162,87 @@
     padding: 20px 0px;
     border-radius: 5px;
 }
+
+@media (max-width: 575.98px) {
+
+    .frame-2 {
+        padding-right: 0;
+    }
+
+    .our-process-btn {
+        font-size: 12px;
+    }
+
+    .frame-1-cont,
+    p {
+        width: 100% !important;
+    }
+
+    .tagline {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .txt {
+        width: 100% !important;
+    }
+
+    .txt h1 {
+        font-size: 14px;
+        margin-top: 15px;
+    }
+
+    .number h1 {
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .number p {
+        text-align: center;
+        font-size: 13px;
+    }
+
+    .ai-data {
+        height: 200px;
+    }
+
+    .title {
+        width: 100% !important;
+    }
+
+    .title h3 {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .frame-4-cont {
+        width: 100% !important;
+    }
+
+    .what-we-do {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .showcase-btn {
+        display: flex;
+    }
+
+    .showcase-txt {
+        font-size: 12px;
+    }
+
+    .magic-btn {
+        font-size: 10px;
+    }
+
+    .btn-lm,
+    .btn {
+        font-size: 10px;
+    }
+
+    .milestone-img {
+        height: 35px;
+    }
+}

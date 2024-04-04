@@ -14,6 +14,18 @@
     width: 50%;
 }
 
+@keyframes fadeInOpacity {
+
+    0%,
+    100% {
+        opacity: 0%;
+    }
+
+    50% {
+        opacity: 30%;
+    }
+}
+
 .section1::before {
     z-index: -1;
     content: '';
@@ -25,7 +37,8 @@
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    opacity: 30%;
+    animation: fadeInOpacity 2.5s ease-in-out forwards infinite;
+    /* Apply the animation */
 }
 
 .tagline {
@@ -73,6 +86,11 @@
     width: 100%;
     height: 100%;
     position: absolute;
+    transition: opacity 2s ease;
+}
+
+.fade-in::before {
+    opacity: 1;
 }
 
 .right-side>.container {

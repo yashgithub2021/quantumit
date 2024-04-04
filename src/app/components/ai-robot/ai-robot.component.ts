@@ -1,12 +1,18 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import AOS from 'aos';
 
 @Component({
   selector: 'app-ai-robot',
   templateUrl: './ai-robot.component.html',
   styleUrls: ['./ai-robot.component.css']
 })
-export class AiRobotComponent {
+export class AiRobotComponent implements OnInit {
 
+  ngOnInit(): void {
+    AOS.init({
+      duration: 2000,
+    })
+  }
   aiService = [
     {
       img: "../../../assets/ai/Frame1.png",
@@ -39,6 +45,7 @@ export class AiRobotComponent {
     },
 
   ]
+
 
   checks = ["Chatbot API", "Facial Recognition API", "Natural language processing APIs", "AWS ML Solutions"]
 

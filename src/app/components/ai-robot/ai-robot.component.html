@@ -1,19 +1,19 @@
 <div class="container-fluid h-auto w-100 p-0">
-    <div
+    <div data-aos="slide-up"
         class="container-fluid position-relative p-0 frame-1 d-flex flex-column justify-content-center align-items-center">
-        <div class="container position-absolute w-50 h-75">
+        <div class="container frame-1-cont position-absolute w-50 h-75">
             <div class="heading w-100 h-100 d-flex flex-column align-items-center justify-content-center text-white">
-                <div class="button my-2">
+                <div class="button my-2" data-aos="fade-up">
                     <button class="our-process-btn">Quantum It Innovation</button>
                 </div>
-                <h1 class="tagline text-center fw-bolder w-lg-50">Unparalled
+                <h1 class="tagline text-center fw-bolder w-lg-50" data-aos="fade-up">Unparalled
                     <span class="linear-text">Artificial Intelligence </span>Company
                 </h1>
-                <p class="fs-5 text-align-center w-50" style="color: #EFEDFDB2;                ">
+                <p data-aos="fade-up" class="fs-5 text-align-center w-50" style="color: #EFEDFDB2;                ">
                     Master the principles of note-taking in
                     Reflect's free online Academy.
                 </p>
-                <div class="buttons d-flex justify-content-center w-100">
+                <div data-aos="fade-up" class="buttons d-flex justify-content-center w-100">
                     <button class="btn btn-dark mx-3 px-4">Get Started</button>
                 </div>
             </div>
@@ -23,7 +23,7 @@
     <div class="container d-flex frame-2">
         <div class="container d-flex flex-column justify-content-between my-5 px-lg-5">
             <div class="heading d-flex justify-content-between align-items-center">
-                <div class="text w-50 d-flex flex-column text-white">
+                <div class="text w-50 d-flex flex-column text-white" data-aos="slide-up">
                     <div class="button">
                         <button class="our-process-btn">
                             What We Do
@@ -33,16 +33,16 @@
                         <h1>Development of all Artificial Intelligence</h1>
                     </div>
                 </div>
-                <div class="learnMore">
+                <div class="learnMore" data-aos="fade-up">
                     <button class="btn-lm fs-5 rounded d-flex align-items-center justify-content-between">View All
                     </button>
                 </div>
             </div>
 
-            <div class="what-we-do w-100 h-100 mt-lg-5">
+            <div class="what-we-do w-100 h-100 mt-lg-5" data-aos="zoom-in">
                 <div class="row w-100 h-100 text-white">
-                    <div *ngFor="let data of aiService"
-                        class="col-4 ai-data pt-lg-5 px-lg-5 pb-lg-3 d-flex align-items-start justify-content-around flex-column">
+                    <div *ngFor="let data of aiService" data-aos="zoom-out"
+                        class="col-lg-4 col-6 ai-data pt-lg-5 px-lg-5 pb-lg-3 d-flex align-items-lg-start align-items-center justify-content-around flex-column">
                         <div class="image">
                             <img [src]="data.img" alt="">
                         </div>
@@ -58,7 +58,7 @@
     <div class="frame-3 container-fluid my-lg-5">
         <div class="container d-flex align-items-center justify-content-center">
             <div class="text w-100 d-flex flex-column text-white justify-content-center align-items-center">
-                <div class="button">
+                <div class="button" data-aos="fade-in">
                     <button class="our-process-btn">
                         Industries
                     </button>
@@ -84,18 +84,18 @@
     </div>
 
     <div class="frame-4 container w-100">
-        <div class="container d-flex w-100 h-100">
+        <div class="container d-flex flex-column flex-lg-row w-100 h-100">
             <div class="text w-100 h-100">
-                <div class="text w-75 d-flex flex-column h-100 justify-content-evenly text-white">
-                    <div class="button">
+                <div class="text frame-4-cont w-75 d-flex flex-column h-100 justify-content-evenly text-white">
+                    <div class="button" data-aos="fade-left">
                         <button class="our-process-btn">
                             About Us
                         </button>
                     </div>
-                    <div class="txt w-100">
+                    <div class="txt w-100" data-aos="fade-right">
                         <h1>AI and Machine Learning Integration and Technologies</h1>
                     </div>
-                    <div class="desc">
+                    <div class="desc" data-aos="fade-right">
                         <p class="m-0" style="color:#4E566D">
                             Exerci tation ullamcorper suscipit lobortis nisl aliquip ex ea commodo claritatem
                             insitamconse quat.Exerci tation ullamcorper suscipit loborti excommodo habent claritatem
@@ -104,13 +104,15 @@
                     </div>
                     <div class="list">
                         <ul class=" list-unstyled text-white">
-                            <li class=" d-flex align-items-center list-unstyled my-3" *ngFor="let check of checks">
+                            <li data-aos="fade-right" class=" d-flex align-items-center list-unstyled my-3"
+                                *ngFor="let check of checks">
                                 <i class="fa-solid fa-check mx-2"></i>
                                 <p class="fw-light m-0 list-check">{{check}}</p>
                             </li>
                         </ul>
                     </div>
-                    <div class="buttons d-flex justify-content-start w-100">
+                    <div data-aos="fade-right"
+                        class="buttons d-flex justify-content-lg-start justify-content-center w-100">
                         <button class="btn-lm btn-primary mx-3 px-4 py-3">Our Mission</button>
                         <button class="btn btn-outline-primary mx-3 px-4 py-3 text-uppercase text-white">learn
                             More</button>
@@ -118,13 +120,13 @@
                 </div>
             </div>
             <div class="frame-4-image position-relative w-100 h-100 d-flex align-items-center justify-content-center">
-                <div class="ai-showcase container w-100 position-absolute h-auto">
+                <div data-aos="fade-left" class="ai-showcase container w-100 position-absolute h-auto">
                     <div class="ai-showcase-inner d-flex flex-column justify-content-center p-lg-4 text-white">
                         <div class="head d-flex justify-content-between align-items-center">
                             <div class="txt">
                                 <p class="showcase-txt">How to use AI to take better notes</p>
                             </div>
-                            <div class="button">
+                            <div data-aos="zoom-out" class="button showcase-btn">
                                 <img src="../../../assets/ai/magic.png" alt="">
                                 <button class="magic-btn">
                                     Click To See Magic
@@ -144,24 +146,24 @@
 
     <div class="frame-5 my-lg-5">
         <div class="text w-100 d-flex flex-column text-white justify-content-center align-items-center">
-            <div class="button">
+            <div class="button" data-aos="fade-up">
                 <button class="our-process-btn">
                     What we do
                 </button>
             </div>
-            <div class="txt w-75 text-align-center px-5 my-lg-4">
+            <div class="txt w-75 text-align-center px-5 my-lg-4" data-aos="fade-up">
                 <h1>Deliver agile business solutions using data science, machine learning and artificial intelligence
                     technologies for you.</h1>
             </div>
         </div>
         <div class="milestones container">
-            <div class="row d-flex align-items-center justify-content-center">
-                <div *ngFor="let stone of milestones"
-                    class="col-3 milestone-col mx-lg-2 d-flex align-items-center justify-content-around h-100">
+            <div class="row d-flex align-items-center justify-content-lg-center justify-content-evenly">
+                <div *ngFor="let stone of milestones" data-aos="slide-up"
+                    class="col-3 milestone-col mx-lg-2 d-flex align-items-center flex-column flex-lg-row justify-content-around h-100">
                     <div class="image">
-                        <img [src]="stone.img" alt="">
+                        <img [src]="stone.img" class="milestone-img" alt="">
                     </div>
-                    <div class="number d-flex flex-column text-white">
+                    <div class="number d-flex flex-column justify-content-center justify-content-lg-start text-white">
                         <h1 class=" fw-lighter">{{stone.num}}</h1>
                         <p class="m-0">{{stone.title}}</p>
                     </div>

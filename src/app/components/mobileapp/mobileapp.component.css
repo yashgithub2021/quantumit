@@ -3,6 +3,10 @@
     font-family: 'Plus Jakarta Sans';
 }
 
+.heading-frame-2 {
+    width: 75%;
+}
+
 .mobile-app {
     height: 100vh;
     background:
@@ -49,6 +53,10 @@
 
 .fa-circle {
     color: #67FBAE
+}
+
+.txt {
+    width: 75%;
 }
 
 .frame-3 {
@@ -104,4 +112,74 @@
 
 .view-more .fa-arrow-right {
     color: #43BAFF;
+}
+
+@media (max-width: 575.98px) {
+
+    .mobile-app {
+        height: auto;
+    }
+
+    .tagline {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .what-we-do {
+        display: flex;
+        justify-content: center;
+    }
+
+    .txt {
+        width: 100%;
+        text-align: center;
+    }
+
+    .dev-ai {
+        font-size: 20px;
+    }
+
+    .heading-frame-2 {
+        width: 100%;
+    }
+
+    .frame-3 {
+        height: 35vh;
+    }
+
+    .numbers-section {
+        padding: 20px;
+    }
+
+    .miletone-number {
+        font-size: 15px !important;
+    }
+
+    .miletone-title {
+        font-size: 10px !important;
+    }
+
+    .buttons-milestone {
+        width: 100%;
+    }
+
+    .success-desc {
+        width: 90% !important;
+    }
+
+    .app-details-container {
+        width: 95% !important;
+    }
+
+    .project-img-container {
+        height: 80% !important;
+        width: 70% !important;
+    }
+
+    .app-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50% !important;
+    }
 }

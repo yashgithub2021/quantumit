@@ -1,11 +1,37 @@
-import { Component } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, HostListener, OnDestroy, OnInit, ViewChild } from '@angular/core';
+import { trigger, state, style, transition, animate } from '@angular/animations';
+import AOS from 'aos';
+
+
+const slideInAnimation = trigger('slideInAnimation', [
+  transition(':enter', [
+    style({ transform: 'translateX(-100%)', opacity: 0 }),
+    animate('2000ms ease-out', style({ transform: 'translateX(0)', opacity: 1 })),
+  ]),
+  transition(':leave', [
+    animate('2000ms ease-in', style({ transform: 'translateX(-100%)', opacity: 0 })),
+  ]),
+]);
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  styleUrls: ['./home.component.css'],
+  animations: [slideInAnimation]
 })
-export class HomeComponent {
+export class HomeComponent implements AfterViewInit, OnInit {
+
+  @ViewChild('leftSide') leftSide!: ElementRef;
+
+  observer!: IntersectionObserver;
+
+  constructor(private elementRef: ElementRef) { }
+
+  ngOnInit(): void {
+    AOS.init({
+      duration: 2000,
+    })
+  }
   services = [
     {
       label: 'App Development',
@@ -101,4 +127,19 @@ export class HomeComponent {
     },
 
   ]
+
+
+  ngAfterViewInit() {
+    this.observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          this.leftSide.nativeElement.classList.add('fade-in');
+        } else {
+          this.leftSide.nativeElement.classList.remove('fade-in');
+        }
+      });
+    });
+
+    this.observer.observe(this.leftSide.nativeElement);
+  }
 }

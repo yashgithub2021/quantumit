@@ -21,3 +21,34 @@ textarea {
     border-radius: 0;
     border: 1px solid #636D79 !important;
 }
+
+@media (max-width: 575.98px) {
+    .form {
+        height: auto;
+    }
+
+    .opt1 {
+        border: none;
+        border-bottom: 3px solid #43BAFF;
+        color: #43BAFF;
+        border-radius: 5px 0 0 5px;
+    }
+
+    .option {
+        justify-content: center;
+    }
+
+    .opt h3 {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .desc {
+        width: 100% !important;
+    }
+
+    .desc p {
+        font-size: 12px;
+    }
+
+}

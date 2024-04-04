@@ -2,7 +2,8 @@
 linear-gradient(248.66deg, #000000 0%, #1A1B1E 98.1%);
 ">
     <div class="container frame-1 d-flex flex-column justify-content-end align-items-end">
-        <div class="heading w-100 h-100 d-flex flex-column align-items-center justify-content-center text-white">
+        <div data-aos="zoom-out"
+            class="heading w-100 h-100 d-flex flex-column align-items-center justify-content-center text-white">
             <h1 class="tagline text-center fw-bolder w-lg-50">Leading
                 <span class="linear-text">Web Development </span>Company
             </h1>
@@ -15,7 +16,7 @@ linear-gradient(248.66deg, #000000 0%, #1A1B1E 98.1%);
                 <button class="btn btn-outline-primary mx-3 px-4 py-3 text-uppercase text-white">learn More</button>
             </div>
         </div>
-        <div class="image w-100 h-50">
+        <div data-aos="slide-up" class="image w-100 h-50">
             <img src="https://s3-alpha-sig.figma.com/img/2078/9a9e/a15c9c05bac9fa0273b018164c0ac790?Expires=1713139200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=j6PtDIRKFLeE1P4IF0fzhNIYyb46v3gFHgpdDp-RESDHai9KsqcZW4vHv~Icp5zgHnocYRfrjeMh5gmgipTX6Czdf-tSkGNOjimlEmHegkYTqKgZv2Pl~vFvuxr~cubkkL4PEHwroFu78E4QxAO9uzqK5Nygi~7MrUrA9h1wRcTGv9kgNdyAYxwm5mYqRHKqdmQKXY7IV2SPtlVcEWARzhpabiP0Qd0hMLNPq1GAbYURFlAjUicn71E3VCjnJbKB-NwwnyZ599BsBg983aBcYoY6FuDcAbF-8RmsmEEYGysxGHtqFQKVeEfCAeClA5mBl5AxR3z09vB-8rS46sSsCA__"
                 alt="">
         </div>
@@ -25,29 +26,29 @@ linear-gradient(248.66deg, #000000 0%, #1A1B1E 98.1%);
 <div class="frame-2 d-flex position-relative flex-column justify-content-center align-items-center">
     <div class="container w-auto h-50 position-absolute d-flex flex-column justify-content-evenly align-items-center">
         <div class="text-white text-align-center">
-            <h1 class="frame-2-text">Ready to go live?</h1>
-            <h1 class="frame-2-text">Just hit publish — no</h1>
-            <h1 class="frame-2-text">rebuilding, no code.</h1>
+            <h1 data-aos="fade-left" class="frame-2-text">Ready to go live?</h1>
+            <h1 data-aos="fade-right" class="frame-2-text">Just hit publish — no</h1>
+            <h1 data-aos="fade-left" class="frame-2-text">rebuilding, no code.</h1>
         </div>
         <div class="position-relative">
             <button class="publish fs-1 fw-medium text-white px-lg-4">Publish</button>
-            <img src="../../../assets/pointer.png" alt="" class="position-absolute pointer-img">
+            <img data-aos="fade-left" src="../../../assets/pointer.png" alt="" class="position-absolute pointer-img">
         </div>
     </div>
 </div>
 
-<div class="frame-3 d-flex align-items-center justify-content-center mt-lg-3">
-    <div class="container h-75 w-75 m-auto d-flex flex-column">
-        <div class="heading text-white">
-            <div class="button my-2">
+<div class="frame-3 mt-5 mt-lg-0 d-flex align-items-center justify-content-center mt-lg-3">
+    <div class="container f3-container h-75 w-75 m-auto d-flex flex-column">
+        <div class="heading-process text-white">
+            <div class="button my-2" data-aos="slide-up">
                 <button class="our-process-btn">Our Process</button>
             </div>
 
-            <div class="our-process my-2">
+            <div class="our-process my-2" data-aos="slide-up">
                 <h1>Our Process</h1>
             </div>
 
-            <div class="desc w-75 my-2">
+            <div class="desc w-75 my-2" data-aos="slide-up">
                 <p style="color:#999999">At Estatein, we've designed a straightforward process to help you find and
                     purchase your dream
                     property with ease. Here's a step-by-step guide to how it all works.</p>
@@ -55,7 +56,7 @@ linear-gradient(248.66deg, #000000 0%, #1A1B1E 98.1%);
         </div>
         <div class="steps mt-lg-4">
             <div class="row">
-                <div class="col-4" *ngFor="let steps of our_steps">
+                <div class="col-12 col-lg-4" data-aos="zoom-out" *ngFor="let steps of our_steps">
                     <div class="container">
                         <div class="step-num text-white">
                             {{steps.stepNo}}
@@ -72,7 +73,7 @@ linear-gradient(248.66deg, #000000 0%, #1A1B1E 98.1%);
                 </div>
             </div>
             <div class="row">
-                <div class="col-6" *ngFor="let steps of our_steps2">
+                <div class="col-lg-6 col-12" data-aos="zoom-out" *ngFor="let steps of our_steps2">
                     <div class="container">
                         <div class="step-num text-white">
                             {{steps.stepNo}}
@@ -95,15 +96,15 @@ linear-gradient(248.66deg, #000000 0%, #1A1B1E 98.1%);
 <div class="frame-4 d-flex align-items-center justify-content-center">
     <div class="container d-flex flex-column align-items-center justify-content-center">
         <div class="head w-100 h-100 d-flex flex-column align-items-center justify-content-center">
-            <div class="button my-2">
+            <div class="button my-2" data-aos="slide-up">
                 <button class="our-process-btn">Our Projects</button>
             </div>
 
-            <div class="our-process my-2 text-white">
+            <div class="our-process my-2 text-white" data-aos="slide-up">
                 <h1>Our Successful Projects</h1>
             </div>
 
-            <div class="desc w-50 my-2 text-align-center">
+            <div class="desc w-50 my-2 text-align-center" data-aos="slide-up">
                 <p style="color:#999999">We help businesses from healthcare, transportation, real estate,
                     communication,
                     and other
@@ -113,19 +114,19 @@ linear-gradient(248.66deg, #000000 0%, #1A1B1E 98.1%);
 
         <div class="projects container">
             <div class="container h-100 w-100">
-                <div
+                <div data-aos="zoom-out"
                     class="project-one project w-100 position-relative d-flex justify-content-center align-items-center">
-                    <div class="project-container h-75 w-100 position-absolute d-flex p-lg-5">
+                    <div class="project-container h-75 w-100 position-absolute d-flex flex-column flex-lg-row p-lg-5">
                         <div class="app-details h-100 w-100 d-flex align-items-center justify-content-center">
-                            <div
-                                class="app-details-container w-50 h-100 m-auto d-flex flex-column justify-content-lg-evenly text-white">
+                            <div data-aos="fade-right"
+                                class="app-details-container w-50 h-100 m-auto d-flex flex-column align-items-center align-items-lg-start justify-content-evenly text-white">
                                 <div>
                                     <button class="app-button app-button-one">App</button>
                                 </div>
                                 <div class="name">
                                     <h2>Wikistrings Website</h2>
                                 </div>
-                                <div class="details fw-lighter fs-5">
+                                <div class="details fw-lighter text-align-center text-lg-start fs-5">
                                     Our software development center provides
                                     you with the best resources, expertise.
                                 </div>
@@ -135,7 +136,7 @@ linear-gradient(248.66deg, #000000 0%, #1A1B1E 98.1%);
                                 </div>
                             </div>
                         </div>
-                        <div class="app-image h-100 w-100">
+                        <div data-aos="fade-left" class="app-image h-100 w-100">
                             <div class="container project-img-container h-100 w-100 overflow-hidden p-0">
                                 <img class="project-image border-white border-3 rounded-1 w-100"
                                     src="https://s3-alpha-sig.figma.com/img/2637/4f83/5ed9b8991d05163a6724bb0763ade8de?Expires=1713139200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=HwXhQ81miJUCTwye99uQjbIwTsd8HhMolnw2tL14KtX8cPvMcDPEM46dOQBQUkgB4mxEGfGQ6yq~PWbfYWbREOxiKZq48OYvmGJL~UhjTXugHhuO4wyW72kI0fsqyh8qKhv1qHx9pTuzx2PeG7--u~feD8fE0DB99xejDT-5UoHgwDTPBvdobPLZtZ487FI4fmnanx0wSBMNwFKnUruLzNBEos54QD-H5MFhoDC8Go8jXFhywmk9UJL3J3yJBCKo4qPnwTMjjImtDJsrchT2tWHCSF-dDN0nHodmlmMy5G4fzleJxI570Ujq1VCxpRab3JKHojYRnoFV-sESHnGdzA__"
@@ -144,19 +145,20 @@ linear-gradient(248.66deg, #000000 0%, #1A1B1E 98.1%);
                         </div>
                     </div>
                 </div>
-                <div
+                <div data-aos="zoom-out"
                     class="project-two project w-100 position-relative d-flex justify-content-center align-items-center">
-                    <div class="project-container h-75 w-100 position-absolute d-flex p-lg-5 flex-row-reverse">
+                    <div
+                        class="project-container h-75 w-100 position-absolute d-flex p-lg-5 flex-lg-row-reverse flex-column">
                         <div class="app-details h-100 w-100 d-flex align-items-center justify-content-center">
-                            <div
-                                class="app-details-container w-50 h-100 m-auto d-flex flex-column justify-content-lg-evenly text-black">
+                            <div data-aos="fade-left"
+                                class="app-details-container w-50 h-100 m-auto d-flex flex-column align-items-center align-items-lg-start justify-content-evenly text-black">
                                 <div>
                                     <button class="app-button app-button-two">App</button>
                                 </div>
                                 <div class="name">
                                     <h2>Wikistrings Website</h2>
                                 </div>
-                                <div class="details fw-lighter fs-5">
+                                <div class="details fw-lighter text-align-center text-lg-start text-l fs-5">
                                     Our software development center provides
                                     you with the best resources, expertise.
                                 </div>
@@ -166,7 +168,7 @@ linear-gradient(248.66deg, #000000 0%, #1A1B1E 98.1%);
                                 </div>
                             </div>
                         </div>
-                        <div class="app-image h-100 w-100">
+                        <div data-aos="fade-right" class="app-image h-100 w-100">
                             <div class="container project-img-container h-100 w-100 overflow-hidden p-0">
                                 <img class="project-image border-white border-3 rounded-1 w-100"
                                     src="https://s3-alpha-sig.figma.com/img/fac6/f211/d88d61c92556ea37451190007f41fe92?Expires=1713139200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=iWSOX7XKvxRolHf02DG9FapWKIqyBzHEDepWnRqaqZbbnxnRfIX8rHhxi~iXIFkHc~f4yKlupH~UUtoIY1vdaOZhomk1pk6RzGW78nTVgft0bu9dVpfr-0NgXshN9gJvl6Z-2lZWB6-VIXf4Zvtkin1nMMSO5N-XsjtslPWxfc~dGZhSdWWSvsWAUPGmkR1F9hyUpiegSII0A9szM8b4MwjFOxnximfGnQVn-T~4puZpfncMvtXvbHWEsnue5fufk1ANWJEzy9h~BUM-BEhPov8fYg1esGeoUVMDy2W5~9~ioyHFrjh3-MsGbpYYYNhonrg5P9U4PdfZIHzoQCn4SQ__"
@@ -175,19 +177,20 @@ linear-gradient(248.66deg, #000000 0%, #1A1B1E 98.1%);
                         </div>
                     </div>
                 </div>
-                <div
+                <div data-aos="zoom-out"
                     class="project-three project w-100 position-relative d-flex justify-content-center align-items-center">
-                    <div class="project-container h-75 w-100 position-absolute d-flex p-lg-5">
-                        <div class="app-details h-100 w-100 d-flex align-items-center justify-content-center">
+                    <div class="project-container h-75 w-100 position-absolute d-flex flex-column flex-lg-row p-lg-5">
+                        <div data-aos="fade-right"
+                            class="app-details h-100 w-100 d-flex align-items-center justify-content-center">
                             <div
-                                class="app-details-container w-50 h-100 m-auto d-flex flex-column justify-content-lg-evenly text-white">
+                                class="app-details-container w-50 h-100 m-auto d-flex flex-column align-items-center align-items-lg-start justify-content-evenly text-white">
                                 <div>
                                     <button class="app-button app-button-three">App</button>
                                 </div>
                                 <div class="name">
                                     <h2>Wikistrings Website</h2>
                                 </div>
-                                <div class="details fw-lighter fs-5">
+                                <div class="details fw-lighter text-align-center text-lg-start fs-5">
                                     Our software development center provides
                                     you with the best resources, expertise.
                                 </div>
@@ -197,7 +200,7 @@ linear-gradient(248.66deg, #000000 0%, #1A1B1E 98.1%);
                                 </div>
                             </div>
                         </div>
-                        <div class="app-image h-100 w-100">
+                        <div data-aos="fade-left" class="app-image h-100 w-100">
                             <div class="container project-img-container h-100 w-100 overflow-hidden p-0">
                                 <img class="project-image border-white border-3 rounded-1 w-100"
                                     src="https://s3-alpha-sig.figma.com/img/e1e6/69d6/9c7c40fd7f0b953f4b6775f242745349?Expires=1713139200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=e5CqiQ2q0~Yqfnpjvobimeg3M9DvjPSCBkO9X0xbvdeszmvAgs~iJ0ubfb-Nc-FpkI4t6fKIblUj7ORDjvDbTqyC44Zvjx6QRPxbK7qmPPJiLkjGENdxpsnOYmW7Oz0t4PuuTanGoiGX6SH0WK1whGdllPvesCnWa4PwX9fvodq8GHcJG7WbZ~QG88YMJLx6U0rZNj-5nr95k00eu8DikKK3wQBc8qT9Mkz2g-hWgCUtMr5eZYWlGSKp-R8renQGQ9oq--732NQ6DkQf5THt-2t812Nhvh3-U~Xbc8L71bQm8nxtnLJe7Z95-x39CCzxkKiIIoK9HmUgxhQ7xx1Pxw__"

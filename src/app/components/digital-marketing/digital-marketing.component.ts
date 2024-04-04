@@ -1,11 +1,18 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import AOS from 'aos';
 
 @Component({
   selector: 'app-digital-marketing',
   templateUrl: './digital-marketing.component.html',
   styleUrls: ['./digital-marketing.component.css']
 })
-export class DigitalMarketingComponent {
+export class DigitalMarketingComponent implements OnInit {
+
+  ngOnInit(): void {
+    AOS.init({
+      duration: 2000,
+    })
+  }
 
   brandLogo = [
     {

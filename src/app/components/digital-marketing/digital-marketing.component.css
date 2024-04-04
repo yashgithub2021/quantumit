@@ -235,3 +235,70 @@
     -webkit-text-fill-color: transparent;
     backdrop-filter: blur(2px);
 }
+
+@media (max-width: 575.98px) {
+
+    .frame-1 .container {
+        width: 100% !important;
+    }
+
+    .head-desc {
+        width: 100% !important;
+    }
+
+    .container {
+        padding-right: 5px;
+    }
+
+    .tagline {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    td p {
+        font-size: 7px;
+    }
+
+    td h4 {
+        font-size: 12px;
+    }
+
+    td,
+    th {
+        padding: 5px !important;
+    }
+
+    .txt h1 {
+        font-size: 14px;
+        margin-top: 15px;
+    }
+
+    .our-process-btn {
+        font-size: 12px;
+    }
+
+    .step-circle {
+        margin: 0;
+    }
+
+    .step-title p {
+        font-size: 10px !important;
+        width: 100% !important;
+    }
+
+    .step-title .fs-6 {
+        font-size: 7px !important;
+    }
+
+    .circles {
+        width: 100% !important;
+    }
+
+    .step-title {
+        width: 100% !important;
+    }
+
+    .opacity-0 {
+        display: none !important;
+    }
+}

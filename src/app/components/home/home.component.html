@@ -23,7 +23,7 @@
     <div class="section2 container-fluid w-100 h-100">
         <div class="categories">
             <div class="container-fluid text-center text-white cursor-pointer">
-                <div class="row gap-lg-0 gap-3">
+                <div class="row gap-lg-0 gap-3" data-aos="slide-up">
                     <div *ngFor="let data of services"
                         class=" position-relative col cards d-flex flex-column align-items-center justify-content-evenly">
                         <i class="fa-solid fa-arrow-right  position-absolute text-secondary"
@@ -38,11 +38,11 @@
     <!-- Section Two Ends -->
 
     <!-- Section Three -->
-    <div class="container-fluid d-flex flex-column mt-3">
+    <div class="container-fluid d-flex flex-column mt-3" data-aos="fade-in" data-aos-duration="1000">
         <div class="section3 container-fluid w-100 h-100 d-flex flex-column flex-lg-row mt-3">
-            <div class="left-side">
+            <div class="left-side" data-aos="fade-right">
             </div>
-            <div class="right-side d-flex justify-content-start align-items-center">
+            <div class="right-side d-flex justify-content-start align-items-center" data-aos="fade-left">
                 <div class="container d-flex flex-column align-items-start justify-content-between text-white">
                     <div class="text">
                         <h1 class="section3-tagline">Building bridges between <span style="color: #92A7B0;">companies &
@@ -83,12 +83,12 @@
     <div class="section4 d-flex flex-column">
         <div class="container services-section w-100 h-100 d-flex flex-column">
             <div class="container heading w-75 h-100 d-flex flex-column align-items-center justify-content-center">
-                <div class="button">
+                <div class="button" data-aos="slide-up">
                     <button class="our-service-btn">
                         Our Services
                     </button>
                 </div>
-                <div class="sec4-headline text-white">
+                <div class="sec4-headline text-white" data-aos="slide-up">
                     <h1 class="service-tagline text-align-center">
                         We Offer a Wide Variety
                         of IT Services
@@ -97,7 +97,7 @@
             </div>
             <div class="container services w-100 h-100">
                 <div class="row">
-                    <div *ngFor="let service of ourServices"
+                    <div *ngFor="let service of ourServices" data-aos="slide-up"
                         class="text-white col-md-4 d-flex flex-column align-items-center justify-content-center px-5 my-4">
                         <div class="image my-3">
                             <img [src]="service.img" alt="Mobile">
@@ -133,12 +133,12 @@
         <div class="container d-flex flex-column justify-content-between my-5 px-lg-5">
             <div class="heading d-flex justify-content-between align-items-center">
                 <div class="text d-flex flex-column text-white">
-                    <div class="button">
+                    <div class="button" data-aos="slide-up">
                         <button class="our-service-btn">
                             Our Services
                         </button>
                     </div>
-                    <div class="txt">
+                    <div class="txt" data-aos="slide-up">
                         <h1>Our Successful Projects</h1>
                     </div>
                 </div>
@@ -148,7 +148,7 @@
                 </div>
             </div>
             <div class="projects-section d-flex flex-column flex-lg-row container">
-                <div class="container project-sec-one project-one flex-lg-grow-1 position-relative">
+                <div data-aos="zoom-in" class="container project-sec-one project-one flex-lg-grow-1 position-relative">
                     <div
                         class="project-one-details details d-flex justify-content-between align-items-center position-absolute px-3 text-white">
                         <div class="w-auto">
@@ -165,7 +165,7 @@
                     </div>
                 </div>
                 <div class="h-100 container d-flex flex-column align-items-center justify-content-center">
-                    <div class="project-two project-sec-two position-relative">
+                    <div data-aos="zoom-in" class="project-two project-sec-two position-relative">
                         <div
                             class="project-two-details details d-flex justify-content-between align-items-center position-absolute px-3 text-white">
                             <div class="w-auto">
@@ -179,7 +179,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="project-three project-sec-two position-relative">
+                    <div data-aos="zoom-in" class="project-three project-sec-two position-relative">
                         <div
                             class="project-three-details details d-flex justify-content-between align-items-center position-absolute px-3 text-white">
                             <div class="w-auto">
@@ -203,16 +203,16 @@
         <div class="container d-flex flex-column justify-content-between my-1 px-5 my-lg-5">
             <div class="heading d-flex justify-content-between align-items-center">
                 <div class="sec6-text d-flex flex-column text-white">
-                    <div class="our-cust-button">
+                    <div class="our-cust-button" data-aos="slide-up">
                         <button class="our-service-btn">
                             Our Customers
                         </button>
                     </div>
-                    <div>
+                    <div data-aos="slide-up">
                         <h1 class="trusted-over-worldwild">Trusted Over Worldwild</h1>
                     </div>
                 </div>
-                <div class="learnMore">
+                <div class="learnMore" data-aos="slide-up">
                     <button class="btn rounded d-flex align-items-center justify-content-between">View All
                     </button>
                 </div>
@@ -227,7 +227,7 @@
     <div class="container section7 w-100">
         <div class="container h-100">
             <div class="d-flex flex-column flex-lg-row h-100 w-100">
-                <div class="customer-feedback h-100 w-100 p-5">
+                <div class="customer-feedback h-100 w-100 p-5" data-aos="fade-right">
                     <div class="container text-white d-flex flex-column justify-content-around align-items-start">
                         <div class="stars">
                             <i class="fa-solid fa-star mx-1"></i>
@@ -250,7 +250,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="customer-feedback h-100 w-100 p-5">
+                <div class="customer-feedback h-100 w-100 p-5" data-aos="fade-left">
                     <div class="container text-white d-flex flex-column justify-content-around align-items-start">
                         <div class="stars">
                             <i class="fa-solid fa-star mx-1"></i>

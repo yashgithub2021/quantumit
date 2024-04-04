@@ -6,8 +6,8 @@ footer {
     font-family: 'Plus Jakarta Sans';
 }
 
-* {
-    margin: 5px;
+footer * {
+    margin: 4px;
 }
 
 button {

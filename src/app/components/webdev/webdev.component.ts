@@ -1,11 +1,18 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import AOS from 'aos';
 
 @Component({
   selector: 'app-webdev',
   templateUrl: './webdev.component.html',
   styleUrls: ['./webdev.component.css']
 })
-export class WebdevComponent {
+export class WebdevComponent implements OnInit {
+
+  ngOnInit(): void {
+    AOS.init({
+      duration: 2000,
+    })
+  }
 
   our_steps = [
     {
