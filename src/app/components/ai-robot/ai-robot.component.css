@@ -165,6 +165,14 @@
 
 @media (max-width: 575.98px) {
 
+    .frame-1 {
+        height: 85vh;
+    }
+
+    .frame-1-cont {
+        height: 100% !important;
+    }
+
     .frame-2 {
         padding-right: 0;
     }
@@ -174,7 +182,8 @@
     }
 
     .frame-1-cont,
-    p {
+    p,
+    .frame-2-head {
         width: 100% !important;
     }
 
@@ -219,6 +228,15 @@
         width: 100% !important;
     }
 
+    .desc-txt {
+        text-align: center;
+        font-size: 0.8rem !important;
+    }
+
+    .list-check {
+        font-size: 15px;
+    }
+
     .what-we-do {
         display: flex;
         align-items: center;
@@ -230,16 +248,36 @@
     }
 
     .showcase-txt {
-        font-size: 12px;
+        font-size: 10px;
+    }
+
+    .ai-showcase-inner {
+        padding: 15px;
     }
 
     .magic-btn {
-        font-size: 10px;
+        font-size: 8px;
+    }
+
+    .frame-4 {
+        height: 100vh;
+    }
+
+    .frame-5 {
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .milestone-col {
+        padding: 20px 10px;
     }
 
     .btn-lm,
     .btn {
-        font-size: 10px;
+        padding: 5px 10px;
+        font-size: 15px !important;
     }
 
     .milestone-img {

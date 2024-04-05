@@ -242,7 +242,8 @@
         width: 100% !important;
     }
 
-    .head-desc {
+    .head-desc,
+    .frame-2-head {
         width: 100% !important;
     }
 
@@ -271,6 +272,11 @@
     .txt h1 {
         font-size: 14px;
         margin-top: 15px;
+    }
+
+    .btn-lm {
+        padding: 5px 10px;
+        font-size: 15px !important;
     }
 
     .our-process-btn {
