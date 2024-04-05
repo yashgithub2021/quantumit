@@ -396,6 +396,11 @@
         width: 100%;
     }
 
+    .service-tagline {
+        font-size: 20px;
+        line-height: 35px;
+    }
+
     .miletone-number {
         font-size: 15px;
     }

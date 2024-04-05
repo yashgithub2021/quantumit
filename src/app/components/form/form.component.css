@@ -31,7 +31,7 @@ textarea {
         border: none;
         border-bottom: 3px solid #43BAFF;
         color: #43BAFF;
-        border-radius: 5px 0 0 5px;
+        border-radius: 0 0 5px 5px;
     }
 
     .option {
