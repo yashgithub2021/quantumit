@@ -1,8 +1,8 @@
 <footer class="w-100 d-flex justify-content-center">
-    <div class="container d-flex p-1 p-lg-5 flex-md-row flex-column">
+    <div class="container d-flex p-1 p-lg-5 flex-lg-row flex-column">
         <div class="container-fluid d-flex flex-column justify-content-evenly">
             <div class="quantum">
-                <div class="logo">
+                <div routerLink="/" class="logo">
                     <img height="49" width="114" src="../../../assets/logo-white 1.png" alt="">
                 </div>
                 <div class="tagline">
@@ -31,14 +31,17 @@
                 <div class="container pages-container d-flex justify-content-evenly">
                     <div class="d-flex flex-column justify-content-between" *ngFor="let page of pageLabels">
                         <div class="heading">
-                            <h5 class="text-white fw-bold">{{page.heading}}</h5>
+                            <h5 class="text-white fw-bold">
+                                {{page.heading}}</h5>
                         </div>
                         <div class="pages">
-                            <p class="text-secondary mb-4" *ngFor="let page of page.pages">{{page.label}}</p>
+                            <p style="cursor:pointer" class="text-secondary mb-4" [routerLink]="page.link"
+                                (click)="scrollToTop()" *ngFor="let page of page.pages">
+                                {{page.label}}</p>
                         </div>
                     </div>
                 </div>
-                <div class="container social-links-container d-flex">
+                <div class="container social-links-container d-flex justify-content-center">
                     <div style="background-color: #F85895;" class="social-icon text-white si-one">
                         <div class="follow container align-content-end py-2 w-100 h-100">
                             <span class="fw-lighter follow-us">Follow Us On</span>

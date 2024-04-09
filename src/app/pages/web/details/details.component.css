@@ -1,0 +1,36 @@
+* {
+    font-family: 'Plus Jakarta Sans';
+}
+
+.container {
+    margin: 20px 0;
+}
+
+.our-service-btn {
+    padding: 7px 15px 7px 15px;
+    gap: 0px;
+    border-radius: 32px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    border: 1px solid #0099FF;
+    box-shadow: 0px -7px 11px 0px #A48FFF1F inset;
+    background: linear-gradient(91.58deg, #43BAFF 0.52%, #7044B3 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    backdrop-filter: blur(2px);
+}
+
+.desc-txt {
+    font-size: 20px;
+    line-height: 25.2px;
+}
+
+.list-check {
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+.project-img {
+    height: 400px;
+    object-fit: cover;
+}

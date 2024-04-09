@@ -1,0 +1,208 @@
+* {
+    font-family: 'Plus Jakarta Sans';
+}
+
+.linear-text {
+    background: linear-gradient(91.58deg, #43BAFF 0.52%, #7044B3 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.our-process-btn {
+    padding: 7px 15px 7px 15px;
+    gap: 0px;
+    border-radius: 32px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    border: 1px solid #0099FF;
+    box-shadow: 0px -7px 11px 0px #A48FFF1F inset;
+    background: linear-gradient(91.58deg, #43BAFF 0.52%, #7044B3 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    backdrop-filter: blur(2px);
+
+}
+
+.ai-data {
+    background: #111111;
+    box-sizing: border-box;
+    height: 300px;
+    border: 1px solid #FFFFFF0F;
+    box-shadow: 0px 17px 25px 0px #07496F05;
+}
+
+.image-container {
+    position: absolute;
+    top: 0px;
+    right: 10px;
+}
+
+
+.steps-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.circles {
+    width: 80%;
+}
+
+.step-circle {
+    width: 40px;
+    height: 40px;
+    background: #000000;
+    border: 1px solid #7EA6BE;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.step-square {
+    width: 70px;
+    height: 60px;
+    background: linear-gradient(91.58deg, #43BAFF 0.52%, #7044B3 100%);
+    position: relative;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* Position for vertical line */
+}
+
+.step-square::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    /* Position the vertical line below the square */
+    left: 50%;
+    /* Position the vertical line in the middle of the square */
+    transform: translateX(-50%);
+    /* Center the vertical line horizontally */
+    height: 100%;
+    width: 1px;
+    /* Width of the vertical line */
+    background-color: #fff;
+    /* Color of the vertical line */
+}
+
+.step-text {
+    color: #fff;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.step-dashed-line {
+    flex-grow: 1;
+    height: 1px;
+    background-image: linear-gradient(to right, #fff 50%, transparent 50%);
+    background-size: 10px 1px;
+    background-repeat: repeat-x;
+    /* margin-top: 20px; */
+}
+
+.step-line {
+    flex-grow: 1;
+    height: 1px;
+    background-color: #fff;
+    background-size: 10px 1px;
+    background-repeat: repeat-x;
+    /* margin-top: 20px; */
+}
+
+.our-marketing-btn {
+    width: Hug (352px)px;
+    height: Hug (66px)px;
+    top: 524.35px;
+    left: 544px;
+    padding: 20px 40px 20px 40px;
+    gap: 20px;
+    border-radius: 50px 50px 0px 0px;
+    opacity: 0px;
+    background: #111111;
+    border: #000000;
+}
+
+
+.process-square {
+    width: 70px;
+    height: 60px;
+    background: linear-gradient(91.58deg, #43BAFF 0.52%, #7044B3 100%);
+    position: relative;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* Position for vertical line */
+}
+
+.process-square::after {
+    content: '';
+    position: absolute;
+
+    /* Width of the vertical line */
+    background-color: #fff;
+    /* Color of the vertical line */
+}
+
+.process {
+    border-bottom: 1px solid #5E5A5A6E;
+    padding: 10px 0;
+}
+
+.stack {
+    width: Hug (221.67px)px;
+    height: Hug (88px)px;
+    padding: 30px 40px;
+    gap: 10px;
+    border-radius: 10px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    background: #111111;
+    border: 1px solid #5E5A5A6E
+}
+
+@media (max-width: 1024px) {
+
+    p {
+        text-align: center;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 575.98px) {
+
+    .txt {
+        width: 100% !important;
+    }
+
+    .frame-2-head,
+    .text {
+        width: 100% !important;
+    }
+
+
+    .step-title p {
+        font-size: 10px !important;
+        width: 75% !important;
+    }
+
+    .step-title .fs-6 {
+        font-size: 7px !important;
+    }
+
+    .circles {
+        width: 100% !important;
+    }
+
+    .step-title {
+        width: 100% !important;
+    }
+}

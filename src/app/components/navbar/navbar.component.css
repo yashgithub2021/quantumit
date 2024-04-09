@@ -8,6 +8,10 @@ nav {
     border-radius: 8px;
 }
 
+li {
+    margin: 0 5px;
+}
+
 @media (max-width: 575.98px) {
     nav {
         width: 100%;

@@ -76,16 +76,20 @@ button {
         font-size: 15px;
     }
 
+
+}
+
+@media (max-width: 992px) {
+    .social-icon {
+        height: 80px;
+        width: 100px;
+    }
+
     .social-platform {
         font-size: 12px;
     }
 
     .follow>span {
         font-size: 8px;
-    }
-
-    .social-icon {
-        height: 80px;
-        width: 100px;
     }
 }

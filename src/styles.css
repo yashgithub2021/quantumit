@@ -7,6 +7,22 @@ body {
     /* background-image: url(./assets/bg.png); */
 }
 
+/* Hide scrollbar */
+::-webkit-scrollbar {
+    width: 0;
+    /* Remove scrollbar width */
+    height: 0;
+    /* Remove scrollbar height */
+    background: transparent;
+    /* Set background to transparent */
+}
+
+/* Optional: Prevent corner from displaying */
+::-webkit-scrollbar-corner {
+    display: none;
+}
+
+
 :root {
     --custom: #8C8C8C;
     --bs-table-bg: #000000 !important;

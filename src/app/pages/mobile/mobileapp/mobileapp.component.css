@@ -62,7 +62,7 @@
 .frame-3 {
     height: 150vh;
     background-size: contain;
-    background-image: url("../../../assets/backgroungimages/mobile-app.svg");
+    background-image: url("../../../../assets/backgroungimages/mobile-app.svg");
     background-repeat: no-repeat;
 }
 
@@ -132,7 +132,7 @@
     }
 
     .txt {
-        width: 100%;
+        width: 100% !important;
         text-align: center;
     }
 
@@ -142,10 +142,6 @@
 
     .heading-frame-2 {
         width: 100%;
-    }
-
-    .frame-3 {
-        height: 35vh;
     }
 
     .numbers-section {
@@ -182,5 +178,12 @@
         justify-content: center;
         align-items: center;
         height: 50% !important;
+    }
+}
+
+@media (max-width: 992px) {
+
+    .frame-3 {
+        height: 35vh;
     }
 }

@@ -7,6 +7,12 @@ import { Component } from '@angular/core';
 })
 export class FooterComponent {
 
+  scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  facebook = "www.facebook.com/quantumitinnovationindia"
+
   contacts = [
     {
       icon: 'fa-phone-volume',
@@ -40,7 +46,7 @@ export class FooterComponent {
         },
         {
           label: 'Blog',
-          link: ''
+          link: 'blog'
         },
 
         {

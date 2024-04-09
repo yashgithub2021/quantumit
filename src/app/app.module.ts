@@ -6,11 +6,10 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomeComponent } from './components/home/home.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { WebdevComponent } from './components/webdev/webdev.component';
+import { WebdevComponent } from './pages/web/webdev/webdev.component';
 import { AiRobotComponent } from './components/ai-robot/ai-robot.component';
-import { MobileappComponent } from './components/mobileapp/mobileapp.component';
-import { DigitalMarketingComponent } from './components/digital-marketing/digital-marketing.component';
 import { FormComponent } from './components/form/form.component';
+import { SharedModule } from './shared/shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -20,14 +19,12 @@ import { FormComponent } from './components/form/form.component';
     FooterComponent,
     WebdevComponent,
     AiRobotComponent,
-    MobileappComponent,
-    DigitalMarketingComponent,
-    FormComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]
