@@ -20,6 +20,9 @@ const routes: Routes = [
   {
     path: 'digital-marketing', loadChildren: () => import('./pages/digitalmarketing/digitalmarketing.module').then(m => m.DigitalmarketingModule)
   },
+  {
+    path: 'company', loadChildren: () => import('./pages/company/company.module').then(m => m.CompanyModule)
+  },
   { path: 'form', component: FormComponent },
 ];
 
