@@ -23,6 +23,9 @@ const routes: Routes = [
   {
     path: 'company', loadChildren: () => import('./pages/company/company.module').then(m => m.CompanyModule)
   },
+  {
+    path: 'portfolio', loadChildren: () => import('./pages/portfolio/portfolio.module').then(m => m.PortfolioModule)
+  },
   { path: 'form', component: FormComponent },
 ];
 

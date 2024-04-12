@@ -1,0 +1,56 @@
+* {
+    font-family: 'Plus Jakarta Sans';
+}
+
+.numbers-section {
+    padding: 50px 50px;
+    background: linear-gradient(90deg, #43BAFF 0%, #7141B1 100%);
+}
+
+.our-service-btn {
+    padding: 7px 15px 7px 15px;
+    gap: 0px;
+    border-radius: 32px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    border: 1px solid #0099FF;
+    box-shadow: 0px -7px 11px 0px #A48FFF1F inset;
+    background: linear-gradient(91.58deg, #43BAFF 0.52%, #7044B3 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    backdrop-filter: blur(2px);
+}
+
+.service-tagline {
+    font-size: 42px;
+    line-height: 50px;
+}
+
+.category-selected {
+    width: Hug (126px)px;
+    height: Hug (59px)px;
+    padding: 20px 35px 21px 35px;
+    gap: 10px;
+    border-radius: 236.53px;
+    opacity: 0px;
+    color: white;
+    background: linear-gradient(91.58deg, #43BAFF 0.52%, #7044B3 100%);
+}
+
+.category-btn {
+    width: Hug (152px)px;
+    height: Hug (59px)px;
+    padding: 20px 35px 21px 35px;
+    gap: 10px;
+    border-radius: 236.53px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    color: white;
+    background: #111111;
+    border: 1px solid #FFFFFF
+}
+
+.app {
+    background: #111111;
+
+}
