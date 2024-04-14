@@ -1,0 +1,99 @@
+* {
+    font-family: 'Plus Jakarta Sans';
+}
+
+
+.our-process-btn {
+    padding: 7px 15px 7px 15px;
+    gap: 0px;
+    border-radius: 32px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    border: 1px solid #0099FF;
+    box-shadow: 0px -7px 11px 0px #A48FFF1F inset;
+    background: linear-gradient(91.58deg, #43BAFF 0.52%, #7044B3 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    backdrop-filter: blur(2px);
+}
+
+.our-result-btn {
+    padding: 7px 15px 7px 15px;
+    gap: 0px;
+    border-radius: 32px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    border: 1px solid white;
+    box-shadow: 0px -7px 11px 0px #A48FFF1F inset;
+    background: linear-gradient(white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    backdrop-filter: blur(2px);
+}
+
+.linear-text {
+    background: linear-gradient(91.58deg, #43BAFF 0.52%, #7044B3 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.slider {
+    height: 100px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 90%;
+    /* Adjust this width as needed */
+    max-width: 1200px;
+    /* Optional: Set a maximum width for larger screens */
+}
+
+.slider .slide-track {
+    animation: scroll 40s linear infinite;
+    display: flex;
+    width: calc(250px * 14);
+}
+
+.slider .slide {
+    height: 100px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.slide h5 {
+    background: #111111;
+    box-shadow: 0px 13px 12px 0px #B5B8C808;
+    padding: 10px 30px;
+    border-radius: 5px;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translate(calc(-250px * 7));
+    }
+}
+
+.numbers {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.numbers-section {
+    padding: 40px 40px;
+    background: linear-gradient(90deg, #43BAFF 0%, #7141B1 100%);
+}
+
+.miletone-number {
+    font-size: 50px;
+}
+
+.miletone-title {
+    font-size: 20px;
+}

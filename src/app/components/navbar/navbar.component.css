@@ -3,13 +3,46 @@ nav {
 }
 
 .menu-item-1814 {
-    background: #141414;
-    border: 1px solid #262626;
+    /* background: #141414; */
+    /* border: 1px solid #262626; */
     border-radius: 8px;
 }
 
 li {
     margin: 0 5px;
+}
+
+.dropdown-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.dropdown-menu {
+    display: flex !important;
+    background: #111111;
+}
+
+@media (max-width: 992px) {
+    .dropdown-menu {
+        flex-direction: column;
+        max-height: 60vh;
+        overflow-y: scroll;
+        background: #1A1A1A;
+    }
+
+    .navbar-toggler:focus,
+    .navbar-toggler:active {
+        outline: none !important;
+        box-shadow: none !important;
+        border: none !important;
+    }
+
+    .dropdown-menu li:first-child a {
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #516beb;
+    }
+
 }
 
 @media (max-width: 575.98px) {
