@@ -184,6 +184,10 @@
     padding: 5px 10px;
 }
 
+.view-more {
+    cursor: pointer;
+}
+
 .app-button-one {
     background: #7177FF;
 
