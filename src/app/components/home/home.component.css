@@ -222,7 +222,7 @@
 
 .section5,
 .section6 {
-    height: 100vh;
+    height: auto;
     width: 100%;
     position: relative;
 }
@@ -328,20 +328,20 @@
 }
 
 
-.our-customers::before {
+/* .our-customers::before {
     content: "";
     height: 70%;
     width: 90%;
-    background-image: url("https://s3-alpha-sig.figma.com/img/0723/f1c6/eab338427dfbb04b8189e5380d178c16?Expires=1712534400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=M9Ke4gNBezr62flURi4Aiifvso0WUCM6BOowgvZgocMc3tSXPrz8x3cK1npcWoNki5Js5jXR6qYN~e3YRoMX61nz2PwT8Hcc59YxnwfH8ufOvJMDWkdid0eRoFXvirzFsr7xFsnZ1ttiRKptjKfjDXmXoNh7K4bEgQ8pPYS-vdtVNckG6g2ckq89Pe5t-RRcrY1lDafjo2nWvZYRvEmKKrgFNxtOQ0X6P-pHhKA0tR8Zm26VTaj1BnJydwDyGWMC9PbO9fW9XSnijIAlTtq9bdEWN~VVXNoECTwu0TqjkS0ZcW9J4WEpGW~X~~sXHX4jJee-GoaNMIdJvDXBXKH3VQ__");
+    background-image: url("https://s3-alpha-sig.figma.com/img/0723/f1c6/eab338427dfbb04b8189e5380d178c16?Expires=1714348800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=UkliH1z9Pqs5UhvsBtoIvmexrEs6UOMNmu4OTTl-DAOLtTYyC7iDvAu3LK0MdZam4viT-3-F8uHLv5p9iwXFBacb17~hYy2KS5fqMZPjW9X85RIriFPOaZCLFadybypZ~qR9zvmhObRvccHJHt5CpjK3tTzG4jGtwi03Z3Gfaxc-P2tZH3RdvkPLM7fCkD864UgLFOTd4MX0J0et7da8uQkdCersNW8t3jJ89Yebtaep3E7a-To0kgPqOvjBMOUPqXX5Eky7yMNba2kqze8LtGTP0LuhLtdrBsfZG8pHj10zx7bUBiCNvT7KINLJ-WhXY-iasvOZf7oauuIgPYr6CA__");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     display: block;
     position: absolute;
-}
+} */
 
 .section7 {
-    height: 50vh;
+    height: auto;
 }
 
 .learnMore>button {
@@ -369,6 +369,38 @@
 
 .feedback {
     font-size: 1.25rem;
+}
+
+@media (max-width: 1024px) {
+    .customer-feedback>.container {
+        width: 350px;
+        height: 200px;
+    }
+
+    .feedback {
+        font-size: 13px;
+    }
+
+}
+
+@media (max-width: 992px) {
+    .miletone-number {
+        font-size: 35px;
+    }
+
+    .numbers-section {
+        padding: 35px 60px;
+    }
+
+    .project-three-details {
+        height: 90%;
+    }
+
+    .project-two-details {
+        bottom: 0%;
+        height: 100%;
+    }
+
 }
 
 @media (max-width: 575.98px) {

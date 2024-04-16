@@ -78,6 +78,38 @@
     padding: 10px 0;
 }
 
+
+
+@media (max-width: 1024px) {
+    .number {
+        font-size: 75px;
+    }
+}
+
+
+@media (max-width: 992px) {
+    .what-we-do {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .row {
+        justify-content: center;
+    }
+
+    .col-12 {
+        width: auto;
+    }
+
+    .miletone-number {
+        font-size: 30px;
+    }
+
+    .miletone-title {
+        font-size: 20px;
+    }
+}
+
 @media (max-width: 575.98px) {
     .numbers-section {
         padding: 40px 20px;
@@ -97,12 +129,29 @@
         font-size: 15px;
     }
 
-    .w-75 {
+    .w-75,
+    .w-50 {
         width: 100% !important;
     }
 
     .title {
-        padding: 15px;
+        /* padding: 15px; */
+        font-size: 10px;
+    }
+
+    .miletone-number {
+        font-size: 12px;
+    }
+
+    .miletone-title {
+        font-size: 10px;
+    }
+
+    .name h4 {
+        font-size: 12px;
+    }
+
+    .name p {
         font-size: 10px;
     }
 

@@ -34,3 +34,15 @@
     height: 400px;
     object-fit: cover;
 }
+
+@media (max-width: 1024px) {
+
+    .w-50,
+    .w-75 {
+        width: 100% !important;
+    }
+
+    .desc-txt {
+        font-size: 15px;
+    }
+}

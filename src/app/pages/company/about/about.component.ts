@@ -1,11 +1,13 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { ApiService } from 'src/app/shared/api/api.service';
 
 @Component({
   selector: 'app-about',
   templateUrl: './about.component.html',
   styleUrls: ['./about.component.css']
 })
-export class AboutComponent {
+export class AboutComponent implements OnInit {
+  constructor(private api: ApiService) { }
   list2 = ["Cut additional costs", "Increase the speed of delivery", "Access expertise that is not available in-house", "Solely focus on your business objectives"]
 
   sectionFourNums = [
@@ -27,4 +29,17 @@ export class AboutComponent {
     },
 
   ]
+
+  members: any
+
+  ngOnInit(): void {
+    this.getMembers()
+  }
+
+  getMembers() {
+    this.api.getMembers().subscribe((res) => {
+      this.members = res
+      console.log(this.members.members)
+    })
+  }
 }

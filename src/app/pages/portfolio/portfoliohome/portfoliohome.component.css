@@ -54,3 +54,20 @@
     background: #111111;
 
 }
+
+@media (max-width: 575.98px) {
+
+    .numbers-section {
+        padding: 10px
+    }
+
+    .w-75,
+    .w-50 {
+        width: 100% !important;
+    }
+
+    .category-btn,
+    .category-selected {
+        padding: 15px;
+    }
+}

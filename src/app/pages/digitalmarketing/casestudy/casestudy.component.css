@@ -115,3 +115,25 @@
 .jetbrains {
     font-family: 'Mono';
 }
+
+@media (max-width: 575.98px) {
+    .w-75 {
+        width: 100% !important;
+    }
+
+    .title h3 {
+        font-size: 15px;
+    }
+
+    .numbers-section {
+        padding: 10px
+    }
+
+    .miletone-number {
+        font-size: 15px;
+    }
+
+    .miletone-title {
+        font-size: 10px;
+    }
+}

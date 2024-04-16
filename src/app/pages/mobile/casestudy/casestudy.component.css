@@ -34,3 +34,21 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+@media (max-width: 575.98px) {
+    .w-75 {
+        width: 100% !important;
+    }
+
+    .title h3 {
+        font-size: 15px;
+    }
+
+    .miletone-number {
+        font-size: 20px;
+    }
+
+    .miletone-title {
+        font-size: 12px;
+    }
+}

@@ -1,10 +1,10 @@
 <div class="contianer-fluid casestudy">
-    <div class="container frame-1 p-5 my-2">
+    <div class="container frame-1 p-lg-5 p-0 my-2">
         <div class="heading d-flex flex-column mb-lg-5 mb-lg-0 flex-lg-row justify-content-between align-items-center">
             <div class="text frame-2-head w-100 d-flex align-items-center align-items-lg-start flex-column text-white">
-                <div class="d-flex">
+                <div class="d-flex flex-column p-3 p-lg-0 flex-lg-row">
                     <div class="w-100">
-                        <div class="button">
+                        <div class="button d-flex justify-content-center d-lg-block">
                             <button class="our-process-btn">
                                 UX Case Study
                             </button>
@@ -29,7 +29,7 @@
                 </div>
                 <div class="container mt-5">
                     <div class="app-details justify-content-center d-flex">
-                        <div class="details w-75 justify-content-between text-white d-flex">
+                        <div class="details w-75 justify-content-between gap-3 gap-lg-0 text-white d-flex">
                             <div class="detail">
                                 <div class="title">
                                     <h3 class="linear-text text-align-center">
@@ -104,7 +104,7 @@
                 </div>
 
 
-                <div class="desc w-100 align-items-center">
+                <div class="desc w-100 mt-4 mt-lg-0 align-items-center">
                     <p class=" opacity-50 mb-0 text-align-center">
                         ​The main constrain was to design for an audience that has minimum reading proficiency.
 
@@ -115,16 +115,16 @@
                     </p>
                 </div>
 
-                <div class="d-flex justify-content-center align-items-center">
-                    <div class="slider">
-                        <div class="slide-track">
-                            <div class="slide" *ngFor="let img of aiService">
-                                <h5 class="text-white fw-lighter">{{img.title}}</h5>
-                            </div>
-                            <div class="slide" *ngFor="let img of aiService">
-                                <h5 class="text-white fw-lighter">{{img.title}}</h5>
-                            </div>
-                        </div>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center align-items-center">
+            <div class="slider">
+                <div class="slide-track">
+                    <div class="slide" *ngFor="let img of aiService">
+                        <h5 class="text-white fw-lighter">{{img.title}}</h5>
+                    </div>
+                    <div class="slide" *ngFor="let img of aiService">
+                        <h5 class="text-white fw-lighter">{{img.title}}</h5>
                     </div>
                 </div>
             </div>
@@ -143,7 +143,7 @@
                 </div>
 
 
-                <div class="desc w-100 align-items-center">
+                <div class="desc w-100 mt-4 mt-lg-0 align-items-center">
                     <p class=" opacity-50 text-left">
                         The 4 step delivery of the project included: User flows, wireframes, UI mockups and
                         micro-interaction design.
@@ -156,7 +156,7 @@
             </div>
         </div>
     </div>
-    <div class="container d-flex justify-content-center">
+    <div class="container mt-4 mt-lg-0 d-flex justify-content-center">
         <img class="w-75" src="../../../../assets/webdev/casestudy.svg" alt="">
     </div>
     <div class="container mt-4">
@@ -178,7 +178,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="container our-numbers w-100 mt-5">
+                <div class="container our-numbers w-100 mt-lg-5 mt-3">
                     <div class="num-sec container w-100">
                         <div class="row text-align-center justify-content-center align-content-center">
                             <div *ngFor="let nums of sectionFourNums" class="col-3 text-white">

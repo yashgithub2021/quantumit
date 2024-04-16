@@ -90,3 +90,19 @@
     border-radius: 10px;
 
 }
+
+@media (max-width: 575.98px) {
+    .num-cont {
+        padding: 10px;
+    }
+
+    .w-50,
+    .w-75 {
+        width: 100% !important;
+    }
+
+    .email p,
+    .phone p {
+        font-size: 12px;
+    }
+}

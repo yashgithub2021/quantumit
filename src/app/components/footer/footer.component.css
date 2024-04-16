@@ -93,3 +93,9 @@ button {
         font-size: 8px;
     }
 }
+
+@media (max-width: 1024px) {
+    .social-links-container {
+        flex-wrap: wrap;
+    }
+}

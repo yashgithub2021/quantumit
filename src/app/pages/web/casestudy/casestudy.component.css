@@ -42,10 +42,7 @@
     margin: auto;
     overflow: hidden;
     position: relative;
-    width: 90%;
-    /* Adjust this width as needed */
-    max-width: 1200px;
-    /* Optional: Set a maximum width for larger screens */
+    width: auto;
 }
 
 .slider .slide-track {
@@ -75,9 +72,10 @@
     }
 
     100% {
-        transform: translate(calc(-250px * 7));
+        transform: translate(calc(-250px*7));
     }
 }
+
 
 .numbers {
     height: 100%;
@@ -96,4 +94,26 @@
 
 .miletone-title {
     font-size: 20px;
+}
+
+@media (max-width: 575.98px) {
+    .w-75 {
+        width: 100% !important;
+    }
+
+    .title h3 {
+        font-size: 15px;
+    }
+
+    .numbers-section {
+        padding: 10px
+    }
+
+    .miletone-number {
+        font-size: 15px;
+    }
+
+    .miletone-title {
+        font-size: 10px;
+    }
 }

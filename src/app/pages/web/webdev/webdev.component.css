@@ -5,7 +5,6 @@
 .frame-1 {
     height: 130vh;
     padding: 0px 15rem;
-
 }
 
 .tagline {
@@ -143,7 +142,7 @@
     height: 100%;
     width: 85%;
     content: "";
-    background-image: url("https://s3-alpha-sig.figma.com/img/4dd2/c273/4c1fd1815ee7581f02d2a9e2b3ffc677?Expires=1713139200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=RxWfPdnSr3KV8SLbbE2BtpZByIMOYHoTsiGeNspNOwbAPJe523X4UhRuS9sdviWhLwR-JuyPWna850g~P1NgaKwJBiLT~5MNXpPNwW~~vdRhkMygTxEjdNjm2KX1FbNeL9rKE3SRiJ6lFlTP2rTMuB0lzKAGlQXakFSyFcDbHZ2jgptQwO0GbF63K9wpcVImeokI4yLywUjnc6D0QKNTf-TGRchrAJZfVUoznh39tBR3INUIE~uoARnS~4LAX8i2K1SZAhHvlVXYnVzpmpXews27wYsCwH7638ArsKs8XOiKtAPuDMfXHWHppxLxj4G7syiRKI76KxvO1xw9MEi8kQ__");
+    background-image: url("https://s3-alpha-sig.figma.com/img/4dd2/c273/4c1fd1815ee7581f02d2a9e2b3ffc677?Expires=1714348800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=E1FyqZwRqpz4y~7GWbqnaTmchFViWqJspegyt~nTEcwyP3dnfViyaTuLxTcSC109wzVxGPdoUxETSW9JVNsGIZ7-dzVr9WtJ4InZYfr-3BMyRbH4nj4jhpIopVRdiR6J~4OtGDvtSasn5FYMowDc1tsPb3zD7-Y0z6mCFC75E4i7PKD1X~JbKkp~Lut3UWhtsoMTbMnoeoceKUvQYCD3-bjq7BIeyFKGXXEfpJlUnocwRbPZl1eHY6nNeiizfX7SStjPevUAmFi7zHzQF1MZjjtJ~zE-B9W5R6OzdNpx9tS68IJAPqThg89UqbjFDOIi17uu4gtPf3gpbobOuxgY7A__");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -154,7 +153,7 @@
     height: 100%;
     width: 85%;
     content: "";
-    background-image: url("https://s3-alpha-sig.figma.com/img/bfe8/52d6/b50ff3e45c306b7a02428687421112bb?Expires=1713139200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=XKGJGYAYO95AR7JK7UZ2IF2KxaiVFvKUIAOp0Ijr0sZzYAN783o2ZxNL4OBDbg69gffgF2BNgJiiOHURC6PbCKmv66RXnbYBup-SnMIY1BVenh5JsQiRddYI3z6QiHv191VbuLWC3sDdytv-1sEsYNi3YVPx3lmYI4aXUKfe3~89jijr37sGK1d1yeIKm8JXXqLvj~fIDbmklDlXKzoYQoatJakC-cKXYLcSTJrse9mAeLd-QLu81PAuZKzKL5a4~4Q5mLM1~s05cZ9GSGsM41JBYBE9ST0PQPj1hxiUF9Rl00b~ZHI4J-eCFcy9nCZezqZo6etRTu5V7YtzXMKUVA__");
+    background-image: url("https://s3-alpha-sig.figma.com/img/bfe8/52d6/b50ff3e45c306b7a02428687421112bb?Expires=1714348800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=RZ00P6Jy0XRJZw3RZQ5fxa7l7MVgkFTs35lJd78WHGwOZMkAZ-ILRTwSMfcCgoX4ZCBbtXzCsD6Bc4d~5syEBvc-gvb56oc1M1BuCKTF5bZSGOiOpC700ZRNJoAYzSzolEiOSjyKepLUNI5pbodhQGp2mqwS3bi~s88yTkJKChpdIedLK2~ot3pTiYV7KMWHQZAbFj~FfijDDaYk-3AOeuRXGqKdsKUqBhjXiCigZk8GWDKohBKMy1IYxSlwNqnI0wKfkA7QkaoqpFmQgCa48Vsd3F1u7i8ZjHjwQVyKoMl4gX9kr8-EHkIsGs9B-O-aVuNAnWYoVmUu3g8-qCM0vw__");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -167,7 +166,7 @@
     height: 100%;
     width: 85%;
     content: "";
-    background-image: url("https://s3-alpha-sig.figma.com/img/e65b/fc09/7d9a1ec445caa7338009d13a1e331dd9?Expires=1713139200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=K30UDyFIAWF7KTMJAxoV-OurGj3A6zp3geV-eQsHY9sHMuVvPAlK5g47I6qTMbECxa18CTIwfqEdLvfGx4e5AlQNB0p5zpnCh3~KalPc44Zvwmd5uocJl1uI76Op57~BfflZK0h~KzrldNJCckKr3f6FDxXVi0fHyjXGls58Yh8dfPPj5YilsMgVt~A7hr96T5cv~fQXnjLhjZst3EUh-7PgprgvwKt3wrIsq0hI4a53eJs2D2OMQOwuBRvYRZ1EEDP-KU23aQ7ooNlUn4uN-p40IvaiYhumRFIgMTXF9D2wgu0takWEI24U1YZtINN8EIAV7Yk2JgSGkM4UU3-I6A__");
+    background-image: url("https://s3-alpha-sig.figma.com/img/e65b/fc09/7d9a1ec445caa7338009d13a1e331dd9?Expires=1714348800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=JUi0BcWHXnsarK6KwdZ5x2iI3v5dqa65YItq9o7RS-m11uRgJNVl26T8BRLZpP6dvYw2x0jUnUrFcIHnG9QIhEdw0lfiJWe72mmiIv90k2EQiew4zvSENqK9HA3MV2qY7wxfQOmriQAq~YL4McLWWRy5-hi-iETrgd-Bj3cCLMy2WLo8YGxzvHSzZ0VhMkI-HXLexOU34vtf1CycrGybnXz-4ibfvgefvXGETgXGdXfnh7DQHAdH9ahuSwH2VlsH9yuvoVe01kAA~Al7cRvqo-IkCSLU-Hu7XXYYDq2bQmJxZ1grf3JXe1nfC8Bmqo7dXIfQyqCW5zcMJX~U4SlIlA__");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -261,4 +260,50 @@
     .app-image {
         height: 50% !important;
     }
+}
+
+@media (max-width: 1024px) {
+    .frame-1 {
+        height: 70vh;
+        padding: 0px 5rem;
+    }
+
+    .step-desc {
+        padding: 20px;
+    }
+
+    .frame-3 {
+        height: auto;
+    }
+
+    .project {
+        height: 35vh;
+    }
+
+    .project-img-container {
+        height: auto !important;
+    }
+
+    .app-details-container {
+        width: 75% !important;
+    }
+}
+
+@media (max-width: 992px) {
+
+    .project-one::before,
+    .project-two::before,
+    .project-three::before {
+        background-image: none;
+    }
+
+    .project {
+        height: 60vh;
+        margin: 45px 0px;
+    }
+
+    .project-container {
+        height: 100% !important;
+    }
+
 }

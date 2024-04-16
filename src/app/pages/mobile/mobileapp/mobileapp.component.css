@@ -60,9 +60,9 @@
 }
 
 .frame-3 {
-    height: 150vh;
+    height: auto;
     background-size: contain;
-    background-image: url("../../../../assets/backgroungimages/mobile-app.svg");
+    /* background-image: url("../../../../assets/backgroungimages/mobile-app.svg"); */
     background-repeat: no-repeat;
 }
 
@@ -114,6 +114,62 @@
     color: #43BAFF;
 }
 
+@media (max-width: 1024px) {
+    .mobile-app {
+        height: auto;
+    }
+
+    .ai-data,
+    .frame-2 .container {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+
+    .numbers-section {
+        padding: 40px 50px;
+    }
+
+    .project {
+        height: 35vh;
+    }
+
+    .app-details {
+        height: auto !important;
+    }
+
+    .app-details-container {
+        height: 100% !important;
+    }
+}
+
+@media (max-width: 992px) {
+
+    .frame-3 {
+        height: 35vh;
+    }
+
+    .w-75 {
+        width: 100% !important;
+    }
+
+    .numbers-section {
+        padding: 15px 50px;
+    }
+
+    .project {
+        height: 60vh;
+    }
+
+    .project-container {
+        height: 100% !important;
+    }
+
+    .app-details {
+        height: 100% !important;
+    }
+
+}
+
 @media (max-width: 575.98px) {
 
     .mobile-app {
@@ -148,6 +204,10 @@
         padding: 20px;
     }
 
+    .btn-lm {
+        font-size: 12px;
+    }
+
     .miletone-number {
         font-size: 15px !important;
     }
@@ -168,6 +228,10 @@
         width: 95% !important;
     }
 
+    .project-container {
+        height: 100% !important;
+    }
+
     .project-img-container {
         height: 80% !important;
         width: 70% !important;
@@ -178,12 +242,5 @@
         justify-content: center;
         align-items: center;
         height: 50% !important;
-    }
-}
-
-@media (max-width: 992px) {
-
-    .frame-3 {
-        height: 35vh;
     }
 }

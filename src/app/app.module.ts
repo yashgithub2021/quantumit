@@ -10,7 +10,7 @@ import { WebdevComponent } from './pages/web/webdev/webdev.component';
 import { AiRobotComponent } from './components/ai-robot/ai-robot.component';
 import { FormComponent } from './components/form/form.component';
 import { SharedModule } from './shared/shared/shared.module';
-
+import { HttpClientModule } from '@angular/common/http'
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +24,9 @@ import { SharedModule } from './shared/shared/shared.module';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    SharedModule
+    SharedModule,
+    HttpClientModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

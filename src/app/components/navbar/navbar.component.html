@@ -1,7 +1,7 @@
-<nav id="pr-nav" class="primary-menu navbar navbar-expand-lg navbar-dark nav-white-desktop" id="navbarColor01">
+<nav id="pr-nav" class=" navbar navbar-expand-lg navbar-dark nav-white-desktop" id="navbarColor01">
     <div class="container-fluid primary-menu-inner px-0">
         <div class="top-wrap">
-            <a routerLink="/" class="custom-logo-link navbar-brand">
+            <a routerLink="/" class="custom-logo-link navbar-brand m-0 m-lg-auto">
                 <img height="49" width="114" src="../../../assets/logo-white 1.png">
             </a>
             <button class="navbar-toggler border-0" type="button" data-toggle="collapse"
@@ -12,52 +12,65 @@
         </div>
         <div class="collapse navbar-collapse justify-content-start justify-content-lg-end" id="navbarSupportedContent">
             <ul class="navbar-nav pl-3">
-                <li
-                    class="menu-item-1814 menu-item menu-item-type-post_type menu-item-object-page menu-item-1553 nav-item">
-                    <a class="nav-link border-0" routerLink="/"><span>Home</span></a>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1553 nav-item">
+                    <a class="nav-link border-0" routerLink="/" (click)="closeNavbar()"><span>Home</span></a>
                 </li>
                 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1553 nav-item">
-                    <a class="nav-link border-0" routerLink="company/about"><span>About us</span></a>
+                    <a class="nav-link border-0" routerLink="company/about" (click)="closeNavbar()"><span>About
+                            us</span></a>
                 </li>
                 <li id="menu-item-1949"
                     class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown menu-item-1949 nav-item">
-                    <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-                        class="dropdown-toggle nav-link border-0 " id="menu-item-dropdown-1949">
+                    <a data-toggle="dropdown" aria-expanded="false" class="dropdown-toggle nav-link border-0 "
+                        id="menu-item-dropdown-1949">
                         <span>Service</span>
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <ul>
-                            <li><a class="dropdown-item border-0" routerLink="mobileapp">Mobile App Development</a></li>
-                            <li><a class="dropdown-item border-0" routerLink="mobileapp/details">Android App
+                            <li><a class="dropdown-item border-0" routerLink="mobileapp" (click)="closeNavbar()">Mobile
+                                    App Development</a></li>
+                            <li><a class="dropdown-item border-0" routerLink="mobileapp/details"
+                                    (click)="closeNavbar()">Android App Development</a></li>
+                            <li><a class="dropdown-item border-0" routerLink="mobileapp/details"
+                                    (click)="closeNavbar()">iOS App Development</a></li>
+                            <li><a class="dropdown-item border-0" routerLink="mobileapp/casestudy"
+                                    (click)="closeNavbar()">Case Study</a></li>
+                        </ul>
+                        <ul>
+                            <li><a class="dropdown-item border-0" routerLink="webdev" (click)="closeNavbar()">Web App
                                     Development</a></li>
-                            <li><a class="dropdown-item border-0" routerLink="mobileapp/details">iOS App Development</a>
-                            </li>
-                            <li><a class="dropdown-item border-0" routerLink="mobileapp/casestudy">Case Study</a></li>
+                            <li><a class="dropdown-item border-0" routerLink="webdev/details"
+                                    (click)="closeNavbar()">PHP Development</a></li>
+                            <li><a class="dropdown-item border-0" routerLink="webdev/details"
+                                    (click)="closeNavbar()">.Net Development</a></li>
+                            <li><a class="dropdown-item border-0" routerLink="webdev/details"
+                                    (click)="closeNavbar()">Node.js Development</a></li>
+                            <li><a class="dropdown-item border-0" routerLink="webdev/casestudy"
+                                    (click)="closeNavbar()">Case Study</a></li>
                         </ul>
                         <ul>
-                            <li><a class="dropdown-item border-0" routerLink="webdev">Web App Development</a></li>
-                            <li><a class="dropdown-item border-0" routerLink="webdev/details">PHP Development</a></li>
-                            <li><a class="dropdown-item border-0" routerLink="webdev/details">.Net Development</a></li>
-                            <li><a class="dropdown-item border-0" routerLink="webdev/details">Node.js Development</a>
-                            </li>
-                            <li><a class="dropdown-item border-0" routerLink="webdev/casestudy">Case Study</a></li>
+                            <li><a class="dropdown-item border-0" routerLink="digital-marketing"
+                                    (click)="closeNavbar()">Digital Marketing</a></li>
+                            <li><a class="dropdown-item border-0" routerLink="digital-marketing/services"
+                                    (click)="closeNavbar()">SEO</a></li>
+                            <li><a class="dropdown-item border-0" routerLink="digital-marketing/services"
+                                    (click)="closeNavbar()">Pay Per Click</a></li>
+                            <li><a class="dropdown-item border-0" routerLink="digital-marketing/casestudy"
+                                    (click)="closeNavbar()">Case Study</a></li>
                         </ul>
                         <ul>
-                            <li><a class="dropdown-item border-0" routerLink="digital-marketing">Digital Marketing</a>
-                            </li>
-                            <li><a class="dropdown-item border-0" routerLink="digital-marketing/services">SEO</a></li>
-                            <li><a class="dropdown-item border-0" routerLink="digital-marketing/services">Pay Per
-                                    Click</a></li>
-                            <li><a class="dropdown-item border-0" routerLink="digital-marketing/casestudy">Case
-                                    Study</a></li>
+                            <li><a class="dropdown-item border-0" routerLink="digital-marketing"
+                                    (click)="closeNavbar()">Artificial Intelligence (AI)</a></li>
                         </ul>
                     </div>
                 </li>
                 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1675 nav-item">
-                    <a class="nav-link border-0" routerLink="portfolio"><span>Portfolio</span></a>
+                    <a class="nav-link border-0" routerLink="portfolio"
+                        (click)="closeNavbar()"><span>Portfolio</span></a>
                 </li>
                 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1675 nav-item">
-                    <a class="nav-link border-0" routerLink="company/contact"><span>Contact</span></a>
+                    <a class="nav-link border-0" routerLink="company/contact"
+                        (click)="closeNavbar()"><span>Contact</span></a>
                 </li>
             </ul>
         </div>
