@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ElementRef } from '@angular/core';
 import AOS from 'aos';
 
 @Component({
@@ -7,6 +7,9 @@ import AOS from 'aos';
   styleUrls: ['./ai-robot.component.css']
 })
 export class AiRobotComponent implements OnInit {
+
+  constructor(private elementRef: ElementRef) { }
+
 
   ngOnInit(): void {
     AOS.init({
@@ -66,4 +69,12 @@ export class AiRobotComponent implements OnInit {
       title: "Team Members"
     },
   ]
+
+
+  scrollToForm() {
+    const footer = this.elementRef.nativeElement.querySelector('#form');
+    if (footer) {
+      footer.scrollIntoView({ behavior: 'smooth', block: 'end' });
+    }
+  }
 }

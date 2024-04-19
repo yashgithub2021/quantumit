@@ -1,0 +1,27 @@
+.alert-warning {
+    --bs-alert-color: white;
+    --bs-alert-bg: black;
+    --bs-alert-border-color: black;
+    --bs-alert-link-color: var(--bs-warning-text-emphasis);
+}
+
+.btn-close {
+    --bs-btn-close-bg: url("../assets/banner-close.svg");
+    opacity: 100%;
+}
+
+.alert-dismissible .btn-close {
+    font-size: 30px;
+    padding: 13px;
+}
+
+.btn-close:focus,
+.btn-close::active {
+    outline: none !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+span {
+    cursor: pointer;
+}

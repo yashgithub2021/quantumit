@@ -12,7 +12,7 @@
                             </div>
                             <div class="miletone-title fw-light">
                                 <p>Welcome to quantum, where collaboration, expertise, and client-centricity intersect
-                                    to shape the future of digital innovation.</p>
+                                    to <br>shape the future of digital innovation.</p>
                             </div>
                         </div>
                     </div>
@@ -25,24 +25,26 @@
                 <div class="cards d-flex flex-column flex-lg-row">
                     <div class="card py-4 m-3 w-100">
                         <div class="card-body">
-                            <h2 class="card-title linear-text">Popular</h2>
+                            <h4 class="card-title linear-text d-inline-block">Popular</h4>
                         </div>
-                        <div class="card-body">
+                        <div class="card-body popular">
                             <div class="container d-flex justify-content-between">
                                 <div class="text">
-                                    <h4 class="fw-light text-white w-75">Effective Business Branding Solutions</h4>
-                                    <span>15 Videos</span>
+                                    <h4 class="fw-light text-white w-75 text-capitalize">Effective Business Branding
+                                        Solutions</h4>
+                                    <span class=" opacity-50 text-white days">15 Videos</span>
                                 </div>
                                 <div class="arrow">
                                     <i routerLink="inner-blog" class="fa fa-solid fa-arrow-right"></i>
                                 </div>
                             </div>
                         </div>
-                        <div class="card-body ">
+                        <div class="card-body popular">
                             <div class="container d-flex justify-content-between">
                                 <div class="text">
-                                    <h4 class="fw-light text-white w-75">17 best mobile apps KPI’s to know</h4>
-                                    <span>15 Videos</span>
+                                    <h4 class="fw-light text-white w-75 text-capitalize">17 best mobile apps KPI’s to
+                                        know</h4>
+                                    <span class=" opacity-50 text-white days">15 Videos</span>
                                 </div>
                                 <div class="arrow">
                                     <i class="fa fa-solid fa-arrow-right"></i>
@@ -52,8 +54,8 @@
                         <div class="card-body">
                             <div class="container d-flex justify-content-between">
                                 <div class="text">
-                                    <h4 class="fw-light text-white w-75">Top 14 real estate apps</h4>
-                                    <span>15 Videos</span>
+                                    <h4 class="fw-light text-white w-75 text-capitalize">Top 14 real estate apps</h4>
+                                    <span class=" opacity-50 text-white days">15 Videos</span>
                                 </div>
                                 <div class="arrow">
                                     <i class="fa fa-solid fa-arrow-right"></i>
@@ -67,18 +69,17 @@
                             class="card-img-top" alt="...">
                         <div class="card-body px-3">
                             <div class="container">
-                                <h5 class="card-title text-white fw-lighter">Fruit - <span>5 mins read</span></h5>
+                                <h5 class="card-title text-white fw-lighter">{{blogs[0].categories[0]}} - <span
+                                        class="days opacity-50">5
+                                        mins read</span></h5>
                             </div>
                         </div>
                         <div class="card-body px-3">
                             <div class="container d-flex">
                                 <div class="text">
-                                    <h5 class="fw-light text-white">A Complete Guide on Robotic Process Automation(RPA)
+                                    <h5 class="fw-light text-white">{{blogs[0].blogTitle}}
                                     </h5>
-                                    <p style="color: #FFFFFF; opacity:70%">Using the profit accumulator is one such way,
-                                        and you
-                                        should understand why it
-                                        increases your chances of the profits. …</p>
+                                    <p style="color: #FFFFFF; opacity:70%">{{blogs[0].blogDataBrief}} …</p>
                                 </div>
                             </div>
                         </div>
@@ -94,7 +95,7 @@
                                     </div>
                                 </div>
                                 <div style="opacity: 50%;" class="time">
-                                    <p>2 Days Ago</p>
+                                    <p class="days mb-0">2 Days Ago</p>
                                 </div>
                             </div>
                         </div>
@@ -105,19 +106,18 @@
                             class="card-img-top" alt="...">
                         <div class="card-body px-3">
                             <div class="container">
-                                <h5 class="card-title text-white fw-lighter">Fruit - <span>5 mins read</span></h5>
+                                <h5 class="card-title text-white fw-lighter">{{blogs[1].categories[1]}} - <span
+                                        class="days opacity-50">5
+                                        mins read</span></h5>
                             </div>
                         </div>
                         <div class="card-body px-3">
                             <div class="container d-flex justify-content-between">
                                 <div class="text">
-                                    <h5 class="fw-light text-white">7 Local Online Marketing Tips to Help You Get
-                                        Started
+                                    <h5 class="fw-light text-white">
+                                        {{blogs[1].blogTitle}}
                                     </h5>
-                                    <p style="color: #FFFFFF; opacity:70%">Using the profit accumulator is one such way,
-                                        and you
-                                        should understand why it
-                                        increases your chances of the profits. …</p>
+                                    <p style="color: #FFFFFF; opacity:70%">{{blogs[1].blogDataBrief}} …</p>
                                 </div>
                             </div>
                         </div>
@@ -133,7 +133,7 @@
                                     </div>
                                 </div>
                                 <div style="opacity: 50%;" class="time">
-                                    <p>2 Days Ago</p>
+                                    <p class="days mb-0">2 Days Ago</p>
                                 </div>
                             </div>
                         </div>
@@ -148,7 +148,7 @@
                 <div class="contributors w-auto flex-lg-grow-0 flex mx-2">
                     <div style="width: 20rem;" class="card py-4">
                         <div class="card-body">
-                            <h2 class="card-title linear-text">Top Contributors</h2>
+                            <h5 class="card-title fw-bold linear-text">Top Contributors</h5>
                         </div>
                         <div class="card-body d-flex flex-column justify-content-between">
                             <div class="profile my-3 d-flex align-items-center text-white">
@@ -227,3 +227,5 @@
         </div>
     </div>
 </div>
+
+<app-form></app-form>

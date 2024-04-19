@@ -11,6 +11,7 @@
     background: linear-gradient(91.58deg, #43BAFF 0.52%, #7044B3 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+
 }
 
 .card {
@@ -27,6 +28,36 @@
     display: flex;
     opacity: 30%;
     background-image: url("https://s3-alpha-sig.figma.com/img/61f3/30ba/fd80d81588626bf27ddc4e69bb278d15?Expires=1713744000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=hOzP10wN41mccJOGYzRCwy~uCbUUL60-t7fO65oXDHK7IdY5YrO3d2QwUxHxAGA48w6fwMoRV9NJRsBxSdOwdnCsV0V92N~Km7j5krrf24S9XW2qg0QNMy16kpqFTQOGlN6P2gy3FU8NIit2aLGhRcskDPINSbsLuNsVIhUBz~68qfIPDJ2cCaRaa3M8csUTFVYnZGEbtpBD9EQckLxGPDi2-GT4s~pN2JFuJcIOeiv75gUcBi9i-qkchmfYwvuD6805HP1K1CLI-PUhWcM3DIsQ6wZvoqtE3zVxcT1DkYxJs8davv1TrUDDCNGOlOaO1hn1ePLq6LZ8vt8YluTDAw__")
+}
+
+.days {
+    font-size: 12px;
+}
+
+.card-footer {
+    border-top: 1px solid;
+}
+
+.popular {
+    position: relative;
+}
+
+.popular::after {
+    content: '';
+    /* Required for pseudo-elements */
+    position: absolute;
+    /* Position relative to the container */
+    bottom: 10%;
+    /* Align at the bottom */
+    left: 10%;
+    /* Adjust as needed, this is the starting point */
+    width: 80%;
+    /* Adjust as needed, this is the width of the border */
+    height: 1px;
+    /* Height of the border */
+    background-color: white;
+    /* Color of the border */
+    opacity: 10%;
 }
 
 @media (max-width: 575.98px) {

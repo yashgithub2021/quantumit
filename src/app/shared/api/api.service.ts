@@ -11,4 +11,16 @@ export class ApiService {
   getMembers() {
     return this.http.get(`${this.baseUrl}api/team/team`)
   }
+
+  getReviews() {
+    return this.http.get(`${this.baseUrl}api/reviews/review`)
+  }
+
+  getBlogs() {
+    return this.http.get(`${this.baseUrl}api/blogs/blog`)
+  }
+
+  getProjects() {
+    return this.http.get(`${this.baseUrl}api/projects/project`)
+  }
 }

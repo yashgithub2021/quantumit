@@ -2,6 +2,18 @@
     font-family: 'Plus Jakarta Sans';
 }
 
+.casestudy::before {
+    height: 100%;
+    width: 100%;
+    background-image: url("../../../../assets/backgroungimages/section4-bg-image.png"), url("../../../../assets/backgroungimages/section4-bg-image2.png");
+    content: "";
+    background-position: top left, bottom right;
+    background-size: 25% 90%, 30% 85%;
+    background-repeat: no-repeat no-repeat;
+    position: absolute;
+    z-index: -1;
+    opacity: 50%;
+}
 
 .our-process-btn {
     padding: 7px 15px 7px 15px;
@@ -50,5 +62,9 @@
 
     .miletone-title {
         font-size: 12px;
+    }
+
+    .casestudy::before {
+        background-size: 70% 45%, 65% 60%;
     }
 }

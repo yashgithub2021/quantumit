@@ -92,4 +92,8 @@ export class DigitalMarketingComponent implements OnInit {
       desc: ""
     },
   ]
+
+  scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
 }

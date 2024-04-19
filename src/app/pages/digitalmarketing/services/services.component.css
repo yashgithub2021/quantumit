@@ -2,6 +2,19 @@
     font-family: 'Plus Jakarta Sans';
 }
 
+.services::before {
+    height: 100%;
+    width: 100%;
+    background-image: url("../../../../assets/backgroungimages/section4-bg-image.png"), url("../../../../assets/backgroungimages/section4-bg-image2.png");
+    content: "";
+    background-position: top left, right;
+    background-size: 25% 60%, 25% 40%;
+    background-repeat: no-repeat no-repeat;
+    position: absolute;
+    z-index: -1;
+    opacity: 30%;
+}
+
 .linear-text {
     background: linear-gradient(91.58deg, #43BAFF 0.52%, #7044B3 100%);
     -webkit-background-clip: text;
@@ -114,6 +127,18 @@
     border: #000000;
 }
 
+.frame-4::before {
+    height: 100%;
+    width: 100%;
+    background-image: url("../../../../assets/backgroungimages/section4-bg-image.png"), url("../../../../assets/backgroungimages/section4-bg-image.png");
+    content: "";
+    background-position: top left, bottom left;
+    background-size: 25% 60%, 25% 60%;
+    background-repeat: no-repeat no-repeat;
+    position: absolute;
+    z-index: -1;
+    opacity: 30%;
+}
 
 .process-square {
     width: 70px;
@@ -145,7 +170,7 @@
 .stack {
     width: Hug (221.67px)px;
     height: Hug (88px)px;
-    padding: 30px 40px;
+    padding: 25px;
     gap: 10px;
     border-radius: 10px;
     border: 1px 0px 0px 0px;

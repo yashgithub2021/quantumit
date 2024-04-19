@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import AOS from 'aos';
+import { ApiService } from 'src/app/shared/api/api.service';
 
 @Component({
   selector: 'app-mobileapp',
@@ -7,12 +8,6 @@ import AOS from 'aos';
   styleUrls: ['./mobileapp.component.css']
 })
 export class MobileappComponent implements OnInit {
-
-  ngOnInit(): void {
-    AOS.init({
-      duration: 2000,
-    })
-  }
 
   list1 = ["Upgrade your engineering capacity", "Employ global development work standards.", "Utilize cutting-edge technologies and tools", "Maintains transparency throughout the project."]
   list2 = ["Cut additional costs", "Increase the speed of delivery", "Access expertise that is not available in-house", "Solely focus on your business objectives"]
@@ -55,4 +50,28 @@ export class MobileappComponent implements OnInit {
     },
 
   ]
+
+  projects!: any[]
+
+  constructor(private api: ApiService) { }
+
+  ngOnInit(): void {
+    AOS.init({
+      duration: 2000,
+    })
+
+    this.fetchProjects()
+  }
+
+  fetchProjects() {
+    this.api.getProjects()
+      .subscribe((res: any) => {
+        this.projects = res.projects
+        console.log(this.projects)
+      })
+  }
+
+  scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
 }

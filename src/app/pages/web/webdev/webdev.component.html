@@ -12,8 +12,9 @@ linear-gradient(248.66deg, #000000 0%, #1A1B1E 98.1%);
                 of complex business-critical applications.
             </p>
             <div class="buttons d-flex justify-content-center w-100">
-                <button class="btn btn-primary mx-3 px-2 px-lg-4 py-3">Get Started</button>
-                <button class="btn btn-outline-primary mx-3 px-2 px-lg-4 py-3 text-uppercase text-white">learn
+                <button class="btn btn-primary mx-3 px-2 px-lg-4 py-3" (click)="scrollToForm()">Get Started</button>
+                <button class="btn btn-outline-primary mx-3 px-2 px-lg-4 py-3 text-uppercase text-white"
+                    (click)="scrollToProcess()">learn
                     More</button>
             </div>
         </div>
@@ -39,7 +40,7 @@ linear-gradient(248.66deg, #000000 0%, #1A1B1E 98.1%);
 </div>
 
 <div class="frame-3 mt-5 mt-lg-0 d-flex align-items-center justify-content-center mt-lg-3">
-    <div class="container f3-container h-75 w-75 m-auto d-flex flex-column">
+    <div id="our-process" class="container f3-container h-75 w-75 m-auto d-flex flex-column">
         <div class="heading-process text-white">
             <div class="button my-2" data-aos="slide-up">
                 <button class="our-process-btn">Our Process</button>
@@ -131,7 +132,8 @@ linear-gradient(248.66deg, #000000 0%, #1A1B1E 98.1%);
                                     Our software development center provides
                                     you with the best resources, expertise.
                                 </div>
-                                <div routerLink="details" class="view-more fw-light d-flex align-items-center">
+                                <div routerLink="details" (click)="scrollToTop()"
+                                    class="view-more fw-light d-flex align-items-center">
                                     <p class="p-0 me-4 mb-0">View More Details</p>
                                     <i class="fa fa-solid fa-arrow-right"></i>
                                 </div>
@@ -162,7 +164,8 @@ linear-gradient(248.66deg, #000000 0%, #1A1B1E 98.1%);
                                     Our software development center provides
                                     you with the best resources, expertise.
                                 </div>
-                                <div routerLink="details" class="view-more fw-light d-flex align-items-center">
+                                <div routerLink="details" (click)="scrollToTop()"
+                                    class="view-more fw-light d-flex align-items-center">
                                     <p class="p-0 me-4 mb-0">View More Details</p>
                                     <i class="fa fa-solid fa-arrow-right text-black"></i>
                                 </div>
@@ -193,7 +196,8 @@ linear-gradient(248.66deg, #000000 0%, #1A1B1E 98.1%);
                                     Our software development center provides
                                     you with the best resources, expertise.
                                 </div>
-                                <div routerLink="details" class="view-more fw-light d-flex align-items-center">
+                                <div routerLink="details" (click)="scrollToTop()"
+                                    class="view-more fw-light d-flex align-items-center">
                                     <p class="p-0 me-4 mb-0">View More Details</p>
                                     <i class="fa fa-solid fa-arrow-right text-white"></i>
                                 </div>

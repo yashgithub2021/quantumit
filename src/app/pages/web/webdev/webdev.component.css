@@ -75,20 +75,6 @@
     width: 100vw;
 }
 
-.our-process-btn {
-    padding: 7px 15px 7px 15px;
-    gap: 0px;
-    border-radius: 32px;
-    border: 1px 0px 0px 0px;
-    opacity: 0px;
-    border: 1px solid #0099FF;
-    box-shadow: 0px -7px 11px 0px #A48FFF1F inset;
-    background: linear-gradient(91.58deg, #43BAFF 0.52%, #7044B3 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    backdrop-filter: blur(2px);
-}
-
 .step-num {
     padding: 15px;
     border-left: 1px solid #43BAFF;

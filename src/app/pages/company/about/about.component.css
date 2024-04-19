@@ -2,6 +2,19 @@
     font-family: 'Plus Jakarta Sans';
 }
 
+.frame-4::before {
+    height: 100%;
+    width: 100%;
+    background-image: url("../../../../assets/backgroungimages/section4-bg-image.png"), url("../../../../assets/backgroungimages/section4-bg-image.png");
+    content: "";
+    background-position: top left, bottom left;
+    background-size: 25% 60%, 25% 60%;
+    background-repeat: no-repeat no-repeat;
+    position: absolute;
+    z-index: -1;
+    opacity: 30%;
+}
+
 .numbers {
     height: 100%;
     width: 100%;

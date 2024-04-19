@@ -2,6 +2,19 @@
     font-family: 'Plus Jakarta Sans';
 }
 
+.services::before {
+    height: 100%;
+    width: 100%;
+    background-image: url("../../../../assets/backgroungimages/section4-bg-image.png"), url("../../../../assets/backgroungimages/section4-bg-image2.png");
+    content: "";
+    background-position: top left, right;
+    background-size: 25% 60%, 25% 40%;
+    background-repeat: no-repeat no-repeat;
+    position: absolute;
+    z-index: -1;
+    opacity: 30%;
+}
+
 .linear-text {
     background: linear-gradient(91.58deg, #43BAFF 0.52%, #7044B3 100%);
     -webkit-background-clip: text;

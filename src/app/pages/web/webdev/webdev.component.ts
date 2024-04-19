@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ElementRef } from '@angular/core';
 import AOS from 'aos';
 
 @Component({
@@ -7,6 +7,9 @@ import AOS from 'aos';
   styleUrls: ['./webdev.component.css']
 })
 export class WebdevComponent implements OnInit {
+
+  constructor(private elementRef: ElementRef) { }
+
 
   ngOnInit(): void {
     AOS.init({
@@ -43,4 +46,22 @@ export class WebdevComponent implements OnInit {
       desc: "Before making an offer, our team will assist you with due diligence, including property inspections, legal checks, and market analysis. We want you to be fully informed."
     },
   ]
+
+
+  scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  scrollToForm() {
+    const footer = this.elementRef.nativeElement.querySelector('#form');
+    if (footer) {
+      footer.scrollIntoView({ behavior: 'smooth', block: 'end' });
+    }
+  }
+  scrollToProcess() {
+    const footer = this.elementRef.nativeElement.querySelector('#our-process');
+    if (footer) {
+      footer.scrollIntoView({ behavior: 'smooth', block: 'end' });
+    }
+  }
 }

@@ -108,6 +108,7 @@
 
 .view-more {
     color: #43BAFF;
+    cursor: pointer;
 }
 
 .view-more .fa-arrow-right {

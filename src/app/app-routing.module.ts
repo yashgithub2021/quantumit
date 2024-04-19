@@ -9,10 +9,12 @@ import { MobileModule } from './pages/mobile/mobile.module';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'webdev', loadChildren: () => import('./pages/web/web.module').then(m => m.WebModule) },
-  { path: 'aiRobot', component: AiRobotComponent },
+  { path: 'artificial-intelligence', component: AiRobotComponent },
   {
-    path: 'mobileapp', loadChildren: () => import('./pages/mobile/mobile.module').then(m => m.MobileModule)
+    path: 'web-development', loadChildren: () => import('./pages/web/web.module').then(m => m.WebModule)
+  },
+  {
+    path: 'app-development', loadChildren: () => import('./pages/mobile/mobile.module').then(m => m.MobileModule)
   },
   {
     path: 'blog', loadChildren: () => import('./pages/blogs/blogs.module').then(m => m.BlogsModule)

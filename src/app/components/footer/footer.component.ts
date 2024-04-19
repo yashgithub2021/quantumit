@@ -38,94 +38,63 @@ export class FooterComponent {
 
   pageLabels = [
     {
-      heading: 'About',
+      heading: 'Quick Links',
       pages: [
         {
+          label: "Home",
+          link: "/"
+        },
+        {
           label: 'About Us',
-          link: ''
+          link: 'company/about'
+        },
+        {
+          label: 'Portfolio',
+          link: 'portfolio'
         },
         {
           label: 'Blog',
           link: 'blog'
         },
-
-        {
-          label: 'Careers',
-          link: ''
-        },
-        {
-          label: 'Careers',
-          link: ''
-        },
-        {
-          label: 'In Press',
-          link: ''
-        },
-        {
-          label: 'Gallery',
-          link: ''
-        },
-
       ]
     },
     {
-      heading: 'Support',
+      heading: 'Services',
       pages: [
         {
-          label: 'Contact Us',
-          link: ''
+          label: 'Web Development',
+          link: 'web-development'
         },
         {
-          label: 'Online Chat',
-          link: ''
+          label: 'App Development',
+          link: 'app-development'
         },
 
         {
-          label: 'Whatsapp',
-          link: ''
+          label: 'Digital Marketing',
+          link: 'digital-marketing'
         },
         {
-          label: 'Telegram',
-          link: ''
+          label: 'Artificial Intelligence',
+          link: 'artificial-intelligence'
         },
-        {
-          label: 'Ticketing',
-          link: ''
-        },
-        {
-          label: 'Call Center',
-          link: ''
-        },
-
       ]
     },
     {
-      heading: 'FAQ',
+      heading: 'Contact Us',
       pages: [
         {
-          label: 'Account',
-          link: ''
+          label: 'New Project',
+          link: 'company/contact'
         },
         {
-          label: 'Manage Deliveries',
-          link: ''
+          label: 'Careers',
+          link: 'company/contact'
         },
 
         {
-          label: 'Orders',
-          link: ''
-        },
-        {
-          label: 'Payments',
-          link: ''
-        },
-        {
-          label: 'Returns',
-          link: ''
-        },
-        {
-          label: 'Privacy Policy',
-          link: ''
+          label: 'Inquires',
+          link: 'company/contact'
         },
 
       ]
