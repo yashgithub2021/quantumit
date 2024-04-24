@@ -11,37 +11,37 @@ export class DetailsComponent {
     {
       num: "01.",
       title: "Mobile App Strategy",
-      desc: "Quantum is a top mobile app development company that helps in defining and implementing a successful strategy for the success of your business."
+      desc: "Our mobile app strategy integrates market research, user-centric design, and agile development to create impactful apps aligned with your business goals."
     },
 
     {
       num: "02.",
       title: "Mobile App Design",
-      desc: "Design and user experience can make or break your mobile app. Our mobile app development company provides services that ensures excellent designs and user interface."
+      desc: "Mobile app design focuses on creating intuitive, visually appealing interfaces optimized for seamless user experiences on smartphones and tablets."
     },
 
     {
       num: "03.",
       title: "Mobile App Development",
-      desc: "Quantum, a leading mobile app development company has a strong team of developers with an average industry experience of 5+ years."
+      desc: "Mobile app development involves designing, building, and launching applications tailored for use on smartphones and tablets across various platforms."
     },
 
     {
       num: "04.",
       title: "Mobile App Testing",
-      desc: "Our offshore mobile application development experts provides you high performance and 100% reliable mobile app testing services."
+      desc: "Mobile app testing ensures the functionality, usability, and performance of applications across different devices and platforms to deliver a seamless user experience."
     },
 
     {
       num: "05.",
       title: "Enterprise Mobile App",
-      desc: "Our mobile app development company in India has experts, developers and analysts working on enterprise mobile application development for fortune 1000 "
+      desc: "Enterprise mobile apps are designed to address the specific needs and workflows of large organizations, enhancing productivity and efficiency in the workplace."
     },
 
     {
       num: "06.",
       title: "Mobile Game Development",
-      desc: "Quantum is a top offshore mobile app development company in India that provides robust, high performance and reliable mobile game development services."
+      desc: "Mobile game development involves creating interactive and engaging gaming experiences optimized for smartphones and tablets, catering to a diverse audience of gamers."
     },
 
   ]

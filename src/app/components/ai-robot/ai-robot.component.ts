@@ -77,4 +77,10 @@ export class AiRobotComponent implements OnInit {
       footer.scrollIntoView({ behavior: 'smooth', block: 'end' });
     }
   }
+  scrollToWWD() {
+    const footer = this.elementRef.nativeElement.querySelector('#wwd');
+    if (footer) {
+      footer.scrollIntoView({ behavior: 'smooth', block: 'end' });
+    }
+  }
 }

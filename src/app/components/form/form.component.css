@@ -3,10 +3,11 @@
 }
 
 .opt {
-    padding: 0px 10px;
+    cursor: pointer;
 }
 
-.opt1 {
+.blue-opt {
+    padding: 0px 10px;
     border-left: 3px solid #43BAFF;
     color: #43BAFF;
     border-radius: 5px 0 0 5px;
@@ -20,6 +21,7 @@ input,
 textarea {
     border-radius: 0;
     border: 1px solid #636D79 !important;
+    color: white;
 }
 
 @media (max-width: 575.98px) {
@@ -27,11 +29,12 @@ textarea {
         height: auto;
     }
 
-    .opt1 {
+    .blue-opt {
         border: none;
         border-bottom: 3px solid #43BAFF;
         color: #43BAFF;
         border-radius: 0 0 5px 5px;
+        padding: 0;
     }
 
     .option {
@@ -42,6 +45,12 @@ textarea {
         font-size: 12px;
         text-align: center;
     }
+
+    .blue-opt h3 {
+        font-size: 12px;
+        text-align: center;
+    }
+
 
     .desc {
         width: 100% !important;

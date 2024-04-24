@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class FormComponent {
 
+  visibleForm = 'project'
+
+  changeForm(form: string) {
+    this.visibleForm = form
+  }
 }

@@ -52,7 +52,14 @@
 
 .app {
     background: #111111;
+    position: relative;
+}
 
+.view-project {
+    position: absolute;
+    right: 0;
+    top: 20%;
+    cursor: pointer;
 }
 
 @media (max-width: 575.98px) {

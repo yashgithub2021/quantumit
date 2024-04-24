@@ -17,12 +17,14 @@ export class FooterComponent {
     {
       icon: 'fa-phone-volume',
       label: 'Tel',
-      value: '+ 91 971 799 8517'
+      value: '+ 91 971 799 8517',
+      link: 'tel:91 971 799 8517'
     },
     {
       icon: 'fa-envelope',
       label: 'Email',
-      value: 'sales@quantumitinnovation.com'
+      value: 'sales@quantumitinnovation.com',
+      link: 'mailto:sales@quantumitinnovation.com'
     },
     {
       icon: 'fa-location-dot',

@@ -12,7 +12,7 @@
                     maintenance of your digital platforms.</h1>
             </div>
             <div class="container d-flex align-items-center justify-content-center my-3">
-                <button class="btn btn-primary fs-5 rounded">Get Started</button>
+                <button (click)="scrollToGetStarted()" class="btn btn-primary fs-5 rounded">Get Started</button>
             </div>
         </div>
     </div>
@@ -37,7 +37,7 @@
     <!-- Section Two Ends -->
 
     <!-- Section Three -->
-    <div class="container-fluid d-flex flex-column mt-3" data-aos="fade-in" data-aos-duration="1000">
+    <div id="get-started" class="container-fluid d-flex flex-column mt-3" data-aos="fade-in" data-aos-duration="1000">
         <div class="section3 container-fluid w-100 h-100 d-flex flex-column flex-lg-row mt-3">
             <div class="left-side" data-aos="fade-up">
             </div>
@@ -54,7 +54,8 @@
                             achieve their shared objectives efficiently.
                     </div>
                     <div class="container d-flex align-items-center justify-content-start my-3">
-                        <button class="btn fs-5 rounded d-flex align-items-center justify-content-between">Get Started
+                        <button (click)="scrollToGetServices()"
+                            class="btn fs-5 rounded d-flex align-items-center justify-content-between">Get Started
                             <i class="fa-solid fa-arrow-right ms-3"></i>
                         </button>
                     </div>
@@ -92,7 +93,7 @@
                     </h1>
                 </div>
             </div>
-            <div class="container services w-100 h-100">
+            <div id="services" class="container services w-100 h-100">
                 <div class="row">
                     <div *ngFor="let service of ourServices" data-aos="slide-up"
                         class="text-white col-md-4 d-flex flex-column align-items-center justify-content-center px-lg-5 px-2 my-4">
@@ -132,7 +133,7 @@
                 <div class="text d-flex flex-column text-white">
                     <div class="button" data-aos="slide-up">
                         <button class="our-service-btn">
-                            Our Services
+                            Latest Projects
                         </button>
                     </div>
                     <div class="txt" data-aos="slide-up">
@@ -140,7 +141,8 @@
                     </div>
                 </div>
                 <div class="learnMore">
-                    <button class="btn fs-5 rounded d-flex align-items-center justify-content-between">View All
+                    <button routerLink="portfolio"
+                        class="btn fs-5 rounded d-flex align-items-center justify-content-between">View All
                     </button>
                 </div>
             </div>
@@ -150,14 +152,12 @@
                         class="project-one-details details d-flex justify-content-between align-items-center position-absolute px-3 text-white">
                         <div class="w-auto">
                             <div class=" w-auto">
-                                <h3 class="project-title">Website Design</h3>
+                                <h3 class="project-title">AMPS App Design</h3>
                             </div>
                             <div style="color: #D1D4DC;" class="decs w-75">
-                                Lörem ipsum astrobel sar direlig. Kronde est konfoni med kelig. Terabel pov astrobel sar
+                                We provided app development services for The AMPS Institute, delivering a platform
+                                tailored to support its programs focused on the Roadmap to Entrepreneurship Excellence.
                             </div>
-                        </div>
-                        <div class="button">
-                            <button class="btn lm-btn  fw-lighter">Learn More</button>
                         </div>
                     </div>
                 </div>
@@ -167,11 +167,11 @@
                             class="project-two-details details d-flex justify-content-between align-items-center position-absolute px-3 text-white">
                             <div class="w-auto">
                                 <div>
-                                    <h3 class="project-title w-auto">Website</h3>
+                                    <h3 class="project-title w-auto">MainHaus Website Design</h3>
                                 </div>
-                                <div style="color: #D1D4DC;" class="decs w-75">
-                                    Lörem ipsum astrobel sar direlig. Kronde est konfoni med kelig. Terabel pov astrobel
-                                    sar
+                                <div style="color: #D1D4DC;" class="decs w-100">
+                                    We developed MeinHaus' website, linking service providers and users for services
+                                    like painting, demolition, cleaning, and appliance installation.
                                 </div>
                             </div>
                         </div>
@@ -181,11 +181,11 @@
                             class="project-three-details details d-flex justify-content-between align-items-center position-absolute px-3 text-white">
                             <div class="w-auto">
                                 <div>
-                                    <h3 class="project-title w-auto">Website</h3>
+                                    <h3 class="project-title w-auto">Wikistrings Website Design</h3>
                                 </div>
-                                <div style="color: #D1D4DC;" class="decs w-75">
-                                    Lörem ipsum astrobel sar direlig. Kronde est konfoni med kelig. Terabel pov astrobel
-                                    sar
+                                <div style="color: #D1D4DC;" class="decs w-100">
+                                    We crafted the website for Wikistrings, a dynamic platform designed for real-life
+                                    interaction and evaluation of guitar strings.
                                 </div>
                             </div>
                         </div>
@@ -210,7 +210,8 @@
                     </div>
                 </div>
                 <div class="learnMore" data-aos="slide-up">
-                    <button class="btn rounded d-flex align-items-center justify-content-between">View All
+                    <button class="btn rounded d-flex align-items-center justify-content-between"
+                        (click)="scrollToCustomers()">View All
                     </button>
                 </div>
             </div>
@@ -222,7 +223,7 @@
     </div>
 
     <!-- Section7 -->
-    <div class="container section7 w-100">
+    <div class="container section7 w-100" id="customers">
         <div class="container h-100">
             <div class="d-flex flex-column flex-lg-row h-100 w-100">
                 <div *ngFor="let review of reviews" class="customer-feedback h-100 w-100 p-5" data-aos="fade-up">

@@ -6,23 +6,136 @@
                 <h1>Lets Talk About:</h1>
             </div>
             <div class="option d-flex flex-lg-column flex-row gap-4">
-                <div class="opt1 opt">
+                <div (click)="changeForm('project')" [ngClass]="visibleForm === 'project'?'blue-opt':'opt'">
                     <h3>New Project</h3>
                 </div>
-                <div class="opt2 opt">
+                <div (click)="changeForm('joining')" [ngClass]="visibleForm === 'joining'?'blue-opt':'opt'">
                     <h3>Joining our Team</h3>
                 </div>
-                <div class="opt3 opt">
+                <div (click)="changeForm('enquries')" [ngClass]="visibleForm === 'enquries'?'blue-opt':'opt'">
                     <h3>General Enquries</h3>
                 </div>
             </div>
         </div>
         <div class="form h-100 w-100 text-white mt-4 mt-lg-0">
-            <div class="container h-100 w-100 d-flex flex-column align-items-center justify-content-center">
+            <div *ngIf="visibleForm === 'project'"
+                class="container h-100 w-100 d-flex flex-column align-items-center justify-content-center">
                 <div class="desc w-75">
                     <p class="color:#A2A9B0 fw-lighter text-align-center">
                         Have a project in mind that you think we’d be a great fit for it? We’d love to know what you’re
                         thinking
+                    </p>
+                </div>
+                <div class="form-container w-100">
+                    <form action="">
+                        <div class="row my-3">
+                            <div class="col-6">
+                                <div class="input d-flex flex-column">
+                                    <label for="">First Name</label>
+                                    <input placeholder="Input first name your in here" type="text" class="bg-dark">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="input d-flex flex-column">
+                                    <label for="">Last Name</label>
+                                    <input placeholder="Input last name your in here" type="text" class="bg-dark">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row my-3">
+                            <div class="col-6">
+                                <div class="input d-flex flex-column">
+                                    <label for="">Email</label>
+                                    <input placeholder="Input email your in here" type="text" class="bg-dark">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="input d-flex flex-column">
+                                    <label for="">Company Name</label>
+                                    <input placeholder="Input company name your in here" type="text" class="bg-dark">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row my-3">
+                            <div class="col-12">
+                                <div class="input d-flex flex-column">
+                                    <label for="">Message</label>
+                                    <textarea placeholder="Write your message in here" type="text"
+                                        class="bg-dark"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row my-5">
+                            <div class="col-6">
+                                <button class="btn btn-primary">
+                                    Send Message
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div *ngIf="visibleForm === 'joining'"
+                class="container h-100 w-100 d-flex flex-column align-items-center justify-content-center">
+                <div class="desc w-75">
+                    <p class="color:#A2A9B0 fw-lighter text-align-center">
+                        We connect millions of people to the moments that matter.
+                    </p>
+                </div>
+                <div class="form-container">
+                    <form action="">
+                        <div class="row my-3">
+                            <div class="col-6">
+                                <div class="input d-flex flex-column">
+                                    <label for="">First Name</label>
+                                    <input placeholder="Input first name your in here" type="text" class="bg-dark">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="input d-flex flex-column">
+                                    <label for="">Last Name</label>
+                                    <input placeholder="Input last name your in here" type="text" class="bg-dark">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row my-3">
+                            <div class="col-6">
+                                <div class="input d-flex flex-column">
+                                    <label for="">Email</label>
+                                    <input placeholder="Input email your in here" type="text" class="bg-dark">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="input d-flex flex-column">
+                                    <label for="">Resume</label>
+                                    <input placeholder="Input company name your in here" type="file" class="bg-dark">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row my-3">
+                            <div class="col-12">
+                                <div class="input d-flex flex-column">
+                                    <label for="">Message</label>
+                                    <textarea placeholder="Write your message in here" type="text"
+                                        class="bg-dark"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row my-5">
+                            <div class="col-6">
+                                <button class="btn btn-primary">
+                                    Send Message
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div *ngIf="visibleForm === 'enquries'"
+                class="container h-100 w-100 d-flex flex-column align-items-center justify-content-center">
+                <div class="desc w-75">
+                    <p class="color:#A2A9B0 fw-lighter text-align-center">
+                        We connect millions of people to the moments that matter.
                     </p>
                 </div>
                 <div class="form-container">

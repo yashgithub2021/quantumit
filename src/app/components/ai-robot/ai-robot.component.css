@@ -99,18 +99,20 @@
 
 .frame-4 {
     height: 110vh;
+    position: relative;
 }
 
-.frame-4-image::before {
+.frame-4::before {
+    position: absolute;
     display: block;
     height: 100%;
     width: 100%;
     content: "";
-    background-image: url("https://s3-alpha-sig.figma.com/img/5d3f/c756/2b3454b57dbfd13b639f4b550f37a55c?Expires=1713139200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=VnOqvhIFFWBmTy4aqCEqo79jhTD0Rwq4S5Jr2KFHruKGe9rY15QRwJr3YuIOoNNh9A2bi9z5m1GWWfeLenxmfgHvHOifzDrsA5wAXxtqqrZcFMDASZpShANVq1zd6jgVZOOs4HHEZ7r9IM93HiIglQogPDwrVZg45l-rJQsqVc24FFPItPhbIE7Zm1YvjhcxfTa-g2K~XnMH3jAL1i3IXO20y~DriigZdZaiNEVLWWZvevxcxYOVYmL75bAHDuSgrnNAqJmaMQUYMfRXikRyKV7GHxeoq3IBxTTUYH5sb4hpexuJ9tvjtbfsSBYTz3OpatfC5TtTunFQkPXPGRKkvA__");
+    background-image: url("../../../assets/ai/about.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    opacity: 65%
+    opacity: 75%
 }
 
 .ai-showcase {

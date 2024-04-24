@@ -9,18 +9,24 @@
                 <h1 data-aos="fade-in" class="tagline text-center fw-bolder w-100 ">Experience our services and
                     foresee
                     the future of
-                    <span class="linear-text text-decoration-underline"> Digital Marketing</span>
+                    <span class="linear-text"> Digital Marketing</span>
                 </h1>
                 <p data-aos="fade-in" class="head-desc text-align-center w-75"
                     style="color: #EFEDFDB2;                ">
                     Delve into our comprehensive array of services to witness the transformative evolution of digital
                     marketing, where innovation meets strategy, and possibilities are limitless.
                 </p>
+                <div class="buttons d-flex justify-content-center w-100 mt-3">
+                    <button class="btn btn-primary mx-3 px-2 px-lg-4 py-3" (click)="scrollToForm()">Get Started</button>
+                    <button class="btn btn-outline-primary mx-3 px-2 px-lg-4 py-3 text-uppercase text-white"
+                        (click)="scrollToProcess()">learn
+                        More</button>
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="frame-2 container d-flex">
+    <div class="frame-2 container d-flex" id="our-process">
         <div class="container d-flex flex-column justify-content-center my-5 px-lg-5">
             <div class="heading d-flex justify-content-center align-items-center">
                 <div class="text w-100 d-flex flex-column justify-content-center align-items-center text-white">
@@ -52,7 +58,7 @@
                         </div>
                         <div class="step-dashed-line visually-hidden"></div>
                         <div class="step-title w-25 d-flex justify-content-center">
-                            <p class="w-50 fw-light text-align-center">Improve User Experience</p>
+                            <p class="w-50 fw-light text-align-center">Revitalize User Experience Design</p>
                         </div>
                         <div class="step-dashed-line visually-hidden"></div>
                         <div class="step-title w-25 d-flex justify-content-center">
@@ -114,10 +120,17 @@
                                 <p class="m-0 fw-lighter" style="color:#B5B5B5">{{data.tail}}</p>
                             </td>
                             <td class="align-middle p-4">
-                                <p class="m-0" style="color:#B5B5B5">Health and care consulting refers to the practice
-                                    of providing expert
-                                    advice and
-                                    guidance.</p>
+                                <p class="m-0" style="color:#B5B5B5">{{data.desc}}</p>
+                                <div class="list mb-2" *ngIf="data.list">
+                                    <ul class=" list-unstyled text-white row">
+                                        <li data-aos="fade-up"
+                                            class=" d-flex col-6 align-items-center justify-content-start list-unstyled my-3"
+                                            *ngFor="let list of data.list">
+                                            <i class="fa-solid fa-check mx-2"></i>
+                                            <p class="fw-light m-0 list-check">{{list}}</p>
+                                        </li>
+                                    </ul>
+                                </div>
                             </td>
                             <td class="align-middle py-4 px-2">
                                 <p routerLink="services" (click)="scrollToTop()" class="m-0 table-lm fw-light">Learn
@@ -157,26 +170,23 @@
     <div class="steps-container w-100 mt-5 text-white">
         <div class="step-title w-25 mt-3 mt-lg-0 d-flex flex-column align-items-center justify-content-center">
             <p data-aos="fade-up" class="w-50 fw-lighter fs-5 text-align-center">Client Consultation</p>
-            <p data-aos="fade-up" class="w-75 fw-lighter fs-6 text-align-center" style="color: #B5B5B5;">Sed accumsan
-                sem cursus
-                luctus porta. amem Phasellu du
-                enim, efficitur quis velit ac, fringilla posuere leo fusci.</p>
+            <p data-aos="fade-up" class="w-75 fw-lighter fs-6 text-align-center" style="color: #B5B5B5;">Quantum begins
+                by thoroughly understanding the client's goals, target audience, and unique needs through in-depth
+                consultations.</p>
         </div>
         <div class="step-dashed-line visually-hidden"></div>
         <div class="step-title w-25 mt-3 mt-lg-0 d-flex justify-content-center align-items-center flex-column">
             <p data-aos="fade-up" class="w-50 fw-lighter fs-5 text-align-center">Strategy Development</p>
-            <p data-aos="fade-up" class="w-75 fw-lighter fs-6 text-align-center" style="color: #B5B5B5;">Sed accumsan
-                sem cursus
-                luctus porta. amem Phasellu du
-                enim, efficitur quis velit ac, fringilla posuere leo fusci.</p>
+            <p data-aos="fade-up" class="w-75 fw-lighter fs-6 text-align-center" style="color: #B5B5B5;">Based on the
+                insights gained, Quantum crafts tailored digital marketing strategies, aligning with the client's
+                objectives and maximizing ROI.</p>
         </div>
         <div class="step-dashed-line visually-hidden"></div>
         <div class="step-title w-25 mt-3 mt-lg-0 d-flex justify-content-center align-items-center flex-column">
             <p data-aos="fade-up" class="w50 fw-lighter fs-5 text-align-center">Market Research</p>
-            <p data-aos="fade-up" class="w-75 fw-lighter fs-6 text-align-center" style="color: #B5B5B5;">Sed accumsan
-                sem cursus
-                luctus porta. amem Phasellu du
-                enim, efficitur quis velit ac, fringilla posuere leo fusci.</p>
+            <p data-aos="fade-up" class="w-75 fw-lighter fs-6 text-align-center" style="color: #B5B5B5;">We conduct
+                extensive market research to identify trends, opportunities, and competitor strategies to make campaigns
+                effective.</p>
         </div>
         <div class="step-dashed-line visually-hidden"></div>
     </div>
@@ -184,7 +194,7 @@
     <div class="container button w-100 d-flex mt-5 align-items-center justify-content-center">
         <button data-aos="fade-up" class="our-marketing-btn text-white">
             <i class="fa-solid fa-arrow-left text-white mx-2"></i>
-            Our Marketing Challenge
+            Our Process
             <i class="fa-solid fa-arrow-right text-white mx-2"></i>
         </button>
     </div>

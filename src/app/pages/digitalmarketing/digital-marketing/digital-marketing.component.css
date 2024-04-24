@@ -43,6 +43,12 @@
     background: linear-gradient(91.58deg, #43BAFF 0.52%, #7044B3 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    text-decoration: underline;
+    /* Add underline */
+    /* Adjust these values to customize the underline */
+    /* text-shadow: 0 0.04em rgba(0, 0, 0, 0.5); */
+    background-clip: text;
+    color: linear-gradient(91.58deg, #43BAFF 0.52%, #7044B3 100%);
 }
 
 .view-more {

@@ -20,30 +20,30 @@ export class WebdevComponent implements OnInit {
   our_steps = [
     {
       stepNo: "Step 01",
-      title: "Discover a World Of Possibilities",
-      desc: "Your journey begins with exploring our carefully curated property listings. Use our intuitive search tools to filter properties based on your preferences, including location"
+      title: "Planning and Research",
+      desc: "Define the website's purpose, target audience, and goals. Conduct research on competitors and industry trends to inform design and content decisions."
     },
     {
       stepNo: "Step 02",
-      title: "Narrowing Down Your Choices",
-      desc: "Once you've found properties that catch your eye, save them to your account or make a shortlist. This allows you to compare and revisit your favorites as you make your decision."
+      title: "Design",
+      desc: "Create wireframes and design mockups based on the planning stage. Design the layout, user interface, and visual elements to ensure an engaging user experience."
     },
     {
       stepNo: "Step 03",
-      title: "Personalized Guidance",
-      desc: "Have questions about a property or need more information? Our dedicated team of real estate experts is just a call or message away."
+      title: "Development",
+      desc: "Write code to bring the design to life. This involves front-end development for the user interface and back-end development for functionality such as databases and server-side logic."
     }
   ]
   our_steps2 = [
     {
       stepNo: "Step 04",
-      title: "See It for Yourself",
-      desc: "Arrange viewings of the properties you're interested in. We'll coordinate with the property owners and accompany you to ensure you get a firsthand look at your potential new home."
+      title: "Testng",
+      desc: "Thoroughly test the website across different devices, browsers, and screen sizes to ensure compatibility and functionality. Identify and fix any bugs or issues that arise."
     },
     {
       stepNo: "Step 05",
-      title: "Making Informed Decisions",
-      desc: "Before making an offer, our team will assist you with due diligence, including property inspections, legal checks, and market analysis. We want you to be fully informed."
+      title: "Launch and Maintainance",
+      desc: " Deploy the website to the hosting server and make it live. Monitor performance, gather feedback, and make necessary updates and improvements to keep the website running smoothly."
     },
   ]
 

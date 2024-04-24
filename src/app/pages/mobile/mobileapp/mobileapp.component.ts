@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit } from '@angular/core';
 import AOS from 'aos';
 import { ApiService } from 'src/app/shared/api/api.service';
 
@@ -9,51 +9,50 @@ import { ApiService } from 'src/app/shared/api/api.service';
 })
 export class MobileappComponent implements OnInit {
 
-  list1 = ["Upgrade your engineering capacity", "Employ global development work standards.", "Utilize cutting-edge technologies and tools", "Maintains transparency throughout the project."]
-  list2 = ["Cut additional costs", "Increase the speed of delivery", "Access expertise that is not available in-house", "Solely focus on your business objectives"]
+  list1 = ["Android App Development", "Swift App Development", "iOS App Development", "iPad App Development", "Cross Platform App",]
 
   aiService = [
     {
       num: "01.",
       title: "Bring Together the Right People in Team",
-      desc: "That has very much been the secret of our consistent success over the years. Below are a few steps of the process that we follow."
+      desc: "Our app development starts with building a specialized team, ensuring every project receives expert attention and collaboration."
     },
 
     {
       num: "02.",
-      title: "Efficient Sprint Planning",
-      desc: "We plan an efficient sprint roadmap for team members to collaborate effectively."
+      title: "Refined Sprint Planning",
+      desc: "Our streamlined sprint planning ensures precise goals and timelines, facilitating smooth project execution."
     },
 
     {
       num: "03.",
-      title: "Code Tech Architecture",
-      desc: "We decouple the codes which enable our team to work faster and independently."
+      title: "Architech Robust Code Technology Infrastructure",
+      desc: "Our code tech architecture prioritizes scalability and efficiency, laying a strong foundation for future growth."
     },
 
     {
       num: "04.",
-      title: "Iterative Delivery Approach",
-      desc: "We break the implementation process into smaller pieces to deliver value incrementally."
+      title: "Implement an iterative delivery approach",
+      desc: "Our iterative delivery approach fosters continuous improvement and client satisfaction, ensuring each milestone brings added value and refinement."
     },
 
     {
       num: "05.",
-      title: "Code Reviews",
-      desc: "We identify issues like file leaks, memory leaks, and performance signs with code reviews."
+      title: "Conduct comprehensive code reviews",
+      desc: "Thorough code reviews guarantee high-quality, standards-compliant software, fostering reliability and excellence"
     },
 
     {
       num: "06.",
-      title: "Standups and Demos",
-      desc: "Weekly reviews, demos, and standups ensure coordination among team members and the client."
+      title: "Facilitate regular stand ups and demos",
+      desc: "Regular stand ups and demos maintain transparency and collaboration, ensuring projects stay on course and stakeholders remain engaged and informed."
     },
 
   ]
 
   projects!: any[]
 
-  constructor(private api: ApiService) { }
+  constructor(private api: ApiService, private elementRef: ElementRef) { }
 
   ngOnInit(): void {
     AOS.init({
@@ -73,5 +72,11 @@ export class MobileappComponent implements OnInit {
 
   scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+  scrollToFooter() {
+    const footer = this.elementRef.nativeElement.querySelector('#form');
+    if (footer) {
+      footer.scrollIntoView({ behavior: 'smooth', block: 'end' });
+    }
   }
 }

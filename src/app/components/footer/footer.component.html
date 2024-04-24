@@ -19,7 +19,10 @@
                     <div>
                         <label for="btn" class="text-secondary">
                             {{contact.label}}
-                            <p class="m-0 text-white fw-semibold contact-value">{{contact.value}}</p>
+                            <p>
+                                <a class="m-0 text-white text-decoration-none fw-semibold contact-value"
+                                    [href]="contact.link">{{contact.value}}</a>
+                            </p>
                         </label>
                     </div>
 
@@ -42,24 +45,27 @@
                     </div>
                 </div>
                 <div class="container social-links-container d-flex justify-content-center">
-                    <div style="background-color: #F85895;" class="social-icon text-white si-one">
+                    <a href="https://dribbble.com/QuantumIt" target="_blank" style="background-color: #F85895;"
+                        class="social-icon text-decoration-none text-white si-one">
                         <div class="follow container align-content-end py-2 w-100 h-100">
                             <span class="fw-lighter follow-us">Follow Us On</span>
                             <h5 class="social-platform">Dribble</h5>
                         </div>
-                    </div>
-                    <div style="background-color: #1B76F2;" class="social-icon text-white si-two">
+                    </a>
+                    <a href="https://www.facebook.com/quantumitinnovationindia " target="_blank"
+                        style="background-color: #1B76F2;" class="social-icon text-decoration-none text-white si-two">
                         <div class="follow container align-content-end py-2 w-100 h-100">
                             <span class="fw-lighter follow-us">Follow Us On</span>
                             <h5 class="social-platform">Facebook</h5>
                         </div>
-                    </div>
-                    <div style="background-color: #F04444;" class="social-icon text-white si-three">
+                    </a>
+                    <a href="https://www.youtube.com/@quantumitinnovation6761" target="_blank"
+                        style="background-color: #F04444;" class="social-icon text-decoration-none text-white si-three">
                         <div class="follow container align-content-end py-2 w-100 h-100">
                             <span class="fw-lighter follow-us">Follow Us On</span>
                             <h5 class="social-platform">Youtube</h5>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>

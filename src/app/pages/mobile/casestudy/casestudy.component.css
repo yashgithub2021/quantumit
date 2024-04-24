@@ -33,6 +33,10 @@
     border-bottom: 1px solid white;
 }
 
+.result-heading {
+    padding: 3rem 6rem;
+}
+
 .miletone-number {
     font-size: 50px;
     background: linear-gradient(91.58deg, #43BAFF 0.52%, #7044B3 100%);

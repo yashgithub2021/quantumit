@@ -26,8 +26,8 @@
     width: 100%;
     background-repeat: no-repeat;
     display: flex;
-    opacity: 30%;
-    background-image: url("https://s3-alpha-sig.figma.com/img/61f3/30ba/fd80d81588626bf27ddc4e69bb278d15?Expires=1713744000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=hOzP10wN41mccJOGYzRCwy~uCbUUL60-t7fO65oXDHK7IdY5YrO3d2QwUxHxAGA48w6fwMoRV9NJRsBxSdOwdnCsV0V92N~Km7j5krrf24S9XW2qg0QNMy16kpqFTQOGlN6P2gy3FU8NIit2aLGhRcskDPINSbsLuNsVIhUBz~68qfIPDJ2cCaRaa3M8csUTFVYnZGEbtpBD9EQckLxGPDi2-GT4s~pN2JFuJcIOeiv75gUcBi9i-qkchmfYwvuD6805HP1K1CLI-PUhWcM3DIsQ6wZvoqtE3zVxcT1DkYxJs8davv1TrUDDCNGOlOaO1hn1ePLq6LZ8vt8YluTDAw__")
+    /* opacity: 30%; */
+    background-image: url("../../../../assets/blog/contributer-bg.svg")
 }
 
 .days {

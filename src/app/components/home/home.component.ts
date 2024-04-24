@@ -11,7 +11,7 @@ import { ApiService } from 'src/app/shared/api/api.service';
 })
 export class HomeComponent implements OnInit {
 
-  constructor(private api: ApiService) { }
+  constructor(private api: ApiService, private elementRef: ElementRef) { }
 
   services = [
     {
@@ -60,32 +60,32 @@ export class HomeComponent implements OnInit {
     {
       img: '../../../assets/services-icons/Vector.svg',
       title: 'Web Development',
-      desc: 'We carry more than just good coding skills. Our experience makes us standout from other web development.'
+      desc: "Crafting engaging online experiences through bespoke web development solutions, tailored to elevate your brand's digital presence."
     },
     {
       img: '../../../assets/services-icons/mobile.svg',
-      title: 'Mobile Development',
-      desc: 'Create complex enterprise software,ensure reliable software integration,modernise your legacy system.'
+      title: 'Mobile App',
+      desc: 'Transform your ideas into intuitive mobile experiences with our expert app development services, driving engagement and growth.'
     },
     {
       img: '../../../assets/services-icons/uiux.svg',
-      title: 'UI/UX Designing',
-      desc: 'Build the product you need on timewith an experienced team that uses a clear and effective design process.'
+      title: 'Software Development',
+      desc: 'Redefine your business landscape with our tailored software solutions, engineered for efficiency and scalability.'
     },
     {
       img: '../../../assets/services-icons/qa.svg',
-      title: 'QA & Testing',
-      desc: 'Turn to our experts to performcomprehensive, multi-stage testing and auditing of your software.'
+      title: 'Social Media Optimization',
+      desc: 'Enhance your online presence and interaction with our targeted social media optimization services, crafted for optimal impact and visibility.'
     },
     {
       img: '../../../assets/services-icons/it-consultancy.svg',
-      title: 'IT consultancy',
-      desc: 'Trust our top minds to eliminate workflow pain points, implement new tech, and consolidate app portfolios.'
+      title: 'Artificial Intelligence',
+      desc: 'Utilize our advanced artificial intelligence solutions, customized to meet your specific needs, to fuel innovation and streamline efficiency throughout your business processes.'
     },
     {
       img: '../../../assets/services-icons/dedicated-team.svg',
-      title: 'Dedicated Team',
-      desc: "Over the past decade, our customers succeeded by leveraging Intellect soft's process of building, motivating."
+      title: 'Digital Marketing',
+      desc: "Boost your brand's online presence and reach with our effective digital marketing strategies, crafted to enhance visibility, engagement, and conversions."
     },
   ]
 
@@ -132,5 +132,30 @@ export class HomeComponent implements OnInit {
       stars.push(i);
     }
     return stars;
+  }
+
+  scrollToFooter() {
+    const footer = this.elementRef.nativeElement.querySelector('#form');
+    if (footer) {
+      footer.scrollIntoView({ behavior: 'smooth', block: 'end' });
+    }
+  }
+  scrollToGetStarted() {
+    const footer = this.elementRef.nativeElement.querySelector('#get-started');
+    if (footer) {
+      footer.scrollIntoView({ behavior: 'smooth', block: 'end' });
+    }
+  }
+  scrollToGetServices() {
+    const footer = this.elementRef.nativeElement.querySelector('#services');
+    if (footer) {
+      footer.scrollIntoView({ behavior: 'smooth', block: 'end' });
+    }
+  }
+  scrollToCustomers() {
+    const footer = this.elementRef.nativeElement.querySelector('#customers');
+    if (footer) {
+      footer.scrollIntoView({ behavior: 'smooth', block: 'end' });
+    }
   }
 }

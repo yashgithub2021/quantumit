@@ -36,12 +36,32 @@
 
 }
 
+.brief p {
+    font-size: 20px;
+    text-align: justify;
+    word-wrap: break-word;
+}
+
 .ai-data {
     background: #111111;
     box-sizing: border-box;
     height: 300px;
     border: 1px solid #FFFFFF0F;
     box-shadow: 0px 17px 25px 0px #07496F05;
+}
+
+
+.frame-4::before {
+    height: 100%;
+    width: 100%;
+    background-image: url("../../../../assets/backgroungimages/section4-bg-image.png"), url("../../../../assets/backgroungimages/section4-bg-image.png");
+    content: "";
+    background-position: top left, bottom left;
+    background-size: 25% 60%, 25% 60%;
+    background-repeat: no-repeat no-repeat;
+    position: absolute;
+    z-index: -1;
+    opacity: 30%;
 }
 
 .image-container {
@@ -55,6 +75,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .step {

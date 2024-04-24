@@ -8,7 +8,7 @@ import { ApiService } from 'src/app/shared/api/api.service';
 })
 export class AboutComponent implements OnInit {
   constructor(private api: ApiService) { }
-  list2 = ["Cut additional costs", "Increase the speed of delivery", "Access expertise that is not available in-house", "Solely focus on your business objectives"]
+  list2 = ["Using latest technologies and creative approaches.", "Working closely with clients to address their needs.", "In the quality of our work and the level of service we give."]
 
   sectionFourNums = [
     {
