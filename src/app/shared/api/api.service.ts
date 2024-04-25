@@ -1,12 +1,31 @@
 import { HttpClient } from '@angular/common/http';
-import { Injectable } from '@angular/core';
+import { EventEmitter, Injectable } from '@angular/core';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ApiService {
   baseUrl = 'https://quantumitbackend.adaptable.app/'
+  private darkTheme = true;
+  themeChanged: EventEmitter<boolean> = new EventEmitter<boolean>();
+
   constructor(private http: HttpClient) { }
+
+  setDarkTheme(isDarkTheme: boolean): void {
+    this.darkTheme = isDarkTheme;
+    document.body.classList.toggle('dark-theme', isDarkTheme);
+  }
+
+  toggleTheme(): void {
+    this.darkTheme = !this.darkTheme;
+    this.setDarkTheme(this.darkTheme);
+    this.themeChanged.emit(this.darkTheme);
+  }
+
+  isDarkTheme(): boolean {
+    console.log(this.darkTheme)
+    return this.darkTheme;
+  }
 
   getMembers() {
     return this.http.get(`${this.baseUrl}api/team/team`)

@@ -9,9 +9,17 @@
 
 .mobile-app {
     height: 100vh;
+}
+
+.mobile-app-dark {
+
     background:
         linear-gradient(0deg, #191919, #000000),
         linear-gradient(248.66deg, #000000 0%, #1A1B1E 98.1%);
+}
+
+.mobile-app-light {
+    background-color: white;
 }
 
 .tagline {
@@ -67,13 +75,19 @@
 }
 
 .ai-data {
-    background: #111111;
     /* box-sizing: border-box; */
     height: 400px;
     border: 1px solid #FFFFFF0F;
     box-shadow: 0px 17px 25px 0px #07496F05;
 }
 
+.ai-bg-dark {
+    background: #111111;
+}
+
+.ai-bg-light {
+    background: #ECF0FF;
+}
 
 .numbers-section {
     height: 200px;

@@ -10,8 +10,11 @@ import { ApiService } from 'src/app/shared/api/api.service';
   styleUrls: ['./home.component.css'],
 })
 export class HomeComponent implements OnInit {
+  isDarkTheme: boolean;
 
-  constructor(private api: ApiService, private elementRef: ElementRef) { }
+  constructor(private api: ApiService, private elementRef: ElementRef) {
+    this.isDarkTheme = this.api.isDarkTheme();
+  }
 
   services = [
     {
@@ -115,6 +118,11 @@ export class HomeComponent implements OnInit {
       duration: 2000,
     })
     this.fetchReviews()
+    this.isDarkTheme = this.api.isDarkTheme();
+    this.api.themeChanged.subscribe((isDarkTheme: boolean) => {
+      this.isDarkTheme = isDarkTheme;
+      // Perform actions based on theme change
+    });
   }
 
   fetchReviews() {

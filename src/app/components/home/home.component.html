@@ -1,7 +1,7 @@
 <div class="d-flex flex-column">
     <!-- Section One -->
-    <div class="section1">
-        <div class="text-white container d-flex flex-column align-items-center justify-content-center">
+    <div class="section1" [ngClass]="isDarkTheme ? 'dark-theme': 'light-theme' ">
+        <div class=" container d-flex flex-column align-items-center justify-content-center">
             <div class="container w-lg-50 d-flex align-items-center justify-content-center my-3">
                 <h1 class="tagline text-center fw-bolder">Pioneering Your
                     <span class="linear-text">Digital Transformation Journey</span>
@@ -21,9 +21,9 @@
     <!-- Section Two -->
     <div class="section2 container-fluid w-100 h-100">
         <div class="categories">
-            <div class="container-fluid text-center text-white cursor-pointer">
+            <div class="container-fluid text-center  cursor-pointer">
                 <div class="row gap-lg-0 gap-3" data-aos="fade-up">
-                    <div *ngFor="let data of services"
+                    <div *ngFor="let data of services" [ngClass]="isDarkTheme?'dark-card':'light-card'"
                         class=" position-relative col cards d-flex flex-column align-items-center justify-content-evenly">
                         <i class="fa-solid fa-arrow-right  position-absolute text-secondary"
                             style="transform: rotate(325deg); top:10px; right:10px"></i>
@@ -42,7 +42,7 @@
             <div class="left-side" data-aos="fade-up">
             </div>
             <div class="right-side d-flex justify-content-start align-items-center" data-aos="fade-up">
-                <div class="container d-flex flex-column align-items-start justify-content-between text-white">
+                <div class="container d-flex flex-column align-items-start justify-content-between ">
                     <div class="text">
                         <h1 class="section3-tagline text-capitalize">
                             Creating pathways for seamless collaboration among businesses
@@ -63,7 +63,7 @@
             </div>
         </div>
         <div class="d-flex justify-content-center align-items-center">
-            <div class="slider">
+            <div class="slider" [ngClass]="isDarkTheme?'slider-dark':'slider-light'">
                 <div class="slide-track">
                     <div class="slide" *ngFor="let img of brandLogo">
                         <img style="filter:grayscale(100%)" height="100" width="100" [src]="img.img"
@@ -87,7 +87,7 @@
                         Our Services
                     </button>
                 </div>
-                <div class="sec4-headline text-white" data-aos="slide-up">
+                <div class="sec4-headline " data-aos="slide-up">
                     <h1 class="service-tagline text-align-center text-capitalize">
                         We provide an extensive range of IT Services
                     </h1>
@@ -96,7 +96,7 @@
             <div id="services" class="container services w-100 h-100">
                 <div class="row">
                     <div *ngFor="let service of ourServices" data-aos="slide-up"
-                        class="text-white col-md-4 d-flex flex-column align-items-center justify-content-center px-lg-5 px-2 my-4">
+                        class=" col-md-4 d-flex flex-column align-items-center justify-content-center px-lg-5 px-2 my-4">
                         <div class="image my-3">
                             <img [src]="service.img" alt="Mobile">
                         </div>
@@ -118,7 +118,7 @@
         <div class="container numbers w-100">
             <div class="numbers-section container w-100">
                 <div class="row text-align-center justify-content-center align-content-center">
-                    <div *ngFor="let nums of sectionFourNums" class="col-3 text-white">
+                    <div *ngFor="let nums of sectionFourNums" class="col-3 ">
                         <div class="miletone-number fw-bolder">{{nums.num}}</div>
                         <div class="miletone-title fw-bolder text-uppercase">{{nums.heading}}</div>
                     </div>
@@ -130,7 +130,7 @@
     <div class="container-fluid section5">
         <div class="container d-flex flex-column justify-content-between my-5 px-lg-5">
             <div class="heading d-flex justify-content-between align-items-center">
-                <div class="text d-flex flex-column text-white">
+                <div class="text d-flex flex-column ">
                     <div class="button" data-aos="slide-up">
                         <button class="our-service-btn">
                             Latest Projects
@@ -149,7 +149,7 @@
             <div class="projects-section d-flex flex-column flex-lg-row container">
                 <div data-aos="fade-in" class="container project-sec-one project-one flex-lg-grow-1 position-relative">
                     <div
-                        class="project-one-details details d-flex justify-content-between align-items-center position-absolute px-3 text-white">
+                        class="project-one-details details d-flex justify-content-between align-items-center position-absolute px-3 ">
                         <div class="w-auto">
                             <div class=" w-auto">
                                 <h3 class="project-title">AMPS App Design</h3>
@@ -164,7 +164,7 @@
                 <div class="h-100 container d-flex flex-column align-items-center justify-content-center">
                     <div data-aos="fade-in" class="project-two project-sec-two position-relative">
                         <div
-                            class="project-two-details details d-flex justify-content-between align-items-center position-absolute px-3 text-white">
+                            class="project-two-details details d-flex justify-content-between align-items-center position-absolute px-3 ">
                             <div class="w-auto">
                                 <div>
                                     <h3 class="project-title w-auto">MainHaus Website Design</h3>
@@ -178,7 +178,7 @@
                     </div>
                     <div data-aos="fade-in" class="project-three project-sec-two position-relative">
                         <div
-                            class="project-three-details details d-flex justify-content-between align-items-center position-absolute px-3 text-white">
+                            class="project-three-details details d-flex justify-content-between align-items-center position-absolute px-3 ">
                             <div class="w-auto">
                                 <div>
                                     <h3 class="project-title w-auto">Wikistrings Website Design</h3>
@@ -199,14 +199,14 @@
     <div class="section6 container">
         <div class="container d-flex flex-column justify-content-between my-1 px-5 my-lg-5">
             <div class="heading d-flex justify-content-between align-items-center">
-                <div class="sec6-text d-flex flex-column text-white">
+                <div class="sec6-text d-flex flex-column ">
                     <div class="our-cust-button" data-aos="slide-up">
                         <button class="our-service-btn">
                             Our Customers
                         </button>
                     </div>
                     <div data-aos="slide-up">
-                        <h1 class="trusted-over-worldwild">Trusted Over Worldwild</h1>
+                        <h1 class="trusted-over-worldwild">Trusted Over Worldwide</h1>
                     </div>
                 </div>
                 <div class="learnMore" data-aos="slide-up">
@@ -227,7 +227,8 @@
         <div class="container h-100">
             <div class="d-flex flex-column flex-lg-row h-100 w-100">
                 <div *ngFor="let review of reviews" class="customer-feedback h-100 w-100 p-5" data-aos="fade-up">
-                    <div class="container text-white d-flex flex-column justify-content-around align-items-start">
+                    <div [ngClass]="isDarkTheme?'cf-cont-dark ':'cf-cont-light'"
+                        class="container cf-cont d-flex flex-column justify-content-around align-items-start">
                         <div class="stars">
                             <i *ngFor="let star of getStars(review.rating)" class="fa-solid fa-star mx-1"></i>
                         </div>
@@ -245,7 +246,7 @@
                     </div>
                 </div>
                 <!-- <div class="customer-feedback h-100 w-100 p-5" data-aos="fade-up">
-                    <div class="container text-white d-flex flex-column justify-content-around align-items-start">
+                    <div class="container  d-flex flex-column justify-content-around align-items-start">
                         <div class="stars">
                             <i class="fa-solid fa-star mx-1"></i>
                             <i class="fa-solid fa-star mx-1"></i>

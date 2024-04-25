@@ -50,16 +50,25 @@ export class MobileappComponent implements OnInit {
 
   ]
 
+  isDarkTheme!: boolean;
   projects!: any[]
 
-  constructor(private api: ApiService, private elementRef: ElementRef) { }
+  constructor(private api: ApiService, private elementRef: ElementRef) {
+  }
 
   ngOnInit(): void {
     AOS.init({
       duration: 2000,
     })
-
+    this.isDarkTheme = this.api.isDarkTheme();
+    this.themechange()
     this.fetchProjects()
+  }
+
+  themechange() {
+    this.api.themeChanged.subscribe((isDarkTheme: boolean) => {
+      this.isDarkTheme = isDarkTheme;
+    });
   }
 
   fetchProjects() {

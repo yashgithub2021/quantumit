@@ -1,8 +1,10 @@
-<nav id="pr-nav" class=" navbar navbar-expand-lg navbar-dark nav-white-desktop" id="navbarColor01">
+<nav id="pr-nav" class=" navbar navbar-expand-lg nav-white-desktop" [ngClass]="isDarkTheme?'navbar-dark':'navbar-light'"
+    id="navbarColor01">
     <div class="container-fluid primary-menu-inner px-0">
-        <div class="top-wrap">
+        <div class="top-wrap w-100">
             <a routerLink="/" class="custom-logo-link navbar-brand m-0 m-lg-auto">
-                <img height="49" width="114" src="../../../assets/logo-white 1.png">
+                <img height="49" [ngClass]="{ 'black-image': !isDarkTheme }" width="114"
+                    src="../../../assets/logo-white 1.png">
             </a>
             <button class="navbar-toggler border-0" type="button" data-toggle="collapse"
                 data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -10,8 +12,9 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
         </div>
-        <div class="collapse navbar-collapse justify-content-start justify-content-lg-end" id="navbarSupportedContent">
-            <ul class="navbar-nav pl-3">
+        <div class="collapse navbar-collapse w-100 justify-content-start justify-content-lg-center"
+            id="navbarSupportedContent">
+            <ul class="navbar-nav m-0">
                 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1553 nav-item">
                     <a class="nav-link border-0" routerLink="/" (click)="closeNavbar()"><span>Home</span></a>
                 </li>
@@ -66,9 +69,10 @@
                 </li>
             </ul>
         </div>
-        <div class="collapse navbar-collapse justify-content-end">
+        <div class="collapse navbar-collapse justify-content-end w-100">
             <div class="form-check form-switch">
-                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                <input (click)="toggleTheme()" class="form-check-input" type="checkbox" role="switch"
+                    id="flexSwitchCheckChecked" [checked]="isDarkTheme">
                 <label class="form-check-label" for="flexSwitchCheckChecked"></label>
             </div>
         </div>

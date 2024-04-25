@@ -1,6 +1,16 @@
-nav {
+.navbar-dark {
     background: #1A1A1A;
 }
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgb(0 0 0);
+}
+
+/* styles.css (or your component-specific CSS file) */
+.black-image {
+    filter: invert(1);
+}
+
 
 .menu-item-1814 {
     /* background: #141414; */

@@ -1,12 +1,38 @@
 /* You can add global styles to this file, and also import other style files */
 /* @import "../node_modules/bootstrap/scss/_mixins.scss"; */
 
-body {
-    background-color: black !important;
-    /* --bs-body-bg: #000000;*/
-    /* background-color: black; */
-    font-family: 'Plus Jakarta Sans';
-    /* background-image: url(./assets/bg.png); */
+/* Light Theme */
+.light-theme {
+    background-color: #ffffff;
+    color: #000000 !important;
+}
+
+/* Dark Theme */
+.dark-theme {
+    background-color: #000000;
+    color: #ffffff !important;
+}
+
+@keyframes fadeInOpacity {
+
+    0%,
+    100% {
+        opacity: 0%;
+    }
+
+    50% {
+        opacity: 30%;
+    }
+}
+
+.light-theme .section1::before {
+    background-image: url('./assets/backgroungimages/home-light.png');
+    animation: none;
+}
+
+.dark-theme .section1::before {
+    background-image: url('./assets/backgroungimages/section1-bg-img.png');
+
 }
 
 /* Hide scrollbar */

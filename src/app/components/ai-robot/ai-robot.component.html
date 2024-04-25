@@ -2,7 +2,7 @@
     <div data-aos="fade-in"
         class="container-fluid position-relative p-0 frame-1 d-flex flex-column justify-content-center align-items-center">
         <div class="container frame-1-cont position-absolute w-75 h-75">
-            <div class="heading w-100 h-100 d-flex flex-column align-items-center justify-content-center text-white">
+            <div class="heading w-100 h-100 d-flex flex-column align-items-center justify-content-center ">
                 <div class="button my-2" data-aos="slide-up">
                     <button class="our-process-btn">Quantum It Innovation</button>
                 </div>
@@ -25,7 +25,7 @@
     <div class="container d-flex frame-2">
         <div class="container d-flex flex-column justify-content-between my-5 px-lg-5">
             <div class="heading d-flex flex-column mb-5 mb-lg-0 flex-lg-row justify-content-between align-items-center">
-                <div class="text w-75 d-flex frame-2-head align-items-center align-items-lg-start flex-column text-white"
+                <div class="text w-75 d-flex frame-2-head align-items-center align-items-lg-start flex-column "
                     data-aos="slide-up">
                     <div class="button">
                         <button class="our-process-btn">
@@ -40,7 +40,7 @@
             </div>
 
             <div class="what-we-do w-100 h-100 mt-lg-5" data-aos="zoom-in">
-                <div class="row w-100 h-100 text-white">
+                <div class="row w-100 h-100 ">
                     <div *ngFor="let data of aiService" data-aos="zoom-out"
                         class="col-lg-4 col-6 ai-data pt-lg-5 px-lg-5 pb-lg-3 d-flex align-items-lg-start align-items-center justify-content-around flex-column">
                         <div class="image">
@@ -57,7 +57,7 @@
 
     <div class="frame-3 container-fluid my-lg-5">
         <div class="container d-flex align-items-center justify-content-center">
-            <div class="text w-100 d-flex flex-column text-white justify-content-center align-items-center">
+            <div class="text w-100 d-flex flex-column  justify-content-center align-items-center">
                 <div class="button" data-aos="zoom-in">
                     <button class="our-process-btn">
                         Industries
@@ -73,10 +73,10 @@
             <div class="slider">
                 <div class="slide-track">
                     <div class="slide" *ngFor="let img of aiService">
-                        <h5 class="text-white fw-lighter">{{img.title}}</h5>
+                        <h5 class=" fw-lighter">{{img.title}}</h5>
                     </div>
                     <div class="slide" *ngFor="let img of aiService">
-                        <h5 class="text-white fw-lighter">{{img.title}}</h5>
+                        <h5 class=" fw-lighter">{{img.title}}</h5>
                     </div>
                 </div>
             </div>
@@ -86,7 +86,7 @@
     <div class="frame-4 container w-100">
         <div class="container d-flex flex-column flex-lg-row w-100 h-100">
             <div class="text w-100 h-100">
-                <div class="text frame-4-cont w-75 d-flex flex-column h-100 justify-content-evenly text-white">
+                <div class="text frame-4-cont w-75 d-flex flex-column h-100 justify-content-evenly ">
                     <div class="button align-self-center align-self-lg-start" data-aos="zoom-in">
                         <button class="our-process-btn">
                             About Us
@@ -103,7 +103,7 @@
                         </p>
                     </div>
                     <div class="list">
-                        <ul class=" list-unstyled text-white">
+                        <ul class=" list-unstyled ">
                             <li data-aos="zoom-in" class=" d-flex align-items-center list-unstyled my-3"
                                 *ngFor="let check of checks">
                                 <i class="fa-solid fa-check mx-2"></i>
@@ -116,14 +116,14 @@
                         <button (click)="scrollToWWD()" class="btn-lm btn-primary mx-3 px-2 px-lg-4 py-2 py-lg-3">Our
                             Mission</button>
                         <button (click)="scrollToForm()"
-                            class="btn btn-outline-primary mx-3 px-2 px-lg-4 py-2 py-lg-3 text-uppercase text-white">learn
+                            class="btn btn-outline-primary mx-3 px-2 px-lg-4 py-2 py-lg-3 text-uppercase ">learn
                             More</button>
                     </div>
                 </div>
             </div>
             <div class="frame-4-image position-relative w-100 h-100 d-flex align-items-center justify-content-center">
                 <div data-aos="zoom-in" class="ai-showcase container w-100 position-absolute h-auto">
-                    <div class="ai-showcase-inner d-flex flex-column justify-content-center p-lg-4 text-white">
+                    <div class="ai-showcase-inner d-flex flex-column justify-content-center p-lg-4 ">
                         <div class="head d-flex justify-content-between align-items-center">
                             <div class="txt">
                                 <p class="showcase-txt">How to use AI to take better notes</p>
@@ -147,7 +147,7 @@
     </div>
 
     <div class="frame-5 my-lg-5" id="wwd">
-        <div class="text w-100 d-flex flex-column text-white justify-content-center align-items-center">
+        <div class="text w-100 d-flex flex-column  justify-content-center align-items-center">
             <div class="button" data-aos="slide-up">
                 <button class="our-process-btn">
                     What We Do
@@ -165,7 +165,7 @@
                     <div class="image">
                         <img [src]="stone.img" class="milestone-img" alt="">
                     </div>
-                    <div class="number d-flex flex-column justify-content-center justify-content-lg-start text-white">
+                    <div class="number d-flex flex-column justify-content-center justify-content-lg-start ">
                         <h1 class=" fw-lighter">{{stone.num}}</h1>
                         <p class="m-0">{{stone.title}}</p>
                     </div>
