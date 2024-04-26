@@ -23,6 +23,11 @@ textarea {
     border: 1px solid #636D79 !important;
     color: white;
 }
+@media(max-width:768px){
+    .form {
+        height: 70vh;
+    }
+}
 
 @media (max-width: 575.98px) {
     .form {

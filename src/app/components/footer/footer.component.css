@@ -99,3 +99,8 @@ button {
         flex-wrap: wrap;
     }
 }
+@media(max-width:768px){
+    .social-links-container{
+        height: 55vh;
+    }
+}

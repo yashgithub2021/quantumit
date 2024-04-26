@@ -297,3 +297,40 @@
     }
 
 }
+
+@media(max-width:768px) {
+    .frame-1>.heading>.tagline {
+        font-size: 55px;
+        line-height: 70px;
+    }
+
+    .frame-1>.heading>p {
+        font-size: 16px !important;
+    }
+
+    .frame-2 {
+        height: 43vh;
+        width: 100vw;
+    }
+
+    .frame-3>.f3-container {
+        height: 125vh !important;
+    }
+
+    .project-container>.app-details {
+        margin-bottom: 25px;
+    }
+
+    .app-details>.app-details-container>.details {
+        font-size: 16px !important;
+        margin-bottom: 25px;
+    }
+
+    .project-two>.project-container>.app-details>.app-details-container>.details {
+        font-size: 16px !important;
+        margin-bottom: 10px;
+    }
+    .project-two>.project-container>.app-details>.app-image{
+        margin-top: 25px;
+    }
+}
