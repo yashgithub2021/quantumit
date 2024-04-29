@@ -1,9 +1,9 @@
-<div id="form" class="container form">
-    <div class="container h-100 w-100 d-flex flex-column flex-lg-row justify-content-center align-items-center">
+<div id="form" class="container form p-5">
+    <div class="container h-100 w-100 d-flex flex-column flex-lg-row justify-content-center align-items-start">
         <div
-            class="options h-100 w-100 d-flex flex-column align-items-center align-items-lg-start gap-lg-5 gap-2 justify-content-center ">
+            class="options h-auto w-100 d-flex flex-column align-items-center align-items-lg-start gap-lg-5 gap-2 justify-content-center ">
             <div class="text">
-                <h1>Lets Talk About:</h1>
+                <h1>Let’s Talk About :</h1>
             </div>
             <div class="option d-flex flex-lg-column flex-row gap-4">
                 <div (click)="changeForm('project')" [ngClass]="visibleForm === 'project'?'blue-opt':'opt'">
@@ -17,28 +17,31 @@
                 </div>
             </div>
         </div>
-        <div class="form h-100 w-100  mt-4 mt-lg-0">
+        <div class="form h-auto w-100  mt-4 mt-lg-0">
             <div *ngIf="visibleForm === 'project'"
                 class="container h-100 w-100 d-flex flex-column align-items-center justify-content-center">
-                <div class="desc w-75">
-                    <p class="color:#A2A9B0 fw-lighter text-align-center">
-                        Have a project in mind that you think we’d be a great fit for it? We’d love to know what you’re
+                <div class="desc w-100">
+                    <p class="color:#A2A9B0 fw-lighter text-left">
+                        Have a project in mind that you think we’d be a great fit for <br>it? We’d love to know what
+                        you’re
                         thinking
                     </p>
                 </div>
                 <div class="form-container w-100">
-                    <form action="">
+                    <form [formGroup]="form" (ngSubmit)="submitForm()">
                         <div class="row my-3">
                             <div class="col-6">
                                 <div class="input d-flex flex-column">
                                     <label for="">First Name</label>
-                                    <input placeholder="Input first name your in here" type="text" class="bg-dark">
+                                    <input placeholder="Input first name your in here" type="text"
+                                        [ngClass]="isDarkTheme?'bg-dark':'bg-light'" required>
                                 </div>
                             </div>
                             <div class="col-6">
                                 <div class="input d-flex flex-column">
                                     <label for="">Last Name</label>
-                                    <input placeholder="Input last name your in here" type="text" class="bg-dark">
+                                    <input placeholder="Input last name your in here" type="text"
+                                        [ngClass]="isDarkTheme?'bg-dark':'bg-light'" required>
                                 </div>
                             </div>
                         </div>
@@ -46,13 +49,15 @@
                             <div class="col-6">
                                 <div class="input d-flex flex-column">
                                     <label for="">Email</label>
-                                    <input placeholder="Input email your in here" type="text" class="bg-dark">
+                                    <input placeholder="Input email your in here" type="email"
+                                        [ngClass]="isDarkTheme?'bg-dark':'bg-light'" required>
                                 </div>
                             </div>
                             <div class="col-6">
                                 <div class="input d-flex flex-column">
                                     <label for="">Company Name</label>
-                                    <input placeholder="Input company name your in here" type="text" class="bg-dark">
+                                    <input placeholder="Input company name here" type="text"
+                                        [ngClass]="isDarkTheme?'bg-dark':'bg-light'" required>
                                 </div>
                             </div>
                         </div>
@@ -61,7 +66,7 @@
                                 <div class="input d-flex flex-column">
                                     <label for="">Message</label>
                                     <textarea placeholder="Write your message in here" type="text"
-                                        class="bg-dark"></textarea>
+                                        [ngClass]="isDarkTheme?'bg-dark':'bg-light'" required></textarea>
                                 </div>
                             </div>
                         </div>
@@ -83,18 +88,32 @@
                     </p>
                 </div>
                 <div class="form-container w-100">
-                    <form action="">
+                    <form action="" [formGroup]="form" (ngSubmit)="submitForm()">
                         <div class="row my-3">
                             <div class="col-6">
                                 <div class="input d-flex flex-column">
                                     <label for="">First Name</label>
-                                    <input placeholder="Input first name your in here" type="text" class="bg-dark">
+                                    <input formControlName="firstName" name="firstName" id="firstName"
+                                        placeholder="Input first name your in here" type="text"
+                                        [ngClass]="isDarkTheme?'bg-dark':'bg-light'" required>
+                                    <div *ngIf="form.get('firstName')?.invalid && form.get('firstName')?.touched">
+                                        <div *ngIf="form.get('firstName')?.errors?.['required']" class="text-danger">
+                                            FirstName is required
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-6">
                                 <div class="input d-flex flex-column">
                                     <label for="">Last Name</label>
-                                    <input placeholder="Input last name your in here" type="text" class="bg-dark">
+                                    <input formControlName="lastName" name="lastName" id="lastName"
+                                        placeholder="Input last name your in here" type="text"
+                                        [ngClass]="isDarkTheme?'bg-dark':'bg-light'" required>
+                                    <div *ngIf="form.get('lastName')?.invalid && form.get('lastName')?.touched">
+                                        <div *ngIf="form.get('lastName')?.errors?.['required']" class="text-danger">
+                                            LastName is required
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -102,13 +121,23 @@
                             <div class="col-6">
                                 <div class="input d-flex flex-column">
                                     <label for="">Email</label>
-                                    <input placeholder="Input email your in here" type="text" class="bg-dark">
+                                    <input formControlName="email" name="email" id="email"
+                                        placeholder="Input email your in here" type="text"
+                                        [ngClass]="isDarkTheme?'bg-dark':'bg-light'" required>
+                                    <div *ngIf="form.get('email')?.invalid && form.get('email')?.touched">
+                                        <div *ngIf="form.get('email')?.errors?.['required']" class="text-danger">Email
+                                            is required</div>
+                                        <div *ngIf="form.get('email')?.errors?.['email']" class="text-danger">Invalid
+                                            email format</div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-6">
                                 <div class="input d-flex flex-column">
                                     <label for="">Resume</label>
-                                    <input placeholder="Input company name your in here" type="file" class="bg-dark">
+                                    <input placeholder="Input company name your in here" type="file"
+                                        [ngClass]="isDarkTheme?'bg-dark':'bg-light'" required
+                                        accept=".png, .jpg, .jpeg, .pdf">
                                 </div>
                             </div>
                         </div>
@@ -117,13 +146,13 @@
                                 <div class="input d-flex flex-column">
                                     <label for="">Message</label>
                                     <textarea placeholder="Write your message in here" type="text"
-                                        class="bg-dark"></textarea>
+                                        [ngClass]="isDarkTheme?'bg-dark':'bg-light'" required></textarea>
                                 </div>
                             </div>
                         </div>
                         <div class="row my-5">
                             <div class="col-6">
-                                <button class="btn btn-primary">
+                                <button [disabled]="form.invalid" class="btn btn-primary">
                                     Send Message
                                 </button>
                             </div>
@@ -138,19 +167,21 @@
                         We connect millions of people to the moments that matter.
                     </p>
                 </div>
-                <div class="form-container">
+                <div class="form-container w-100">
                     <form action="">
                         <div class="row my-3">
                             <div class="col-6">
                                 <div class="input d-flex flex-column">
                                     <label for="">First Name</label>
-                                    <input placeholder="Input first name your in here" type="text" class="bg-dark">
+                                    <input placeholder="Input first name your in here" type="text"
+                                        [ngClass]="isDarkTheme?'bg-dark':'bg-light'" required>
                                 </div>
                             </div>
                             <div class="col-6">
                                 <div class="input d-flex flex-column">
                                     <label for="">Last Name</label>
-                                    <input placeholder="Input last name your in here" type="text" class="bg-dark">
+                                    <input placeholder="Input last name your in here" type="text"
+                                        [ngClass]="isDarkTheme?'bg-dark':'bg-light'" required>
                                 </div>
                             </div>
                         </div>
@@ -158,13 +189,15 @@
                             <div class="col-6">
                                 <div class="input d-flex flex-column">
                                     <label for="">Email</label>
-                                    <input placeholder="Input email your in here" type="text" class="bg-dark">
+                                    <input placeholder="Input email your in here" type="text"
+                                        [ngClass]="isDarkTheme?'bg-dark':'bg-light'" required>
                                 </div>
                             </div>
                             <div class="col-6">
                                 <div class="input d-flex flex-column">
                                     <label for="">Company Name</label>
-                                    <input placeholder="Input company name your in here" type="text" class="bg-dark">
+                                    <input placeholder="Input company name here" type="text"
+                                        [ngClass]="isDarkTheme?'bg-dark':'bg-light'" required>
                                 </div>
                             </div>
                         </div>
@@ -173,7 +206,7 @@
                                 <div class="input d-flex flex-column">
                                     <label for="">Message</label>
                                     <textarea placeholder="Write your message in here" type="text"
-                                        class="bg-dark"></textarea>
+                                        [ngClass]="isDarkTheme?'bg-dark':'bg-light'" required></textarea>
                                 </div>
                             </div>
                         </div>

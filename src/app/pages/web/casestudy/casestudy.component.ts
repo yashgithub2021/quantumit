@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ApiService } from 'src/app/shared/api/api.service';
 
 @Component({
   selector: 'app-casestudy',
@@ -6,6 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./casestudy.component.css']
 })
 export class CasestudyComponent {
+  isDarkTheme!: boolean
+  constructor(private api: ApiService) { }
   aiService = [
     {
       img: "../../../assets/ai/Frame1.png",
@@ -58,4 +61,15 @@ export class CasestudyComponent {
     },
 
   ]
+
+  ngOnInit(): void {
+    this.isDarkTheme = this.api.isDarkTheme();
+    this.themechange()
+  }
+
+  themechange() {
+    this.api.themeChanged.subscribe((isDarkTheme: boolean) => {
+      this.isDarkTheme = isDarkTheme;
+    });
+  }
 }

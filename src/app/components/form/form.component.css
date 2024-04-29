@@ -17,6 +17,10 @@
     background-color: #111111 !important;
 }
 
+.bg-light {
+    background-color: #ECF0FF !important;
+}
+
 input,
 textarea {
     border-radius: 0;

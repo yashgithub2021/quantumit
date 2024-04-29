@@ -9,7 +9,7 @@ import { ApiService } from 'src/app/shared/api/api.service';
 })
 export class MobileappComponent implements OnInit {
 
-  list1 = ["Android App Development", "Swift App Development", "iOS App Development", "iPad App Development", "Cross Platform App",]
+  list1: any[] = []
 
   aiService = [
     {
@@ -57,12 +57,13 @@ export class MobileappComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.list1 = ["Android App Development", "Swift App Development", "iOS App Development", "iPad App Development", "Cross Platform App",]
     AOS.init({
       duration: 2000,
     })
     this.isDarkTheme = this.api.isDarkTheme();
     this.themechange()
-    this.fetchProjects()
+    this.fetchMobileProjects()
   }
 
   themechange() {
@@ -71,13 +72,21 @@ export class MobileappComponent implements OnInit {
     });
   }
 
-  fetchProjects() {
-    this.api.getProjects()
+  fetchMobileProjects() {
+    this.api.getMobileAppProjects()
       .subscribe((res: any) => {
         this.projects = res.projects
-        console.log(this.projects)
+        console.log(res)
       })
   }
+
+  // fetchProjects() {
+  //   this.api.getProjects()
+  //     .subscribe((res: any) => {
+  //       this.projects = res.project
+  //       console.log(res.project)
+  //     })
+  // }
 
   scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });

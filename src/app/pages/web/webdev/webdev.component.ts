@@ -1,5 +1,6 @@
 import { Component, OnInit, ElementRef } from '@angular/core';
 import AOS from 'aos';
+import { ApiService } from 'src/app/shared/api/api.service';
 
 @Component({
   selector: 'app-webdev',
@@ -8,14 +9,9 @@ import AOS from 'aos';
 })
 export class WebdevComponent implements OnInit {
 
-  constructor(private elementRef: ElementRef) { }
-
-
-  ngOnInit(): void {
-    AOS.init({
-      duration: 2000,
-    })
-  }
+  projects!: any
+  isDarkTheme!: boolean
+  constructor(private elementRef: ElementRef, private api: ApiService) { }
 
   our_steps = [
     {
@@ -37,7 +33,7 @@ export class WebdevComponent implements OnInit {
   our_steps2 = [
     {
       stepNo: "Step 04",
-      title: "Testng",
+      title: "Testing",
       desc: "Thoroughly test the website across different devices, browsers, and screen sizes to ensure compatibility and functionality. Identify and fix any bugs or issues that arise."
     },
     {
@@ -47,6 +43,28 @@ export class WebdevComponent implements OnInit {
     },
   ]
 
+  ngOnInit(): void {
+    AOS.init({
+      duration: 2000,
+    })
+    this.isDarkTheme = this.api.isDarkTheme();
+    this.fetchWebProjects()
+    this.themechange()
+  }
+
+  fetchWebProjects() {
+    this.api.getWebAppProjects()
+      .subscribe((res: any) => {
+        this.projects = res.projects
+        console.log(this.projects)
+      })
+  }
+
+  themechange() {
+    this.api.themeChanged.subscribe((isDarkTheme: boolean) => {
+      this.isDarkTheme = isDarkTheme;
+    });
+  }
 
   scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });

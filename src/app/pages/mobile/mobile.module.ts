@@ -6,13 +6,15 @@ import { MobileappComponent } from './mobileapp/mobileapp.component';
 import { SharedModule } from 'src/app/shared/shared/shared.module';
 import { DetailsComponent } from './details/details.component';
 import { CasestudyComponent } from './casestudy/casestudy.component';
+import { AppDetailsComponent } from './app-details/app-details.component';
 
 
 @NgModule({
   declarations: [
     MobileappComponent,
     DetailsComponent,
-    CasestudyComponent
+    CasestudyComponent,
+    AppDetailsComponent
   ],
   imports: [
     CommonModule,

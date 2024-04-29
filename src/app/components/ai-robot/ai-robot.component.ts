@@ -1,5 +1,6 @@
 import { Component, OnInit, ElementRef } from '@angular/core';
 import AOS from 'aos';
+import { ApiService } from 'src/app/shared/api/api.service';
 
 @Component({
   selector: 'app-ai-robot',
@@ -8,14 +9,10 @@ import AOS from 'aos';
 })
 export class AiRobotComponent implements OnInit {
 
-  constructor(private elementRef: ElementRef) { }
+  isDarkTheme!: boolean
+  constructor(private elementRef: ElementRef, private api: ApiService) { }
 
 
-  ngOnInit(): void {
-    AOS.init({
-      duration: 2000,
-    })
-  }
   aiService = [
     {
       img: "../../../assets/ai/Frame1.png",
@@ -49,6 +46,14 @@ export class AiRobotComponent implements OnInit {
 
   ]
 
+  ngOnInit(): void {
+    AOS.init({
+      duration: 2000,
+    })
+
+    this.isDarkTheme = this.api.isDarkTheme();
+    this.themechange()
+  }
 
   checks = ["Chatbot API", "Facial Recognition API", "Natural language processing APIs", "AWS ML Solutions"]
 
@@ -70,6 +75,11 @@ export class AiRobotComponent implements OnInit {
     },
   ]
 
+  themechange() {
+    this.api.themeChanged.subscribe((isDarkTheme: boolean) => {
+      this.isDarkTheme = isDarkTheme;
+    });
+  }
 
   scrollToForm() {
     const footer = this.elementRef.nativeElement.querySelector('#form');

@@ -11,8 +11,7 @@
                     the future of
                     <span class="linear-text"> Digital Marketing</span>
                 </h1>
-                <p data-aos="fade-in" class="head-desc text-align-center w-75"
-                    style="color: #EFEDFDB2;                ">
+                <p data-aos="fade-in" class="head-desc text-align-center w-75 opacity-50">
                     Delve into our comprehensive array of services to witness the transformative evolution of digital
                     marketing, where innovation meets strategy, and possibilities are limitless.
                 </p>
@@ -43,13 +42,19 @@
                     </div>
 
                     <div class="steps-container circles">
-                        <div class="step-circle" data-aos="fade-up"></div>
-                        <div class="step-dashed-line" data-aos="slide-up"></div>
-                        <div class="step-circle" data-aos="fade-down"></div>
-                        <div class="step-dashed-line" data-aos="slide-up"></div>
-                        <div class="step-circle" data-aos="fade-up"></div>
-                        <div class="step-dashed-line" data-aos="slide-up"></div>
-                        <div class="step-circle" data-aos="fade-down"></div>
+                        <div [ngClass]="isDarkTheme?'step-first-circle':'step-first-circle-light'"
+                            class="align-content-center text-align-center" data-aos="fade-up">
+                            <img height="30" width="30" src="../../../../assets/dm/first-circle.svg" alt="">
+                        </div>
+                        <div [ngClass]="isDarkTheme?'step-dashed-line':'step-dashed-line-light'" data-aos="slide-up">
+                        </div>
+                        <div [ngClass]="isDarkTheme?'step-circle':'step-circle-light'" data-aos="fade-down"></div>
+                        <div [ngClass]="isDarkTheme?'step-dashed-line':'step-dashed-line-light'" data-aos="slide-up">
+                        </div>
+                        <div [ngClass]="isDarkTheme?'step-circle':'step-circle-light'" data-aos="fade-up"></div>
+                        <div [ngClass]="isDarkTheme?'step-dashed-line':'step-dashed-line-light'" data-aos="slide-up">
+                        </div>
+                        <div [ngClass]="isDarkTheme?'step-circle':'step-circle-light'" data-aos="fade-down"></div>
                         <!-- Add more circles and dashed lines as needed -->
                     </div>
                     <div class="steps-container w-100 mt-4" data-aos="fade-up">
@@ -77,15 +82,15 @@
 
     <div class="frame-3 container-fluid">
         <div class="d-flex justify-content-center align-items-center">
-            <div class="slider">
+            <div class="slider" [ngStyle]="{background:isDarkTheme?'#111111':'#ECF0FF'}">
                 <div class="slide-track">
                     <div class="slide" *ngFor="let img of brandLogo">
-                        <img style="filter:grayscale(100%)" height="100" width="100" [src]="img.img"
-                            class="d-block w-auto" alt="...">
+                        <img [ngStyle]="{filter:isDarkTheme?'grayscale(100%)':'invert(1)'}" height="100" width="100"
+                            [src]="img.img" class="d-block w-auto" alt="...">
                     </div>
                     <div class="slide" *ngFor="let img of brandLogo">
-                        <img style="filter:grayscale(100%)" height="100" width="100" [src]="img.img"
-                            class="d-block w-auto" alt="...">
+                        <img [ngStyle]="{filter:isDarkTheme?'grayscale(100%)':'invert(1)'}" height="100" width="100"
+                            [src]="img.img" class="d-block w-auto" alt="...">
                     </div>
                 </div>
             </div>
@@ -108,11 +113,12 @@
                 </div>
             </div>
             <div class="what-we-do w-100 h-100 mt-lg-5">
-                <table class="table table-dark table-bordered table-responsive-sm">
+                <table class="table table-bordered table-responsive-sm"
+                    [ngClass]="isDarkTheme?' table-dark':'table-light'">
                     <tbody>
                         <tr *ngFor="let data of tableData" data-aos="fade-up">
                             <th scope="row" class="align-middle p-4">
-                                <img [src]="data.img" alt="">
+                                <img [ngStyle]="{filter:isDarkTheme?'none':'invert(1)'}" [src]="data.img" alt="">
                             </th>
                             <td class="align-middle p-4">
                                 <h4 class="fw-light">{{data.heading}}</h4>
@@ -151,38 +157,48 @@
                 </button>
             </div>
             <div class="txt w-50 text-center my-lg-3">
-                <h1>Our Work Progress In Digital Mastery.</h1>
+                <h1>Our Progressive Approach
+                    in Digital Marketing</h1>
             </div>
         </div>
 
     </div>
     <div class="steps-container squares w-100 mt-lg-5 mb-lg-3 ">
-        <div class="step-line"></div>
-        <div class="step-square" data-aos="fade-up">Step 01</div>
-        <div class="step-line"></div>
-        <div class="step-square" data-aos="fade-down">Step 02</div>
-        <div class="step-line"></div>
-        <div class="step-square" data-aos="fade-up">Step 03</div>
-        <div class="step-line"></div>
+        <div [ngStyle]="{background:isDarkTheme?'white':'black'}" class="step-line"></div>
+        <div [ngStyle]="{background:isDarkTheme?'#111111':'#ECF0FF'}"
+            [ngClass]="isDarkTheme?'step-square':'step-square-light'" data-aos="fade-up">Step 01
+        </div>
+        <div [ngStyle]="{background:isDarkTheme?'white':'black'}" class="step-line"></div>
+        <div [ngStyle]="{background:isDarkTheme?'#111111':'#ECF0FF'}"
+            [ngClass]="isDarkTheme?'step-square':'step-square-light'" data-aos="fade-down">Step 02
+        </div>
+        <div [ngStyle]="{background:isDarkTheme?'white':'black'}" class="step-line"></div>
+        <div [ngStyle]="{background:isDarkTheme?'#111111':'#ECF0FF'}"
+            [ngClass]="isDarkTheme?'step-square':'step-square-light'" data-aos="fade-up">Step 03
+        </div>
+        <div [ngStyle]="{background:isDarkTheme?'white':'black'}" class="step-line"></div>
     </div>
     <div class="steps-container w-100 mt-5 ">
         <div class="step-title w-25 mt-3 mt-lg-0 d-flex flex-column align-items-center justify-content-center">
             <p data-aos="fade-up" class="w-50 fw-lighter fs-5 text-align-center">Client Consultation</p>
-            <p data-aos="fade-up" class="w-75 fw-lighter fs-6 text-align-center" style="color: #B5B5B5;">Quantum begins
+            <p data-aos="fade-up" class="w-75 fw-lighter fs-6 text-align-center"
+                [ngStyle]="{color: isDarkTheme ? '#B5B5B5':'black'}">Quantum begins
                 by thoroughly understanding the client's goals, target audience, and unique needs through in-depth
                 consultations.</p>
         </div>
         <div class="step-dashed-line visually-hidden"></div>
         <div class="step-title w-25 mt-3 mt-lg-0 d-flex justify-content-center align-items-center flex-column">
             <p data-aos="fade-up" class="w-50 fw-lighter fs-5 text-align-center">Strategy Development</p>
-            <p data-aos="fade-up" class="w-75 fw-lighter fs-6 text-align-center" style="color: #B5B5B5;">Based on the
+            <p data-aos="fade-up" class="w-75 fw-lighter fs-6 text-align-center"
+                [ngStyle]="{color: isDarkTheme ? '#B5B5B5':'black'}">Based on the
                 insights gained, Quantum crafts tailored digital marketing strategies, aligning with the client's
                 objectives and maximizing ROI.</p>
         </div>
         <div class="step-dashed-line visually-hidden"></div>
         <div class="step-title w-25 mt-3 mt-lg-0 d-flex justify-content-center align-items-center flex-column">
             <p data-aos="fade-up" class="w50 fw-lighter fs-5 text-align-center">Market Research</p>
-            <p data-aos="fade-up" class="w-75 fw-lighter fs-6 text-align-center" style="color: #B5B5B5;">We conduct
+            <p data-aos="fade-up" class="w-75 fw-lighter fs-6 text-align-center"
+                [ngStyle]="{color: isDarkTheme ? '#B5B5B5':'black'}">We conduct
                 extensive market research to identify trends, opportunities, and competitor strategies to make campaigns
                 effective.</p>
         </div>
@@ -190,10 +206,11 @@
     </div>
 
     <div class="container button w-100 d-flex mt-5 align-items-center justify-content-center">
-        <button data-aos="fade-up" class="our-marketing-btn ">
-            <i class="fa-solid fa-arrow-left  mx-2"></i>
+        <button [ngStyle]="{'background':isDarkTheme?'#111111':'#ECF0FF','color':isDarkTheme?'white':'black'}"
+            data-aos="fade-up" class="our-marketing-btn ">
+            <i [ngClass]="isDarkTheme?'text-white':'text-black'" class="fa-solid fa-arrow-left  mx-2"></i>
             Our Process
-            <i class="fa-solid fa-arrow-right  mx-2"></i>
+            <i [ngClass]="isDarkTheme?'text-white':'text-black'" class="fa-solid fa-arrow-right  mx-2"></i>
         </button>
     </div>
 
@@ -212,7 +229,9 @@
 
             <div class="container w-100 h-100 mt-5 d-flex flex-column justify-content-center align-items-center">
                 <div class="container flex-column flex-lg-row align-items-center d-flex g-3 h-100 w-100">
-                    <div class="mx-2 my-4 my-lg-0 w-100 h-100 our-stories-col" *ngFor="let story of our_stories">
+                    <div class="mx-2 my-4 my-lg-0 w-100 h-100 our-stories-col"
+                        [ngStyle]="{border:isDarkTheme?'1.5px solid #FFFFFF40':'1.5px solid black'}"
+                        *ngFor="let story of our_stories">
                         <div class="container d-flex h-100 flex-column p-4">
                             <div class="blank w-100 h-100">
                                 <div class="text opacity-0 d-flex flex-column ">
@@ -244,13 +263,13 @@
                                         <h2 class="fw-light" style="color:#43BAFF">{{story.num}}</h2>
                                     </div>
                                     <div data-aos="fade-up" class="buttons d-flex justify-content-between my-2">
-                                        <button class="our-gm-btn">
+                                        <button [ngClass]="isDarkTheme?'our-gm-btn':'our-gm-btn-light'">
                                             Organic Social Media
                                         </button>
-                                        <button class="our-gm-btn">
+                                        <button [ngClass]="isDarkTheme?'our-gm-btn':'our-gm-btn-light'">
                                             Paid Social
                                         </button>
-                                        <button class="our-gm-btn">
+                                        <button [ngClass]="isDarkTheme?'our-gm-btn':'our-gm-btn-light'">
                                             SEO
                                         </button>
                                     </div>

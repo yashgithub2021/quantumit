@@ -1,5 +1,6 @@
 import { Component, ElementRef, OnInit } from '@angular/core';
 import AOS from 'aos';
+import { ApiService } from 'src/app/shared/api/api.service';
 
 @Component({
   selector: 'app-digital-marketing',
@@ -8,13 +9,9 @@ import AOS from 'aos';
 })
 export class DigitalMarketingComponent implements OnInit {
 
-  constructor(private elementRef: ElementRef) { }
+  isDarkTheme!: boolean;
 
-  ngOnInit(): void {
-    AOS.init({
-      duration: 2000,
-    })
-  }
+  constructor(private elementRef: ElementRef, private api: ApiService) { }
 
   brandLogo = [
     {
@@ -95,6 +92,20 @@ export class DigitalMarketingComponent implements OnInit {
       desc: "Pay-per-click (PPC) advertising enables businesses to display ads on search engines and other platforms, paying only when users click on their ads."
     },
   ]
+
+  ngOnInit(): void {
+    this.isDarkTheme = this.api.isDarkTheme();
+    AOS.init({
+      duration: 2000,
+    })
+    this.themechange()
+  }
+
+  themechange() {
+    this.api.themeChanged.subscribe((isDarkTheme: boolean) => {
+      this.isDarkTheme = isDarkTheme;
+    });
+  }
 
   scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });

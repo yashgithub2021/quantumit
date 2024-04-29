@@ -8,8 +8,40 @@ import { ApiService } from 'src/app/shared/api/api.service';
 })
 export class AboutComponent implements OnInit {
   constructor(private api: ApiService) { }
+  members: any
+  isDarkTheme!: boolean
   list2 = ["Using latest technologies and creative approaches.", "Working closely with clients to address their needs.", "In the quality of our work and the level of service we give."]
 
+  partners = [
+    {
+      title: "Technology",
+      img: "../../../../assets/about/partner1.svg",
+      name: "Volo Digital Agency",
+      height: "50",
+      width: "100"
+    },
+    {
+      title: "Design",
+      img: "../../../../assets/about/partner2.svg",
+      name: "ZurMarke Studi",
+      height: "60",
+      width: "140"
+    },
+    {
+      title: "Consulting",
+      img: "../../../../assets/about/partner3.svg",
+      name: "Pathpoint Consulting",
+      height: "60",
+      width: "180"
+    },
+    {
+      title: "Consulting",
+      img: "../../../../assets/about/partner3.svg",
+      name: "Pathpoint Consulting",
+      height: "60",
+      width: "180"
+    },
+  ]
   sectionFourNums = [
     {
       num: "10 years",
@@ -27,13 +59,13 @@ export class AboutComponent implements OnInit {
       num: "1.2m+",
       heading: "social followers"
     },
-
   ]
 
-  members: any
 
   ngOnInit(): void {
     this.getMembers()
+    this.isDarkTheme = this.api.isDarkTheme();
+    this.themechange()
   }
 
   getMembers() {
@@ -41,5 +73,11 @@ export class AboutComponent implements OnInit {
       this.members = res
       console.log(this.members.members)
     })
+  }
+
+  themechange() {
+    this.api.themeChanged.subscribe((isDarkTheme: boolean) => {
+      this.isDarkTheme = isDarkTheme;
+    });
   }
 }

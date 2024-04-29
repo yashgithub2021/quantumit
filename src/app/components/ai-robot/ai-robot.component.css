@@ -52,7 +52,6 @@
 }
 
 .ai-data {
-    background: #111111;
     box-sizing: border-box;
     height: 300px;
     border: 1px solid #FFFFFF0F;
@@ -82,7 +81,6 @@
 }
 
 .slide h5 {
-    background: #111111;
     box-shadow: 0px 13px 12px 0px #B5B8C808;
     padding: 10px 30px;
     border-radius: 5px;
@@ -116,6 +114,23 @@
     opacity: 75%
 }
 
+.frame-4-light {
+    height: 110vh;
+    position: relative;
+}
+
+.frame-4-light::before {
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    content: "";
+    background-image: url("../../../assets/ai/about-light.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
 .ai-showcase {
     background: linear-gradient(0deg, rgba(4, 1, 21, 0.1), rgba(4, 1, 21, 0.1)),
         radial-gradient(50% 50% at 50% 50%, rgba(168, 127, 255, 0.04) 0%, rgba(168, 127, 255, 0) 100%);
@@ -131,7 +146,6 @@
         radial-gradient(50% 50% at 50% 50%, rgba(168, 127, 255, 0.04) 0%, rgba(168, 127, 255, 0) 100%);
     border: 1px solid #FFFFFF1A;
     border-radius: 25px;
-    backdrop-filter: blur(10px);
     /* Adds the frosted glass effect */
 }
 

@@ -1,14 +1,14 @@
 <div class="contianer-fluid services">
-    <div class="container frame-1 p-lg-5 p-2 my-4">
-        <div class="heading d-flex flex-column mb-lg-5 mb-lg-0 flex-lg-row justify-content-between align-items-center">
+    <div class="container frame-1 p-lg-5 p-2 my-4 my-lg-0">
+        <div class="heading d-flex flex-column mb-5 mb-lg-0 flex-lg-row justify-content-between align-items-center">
             <div class="text frame-2-head w-100 d-flex align-items-center align-items-lg-start flex-column ">
                 <div class="button">
                     <button class="our-process-btn">
                         Our Services > <span style="color: white;" class="">Services</span>
                     </button>
                 </div>
-                <div class="txt w-50 mt-3 mt-lg-0">
-                    <h1 class="text-align-center text-lg-start text-capitalize">Top-Notch
+                <div class="txt w-100 mt-3 mt-lg-0">
+                    <h1 class="text-align-center text-lg-start text-capitalize">Top-Notch <br>
                         <span class="linear-text text-decoration-underline">search engine optimization</span>
                         Services
                     </h1>
@@ -20,12 +20,12 @@
     <div class="frame-2 container p-0 p-lg-5 my-2">
         <div class="service-section">
             <div class="d-flex align-items-center flex-column h-100 w-100 ">
-                <div class="d-flex align-items-center flex-column flex-lg-row my-5 h-100 w-100">
+                <div class="d-flex align-items-center align-items-lg-start flex-column flex-lg-row my-5 h-100 w-100">
                     <div class="text w-75 pe-lg-5 p-0">
                         <div class="title">
                             <h2 class="mb-3">
-                                Increase Your Organic Ranking with Best SEO Company in USA
-
+                                Boost your organic ranking
+                                with top-tier SEO services
                             </h2>
                         </div>
                         <div class="brief opacity-50">
@@ -46,12 +46,11 @@
                         <img src="../../../../assets/dm/services/service-details-feature-img-1.png" alt="">
                     </div>
                 </div>
-                <div class="d-flex align-items-center my-5 flex-column flex-lg-row-reverse">
-                    <div class="text w-75 ps-lg-5 p-0">
+                <div class="d-flex align-items-start my-5 justify-content-start flex-column flex-lg-row-reverse">
+                    <div class="text w-100 ps-lg-5 p-0">
                         <div class="title">
                             <h2 class="mb-3">
-                                Increase Your Organic Ranking with Best SEO Company in USA
-
+                                In search of a results-driven leading SEO company?
                             </h2>
                         </div>
                         <div class="brief opacity-50">
@@ -80,7 +79,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="image h-100 w-50">
+                    <div class="image h-100 w-100">
                         <img src="../../../../assets/dm/services/service-details-feature-img-2.png" alt="">
                     </div>
                 </div>
@@ -140,10 +139,13 @@
                     </div>
 
                     <div class="container button w-100 d-flex mt-5 align-items-center justify-content-center">
-                        <button class="our-marketing-btn ">
-                            <i class="fa-solid fa-arrow-left  mx-2"></i>
+                        <button [ngStyle]="{'background':isDarkTheme?'#111111':'#ECF0FF'}"
+                            [ngClass]="isDarkTheme?'text-white':'text-black'" class="our-marketing-btn ">
+                            <i [ngClass]="isDarkTheme?'text-white':'text-black'"
+                                class="fa-solid fa-arrow-left  mx-2"></i>
                             Our SEO Services
-                            <i class="fa-solid fa-arrow-right  mx-2"></i>
+                            <i [ngClass]="isDarkTheme?'text-white':'text-black'"
+                                class="fa-solid fa-arrow-right  mx-2"></i>
                         </button>
                     </div>
                 </div>
@@ -273,7 +275,8 @@
             </div>
             <div class="tech-stack my-5">
                 <div class="d-flex flex-wrap w-100 justify-content-between m-auto  align-items-center">
-                    <div class="stack d-flex align-items-center justify-content-between">
+                    <div [ngStyle]="{background:isDarkTheme?'#111111':'#ECF0FF'}"
+                        class="stack d-flex align-items-center justify-content-between">
                         <div class="logo mx-3">
                             <img src="../../../../assets/dm/services/figma.svg" alt="">
                         </div>
@@ -281,7 +284,8 @@
                             <h5 class=" fw-light">Figma</h5>
                         </div>
                     </div>
-                    <div class="stack d-flex align-items-center justify-content-between">
+                    <div [ngStyle]="{background:isDarkTheme?'#111111':'#ECF0FF'}"
+                        class="stack d-flex align-items-center justify-content-between">
                         <div class="logo mx-3">
                             <img src="../../../../assets/dm/services/vs.svg" alt="">
                         </div>
@@ -289,7 +293,8 @@
                             <h5 class=" fw-light">Visual Studio</h5>
                         </div>
                     </div>
-                    <div class="stack d-flex align-items-center justify-content-between">
+                    <div [ngStyle]="{background:isDarkTheme?'#111111':'#ECF0FF'}"
+                        class="stack d-flex align-items-center justify-content-between">
                         <div class="logo mx-3">
                             <img src="../../../../assets/dm/services/react.svg" alt="">
                         </div>
@@ -297,7 +302,8 @@
                             <h5 class=" fw-light">React</h5>
                         </div>
                     </div>
-                    <div class="stack d-flex align-items-center justify-content-between">
+                    <div [ngStyle]="{background:isDarkTheme?'#111111':'#ECF0FF'}"
+                        class="stack d-flex align-items-center justify-content-between">
                         <div class="logo mx-3">
                             <img src="../../../../assets/dm/services/git.svg" alt="">
                         </div>

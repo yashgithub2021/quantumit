@@ -13,6 +13,10 @@
     color: #ffffff !important;
 }
 
+.accordion-button {
+    color: white !important;
+}
+
 @keyframes fadeInOpacity {
 
     0%,
@@ -23,16 +27,6 @@
     50% {
         opacity: 30%;
     }
-}
-
-.light-theme .section1::before {
-    background-image: url('./assets/backgroungimages/home-light.png');
-    animation: none;
-}
-
-.dark-theme .section1::before {
-    background-image: url('./assets/backgroungimages/section1-bg-img.png');
-
 }
 
 /* Hide scrollbar */

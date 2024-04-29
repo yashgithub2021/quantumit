@@ -39,7 +39,23 @@ export class ApiService {
     return this.http.get(`${this.baseUrl}api/blogs/blog`)
   }
 
+  getContributors() {
+    return this.http.get(`${this.baseUrl}api/contributor/contributor`)
+  }
+
   getProjects() {
     return this.http.get(`${this.baseUrl}api/projects/project`)
+  }
+
+  getMobileAppProjects() {
+    return this.http.get(`${this.baseUrl}api/projects/mobile-app-projects`)
+  }
+
+  getWebAppProjects() {
+    return this.http.get(`${this.baseUrl}api/projects/web-app-projects`)
+  }
+
+  getProjectsById(id: any) {
+    return this.http.get(`${this.baseUrl}api/projects/project?id=${id}`)
   }
 }
