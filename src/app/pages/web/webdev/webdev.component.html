@@ -1,14 +1,12 @@
-<div class="container h-auto w-100" style="background: linear-gradient(0deg, #000000, #000000),
-linear-gradient(248.66deg, #000000 0%, #1A1B1E 98.1%);
-">
+<div class="container h-auto w-100">
     <div class="container frame-1 d-flex flex-column justify-content-end align-items-end">
         <div data-aos="fade-in"
             class="heading w-100 h-100 d-flex flex-column align-items-center justify-content-center ">
             <h1 class="tagline text-center fw-bolder w-lg-50">Supreme
                 <span class="linear-text">Web Development </span>Solutions
             </h1>
-            <p class="fs-5 text-align-center">
-                Top-tier web development services, tailored to perfection
+            <p class="fs-5 text-align-center text-capitalize">
+                Top-tier web development services, tailored to <br> perfection
                 for your digital needs.
             </p>
             <div class="buttons d-flex justify-content-center w-100 mt-3">
@@ -18,9 +16,9 @@ linear-gradient(248.66deg, #000000 0%, #1A1B1E 98.1%);
                     More</button>
             </div>
         </div>
-        <div data-aos="slide-up" class="image w-100 h-50">
-            <img src="https://s3-alpha-sig.figma.com/img/2078/9a9e/a15c9c05bac9fa0273b018164c0ac790?Expires=1713139200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=j6PtDIRKFLeE1P4IF0fzhNIYyb46v3gFHgpdDp-RESDHai9KsqcZW4vHv~Icp5zgHnocYRfrjeMh5gmgipTX6Czdf-tSkGNOjimlEmHegkYTqKgZv2Pl~vFvuxr~cubkkL4PEHwroFu78E4QxAO9uzqK5Nygi~7MrUrA9h1wRcTGv9kgNdyAYxwm5mYqRHKqdmQKXY7IV2SPtlVcEWARzhpabiP0Qd0hMLNPq1GAbYURFlAjUicn71E3VCjnJbKB-NwwnyZ599BsBg983aBcYoY6FuDcAbF-8RmsmEEYGysxGHtqFQKVeEfCAeClA5mBl5AxR3z09vB-8rS46sSsCA__"
-                alt="">
+        <div data-aos="fade-in" class="image w-100 h-50">
+            <img *ngIf="isDarkTheme" src="../../../../assets/webdev/banner.png" alt="">
+            <img *ngIf="!isDarkTheme" src="../../../../assets/webdev/light-banner.png" alt="">
         </div>
     </div>
 
@@ -94,7 +92,7 @@ linear-gradient(248.66deg, #000000 0%, #1A1B1E 98.1%);
     </div>
 </div>
 
-<div class="frame-4 d-flex align-items-center justify-content-center">
+<div class="frame-4 d-flex align-items-center justify-content-center mt-5">
     <div class="container d-flex flex-column align-items-center justify-content-center">
         <div class="head w-100 h-100 d-flex flex-column align-items-center justify-content-center">
             <div class="button my-2" data-aos="slide-up">
@@ -102,7 +100,7 @@ linear-gradient(248.66deg, #000000 0%, #1A1B1E 98.1%);
             </div>
 
             <div class="our-process my-2 " data-aos="slide-up">
-                <h1>Highlighting Our
+                <h1 class=" text-align-center">Highlighting Our <br>
                     Accomplished Endeavors</h1>
             </div>
 
@@ -121,18 +119,17 @@ linear-gradient(248.66deg, #000000 0%, #1A1B1E 98.1%);
                     <div class="project-container h-75 w-100 position-absolute d-flex flex-column flex-lg-row p-lg-5">
                         <div class="app-details h-100 w-100 d-flex align-items-center justify-content-center">
                             <div data-aos="fade-up"
-                                class="app-details-container w-50 h-100 m-auto d-flex flex-column align-items-center align-items-lg-start justify-content-evenly ">
+                                class="app-details-container text-white w-50 h-100 m-auto d-flex flex-column align-items-center align-items-lg-start justify-content-evenly ">
                                 <div>
                                     <button class="app-button app-button-one">App</button>
                                 </div>
                                 <div class="name">
-                                    <h2>Wikistrings Website</h2>
+                                    <h2>{{projects[0].name}}</h2>
                                 </div>
                                 <div class="details fw-lighter text-align-center text-lg-start fs-5">
-                                    We designed Wikistrings' website, an interactive platform dedicated to real-world
-                                    evaluation and interaction with guitar strings.
+                                    {{(projects[0].description.length>100)? (projects[0].description | slice:0:100)+'...':(projects[0].description)}}
                                 </div>
-                                <div routerLink="details" (click)="scrollToTop()"
+                                <div [routerLink]="'details/' + projects[0]?._id" (click)="scrollToTop()"
                                     class="view-more fw-light d-flex align-items-center">
                                     <p class="p-0 me-4 mb-0">View More Details</p>
                                     <i class="fa fa-solid fa-arrow-right"></i>
@@ -158,13 +155,12 @@ linear-gradient(248.66deg, #000000 0%, #1A1B1E 98.1%);
                                     <button class="app-button app-button-two">App</button>
                                 </div>
                                 <div class="name">
-                                    <h2>Super Car Warranty</h2>
+                                    <h2>{{projects[1].name}}</h2>
                                 </div>
                                 <div class="details fw-lighter text-align-center text-lg-start text-l fs-5">
-                                    Designed a website for Super Car Warranty which offers car warranties, featuring
-                                    unbeatable deals with extensive coverage for maximum value
+                                    {{(projects[1].description.length>100)? (projects[1].description | slice:0:100)+'...':(projects[1].description)}}
                                 </div>
-                                <div routerLink="details" (click)="scrollToTop()"
+                                <div [routerLink]="'details/' + projects[1]?._id" (click)="scrollToTop()"
                                     class="view-more fw-light d-flex align-items-center">
                                     <p class="p-0 me-4 mb-0">View More Details</p>
                                     <i class="fa fa-solid fa-arrow-right text-black"></i>
@@ -185,18 +181,17 @@ linear-gradient(248.66deg, #000000 0%, #1A1B1E 98.1%);
                         <div data-aos="fade-up"
                             class="app-details h-100 w-100 d-flex align-items-center justify-content-center">
                             <div
-                                class="app-details-container w-50 h-100 m-auto d-flex flex-column align-items-center align-items-lg-start justify-content-evenly ">
+                                class="app-details-container text-white w-50 h-100 m-auto d-flex flex-column align-items-center align-items-lg-start justify-content-evenly ">
                                 <div>
                                     <button class="app-button app-button-three">App</button>
                                 </div>
                                 <div class="name">
-                                    <h2>MeinHaus</h2>
+                                    <h2>{{projects[2].name}}</h2>
                                 </div>
                                 <div class="details fw-lighter text-align-center text-lg-start fs-5">
-                                    We created the MeinHaus website, connecting users with service providers for
-                                    painting, demolition, cleaning, and appliance installation services.
+                                    {{(projects[2].description.length>100)? (projects[2].description | slice:0:100)+'...':(projects[2].description)}}
                                 </div>
-                                <div routerLink="details" (click)="scrollToTop()"
+                                <div [routerLink]="'details/' + projects[2]?._id" (click)="scrollToTop()"
                                     class="view-more fw-light d-flex align-items-center">
                                     <p class="p-0 me-4 mb-0">View More Details</p>
                                     <i class="fa fa-solid fa-arrow-right "></i>

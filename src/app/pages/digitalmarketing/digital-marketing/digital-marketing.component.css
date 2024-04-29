@@ -84,10 +84,36 @@
     margin-right: 20px;
 }
 
+.step-circle-light {
+    width: 40px;
+    height: 40px;
+    background: #ECF0FF;
+    border: 1px solid #7EA6BE;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.step-first-circle {
+    width: 60px;
+    height: 60px;
+    background: #000000;
+    border: 1px solid #7EA6BE;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.step-first-circle-light {
+    width: 60px;
+    height: 60px;
+    background: #ECF0FF;
+    border: 1px solid #7EA6BE;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
 .step-square {
     width: 70px;
     height: 60px;
-    background: #111111;
     position: relative;
     padding: 10px;
     display: flex;
@@ -113,6 +139,35 @@
     /* Color of the vertical line */
 }
 
+.step-square-light {
+    width: 70px;
+    height: 60px;
+    position: relative;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: black;
+    /* Position for vertical line */
+}
+
+.step-square-light::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    /* Position the vertical line below the square */
+    left: 50%;
+    /* Position the vertical line in the middle of the square */
+    transform: translateX(-50%);
+    /* Center the vertical line horizontally */
+    height: 100%;
+    width: 1px;
+    /* Width of the vertical line */
+    background-color: black;
+    /* Color of the vertical line */
+}
+
 .step-text {
     color: #fff;
     margin-top: 5px;
@@ -128,13 +183,20 @@
     /* margin-top: 20px; */
 }
 
-.step-line {
+.step-dashed-line-light {
     flex-grow: 1;
     height: 1px;
-    background-color: #fff;
+    background-image: linear-gradient(to right, #7EA6BE 50%, transparent 50%);
     background-size: 10px 1px;
     background-repeat: repeat-x;
     /* margin-top: 20px; */
+}
+
+.step-line {
+    flex-grow: 1;
+    height: 1px;
+    background-size: 10px 1px;
+    background-repeat: repeat-x;
 }
 
 .slider {
@@ -143,7 +205,6 @@
     overflow: hidden;
     position: relative;
     width: auto;
-    background-color: #111111;
 }
 
 .slider .slide-track {
@@ -187,6 +248,11 @@
     background-color: #000000 !important;
 }
 
+.table-light {
+    border: 1px solid #111111 !important;
+    background-color: white !important;
+}
+
 .table-dark>tbody>tr:nth-child(odd)>td,
 .table-dark>tbody>tr:nth-child(odd)>th {
     background-color: black;
@@ -198,6 +264,20 @@
 .table-dark>tbody>tr:nth-child(even)>th {
     background-color: black;
     border: 1px solid #FFFFFF14 !important;
+
+}
+
+.table-light>tbody>tr:nth-child(odd)>td,
+.table-light>tbody>tr:nth-child(odd)>th {
+    background-color: white;
+    border: 1px solid #111111 !important;
+
+}
+
+.table-light>tbody>tr:nth-child(even)>td,
+.table-light>tbody>tr:nth-child(even)>th {
+    background-color: white;
+    border: 1px solid #111111 !important;
 
 }
 
@@ -221,7 +301,6 @@
 
 .our-stories-col {
     border-radius: 10px;
-    border: 1.5px solid #FFFFFF40
 }
 
 .frame-6 {
@@ -240,6 +319,20 @@
     background: linear-gradient(91.58deg, #43BAFF 0.52%, #7044B3 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    backdrop-filter: blur(2px);
+}
+
+.our-gm-btn-light {
+    font-size: 12px;
+    padding: 7px 15px 7px 15px;
+    gap: 0px;
+    border-radius: 32px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    border: 1px solid black;
+    box-shadow: 0px -7px 11px 0px #A48FFF1F inset;
+    color: black;
+    opacity: 50%;
     backdrop-filter: blur(2px);
 }
 

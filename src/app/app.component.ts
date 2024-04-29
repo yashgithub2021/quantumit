@@ -11,12 +11,13 @@ export class AppComponent implements OnInit {
 
   title = 'quantumit';
   theme = 'dark'
-
+  isDarkMode!: boolean
   ngOnInit() {
     // Check theme preference from local storage or service and apply it
-    const isDarkTheme = this.isDarkTheme(); // Example: Get theme preference from local storage or service
-    console.log(isDarkTheme)
-    this.setTheme(isDarkTheme);
+    this.isDarkMode = this.isDarkTheme(); // Example: Get theme preference from local storage or service
+    console.log(this.isDarkMode)
+    this.setTheme(this.isDarkMode);
+    this.themechange()
   }
   setTheme(isDarkTheme: boolean) {
     // Add or remove CSS class based on theme preference
@@ -30,5 +31,11 @@ export class AppComponent implements OnInit {
   }
   isDarkTheme(): boolean {
     return this.api.isDarkTheme();
+  }
+
+  themechange() {
+    this.api.themeChanged.subscribe((isDarkTheme: boolean) => {
+      this.isDarkMode = isDarkTheme;
+    });
   }
 }

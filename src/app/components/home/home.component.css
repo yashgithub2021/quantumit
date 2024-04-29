@@ -42,6 +42,31 @@
     /* Apply the animation */
 }
 
+.light::before {
+    background-image: url('../../../assets/backgroungimages/home-light.png');
+    animation: none;
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.dark::before {
+    background-image: url('../../../assets/backgroungimages/section1-bg-img.png');
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 .tagline {
     font-size: 68px;
     line-height: 78px;
@@ -65,7 +90,7 @@
 }
 
 .light-card {
-    background-color: white;
+    background-color: #ECF0FF;
 
 }
 

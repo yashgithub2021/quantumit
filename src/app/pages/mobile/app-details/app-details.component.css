@@ -1,0 +1,34 @@
+* {
+    font-family: 'Plus Jakarta Sans';
+}
+
+.container {
+    margin: 20px 0;
+}
+
+.desc-txt {
+    font-size: 20px;
+    line-height: 25.2px;
+}
+
+.list-check {
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+.project-img {
+    height: 400px;
+    object-fit: cover;
+}
+
+@media (max-width: 1024px) {
+
+    .w-50,
+    .w-75 {
+        width: 100% !important;
+    }
+
+    .desc-txt {
+        font-size: 15px;
+    }
+}

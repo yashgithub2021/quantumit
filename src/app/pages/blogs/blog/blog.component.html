@@ -4,7 +4,7 @@
             <div class="container numbers w-100 my-5">
                 <div class="numbers-section rounded-3 d-flex align-items-center justify-content-center container w-100">
                     <div class="latest-news d-flex text-align-center w-75 justify-content-center align-content-center">
-                        <div class="">
+                        <div class="text-white">
                             <div class="miletone-number fw-bolder">
                                 <h1>
                                     Latest News & Articles
@@ -23,7 +23,8 @@
         <div class="frame-2 w-100 h-100">
             <div class="container d-flex">
                 <div class="cards d-flex flex-column flex-lg-row">
-                    <div class="card py-4 m-3 w-100">
+                    <div class="card py-4 m-3 w-100"
+                        [ngStyle]="{'color':isDarkTheme?'white':'black','background':isDarkTheme?'#111111':'#ECF0FF'}">
                         <div class="card-body">
                             <h4 class="card-title linear-text d-inline-block ps-3">Popular</h4>
                         </div>
@@ -63,7 +64,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card m-3 w-100">
+                    <div class="card m-3 w-100"
+                        [ngStyle]="{'color':isDarkTheme?'white':'black','background':isDarkTheme?'#111111':'#ECF0FF'}">
                         <img style="height: 40%;" src="../../../../assets/blog/blog1.png" class="card-img-top"
                             alt="...">
                         <div class="card-body px-3">
@@ -78,12 +80,13 @@
                                 <div class="text">
                                     <h5 class="fw-light ">{{blogs[0].blogTitle}}
                                     </h5>
-                                    <p style="color: #FFFFFF; opacity:70%">{{blogs[0].blogDataBrief}} …</p>
+                                    <p class="opacity-50">{{blogs[0].blogDataBrief}} …</p>
                                 </div>
                             </div>
                         </div>
                         <div class="card-footer text-body-secondary px-3">
-                            <div class="container d-flex justify-content-between ">
+                            <div class="container d-flex justify-content-between"
+                                [ngClass]="isDarkTheme?'text-white':'text-black'">
                                 <div class="profile d-flex justify-content-evenly">
                                     <div class="img mx-2">
                                         <img style="object-fit: contain;" src="../../../../assets/blog/profile.svg"
@@ -99,7 +102,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card m-3 w-100">
+                    <div class="card m-3 w-100"
+                        [ngStyle]="{'color':isDarkTheme?'white':'black','background':isDarkTheme?'#111111':'#ECF0FF'}">
                         <img style="height: 40%;" src="../../../../assets/blog/blog2.png" class="card-img-top"
                             alt="...">
                         <div class="card-body px-3">
@@ -115,12 +119,13 @@
                                     <h5 class="fw-light ">
                                         {{blogs[1].blogTitle}}
                                     </h5>
-                                    <p style="color: #FFFFFF; opacity:70%">{{blogs[1].blogDataBrief}} …</p>
+                                    <p class="opacity-50">{{blogs[1].blogDataBrief}} …</p>
                                 </div>
                             </div>
                         </div>
                         <div class="card-footer text-body-secondary px-3">
-                            <div class="container d-flex justify-content-between ">
+                            <div class="container d-flex justify-content-between"
+                                [ngClass]="isDarkTheme?'text-white':'text-black'">
                                 <div class="profile d-flex justify-content-evenly">
                                     <div class="img mx-2">
                                         <img style="object-fit: contain;" src="../../../../assets/blog/profile.svg"
@@ -144,21 +149,26 @@
         <div class="frame-3 container w-100 my-5 min-vh-100">
             <div class="contributors-section d-flex flex-column h-auto flex-lg-row">
                 <div class="contributors w-auto flex-lg-grow-0 flex mx-2">
-                    <div style="width: 20rem;" class="card py-4">
+                    <div style="width: 20rem;" class="card py-4"
+                        [ngStyle]="{'color':isDarkTheme?'white':'black','background':isDarkTheme?'#111111':'#ECF0FF'}">
                         <div class="card-body">
                             <h5 class="card-title fw-bold linear-text">Top Contributors</h5>
                         </div>
-                        <div class="card-body d-flex flex-column justify-content-between">
-                            <div class="profile my-3 d-flex align-items-center ">
+                        <div [ngStyle]="{'color':isDarkTheme?'white':'black'}"
+                            class="card-body d-flex flex-column justify-content-between">
+                            <div *ngFor="let contributor of contributors"
+                                class="profile my-3 d-flex align-items-center ">
                                 <div class="img mx-2">
-                                    <img style="object-fit: contain;" src="../../../../assets/blog/cont-1.svg" alt="">
+                                    <img style="object-fit: contain;" class=" rounded-circle" height="60" width="60"
+                                        [src]="contributor.profileImage" alt="">
                                 </div>
                                 <div class="name mx-2">
-                                    <p class="mb-0">Andrea Wise</p>
-                                    <span class="opacity-50" style="font-size: 10px;">135 articles</span>
+                                    <p class="mb-0">{{contributor.name}}</p>
+                                    <span class="opacity-50" style="font-size: 10px;">{{contributor.numberOfArticles}}
+                                        articles</span>
                                 </div>
                             </div>
-                            <div class="profile my-3 d-flex align-items-center ">
+                            <!-- <div class="profile my-3 d-flex align-items-center ">
                                 <div class="img mx-2">
                                     <img style="object-fit: contain;" src="../../../../assets/blog/cont-2.svg" alt="">
                                 </div>
@@ -193,12 +203,12 @@
                                     <p class="mb-0">Angela Smith</p>
                                     <span class="opacity-50" style="font-size: 10px;">135 articles</span>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
                 <div class="contributor-image position-relative w-100 h-auto flex-lg-grow-1 mx-2">
-                    <div class=" single-cont w-50 d-flex flex-column h-100 p-5 top-0 position-absolute">
+                    <div class="text-white single-cont w-50 d-flex flex-column h-100 p-5 top-0 position-absolute">
                         <div class="title my-2">
                             <h2>Technologies For Future Of Healthcare</h2>
                         </div>

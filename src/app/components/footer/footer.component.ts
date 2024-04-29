@@ -1,15 +1,16 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { ApiService } from 'src/app/shared/api/api.service';
 
 @Component({
   selector: 'app-footer',
   templateUrl: './footer.component.html',
   styleUrls: ['./footer.component.css']
 })
-export class FooterComponent {
+export class FooterComponent implements OnInit {
 
-  scrollToTop() {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  }
+  isDarkMode!: boolean
+  constructor(private api: ApiService) { }
+
 
   facebook = "www.facebook.com/quantumitinnovationindia"
 
@@ -102,4 +103,20 @@ export class FooterComponent {
       ]
     },
   ]
+
+  ngOnInit(): void {
+    this.darkModeCheck()
+    console.log(this.isDarkMode)
+  }
+
+  darkModeCheck() {
+    this.isDarkMode = this.api.isDarkTheme()
+    this.api.themeChanged.subscribe((isDarkTheme: boolean) => {
+      this.isDarkMode = isDarkTheme;
+      // Perform actions based on theme change
+    });
+  }
+  scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
 }

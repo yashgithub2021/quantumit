@@ -1,6 +1,6 @@
 <div class="d-flex flex-column">
     <!-- Section One -->
-    <div class="section1" [ngClass]="isDarkTheme ? 'dark-theme': 'light-theme' ">
+    <div class="section1" [ngClass]="isDarkTheme ? 'dark' : 'light'">
         <div class=" container d-flex flex-column align-items-center justify-content-center">
             <div class="container w-lg-50 d-flex align-items-center justify-content-center my-3">
                 <h1 class="tagline text-center fw-bolder">Pioneering Your
@@ -8,8 +8,9 @@
                 </h1>
             </div>
             <div class="container d-flex align-items-center justify-content-center my-3">
-                <h1 class="text-center fs-5 fw-light w-lg-50">Comprehensive solutions for seamless development and
-                    maintenance of your digital platforms.</h1>
+                <h1 class="text-center fs-5 fw-light w-lg-50 text-capitalize">Comprehensive solutions for seamless
+                    development and
+                    maintenance of <br> your digital platforms.</h1>
             </div>
             <div class="container d-flex align-items-center justify-content-center my-3">
                 <button (click)="scrollToGetStarted()" class="btn btn-primary fs-5 rounded">Get Started</button>
@@ -66,12 +67,12 @@
             <div class="slider" [ngClass]="isDarkTheme?'slider-dark':'slider-light'">
                 <div class="slide-track">
                     <div class="slide" *ngFor="let img of brandLogo">
-                        <img style="filter:grayscale(100%)" height="100" width="100" [src]="img.img"
-                            class="d-block w-auto" alt="...">
+                        <img [ngStyle]="{filter:isDarkTheme?'grayscale(100%)':'invert(1)'}" height="100" width="100"
+                            [src]="img.img" class="d-block w-auto" alt="...">
                     </div>
                     <div class="slide" *ngFor="let img of brandLogo">
-                        <img style="filter:grayscale(100%)" height="100" width="100" [src]="img.img"
-                            class="d-block w-auto" alt="...">
+                        <img [ngStyle]="{filter:isDarkTheme?'grayscale(100%)':'invert(1)'}" height="100" width="100"
+                            [src]="img.img" class="d-block w-auto" alt="...">
                     </div>
                 </div>
             </div>
@@ -118,9 +119,9 @@
         <div class="container numbers w-100">
             <div class="numbers-section container w-100">
                 <div class="row text-align-center justify-content-center align-content-center">
-                    <div *ngFor="let nums of sectionFourNums" class="col-3 ">
+                    <div *ngFor="let nums of sectionFourNums" class="col-3 text-white">
                         <div class="miletone-number fw-bolder">{{nums.num}}</div>
-                        <div class="miletone-title fw-bolder text-uppercase">{{nums.heading}}</div>
+                        <div class="miletone-title fw-bolder text-uppercase">● {{nums.heading}}</div>
                     </div>
                 </div>
             </div>
@@ -147,12 +148,13 @@
                 </div>
             </div>
             <div class="projects-section d-flex flex-column flex-lg-row container">
-                <div data-aos="fade-in" class="container project-sec-one project-one flex-lg-grow-1 position-relative">
+                <div data-aos="fade-in"
+                    class="container p-0 project-sec-one project-one flex-lg-grow-1 position-relative">
                     <div
                         class="project-one-details details d-flex justify-content-between align-items-center position-absolute px-3 ">
                         <div class="w-auto">
                             <div class=" w-auto">
-                                <h3 class="project-title">AMPS App Design</h3>
+                                <h3 class="project-title text-white">AMPS App Design</h3>
                             </div>
                             <div style="color: #D1D4DC;" class="decs w-75">
                                 We provided app development services for The AMPS Institute, delivering a platform
@@ -167,7 +169,7 @@
                             class="project-two-details details d-flex justify-content-between align-items-center position-absolute px-3 ">
                             <div class="w-auto">
                                 <div>
-                                    <h3 class="project-title w-auto">MainHaus Website Design</h3>
+                                    <h3 class="project-title w-auto text-white">MainHaus Website Design</h3>
                                 </div>
                                 <div style="color: #D1D4DC;" class="decs w-100">
                                     We developed MeinHaus' website, linking service providers and users for services
@@ -181,7 +183,7 @@
                             class="project-three-details details d-flex justify-content-between align-items-center position-absolute px-3 ">
                             <div class="w-auto">
                                 <div>
-                                    <h3 class="project-title w-auto">Wikistrings Website Design</h3>
+                                    <h3 class="project-title w-auto text-white">Wikistrings Website Design</h3>
                                 </div>
                                 <div style="color: #D1D4DC;" class="decs w-100">
                                     We crafted the website for Wikistrings, a dynamic platform designed for real-life
@@ -198,15 +200,16 @@
     <!-- Section 6 -->
     <div class="section6 container">
         <div class="container d-flex flex-column justify-content-between my-1 px-5 my-lg-5">
-            <div class="heading d-flex justify-content-between align-items-center">
+            <div class="heading d-flex flex-column flex-lg-row justify-content-between align-items-center">
                 <div class="sec6-text d-flex flex-column ">
-                    <div class="our-cust-button" data-aos="slide-up">
+                    <div class="our-cust-button d-flex justify-content-center justify-content-lg-start"
+                        data-aos="slide-up">
                         <button class="our-service-btn">
                             Our Customers
                         </button>
                     </div>
                     <div data-aos="slide-up">
-                        <h1 class="trusted-over-worldwild">Trusted Over Worldwide</h1>
+                        <h1 class="trusted-over-worldwild text-align-center text-lg-left">Trusted Over Worldwide</h1>
                     </div>
                 </div>
                 <div class="learnMore" data-aos="slide-up">

@@ -127,10 +127,12 @@
             <div class="slider">
                 <div class="slide-track">
                     <div class="slide" *ngFor="let img of aiService">
-                        <h5 class=" fw-lighter">{{img.title}}</h5>
+                        <h5 [ngStyle]="{'background':isDarkTheme?'#111111':'#ECF0FF'}" class=" fw-lighter">{{img.title}}
+                        </h5>
                     </div>
                     <div class="slide" *ngFor="let img of aiService">
-                        <h5 class=" fw-lighter">{{img.title}}</h5>
+                        <h5 [ngStyle]="{'background':isDarkTheme?'#111111':'#ECF0FF'}" class=" fw-lighter">{{img.title}}
+                        </h5>
                     </div>
                 </div>
             </div>
@@ -166,7 +168,8 @@
     <div class="container d-flex justify-content-center">
         <div class="container w-75 d-flex flex-column flex-lg-row justify-content-between gap-3">
             <div class="cards d-flex gap-3 flex-column justify-content-between">
-                <div class="card p-3  rounded-3">
+                <div class="card p-3 rounded-3" [ngStyle]="{background:isDarkTheme?'#111111':'#ECF0FF'}"
+                    [ngClass]="isDarkTheme?'text-white':'text-black'">
                     <div class="container card-body">
                         <div class="image my-3">
                             <img src="../../../../assets/dm/casestudy/icon.svg" alt="">
@@ -189,7 +192,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card  rounded-3">
+                <div class="card  rounded-3" [ngStyle]="{background:isDarkTheme?'#111111':'#ECF0FF'}">
 
                     <div class="card-body p-0 rounded-top-3 numbers-section">
                         <div class="card-header border-0 d-flex justify-content-between">
@@ -212,7 +215,8 @@
                             <p class="jetbrains m-0 ">31 words · 125 characters</p>
                         </div>
                     </div>
-                    <div class="container card-body p-5">
+                    <div [ngStyle]="{background:isDarkTheme?'#111111':'#ECF0FF'}"
+                        [ngClass]="isDarkTheme?'text-white':'text-black'" class="container card-body p-5">
                         <div class="image my-3">
                             <img src="../../../../assets/dm/casestudy/text.svg" alt="">
                         </div>
@@ -232,7 +236,8 @@
                 </div>
             </div>
             <div class="cards d-flex flex-column gap-3 justify-content-between">
-                <div class="card p-3  rounded-3">
+                <div [ngStyle]="{background:isDarkTheme?'#111111':'#ECF0FF'}"
+                    [ngClass]="isDarkTheme?'text-white':'text-black'" class="card p-3  rounded-3">
                     <div class="container card-body">
                         <div class="image my-3">
                             <img src="../../../../assets/dm/casestudy/sk.svg" alt="">
@@ -250,7 +255,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="card  rounded-3">
+                <div [ngStyle]="{background:isDarkTheme?'#111111':'#ECF0FF'}"
+                    [ngClass]="isDarkTheme?'text-white':'text-black'" class="card  rounded-3">
                     <div class="container card-body p-5">
                         <div class="title my-3">
                             <h5>System Commands</h5>
@@ -272,7 +278,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="card  rounded-3">
+                <div [ngStyle]="{background:isDarkTheme?'#111111':'#ECF0FF'}"
+                    [ngClass]="isDarkTheme?'text-white':'text-black'" class="card  rounded-3">
                     <div class="container text-center  my-1 card-body">
                         <div class="image">
                             <img src="../../../../assets/dm/casestudy/icon2.svg" alt="">
@@ -281,13 +288,15 @@
                     <div class="container text-center card-body">
                         <div class="d-flex justify-content-center align-items-center">
                             <p class="link-desc mx-2 mb-0">Build Your Own</p>
-                            <i class="fa fa-solid fa-arrow-right mx-2"></i>
+                            <i class="fa fa-solid fa-arrow-right mx-2"
+                                [ngClass]="isDarkTheme?'text-white':'text-black'"></i>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="cards d-flex flex-column justify-content-between gap-3 gap-lg-0">
-                <div class="card p-3  rounded-3">
+                <div [ngStyle]="{background:isDarkTheme?'#111111':'#ECF0FF'}"
+                    [ngClass]="isDarkTheme?'text-white':'text-black'" class="card p-3  rounded-3">
                     <div class="container card-body">
                         <div class="image my-3">
                             <img src="../../../../assets/dm/casestudy/fs.svg" alt="">
@@ -308,7 +317,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="card  rounded-3">
+                <div [ngStyle]="{background:isDarkTheme?'#111111':'#ECF0FF'}"
+                    [ngClass]="isDarkTheme?'text-white':'text-black'" class="card rounded-3">
                     <div class="container p-5 card-body">
                         <div class="image my-3">
                             <img src="../../../../assets/dm/casestudy/ql.svg" alt="">
@@ -343,7 +353,8 @@
             <div class="numbers-section rounded-3 container-fluid w-100">
                 <div
                     class="heading container d-flex flex-column mb-lg-5 mb-lg-0 flex-lg-row justify-content-between align-items-center">
-                    <div class="text frame-2-head w-100 d-flex align-items-center justify-content-center flex-column ">
+                    <div
+                        class="text text-white frame-2-head w-100 d-flex align-items-center justify-content-center flex-column ">
                         <div class="button">
                             <button class="our-result-btn">
                                 Result
@@ -359,7 +370,7 @@
                 <div class="container our-numbers w-100 mt-lg-5 mt-3">
                     <div class="num-sec container w-100">
                         <div class="row text-align-center justify-content-center align-content-center">
-                            <div *ngFor="let nums of sectionFourNums" class="col-3 ">
+                            <div *ngFor="let nums of sectionFourNums" class="col-3 text-white">
                                 <div class="miletone-number fw-bolder">{{nums.num}}</div>
                                 <div>
                                     <p class="miletone-title fw-bold text-uppercase ">

@@ -11,6 +11,7 @@ import { AiRobotComponent } from './components/ai-robot/ai-robot.component';
 import { FormComponent } from './components/form/form.component';
 import { SharedModule } from './shared/shared/shared.module';
 import { HttpClientModule } from '@angular/common/http'
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,8 +26,9 @@ import { HttpClientModule } from '@angular/common/http'
     AppRoutingModule,
     BrowserAnimationsModule,
     SharedModule,
-    HttpClientModule
-
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

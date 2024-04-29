@@ -14,10 +14,6 @@
 
 }
 
-.card {
-    background-color: #111111;
-}
-
 .contributor-image::before {
     content: "";
     background-position: top;

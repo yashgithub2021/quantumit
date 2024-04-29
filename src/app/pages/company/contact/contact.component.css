@@ -22,10 +22,6 @@
     padding: 82px 60px;
 }
 
-.form-container {
-    background: #111111;
-}
-
 .our-process-btn {
     padding: 7px 15px 7px 15px;
     gap: 0px;
@@ -40,15 +36,20 @@
     backdrop-filter: blur(2px);
 }
 
-.address {
-    background: #111111;
-}
-
 .accordion {
     --bs-accordion-bg: #111111;
     --bs-accordion-color: white;
     --bs-accordion-active-bg: black;
     --bs-accordion-btn-bg: black;
+    --bs-accordion-btn-icon: url("../../../../assets/contact/acc-btn.svg");
+    --bs-accordion-btn-active-icon: url("../../../../assets/contact/acc-body.svg");
+}
+
+.accordion-light {
+    --bs-accordion-bg: #ECF0FF;
+    --bs-accordion-color: black;
+    --bs-accordion-active-bg: #ECF0FF;
+    --bs-accordion-btn-bg: #ECF0FF;
     --bs-accordion-btn-icon: url("../../../../assets/contact/acc-btn.svg");
     --bs-accordion-btn-active-icon: url("../../../../assets/contact/acc-body.svg");
 }

@@ -11,7 +11,7 @@
                     Solutions
                     with Unmatched Expertise
                 </h1>
-                <p data-aos="slide-up" class="fs-5 text-align-center w-75" style="color: #EFEDFDB2;">
+                <p data-aos="slide-up" class="fs-5 text-align-center w-75 opacity-50">
                     Discover the unparalleled expertise and innovation offered by our leading AI solutions, where
                     cutting-edge technology meets exceptional service.
                 </p>
@@ -42,6 +42,7 @@
             <div class="what-we-do w-100 h-100 mt-lg-5" data-aos="zoom-in">
                 <div class="row w-100 h-100 ">
                     <div *ngFor="let data of aiService" data-aos="zoom-out"
+                        [ngStyle]="{background:isDarkTheme?'#111111':'#ECF0FF'}"
                         class="col-lg-4 col-6 ai-data pt-lg-5 px-lg-5 pb-lg-3 d-flex align-items-lg-start align-items-center justify-content-around flex-column">
                         <div class="image">
                             <img [src]="data.img" alt="">
@@ -64,7 +65,7 @@
                     </button>
                 </div>
                 <div class="txt w-50 text-align-center">
-                    <h1>Our primary sectors of focus</h1>
+                    <h1 class=" text-capitalize">Our primary sectors of focus</h1>
                 </div>
             </div>
         </div>
@@ -73,17 +74,19 @@
             <div class="slider">
                 <div class="slide-track">
                     <div class="slide" *ngFor="let img of aiService">
-                        <h5 class=" fw-lighter">{{img.title}}</h5>
+                        <h5 [ngStyle]="{background:isDarkTheme?'#111111':'#ECF0FF'}" class=" fw-lighter">{{img.title}}
+                        </h5>
                     </div>
                     <div class="slide" *ngFor="let img of aiService">
-                        <h5 class=" fw-lighter">{{img.title}}</h5>
+                        <h5 [ngStyle]="{background:isDarkTheme?'#111111':'#ECF0FF'}" class=" fw-lighter">{{img.title}}
+                        </h5>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="frame-4 container w-100">
+    <div [ngClass]="isDarkTheme?'frame-4':'frame-4-light'" class="container w-100">
         <div class="container d-flex flex-column flex-lg-row w-100 h-100">
             <div class="text w-100 h-100">
                 <div class="text frame-4-cont w-75 d-flex flex-column h-100 justify-content-evenly ">
@@ -123,7 +126,8 @@
             </div>
             <div class="frame-4-image position-relative w-100 h-100 d-flex align-items-center justify-content-center">
                 <div data-aos="zoom-in" class="ai-showcase container w-100 position-absolute h-auto">
-                    <div class="ai-showcase-inner d-flex flex-column justify-content-center p-lg-4 ">
+                    <div [ngStyle]="{'backdrop-filter': isDarkTheme? 'blur(10px)':'blur(180px)'}"
+                        class="ai-showcase-inner d-flex flex-column justify-content-center p-lg-4 ">
                         <div class="head d-flex justify-content-between align-items-center">
                             <div class="txt">
                                 <p class="showcase-txt">How to use AI to take better notes</p>

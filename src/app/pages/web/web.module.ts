@@ -3,11 +3,13 @@ import { CommonModule } from '@angular/common';
 
 import { WebRoutingModule } from './web-routing.module';
 import { CasestudyComponent } from './casestudy/casestudy.component';
+import { DetailsComponent } from './details/details.component';
 
 
 @NgModule({
   declarations: [
-    CasestudyComponent
+    CasestudyComponent,
+    DetailsComponent
   ],
   imports: [
     CommonModule,

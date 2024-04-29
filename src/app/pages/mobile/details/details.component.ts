@@ -1,11 +1,17 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { ApiService } from 'src/app/shared/api/api.service';
 
 @Component({
   selector: 'app-details',
   templateUrl: './details.component.html',
   styleUrls: ['./details.component.css']
 })
-export class DetailsComponent {
+export class DetailsComponent implements OnInit {
+
+  isDarkTheme!: boolean;
+
+  constructor(private api: ApiService) { }
+
 
   aiService = [
     {
@@ -45,5 +51,16 @@ export class DetailsComponent {
     },
 
   ]
+
+  ngOnInit(): void {
+    this.isDarkTheme = this.api.isDarkTheme();
+    this.themechange()
+  }
+
+  themechange() {
+    this.api.themeChanged.subscribe((isDarkTheme: boolean) => {
+      this.isDarkTheme = isDarkTheme;
+    });
+  }
 
 }

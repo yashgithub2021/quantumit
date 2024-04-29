@@ -5,6 +5,13 @@
     --bs-alert-link-color: var(--bs-warning-text-emphasis);
 }
 
+.alert-warning-light {
+    --bs-alert-color: black;
+    --bs-alert-bg: white;
+    --bs-alert-border-color: white;
+    --bs-alert-link-color: var(--bs-warning-text-emphasis);
+}
+
 .btn-close {
     --bs-btn-close-bg: url("../assets/banner-close.svg");
     opacity: 100%;

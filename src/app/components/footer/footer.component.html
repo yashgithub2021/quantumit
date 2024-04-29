@@ -1,9 +1,11 @@
-<footer class="w-100 d-flex justify-content-center">
+<footer [ngStyle]="{'background-color': isDarkMode ? '#111111' : '#ECF0FF'}"
+    class="w-100 d-flex justify-content-center">
     <div class="container d-flex p-1 p-lg-5 flex-lg-row flex-column">
         <div class="container-fluid d-flex flex-column justify-content-evenly">
             <div class="quantum">
                 <div routerLink="/" class="logo">
-                    <img height="49" width="114" src="../../../assets/logo-white 1.png" alt="">
+                    <img [ngStyle]="{'filter': isDarkMode ? 'none' : 'invert(1)'}" height="49" width="114"
+                        src="../../../assets/logo-white 1.png" alt="">
                 </div>
                 <div class="tagline">
                     <p class="text-secondary">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet iste
@@ -14,13 +16,16 @@
             </div>
             <div class="contact-info-div">
                 <div class="contanct-info-+content d-flex align-items-center" *ngFor="let contact of contacts">
-                    <button class="btn rounded-circle text-align-center"><i
+                    <button
+                        [ngStyle]="{background:isDarkMode?'#343538':'linear-gradient(91.58deg, #43BAFF 0.52%, #7044B3 100%)'}"
+                        class="btn rounded-circle text-align-center"><i
                             class="m-0 fs-6 fa-solid w-100 text-align-center" [class]="contact.icon"></i></button>
                     <div>
                         <label for="btn" class="text-secondary">
                             {{contact.label}}
                             <p>
-                                <a class="m-0  text-decoration-none fw-semibold contact-value"
+                                <a [ngStyle]="{'color': isDarkMode ? 'white' : 'black'}"
+                                    class="m-0  text-decoration-none fw-semibold contact-value"
                                     [href]="contact.link">{{contact.value}}</a>
                             </p>
                         </label>
@@ -34,7 +39,7 @@
                 <div class="container pages-container d-flex justify-content-evenly">
                     <div class="d-flex flex-column " *ngFor="let page of pageLabels">
                         <div class="heading">
-                            <h5 class=" fw-bold">
+                            <h5 [ngStyle]="{'color': isDarkMode ? 'white' : 'black'}" class=" fw-bold">
                                 {{page.heading}}</h5>
                         </div>
                         <div class="pages">
@@ -48,22 +53,22 @@
                     <a href="https://dribbble.com/QuantumIt" target="_blank" style="background-color: #F85895;"
                         class="social-icon text-decoration-none  si-one">
                         <div class="follow container align-content-end py-2 w-100 h-100">
-                            <span class="fw-lighter follow-us">Follow Us On</span>
-                            <h5 class="social-platform">Dribble</h5>
+                            <span style="color:white" class="fw-lighter follow-us">Follow Us On</span>
+                            <h5 style="color:white" class="social-platform">Dribble</h5>
                         </div>
                     </a>
                     <a href="https://www.facebook.com/quantumitinnovationindia " target="_blank"
                         style="background-color: #1B76F2;" class="social-icon text-decoration-none  si-two">
                         <div class="follow container align-content-end py-2 w-100 h-100">
-                            <span class="fw-lighter follow-us">Follow Us On</span>
-                            <h5 class="social-platform">Facebook</h5>
+                            <span style="color:white" class="fw-lighter follow-us">Follow Us On</span>
+                            <h5 style="color:white" class="social-platform">Facebook</h5>
                         </div>
                     </a>
                     <a href="https://www.youtube.com/@quantumitinnovation6761" target="_blank"
                         style="background-color: #F04444;" class="social-icon text-decoration-none  si-three">
                         <div class="follow container align-content-end py-2 w-100 h-100">
-                            <span class="fw-lighter follow-us">Follow Us On</span>
-                            <h5 class="social-platform">Youtube</h5>
+                            <span style="color:white" class="fw-lighter follow-us">Follow Us On</span>
+                            <h5 style="color:white" class="social-platform">Youtube</h5>
                         </div>
                     </a>
                 </div>

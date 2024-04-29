@@ -6,7 +6,7 @@ import { CasestudyComponent } from './casestudy/casestudy.component';
 
 const routes: Routes = [
   { path: '', component: WebdevComponent },
-  { path: 'details', component: DetailsComponent },
+  { path: 'details/:id', component: DetailsComponent },
   { path: 'casestudy', component: CasestudyComponent },
 ];
 

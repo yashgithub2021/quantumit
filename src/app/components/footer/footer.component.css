@@ -2,7 +2,6 @@ footer {
     /* position: fixed; */
     bottom: 0;
     height: auto;
-    background-color: #111111;
     font-family: 'Plus Jakarta Sans';
 }
 
@@ -10,14 +9,9 @@ footer * {
     margin: 4px;
 }
 
-a {
-    color: white;
-}
-
 button {
     height: 48px;
     width: 48px;
-    background-color: #343538;
 }
 
 .social-icon {

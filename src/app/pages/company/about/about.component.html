@@ -1,9 +1,9 @@
 <div class="container-fluid about-us">
     <div class="container">
-        <div class="quote mt-5 w-100 ">
+        <div class="quote my-5 py-5 w-100 ">
             <div class="container-fluid numbers w-100">
                 <div class="numbers-section rounded-3 container-fluid w-100">
-                    <div class="d-flex gap-3  flex-column justify-content-center align-items-center">
+                    <div class="d-flex gap-3 text-white flex-column justify-content-center align-items-center">
                         <h1>About Us</h1>
                         <h4 class=" text-align-center fw-light">
                             Quantum IT Innovation: Your partner in digital innovation and transformation.
@@ -27,55 +27,56 @@
                 </h1>
             </div>
         </div>
-        <div class="what-we-do container d-flex flex-column gap-4 gap-lg-0 flex-lg-row mt-5">
-            <div class="images row g-lg-5 g-3 w-100">
+        <div class="what-we-do container d-flex flex-column gap-4 gap-lg-0 flex-lg-row my-5 py-5">
+            <div class="images row g-lg-5 g-3 w-100 h-100">
                 <div class="col-12">
-                    <img style="object-fit: cover;" class="rounded-4"
-                        src="https://s3-alpha-sig.figma.com/img/f419/d7e0/1ee6f4180bb8895bae3fa088f44effa3?Expires=1713744000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=m4PIr7K1p7DEMrdfAI2is3mIOMDZeEetXaIh-dLlXGVscM7vFy5XrtAhKZYcTcko77XjILOV7qskLpb5OGWVjWazHUjRlM9afXP3OUjCpCYxnyRNpYGLRF9IfKHu6HKtEo0s-8uUaH0gz~K3ZbAOuJOcFo6d8h0agiF-~JBAMDbGnA-vdeW1HVhrE2rjdSDdtHLc6ljf~P9KQ5I~OIO6-eA5va4-ktM9QOkb0Pa9tE-a1xB8n4BquHlC~w411or2UjD-nyrGkydLMcjs0-P2EUJzAPq4YtFwjyJLzpIIXVyTbmfiDCrLk4xPk1AGhMGm303de5DcLlGV1ru8TbC9Nw__"
+                    <img style="object-fit: cover;" class="rounded-4 w-100" src="../../../../assets/about/img1.png"
                         alt="">
                 </div>
                 <div class="col-6">
-                    <img class="rounded-4"
-                        src="https://s3-alpha-sig.figma.com/img/cace/dc16/a9f4d027becd149411802a00108c564e?Expires=1713744000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=DXWQNjwchCXmk1uZICB7cYCBwyeJIYFrYJWx6i8gpfVyvl22U2~MM1EgSA9sBKE8VCjXEBKm8VO9GSi4-ut2CS-yZtH3nbQafbywGsyiUQMc7ODCKNknGgKkQGu300ZMRmGkQeQlCTsrTAEkMmRpbyIgyO2AxrKVrKu8uEl8ocpqGLCeTI3CCuPVvsb7JFAmgiaBn5S4Y~uGG4~u8u3NDNq2NNru2Ke1vU~GNqJ8bQbheHeQJbcCfG3RELzzVgmtDy9g2bxMBK3fcm9027riPGCMD~oseVOWopJrZstkcUXDFpiy2etodvyQjiyeWmEGkoMtoNMH9qSc7cbOs-jr5Q__"
-                        alt="">
+                    <img class="rounded-4 w-100 h-100" src="../../../../assets/about/img2.png" alt="">
                 </div>
                 <div class="col-6">
-                    <img class="rounded-4"
-                        src="https://s3-alpha-sig.figma.com/img/cace/dc16/a9f4d027becd149411802a00108c564e?Expires=1713744000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=DXWQNjwchCXmk1uZICB7cYCBwyeJIYFrYJWx6i8gpfVyvl22U2~MM1EgSA9sBKE8VCjXEBKm8VO9GSi4-ut2CS-yZtH3nbQafbywGsyiUQMc7ODCKNknGgKkQGu300ZMRmGkQeQlCTsrTAEkMmRpbyIgyO2AxrKVrKu8uEl8ocpqGLCeTI3CCuPVvsb7JFAmgiaBn5S4Y~uGG4~u8u3NDNq2NNru2Ke1vU~GNqJ8bQbheHeQJbcCfG3RELzzVgmtDy9g2bxMBK3fcm9027riPGCMD~oseVOWopJrZstkcUXDFpiy2etodvyQjiyeWmEGkoMtoNMH9qSc7cbOs-jr5Q__"
-                        alt="">
+                    <img class="rounded-4 w-100 h-100" src="../../../../assets/about/img3.png" alt="">
                 </div>
             </div>
-            <div class=" w-75 px-lg-5 px-2 align-content-between">
+            <div class=" w-100 px-lg-5 px-2 align-content-between">
                 <div class="desc">
                     <p class=" opacity-50">
-                        Where innovation meets passion in a journey that started with a simple idea and a shared dora
-                        Founded in recent year we embarked on a mission told bring the new innovation and introduct the
-                        technology. From humble beginnings to our current aspirations.
+                        From crafting bespoke websites to developing innovative mobile apps, harnessing the power of
+                        artificial intelligence, to driving digital marketing strategies, we empower businesses to
+                        thrive in the digital age. Our expert team combines creativity, technology, and strategic
+                        thinking to deliver results that exceed expectations.
                     </p>
                 </div>
                 <div class="nums d-flex align-items-center justify-content-center">
                     <div class="row">
                         <div class="col-6">
-                            <h1 class="number text-align-center">30</h1>
+                            <h1 [ngStyle]="{'color':isDarkTheme?'white':'#43BAFF'}" class="number text-align-center">30
+                            </h1>
                             <p class="text-align-center">Projects Completed</p>
                         </div>
                         <div class="col-6">
-                            <h1 class="number text-align-center">1K</h1>
-                            <p class="text-align-center">Projects Completed</p>
+                            <h1 [ngStyle]="{'color':isDarkTheme?'white':'#43BAFF'}" class="number text-align-center">1K
+                            </h1>
+                            <p class="text-align-center">Awesome Clients</p>
                         </div>
                         <div class="col-6">
-                            <h1 class="number text-align-center">6</h1>
-                            <p class="text-align-center">Projects Completed</p>
+                            <h1 [ngStyle]="{'color':isDarkTheme?'white':'#43BAFF'}" class="number text-align-center">6
+                            </h1>
+                            <p class="text-align-center">Years of Experience</p>
                         </div>
                         <div class="col-6">
-                            <h1 class="number text-align-center">19</h1>
-                            <p class="text-align-center">Projects Completed</p>
+                            <h1 [ngStyle]="{'color':isDarkTheme?'white':'#43BAFF'}" class="number text-align-center">19
+                            </h1>
+                            <p class="text-align-center">Awards Winning</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="container mt-5 heading w-100 h-100 d-flex flex-column align-items-center justify-content-center">
+        <div
+            class="container mt-5 heading w-100 h-100 d-flex flex-column pt-5 align-items-center justify-content-center">
             <div class="button align-self-center">
                 <button class="our-service-btn">
                     Our Partners
@@ -86,100 +87,51 @@
                     Our Partnerships Assurance </h1>
             </div>
         </div>
-        <div class="container partners w-100 my-5 ">
+        <div class="container partners w-100 my-5 pb-5">
             <div class="row g-4 my-3">
-                <div class="col-lg-3 col-12">
-                    <div class="container-fluid partner-detail px-5 py-4">
+                <div class="col-lg-3 col-12" *ngFor="let partner of partners">
+                    <div class="container-fluid partner-detail px-5 py-4"
+                        [ngStyle]="{'background':isDarkTheme?'#242627':'#ECF0FF'}">
                         <div class="d-flex gap-3 flex-column h-100 w-100 justify-content-between">
-                            <h5 class="text-uppercase">Technology</h5>
-                            <img width="100" height="50" src="../../../../assets/about/partner1.svg" alt="">
-                            <p class="mb-0 opacity-50">Volo Digital Agency</p>
+                            <p style="font-size: 14px;" class="text-uppercase fw-lighter">{{partner.title}}</p>
+                            <img [ngStyle]="{'filter':isDarkTheme?'none':'invert(1)'}" [width]="partner.width"
+                                [height]="partner.height" [src]="partner.img" alt="">
+                            <p class="mb-0 opacity-50">{{partner.name}}</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-12">
-                    <div class="container-fluid partner-detail px-5 py-4">
-                        <div class="d-flex gap-3 flex-column h-100 w-100 justify-content-between">
-                            <h5 class=" text-uppercase">Design</h5>
-                            <img width="140" height="60" src="../../../../assets/about/partner2.svg" alt="">
-                            <p class="mb-0 opacity-50">ZurMarke Studio</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-12">
-                    <div class="container-fluid partner-detail px-5 py-4">
-                        <div class="d-flex gap-3 flex-column h-100 w-100 justify-content-between">
-                            <h5 class=" text-uppercase">Consulting</h5>
-                            <img width="180" height="60" src="../../../../assets/about/partner3.svg" alt="">
-                            <p class="mb-0 opacity-50">Pathpoint Consulting</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-12">
-                    <div class="container-fluid partner-detail px-5 py-4">
-                        <div class="d-flex gap-3 flex-column h-100 w-100 justify-content-between">
-                            <h5 class=" text-uppercase">Consulting</h5>
-                            <img width="120" height="50" style="filter: grayscale(100%);"
-                                src="../../../../assets/about/partner4.svg" alt="">
-                            <p class="mb-0 opacity-50">Pathpoint Consulting</p>
-                        </div>
-                    </div>
-                </div>
+
             </div>
             <div class="row g-4 my-3">
-                <div class="col-lg-3 col-12">
-                    <div class="container-fluid partner-detail px-5 py-4">
+                <div class="col-lg-3 col-12" *ngFor="let partner of partners">
+                    <div class="container-fluid partner-detail px-5 py-4"
+                        [ngStyle]="{'background':isDarkTheme?'#242627':'#ECF0FF'}">
                         <div class="d-flex gap-3 flex-column h-100 w-100 justify-content-between">
-                            <h5 class=" text-uppercase">Design</h5>
-                            <img width="100" height="50" src="../../../../assets/about/partner1.svg" alt="">
-                            <p class="mb-0 opacity-50">Digiart Agency</p>
+                            <p style="font-size: 14px;" class="text-uppercase fw-lighter">{{partner.title}}</p>
+                            <img [ngStyle]="{'filter':isDarkTheme?'none':'invert(1)'}" [width]="partner.width"
+                                [height]="partner.height" [src]="partner.img" alt="">
+                            <p class="mb-0 opacity-50">{{partner.name}}</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-12">
-                    <div class="container-fluid partner-detail px-5 py-4">
-                        <div class="d-flex gap-3 flex-column h-100 w-100 justify-content-between">
-                            <h5 class=" text-uppercase">Consulting</h5>
-                            <img width="140" height="60" src="../../../../assets/about/partner2.svg" alt="">
-                            <p class="mb-0 opacity-50">Digiart Agency</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-12">
-                    <div class="container-fluid partner-detail px-5 py-4">
-                        <div class="d-flex gap-3 flex-column h-100 w-100 justify-content-between">
-                            <h5 class=" text-uppercase">Technology</h5>
-                            <img width="180" height="60" src="../../../../assets/about/partner3.svg" alt="">
-                            <p class="mb-0 opacity-50">Digiart Agency</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-12">
-                    <div class="container-fluid partner-detail px-5 py-4">
-                        <div class="d-flex gap-3 flex-column h-100 w-100 justify-content-between">
-                            <h5 class=" text-uppercase">Technology</h5>
-                            <img width="100" height="50" style="filter: grayscale(100%);"
-                                src="../../../../assets/about/partner4.svg" alt="">
-                            <p class="mb-0 opacity-50">Digiart Agency</p>
-                        </div>
-                    </div>
-                </div>
+
             </div>
         </div>
-        <div class="container mt-5 heading w-100 h-100 d-flex flex-column align-items-center justify-content-center">
+        <div
+            class="container mt-5 heading w-100 h-100 pt-5 d-flex flex-column align-items-center justify-content-center">
             <div class="button align-self-center">
                 <button class="our-service-btn">
                     Our Numbers
                 </button>
             </div>
             <div class="sec4-headline w-50 mt-3 mt-lg-0  align-self-center">
-                <h1 class="service-tagline w-100 text-align-center text-capitalize">
+                <h1 class="service-tagline w-100 text-align-center">
                     Businesses all over the world trust
                     Buffer to build their brand </h1>
             </div>
         </div>
 
-        <div class="container our-numbers w-100 mt-5">
+        <div class="container our-numbers w-100 mt-5 pb-5">
             <div class="num-sec container w-100">
                 <div class="row text-align-center justify-content-center align-content-center">
                     <div *ngFor="let nums of sectionFourNums" class="col-3 ">
@@ -194,23 +146,23 @@
             </div>
         </div>
 
-        <div class="what-we-do container d-flex flex-column gap-4 gap-lg-0 flex-lg-row mt-5">
+        <div class="what-we-do container d-flex align-items-center flex-column gap-4 gap-lg-0 flex-lg-row mt-5 pt-5">
 
             <div class=" w-75 px-lg-5 px-2 align-content-between">
                 <div class="desc">
                     <div
-                        class="container heading w-100 h-100 d-flex flex-column align-items-center justify-content-start">
-                        <div class="button align-self-start">
+                        class="container px-0 heading w-100 h-100 d-flex flex-column align-items-center justify-content-start">
+                        <div class="button align-self-start my-3">
                             <button class="our-service-btn">
                                 What We Do
                             </button>
                         </div>
-                        <div class="sec4-headline w-100 mt-3 mt-lg-0  align-self-start">
+                        <div class="sec4-headline w-100 mt-3 mt-lg-0  align-self-start my-3">
                             <h1 class="service-tagline w-100 text-left text-capitalize">
                                 Our Mission</h1>
                         </div>
                     </div>
-                    <p class=" opacity-50">
+                    <p class=" opacity-50 my-3">
                         Our mission at Quantum is to empower businesses with innovative digital solutions, driving
                         growth and success in today's dynamic landscape. Through creativity, expertise, and
                         collaboration, we strive to exceed expectations and unlock the full potential of our clients'
@@ -218,10 +170,10 @@
                     </p>
                 </div>
                 <div class="list">
-                    <ul class=" list-unstyled ">
+                    <ul class=" list-unstyled p-0">
                         <li class=" d-flex align-items-center justify-content-start list-unstyled my-3"
                             *ngFor="let data of list2">
-                            <i class="fa-regular fa-circle-check mx-2 fs-4 text-success"></i>
+                            <i class="fa-regular fa-circle-check me-2 fs-4 text-success"></i>
                             <p class="fw-light m-0 list-check">{{data}}</p>
                         </li>
                     </ul>
@@ -240,7 +192,7 @@
         <div class="quote mt-5 w-100 ">
             <div class="container-fluid numbers w-100">
                 <div class="numbers-section rounded-3 container-fluid w-100">
-                    <div class="d-flex gap-3  flex-column justify-content-start align-items-start">
+                    <div class="d-flex gap-3 text-white flex-column justify-content-start align-items-start">
                         <h1>Our Team</h1>
                         <h4 class=" w-75 font-italic text-left fs-5 fw-light">
                             Building an enterprise level site doesn't need nightmare or cost your thousands. Felix is
@@ -250,7 +202,7 @@
 
                     <div class="team container mt-4">
                         <div class="d-flex gap-4">
-                            <div class="member" *ngFor="let member of members.members">
+                            <div class="member text-white" *ngFor="let member of members.members">
                                 <div class="mem-img">
                                     <img [src]="member.image" alt="">
                                 </div>
@@ -303,9 +255,7 @@
                     <div class="processes w-100 d-flex flex-column">
                         <div class="process d-flex flex-row-reverse justify-content-between">
                             <div class="logo mx-3">
-                                <img height="100" width="100"
-                                    src="https://s3-alpha-sig.figma.com/img/48f9/21c4/363128517e8dc99941f11ac6b2731402?Expires=1713744000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Uyyr6YY~yyIUPylBuJsovIuvLcccRYMjBfYEJljtvi~15HFAiRMxDVqyMYzWT43ydjo40XAJzyjpqVMnG9w4KAoHu8yiIC1ZSrIE~X6EZd9ROxP3bxdgg~ak5H6N5G1GisT2xPC0MwA96118-uZjYWCqCqn2gXOqmE2uFRkELliqE9yaPRsemyEiYrUaZazIA1IXsnJyuPnMV2pPZRRR08l~a5B5J82YpTDxlHSxNylMH4dVhvAglsrBPVlY2vcpEWVb5dJ4Qu8uP3wML0kwKyaVimE4noOcG1yNeib1Vi4XsuKh4V8EabwESkx2HB1lAtzQDL5e0tjO6VNyqU~ObQ__"
-                                    alt="">
+                                <img height="100" width="100" src="../../../../assets/about/award1.png" alt="">
                             </div>
                             <div class="text mx-3 ">
                                 <div class="desc">
@@ -327,9 +277,7 @@
                         </div>
                         <div class="process d-flex flex-row-reverse justify-content-between">
                             <div class="logo mx-3">
-                                <img height="100" width="100"
-                                    src="https://s3-alpha-sig.figma.com/img/0a9a/7ae9/d88884b7bf250216b76200d1fb9d5826?Expires=1713744000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=lSTEl8SDCoPDPqjT1dBXIM9UWIPJNoDlQ~JPbdu6HTkCH9N2uD3nK~pa3E1VZmlYiyYKDLpZ7dlt2CFwz7Ls9CeKCrL0~pJGocgz2rU7fl7Br7~mYhcDEf8iS0u3xDfUvSxYa6TFddBzmyKv6d~Dz6ojnEMGRVFlyvb9DkgJ0ZrGtNdE1oTZMM3pPt0mvYHHBh-0cu~EpL6NpkX4ERCA2aADwynjN2pn-Z73HuKt4lVJEEq-y02a0mtJojpcMhqTDaCIik4T70CynEN6XeULzqZ5hbFdSyPxu31tix-HQ5yKfuem1RNwTPelsaKNWDMmlq2orgFjZ4xBdEiUzeVPxA__"
-                                    alt="">
+                                <img height="100" width="100" src="../../../../assets/about/award2.png" alt="">
                             </div>
                             <div class="text mx-3 ">
                                 <div class="desc">
@@ -351,9 +299,7 @@
                         </div>
                         <div class="process d-flex flex-row-reverse justify-content-between">
                             <div class="logo mx-3">
-                                <img height="100" width="100"
-                                    src="https://s3-alpha-sig.figma.com/img/4192/aa20/916c2f66ef418d1d023dd9ee5a4f00ce?Expires=1713744000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=aarka1ZJl~m~S0wI6tPlduimqQ0afZ0PfZ5nJgYhGO1wu~1tzNgfyOkg81sy4U3Ojitx0VVLzK5iPavq6ANLd0dD~TD0GleJgC4XRjMNy0CMs5l8uCpE8P-HIkx5y~U4N3VaXvMjYW5kKID~CNEXVMxApP~OZu--5Sp7LAc79crS7z4MJhfOu0Lmv4L9ScM2rsxwAtuc1QvnwWbAlVo0-Btdlzd1IJCTG2RlX9ssyugLSZOeBQQ6nM~n6T~D0Qve-9zP7dMsNLRMs03yLWDAqQn8oMSxqQPF3dmyTa0sI0jDfWIPLuhhOIJHbCHw8kAdzXo2o62IyIAVsYcJ5vFz3A__"
-                                    alt="">
+                                <img height="100" width="100" src="../../../../assets/about/award3.png" alt="">
                             </div>
                             <div class="text mx-3 ">
                                 <div class="desc">
@@ -375,9 +321,7 @@
                         </div>
                         <div class="process d-flex flex-row-reverse justify-content-between">
                             <div class="logo mx-3">
-                                <img height="100" width="100"
-                                    src="https://s3-alpha-sig.figma.com/img/cb21/d332/13a3d2e2e6a9852b7fb9a957fd18d243?Expires=1713744000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=J9eMK3Oxjt1Ql~~lsG3NLS3xSOF8N0yXg2G21yusOdQxvuhY-QDTjvtP9r~HBAiGTvB0W8Mw184v-a5dwPQAx8ZClro~Qy9Z7LAPjaC1wUYrCiBjR4ZMLoh5~KoQtRyzAmnc3OMp2w~okT4sBEvY7HBPd4qcKxB2RvRYLkzCk18JjBLtAcG36G8Ejz-U~gYFhjdURrembpaOFJWm8Fy3U5GOXHCV0V5QKS5GEh-AE4bJ3-LClCVVu96ngQdhFkNmEqDQRlnng6QEPZ0TAqACvc0~uSxilJvRqchw7GKEQwvhBn-tKBIhkOeqzVsEdUtRtJF~hy0QYlokAhznfa471A__"
-                                    alt="">
+                                <img height="100" width="100" src="../../../../assets/about/award4.png" alt="">
                             </div>
                             <div class="text mx-3 ">
                                 <div class="desc">
@@ -399,9 +343,7 @@
                         </div>
                         <div class="process d-flex flex-row-reverse justify-content-between">
                             <div class="logo mx-3">
-                                <img height="100" width="100"
-                                    src="https://s3-alpha-sig.figma.com/img/73c7/073e/0538c59b406024d4130860864688279d?Expires=1713744000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=aFopToHLB7v3OI0gFwrvgt-AMnVosDEWmPfrYCehigc6lpIJgHbEBQBhKK2Y74-THovgxNkzAAe25CbMdU3Xg8T2K7slOr4uACKNxFP12CvOh7MboTAV8b9c98ICQyYLJxk5j~fsHg-ltcwGw0UW~MaXby8dOMFxGdaEPFqALcsH76SzaUApwRswtMwLZONIRLxaZX04aXPE62bDXv7-bKjgb~1mcp9LjCWy48phWeKHWV0BmrfBfPilFl7oArlLbL7hM0~KP1ilp7sS3DvmL12KO~tOEC~me2EXsMcz3zhUsc6ofEGtq0H8yL7seqpQFvCgzDTZoGOfrFIVSpUdaw__"
-                                    alt="">
+                                <img height="100" width="100" src="../../../../assets/about/award5.png" alt="">
                             </div>
                             <div class="text mx-3 ">
                                 <div class="desc">
