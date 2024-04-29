@@ -4,6 +4,7 @@
 
 .frame-1 {
     height: 100vh;
+
 }
 
 .frame-1::before {
@@ -164,6 +165,21 @@
     padding: 20px 0px;
     border-radius: 5px;
 }
+@media (min-width: 768px) and (max-width: 1024px) {
+    .frame-1 {
+      height: 75vh ;
+    }
+    .frame-4{
+        height:70vh;
+    }
+    .frame-4::before{
+        background-position: right;
+    }
+    .ai-showcase-inner{
+        padding: 10px;
+        border-radius: 15px;
+    }
+  }
 
 @media (max-width: 575.98px) {
 

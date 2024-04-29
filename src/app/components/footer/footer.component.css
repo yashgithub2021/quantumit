@@ -103,4 +103,8 @@ button {
     .social-links-container{
         height: 55vh;
     }
+    .social-links-container>.social-icon {
+        height: 90px;
+        width: 150px;
+    }
 }
