@@ -66,6 +66,9 @@ li {
     .top-wrap {
         width: auto;
     }
+    ul>li>a{
+        white-space: nowrap;
+    }
 }
 
 

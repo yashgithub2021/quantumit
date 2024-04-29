@@ -176,7 +176,16 @@
     opacity: 0px;
     border: 1px solid #5E5A5A6E
 }
+@media(max-width:768px){
+    .frame-2>.service-section>div>.ipad-width{
+        padding-left:88px;
+        padding-right: 40px;
+    }
+    .frame-2>.service-section{
+        padding-left: 30px;
+    }
 
+}
 @media (max-width: 575.98px) {
 
     .txt {

@@ -121,6 +121,12 @@
         font-size: 20px;
     }
 }
+@media(max-width:768px){
+    .service-tagline{
+        font-size: 34px;
+
+    }
+}
 
 @media (max-width: 575.98px) {
     .numbers-section {

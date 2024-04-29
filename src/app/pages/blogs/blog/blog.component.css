@@ -56,6 +56,10 @@
     opacity: 10%;
 }
 
+.frame-3>.contributors-section>.contributors>.card {
+    width: 20rem;
+}
+
 @media (max-width: 575.98px) {
 
     .cards,
@@ -66,5 +70,23 @@
     .single-cont,
     .latest-news {
         width: 100% !important;
+    }
+}
+
+@media (max-width:768px) {
+    .frame-3>.contributors-section>.contributors {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .frame-3>.contributors-section>.contributors>.card {
+        width: 100%;
+    }
+    .frame-3>.contributors-section>.contributor-image {
+        padding-top:10px;
+    }
+    .frame-3>.contributors-section>.contributor-image::before {
+        height: 38vh;
     }
 }
