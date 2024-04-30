@@ -20,7 +20,7 @@
                 </li>
                 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1553 nav-item">
                     <a class="nav-link border-0" routerLink="company/about" (click)="closeNavbar()"><span>About
-                            us</span></a>
+                            Us</span></a>
                 </li>
                 <li id="menu-item-1949"
                     class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown menu-item-1949 nav-item">
@@ -28,34 +28,86 @@
                         id="menu-item-dropdown-1949">
                         <span>Service</span>
                     </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <div [ngStyle]="{'background':isDarkTheme?'#111111':'#ECF0FF'}" class="dropdown-menu"
+                        aria-labelledby="navbarDropdown">
                         <ul>
-                            <li><a class="dropdown-item border-0" routerLink="app-development"
-                                    (click)="closeNavbar()">Mobile
+                            <li><a [ngClass]="isDarkTheme?'text-white':'text-black'" class="dropdown-item border-0"
+                                    routerLink="app-development" (click)="closeNavbar()">Mobile
                                     App Development</a></li>
-                            <li><a class="dropdown-item border-0" routerLink="app-development/details"
-                                    (click)="closeNavbar()">Android App Development</a></li>
-                            <li><a class="dropdown-item border-0" routerLink="app-development/casestudy"
-                                    (click)="closeNavbar()">Case Study</a></li>
-                        </ul>
-                        <ul>
-                            <li><a class="dropdown-item border-0" routerLink="web-development"
-                                    (click)="closeNavbar()">Web App
+                            <li><a [ngClass]="isDarkTheme?'text-white':'text-black'" class="dropdown-item border-0"
+                                    routerLink="app-development/details" (click)="closeNavbar()">Android App
                                     Development</a></li>
-                            <li><a class="dropdown-item border-0" routerLink="web-development/casestudy"
-                                    (click)="closeNavbar()">Case Study</a></li>
+                            <li><a [ngClass]="isDarkTheme?'text-white':'text-black'" class="dropdown-item border-0"
+                                    routerLink="app-development/details" (click)="closeNavbar()">iOS App Development</a>
+                            </li>
+                            <li><a [ngClass]="isDarkTheme?'text-white':'text-black'" class="dropdown-item border-0"
+                                    routerLink="app-development/details" (click)="closeNavbar()">Swift App
+                                    Development</a></li>
+                            <li><a [ngClass]="isDarkTheme?'text-white':'text-black'" class="dropdown-item border-0"
+                                    routerLink="app-development/details" (click)="closeNavbar()">Cross Platform App</a>
+                            </li>
+                            <li><a [ngClass]="isDarkTheme?'text-white':'text-black'" class="dropdown-item border-0"
+                                    routerLink="app-development/details" (click)="closeNavbar()">iPad App
+                                    Development</a></li>
+                            <li><a [ngClass]="isDarkTheme?'text-white':'text-black'" class="dropdown-item border-0"
+                                    routerLink="app-development/details" (click)="closeNavbar()">Mobile Game
+                                    Development</a></li>
                         </ul>
                         <ul>
-                            <li><a class="dropdown-item border-0" routerLink="digital-marketing"
-                                    (click)="closeNavbar()">Digital Marketing</a></li>
-                            <li><a class="dropdown-item border-0" routerLink="digital-marketing/services"
-                                    (click)="closeNavbar()">SEO</a></li>
-                            <li><a class="dropdown-item border-0" routerLink="digital-marketing/casestudy"
-                                    (click)="closeNavbar()">Case Study</a></li>
+                            <li><a [ngClass]="isDarkTheme?'text-white':'text-black'" class="dropdown-item border-0"
+                                    routerLink="web-development" (click)="closeNavbar()">Web App
+                                    Development</a></li>
+                            <li><a [ngClass]="isDarkTheme?'text-white':'text-black'" class="dropdown-item border-0"
+                                    routerLink="app-development/details" (click)="closeNavbar()">PHP Development</a>
+                            </li>
+                            <li><a [ngClass]="isDarkTheme?'text-white':'text-black'" class="dropdown-item border-0"
+                                    routerLink="app-development/details" (click)="closeNavbar()">.Net Development</a>
+                            </li>
+                            <li><a [ngClass]="isDarkTheme?'text-white':'text-black'" class="dropdown-item border-0"
+                                    routerLink="app-development/details" (click)="closeNavbar()">ROR Development</a>
+                            </li>
+                            <li><a [ngClass]="isDarkTheme?'text-white':'text-black'" class="dropdown-item border-0"
+                                    routerLink="app-development/details" (click)="closeNavbar()">NODE.js Development</a>
+                            </li>
+                            <li><a [ngClass]="isDarkTheme?'text-white':'text-black'" class="dropdown-item border-0"
+                                    routerLink="app-development/details" (click)="closeNavbar()">Joomla Development</a>
+                            </li>
                         </ul>
                         <ul>
-                            <li><a class="dropdown-item border-0" routerLink="artificial-intelligence"
-                                    (click)="closeNavbar()">Artificial Intelligence (AI)</a></li>
+                            <li><a [ngClass]="isDarkTheme?'text-white':'text-black'" class="dropdown-item border-0"
+                                    routerLink="digital-marketing" (click)="closeNavbar()">Digital Marketing</a></li>
+                            <li><a [ngClass]="isDarkTheme?'text-white':'text-black'" class="dropdown-item border-0"
+                                    routerLink="digital-marketing/services" (click)="closeNavbar()">SEO</a></li>
+                            <li><a [ngClass]="isDarkTheme?'text-white':'text-black'" class="dropdown-item border-0"
+                                    routerLink="digital-marketing/services" (click)="closeNavbar()">Pay Per Click</a>
+                            </li>
+                            <li><a [ngClass]="isDarkTheme?'text-white':'text-black'" class="dropdown-item border-0"
+                                    routerLink="digital-marketing/services" (click)="closeNavbar()">SocialMedia
+                                    marketing</a></li>
+                            <li><a [ngClass]="isDarkTheme?'text-white':'text-black'" class="dropdown-item border-0"
+                                    routerLink="digital-marketing/services" (click)="closeNavbar()">Content
+                                    Marketing</a></li>
+                            <li><a [ngClass]="isDarkTheme?'text-white':'text-black'" class="dropdown-item border-0"
+                                    routerLink="digital-marketing/services" (click)="closeNavbar()">Website
+                                    Development</a></li>
+                            <li><a [ngClass]="isDarkTheme?'text-white':'text-black'" class="dropdown-item border-0"
+                                    routerLink="digital-marketing/services" (click)="closeNavbar()">Mobile App
+                                    Development</a></li>
+                        </ul>
+                        <ul>
+                            <li><a [ngClass]="isDarkTheme?'text-white':'text-black'" class="dropdown-item border-0"
+                                    routerLink="app-development/casestudy" (click)="closeNavbar()">Case Study</a></li>
+                            <li><a [ngClass]="isDarkTheme?'text-white':'text-black'" class="dropdown-item border-0"
+                                    routerLink="app-development/casestudy" (click)="closeNavbar()">Mobile App
+                                    Development</a></li>
+                            <li><a [ngClass]="isDarkTheme?'text-white':'text-black'" class="dropdown-item border-0"
+                                    routerLink="web-development/casestudy" (click)="closeNavbar()">Web App
+                                    Development</a></li>
+                            <li><a [ngClass]="isDarkTheme?'text-white':'text-black'" class="dropdown-item border-0"
+                                    routerLink="digital-marketing/casestudy" (click)="closeNavbar()">Digital
+                                    Marketing</a></li>
+                            <li><a [ngClass]="isDarkTheme?'text-white':'text-black'" class="dropdown-item border-0"
+                                    routerLink="ai/casestudy" (click)="closeNavbar()">Artificial Intelligence</a></li>
                         </ul>
                     </div>
                 </li>
@@ -71,9 +123,20 @@
         </div>
         <div class="collapse navbar-collapse justify-content-end w-100">
             <div class="form-check form-switch">
-                <input (click)="toggleTheme()" class="form-check-input" type="checkbox" role="switch"
+                <!-- <input (click)="toggleTheme()" class="form-check-input" type="checkbox" role="switch"
                     id="flexSwitchCheckChecked" [checked]="isDarkTheme">
-                <label class="form-check-label" for="flexSwitchCheckChecked"></label>
+                <label class="form-check-label" for="flexSwitchCheckChecked"></label> -->
+
+                <input (click)="toggleTheme()" [checked]="isDarkTheme" type="checkbox" class="checkbox" id="checkbox">
+                <label for="checkbox" class="checkbox-label mb-0" [ngStyle]="{'background':isDarkTheme?'#111':'white'}">
+                    <img style="filter: invert(1);" src="../../../assets/sun.svg" alt="">
+                    <i class="fa-regular fa-moon text-black"></i>
+                    <span class="ball">
+                        <img *ngIf="!isDarkTheme" src="../../../assets/sun.svg" alt="">
+                        <!-- <img *ngIf="isDarkTheme" src="../../../assets/moon.svg" alt=""> -->
+                        <i *ngIf="isDarkTheme" class="fa-regular fa-moon"></i>
+                    </span>
+                </label>
             </div>
         </div>
     </div>

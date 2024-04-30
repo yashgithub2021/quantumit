@@ -3,6 +3,19 @@
     --bs-alert-bg: black;
     --bs-alert-border-color: black;
     --bs-alert-link-color: var(--bs-warning-text-emphasis);
+    position: relative;
+}
+
+.alert-warning::before {
+    display: block;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-image: url("../assets/abstract.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 30%;
+    position: absolute;
 }
 
 .alert-warning-light {
@@ -10,6 +23,10 @@
     --bs-alert-bg: white;
     --bs-alert-border-color: white;
     --bs-alert-link-color: var(--bs-warning-text-emphasis);
+}
+
+.alert-warning-light::before {
+    background-image: none
 }
 
 .btn-close {

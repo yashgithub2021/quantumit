@@ -41,8 +41,14 @@
     --bs-accordion-color: white;
     --bs-accordion-active-bg: black;
     --bs-accordion-btn-bg: black;
-    --bs-accordion-btn-icon: url("../../../../assets/contact/acc-btn.svg");
+}
+
+.accordion-button:not(.collapsed)::after {
     --bs-accordion-btn-active-icon: url("../../../../assets/contact/acc-body.svg");
+}
+
+.accordion-button::after {
+    --bs-accordion-btn-icon: url("../../../../assets/contact/acc-btn.svg");
 }
 
 .accordion-light {
@@ -50,8 +56,8 @@
     --bs-accordion-color: black;
     --bs-accordion-active-bg: #ECF0FF;
     --bs-accordion-btn-bg: #ECF0FF;
-    --bs-accordion-btn-icon: url("../../../../assets/contact/acc-btn.svg");
-    --bs-accordion-btn-active-icon: url("../../../../assets/contact/acc-body.svg");
+    /* --bs-accordion-btn-icon: url("../../../../assets/contact/acc-btn.svg");
+    --bs-accordion-btn-active-icon: url("../../../../assets/contact/acc-body.svg"); */
 }
 
 .accordion-body {

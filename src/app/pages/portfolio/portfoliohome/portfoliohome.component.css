@@ -50,6 +50,19 @@
     border: 1px solid #FFFFFF
 }
 
+.category-btn-light {
+    width: Hug (152px)px;
+    height: Hug (59px)px;
+    padding: 20px 35px 21px 35px;
+    gap: 10px;
+    border-radius: 236.53px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    color: black;
+    background: #ECF0FF;
+    border: 1px solid #FFFFFF
+}
+
 .app {
     position: relative;
 }

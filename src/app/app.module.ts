@@ -12,6 +12,7 @@ import { FormComponent } from './components/form/form.component';
 import { SharedModule } from './shared/shared/shared.module';
 import { HttpClientModule } from '@angular/common/http'
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ToastrModule } from 'ngx-toastr';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +29,13 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     SharedModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    ToastrModule.forRoot({
+      timeOut: 2000,
+      positionClass: 'toast-bottom-center',
+      preventDuplicates: true,
+      progressBar: true
+    }),
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -56,6 +56,10 @@
     opacity: 10%;
 }
 
+.fa-arrow-right {
+    cursor: pointer;
+}
+
 @media (max-width: 575.98px) {
 
     .cards,

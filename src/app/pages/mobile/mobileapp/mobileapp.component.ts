@@ -14,7 +14,7 @@ export class MobileappComponent implements OnInit {
   aiService = [
     {
       num: "01.",
-      title: "Bring Together the Right People in Team",
+      title: "Curate a skilled team ensuring synergy and expertise",
       desc: "Our app development starts with building a specialized team, ensuring every project receives expert attention and collaboration."
     },
 
@@ -93,6 +93,12 @@ export class MobileappComponent implements OnInit {
   }
   scrollToFooter() {
     const footer = this.elementRef.nativeElement.querySelector('#form');
+    if (footer) {
+      footer.scrollIntoView({ behavior: 'smooth', block: 'end' });
+    }
+  }
+  scrollToServices() {
+    const footer = this.elementRef.nativeElement.querySelector('#our-services');
     if (footer) {
       footer.scrollIntoView({ behavior: 'smooth', block: 'end' });
     }
