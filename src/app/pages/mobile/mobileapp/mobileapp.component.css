@@ -141,12 +141,22 @@
         padding-right: 1rem !important;
     }
 
+    .frame-2>.container>.heading>.text{
+        align-items:center!important;
+    }
+    .frame-2>.container>.heading>.text>.txt{
+        width:100%!important;
+    }
+    .frame-2>.container>.heading>.text>.txt>.dev-ai{
+        width: 100%!important;
+        text-align: center;
+    }
     .numbers-section {
         padding: 40px 50px;
     }
 
     .project {
-        height: 35vh;
+        height: 60vh;
     }
 
     .app-details {
@@ -184,6 +194,11 @@
         height: 100% !important;
     }
 
+}
+@media(max-width:820px){
+    .frames>.mobile-app>.header>.image{
+        padding:10px;
+    }
 }
 
 @media(max-width:768px) {

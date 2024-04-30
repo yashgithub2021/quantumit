@@ -8,6 +8,9 @@ footer {
 footer * {
     margin: 4px;
 }
+footer>.container div:nth-child(1) {
+    justify-content: start;
+}
 
 button {
     height: 48px;
@@ -92,15 +95,35 @@ button {
     }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1024px)and (min-width:768px) {
     .social-links-container {
         flex-wrap: wrap;
     }
+
+    footer>.container {
+        margin: 0px;
+        padding: 0px!important;
+    }
+
+    footer>.container div:nth-child(1) {
+        justify-content: start;
+    }
+
+    .ipad-mini-landscape {
+        width: 100vw;
+        height: 100vh;
+    }
 }
-@media(max-width:768px){
-    .social-links-container{
+@media(max-width:820px){
+    .social-icon{
+        width: 130px;
+    }
+}
+@media(max-width:768px) {
+    .social-links-container {
         height: 55vh;
     }
+
     .social-links-container>.social-icon {
         height: 90px;
         width: 150px;

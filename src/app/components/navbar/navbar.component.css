@@ -59,9 +59,9 @@ li {
         display: none !important;
     }
 
-    .dropdown-menu:hover {
+    /* .dropdown-menu:hover {
         display: flex !important;
-    }
+    } */
 
     .top-wrap {
         width: auto;

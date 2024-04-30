@@ -545,6 +545,28 @@
     }
 
 }
+@media(max-width:820px){
+    .section3{
+        align-items: center;
+    }
+    .section3>.left-side{
+        width:82vw;
+    }
+    .section3>.left-side::before{
+        width: 110%!important;
+    }
+    .section3>.right-side>.container{
+        padding:0 20px;
+    }
+    .section3>.right-side>.container>.btn-container{
+        padding:0px;
+    }
+    .section3-tagline{
+        font-size: 40px;
+        line-height:50px;
+    }
+
+}
 
 @media (max-width: 575.98px) {
 

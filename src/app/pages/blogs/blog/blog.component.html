@@ -1,4 +1,4 @@
-<div class="container-fluid blog">
+<div class="container-fluid ">
     <div class="container d-flex flex-column">
         <div class="frame-1 h-100 w-100">
             <div class="container numbers w-100 my-5">
@@ -70,7 +70,7 @@
                             alt="...">
                         <div class="card-body px-3">
                             <div class="container">
-                                <h5 class="card-title  fw-lighter">{{blogs[0].categories[0]}} - <span
+                                <h5 class="card-title  fw-lighter">{{blogs[0]?.categories[0]}} - <span
                                         class="days opacity-50">5
                                         mins read</span></h5>
                             </div>
@@ -78,9 +78,9 @@
                         <div class="card-body px-3">
                             <div class="container d-flex">
                                 <div class="text">
-                                    <h5 class="fw-light ">{{blogs[0].blogTitle}}
+                                    <h5 class="fw-light ">{{blogs[0]?.blogTitle}}
                                     </h5>
-                                    <p class="opacity-50">{{blogs[0].blogDataBrief}} …</p>
+                                    <p class="opacity-50">{{blogs[0]?.blogDataBrief}} …</p>
                                 </div>
                             </div>
                         </div>
@@ -108,7 +108,7 @@
                             alt="...">
                         <div class="card-body px-3">
                             <div class="container">
-                                <h5 class="card-title  fw-lighter">{{blogs[1].categories[1]}} - <span
+                                <h5 class="card-title  fw-lighter">{{blogs[1]?.categories[1]}} - <span
                                         class="days opacity-50">5
                                         mins read</span></h5>
                             </div>
@@ -119,7 +119,7 @@
                                     <h5 class="fw-light ">
                                         {{blogs[1].blogTitle}}
                                     </h5>
-                                    <p class="opacity-50">{{blogs[1].blogDataBrief}} …</p>
+                                    <p class="opacity-50">{{blogs[1]?.blogDataBrief}} …</p>
                                 </div>
                             </div>
                         </div>
