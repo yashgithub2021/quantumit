@@ -480,6 +480,10 @@
         width: 100%;
     }
 
+    .section5::before {
+        width: 95%;
+    }
+
     .service-tagline {
         font-size: 20px;
         line-height: 35px;

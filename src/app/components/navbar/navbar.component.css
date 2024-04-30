@@ -45,11 +45,11 @@ li {
 }
 
 .dropdown-item {
-    color: white;
+    /* color: white; */
 }
 
 .dropdown-item:hover {
-    color: black;
+    color: black !important;
 }
 
 .checkbox {
