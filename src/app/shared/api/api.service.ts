@@ -39,6 +39,10 @@ export class ApiService {
     return this.http.get(`${this.baseUrl}api/blogs/blog`)
   }
 
+  getBlogDetails(id: any) {
+    return this.http.get(`${this.baseUrl}api/blogs/blog?id=${id}`)
+  }
+
   getContributors() {
     return this.http.get(`${this.baseUrl}api/contributor/contributor`)
   }
@@ -57,5 +61,13 @@ export class ApiService {
 
   getProjectsById(id: any) {
     return this.http.get(`${this.baseUrl}api/projects/project?id=${id}`)
+  }
+
+  getFAQ() {
+    return this.http.get(`${this.baseUrl}api/faq/faq`)
+  }
+
+  saveContactForm(form: any) {
+    return this.http.post(`${this.baseUrl}api/contactus/contactus`, form)
   }
 }

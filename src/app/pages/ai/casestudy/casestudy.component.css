@@ -1,0 +1,111 @@
+.steps-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.step-square {
+    width: 50px;
+    height: 40px;
+    background: linear-gradient(91.58deg, #43BAFF 0.52%, #7044B3 100%);
+    position: relative;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    /* Position for vertical line */
+}
+
+.step-square::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    /* Position the vertical line below the square */
+    left: 50%;
+    /* Position the vertical line in the middle of the square */
+    transform: translateX(-50%);
+    /* Center the vertical line horizontally */
+    height: 100%;
+    width: 1px;
+    /* Width of the vertical line */
+    background-color: #fff;
+    /* Color of the vertical line */
+}
+
+.step-text {
+    color: #fff;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.step-dashed-line {
+    flex-grow: 1;
+    height: 1px;
+    background-image: linear-gradient(to right, #fff 50%, transparent 50%);
+    background-size: 10px 1px;
+    background-repeat: repeat-x;
+    /* margin-top: 20px; */
+}
+
+
+.step-dashed-line-light {
+    flex-grow: 1;
+    height: 1px;
+    background-image: linear-gradient(to right, #7EA6BE 50%, transparent 50%);
+    background-size: 10px 1px;
+    background-repeat: repeat-x;
+    /* margin-top: 20px; */
+}
+
+.step-line {
+    flex-grow: 1;
+    height: 1px;
+    background-size: 10px 1px;
+    background-repeat: repeat-x;
+    /* margin-top: 20px; */
+}
+
+.our-marketing-btn {
+    width: Hug (352px)px;
+    height: Hug (66px)px;
+    top: 524.35px;
+    left: 544px;
+    padding: 20px 30px 20px 30px;
+    gap: 20px;
+    border-radius: 50px 50px 0px 0px;
+    opacity: 0px;
+    background: #111111;
+    border: #000000;
+}
+
+
+.circles {
+    width: 80%;
+}
+
+.step-circle {
+    width: 60px;
+    height: 60px;
+    background: #000000;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.step-circle-light {
+    width: 60px;
+    height: 60px;
+    background: #ECF0FF;
+    border: 1px solid #7EA6BE;
+    border-radius: 50%;
+    margin-right: 20px;
+}

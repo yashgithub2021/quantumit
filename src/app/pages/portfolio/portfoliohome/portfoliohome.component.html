@@ -38,16 +38,28 @@
         <div class="container mt-4 categories d-flex justify-content-center w-100">
             <div class="container gap-3 gap-lg-0 d-flex flex-wrap w-75 justify-content-evenly ">
                 <div class="button">
-                    <button class="category-selected btn w-100">All Work</button>
+                    <button (click)="changeTab('all')"
+                        [ngStyle]="{'background':activeTab==='all'?'linear-gradient(91.58deg, #43BAFF 0.52%, #7044B3 100%)':''}"
+                        [ngClass]="isDarkTheme?'category-btn':'category-btn-light'" class="btn w-100">All
+                        Work</button>
                 </div>
                 <div class="button">
-                    <button class="category-btn btn w-100">Web Design</button>
+                    <button (click)="changeTab('web-design')"
+                        [ngStyle]="{'background':activeTab==='web-design'?'linear-gradient(91.58deg, #43BAFF 0.52%, #7044B3 100%)':''}"
+                        [ngClass]="isDarkTheme?'category-btn':'category-btn-light'" class="btn w-100">Web
+                        Design</button>
                 </div>
                 <div class="button">
-                    <button class="category-btn btn w-100">App design</button>
+                    <button (click)="changeTab('app')"
+                        [ngStyle]="{'background':activeTab==='app'?'linear-gradient(91.58deg, #43BAFF 0.52%, #7044B3 100%)':''}"
+                        [ngClass]="isDarkTheme?'category-btn':'category-btn-light'" class="btn w-100">App
+                        design</button>
                 </div>
                 <div class="button">
-                    <button class="category-btn btn w-100">Web App</button>
+                    <button (click)="changeTab('web-app')"
+                        [ngStyle]="{'background':activeTab==='web-app'?'linear-gradient(91.58deg, #43BAFF 0.52%, #7044B3 100%)':''}"
+                        [ngClass]="isDarkTheme?'category-btn':'category-btn-light'" class="btn w-100">Web
+                        App</button>
                 </div>
             </div>
         </div>

@@ -141,6 +141,11 @@
 }
 
 @media (max-width: 575.98px) {
+
+    .frame-4::before {
+        width: 90%;
+    }
+
     .numbers-section {
         padding: 40px 20px;
         background: linear-gradient(90deg, #43BAFF 0%, #7141B1 100%);

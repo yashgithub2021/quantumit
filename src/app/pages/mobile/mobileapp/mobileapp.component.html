@@ -9,13 +9,15 @@
                         <h1 class="tagline text-center text-md-left fw-bolder w-lg-50">Premier
                             <span class="linear-text">Mobile App Development </span>Innovation
                         </h1>
-                        <p class="fs-5 d-md- text-align-center text-lg-left ">
-                            The full set of services around development and maintenance <br>
-                            of complex business-critical applications.
+                        <p class="fs-5 text-align-center text-lg-left ">
+                            Our Mobile App Development services redefine the digital landscape, pushing boundaries with
+                            revolutionary solutions that drive success.
                         </p>
                         <div class="buttons d-flex justify-content-center justify-content-lg-start w-100">
-                            <button class="btn-lm btn-primary mx-3 px-lg-4 px-2 py-lg-3">Get Started</button>
-                            <button class="btn btn-outline-primary mx-3 px-lg-4 px-2 py-lg-3 text-uppercase ">learn
+                            <button (click)="scrollToServices()"
+                                class="btn-lm btn-primary mx-3 px-lg-4 px-2 py-lg-3">Get Started</button>
+                            <button class="btn btn-outline-primary mx-3 px-lg-4 px-2 py-lg-3 text-uppercase "
+                                (click)="scrollToFooter()">learn
                                 More</button>
                         </div>
                     </div>
@@ -33,7 +35,7 @@
                 <img src="https://s3-alpha-sig.figma.com/img/7909/1ec5/26717e1277e59d2e0319b35f8d98207d?Expires=1714348800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=LoMKAebm4mLdltepdYiaqOO3ECqiqZXj1LZuMXKukekxI31BG6GOxw7hK~rKrKmWH8H8Zn0z71ZS9CtTE4KircO~eYK3UV8WjGOMX4J1JeuHCjFkT4fJrWnq2Y3pHsr4jF~pjJzOkW1FIqkOcJRDYQHdeOhirnTviyU8goYEyf1jO3rJQ20sNdYNGE8vAbmjENpWEf0xy5wcabGApgSyD~AT-6LR-caP1yX~YEkMFaL6Bb7Dso1hI4gHDYbHPZvOs5QBfdz6SVZ8bnXJXpwWVNr3Jp21~8k9xIBWmzPObVAQ31eoTh2enjlip0EubZAQee7h~o-3MfWlh5B5~CT6PA__"
                     alt="">
             </div>
-            <div class="desc h-100 w-100 d-flex align-items-center justify-content-center">
+            <div id="our-services" class="desc h-100 w-100 d-flex align-items-center justify-content-center">
                 <div class="heading-frame-2 ">
                     <div data-aos="fade-up" class="button my-2 d-flex justify-content-center justify-content-lg-start">
                         <button class="our-process-btn">Our Services</button>
@@ -162,11 +164,11 @@
                                         <button class="app-button app-button-one text-capitalize">App</button>
                                     </div>
                                     <div class="name">
-                                        <h2>{{projects[0].name}}</h2>
+                                        <h2>{{projects[1].name}}</h2>
                                     </div>
                                     <div class="details fw-lighter text-align-center text-lg-start fs-5">
-                                        {{(projects[0].description.length>100)? (projects[0].description |
-                                        slice:0:100)+'...':(projects[0].description)}}
+
+                                        {{(projects[1].description.length>100)? (projects[1].description | slice:0:100)+'...':(projects[1].description)}}
                                     </div>
                                     <div [routerLink]="'app-details/' + projects[0]?._id" (click)="scrollToTop()"
                                         class="view-more fw-light d-flex align-items-center">
@@ -194,11 +196,11 @@
                                         <button class="app-button app-button-two text-capitalize">App</button>
                                     </div>
                                     <div class="name">
-                                        <h2>{{projects[1].name}}</h2>
+                                        <h2>{{projects[0].name}}</h2>
                                     </div>
                                     <div class="details text-align-center text-lg-end fw-lighter fs-5">
-                                        {{(projects[1].description.length>100)? (projects[1].description |
-                                        slice:0:100)+'...':(projects[1].description)}}
+
+                                        {{(projects[0].description.length>100)? (projects[0].description | slice:0:100)+'...':(projects[0].description)}}
                                     </div>
                                     <div [routerLink]="'app-details/' + projects[1]?._id" (click)="scrollToTop()"
                                         class="view-more fw-light d-flex align-items-center">

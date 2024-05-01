@@ -31,35 +31,39 @@
                         <div class="card-body popular">
                             <div class="container d-flex justify-content-between">
                                 <div class="text">
-                                    <h4 class="fw-light  w-75 text-capitalize">Effective Business Branding
-                                        Solutions</h4>
+                                    <h4 class="fw-light  w-75 text-capitalize">{{blogs[0]?.title}}</h4>
                                     <span class=" opacity-50  days">15 Videos</span>
                                 </div>
                                 <div class="arrow">
-                                    <i routerLink="inner-blog" class="fa fa-solid fa-arrow-right"></i>
+                                    <i [ngClass]="isDarkTheme?'text-white':'text-black'"
+                                        [routerLink]="['inner-blog/'+blogs[0]._id]"
+                                        class="fa fa-solid fa-arrow-right"></i>
                                 </div>
                             </div>
                         </div>
                         <div class="card-body popular">
                             <div class="container d-flex justify-content-between">
                                 <div class="text">
-                                    <h4 class="fw-light  w-75 text-capitalize">17 best mobile apps KPI’s to
-                                        know</h4>
+                                    <h4 class="fw-light  w-75 text-capitalize">{{blogs[1]?.title}}</h4>
                                     <span class=" opacity-50  days">15 Videos</span>
                                 </div>
                                 <div class="arrow">
-                                    <i class="fa fa-solid fa-arrow-right"></i>
+                                    <i [ngClass]="isDarkTheme?'text-white':'text-black'"
+                                        class="fa fa-solid fa-arrow-right"
+                                        [routerLink]="['inner-blog/'+blogs[1]._id]"></i>
                                 </div>
                             </div>
                         </div>
                         <div class="card-body">
                             <div class="container d-flex justify-content-between">
                                 <div class="text">
-                                    <h4 class="fw-light  w-75 text-capitalize">Top 14 real estate apps</h4>
+                                    <h4 class="fw-light  w-75 text-capitalize">{{blogs[2]?.title}}</h4>
                                     <span class=" opacity-50  days">15 Videos</span>
                                 </div>
                                 <div class="arrow">
-                                    <i class="fa fa-solid fa-arrow-right"></i>
+                                    <i [ngClass]="isDarkTheme?'text-white':'text-black'"
+                                        class="fa fa-solid fa-arrow-right"
+                                        [routerLink]="['inner-blog/'+blogs[2]._id]"></i>
                                 </div>
                             </div>
                         </div>
@@ -70,17 +74,20 @@
                             alt="...">
                         <div class="card-body px-3">
                             <div class="container">
-                                <h5 class="card-title  fw-lighter">{{blogs[0]?.categories[0]}} - <span
-                                        class="days opacity-50">5
-                                        mins read</span></h5>
+                                <h5 class="card-title  fw-lighter">{{blogs[3]?.category}} - <span
+                                        class="days opacity-50">{{blogs[3]?.readTime}}</span></h5>
                             </div>
                         </div>
                         <div class="card-body px-3">
                             <div class="container d-flex">
                                 <div class="text">
-                                    <h5 class="fw-light ">{{blogs[0]?.blogTitle}}
+
+                                    <h5 class="fw-light ">{{blogs[3]?.title}}
                                     </h5>
-                                    <p class="opacity-50">{{blogs[0]?.blogDataBrief}} …</p>
+                                    <p class="opacity-50">
+                                        {{(blogs[3]?.description.length>100)?(blogs[3]?.description | slice:0:100)+'...':(blogs[3]?.description)}}
+                                    </p>
+
                                 </div>
                             </div>
                         </div>
@@ -93,7 +100,7 @@
                                             alt="">
                                     </div>
                                     <div class="name mx-2 ">
-                                        <p>Andrea Wise</p>
+                                        <p>{{blogs[3]?.author.authorName}}</p>
                                     </div>
                                 </div>
                                 <div style="opacity: 50%;" class="time">
@@ -108,18 +115,20 @@
                             alt="...">
                         <div class="card-body px-3">
                             <div class="container">
-                                <h5 class="card-title  fw-lighter">{{blogs[1]?.categories[1]}} - <span
-                                        class="days opacity-50">5
-                                        mins read</span></h5>
+
+                                <h5 class="card-title  fw-lighter">{{blogs[3]?.category}} - <span
+                                        class="days opacity-50">{{blogs[3]?.readTime}}</span></h5>
                             </div>
                         </div>
                         <div class="card-body px-3">
                             <div class="container d-flex justify-content-between">
-                                <div class="text">
+                                <div class="text flex-column d-flex">
                                     <h5 class="fw-light ">
-                                        {{blogs[1].blogTitle}}
+                                        {{blogs[3]?.title}}
                                     </h5>
-                                    <p class="opacity-50">{{blogs[1]?.blogDataBrief}} …</p>
+                                    <p class="opacity-50">
+                                        {{(blogs[3]?.description.length>100)?(blogs[3]?.description | slice:0:100)+'...':(blogs[3]?.description)}}
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -132,7 +141,7 @@
                                             alt="">
                                     </div>
                                     <div class="name mx-2 ">
-                                        <p>Andrea Wise</p>
+                                        <p>{{blogs[3]?.author.authorName}}</p>
                                     </div>
                                 </div>
                                 <div style="opacity: 50%;" class="time">
