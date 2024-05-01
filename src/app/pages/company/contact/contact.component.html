@@ -121,16 +121,18 @@
 
         <div class="container questions">
             <div class="container w-75">
-                <div class="accordion" [ngClass]="isDarkMode?'':'accordion-light'" id="accordionPanelsStayOpenExample">
-                    <div class="accordion-item my-3">
+                <div class="accordion" [ngClass]="isDarkMode ? '' : 'accordion-light'"
+                    id="accordionPanelsStayOpenExample">
+                    <div *ngFor="let faq of faqs; let i = index" class="accordion-item my-3">
                         <h2 class="accordion-header border-bottom-0">
-                            <button [ngClass]="isDarkMode?'text-white':'text-black'" class="accordion-button  border-0"
-                                type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne"
-                                aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-                                Question #1
+                            <button [ngClass]="isDarkMode ? 'text-white' : 'text-black'"
+                                class="accordion-button border-0" type="button" data-bs-toggle="collapse"
+                                [attr.data-bs-target]="'#faqCollapse' + i" aria-expanded="true"
+                                [attr.aria-controls]="'faqCollapse' + i">
+                                {{faq.question}}?
                             </button>
                         </h2>
-                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                        <div [id]="'faqCollapse' + i" class="accordion-collapse collapse">
                             <div class="accordion-body">
                                 <p class="opacity-50">
                                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
@@ -138,101 +140,21 @@
                                     been the industry's standard dummy text ever since the
                                 </p>
                                 <div class="list">
-                                    <ul class=" list-unstyled ">
-                                        <li class=" d-flex align-items-center list-unstyled my-3"
-                                            *ngFor="let check of checks">
-                                            <i [ngClass]="isDarkMode?'text-white':'text-black'"
+                                    <ul class="list-unstyled">
+                                        <li class="d-flex align-items-center list-unstyled my-3"
+                                            *ngFor="let check of faq.keyPoints">
+                                            <i [ngClass]="isDarkMode ? 'text-white' : 'text-black'"
                                                 class="fa-solid fa-check mx-2"></i>
                                             <p class="fw-light m-0 list-check">{{check}}</p>
                                         </li>
                                     </ul>
                                 </div>
                                 <div class="question">
-                                    <h4>Do you currently have vacancies?</h4>
+                                    <h4>{{faq.question}}?</h4>
                                 </div>
                                 <div class="ans">
                                     <p class="opacity-50">
-                                        When an unknown printegalley of type and scrambled it to make a type specimen
-                                        book. It has survived not only five cedfgfnturies, but alsjkjo the leap into
-                                        electronic typesetting.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item my-3">
-                        <h2 class="accordion-header">
-                            <button [ngClass]="isDarkMode?'text-white':'text-black'"
-                                class="accordion-button collapsed  border-0" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
-                                aria-controls="panelsStayOpen-collapseTwo">
-                                Question #2
-                            </button>
-                        </h2>
-                        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
-                            <div class="accordion-body">
-                                <p class="opacity-50">
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                    Ipsum
-                                    been the industry's standard dummy text ever since the
-                                </p>
-                                <div class="list">
-                                    <ul class=" list-unstyled ">
-                                        <li class=" d-flex align-items-center list-unstyled my-3"
-                                            *ngFor="let check of checks">
-                                            <i [ngClass]="isDarkMode?'text-white':'text-black'"
-                                                class="fa-solid fa-check mx-2"></i>
-                                            <p class="fw-light m-0 list-check">{{check}}</p>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="question">
-                                    <h4>Do you currently have vacancies?</h4>
-                                </div>
-                                <div class="ans">
-                                    <p class="opacity-50">
-                                        When an unknown printegalley of type and scrambled it to make a type specimen
-                                        book. It has survived not only five cedfgfnturies, but alsjkjo the leap into
-                                        electronic typesetting.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item my-3">
-                        <h2 class="accordion-header">
-                            <button [ngClass]="isDarkMode?'text-white':'text-black'"
-                                class="accordion-button collapsed  border-0" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
-                                aria-controls="panelsStayOpen-collapseThree">
-                                Question #3
-                            </button>
-                        </h2>
-                        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
-                            <div class="accordion-body">
-                                <p class="opacity-50">
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                    Ipsum
-                                    been the industry's standard dummy text ever since the
-                                </p>
-                                <div class="list">
-                                    <ul class=" list-unstyled ">
-                                        <li class=" d-flex align-items-center list-unstyled my-3"
-                                            *ngFor="let check of checks">
-                                            <i [ngClass]="isDarkMode?'text-white':'text-black'"
-                                                class="fa-solid fa-check mx-2"></i>
-                                            <p class="fw-light m-0 list-check">{{check}}</p>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="question">
-                                    <h4>Do you currently have vacancies?</h4>
-                                </div>
-                                <div class="ans">
-                                    <p class="opacity-50">
-                                        When an unknown printegalley of type and scrambled it to make a type specimen
-                                        book. It has survived not only five cedfgfnturies, but alsjkjo the leap into
-                                        electronic typesetting.
+                                        {{faq.answer}}
                                     </p>
                                 </div>
                             </div>

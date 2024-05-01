@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit } from '@angular/core';
 import { ApiService } from 'src/app/shared/api/api.service';
 
 @Component({
@@ -9,7 +9,7 @@ import { ApiService } from 'src/app/shared/api/api.service';
 export class FooterComponent implements OnInit {
 
   isDarkMode!: boolean
-  constructor(private api: ApiService) { }
+  constructor(private api: ApiService, private elementRef: ElementRef) { }
 
 
   facebook = "www.facebook.com/quantumitinnovationindia"
@@ -35,7 +35,8 @@ export class FooterComponent implements OnInit {
     {
       icon: 'fa-print',
       label: 'Fax',
-      value: '+1-212-9876543'
+      value: '+1-212-9876543',
+      link: 'fax:+1.212.9876543'
     },
   ]
 
@@ -50,6 +51,9 @@ export class FooterComponent implements OnInit {
         {
           label: 'About Us',
           link: 'company/about'
+        },
+        {
+          label: 'Services',
         },
         {
           label: 'Portfolio',
@@ -118,5 +122,14 @@ export class FooterComponent implements OnInit {
   }
   scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+
+  scrollToGetServices() {
+    const footer = this.elementRef.nativeElement.querySelector('#services');
+    if (footer) {
+      console.log(true)
+      footer.scrollIntoView({ behavior: 'smooth', block: 'end' });
+    }
   }
 }

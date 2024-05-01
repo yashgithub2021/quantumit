@@ -1,5 +1,5 @@
 <footer [ngStyle]="{'background-color': isDarkMode ? '#111111' : '#ECF0FF'}"
-    class="w-100 d-flex justify-content-center">
+    class="w-100 d-flex flex-column align-items-center justify-content-center">
     <div class="container d-flex p-1 p-lg-5 flex-lg-row flex-column">
         <div class="container-fluid d-flex flex-column ">
             <div class="quantum">
@@ -8,10 +8,10 @@
                         src="../../../assets/logo-white 1.png" alt="">
                 </div>
                 <div class="tagline">
-                    <p class="text-secondary">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet iste
-                        repudiandae aspernatur,
-                        deserunt aliquid voluptatibus voluptas consequatur eum aliquam perspiciatis incidunt non
-                        doloremque at magni impedit neque, nostrum nobis ipsum.</p>
+                    <p class="text-secondary">Quantum IT Innovation stands at the forefront of digital transformation,
+                        offering cutting-edge solutions that revolutionize businesses. With a dedicated focus on
+                        innovation, we harness the power of technology to propel your organization into the future,
+                        ensuring success in today's dynamic landscape. </p>
                 </div>
             </div>
             <div class="contact-info-div">
@@ -44,7 +44,8 @@
                         </div>
                         <div class="pages">
                             <p style="cursor:pointer" class="text-secondary mb-4" [routerLink]="page.link"
-                                (click)="scrollToTop()" *ngFor="let page of page.pages">
+                                (click)="page.label === 'Services' ? scrollToGetServices() : scrollToTop()"
+                                *ngFor="let page of page.pages">
                                 {{page.label}}</p>
                         </div>
                     </div>
@@ -74,5 +75,8 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div class="rights">
+        <p class=" opacity-50">© 2000-2021, All Rights Reserved</p>
     </div>
 </footer>

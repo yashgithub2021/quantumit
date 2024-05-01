@@ -1,18 +1,21 @@
 import { Component, OnInit } from '@angular/core';
+import * as Aos from 'aos';
 import { ApiService } from 'src/app/shared/api/api.service';
 
 @Component({
-  selector: 'app-portfoliohome',
-  templateUrl: './portfoliohome.component.html',
-  styleUrls: ['./portfoliohome.component.css']
+  selector: 'app-casestudy',
+  templateUrl: './casestudy.component.html',
+  styleUrls: ['./casestudy.component.css']
 })
-export class PortfoliohomeComponent implements OnInit {
+export class CasestudyComponent implements OnInit {
 
   isDarkTheme!: boolean
-  activeTab: string = 'all'
   constructor(private api: ApiService) { }
 
   ngOnInit(): void {
+    Aos.init({
+      duration: 2000,
+    })
     this.isDarkTheme = this.api.isDarkTheme();
     this.themechange()
   }
@@ -21,9 +24,5 @@ export class PortfoliohomeComponent implements OnInit {
     this.api.themeChanged.subscribe((isDarkTheme: boolean) => {
       this.isDarkTheme = isDarkTheme;
     });
-  }
-
-  changeTab(tab: string) {
-    this.activeTab = tab
   }
 }

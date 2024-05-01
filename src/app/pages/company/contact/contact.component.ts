@@ -9,11 +9,12 @@ import { ApiService } from 'src/app/shared/api/api.service';
 export class ContactComponent implements OnInit {
   isDarkMode!: boolean
   checks = ["Chatbot API", "Facial Recognition API", "Natural language processing APIs", "AWS ML Solutions"]
-
+  faqs: any
   constructor(private api: ApiService) { }
   ngOnInit(): void {
     this.darkModeCheck()
     this.themechange()
+    this.fetchFAQ()
     console.log(this.isDarkMode)
   }
 
@@ -25,5 +26,12 @@ export class ContactComponent implements OnInit {
     this.api.themeChanged.subscribe((isDarkTheme: boolean) => {
       this.isDarkMode = isDarkTheme;
     });
+  }
+
+  fetchFAQ() {
+    this.api.getFAQ().subscribe((res: any) => {
+      this.faqs = res.faqs
+      console.log(this.faqs)
+    })
   }
 }

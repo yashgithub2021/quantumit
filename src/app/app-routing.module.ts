@@ -14,6 +14,9 @@ const routes: Routes = [
     path: 'web-development', loadChildren: () => import('./pages/web/web.module').then(m => m.WebModule)
   },
   {
+    path: 'ai', loadChildren: () => import('./pages/ai/ai.module').then(m => m.AiModule)
+  },
+  {
     path: 'app-development', loadChildren: () => import('./pages/mobile/mobile.module').then(m => m.MobileModule)
   },
   {
