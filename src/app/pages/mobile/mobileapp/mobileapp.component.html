@@ -197,6 +197,7 @@
                                         <h2>{{projects[0].name}}</h2>
                                     </div>
                                     <div class="details text-align-center text-lg-end fw-lighter fs-5">
+
                                         {{(projects[0].description.length>100)? (projects[0].description | slice:0:100)+'...':(projects[0].description)}}
                                     </div>
                                     <div [routerLink]="'app-details/' + projects[1]?._id" (click)="scrollToTop()"
