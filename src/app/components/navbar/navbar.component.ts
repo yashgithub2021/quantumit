@@ -17,6 +17,7 @@ export class NavbarComponent {
   closeNavbar() {
     // Check if the navbar is collapsed
     const navToggler = document.querySelector('.navbar-toggler') as HTMLButtonElement | null;
+    console.log(navToggler);
     if (navToggler && navToggler.getAttribute('aria-expanded') === 'true') {
       // Collapse the navbar
       navToggler.click();

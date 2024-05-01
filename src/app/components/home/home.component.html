@@ -1,4 +1,4 @@
-<div class="d-flex flex-column">
+<div class="d-flex flex-column"style="overflow:hidden">
     <!-- Section One -->
     <div class="section1" [ngClass]="isDarkTheme ? 'dark' : 'light'">
         <div class=" container d-flex flex-column align-items-center justify-content-center">
@@ -54,7 +54,7 @@
                             Our tailored approach fosters open communication channels, innovation, enabling companies to
                             achieve their shared objectives efficiently.
                     </div>
-                    <div class="container d-flex align-items-center justify-content-start my-3">
+                    <div class="container btn-container d-flex align-items-center justify-content-start my-3">
                         <button (click)="scrollToGetServices()"
                             class="btn fs-5 rounded d-flex align-items-center justify-content-between">Get Started
                             <i class="fa-solid fa-arrow-right ms-3"></i>
@@ -229,7 +229,7 @@
     <div class="container section7 w-100" id="customers">
         <div class="container h-100">
             <div class="d-flex flex-column flex-lg-row h-100 w-100">
-                <div *ngFor="let review of reviews" class="customer-feedback h-100 w-100 p-5" data-aos="fade-up">
+                <div *ngFor="let review of reviews" class="customer-feedback h-100 w-100 p-5 p-md-3" data-aos="fade-up">
                     <div [ngClass]="isDarkTheme?'cf-cont-dark ':'cf-cont-light'"
                         class="container cf-cont d-flex flex-column justify-content-around align-items-start">
                         <div class="stars">

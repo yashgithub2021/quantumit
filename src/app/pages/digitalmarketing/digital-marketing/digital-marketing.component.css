@@ -335,6 +335,23 @@
     opacity: 50%;
     backdrop-filter: blur(2px);
 }
+.blank{
+    display: none;
+}
+@media (max-width:1024px) and (min-width:768px) {
+    .tagline {
+        font-size: 60px;
+        line-height: 70px;
+    }
+    .frame-6>.container{
+        height:75vh!important;
+    }
+}
+@media(max-width:768px){
+    .frame-6>.container{
+        height:100vh!important;
+    }
+}
 
 @media (max-width: 575.98px) {
 
