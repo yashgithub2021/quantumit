@@ -56,7 +56,6 @@
     opacity: 10%;
 }
 
-<<<<<<< HEAD
 .frame-3>.contributors-section>.contributors>.card {
     width: 20rem;
 }
@@ -101,9 +100,12 @@
         height: 38vh;
     }
 }
+
 .fa-arrow-right {
     cursor: pointer;
 }
+
+
 @media (max-width: 575.98px) {
 
     .cards,
