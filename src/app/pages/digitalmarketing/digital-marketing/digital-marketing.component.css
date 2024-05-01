@@ -354,6 +354,12 @@
     display: none;
 }
 
+@media(max-width:1180px) {
+    .frame-4>.container>.heading>.text {
+        width: 70% !important;
+    }
+}
+
 @media (max-width:1024px) and (min-width:768px) {
     .tagline {
         font-size: 60px;

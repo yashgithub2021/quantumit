@@ -59,6 +59,11 @@
 .frame-3>.contributors-section>.contributors>.card {
     width: 20rem;
 }
+@media(min-width:1025px) and (max-width:1180px){
+    .frame-1-container{
+        height: 205vh;
+    }
+}
 
 @media(max-width:1024px){
     .frame-3>.contributors-section>.contributor-image{
