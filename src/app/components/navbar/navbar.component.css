@@ -94,6 +94,8 @@ li {
 
 .checkbox:checked+.checkbox-label .ball {
     transform: translateX(30px);
+    background-color: #333333;
+
 }
 
 @media (max-width: 1024px) {
@@ -109,7 +111,8 @@ li {
     .top-wrap {
         width: auto;
     }
-    ul>li>a{
+
+    ul>li>a {
         white-space: nowrap;
     }
 }
