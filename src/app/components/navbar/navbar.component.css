@@ -97,6 +97,14 @@ li {
     background-color: #333333;
 
 }
+@media(max-width:1180px){
+    .form-check{
+        padding-right: 10px;
+    }
+    ul>li{
+        white-space: nowrap;
+    }
+}
 
 @media (max-width: 1024px) {
 
