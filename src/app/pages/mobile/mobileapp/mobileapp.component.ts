@@ -57,7 +57,7 @@ export class MobileappComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.list1 = ["Android App Development", "Swift App Development", "iOS App Development", "iPad App Development", "Cross Platform App",]
+    this.list1 = ["Android App Development", "Swift App Development", "iOS App Development", "iPad App Development", "Cross Platform App"]
     AOS.init({
       duration: 2000,
     })
