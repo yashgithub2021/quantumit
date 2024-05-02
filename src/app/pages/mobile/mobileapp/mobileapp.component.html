@@ -7,7 +7,7 @@
                     <div
                         class="heading pl-lg-5 w-100 h-100 d-flex flex-column align-items-lg-start align-items-center justify-content-center ">
                         <h1 class="tagline text-center text-md-start fw-bolder w-lg-50">Premier
-                            <span class="linear-text">Mobile App Development </span>Innovation
+                            <span class="linear-text">Mobile App Development </span>Innovations
                         </h1>
                         <p class="fs-5 text-align-center text-lg-left ">
                             Our Mobile App Development services redefine the digital landscape, pushing boundaries with
@@ -83,7 +83,7 @@
                     class="text w-100 align-items-center align-items-lg-start  d-flex flex-column justify-content-center justify-content-lg-start ">
                     <div class="button my-3 my-lg-0">
                         <button class="our-process-btn">
-                            What We Do
+                            Our Process
                         </button>
                     </div>
                     <div class="txt my-3 my-lg-0">
@@ -94,24 +94,24 @@
                 </div>
             </div>
 
-            <!-- <div class="what-we-do w-100 h-100 mt-lg-5">
+            <div class="what-we-do w-100 h-100 mt-lg-5">
                 <div class="row w-100 h-100  g-4 align-items-center">
                     <div data-aos="slide-up" *ngFor="let data of aiService" class="col-lg-4 col-12">
                         <div [ngClass]="isDarkTheme?'ai-bg-dark':'ai-bg-light'"
                             class="col-details px-5 ai-data py-lg-2 d-flex align-items-start justify-content-evenly flex-column">
                             <div data-aos="slide-up" class="serial-no">
-                                <h3 class="fw-light" style="color: #43BAFF;">{{data.num}}</h3>
+                                <h3 class="fw-light" style="color: #43BAFF;">{{data?.num}}</h3>
                             </div>
                             <div data-aos="slide-up" class="title w-75">
-                                <h4 class="">{{data.title}}</h4>
+                                <h4 class="">{{data?.title}}</h4>
                             </div>
                             <div data-aos="slide-up" class="desc w-100">
-                                <p style="color: #8990AC; line-height:30px">{{data.desc}}</p>
+                                <p style="color: #8990AC; line-height:30px">{{data?.desc}}</p>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div> -->
+            </div>
         </div>
     </div>
 
@@ -152,7 +152,7 @@
 
             <div class="projects container">
                 <div class="container d-flex d-lg-block flex-column gap-5 gap-lg-0 h-100 w-100">
-                    <div
+                    <div *ngIf="projects[0]"
                         class="project-one project w-100 position-relative d-flex justify-content-center align-items-center">
                         <div [ngStyle]="{background:isDarkTheme?'#111111':'#ECF0FF'}"
                             class="project-container h-75 w-100 position-absolute d-flex flex-column flex-lg-row p-lg-5">
@@ -163,10 +163,10 @@
                                         <button class="app-button app-button-one text-capitalize">App</button>
                                     </div>
                                     <div class="name">
-                                        <h2>{{projects[1].name}}</h2>
+                                        <h2>{{projects[0]?.name}}</h2>
                                     </div>
                                     <div class="details fw-lighter text-align-center text-lg-start fs-5">
-                                        {{(projects[1].description.length>100)? (projects[1].description | slice:0:100)+'...':(projects[1].description)}}
+                                        {{(projects[0]?.description.length>100)? (projects[0]?.description | slice:0:100)+'...':(projects[0]?.description)}}
                                     </div>
                                     <div [routerLink]="'app-details/' + projects[0]?._id" (click)="scrollToTop()"
                                         class="view-more fw-light d-flex align-items-center">
@@ -178,12 +178,12 @@
                             <div data-aos="fade-in" class="app-image h-100 w-100">
                                 <div class="container project-img-container h-100 w-100 overflow-hidden p-0">
                                     <img class="project-image border-white border-3 rounded-1 w-100"
-                                        src="../../../../assets/mobile/proj1.png" alt="">
+                                        [src]="projects[0]?.image" alt="">
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div
+                    <div *ngIf="projects[1]"
                         class="project-two project w-100 position-relative d-flex justify-content-center align-items-center">
                         <div [ngStyle]="{background:isDarkTheme?'#111111':'#ECF0FF'}"
                             class="project-container h-75 w-100 position-absolute d-flex p-lg-5 flex-lg-row-reverse flex-column">
@@ -194,11 +194,11 @@
                                         <button class="app-button app-button-two text-capitalize">App</button>
                                     </div>
                                     <div class="name">
-                                        <h2>{{projects[0].name}}</h2>
+                                        <h2>{{projects[1]?.name}}</h2>
                                     </div>
                                     <div class="details text-align-center text-lg-end fw-lighter fs-5">
 
-                                        {{(projects[0].description.length>100)? (projects[0].description | slice:0:100)+'...':(projects[0].description)}}
+                                        {{(projects[1]?.description.length>100)? (projects[1]?.description | slice:0:100)+'...':(projects[1]?.description)}}
                                     </div>
                                     <div [routerLink]="'app-details/' + projects[1]?._id" (click)="scrollToTop()"
                                         class="view-more fw-light d-flex align-items-center">
@@ -210,12 +210,12 @@
                             <div data-aos="fade-in" class="app-image h-100 w-100">
                                 <div class="container project-img-container h-100 w-100 overflow-hidden p-0">
                                     <img class="project-image border-white border-3 rounded-1 w-100"
-                                        src="../../../../assets/mobile/proj2.png" alt="">
+                                        [src]="projects[1]?.image" alt="">
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div [ngStyle]="{background:isDarkTheme?'#111111':'#ECF0FF'}"
+                    <div *ngIf="projects[2]" [ngStyle]="{background:isDarkTheme?'#111111':'#ECF0FF'}"
                         class="project-three project w-100 position-relative d-flex justify-content-center align-items-center">
                         <div
                             class="project-container h-75 w-100 position-absolute d-flex flex-column flex-lg-row p-lg-5">
@@ -226,11 +226,11 @@
                                         <button class="app-button app-button-three text-capitalize">App</button>
                                     </div>
                                     <div class="name">
-                                        <h2>{{projects[2].name}}</h2>
+                                        <h2>{{projects[2]?.name}}</h2>
                                     </div>
                                     <div class="details text-align-center text-lg-start fw-lighter fs-5">
-                                        {{(projects[2].description.length>100)? (projects[2].description |
-                                        slice:0:100)+'...':(projects[2].description)}}
+                                        {{(projects[2]?.description.length>100)? (projects[2]?.description |
+                                        slice:0:100)+'...':(projects[2]?.description)}}
                                     </div>
                                     <div [routerLink]="'app-details/' + projects[2]?._id" (click)="scrollToTop()"
                                         class="view-more fw-light d-flex align-items-center">
@@ -242,7 +242,7 @@
                             <div data-aos="fade-in" class="app-image h-100 w-100">
                                 <div class="container project-img-container h-100 w-100 overflow-hidden p-0">
                                     <img class="project-image border-white border-3 rounded-1 w-100"
-                                        src="../../../../assets/mobile/proj3.png" alt="">
+                                        [src]="projects[2]?.image" alt="">
                                 </div>
                             </div>
                         </div>

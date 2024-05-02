@@ -15,12 +15,12 @@
                     </div>
                     <div class="desc mt-3 w-50">
                         <p class="m-0 head-desc-txt text-align-center" style="color:#959595">
-                            {{projectDetails.aboutProject}}
+                            {{projectDetails.description}}
                         </p>
                     </div>
                 </div>
                 <div class="image mt-3">
-                    <img class="rounded-2" src="../../../../assets/webdev/casestudy/banner.png" alt="">
+                    <img class="rounded-2" [src]="projectDetails.image" alt="">
                 </div>
 
                 <div class="project-details">
@@ -70,9 +70,12 @@
                             </div>
                             <div class="detail">
                                 <div class="title">
-                                    <h3 [routerLink]="projectDetails.livelink"
-                                        class=" text-decoration-underline text-align-center">
-                                        LiveLink
+                                    <h3>
+                                        <a [href]="projectDetails.liveLink" target="_blank"
+                                            [ngClass]="isDarkTheme?'text-white':'text-black'"
+                                            class=" text-decoration-underline text-align-center">
+                                            LiveLink
+                                        </a>
                                     </h3>
                                 </div>
                                 <div class="desc">
@@ -97,29 +100,21 @@
                         </div>
                         <div class="desc mt-3">
                             <p class="m-0 desc-txt text-left" style="color:#959595">
-                                {{projectDetails.description}}
-                            </p>
-                        </div>
-                        <div class="desc mt-3">
-                            <p class="m-0 desc-txt text-left" style="color:#959595">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit lobortis arcu enim urna
-                                adipiscing praesent velit viverra sit semper lorem eu cursus vel hendrerit elementum.
-                                Morbi curabitur etiam nibh justo, lorem aliquet donec. Sed sit mi dignissim at ante
-                                massa mattis egestas.
+                                {{projectDetails.aboutProject}}
                             </p>
                         </div>
                         <div class="list mt-3 w-100">
                             <ul class=" list-group-numbered list-group ">
-                                <li class="list-group-item d-flex align-items-center my-1 bg-black border-0 "
-                                    *ngFor="let check of checks">
-                                    <p [ngStyle]="{'color':isDarkTheme?'white':'black'}"
-                                        class="fw-light mb-0 ms-2 list-check">{{check}}</p>
+                                <li [ngStyle]="{'background-color':isDarkTheme?'black':'white','color':isDarkTheme?'white':'black'}"
+                                    class="list-group-item d-flex align-items-center my-1 border-0 "
+                                    *ngFor="let check of projectDetails.keyPoints">
+                                    <p class="fw-light mb-0 ms-2 list-check">{{check}}</p>
                                 </li>
                             </ul>
                         </div>
                         <div class="project-img-container w-100 mt-5">
                             <img width="800" class="rounded-2 project-img border-2 border-white border"
-                                src="../../../../assets/webdev/proj1.png" alt="">
+                                [src]="projectDetails.image" alt="">
                         </div>
 
                         <div class="sec4-headline  w-100 mt-5">
@@ -133,21 +128,13 @@
                             </p>
                         </div>
                         <div class="list mt-3 w-100">
-                            <ul class=" list-group ">
-                                <li class="list-group-item d-flex align-items-center my-1 bg-black border-0 "
-                                    *ngFor="let check of checks">
-                                    <p [ngStyle]="{'color':isDarkTheme?'white':'black'}"
-                                        class="fw-light mb-0 ms-2 list-check">{{check}}</p>
+                            <ul class="list-group-numbered list-group ">
+                                <li [ngStyle]="{'background-color':isDarkTheme?'black':'white','color':isDarkTheme?'white':'black'}"
+                                    class="list-group-item d-flex align-items-center my-1 border-0 "
+                                    *ngFor="let check of projectDetails.keyInsights">
+                                    <p class="fw-light mb-0 ms-2 list-check">{{check}}</p>
                                 </li>
                             </ul>
-                        </div>
-                        <div class="desc mt-3">
-                            <p class="m-0 desc-txt text-left" style="color:#959595">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit lobortis arcu enim urna
-                                adipiscing praesent velit viverra sit semper lorem eu cursus vel hendrerit elementum.
-                                Morbi curabitur etiam nibh justo, lorem aliquet donec. Sed sit mi dignissim at ante
-                                massa mattis egestas.
-                            </p>
                         </div>
                     </div>
                 </div>

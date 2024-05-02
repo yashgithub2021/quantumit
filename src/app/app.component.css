@@ -4,9 +4,10 @@
     --bs-alert-border-color: black;
     --bs-alert-link-color: var(--bs-warning-text-emphasis);
     position: relative;
+    z-index: 1;
 }
 
-.alert-warning::before {
+.alert::before {
     display: block;
     content: "";
     height: 100%;
@@ -16,6 +17,8 @@
     background-repeat: no-repeat;
     opacity: 30%;
     position: absolute;
+    z-index: -1;
+    top: 0px;
 }
 
 .alert-warning-light {
