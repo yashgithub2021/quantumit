@@ -27,7 +27,7 @@ textarea {
     border: 1px solid #636D79 !important;
     color: white;
 }
-@media (max-width:1024px) {
+@media (max-width:1180px) {
     .form {
         height: 80vh;
     }

@@ -176,6 +176,14 @@
     opacity: 0px;
     border: 1px solid #5E5A5A6E
 }
+@media(max-width:1180px){
+    .frame-5>.container>.tech-stack>div {
+        grid-gap: 20px;
+    }
+    .text>.txt{
+        margin-top:20px!important;
+    }
+}
 
 @media(max-width:1024px) {
     .frame-1>.heading {

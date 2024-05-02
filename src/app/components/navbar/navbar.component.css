@@ -113,6 +113,12 @@ li {
         white-space: nowrap;
     }
 }
+@media(min-width:1024px) and (max-width:1180px){
+    .custom-logo-link{
+        justify-content: left;
+        padding-left: 15px;
+    }
+}
 
 @media (max-width: 1024px) {
 
