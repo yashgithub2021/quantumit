@@ -73,7 +73,7 @@
                                                                         Development</a></li>
                                                         <li><a [ngClass]="isDarkTheme?'text-white':'text-black'"
                                                                         class="dropdown-item border-0"
-                                                                        routerLink="app-development/details"
+                                                                        [routerLink]="['app-development', 'details', 'crossPlatform']"
                                                                         (click)="closeNavbar()"> <img class="me-2"
                                                                                 src="../../../assets/navbar/cross.svg"
                                                                                 alt="">
@@ -81,7 +81,7 @@
                                                         </li>
                                                         <li><a [ngClass]="isDarkTheme?'text-white':'text-black'"
                                                                         class="dropdown-item border-0"
-                                                                        routerLink="app-development/details"
+                                                                        [routerLink]="['app-development', 'details', 'iPad']"
                                                                         (click)="closeNavbar()"> <img class="me-2"
                                                                                 src="../../../assets/navbar/iPad.svg"
                                                                                 alt="">
@@ -89,7 +89,7 @@
                                                                         Development</a></li>
                                                         <li><a [ngClass]="isDarkTheme?'text-white':'text-black'"
                                                                         class="dropdown-item border-0"
-                                                                        routerLink="app-development/details"
+                                                                        [routerLink]="['app-development', 'details', 'mobileGame']"
                                                                         (click)="closeNavbar()"> <img class="me-2"
                                                                                 src="../../../assets/navbar/game.svg"
                                                                                 alt="">
@@ -104,7 +104,7 @@
                                                                         Development</a></li>
                                                         <li><a [ngClass]="isDarkTheme?'text-white':'text-black'"
                                                                         class="dropdown-item border-0"
-                                                                        routerLink="app-development/details"
+                                                                        [routerLink]="['digital-marketing', 'services', 'php']"
                                                                         (click)="closeNavbar()"> <img class="me-2"
                                                                                 src="../../../assets/navbar/php.svg"
                                                                                 alt="">
@@ -112,7 +112,7 @@
                                                         </li>
                                                         <li><a [ngClass]="isDarkTheme?'text-white':'text-black'"
                                                                         class="dropdown-item border-0"
-                                                                        routerLink="app-development/details"
+                                                                        [routerLink]="['digital-marketing', 'services', 'dotnet']"
                                                                         (click)="closeNavbar()"> <img class="me-2"
                                                                                 src="../../../assets/navbar/net.svg"
                                                                                 alt="">
@@ -120,7 +120,7 @@
                                                         </li>
                                                         <li><a [ngClass]="isDarkTheme?'text-white':'text-black'"
                                                                         class="dropdown-item border-0"
-                                                                        routerLink="app-development/details"
+                                                                        [routerLink]="['digital-marketing', 'services', 'ror']"
                                                                         (click)="closeNavbar()"> <img class="me-2"
                                                                                 src="../../../assets/navbar/ror.svg"
                                                                                 alt="">
@@ -128,7 +128,7 @@
                                                         </li>
                                                         <li><a [ngClass]="isDarkTheme?'text-white':'text-black'"
                                                                         class="dropdown-item border-0"
-                                                                        routerLink="app-development/details"
+                                                                        [routerLink]="['digital-marketing', 'services', 'node']"
                                                                         (click)="closeNavbar()"> <img class="me-2"
                                                                                 src="../../../assets/navbar/node.svg"
                                                                                 alt="">
@@ -136,7 +136,7 @@
                                                         </li>
                                                         <li><a [ngClass]="isDarkTheme?'text-white':'text-black'"
                                                                         class="dropdown-item border-0"
-                                                                        routerLink="app-development/details"
+                                                                        [routerLink]="['digital-marketing', 'services', 'joomla']"
                                                                         (click)="closeNavbar()"> <img class="me-2"
                                                                                 src="../../../assets/navbar/joomla.svg"
                                                                                 alt="">
@@ -151,14 +151,14 @@
                                                         </li>
                                                         <li><a [ngClass]="isDarkTheme?'text-white':'text-black'"
                                                                         class="dropdown-item border-0"
-                                                                        routerLink="digital-marketing/services"
+                                                                        [routerLink]="['digital-marketing', 'services', 'seoServices']"
                                                                         (click)="closeNavbar()"> <img class="me-2"
                                                                                 src="../../../assets/navbar/seo.svg"
                                                                                 alt="">
                                                                         SEO</a></li>
                                                         <li><a [ngClass]="isDarkTheme?'text-white':'text-black'"
                                                                         class="dropdown-item border-0"
-                                                                        routerLink="digital-marketing/services"
+                                                                        [routerLink]="['digital-marketing', 'services', 'payPerClick']"
                                                                         (click)="closeNavbar()"> <img class="me-2"
                                                                                 src="../../../assets/navbar/ppp.svg"
                                                                                 alt="">
@@ -166,7 +166,7 @@
                                                         </li>
                                                         <li><a [ngClass]="isDarkTheme?'text-white':'text-black'"
                                                                         class="dropdown-item border-0"
-                                                                        routerLink="digital-marketing/services"
+                                                                        [routerLink]="['digital-marketing', 'services', 'socialMedia']"
                                                                         (click)="closeNavbar()"> <img class="me-2"
                                                                                 src="../../../assets/navbar/marketing.svg"
                                                                                 alt="">
@@ -174,7 +174,7 @@
                                                                         marketing</a></li>
                                                         <li><a [ngClass]="isDarkTheme?'text-white':'text-black'"
                                                                         class="dropdown-item border-0"
-                                                                        routerLink="digital-marketing/services"
+                                                                        [routerLink]="['digital-marketing', 'services', 'contentMarketing']"
                                                                         (click)="closeNavbar()"> <img class="me-2"
                                                                                 src="../../../assets/navbar/cm.svg"
                                                                                 alt="">
@@ -182,7 +182,7 @@
                                                                         Marketing</a></li>
                                                         <li><a [ngClass]="isDarkTheme?'text-white':'text-black'"
                                                                         class="dropdown-item border-0"
-                                                                        routerLink="digital-marketing/services"
+                                                                        [routerLink]="['digital-marketing', 'services', 'websiteDev']"
                                                                         (click)="closeNavbar()"> <img class="me-2"
                                                                                 src="../../../assets/navbar/webdev.svg"
                                                                                 alt="">
@@ -190,7 +190,7 @@
                                                                         Development</a></li>
                                                         <li><a [ngClass]="isDarkTheme?'text-white':'text-black'"
                                                                         class="dropdown-item border-0"
-                                                                        routerLink="digital-marketing/services"
+                                                                        [routerLink]="['digital-marketing', 'services', 'mobileDev']"
                                                                         (click)="closeNavbar()"> <img class="me-2"
                                                                                 src="../../../assets/navbar/appdev.svg"
                                                                                 alt="">

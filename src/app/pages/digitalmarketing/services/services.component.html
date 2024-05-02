@@ -1,15 +1,16 @@
 <div class="contianer-fluid services">
     <div class="container frame-1 p-lg-5 ps-4my-4 my-lg-0">
-        <div class="heading d-flex flex-column mb-0 mb-lg-5 mb-lg-0 flex-lg-row justify-content-between align-items-center">
-            <div class="text frame-2-head w-100 d-flex align-items-center  flex-column ">
+        <div
+            class="heading d-flex flex-column mb-0 mb-lg-5 mb-lg-0 flex-lg-row justify-content-between align-items-center">
+            <div class="text frame-2-head w-100 d-flex align-items-start  flex-column ">
                 <div class="button">
                     <button class="our-process-btn">
                         Our Services > <span style="color: white;" class="">Services</span>
                     </button>
                 </div>
                 <div class="txt w-100 mt-3 mt-lg-0">
-                    <h1 class="text-align-center  text-capitalize">Top-Notch <br>
-                        <span class="linear-text text-decoration-underline">search engine optimization</span>
+                    <h1 class="text-align-start  text-capitalize">{{serviceDetails.serviceTitle}}<br>
+                        <span class="linear-text text-decoration-underline">{{serviceDetails.serviceTitle2}}</span>
                         Services
                     </h1>
                 </div>
@@ -24,21 +25,12 @@
                     <div class="text w-75 pe-lg-5 p-0">
                         <div class="title">
                             <h2 class="mb-3">
-                                Boost your organic ranking
-                                with top-tier SEO services
+                                {{serviceDetails.title1}}
                             </h2>
                         </div>
                         <div class="brief opacity-50">
-                            <p>
-                                Transform your online presence and achieve higher organic rankings with our
-                                comprehensive suite of SEO services, meticulously crafted to meet the unique demands of
-                                the USA, UK and Indian market.
-                            </p>
-
-                            <p>
-                                Our expert team utilizes cutting-edge strategies and industry best practices to optimize
-                                your website, enhance visibility, and drive targeted traffic, ensuring sustainable
-                                growth and success in the competitive digital landscape.
+                            <p *ngFor="let desc of serviceDetails.descriptionOne">
+                                {{desc}}
                             </p>
                         </div>
                     </div>
@@ -46,22 +38,20 @@
                         <img src="../../../../assets/dm/services/service-details-feature-img-1.png" alt="">
                     </div>
                 </div>
-                <div class="ipad-width d-flex align-items-start mt-5 my-lg-5 justify-content-start flex-column flex-lg-row-reverse">
+                <div
+                    class="ipad-width d-flex align-items-start mt-5 my-lg-5 justify-content-start flex-column flex-lg-row-reverse">
                     <div class="text w-100 ps-lg-5 p-0">
                         <div class="title">
                             <h2 class="mb-3">
-                                In search of a results-driven leading SEO company?
+                                {{serviceDetails.title2}}
                             </h2>
                         </div>
                         <div class="brief opacity-50">
-                            <p>
-                                SEO is crucial for businesses aiming to enhance their online visibility and attract
-                                targeted traffic. By optimizing website content, structure, and performance, SEO
-                                improves search engine rankings, making it easier for potential customers to find your
-                                business.
+                            <p *ngFor="let desc of serviceDetails.descriptionTwo">
+                                {{desc}}
                             </p>
 
-                            <p>
+                            <!-- <p>
                                 Higher visibility leads to increased website traffic, which can result in more leads,
                                 conversions, and revenue. Additionally, SEO helps build credibility and trust with
                                 users, as websites that appear at the top of search results are often perceived as more
@@ -76,7 +66,7 @@
                                 innovative strategies, industry expertise, and data-driven approaches to elevate your
                                 online presence and propel your business to new heights. Partner with Quantum IT and
                                 experience the difference of working with a results-oriented SEO leader.
-                            </p>
+                            </p> -->
                         </div>
                     </div>
                     <div class="image h-100 w-100">
@@ -97,20 +87,34 @@
                         </button>
                     </div>
                     <div class="txt w-75 text-center my-3">
-                        <h1 class="text-capitalize">Our Search Engine optimization services</h1>
+                        <h1 class="text-capitalize">{{serviceDetails.service}}</h1>
                     </div>
 
                     <div class="steps-container squares w-100 mt-lg-5 mt-4 mb-lg-3 ">
-                        <div class="step-line"></div>
+                        <ng-container *ngFor="let step of serviceDetails.steps">
+                            <div class="step-line"></div>
+                            <div class="step-square">Step 0{{step.num}}</div>
+                            <div class="step-line"></div>
+                        </ng-container>
+                        <!-- <div class="step-line"></div>
                         <div class="step-square">Step 01</div>
                         <div class="step-line"></div>
                         <div class="step-square">Step 02</div>
                         <div class="step-line"></div>
                         <div class="step-square">Step 03</div>
-                        <div class="step-line"></div>
+                        <div class="step-line"></div> -->
                     </div>
                     <div class="steps-container w-100 mt-5 ">
-                        <div
+                        <ng-container *ngFor="let step of serviceDetails.steps">
+                            <div
+                                class="step-title w-100 mt-3 mt-lg-0 d-flex flex-column align-items-center justify-content-center">
+                                <p class="w-50 fw-lighter fs-5 text-align-center">{{step.title}}</p>
+                                <p class="w-75 fw-lighter fs-6 text-align-center" style="color: #B5B5B5;">{{step.desc}}
+                                </p>
+                            </div>
+                            <div class="step-dashed-line visually-hidden"></div>
+                        </ng-container>
+                        <!-- <div
                             class="step-title w-25 mt-3 mt-lg-0 d-flex flex-column align-items-center justify-content-center">
                             <p class="w-50 fw-lighter fs-5 text-align-center">Off Page
                                 SEO</p>
@@ -135,7 +139,7 @@
                             <p class="w-75 fw-lighter fs-6 text-align-center" style="color: #B5B5B5;">
                                 Enterprise SEO optimizes large-scale websites for maximum visibility and impact.</p>
                         </div>
-                        <div class="step-dashed-line visually-hidden"></div>
+                        <div class="step-dashed-line visually-hidden"></div> -->
                     </div>
 
                     <div class="container button w-100 d-flex mt-3 mt-lg-5 align-items-center justify-content-center">
@@ -154,7 +158,8 @@
     </div>
 
     <div class="frame-4 my-5 container-fluid our-process">
-        <div class="container d-flex flex-column flex-lg-row justify-content-center align-items-center align-items-lg-start">
+        <div
+            class="container d-flex flex-column flex-lg-row justify-content-center align-items-center align-items-lg-start">
             <div class="text frame-2-head w-50 d-flex flex-column align-items-center align-items-lg-start ">
                 <div class="button">
                     <button class="our-process-btn">
@@ -173,30 +178,30 @@
             </div>
             <div class="container w-100 d-flex">
                 <div class="processes d-flex flex-column">
-                    <div class="process d-flex justify-content-between">
+                    <div *ngFor="let approach of serviceDetails.ourApproach"
+                        class="process d-flex justify-content-between">
                         <div class="logo mx-3">
                             <div class="process-square">
-                                <img src="../../../../assets/dm/services/obj.svg" alt="">
+                                <img [src]="approach.img" alt="">
                             </div>
                         </div>
                         <div class="text mx-3 ">
                             <div class="title">
-                                <h4>Understand Objectives
+                                <h4>{{approach.title}}
 
                                 </h4>
                             </div>
                             <div class="desc">
                                 <p class=" fw-light">
-                                    We begin by comprehensively understanding your business objectives, target audience,
-                                    and unique requirements to tailor our strategies accordingly.
+                                    {{approach.desc}}
                                 </p>
                             </div>
                         </div>
                     </div>
-                    <div class="process d-flex justify-content-between">
+                    <!-- <div class="process d-flex justify-content-between">
                         <div class="logo mx-3">
                             <div class="process-square">
-                                <img src="../../../../assets/dm/services/key.svg" alt="">
+                                <img [src]="approach.img" alt="">
                             </div>
                         </div>
                         <div class="text mx-3 ">
@@ -253,7 +258,7 @@
                                 </p>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>

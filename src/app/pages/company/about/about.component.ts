@@ -10,7 +10,7 @@ export class AboutComponent implements OnInit {
   constructor(private api: ApiService) { }
   members: any
   isDarkTheme!: boolean
-  list2 = ["Using latest technologies and creative approaches.", "Working closely with clients to address their needs.", "In the quality of our work and the level of service we give."]
+  list2 = ["Innovation: Using latest technologies and creative approaches.", "Collaboration: Working closely with clients to address their needs.", "Excellence: In the quality of our work and the level of service we give."]
 
   partners = [
     {
