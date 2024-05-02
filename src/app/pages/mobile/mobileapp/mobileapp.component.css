@@ -130,9 +130,22 @@
     color: #43BAFF;
 }
 
+@media(min-width:1024px) and (max-width:1366px) {
+    .project-one>.project-container>.app-image>.project-img-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
 @media (min-width: 1025px) and (max-width: 1180px) {
     .what-we-do-title-container {
         padding-left: 0px !important;
+    }
+
+    .ai-data {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
     }
 }
 
@@ -176,9 +189,10 @@
         height: 100% !important;
     }
 }
-@media (min-width:768px) and (max-width:1023px){
-    .heading>.tagline{
-        text-align: center!important;
+
+@media (min-width:768px) and (max-width:1023px) {
+    .heading>.tagline {
+        text-align: center !important;
     }
 }
 

@@ -112,7 +112,7 @@
 }
 
 .section3>.left-side {
-    height: 100vh;
+    /* height: 100vh; */
     width: 70%;
     position: relative;
 }
@@ -425,13 +425,30 @@
     font-size: 1.25rem;
 }
 
+@media(min-width:1366px) and (min-height:1024px) {
+    .section3>.left-side {
+        height: 56vh;
+        width: 70%;
+        position: relative;
+    }
+
+    .section-3>.right-side {
+        align-items: start !important;
+    }
+
+    .text>.section-3-tagline {
+        font-size: 60px;
+        line-height: 70px;
+    }
+}
+
 @media (min-width:1025px) and (max-width:1180px) {
     .section3>.left-side {
         width: 100%;
     }
 
     .section3>.left-side::before {
-        height: 73%;
+        height: 90%;
     }
 
     .right-side {
@@ -477,6 +494,12 @@
         padding: 0 40px;
     }
 
+}
+
+@media(max-width:1024px) and (min-height:1366px) {
+    .section3>.left-side {
+        height: 35vh;
+    }
 }
 
 @media (max-width: 992px) {
@@ -619,9 +642,16 @@
         line-height: 50px;
     }
 
+
     .section3>.left-side {
         height: 35vh;
         width: 100%;
+    }
+
+    .section-3>.left-side::before {
+        height: 100%;
+
+        width: 94% !important;
     }
 
     .right-side>.container {
@@ -629,8 +659,12 @@
     }
 
     .section3-tagline {
-        font-size: 30px;
-        line-height: 50px;
+        font-size: 33px;
+        line-height: 43px;
+        margin-bottom: 20px;
+    }
+    .section3 > .right-side> .container {
+        padding: 0px 0px;
     }
 
     .sec4-headline {
@@ -706,20 +740,23 @@
     }
 
     .our-cust-button>button {
-        font-size: 10px;
-    }
-
-    .trusted-over-worldwild {
         font-size: 15px;
     }
+    
 
+    .trusted-over-worldwild {
+        font-size: 30px;
+    }
     .learnMore {
-        width: 25%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .learnMore>button {
-        font-size: 10px;
-        padding: 10px 5px;
+        font-size: 15px;
+        padding: 10px 30px;
     }
 
     .section6 {
@@ -734,10 +771,15 @@
         height: 80%;
         width: 80%;
     }
+    .customer-feedback{
+        padding: 1rem !important;
+    }
 
     .customer-feedback>.container {
         height: auto;
         width: auto;
+        min-height:170px;
+
     }
 
     .feedback {

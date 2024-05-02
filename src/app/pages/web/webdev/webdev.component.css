@@ -262,7 +262,20 @@
         width: 75% !important;
     }
 }
-
+@media(min-width:1024px) and (min-height:1024px){
+    
+    .frame-4>.container>.projects>.container>.project-one{
+        height:50vh;
+    }
+}
+@media(min-width:1024px) and (min-height:1366px){
+    .frame-4>.container>.projects{
+        height:auto;
+    }
+    .frame-4>.container>.projects>.container>.project-one{
+        height:30vh;
+    }
+}
 @media (max-width: 992px) {
 
     .project-one::before,

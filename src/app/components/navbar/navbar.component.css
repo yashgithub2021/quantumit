@@ -104,19 +104,26 @@ li {
 
 }
 
-@media(max-width:1180px) {
+@media(min-width:1024px) {
     .form-check {
-        padding-right: 10px;
+        padding-right: 60px;
     }
+
+    .custom-logo-link {
+        padding-left: 60px
+    }
+}
+
+@media(max-width:1180px) {
 
     ul>li {
         white-space: nowrap;
     }
 }
-@media(min-width:1024px) and (max-width:1180px){
-    .custom-logo-link{
+
+@media(min-width:1024px) and (max-width:1180px) {
+    .custom-logo-link {
         justify-content: left;
-        padding-left: 15px;
     }
 }
 

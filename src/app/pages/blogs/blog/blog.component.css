@@ -59,36 +59,47 @@
 .frame-3>.contributors-section>.contributors>.card {
     width: 20rem;
 }
-@media(min-width:1025px) and (max-width:1180px){
-    .frame-1-container{
+
+@media(max-width:1366px) and (min-height:1024px) {
+    .frame-1-container>.frame-3 {
+        min-height: 50vh !important;
+    }
+}
+
+@media(min-width:1025px) and (max-width:1180px) {
+    .frame-1-container {
         height: 205vh;
     }
 }
 
-@media(max-width:1024px){
-    .frame-3>.contributors-section>.contributor-image{
-        height:50vh!important;
+@media(max-width:1024px) {
+    .frame-3>.contributors-section>.contributor-image {
+        height: 50vh !important;
 
     }
 }
-@media(max-width:820px){
-    .frame-2>.container>.cards{
-        width:100%;
+
+@media(max-width:820px) {
+    .frame-2>.container>.cards {
+        width: 100%;
     }
-    .frame-3>.contributors-section>.contributors>.card{
+
+    .frame-3>.contributors-section>.contributors>.card {
         width: 100%;
     }
 }
 
 @media (max-width:768px) {
-    .frame-2>.container{
+    .frame-2>.container {
         display: flex;
         justify-content: center;
-        align-items: center;        
+        align-items: center;
     }
-    .frame-2>.container>.cards{
+
+    .frame-2>.container>.cards {
         width: 100%;
     }
+
     .frame-3>.contributors-section>.contributors {
         display: flex;
         justify-content: center;
@@ -98,9 +109,11 @@
     .frame-3>.contributors-section>.contributors>.card {
         width: 100%;
     }
+
     .frame-3>.contributors-section>.contributor-image {
-        padding-top:10px;
+        padding-top: 10px;
     }
+
     .frame-3>.contributors-section>.contributor-image::before {
         height: 38vh;
     }
