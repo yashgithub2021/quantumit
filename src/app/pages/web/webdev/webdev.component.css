@@ -128,7 +128,7 @@
     height: 100%;
     width: 85%;
     content: "";
-    background-image: url("https://s3-alpha-sig.figma.com/img/4dd2/c273/4c1fd1815ee7581f02d2a9e2b3ffc677?Expires=1714348800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=E1FyqZwRqpz4y~7GWbqnaTmchFViWqJspegyt~nTEcwyP3dnfViyaTuLxTcSC109wzVxGPdoUxETSW9JVNsGIZ7-dzVr9WtJ4InZYfr-3BMyRbH4nj4jhpIopVRdiR6J~4OtGDvtSasn5FYMowDc1tsPb3zD7-Y0z6mCFC75E4i7PKD1X~JbKkp~Lut3UWhtsoMTbMnoeoceKUvQYCD3-bjq7BIeyFKGXXEfpJlUnocwRbPZl1eHY6nNeiizfX7SStjPevUAmFi7zHzQF1MZjjtJ~zE-B9W5R6OzdNpx9tS68IJAPqThg89UqbjFDOIi17uu4gtPf3gpbobOuxgY7A__");
+    background-image: url("../../../../assets/mobile/proj1bg.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -139,7 +139,7 @@
     height: 100%;
     width: 85%;
     content: "";
-    background-image: url("https://s3-alpha-sig.figma.com/img/bfe8/52d6/b50ff3e45c306b7a02428687421112bb?Expires=1714348800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=RZ00P6Jy0XRJZw3RZQ5fxa7l7MVgkFTs35lJd78WHGwOZMkAZ-ILRTwSMfcCgoX4ZCBbtXzCsD6Bc4d~5syEBvc-gvb56oc1M1BuCKTF5bZSGOiOpC700ZRNJoAYzSzolEiOSjyKepLUNI5pbodhQGp2mqwS3bi~s88yTkJKChpdIedLK2~ot3pTiYV7KMWHQZAbFj~FfijDDaYk-3AOeuRXGqKdsKUqBhjXiCigZk8GWDKohBKMy1IYxSlwNqnI0wKfkA7QkaoqpFmQgCa48Vsd3F1u7i8ZjHjwQVyKoMl4gX9kr8-EHkIsGs9B-O-aVuNAnWYoVmUu3g8-qCM0vw__");
+    background-image: url("../../../../assets/mobile/proj2bg.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -152,7 +152,7 @@
     height: 100%;
     width: 85%;
     content: "";
-    background-image: url("https://s3-alpha-sig.figma.com/img/e65b/fc09/7d9a1ec445caa7338009d13a1e331dd9?Expires=1714348800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=JUi0BcWHXnsarK6KwdZ5x2iI3v5dqa65YItq9o7RS-m11uRgJNVl26T8BRLZpP6dvYw2x0jUnUrFcIHnG9QIhEdw0lfiJWe72mmiIv90k2EQiew4zvSENqK9HA3MV2qY7wxfQOmriQAq~YL4McLWWRy5-hi-iETrgd-Bj3cCLMy2WLo8YGxzvHSzZ0VhMkI-HXLexOU34vtf1CycrGybnXz-4ibfvgefvXGETgXGdXfnh7DQHAdH9ahuSwH2VlsH9yuvoVe01kAA~Al7cRvqo-IkCSLU-Hu7XXYYDq2bQmJxZ1grf3JXe1nfC8Bmqo7dXIfQyqCW5zcMJX~U4SlIlA__");
+    background-image: url("../../../../assets/mobile/proj3bg.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -341,8 +341,9 @@
     .f3-container {
         width: 100% !important;
     }
-    .frame-3>.f3-container{
-        height:auto!important;
+
+    .frame-3>.f3-container {
+        height: auto !important;
     }
 
     .heading-process {
@@ -374,6 +375,10 @@
 
     .app-details-container {
         width: 100% !important;
+    }
+
+    .text-black {
+        color: white !important;
     }
 
     .project-img-container {

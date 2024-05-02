@@ -114,7 +114,7 @@
 
         <div class="projects container">
             <div class="container h-100 w-100">
-                <div data-aos="fade-in"
+                <div data-aos="fade-in" *ngIf="projects[0]"
                     class="project-one project w-100 position-relative d-flex justify-content-center align-items-center">
                     <div class="project-container h-75 w-100 position-absolute d-flex flex-column flex-lg-row p-lg-5">
                         <div class="app-details h-100 w-100 d-flex align-items-center justify-content-center">
@@ -144,13 +144,13 @@
                         </div>
                     </div>
                 </div>
-                <div data-aos="fade-in"
+                <div *ngIf="projects[1]" data-aos="fade-in"
                     class="project-two project w-100 position-relative d-flex justify-content-center align-items-center">
                     <div
                         class="project-container h-75 w-100 position-absolute d-flex p-lg-5 flex-lg-row-reverse flex-column">
                         <div class="app-details h-100 w-100 d-flex align-items-center justify-content-center">
                             <div
-                                class="app-details-container w-75 h-100 m-auto d-flex flex-column align-items-center align-items-lg-start justify-content-evenly ">
+                                class="app-details-container text-black w-75 h-100 m-auto d-flex flex-column align-items-center align-items-lg-start justify-content-evenly ">
                                 <div>
                                     <button class="app-button app-button-two">App</button>
                                 </div>
@@ -175,7 +175,7 @@
                         </div>
                     </div>
                 </div>
-                <div data-aos="fade-in"
+                <div *ngIf="projects[2]" data-aos="fade-in"
                     class="project-three project w-100 position-relative d-flex justify-content-center align-items-center">
                     <div class="project-container h-75 w-100 position-absolute d-flex flex-column flex-lg-row p-lg-5">
                         <div data-aos="fade-up"

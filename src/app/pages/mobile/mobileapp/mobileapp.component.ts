@@ -57,10 +57,11 @@ export class MobileappComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.list1 = ["Android App Development", "Swift App Development", "iOS App Development", "iPad App Development", "Cross Platform App",]
     AOS.init({
       duration: 2000,
     })
+    this.list1 = ["Android App Development", "Swift App Development", "iOS App Development", "iPad App Development", "Cross Platform App",]
+    console.log(this.list1)
     this.isDarkTheme = this.api.isDarkTheme();
     this.themechange()
     this.fetchMobileProjects()

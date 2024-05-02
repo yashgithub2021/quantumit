@@ -30,7 +30,7 @@ export class HomeComponent implements OnInit {
       img: '../../../assets/dm.png'
     },
     {
-      label: 'Artificial Intelligence',
+      label: 'Artificial Intelligence (Ai)',
       img: '../../../assets/ai.png'
     },
   ]

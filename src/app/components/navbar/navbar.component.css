@@ -31,6 +31,12 @@ li {
     padding: 0;
 }
 
+.dropdown-menu li:first-child a {
+    font-size: 13px;
+    opacity: 50%;
+    text-transform: uppercase;
+}
+
 .dropdown-toggle {
     cursor: pointer;
 }
@@ -97,11 +103,13 @@ li {
     background-color: #333333;
 
 }
-@media(max-width:1180px){
-    .form-check{
+
+@media(max-width:1180px) {
+    .form-check {
         padding-right: 10px;
     }
-    ul>li{
+
+    ul>li {
         white-space: nowrap;
     }
 }
