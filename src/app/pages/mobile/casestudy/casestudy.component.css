@@ -50,6 +50,12 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+@media(max-width:1366px){
+    .miletone-number {
+        font-size: 40px;
+    }
+}
+
 @media(max-width:820px){
     .frame-3>.app-details>.details{
         align-items:end;

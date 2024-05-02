@@ -27,9 +27,20 @@ textarea {
     border: 1px solid #636D79 !important;
     color: white;
 }
+
 @media (max-width:1180px) {
     .form {
         height: 80vh;
+    }
+}
+@media(min-width:1024px) and (min-height: 1366px) {
+    .form{
+        height:45vh;
+    }
+}
+@media(min-width:1366px) and (min-height: 1024px) {
+    .form{
+        height:60vh;
     }
 }
 @media(max-width:768px){
