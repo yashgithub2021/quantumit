@@ -35,11 +35,11 @@ export class AboutComponent implements OnInit {
       width: "180"
     },
     {
-      title: "Consulting",
-      img: "../../../../assets/about/partner3.svg",
-      name: "Pathpoint Consulting",
-      height: "60",
-      width: "180"
+      title: "Web Design",
+      img: "../../../../assets/carousel/5.png.svg",
+      name: "Tourism",
+      height: "50",
+      width: "120"
     },
   ]
   sectionFourNums = [
