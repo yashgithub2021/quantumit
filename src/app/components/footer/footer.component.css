@@ -187,3 +187,21 @@ button {
 
 
 }
+@media (max-width: 375px) {
+    /* footer {
+        height: 205vh;
+    }
+
+    footer>.container {
+        height: 175vh;
+    } */
+    footer {
+        height: 195vh;
+    }
+    footer>.container{
+        height: auto;
+    }
+    .social-links-container {
+        height: auto;
+    }
+}
