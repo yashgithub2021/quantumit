@@ -178,4 +178,17 @@ li {
     nav {
         width: 100%;
     }
+
+    .top-wrap {
+        flex-flow: row;
+    }
+
+    .top-wrap>button {
+        padding-right: 16px;
+    }
+
+    .custom-logo-link {
+        padding-left: 16px;
+        justify-content: start;
+    }
 }
