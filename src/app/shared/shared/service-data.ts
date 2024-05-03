@@ -1,6 +1,8 @@
 export const androidService = {
     title1: "Android App",
     title2: "Development Solutions",
+    img1: "../../../../assets/mobile/service/img1.png",
+    img2: "../../../../assets/mobile/service/img2.png",
     descriptionOne: [
         "Our Android app development services offer a comprehensive solution for businesses seeking to establish a strong presence on the Android platform. With the widespread adoption of Android devices worldwide, having a customized mobile application tailored to this ecosystem is essential for reaching and engaging with a diverse audience.",
         "Our team of experienced Android app developers leverages the latest technologies and best practices to build robust, scalable, and user-friendly applications.",
@@ -79,6 +81,8 @@ export const androidService = {
 export const iOsService = {
     title1: "Crafting Exceptional",
     title2: "iOS Experiences",
+    img1: "../../../../assets/mobile/service/img1.png",
+    img2: "../../../../assets/mobile/service/img2.png",
     descriptionOne: [
         "Embark on a journey of innovation with our iOS app development services, designed to propel your business to new heights on the iOS platform. With iOS devices being widely embraced worldwide, a bespoke mobile application tailored to this ecosystem is imperative for connecting with a diverse audience.",
         "Our adept team of iOS app developers harnesses cutting-edge technologies and industry insights to craft dynamic, scalable, and intuitive applications. Whether you seek a streamlined utility app or a sophisticated enterprise solution, we possess the acumen to deliver outcomes that captivate users and drive business growth.",
@@ -157,6 +161,8 @@ export const iOsService = {
 export const swiftAppDevelopment = {
     title1: "Transforming Businesses with",
     title2: "Swift App Development",
+    img1: "../../../../assets/mobile/service/img1.png",
+    img2: "../../../../assets/mobile/service/img2.png",
     descriptionOne: [
         "Embark on a journey of innovation with our Swift app development services, meticulously designed to propel your business forward in the mobile landscape. With Swift gaining prominence as a versatile and powerful programming language, having a custom-built mobile application is crucial for reaching diverse audiences.",
         "Our skilled team utilizes cutting-edge technologies to craft dynamic, scalable, and intuitive applications. Whether you need a utility app or a sophisticated enterprise solution, we deliver captivating user experiences that drive business growth.",
@@ -235,6 +241,8 @@ export const swiftAppDevelopment = {
 export const crossPlatformAppDevelopment = {
     title1: "Revolutionizing Cross Platform",
     title2: "App Development",
+    img1: "../../../../assets/mobile/service/img1.png",
+    img2: "../../../../assets/mobile/service/img2.png",
     descriptionOne: [
         "Step into the realm of innovation with our cross-platform app development services, tailored to elevate your brand presence across multiple platforms. As the demand for apps across various operating systems grows, having a versatile solution becomes paramount for reaching diverse audiences. ",
         "Our adept team harnesses cutting-edge technologies to create dynamic, scalable, and intuitive applications that seamlessly adapt to different platforms. Whether you need a utility app or a sophisticated enterprise solution, we deliver captivating user experiences that drive business growth.",
@@ -314,6 +322,8 @@ export const crossPlatformAppDevelopment = {
 export const iPadAppDevelopment = {
     title1: "Empowering Businesses with",
     title2: "iPad App Development",
+    img1: "../../../../assets/mobile/service/img1.png",
+    img2: "../../../../assets/mobile/service/img2.png",
     descriptionOne: [
         "Step into the realm of innovation with our iPad app development services, designed to elevate your brand presence on the iOS platform and beyond. As the demand for versatile apps across multiple platforms grows, having a tailored solution becomes essential for reaching diverse audiences. Our skilled team leverages cutting-edge technologies to create dynamic, scalable, and intuitive applications that seamlessly adapt to the iPad's unique features and other platforms.",
         "Whether you need a utility app or a sophisticated enterprise solution, we deliver captivating user experiences that drive business growth.",
@@ -392,6 +402,8 @@ export const iPadAppDevelopment = {
 export const mobileGameDevelopment = {
     title1: "Exciting Adventures with",
     title2: "Mobile Game Development",
+    img1: "../../../../assets/mobile/service/img1.png",
+    img2: "../../../../assets/mobile/service/img2.png",
     descriptionOne: [
         "Expand your gaming horizons with our comprehensive suite of Quantum IT’s services designed to support your game throughout its lifecycle. From post-launch updates and feature enhancements to community engagement and monetization strategies, we provide the ongoing support and guidance you need to ensure the long-term success and profitability of your game. With Quantum IT Innovation by your side, you can confidently navigate the dynamic landscape of mobile gaming and achieve your goals of creating a standout game that resonates with players worldwide.",
         "With the growing popularity of mobile gaming, having a captivating and engaging game is essential for success. Our skilled team of developers utilizes cutting-edge technologies to create immersive and entertaining gaming experiences that keep players coming back for more. Step into the exciting world of mobile gaming with our mobile game development services, crafted to bring your gaming ideas to life and captivate audiences across various platforms.",
@@ -549,6 +561,7 @@ export const payPerClickServices = {
         "Our expertise in PPC management ensures that your campaigns deliver tangible outcomes, driving increased website traffic, leads, and conversions.",
         "With a focus on data-driven approaches and innovative strategies, we're committed to optimizing your PPC campaigns to achieve your business goals effectively."
     ],
+    service: "Our PPC Solutions",
     steps: [
         {
             num: 1,
@@ -607,6 +620,7 @@ export const socialMediaServices = {
         "With a proven track record of success and an unwavering commitment to excellence, you can rely on Quantum IT to be your trusted partner in unlocking the full potential of social media marketing.",
         "Connect with us today to explore how our social media services can empower your business and propel your online presence to new heights."
     ],
+    service: "Our Social Media Marketing Solutions",
     steps: [
         {
             num: 1,
@@ -664,6 +678,7 @@ export const contentMarketingServices = {
         "With a proven track record of success and an unwavering commitment to excellence, Quantum IT stands as your trusted partner in unlocking the full potential of content marketing.",
         "Connect with us today to explore how our content marketing services can empower your business and propel your online presence to new heights."
     ],
+    service: "Our Content Marketing Solutions",
     steps: [
         {
             num: 1,
@@ -722,6 +737,7 @@ export const websiteDevServices = {
         "With a proven track record of success and an unwavering commitment to excellence, Quantum IT stands as your trusted partner in unlocking the full potential of website development.",
         "Connect with us today to explore how our website development services can empower your business and propel your online presence to new heights."
     ],
+    service: "Our Website Development Solutions",
     steps: [
         {
             num: 1,
@@ -779,6 +795,7 @@ export const mobileDevServices = {
         "With a proven track record of success and an unwavering commitment to excellence, Quantum IT stands as your trusted partner in unlocking the full potential of mobile app development.",
         "Connect with us today to explore how our mobile app development services can empower your business and propel your online presence to new heights."
     ],
+    service: "Our Mobile App Development Solutions",
     steps: [
         {
             num: 1,
