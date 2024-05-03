@@ -210,6 +210,12 @@
     }
 }
 
+@media(max-width:768px) {
+    .service-section>div>div:nth-child(1) {
+        align-items: center !important;
+    }
+}
+
 @media (max-width: 575.98px) {
 
     .txt {
@@ -241,5 +247,47 @@
 
     .step-title {
         width: 100% !important;
+    }
+
+    .frame-3 {
+        padding: 20px !important;
+    }
+
+    .image {
+        width: 100% !important;
+    }
+
+    .service-section>div:nth-child(1) {
+        margin-bottom: 0px !important;
+    }
+
+    .what-we-do {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ai-data {
+        height: auto;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .frame-5>div {
+        width: 100% !important;
+    }
+
+    .tech-stack>div {
+        justify-content: center !important;
+    }
+
+    .tech-stack>div>.stack {
+        min-width: 260px;
+        justify-content: center !important;
+    }
+}
+@media(max-width:413px){
+    .frame-1{
+        padding:2rem!important;
     }
 }
