@@ -81,8 +81,8 @@ export const androidService = {
 export const iOsService = {
     title1: "Crafting Exceptional",
     title2: "iOS Experiences",
-    img1: "../../../../assets/mobile/service/img1.png",
-    img2: "../../../../assets/mobile/service/img2.png",
+    img1: "../../../../assets/mobile/service/ios1.png",
+    img2: "../../../../assets/mobile/service/ios2.png",
     descriptionOne: [
         "Embark on a journey of innovation with our iOS app development services, designed to propel your business to new heights on the iOS platform. With iOS devices being widely embraced worldwide, a bespoke mobile application tailored to this ecosystem is imperative for connecting with a diverse audience.",
         "Our adept team of iOS app developers harnesses cutting-edge technologies and industry insights to craft dynamic, scalable, and intuitive applications. Whether you seek a streamlined utility app or a sophisticated enterprise solution, we possess the acumen to deliver outcomes that captivate users and drive business growth.",
@@ -161,8 +161,8 @@ export const iOsService = {
 export const swiftAppDevelopment = {
     title1: "Transforming Businesses with",
     title2: "Swift App Development",
-    img1: "../../../../assets/mobile/service/img1.png",
-    img2: "../../../../assets/mobile/service/img2.png",
+    img1: "../../../../assets/mobile/service/swift1.png",
+    img2: "../../../../assets/mobile/service/swift2.jpeg",
     descriptionOne: [
         "Embark on a journey of innovation with our Swift app development services, meticulously designed to propel your business forward in the mobile landscape. With Swift gaining prominence as a versatile and powerful programming language, having a custom-built mobile application is crucial for reaching diverse audiences.",
         "Our skilled team utilizes cutting-edge technologies to craft dynamic, scalable, and intuitive applications. Whether you need a utility app or a sophisticated enterprise solution, we deliver captivating user experiences that drive business growth.",

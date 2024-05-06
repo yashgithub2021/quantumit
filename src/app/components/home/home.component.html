@@ -226,55 +226,32 @@
     </div>
 
     <!-- Section7 -->
-    <div class="container section7 w-100" id="customers">
+    <div class="container section7 w-100 mt-5" id="customers">
         <div class="container h-100">
-            <div class="d-flex flex-column flex-lg-row h-100 w-100">
-                <div *ngFor="let review of reviews" class="customer-feedback h-100 w-100 p-5 p-md-3" data-aos="fade-up">
-                    <div [ngClass]="isDarkTheme?'cf-cont-dark ':'cf-cont-light'"
-                        class="container cf-cont d-flex flex-column justify-content-around align-items-start">
-                        <div class="stars">
-                            <i *ngFor="let star of getStars(review.rating)" class="fa-solid fa-star mx-1"></i>
-                        </div>
-                        <div class="feedback fw-lighter">{{review.message}}</div>
-                        <div class="customer d-flex justify-content-between w-100 align-items-end">
-                            <div class="customer-name">
-                                <h5>{{review.firstName}}</h5>
-                                <p class="m-0 opacity-50">{{review.occupation}}</p>
+            <ngb-carousel *ngIf="reviews.length > 0">
+                <ng-template ngbSlide *ngFor="let review of reviews">
+                    <div class="customer-feedback h-100 w-100 p-5 p-md-3" data-aos="fade-up">
+                        <div [ngClass]="isDarkTheme ? 'cf-cont-dark' : 'cf-cont-light'"
+                            class="container cf-cont d-flex flex-column justify-content-around align-items-start">
+                            <div class="stars">
+                                <i *ngFor="let star of getStars(review.rating)" class="fa-solid fa-star mx-1"></i>
                             </div>
-                            <div class="profile">
-                                <img height="50" width="50" style="border-radius: 50px;" [src]="review.profilePicture"
-                                    alt="profile">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- <div class="customer-feedback h-100 w-100 p-5" data-aos="fade-up">
-                    <div class="container  d-flex flex-column justify-content-around align-items-start">
-                        <div class="stars">
-                            <i class="fa-solid fa-star mx-1"></i>
-                            <i class="fa-solid fa-star mx-1"></i>
-                            <i class="fa-solid fa-star mx-1"></i>
-                            <i class="fa-solid fa-star mx-1"></i>
-                            <i class="fa-solid fa-star mx-1"></i>
-                        </div>
-                        <div class="feedback fw-lighter">First of all, I want to recommend Quantum it innovation,
-                            because they
-                            stay
-                            connected with you even after the project is delivered to ensure the maximum ROI. </div>
-                        <div class="customer d-flex justify-content-between w-100 align-items-end">
-                            <div class="customer-name">
-                                <h5>Peter</h5>
-                                <p class="m-0 opacity-50">HR manager</p>
-                            </div>
-                            <div class="profile">
-                                <img height="50" width="50" style="border-radius: 50px;"
-                                    src="https://s3-alpha-sig.figma.com/img/8005/918c/a0609dabb684674fb55b4c2200b563ff?Expires=1712534400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=FAkFaQK-XqS0WwftfMasXQM9mgcKKq1H3WComc5EfDr90Ir0-Og8fhTa67SBEw~3fy9lB50r2A69cDrsHVXt-jy69iJNSBLbjcsENgFHEPj7MQYyqe86sLBaI-kDgAIOr5uDYipxltd2B0C44ZHUtG9iyq9ur0C2iT8G~hN3b392lIHIsU8QpM5dEwZbslyKrD9WSHD2xFN0-m7ufNM1O3ZWb99ctOkhEbMQZtmePSOOQn3cak0h~NtGR2jFivKFXUHzjWt~oHQU20pl1DHi9VqXVZyNemt9E5qm3XeNidDtjQtWSMyQBaMVG0doUk4-1KDZnK~Ny2LdSpqa-Pi6Lg__"
-                                    alt="profile">
+                            <div class="feedback fw-lighter">{{review.message}}</div>
+                            <div class="customer d-flex justify-content-between w-100 align-items-end">
+                                <div class="customer-name">
+                                    <h5>{{review.firstName}}</h5>
+                                    <p class="m-0 opacity-50">{{review.occupation}}</p>
+                                </div>
+                                <div class="profile">
+                                    <img height="50" width="50" style="border-radius: 50px;"
+                                        [src]="review.profilePicture" alt="profile">
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div> -->
-            </div>
+                </ng-template>
+            </ngb-carousel>
         </div>
     </div>
+
 </div>
