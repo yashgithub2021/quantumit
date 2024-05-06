@@ -140,7 +140,8 @@
                                 </div>
                             </td>
                             <td class="align-middle py-4 px-2">
-                                <p routerLink="services" (click)="scrollToTop()" class="m-0 table-lm fw-light">Learn
+                                <p [routerLink]="['services', data.link]" (click)="scrollToTop()"
+                                    class="m-0 table-lm fw-light">Learn
                                     More <i class="fa-solid fa-arrow-right text-secondary"
                                         style="transform: rotate(325deg);"></i></p>
                             </td>

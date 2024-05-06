@@ -13,6 +13,8 @@ import { SharedModule } from './shared/shared/shared.module';
 import { HttpClientModule } from '@angular/common/http'
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ToastrModule } from 'ngx-toastr';
+import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,6 +28,7 @@ import { ToastrModule } from 'ngx-toastr';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    NgbCarouselModule,
     SharedModule,
     HttpClientModule,
     FormsModule,
@@ -36,6 +39,7 @@ import { ToastrModule } from 'ngx-toastr';
       preventDuplicates: true,
       progressBar: true
     }),
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
