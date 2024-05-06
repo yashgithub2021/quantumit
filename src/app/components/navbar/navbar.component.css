@@ -174,6 +174,17 @@ li {
 
 }
 
+@media(max-width:768px) {
+    .dropdown-menu ul li:not(:first-child) a {
+        padding-left: 25px;
+    }
+
+    .dropdown-menu ul {
+        padding-bottom: 18px;
+        text-transform: uppercase;
+    }
+}
+
 @media (max-width: 575.98px) {
     nav {
         width: 100%;

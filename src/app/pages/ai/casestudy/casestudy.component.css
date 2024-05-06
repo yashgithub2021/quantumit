@@ -4,6 +4,11 @@
     align-items: center;
 
 }
+.steps-container-1{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+}
 
 .step {
     display: flex;
