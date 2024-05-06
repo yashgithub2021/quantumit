@@ -59,10 +59,6 @@ export class FooterComponent implements OnInit {
           label: 'Portfolio',
           link: 'portfolio'
         },
-        {
-          label: 'Blog',
-          link: 'blog'
-        },
       ]
     },
     {
