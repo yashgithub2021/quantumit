@@ -640,6 +640,7 @@
 
 
 @media (max-width: 575.98px) {
+
     .cards {
         margin: 0px;
     }
@@ -659,6 +660,29 @@
         height: 35vh;
         width: 100%;
     }
+    .section3{
+        padding-left: 0px!important;
+        padding-right: 0px!important;
+        position: relative;
+    }
+    .section3>.left-side::before {
+        background-image: url("https://s3-alpha-sig.figma.com/img/7d11/d6fc/c57c2c3612202f0e529fea7a50146624?Expires=1715558400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=DfB2wVtiEYk~MdDdyLQjxz1bqZ2bXZzZXYMmKh4zX09kmJrWzH-RG1Z9uNBqRh1kD52C4uYzIv9E0OV7brbSSyoA30uTa91qGsZE9rwRpgRYPZ370LKL6BmhgSKfG7FZtKSvCnjXCes8bHE246q-Dm2nOj0K2MpOkSh94L3dY2nDhDV12oFEW5WmbvY8d229aFsyO09ENbnG7msf9dPIeSaI9ev4oqztAWRwh4c9GRlLF1JWmZUPdcw6Kx3N2LOi-5VCJV2wUmgaQDv-lUHtMdXgDvd~Cnfbv~qrqzaqAtnFa2vfoFVWHFFAeD25MpwTOmR7Pib3ENpJbL2xjalNsw__");
+        background-size: cover;
+        border-radius: 22px;
+        width: 100%!important;
+    }
+    .section3>.left-side::after{
+        content: "";
+        position:absolute;
+        width:117px;
+        height:117px;
+        background: #43BAFF;
+        border: 2px solid #FFFFFF;
+        border-radius: 100%;
+        padding:26px, 56px, 26px, 56px;
+        bottom: 0px;
+
+    }
 
     .section-3>.left-side::before {
         height: 100%;
@@ -668,12 +692,6 @@
 
     .right-side>.container {
         padding: 0px;
-    }
-
-    .section3-tagline {
-        font-size: 33px;
-        line-height: 43px;
-        margin-bottom: 20px;
     }
 
     .section3>.right-side>.container {
@@ -689,8 +707,8 @@
     }
 
     .service-tagline {
-        font-size: 20px;
-        line-height: 35px;
+        font-size: 22px;
+        line-height: 30px;
     }
 
     .miletone-number {
@@ -807,6 +825,12 @@
         padding: 7px 20px !important;
         font-size: 1rem !important;
     }
+    .section5::before{
+        background-image: none;
+    }
+    .section5>div{
+        margin-bottom: 0px!important;
+    }
 
     .section5>.container>.heading {
         flex-direction: column;
@@ -815,17 +839,105 @@
     .section5>.container>.heading>.text {
         align-items: center !important;
     }
+
     .section5>.container>.heading>.text>.txt>h1 {
-        font-size: 22px!important;
+        font-size: 22px !important;
+        line-height: 30px;
     }
-    .section5>.container>.heading>.text>.txt{
+
+    .section5>.container>.heading>.text>.txt {
         padding-top: 10px;
     }
+
     .projects-section {
         height: 94vh;
     }
-    .projects-section>div:nth-child(2){
+
+    .projects-section>div:nth-child(2) {
         padding: 0px;
+    }
+
+    .container>.tagline {
+        font-size: 28px;
+        line-height: 38px;
+    }
+
+    .section3-tagline {
+        font-size: 28px;
+        line-height: 36px;
+        margin-bottom: 20px;
+    }
+
+    .section3-desc {
+        font-size: 12px;
+        line-height: 16px;
+
+    }
+
+    .section1>div>div:first-child {
+        margin-bottom: 0px !important;
+    }
+
+    .section1>div>div:nth-child(2)>h1 {
+        font-size: 12px !important;
+        line-height: 16px;
+    }
+
+    .section1>div>div:nth-child(2) {
+        margin-top: 0px !important;
+        margin-bottom: 0px !important;
+    }
+
+    .section1>div>div:nth-child(3) {
+        margin-top: 0px !important;
+    }
+
+    .btn {
+        padding: 10px 18px !important;
+        font-size: 14px !important;
+        line-height: 21px;
+        border-radius: 8px !important;
+    }
+
+    .btn-container>.btn {
+        width: 100%;
+    }
+
+    .section1 {
+        height: 30vh;
+    }
+
+    .dark::before {
+        height: 170%;
+    }
+
+    .section2>.categories>div {
+        background: #141414;
+        padding: 10px;
+        border: 1px;
+        border-radius: 12px;
+        border: 1px solid #262626;
+        box-shadow: 0px 0px 0px 4px #191919;
+    }
+
+    .section2>.categories>div>div {
+        margin: 0px;
+    }
+
+    .cards {
+        padding: 20px 14px;
+    }
+
+    .our-service-btn {
+        font-size: 10px;
+        line-height: 20px;
+        padding: 5px 12px 5px 12px;
+    }
+    .section4::before{
+        background-image: none;
+    }
+    .services-section{
+        margin-top: 5vh;
     }
 }
 
@@ -836,6 +948,6 @@
     }
 
     .section1 {
-        height: 70vh;
+        height: 35vh;
     }
 }

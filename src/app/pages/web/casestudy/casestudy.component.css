@@ -112,6 +112,21 @@
     padding: 0 90px;
 }
 
+.app-details>.details>.detail>.title>.linear-text {
+    white-space: nowrap;
+}
+
+@media(max-width:1366px) {
+    .banner {
+        height: auto !important;
+    }
+
+    .banner>img {
+        width: 95vw;
+        height: 37vh;
+    }
+}
+
 @media (max-width: 575.98px) {
     .w-75 {
         width: 100% !important;
@@ -131,5 +146,37 @@
 
     .miletone-title {
         font-size: 10px;
+    }
+
+    .our-process-btn,
+    .our-result-btn {
+        font-size: 10px;
+        line-height: 20px;
+        padding: 5px 12px 5px 12px;
+    }
+
+    .numbers-section .heading {
+        padding: 0px;
+    }
+
+    .txt>h1 {
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+    .txt>h2 {
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+    .frame-1 .txt>h1 {
+        font-size: 28px;
+        line-height: 38px;
+    }
+
+    .app-details>.details {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center !important;
     }
 }

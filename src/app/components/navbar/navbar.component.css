@@ -191,8 +191,32 @@ li {
 
 }
 
+@media(max-width:768px) {
+    .dropdown-menu ul li:not(:first-child) a {
+        padding-left: 25px;
+    }
+
+    .dropdown-menu ul {
+        padding-bottom: 18px;
+        text-transform: uppercase;
+    }
+}
+
 @media (max-width: 575.98px) {
     nav {
         width: 100%;
+    }
+
+    .top-wrap {
+        flex-flow: row;
+    }
+
+    .top-wrap>button {
+        padding-right: 16px;
+    }
+
+    .custom-logo-link {
+        padding-left: 16px;
+        justify-content: start;
     }
 }
