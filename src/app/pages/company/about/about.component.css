@@ -142,6 +142,15 @@
 
 @media (max-width: 575.98px) {
 
+    .our-service-btn{
+        font-size: 10px;
+        line-height: 20px;
+        padding: 5px 12px 5px 12px;
+    }
+    .sec4-headline>.service-tagline{
+        font-size: 22px;
+        line-height: 30px;
+    }
     .frame-4::before {
         width: 90%;
     }
@@ -188,11 +197,6 @@
 
     .name p {
         font-size: 10px;
-    }
-
-    .service-tagline {
-        font-size: 25px;
-        line-height: 30px;
     }
 
     .number {

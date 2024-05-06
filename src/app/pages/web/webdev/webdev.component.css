@@ -187,9 +187,23 @@
     background: #1D2546;
 }
 
-.project-two>.project-container>.app-details>.app-details-container{
-    color:black;
+.project-two>.project-container>.app-details>.app-details-container {
+    color: black;
 }
+
+@media (min-width:1180px) {
+    .heading-process {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .our-process,.desc {
+        width: 75% !important;
+    }
+}
+
 @media(min-width:1025px) and (max-width:1180px) {
     .frame-1 {
         height: 100vh;
@@ -201,25 +215,31 @@
         height: 55vh;
     }
 
-    .project-one::before,.project-two::before,.project-three::before {
+    .project-one::before,
+    .project-two::before,
+    .project-three::before {
         width: 100%;
     }
 
     .project-one>.project-container {
-        height: auto!important;
+        height: auto !important;
     }
 
-    .project-two>.project-container, .project-three>.project-container{
+    .project-two>.project-container,
+    .project-three>.project-container {
         padding: 0px !important;
     }
-    .project-three>.project-container>.app-image{
-        height:80%!important;
+
+    .project-three>.project-container>.app-image {
+        height: 80% !important;
     }
-    .project-two>.project-container>.app-image{
-        height:80%!important;
+
+    .project-two>.project-container>.app-image {
+        height: 80% !important;
     }
-    .project-two>.project-container>.app-details>.app-details-container{
-        color:black;
+
+    .project-two>.project-container>.app-details>.app-details-container {
+        color: black;
     }
 }
 
@@ -262,20 +282,24 @@
         width: 75% !important;
     }
 }
-@media(min-width:1024px) and (min-height:1024px){
-    
-    .frame-4>.container>.projects>.container>.project-one{
-        height:50vh;
+
+@media(min-width:1024px) and (min-height:1024px) {
+
+    .frame-4>.container>.projects>.container>.project-one {
+        height: 50vh;
     }
 }
-@media(min-width:1024px) and (min-height:1366px){
-    .frame-4>.container>.projects{
-        height:auto;
+
+@media(min-width:1024px) and (min-height:1366px) {
+    .frame-4>.container>.projects {
+        height: auto;
     }
-    .frame-4>.container>.projects>.container>.project-one{
-        height:30vh;
+
+    .frame-4>.container>.projects>.container>.project-one {
+        height: 30vh;
     }
 }
+
 @media (max-width: 992px) {
 
     .project-one::before,
