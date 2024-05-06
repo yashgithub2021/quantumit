@@ -676,12 +676,11 @@
         position:absolute;
         width:117px;
         height:117px;
-        background: #43BAFF;
+        background-image: url('../../../assets/home/part_of_banner.jpg');
         border: 2px solid #FFFFFF;
         border-radius: 100%;
         padding:26px, 56px, 26px, 56px;
         bottom: 0px;
-
     }
 
     .section-3>.left-side::before {
