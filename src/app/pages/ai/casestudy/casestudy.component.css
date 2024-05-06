@@ -114,3 +114,20 @@
     border-radius: 50%;
     margin-right: 20px;
 }
+
+@media (max-width: 575.98px) {
+
+    .w-75,
+    .w-25,
+    .w-50 {
+        width: 100% !important;
+    }
+
+    .fs-6 {
+        font-size: 0.7rem !important;
+    }
+
+    .circles {
+        width: 100%;
+    }
+}
