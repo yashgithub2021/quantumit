@@ -98,6 +98,13 @@
 
 }
 
+@media (min-width:575.98px) and (max-width:768px) {
+
+    .addresses .address {
+        padding: 0.5rem !important;
+    }
+}
+
 @media (max-width: 575.98px) {
     .num-cont {
         padding: 10px;
@@ -111,5 +118,21 @@
     .email p,
     .phone p {
         font-size: 12px;
+    }
+
+    .numbers-section::before {
+
+        height: 18%;
+    }
+
+    .our-process-btn {
+        font-size: 10px;
+        line-height: 20px;
+        padding: 5px 12px 5px 12px;
+    }
+
+    .frame-2-head>.txt>h1 {
+        font-size: 22px;
+        line-height: 30px;
     }
 }
