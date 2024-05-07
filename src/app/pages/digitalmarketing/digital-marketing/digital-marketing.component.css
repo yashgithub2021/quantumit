@@ -379,6 +379,10 @@
 
 @media (max-width: 575.98px) {
 
+    .frame-1 {
+        height: 70vh;
+    }
+
     .frame-1 .container {
         width: 100% !important;
     }
@@ -393,8 +397,13 @@
     }
 
     .tagline {
-        font-size: 40px;
-        line-height: 50px;
+        font-size: 28px;
+        line-height: 38px;
+    }
+
+    .heading>p {
+        font-size: 12px;
+        line-height: 16px;
     }
 
     td p {
@@ -421,7 +430,9 @@
     }
 
     .our-process-btn {
-        font-size: 12px;
+        font-size: 10px;
+        line-height: 20px;
+        padding: 5px 12px 5px 12px;
     }
 
     .step-circle {
@@ -447,5 +458,18 @@
 
     .opacity-0 {
         display: none !important;
+    }
+
+    .frame-6 {
+        padding-left: 0px;
+        height: 180vh;
+    }
+
+    .frame-6>.container {
+        padding-left: 0px;
+        padding-top: 50px;
+    }
+    .learnMore{
+        padding: 20px;
     }
 }

@@ -291,10 +291,25 @@
         height: auto;
     }
 
-    .tagline {
-        font-size: 40px;
-        line-height: 50px;
+    .heading>.tagline {
+        font-size: 28px;
+        line-height: 38px;
         text-align: center !important;
+    }
+    .heading > p {
+        font-size: 12px!important;
+        line-height: 16px;
+    }
+
+
+    .our-process-btn {
+        font-size: 10px;
+        line-height: 20px;
+        padding: 5px 12px 5px 12px;
+    }
+    .our-process>h1, .dev-ai{
+        font-size:22px;
+        line-height:30px;
     }
 
     .what-we-do {
@@ -305,10 +320,6 @@
     .txt {
         width: 100% !important;
         text-align: center;
-    }
-
-    .dev-ai {
-        font-size: 20px;
     }
 
     .heading-frame-2 {
@@ -357,5 +368,9 @@
         justify-content: center;
         align-items: center;
         height: 50% !important;
+    }
+    .frame-4 > .container > .head > .success-desc > p {
+        font-size: 12px !important;
+        line-height: 16px;
     }
 }
