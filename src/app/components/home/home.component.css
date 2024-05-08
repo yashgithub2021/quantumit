@@ -134,8 +134,8 @@
 
 .left-side::before {
     content: '';
-    background-image: url('../../../assets/section2-left-image.png');
-    background-size: contain;
+    background-image: url('../../../assets/leftImg.png');
+    background-size: cover;
     background-position: left;
     background-repeat: no-repeat;
     width: 100%;
@@ -150,7 +150,7 @@
 }
 
 .right-side>.container {
-    padding: 0px 100px;
+    /* padding: 0px 100px; */
 }
 
 
@@ -458,17 +458,19 @@
         line-height: 70px;
     }
 }
-@media(min-width:1500px){
-    .section3 > .left-side{
+
+@media(min-width:1500px) {
+    .section3>.left-side {
         height: 85vh;
         width: 85%;
         position: relative;
     }
+
     .section3-tagline {
         font-size: 65px;
         line-height: 75px;
     }
-    
+
 }
 
 @media (min-width:1025px) and (max-width:1180px) {

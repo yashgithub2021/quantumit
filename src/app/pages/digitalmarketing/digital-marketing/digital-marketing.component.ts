@@ -66,14 +66,14 @@ export class DigitalMarketingComponent implements OnInit {
       heading: "Paid Search",
       tail: "Marketing",
       desc: "Paid search marketing involves placing targeted ads on search engine results pages to increase visibility and drive traffic to websites.",
-      link: "payPerClick"
+      link: "paidSearch"
     },
     {
       img: "../../../assets/dm/conversion-rate.svg",
       heading: "Conversion Rate",
       tail: "Optimization",
       desc: "Conversion rate optimization (CRO) improves the percentage of website visitors who take a desired action, ultimately increasing the effectiveness of a website.",
-      link: "socialMedia"
+      link: "conversionRateOptimization"
     },
     {
       img: "../../../assets/dm/social-media.svg",
@@ -88,7 +88,7 @@ export class DigitalMarketingComponent implements OnInit {
       heading: "Email marketing",
       tail: "Solutions",
       desc: "Providing financial advice, including cost reduction strategies, financial planning, and risk management.",
-      link: "socialMedia"
+      link: "emailMarketing"
     },
     {
       img: "../../../assets/dm/ppc.svg",
