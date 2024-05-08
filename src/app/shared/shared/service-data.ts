@@ -837,6 +837,178 @@ export const mobileDevServices = {
     ]
 }
 
+export const emailMarketingServices = {
+    serviceTitle: "Maximize Engagement with",
+    serviceTitle2: "Email Marketing",
+    title1: "Maximize Engagement with Email Marketing",
+    descriptionOne: [
+        "Enhance your online marketing efforts with Quantum IT's top-tier email marketing services, an integral part of our comprehensive digital marketing solutions.",
+        "Carefully crafted to meet the unique needs of businesses across various industries, our email marketing strategies are designed to amplify engagement, nurture leads, and maximize your return on investment (ROI) in today's competitive digital landscape."
+    ],
+    title2: "Why Choose Us?",
+    descriptionTwo: [
+        "Seeking email marketing solutions that drive results?",
+        "Our team of experts specializes in email campaign management, ensuring that your campaigns yield tangible outcomes such as increased engagement, lead generation, and conversions.",
+        "With a focus on data-driven strategies and innovative approaches, we are dedicated to optimizing your email campaigns to achieve your business objectives effectively.",
+        "With a proven track record of success and a commitment to excellence, Quantum IT is your trusted partner in driving success through email marketing.",
+        "Get in touch with us today to explore how our email marketing services can help you achieve your business goals and elevate your online marketing efforts."
+    ],
+    steps: [
+        {
+            num: 1,
+            title: "Tailored Email Campaigns",
+            desc: "From promotional newsletters to targeted drip campaigns, we create customized email campaigns to maximize engagement and visibility across your audience segments."
+        },
+        {
+            num: 2,
+            title: "Strategic Audience Targeting",
+            desc: "Our comprehensive audience analysis ensures that your email campaigns are tailored to reach the right audience segments with personalized content that resonates with their interests and preferences."
+        },
+        {
+            num: 3,
+            title: "Comprehensive Performance Monitoring",
+            desc: "We continuously monitor and analyze the performance of your email campaigns, leveraging key metrics to drive ongoing optimization and improvement."
+        }
+    ],
+    ourApproach: [
+        {
+            title: "Understanding Your Business",
+            desc: "We start by gaining a thorough understanding of your business goals, target audience, and unique requirements, allowing us to develop email marketing strategies that align seamlessly with your objectives.",
+            img: "../../../../assets/dm/services/obj.svg"
+        },
+        {
+            title: "Strategic Campaign Planning",
+            desc: "Leveraging our expertise in email marketing, we develop strategic campaign plans that prioritize your business goals and target audience, ensuring maximum impact and ROI.",
+            img: "../../../../assets/dm/services/key.svg"
+        },
+        {
+            title: "Continuous Optimization",
+            desc: "We employ a data-driven approach to continuously optimize your email campaigns, making informed adjustments to enhance performance, engagement, and overall effectiveness.",
+            img: "../../../../assets/dm/services/comp.svg"
+        },
+        {
+            title: "Transparent Reporting",
+            desc: "With transparent reporting and regular performance updates, you'll have full visibility into the performance of your email campaigns, allowing you to track progress and measure success effectively.",
+            img: "../../../../assets/dm/services/web.svg"
+        }
+    ]
+};
+
+export const conversionRateOptimizationServices = {
+    serviceTitle: "Maximize Conversions with",
+    serviceTitle2: "Conversion Rate Optimization",
+    title1: "Conversion Rate Optimization",
+    descriptionOne: [
+        "Elevate your digital marketing strategy with Quantum IT's top-notch Conversion Rate Optimization (CRO) services, an essential component of our comprehensive digital marketing solutions.",
+        "Meticulously tailored to meet the unique needs of businesses in various industries, our CRO strategies are crafted to enhance user experience, increase conversions, and maximize your return on investment (ROI) in today's competitive digital landscape."
+    ],
+    title2: "Why Choose Us?",
+    descriptionTwo: [
+        "In search of conversion-driven marketing solutions?",
+        "Our team of experts specializes in CRO techniques, ensuring that your website and marketing assets are optimized to drive meaningful results such as increased leads, sales, and revenue.",
+        "With a focus on data-driven strategies and innovative approaches, we are dedicated to optimizing your conversion rates to achieve your business objectives effectively.",
+        "With a proven track record of success and a commitment to excellence, Quantum IT is your trusted partner in driving success through Conversion Rate Optimization.",
+        "Connect with us today to discover how our CRO services can help you achieve your business goals and unlock new opportunities for growth."
+    ],
+    steps: [
+        {
+            num: 1,
+            title: "Tailored Conversion Strategies",
+            desc: "From website optimization to landing page design and beyond, we develop customized CRO strategies to maximize conversions and engagement across your digital platforms."
+        },
+        {
+            num: 2,
+            title: "Strategic Audience Targeting",
+            desc: "Our in-depth audience analysis ensures that your conversion strategies are tailored to resonate with your target audience, driving higher engagement and conversion rates."
+        },
+        {
+            num: 3,
+            title: "Comprehensive Performance Monitoring",
+            desc: "We continuously monitor and analyze the performance of your conversion campaigns, leveraging key metrics to drive ongoing optimization and improvement."
+        }
+    ],
+    ourApproach: [
+        {
+            title: "Understanding Your Business",
+            desc: "We start by gaining a comprehensive understanding of your business goals, target audience, and unique requirements, allowing us to develop CRO strategies that align seamlessly with your objectives.",
+            img: "../../../../assets/dm/services/obj.svg"
+        },
+        {
+            title: "Strategic Campaign Planning",
+            desc: "Leveraging our expertise in Conversion Rate Optimization, we develop strategic plans that prioritize your business goals and target audience, ensuring maximum impact and ROI.",
+            img: "../../../../assets/dm/services/key.svg"
+        },
+        {
+            title: "Continuous Optimization",
+            desc: "We employ a data-driven approach to continuously optimize your conversion strategies, making informed adjustments to enhance performance, engagement, and overall effectiveness.",
+            img: "../../../../assets/dm/services/comp.svg"
+        },
+        {
+            title: "Transparent Reporting",
+            desc: "With transparent reporting and regular performance updates, you'll have full visibility into the performance of your conversion campaigns, allowing you to track progress and measure success effectively.",
+            img: "../../../../assets/dm/services/web.svg"
+        }
+    ]
+};
+
+export const paidSearchAdvertisingServices = {
+    serviceTitle: "Maximize Results with",
+    serviceTitle2: "Paid Search Advertising",
+    title1: "Maximize Results with Paid Search Advertising",
+    descriptionOne: [
+        "Elevate your online advertising game with Quantum IT's top-notch Paid Search Advertising services, a pivotal component of our comprehensive digital marketing solutions.",
+        "Tailored to meet the unique demands of businesses in diverse industries, our Paid Search Advertising strategies are meticulously crafted to boost visibility, drive targeted traffic, and deliver measurable results in today's competitive digital landscape."
+    ],
+    title2: "Why Choose Us?",
+    descriptionTwo: [
+        "Seeking results-driven paid search solutions?",
+        "Our team of skilled advertising specialists specializes in harnessing the full potential of paid search platforms to create customized campaigns that meet your unique business objectives and exceed your expectations.",
+        "With a focus on data-driven approaches and innovative strategies, we are committed to optimizing your paid search campaigns to achieve your business goals effectively.",
+        "With a proven track record of success and a dedication to client satisfaction, Quantum IT stands as your trusted partner in leveraging the power of paid search advertising.",
+        "Connect with us today to discover how our paid search services can help you unlock new opportunities for success and growth."
+    ],
+    steps: [
+        {
+            num: 1,
+            title: "Tailored Advertising Campaigns",
+            desc: "From Google Ads to Bing Ads and beyond, we craft customized paid search campaigns ensuring maximum impact and visibility across platforms."
+        },
+        {
+            num: 2,
+            title: "Strategic Keyword Targeting",
+            desc: "Our keyword research and analysis ensure that your paid search campaigns target high-value keywords that drive relevant traffic to your website."
+        },
+        {
+            num: 3,
+            title: "Comprehensive Campaign Monitoring",
+            desc: "We continuously monitor and analyze the performance of your paid search campaigns, leveraging key metrics to drive ongoing optimization and improvement."
+        }
+    ],
+    ourApproach: [
+        {
+            title: "Understanding Your Business",
+            desc: "We start by gaining a comprehensive understanding of your business goals, target audience, and unique requirements, allowing us to develop paid search strategies that align seamlessly with your objectives.",
+            img: "../../../../assets/dm/services/obj.svg"
+        },
+        {
+            title: "Strategic Campaign Planning",
+            desc: "Leveraging our expertise in paid search advertising, we develop strategic plans that prioritize your business goals and target audience, ensuring maximum impact and ROI.",
+            img: "../../../../assets/dm/services/key.svg"
+        },
+        {
+            title: "Continuous Optimization",
+            desc: "We employ a data-driven approach to continuously optimize your paid search campaigns, making informed adjustments to enhance performance, engagement, and overall effectiveness.",
+            img: "../../../../assets/dm/services/comp.svg"
+        },
+        {
+            title: "Transparent Reporting",
+            desc: "With transparent reporting and regular performance updates, you'll have full visibility into the performance of your paid search campaigns, allowing you to track progress and measure success effectively.",
+            img: "../../../../assets/dm/services/web.svg"
+        }
+    ]
+};
+
+
 // ============================================================Web Development Services====================================================================================================================================================
 
 export const phpDevelopmentServices = {
@@ -1009,3 +1181,117 @@ export const rubyOnRailsDevelopmentServices = {
         }
     ]
 }
+
+export const nodejsDevelopmentServices = {
+    serviceTitle: "Unleash the Power of",
+    serviceTitle2: "Node.js Development",
+    title1: "Unleash the Power of Node.js Development",
+    descriptionOne: [
+        "Explore the dynamic capabilities of Node.js development with Quantum IT's expert services, a cornerstone of our comprehensive software development solutions.",
+        "Tailored to meet the diverse needs of businesses worldwide, our Node.js development services are engineered to deliver robust, scalable, and high-performance web applications that drive innovation and efficiency in today's digital landscape."
+    ],
+    title2: "Why Choose Us?",
+    descriptionTwo: [
+        "Looking for reliable Node.js development solutions?",
+        "Our team of skilled developers specializes in harnessing the full potential of Node.js to create custom web applications that meet your unique business requirements and exceed your expectations.",
+        "With a focus on quality, efficiency, and innovation, we are committed to delivering solutions that drive tangible results and propel your business forward.",
+        "With a proven track record of success and a dedication to client satisfaction, Quantum IT stands as your trusted partner in leveraging the power of Node.js development.",
+        "Connect with us today to discover how our Node.js development services can help you unlock new opportunities for success and growth."
+    ],
+    steps: [
+        {
+            num: 1,
+            title: "Custom Web Application Development",
+            desc: "From real-time chat applications to data-intensive platforms and beyond, we develop tailor-made web applications using Node.js to address your specific business needs and objectives."
+        },
+        {
+            num: 2,
+            title: "Scalable Solutions",
+            desc: "Our Node.js development services are designed to scale alongside your growing business requirements, ensuring flexibility and adaptability for future growth and expansion."
+        },
+        {
+            num: 3,
+            title: "Ongoing Support and Maintenance",
+            desc: "We provide comprehensive support and maintenance services to ensure the ongoing performance, security, and reliability of your Node.js applications, giving you peace of mind and confidence in your software investment."
+        }
+    ],
+    ourApproach: [
+        {
+            title: "Understanding Your Business",
+            desc: "We begin by gaining a deep understanding of your business goals, challenges, and unique requirements, allowing us to develop Node.js solutions that are perfectly aligned with your objectives.",
+            img: "../../../../assets/dm/services/obj.svg"
+        },
+        {
+            title: "Strategic Development",
+            desc: "Leveraging our expertise in Node.js development, we design and implement efficient, innovative, and scalable solutions that deliver maximum value and impact for your business.",
+            img: "../../../../assets/dm/services/key.svg"
+        },
+        {
+            title: "Continuous Improvement",
+            desc: "We continuously monitor and optimize your Node.js applications, making data-driven adjustments to enhance performance, usability, and overall effectiveness, ensuring that your web applications remain competitive and relevant in today's fast-paced digital world.",
+            img: "../../../../assets/dm/services/comp.svg"
+        },
+        {
+            title: "Transparent Communication",
+            desc: "With transparent communication and regular progress updates, we keep you informed every step of the way, ensuring that your Node.js development project is delivered on time, within budget, and to your complete satisfaction.",
+            img: "../../../../assets/dm/services/web.svg"
+        }
+    ]
+};
+
+export const joomlaDevelopmentServices = {
+    serviceTitle: "Unleash the Power of",
+    serviceTitle2: "Joomla Development",
+    title1: "Unleash the Power of Joomla Development",
+    descriptionOne: [
+        "Discover the dynamic capabilities of Joomla development with Quantum IT's expert services, a cornerstone of our comprehensive software development solutions.",
+        "Tailored to meet the diverse needs of businesses worldwide, our Joomla development services are engineered to deliver robust, scalable, and feature-rich web applications that drive innovation and efficiency in today's digital landscape."
+    ],
+    title2: "Why Choose Us?",
+    descriptionTwo: [
+        "In search of reliable Joomla development solutions?",
+        "Our team of skilled developers specializes in harnessing the full potential of Joomla to create custom web applications that meet your unique business requirements and exceed your expectations.",
+        "With a focus on quality, efficiency, and innovation, we are committed to delivering solutions that drive tangible results and propel your business forward.",
+        "With a proven track record of success and a dedication to client satisfaction, Quantum IT stands as your trusted partner in leveraging the power of Joomla development.",
+        "Connect with us today to discover how our Joomla development services can help you unlock new opportunities for success and growth."
+    ],
+    steps: [
+        {
+            num: 1,
+            title: "Custom Web Application Development",
+            desc: "From corporate websites to online portals and beyond, we develop tailor-made web applications using Joomla to address your specific business needs and objectives."
+        },
+        {
+            num: 2,
+            title: "Scalable Solutions",
+            desc: "Our Joomla development services are designed to scale alongside your growing business requirements, ensuring flexibility and adaptability for future growth and expansion."
+        },
+        {
+            num: 3,
+            title: "Ongoing Support and Maintenance",
+            desc: "We provide comprehensive support and maintenance services to ensure the ongoing performance, security, and reliability of your Joomla applications, giving you peace of mind and confidence in your software investment."
+        }
+    ],
+    ourApproach: [
+        {
+            title: "Understanding Your Business",
+            desc: "We begin by gaining a deep understanding of your business goals, challenges, and unique requirements, allowing us to develop Joomla solutions that are perfectly aligned with your objectives.",
+            img: "../../../../assets/dm/services/obj.svg"
+        },
+        {
+            title: "Strategic Development",
+            desc: "Leveraging our expertise in Joomla development, we design and implement efficient, innovative, and scalable solutions that deliver maximum value and impact for your business.",
+            img: "../../../../assets/dm/services/key.svg"
+        },
+        {
+            title: "Continuous Improvement",
+            desc: "We continuously monitor and optimize your Joomla applications, making data-driven adjustments to enhance performance, usability, and overall effectiveness, ensuring that your web applications remain competitive and relevant in today's fast-paced digital world.",
+            img: "../../../../assets/dm/services/comp.svg"
+        },
+        {
+            title: "Transparent Communication",
+            desc: "With transparent communication and regular progress updates, we keep you informed every step of the way, ensuring that your Joomla development project is delivered on time, within budget, and to your complete satisfaction.",
+            img: "../../../../assets/dm/services/web.svg"
+        }
+    ]
+};

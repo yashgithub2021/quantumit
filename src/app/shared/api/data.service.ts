@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { ActivatedRouteSnapshot, Resolve, RouterStateSnapshot } from '@angular/router';
 import { Observable, of } from 'rxjs';
-import { androidService, contentMarketingServices, crossPlatformAppDevelopment, dotNetDevelopmentServices, iOsService, iPadAppDevelopment, mobileDevServices, mobileGameDevelopment, payPerClickServices, phpDevelopmentServices, rubyOnRailsDevelopmentServices, seoServices, socialMediaServices, swiftAppDevelopment, websiteDevServices } from '../shared/service-data';
+import { androidService, contentMarketingServices, conversionRateOptimizationServices, crossPlatformAppDevelopment, dotNetDevelopmentServices, emailMarketingServices, iOsService, iPadAppDevelopment, joomlaDevelopmentServices, mobileDevServices, mobileGameDevelopment, nodejsDevelopmentServices, paidSearchAdvertisingServices, payPerClickServices, phpDevelopmentServices, rubyOnRailsDevelopmentServices, seoServices, socialMediaServices, swiftAppDevelopment, websiteDevServices } from '../shared/service-data';
 
 @Injectable({
   providedIn: 'root'
@@ -30,6 +30,12 @@ export class DataService implements Resolve<any> {
       return of({ title: 'payPerClick Services', services: payPerClickServices });
     } else if (id === 'socialMedia') {
       return of({ title: 'socialMedia Services', services: socialMediaServices });
+    } else if (id === 'emailMarketing') {
+      return of({ title: 'emailMarketing Services', services: emailMarketingServices });
+    } else if (id === 'conversionRateOptimization') {
+      return of({ title: 'conversionRateOptimization Services', services: conversionRateOptimizationServices });
+    } else if (id === 'paidSearch') {
+      return of({ title: 'paidSearch Services', services: paidSearchAdvertisingServices });
     } else if (id === 'contentMarketing') {
       return of({ title: 'contentMarketing Services', services: contentMarketingServices });
     } else if (id === 'websiteDev') {
@@ -43,9 +49,9 @@ export class DataService implements Resolve<any> {
     } else if (id === 'ror') {
       return of({ title: 'ror Services', services: rubyOnRailsDevelopmentServices });
     } else if (id === 'node') {
-      return of({ title: 'node Services', services: rubyOnRailsDevelopmentServices });
+      return of({ title: 'node Services', services: nodejsDevelopmentServices });
     } else if (id === 'joomla') {
-      return of({ title: 'joomla Services', services: rubyOnRailsDevelopmentServices });
+      return of({ title: 'joomla Services', services: joomlaDevelopmentServices });
     } else {
       return of(null); // Return null for unknown IDs
     }
