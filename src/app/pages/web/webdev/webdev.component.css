@@ -134,6 +134,10 @@
     background-size: contain;
 }
 
+.project-two>.project-container {
+    align-items: center;
+}
+
 .project-two::before {
     display: block;
     height: 100%;
@@ -191,6 +195,25 @@
     color: black;
 }
 
+@media (min-width:1181px) and (max-width:1366px) {
+    .project-two .app-image {
+        height: 60% !important;
+    }
+}
+
+@media (min-width:1180px) and (max-width:1366px) {
+    .app-details-container{
+        justify-content: center!important;
+    }
+    .project-two .app-details-container {
+        padding-left: 30px;
+    }
+
+    .app-details-container .name {
+        margin-top: 20px;
+    }
+}
+
 @media (min-width:1180px) {
     .heading-process {
         display: flex;
@@ -202,6 +225,46 @@
     .our-process,
     .desc {
         width: 75% !important;
+    }
+}
+
+@media(min-width:1024px) and (max-width:1180px) {
+    .project-one {
+        justify-content: start !important;
+    }
+
+    .project-two>.project-container {
+        align-items: center;
+    }
+
+    .app-details-container {
+        width: 100% !important;
+    }
+
+    .project>.project-container {
+        height: 85% !important;
+    }
+
+    .app-details-container .app-button {
+        font-size: 14px;
+        padding: 3px 9px;
+    }
+
+    .app-details-container .name>h2 {
+        font-size: 20px;
+    }
+
+    .app-details-container .details {
+        font-size: 16px !important;
+    }
+
+    .app-details-container .view-more {
+        margin-top: 20px;
+    }
+
+    .app-details-container .view-more>p {
+        font-size: 15px;
+        margin-right: 0.5rem !important;
     }
 }
 
@@ -236,15 +299,25 @@
     }
 
     .project-two>.project-container>.app-image {
-        height: 80% !important;
+        height: 70% !important;
     }
 
     .project-two>.project-container>.app-details>.app-details-container {
         color: black;
     }
+
+    .project-one::before,
+    .project-two::before,
+    .project-three::before {
+        width: 85%;
+    }
 }
 
 @media (max-width: 1024px) {
+    .project-img-container>.project-image {
+        height: 17vh !important;
+    }
+
     .frame-1 {
         height: 100vh;
         padding: 0px 5rem;
@@ -281,6 +354,10 @@
 
     .app-details-container {
         width: 75% !important;
+    }
+
+    .project {
+        height: 28vh;
     }
 }
 
@@ -378,6 +455,10 @@
 
     .project-two>.project-container>.app-details>.app-image {
         margin-top: 25px;
+    }
+
+    .project-img-container>.project-image {
+        height: 42vh !important;
     }
 }
 

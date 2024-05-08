@@ -176,6 +176,9 @@
     opacity: 0px;
     border: 1px solid #5E5A5A6E
 }
+.tech-stack>div{
+    gap:10px;
+}
 
 @media (max-width: 1366px) {
     .text>.txt {
