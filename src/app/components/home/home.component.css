@@ -524,6 +524,9 @@
     .section3>.right-side>.container {
         padding: 0 40px;
     }
+    .sec4-headline {
+        width: 100%;
+    }
 
 }
 
@@ -725,10 +728,6 @@
 
     .section3>.right-side>.container {
         padding: 0px 0px;
-    }
-
-    .sec4-headline {
-        width: 100%;
     }
 
     .section5::before {

@@ -116,6 +116,10 @@
     margin-right: 20px;
 }
 
+.steps-container-1 {
+    justify-content: center;
+}
+
 @media (max-width: 575.98px) {
 
     .w-75,
@@ -130,5 +134,16 @@
 
     .circles {
         width: 100%;
+    }
+
+    .our-process-btn {
+        font-size: 12px;
+        line-height: 20px;
+        padding: 5px 12px 5px 12px;
+    }
+
+    .txt>h1 {
+        font-size: 28px;
+        line-height: 38px;
     }
 }
