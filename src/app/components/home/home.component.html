@@ -228,7 +228,7 @@
     <!-- Section7 -->
     <div class="container section7 w-100 mt-5" id="customers">
         <div class="container h-100">
-            <ngb-carousel *ngIf="reviews.length > 0" [ngClass]="{'dark-mode': isDarkTheme}">
+            <ngb-carousel *ngIf="reviews.length > 0">
                 <ng-template ngbSlide *ngFor="let review of reviews">
                     <div class="customer-feedback h-100 w-100 p-5 p-md-3" data-aos="fade-up">
                         <div [ngClass]="isDarkTheme ? 'cf-cont-dark' : 'cf-cont-light'"

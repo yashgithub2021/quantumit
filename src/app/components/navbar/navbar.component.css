@@ -64,6 +64,10 @@ li {
     left: -350px;
 }
 
+.dp-menu-case-study {
+    left: auto;
+}
+
 .dropdown-item:hover {
     /* color: black !important; */
     background: linear-gradient(91.58deg, #43BAFF 0.52%, #7044B3 100%);
@@ -173,7 +177,7 @@ li {
     }
 
     .top-wrap {
-        width: 100%;
+        width: 100% !important;
     }
 
     .navbar-toggler:focus,
@@ -209,6 +213,7 @@ li {
 
     .top-wrap {
         flex-flow: row;
+        width: 100% !important;
     }
 
     .top-wrap>button {
