@@ -266,6 +266,11 @@
         width: 100%;
         height: 100%;
     }
+
+    .stack {
+        min-width: 290px;
+        justify-content: center !important;
+    }
 }
 
 @media (max-width: 575.98px) {
@@ -324,8 +329,13 @@
         width: 75% !important;
     }
 
-    .step-title .fs-6 {
-        font-size: 7px !important;
+
+    .step-title p {
+        font-size: 12px!important;
+    }
+
+    .steps-container2 {
+        align-items: start;
     }
 
     .circles {
