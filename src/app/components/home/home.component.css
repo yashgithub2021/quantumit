@@ -893,8 +893,8 @@
     }
 
     .section3-tagline {
-        font-size: 28px;
-        line-height: 36px;
+        font-size: 22px;
+        line-height: 30px;
         margin-bottom: 20px;
     }
 
@@ -909,8 +909,8 @@
     }
 
     .section1>div>div:nth-child(2)>h1 {
-        font-size: 12px !important;
-        line-height: 16px;
+        font-size: 16px !important;
+        line-height: 23px;
     }
 
     .section1>div>div:nth-child(2) {

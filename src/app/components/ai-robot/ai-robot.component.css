@@ -179,26 +179,35 @@
     padding: 20px 0px;
     border-radius: 5px;
 }
+
 @media (min-width: 768px) and (max-width: 1024px) {
     .frame-1 {
-      height: 75vh ;
+        height: 75vh;
     }
-    .frame-4{
-        height:70vh;
+
+    .frame-4 {
+        height: 70vh;
     }
-    .frame-4::before{
+
+    .frame-4::before {
         background-position: right;
     }
-    .ai-showcase-inner{
+
+    .ai-showcase-inner {
         padding: 10px;
         border-radius: 15px;
     }
-  }
+}
 
 @media (max-width: 575.98px) {
 
     .frame-1 {
-        height: 85vh;
+        height: 70vh;
+    }
+
+    .frame-1 .heading p {
+        font-size: 16px !important;
+        line-height: 23px;
     }
 
     .frame-1-cont {
@@ -207,6 +216,7 @@
 
     .frame-2 {
         padding-right: 0;
+        padding-left: 0;
     }
 
     .our-process-btn {
@@ -220,8 +230,8 @@
     }
 
     .tagline {
-        font-size: 40px;
-        line-height: 50px;
+        font-size: 28px;
+        line-height: 38px;
     }
 
     .txt {

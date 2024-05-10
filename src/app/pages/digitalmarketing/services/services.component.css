@@ -291,6 +291,10 @@
     .service-section .text {
         width: 90% !important;
     }
+    .service-section .text .title h2{
+        font-size: 22px;
+        line-height: 30px;
+    }
 
     .service-section .image {
         width: 90% !important;

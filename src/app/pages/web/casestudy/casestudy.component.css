@@ -135,6 +135,9 @@
     .title h3 {
         font-size: 15px;
     }
+    .desc p{
+        text-align: center;
+    }
 
     .numbers-section {
         padding: 10px
