@@ -111,5 +111,19 @@
     .casestudy::before {
         background-size: 70% 45%, 65% 60%;
     }
+    .our-process-btn {
+        font-size: 10px;
+        line-height: 20px;
+        padding: 5px 12px 5px 12px;
+    }
+    .txt > h1 {
+        font-size: 22px;
+        line-height: 30px;
+    }
+    .frame-1 .frame-2-head .txt>h1{
+        font-size:28px;
+        line-height:38px;
+    }
+    
 
 }
