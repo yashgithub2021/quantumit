@@ -25,6 +25,31 @@ button {
     position: relative;
 }
 
+@keyframes bounce {
+
+    0%,
+    100%,
+    20%,
+    50%,
+    80% {
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0)
+    }
+
+    40% {
+        -webkit-transform: translateY(-30px);
+        -ms-transform: translateY(-30px);
+        transform: translateY(-30px)
+    }
+
+    60% {
+        -webkit-transform: translateY(-15px);
+        -ms-transform: translateY(-15px);
+        transform: translateY(-15px)
+    }
+}
+
 .si-one::before {
     position: absolute;
     height: 100%;
@@ -35,7 +60,17 @@ button {
     background-position: top right;
     border-radius: 0px 6px 0 0;
     opacity: 20%;
+    transition: background-position 0.5s ease;
+    overflow: hidden;
+    /* Add transition property */
 }
+
+.si-one:hover::before {
+    animation: bounce 1s ease;
+    overflow: hidden;
+    /* Change background position on hover */
+}
+
 
 .si-two::before {
     position: absolute;
@@ -68,6 +103,7 @@ button {
 .contact-value {
     font-size: 1.25rem;
 }
+
 @media(max-width:1366px) {
     footer {
 
@@ -86,6 +122,7 @@ button {
         height: 80vh;
     }
 }
+
 /* this is form ipad pro portrait */
 @media(max-width:1366px) and (min-height: 1366px) {
     footer>.container {
@@ -177,7 +214,8 @@ button {
     footer {
         height: 170vh;
     }
-    footer > .container{
+
+    footer>.container {
         height: 125vh;
     }
 
@@ -187,7 +225,9 @@ button {
 
 
 }
+
 @media (max-width: 375px) {
+
     /* footer {
         height: 205vh;
     }
@@ -198,9 +238,11 @@ button {
     footer {
         height: 195vh;
     }
-    footer>.container{
+
+    footer>.container {
         height: auto;
     }
+
     .social-links-container {
         height: auto;
     }

@@ -1,5 +1,6 @@
 import { Component, ElementRef, OnInit } from '@angular/core';
 import AOS from 'aos';
+import { NgxSpinnerService } from 'ngx-spinner';
 import { ApiService } from 'src/app/shared/api/api.service';
 
 @Component({
@@ -53,7 +54,7 @@ export class MobileappComponent implements OnInit {
   isDarkTheme!: boolean;
   projects!: any[]
 
-  constructor(private api: ApiService, private elementRef: ElementRef) {
+  constructor(private api: ApiService, private elementRef: ElementRef, private spinner: NgxSpinnerService) {
   }
 
   ngOnInit(): void {
@@ -74,10 +75,14 @@ export class MobileappComponent implements OnInit {
   }
 
   fetchMobileProjects() {
+    this.spinner.show();
     this.api.getMobileAppProjects()
       .subscribe((res: any) => {
         this.projects = res.projects
         console.log(res)
+        setTimeout(() => { // Add a delay before hiding spinner
+          this.spinner.hide();
+        }, 1000); // Adjust the delay time as needed
       })
   }
 

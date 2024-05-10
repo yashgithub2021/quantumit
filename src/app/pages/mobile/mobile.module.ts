@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { MobileRoutingModule } from './mobile-routing.module';
@@ -7,6 +7,7 @@ import { SharedModule } from 'src/app/shared/shared/shared.module';
 import { DetailsComponent } from './details/details.component';
 import { CasestudyComponent } from './casestudy/casestudy.component';
 import { AppDetailsComponent } from './app-details/app-details.component';
+import { NgxSpinnerModule } from 'ngx-spinner';
 
 
 @NgModule({
@@ -19,7 +20,9 @@ import { AppDetailsComponent } from './app-details/app-details.component';
   imports: [
     CommonModule,
     MobileRoutingModule,
-    SharedModule
+    SharedModule,
+    NgxSpinnerModule,
   ],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class MobileModule { }

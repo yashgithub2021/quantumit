@@ -15,7 +15,8 @@
                         </p>
                         <div class="buttons d-flex justify-content-center justify-content-lg-start w-100">
                             <button (click)="scrollToServices()"
-                                class="btn-lm btn-primary mx-3 me-lg-3 mx-lg-0 px-lg-4 px-2 py-lg-3">Get Started</button>
+                                class="btn-lm btn-primary mx-3 me-lg-3 mx-lg-0 px-lg-4 px-2 py-lg-3">Get
+                                Started</button>
                             <button class="btn btn-outline-primary mx-3 px-lg-4 px-2 py-lg-3 text-uppercase "
                                 (click)="scrollToFooter()">learn
                                 More</button>
@@ -189,14 +190,14 @@
                             class="project-container h-75 w-100 position-absolute d-flex p-lg-5 flex-lg-row-reverse flex-column">
                             <div class="app-details h-100 w-100 d-flex align-items-center justify-content-center">
                                 <div data-aos="fade-in"
-                                    class="app-details-container align-items-center align-items-lg-end w-75 h-100 m-auto d-flex flex-column justify-content-evenly ">
+                                    class="app-details-container align-items-center align-items-lg-start w-75 h-100 m-auto d-flex flex-column justify-content-evenly ">
                                     <div>
                                         <button class="app-button app-button-two text-capitalize">App</button>
                                     </div>
                                     <div class="name">
                                         <h2>{{projects[1]?.name}}</h2>
                                     </div>
-                                    <div class="details text-align-center text-lg-end fw-lighter fs-5">
+                                    <div class="details text-align-center text-lg-start fw-lighter fs-5">
 
                                         {{(projects[1]?.description.length>100)? (projects[1]?.description | slice:0:100)+'...':(projects[1]?.description)}}
                                     </div>
@@ -209,7 +210,7 @@
                             </div>
                             <div data-aos="fade-in" class="app-image h-100 w-100">
                                 <div class="container project-img-container h-100 w-100 overflow-hidden p-0">
-                                    <img class="project-image border-white border-3 rounded-1 w-100"
+                                    <img class="project-image border-white border-3 rounded-1 w-100 h-100"
                                         [src]="projects[1]?.image" alt="">
                                 </div>
                             </div>
@@ -241,7 +242,7 @@
                             </div>
                             <div data-aos="fade-in" class="app-image h-100 w-100">
                                 <div class="container project-img-container h-100 w-100 overflow-hidden p-0">
-                                    <img class="project-image border-white border-3 rounded-1 w-100"
+                                    <img class="project-image border-white border-3 rounded-1 w-100 h-100"
                                         [src]="projects[2]?.image" alt="">
                                 </div>
                             </div>
@@ -252,5 +253,6 @@
         </div>
     </div>
 </div>
-
-<app-form></app-form>
+<!-- <ngx-spinner bdColor="rgba(0, 0, 0, 0.8)" size="medium" color="#fff" type="ball-running-dots" [fullScreen]="true">
+    <p style="color: white"> Loading... </p>
+</ngx-spinner><app-form></app-form> -->
