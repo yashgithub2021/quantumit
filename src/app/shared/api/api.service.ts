@@ -32,7 +32,7 @@ export class ApiService {
   }
 
   getReviews() {
-    return this.http.get(`${this.baseUrl}api/reviews/review`)
+    return this.http.get(`${this.baseUrl}api/feedback/feedback`)
   }
 
   getBlogs() {

@@ -234,17 +234,17 @@
                         <div [ngClass]="isDarkTheme ? 'cf-cont-dark' : 'cf-cont-light'"
                             class="container cf-cont d-flex flex-column justify-content-around align-items-start">
                             <div class="stars">
-                                <i *ngFor="let star of getStars(review.rating)" class="fa-solid fa-star mx-1"></i>
+                                <i *ngFor="let star of getStars(review.stars)" class="fa-solid fa-star mx-1"></i>
                             </div>
                             <div class="feedback fw-lighter">{{review.message}}</div>
                             <div class="customer d-flex justify-content-between w-100 align-items-end">
                                 <div class="customer-name">
-                                    <h5>{{review.firstName}}</h5>
-                                    <p class="m-0 opacity-50">{{review.occupation}}</p>
+                                    <h5>{{review.name}}</h5>
+                                    <p class="m-0 opacity-50">{{review.designation}}</p>
                                 </div>
                                 <div class="profile">
-                                    <img height="50" width="50" style="border-radius: 50px;"
-                                        [src]="review.profilePicture" alt="profile">
+                                    <img height="50" width="50" style="border-radius: 50px;" class=" object-fit-contain"
+                                        [src]="review.profileImg" alt="profile">
                                 </div>
                             </div>
                         </div>

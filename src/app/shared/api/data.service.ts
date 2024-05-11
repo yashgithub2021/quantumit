@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { ActivatedRouteSnapshot, Resolve, RouterStateSnapshot } from '@angular/router';
 import { Observable, of } from 'rxjs';
-import { androidService, contentMarketingServices, conversionRateOptimizationServices, crossPlatformAppDevelopment, dotNetDevelopmentServices, emailMarketingServices, iOsService, iPadAppDevelopment, joomlaDevelopmentServices, mobileDevServices, mobileGameDevelopment, nodejsDevelopmentServices, paidSearchAdvertisingServices, payPerClickServices, phpDevelopmentServices, rubyOnRailsDevelopmentServices, seoServices, socialMediaServices, swiftAppDevelopment, websiteDevServices } from '../shared/service-data';
+import { androidService, contentMarketingServices, conversionRateOptimizationServices, crossPlatformAppDevelopment, dotNetDevelopmentServices, emailMarketingServices, iOsService, iPadAppDevelopment, internetOfThings, joomlaDevelopmentServices, mobileDevServices, mobileGameDevelopment, nodejsDevelopmentServices, paidSearchAdvertisingServices, payPerClickServices, phpDevelopmentServices, roboticProcessAutomation, rubyOnRailsDevelopmentServices, seoServices, socialMediaServices, swiftAppDevelopment, websiteDevServices } from '../shared/service-data';
 
 @Injectable({
   providedIn: 'root'
@@ -24,6 +24,10 @@ export class DataService implements Resolve<any> {
       return of({ title: 'iPad App', services: iPadAppDevelopment });
     } else if (id === 'mobileGame') {
       return of({ title: 'mobileGame App', services: mobileGameDevelopment });
+    } else if (id === 'iot') {
+      return of({ title: 'internet of things', services: internetOfThings });
+    } else if (id === 'roboticProcessAutomation') {
+      return of({ title: 'RAP', services: roboticProcessAutomation });
     } else if (id === 'seoServices') {
       return of({ title: 'seo Services', services: seoServices });
     } else if (id === 'payPerClick') {

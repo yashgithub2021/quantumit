@@ -16,29 +16,38 @@ export class FooterComponent implements OnInit {
 
   contacts = [
     {
-      icon: 'fa-phone-volume',
+      icon: 'fa-phone',
+      hoverIcon: 'fa-phone-volume',
       label: 'Tel',
       value: '+ 91 971 799 8517',
       link: 'tel:91 971 799 8517'
     },
     {
       icon: 'fa-envelope',
+      hoverIcon: 'fa-envelope-open',
       label: 'Email',
       value: 'sales@quantumitinnovation.com',
       link: 'mailto:sales@quantumitinnovation.com'
     },
     {
       icon: 'fa-location-dot',
+      hoverIcon: 'fa-location-pin',
       label: 'Address',
       value: 'India: H-11, 1st Floor, Sector 63, Noida - 201301'
     },
     {
       icon: 'fa-print',
+      hoverIcon: 'fa-fax',
       label: 'Fax',
       value: '+1-212-9876543',
       link: 'fax:+1.212.9876543'
     },
   ]
+  isHovering: boolean = false;
+
+  toggleEnvelopeHovered() {
+    this.isHovering = !this.isHovering;
+  }
 
   pageLabels = [
     {
