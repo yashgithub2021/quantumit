@@ -262,7 +262,9 @@ button {
     .contact-value {
         font-size: 15px;
     }
-
+    .heading >h5{
+        font-size: 16px;
+    }
 
 }
 
