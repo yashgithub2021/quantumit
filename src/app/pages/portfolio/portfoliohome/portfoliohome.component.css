@@ -79,7 +79,9 @@
     .numbers-section {
         padding: 10px
     }
-
+    .view-project{
+        right:15px;
+    }
     .w-75,
     .w-50 {
         width: 100% !important;

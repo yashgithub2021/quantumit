@@ -154,70 +154,168 @@
     </div>
 
     <div class="frame-5 container">
-        <div data-aos="slide-up" class="text w-100 d-flex flex-column justify-content-center align-items-center ">
-            <div class="button my-lg-3">
-                <button class="our-process-btn">
+        <div class="d-none d-sm-block">
+            <div data-aos="slide-up"
+                class="text mb-3  w-100 d-flex flex-column justify-content-center align-items-center ">
+                <div class="button my-lg-3">
+                    <button class="our-process-btn">
+                        Our Process
+                    </button>
+                </div>
+                <div class="txt w-75 w-sm-50 text-center my-lg-3">
+                    <h1>Our Progressive Approach
+                        in Digital Marketing</h1>
+                </div>
+            </div>
+            <div class="steps-container squares w-100 mt-lg-5 mb-lg-3 ">
+                <div [ngStyle]="{background:isDarkTheme?'white':'black'}" class="step-line"></div>
+                <div [ngStyle]="{background:isDarkTheme?'#111111':'#ECF0FF'}"
+                    [ngClass]="isDarkTheme?'step-square':'step-square-light'" data-aos="fade-up">Step 01
+                </div>
+                <div [ngStyle]="{background:isDarkTheme?'white':'black'}" class="step-line"></div>
+                <div [ngStyle]="{background:isDarkTheme?'#111111':'#ECF0FF'}"
+                    [ngClass]="isDarkTheme?'step-square':'step-square-light'" data-aos="fade-down">Step 02
+                </div>
+                <div [ngStyle]="{background:isDarkTheme?'white':'black'}" class="step-line"></div>
+                <div [ngStyle]="{background:isDarkTheme?'#111111':'#ECF0FF'}"
+                    [ngClass]="isDarkTheme?'step-square':'step-square-light'" data-aos="fade-up">Step 03
+                </div>
+                <div [ngStyle]="{background:isDarkTheme?'white':'black'}" class="step-line"></div>
+            </div>
+            <div class="steps-container w-100 mt-5 ">
+                <div class="step-title w-25 mt-3 mt-lg-0 d-flex flex-column align-items-center justify-content-center">
+                    <p data-aos="fade-up" class="w-50 fw-lighter fs-5 text-align-center">Client Consultation</p>
+                    <p data-aos="fade-up" class="w-75 fw-lighter fs-6 text-align-center"
+                        [ngStyle]="{color: isDarkTheme ? '#B5B5B5':'black'}">Quantum begins
+                        by thoroughly understanding the client's goals, target audience, and unique needs through
+                        in-depth
+                        consultations.</p>
+                </div>
+                <div class="step-dashed-line visually-hidden"></div>
+                <div class="step-title w-25 mt-3 mt-lg-0 d-flex justify-content-center align-items-center flex-column">
+                    <p data-aos="fade-up" class="w-50 fw-lighter fs-5 text-align-center">Strategy Development</p>
+                    <p data-aos="fade-up" class="w-75 fw-lighter fs-6 text-align-center"
+                        [ngStyle]="{color: isDarkTheme ? '#B5B5B5':'black'}">Based on the
+                        insights gained, Quantum crafts tailored digital marketing strategies, aligning with the
+                        client's
+                        objectives and maximizing ROI.</p>
+                </div>
+                <div class="step-dashed-line visually-hidden"></div>
+                <div class="step-title w-25 mt-3 mt-lg-0 d-flex justify-content-center align-items-center flex-column">
+                    <p data-aos="fade-up" class="w50 fw-lighter fs-5 text-align-center">Market Research</p>
+                    <p data-aos="fade-up" class="w-75 fw-lighter fs-6 text-align-center"
+                        [ngStyle]="{color: isDarkTheme ? '#B5B5B5':'black'}">We conduct
+                        extensive market research to identify trends, opportunities, and competitor strategies to make
+                        campaigns
+                        effective.</p>
+                </div>
+                <div class="step-dashed-line visually-hidden"></div>
+            </div>
+
+            <div class="container button w-100 d-flex mt-5 align-items-center justify-content-center">
+                <button [ngStyle]="{'background':isDarkTheme?'#111111':'#ECF0FF','color':isDarkTheme?'white':'black'}"
+                    data-aos="fade-up" class="our-marketing-btn ">
+                    <i [ngClass]="isDarkTheme?'text-white':'text-black'" class="fa-solid fa-arrow-left  mx-2"></i>
                     Our Process
+                    <i [ngClass]="isDarkTheme?'text-white':'text-black'" class="fa-solid fa-arrow-right  mx-2"></i>
                 </button>
             </div>
-            <div class="txt w-50 text-center my-lg-3">
-                <h1>Our Progressive Approach
-                    in Digital Marketing</h1>
+        </div>
+
+        <div id="carouselExampleControls" class="carousel slide d-block d-sm-none" data-ride="carousel">
+            <div class="carousel-inner ">
+                <div class="text w-100 d-flex flex-column justify-content-center align-items-center ">
+                    <div class="button my-3">
+                        <button class="our-process-btn">
+                            Our Process
+                        </button>
+                    </div>
+                    <div class="txt w-75 text-center my-3">
+                        <h1 class="text-capitalize">Our Progressive Approach
+                            in Digital Marketing</h1>
+                    </div>
+                </div>
+                <div class="carousel-item active">
+                    <div class="steps-container squares w-100 mt-lg-5 mb-lg-3 ">
+                        <div [ngStyle]="{background:isDarkTheme?'white':'black'}" class="step-line"></div>
+                        <div [ngStyle]="{background:isDarkTheme?'#111111':'#ECF0FF'}"
+                            [ngClass]="isDarkTheme?'step-square':'step-square-light'" data-aos="fade-up">Step 01
+                        </div>
+                        <div [ngStyle]="{background:isDarkTheme?'white':'black'}" class="step-line"></div>
+                    </div>
+                    <div class="steps-container-1 gap-lg-3 w-100 mt-5 ">
+                        <div
+                            class="step-title w-25 mt-3 mt-lg-0 d-flex flex-column align-items-center justify-content-center">
+                            <p data-aos="fade-up" class="w-50 fw-lighter fs-5 text-align-center">Client Consultation</p>
+                            <p data-aos="fade-up" class="w-75 fw-lighter fs-6 text-align-center"
+                                [ngStyle]="{color: isDarkTheme ? '#B5B5B5':'black'}">Quantum begins
+                                by thoroughly understanding the client's goals, target audience, and unique needs
+                                through
+                                in-depth
+                                consultations.</p>
+                        </div>
+                        <div class="step-dashed-line visually-hidden"></div>
+
+                    </div>
+
+                </div>
+                <div class="carousel-item ">
+                    <div class="steps-container squares w-100 mt-lg-5 mb-lg-3 ">
+                        <div [ngStyle]="{background:isDarkTheme?'white':'black'}" class="step-line"></div>
+                        <div [ngStyle]="{background:isDarkTheme?'#111111':'#ECF0FF'}"
+                            [ngClass]="isDarkTheme?'step-square':'step-square-light'" data-aos="fade-up">Step 02
+                        </div>
+                        <div [ngStyle]="{background:isDarkTheme?'white':'black'}" class="step-line"></div>
+                    </div>
+                    <div class="steps-container-1 gap-lg-3 w-100 mt-5 ">
+                        <div class="step-title w-25 mt-3 mt-lg-0 d-flex justify-content-center align-items-center flex-column">
+                            <p data-aos="fade-up" class="w-50 fw-lighter fs-5 text-align-center">Strategy Development</p>
+                            <p data-aos="fade-up" class="w-75 fw-lighter fs-6 text-align-center"
+                                [ngStyle]="{color: isDarkTheme ? '#B5B5B5':'black'}">Based on the
+                                insights gained, Quantum crafts tailored digital marketing strategies, aligning with the
+                                client's
+                                objectives and maximizing ROI.</p>
+                        </div>
+                        <div class="step-dashed-line visually-hidden"></div>
+
+                    </div>
+
+                </div>
+                <div class="carousel-item ">
+                    <div class="steps-container squares w-100 mt-lg-5 mb-lg-3 ">
+                        <div [ngStyle]="{background:isDarkTheme?'white':'black'}" class="step-line"></div>
+                        <div [ngStyle]="{background:isDarkTheme?'#111111':'#ECF0FF'}"
+                            [ngClass]="isDarkTheme?'step-square':'step-square-light'" data-aos="fade-up">Step 03
+                        </div>
+                        <div [ngStyle]="{background:isDarkTheme?'white':'black'}" class="step-line"></div>
+                    </div>
+                    <div class="steps-container-1 gap-lg-3 w-100 mt-5 ">
+                        <div class="step-title w-25 mt-3 mt-lg-0 d-flex justify-content-center align-items-center flex-column">
+                            <p data-aos="fade-up" class="w50 fw-lighter fs-5 text-align-center">Market Research</p>
+                            <p data-aos="fade-up" class="w-75 fw-lighter fs-6 text-align-center"
+                                [ngStyle]="{color: isDarkTheme ? '#B5B5B5':'black'}">We conduct
+                                extensive market research to identify trends, opportunities, and competitor strategies to make
+                                campaigns
+                                effective.</p>
+                        </div>
+                        <div class="step-dashed-line visually-hidden"></div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="container button w-100 d-flex mt-5 align-items-center justify-content-center">
+                <button [ngStyle]="{'background':isDarkTheme?'#111111':'#ECF0FF'}"
+                    [ngClass]="isDarkTheme?'text-white':'text-black'" class="our-marketing-btn ">
+                    <i [ngClass]="isDarkTheme?'text-white':'text-black'" class="fa-solid fa-arrow-left  mx-2"
+                        href="#carouselExampleControls" role="button" data-slide="prev"></i>
+                    Our Process
+                    <i [ngClass]="isDarkTheme?'text-white':'text-black'" class="fa-solid fa-arrow-right  mx-2"
+                        href="#carouselExampleControls" role="button" data-slide="next"></i>
+                </button>
             </div>
         </div>
-
     </div>
-    <div class="steps-container squares w-100 mt-lg-5 mb-lg-3 ">
-        <div [ngStyle]="{background:isDarkTheme?'white':'black'}" class="step-line"></div>
-        <div [ngStyle]="{background:isDarkTheme?'#111111':'#ECF0FF'}"
-            [ngClass]="isDarkTheme?'step-square':'step-square-light'" data-aos="fade-up">Step 01
-        </div>
-        <div [ngStyle]="{background:isDarkTheme?'white':'black'}" class="step-line"></div>
-        <div [ngStyle]="{background:isDarkTheme?'#111111':'#ECF0FF'}"
-            [ngClass]="isDarkTheme?'step-square':'step-square-light'" data-aos="fade-down">Step 02
-        </div>
-        <div [ngStyle]="{background:isDarkTheme?'white':'black'}" class="step-line"></div>
-        <div [ngStyle]="{background:isDarkTheme?'#111111':'#ECF0FF'}"
-            [ngClass]="isDarkTheme?'step-square':'step-square-light'" data-aos="fade-up">Step 03
-        </div>
-        <div [ngStyle]="{background:isDarkTheme?'white':'black'}" class="step-line"></div>
-    </div>
-    <div class="steps-container w-100 mt-5 ">
-        <div class="step-title w-25 mt-3 mt-lg-0 d-flex flex-column align-items-center justify-content-center">
-            <p data-aos="fade-up" class="w-50 fw-lighter fs-5 text-align-center">Client Consultation</p>
-            <p data-aos="fade-up" class="w-75 fw-lighter fs-6 text-align-center"
-                [ngStyle]="{color: isDarkTheme ? '#B5B5B5':'black'}">Quantum begins
-                by thoroughly understanding the client's goals, target audience, and unique needs through in-depth
-                consultations.</p>
-        </div>
-        <div class="step-dashed-line visually-hidden"></div>
-        <div class="step-title w-25 mt-3 mt-lg-0 d-flex justify-content-center align-items-center flex-column">
-            <p data-aos="fade-up" class="w-50 fw-lighter fs-5 text-align-center">Strategy Development</p>
-            <p data-aos="fade-up" class="w-75 fw-lighter fs-6 text-align-center"
-                [ngStyle]="{color: isDarkTheme ? '#B5B5B5':'black'}">Based on the
-                insights gained, Quantum crafts tailored digital marketing strategies, aligning with the client's
-                objectives and maximizing ROI.</p>
-        </div>
-        <div class="step-dashed-line visually-hidden"></div>
-        <div class="step-title w-25 mt-3 mt-lg-0 d-flex justify-content-center align-items-center flex-column">
-            <p data-aos="fade-up" class="w50 fw-lighter fs-5 text-align-center">Market Research</p>
-            <p data-aos="fade-up" class="w-75 fw-lighter fs-6 text-align-center"
-                [ngStyle]="{color: isDarkTheme ? '#B5B5B5':'black'}">We conduct
-                extensive market research to identify trends, opportunities, and competitor strategies to make campaigns
-                effective.</p>
-        </div>
-        <div class="step-dashed-line visually-hidden"></div>
-    </div>
-
-    <div class="container button w-100 d-flex mt-5 align-items-center justify-content-center">
-        <button [ngStyle]="{'background':isDarkTheme?'#111111':'#ECF0FF','color':isDarkTheme?'white':'black'}"
-            data-aos="fade-up" class="our-marketing-btn ">
-            <i [ngClass]="isDarkTheme?'text-white':'text-black'" class="fa-solid fa-arrow-left  mx-2"></i>
-            Our Process
-            <i [ngClass]="isDarkTheme?'text-white':'text-black'" class="fa-solid fa-arrow-right  mx-2"></i>
-        </button>
-    </div>
-
     <div class="frame-6 d-flex container">
         <div class="container w-100 h-100 my-5 d-flex flex-column justify-content-center align-items-center">
             <div data-aos="fade-up" class=" text w-100 d-flex flex-column justify-content-center align-items-center ">

@@ -17,7 +17,7 @@
 
     <div class="frame container-fluid px-0 d-flex">
         <div class="container-fluid d-flex flex-column justify-content-center my-5 px-lg-5">
-            <div class="heading d-flex justify-content-center align-items-center">
+            <div class="heading d-none d-sm-flex justify-content-center align-items-center">
                 <div class="text w-100 d-flex flex-column justify-content-center align-items-center ">
                     <div class="button my-3">
                         <button class="our-process-btn">
@@ -41,7 +41,8 @@
                         <div
                             class="step-title w-25 mt-3 mt-lg-0 d-flex flex-column align-items-center justify-content-center">
                             <p class="w-50 fw-lighter fs-5 text-align-center">Step 1</p>
-                            <p class="w-75 fw-lighter fs-6 text-align-center"[ngStyle]="{'color':isDarkTheme?'#fff':'black'}" >Patient fasts for
+                            <p class="w-75 fw-lighter fs-6 text-align-center"
+                                [ngStyle]="{'color':isDarkTheme?'#fff':'black'}">Patient fasts for
                                 several hours before swallowing the capsule</p>
                         </div>
                         <div class="step-dashed-line visually-hidden"></div>
@@ -49,14 +50,16 @@
                             class="step-title w-25 mt-3 mt-lg-0 d-flex justify-content-center align-items-center flex-column">
                             <p class="w-50 fw-lighter fs-5 text-align-center">Step 2
                             </p>
-                            <p class="w-75 fw-lighter fs-6 text-align-center" [ngStyle]="{'color':isDarkTheme?'#fff':'black'}">Patient swallow
+                            <p class="w-75 fw-lighter fs-6 text-align-center"
+                                [ngStyle]="{'color':isDarkTheme?'#fff':'black'}">Patient swallow
                                 the capsule. The capsule has an inbuilt camera.</p>
                         </div>
                         <div class="step-dashed-line visually-hidden"></div>
                         <div
                             class="step-title w-25 mt-3 mt-lg-0 d-flex justify-content-center align-items-center flex-column">
                             <p class="w50 fw-lighter fs-5 text-align-center">Step 3</p>
-                            <p class="w-75 fw-lighter fs-6 text-align-center" [ngStyle]="{'color':isDarkTheme?'#fff':'black'}">Capsule travels
+                            <p class="w-75 fw-lighter fs-6 text-align-center"
+                                [ngStyle]="{'color':isDarkTheme?'#fff':'black'}">Capsule travels
                                 through the entire gastrointestinal tract. The camera can capture 1000 images at a time.
                             </p>
                         </div>
@@ -73,6 +76,89 @@
                                 class="fa-solid fa-arrow-right  mx-2"></i>
                         </button>
                     </div>
+                </div>
+            </div>
+            <div id="carouselExampleControls" class="carousel slide d-block d-sm-none" data-ride="carousel">
+                <div class="carousel-inner ">
+                    <div class="text w-100 d-flex flex-column justify-content-center align-items-center ">
+                        <div class="button my-3">
+                            <button class="our-process-btn">
+                                Our Process
+                            </button>
+                        </div>
+                        <div class="txt w-75 text-center my-3">
+                            <h1 class="text-capitalize">How Does It Work</h1>
+                        </div>
+                    </div>
+                    <div class="carousel-item active">
+                        <div class="steps-container squares w-100 mt-lg-5 mt-4 mb-lg-3 ">
+                            <div [ngStyle]="{'background':isDarkTheme?'#fff':'black'}" class="step-line"></div>
+                            <div class="step-square">01</div>
+                            <div [ngStyle]="{'background':isDarkTheme?'#fff':'black'}" class="step-line"></div>
+                        </div>
+                        <div class="steps-container-1 gap-lg-3 w-100 mt-5 ">
+                            <div
+                                class="step-title w-25 mt-3 mt-lg-0 d-flex flex-column align-items-center justify-content-center">
+                                <p class="w-50 fw-lighter fs-5 text-align-center">Step 1</p>
+                                <p class="w-75 fw-lighter fs-6 text-align-center"
+                                    [ngStyle]="{'color':isDarkTheme?'#fff':'black'}">Patient fasts for
+                                    several hours before swallowing the capsule</p>
+                            </div>
+                            <div class="step-dashed-line visually-hidden"></div>
+
+                        </div>
+
+                    </div>
+                    <div class="carousel-item ">
+                        <div class="steps-container squares w-100 mt-lg-5 mt-4 mb-lg-3 ">
+                            <div [ngStyle]="{'background':isDarkTheme?'#fff':'black'}" class="step-line"></div>
+                            <div class="step-square">02</div>
+                            <div [ngStyle]="{'background':isDarkTheme?'#fff':'black'}" class="step-line"></div>
+
+                        </div>
+                        <div class="steps-container-1 gap-lg-3 w-100 mt-5 ">
+                            <div
+                                class="step-title w-25 mt-3 mt-lg-0 d-flex flex-column align-items-center justify-content-center">
+                                <p class="w-50 fw-lighter fs-5 text-align-center">Step 2</p>
+                                <p class="w-75 fw-lighter fs-6 text-align-center"
+                                    [ngStyle]="{'color':isDarkTheme?'#fff':'black'}">Patient swallow
+                                    the capsule. The capsule has an inbuilt camera.</p>
+                            </div>
+                            <div class="step-dashed-line visually-hidden"></div>
+
+                        </div>
+
+                    </div>
+                    <div class="carousel-item ">
+                        <div class="steps-container squares w-100 mt-lg-5 mt-4 mb-lg-3 ">
+                            <div [ngStyle]="{'background':isDarkTheme?'#fff':'black'}" class="step-line"></div>
+                            <div class="step-square">03</div>
+                            <div [ngStyle]="{'background':isDarkTheme?'#fff':'black'}" class="step-line"></div>
+
+                        </div>
+                        <div class="steps-container-1 gap-lg-3 w-100 mt-5 ">
+                            <div
+                                class="step-title w-25 mt-3 mt-lg-0 d-flex flex-column align-items-center justify-content-center">
+                                <p class="w-50 fw-lighter fs-5 text-align-center">Step 3</p>
+                                <p class="w-75 fw-lighter fs-6 text-align-center"
+                                    [ngStyle]="{'color':isDarkTheme?'#fff':'black'}">Capsule travels
+                                    through the entire gastrointestinal tract. The camera can capture 1000 images at a time.</p>
+                            </div>
+                            <div class="step-dashed-line visually-hidden"></div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="container button w-100 d-flex mt-5 align-items-center justify-content-center">
+                    <button [ngStyle]="{'background':isDarkTheme?'#111111':'#ECF0FF'}"
+                        [ngClass]="isDarkTheme?'text-white':'text-black'" class="our-marketing-btn ">
+                        <i [ngClass]="isDarkTheme?'text-white':'text-black'" class="fa-solid fa-arrow-left  mx-2"
+                            href="#carouselExampleControls" role="button" data-slide="prev"></i>
+                        Our Process
+                        <i [ngClass]="isDarkTheme?'text-white':'text-black'" class="fa-solid fa-arrow-right  mx-2"
+                            href="#carouselExampleControls" role="button" data-slide="next"></i>
+                    </button>
                 </div>
             </div>
         </div>
@@ -143,7 +229,7 @@
     </div>
 
     <div class="container desc my-5">
-        <p class=" text-align-center opacity-75 fs-5"[ngStyle]="{'color':isDarkTheme?'#fff':'black'}">
+        <p class=" text-align-center opacity-75 fs-5" [ngStyle]="{'color':isDarkTheme?'#fff':'black'}">
             AI Compare the captured image with its database. "AI can predict the future risk of your disease." AI <br>
             helps
             the doctor to predict medical events and the chance of relapse of disease and thus gives the <br> doctor

@@ -206,6 +206,9 @@
     min-width: 275px;
     justify-content: center !important;
 }
+.carousel{
+    display: none;
+}
 
 @media (max-width: 1024px) {
 
@@ -254,6 +257,16 @@
 }
 
 @media (max-width: 575.98px) {
+    .carousel{
+        display: block;
+    }
+    .our-marketing-btn {
+        padding: 15px 20px;
+    }
+
+    .our-marketing-btn>i {
+        padding: 5px;
+    }
     .our-process-btn {
         font-size: 10px;
         line-height: 20px;

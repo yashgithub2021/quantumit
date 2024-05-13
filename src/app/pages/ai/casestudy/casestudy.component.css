@@ -146,4 +146,12 @@
         font-size: 28px;
         line-height: 38px;
     }
+
+    .our-marketing-btn {
+        padding: 15px 20px;
+    }
+
+    .our-marketing-btn>i {
+        padding: 5px;
+    }
 }
