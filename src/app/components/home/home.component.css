@@ -439,7 +439,12 @@
 }
 
 .feedback {
-    font-size: 1.25rem;
+    font-size: 16px;
+}
+.profile>img{
+    width: 50px;
+    height: 50px;
+    background: white;
 }
 
 @media(min-width:1366px) and (min-height:1024px) {
@@ -674,7 +679,7 @@
     .cards {
         margin: 0px;
     }
-
+    
     .section2 {
         padding-left: 20px;
         padding-right: 15px;
