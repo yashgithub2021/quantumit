@@ -67,6 +67,16 @@
     width: 75%;
 }
 
+.service-card:hover {
+    cursor: pointer;
+    transform: translateY(-5px) scale(1.050) translateZ(0);
+    box-shadow: 0 24px 36px rgba(0, 0, 0, 0.11),
+        0 24px 46px var(--box-shadow-color);
+    transition: all 0.5s;
+}
+
+
+
 .frame-3 {
     height: auto;
     background-size: contain;
@@ -296,8 +306,9 @@
         line-height: 38px;
         text-align: center !important;
     }
-    .heading > p {
-        font-size: 12px!important;
+
+    .heading>p {
+        font-size: 12px !important;
         line-height: 16px;
     }
 
@@ -307,9 +318,11 @@
         line-height: 20px;
         padding: 5px 12px 5px 12px;
     }
-    .our-process>h1, .dev-ai{
-        font-size:22px;
-        line-height:30px;
+
+    .our-process>h1,
+    .dev-ai {
+        font-size: 22px;
+        line-height: 30px;
     }
 
     .what-we-do {
@@ -369,7 +382,8 @@
         align-items: center;
         height: 50% !important;
     }
-    .frame-4 > .container > .head > .success-desc > p {
+
+    .frame-4>.container>.head>.success-desc>p {
         font-size: 12px !important;
         line-height: 16px;
     }

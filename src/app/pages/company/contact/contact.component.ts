@@ -10,6 +10,8 @@ export class ContactComponent implements OnInit {
   isDarkMode!: boolean
   checks = ["Chatbot API", "Facial Recognition API", "Natural language processing APIs", "AWS ML Solutions"]
   faqs: any
+  isHoveringMail: boolean = true;
+  isHoveringPhone: boolean = true;
   constructor(private api: ApiService) { }
   ngOnInit(): void {
     this.darkModeCheck()

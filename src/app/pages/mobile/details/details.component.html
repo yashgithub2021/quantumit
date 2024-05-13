@@ -65,7 +65,7 @@
 
             <div class="what-we-do w-100 h-100 mt-5">
                 <div class="row w-100 h-100  g-4 align-items-center">
-                    <div *ngFor="let data of androidService.services" class="col-lg-4 col-md-6 col-12">
+                    <div *ngFor="let data of androidService.services" class="col-lg-4 col-md-6 col-12 hover-card">
                         <div [ngStyle]="{background:isDarkTheme?'#111111':'#ECF0FF'}"
                             class="col-details px-5 ai-data py-4 py-lg-2 d-flex align-items-start justify-content-evenly flex-column">
                             <div class="title w-75">
@@ -311,42 +311,42 @@
                     </h1>
                 </div>
             </div>
-            <div class="tech-stack my-5">
-                <div class="d-flex flex-wrap w-100 justify-content-between gap-5 m-auto  align-items-center">
+            <div class="tech-stack my-5 w-100">
+                <div class="d-flex flex-wrap w-100 justify-content-between m-auto  align-items-center">
                     <div [ngStyle]="{'background':isDarkTheme?'#111111':'#ECF0FF'}"
-                        class="stack d-flex justify-content-between">
+                        class="stack d-flex justify-content-between hover-card">
                         <div class="logo">
                             <img src="../../../../assets/dm/services/figma.svg" alt="">
                         </div>
-                        <div class="name">
-                            <h4>Figma</h4>
+                        <div class="name align-content-center">
+                            <h4 class="mb-0 ">Figma</h4>
                         </div>
                     </div>
                     <div [ngStyle]="{'background':isDarkTheme?'#111111':'#ECF0FF'}"
-                        class="stack d-flex justify-content-between">
+                        class="stack d-flex justify-content-between hover-card">
                         <div class="logo">
                             <img src="../../../../assets/dm/services/vs.svg" alt="">
                         </div>
-                        <div class="name">
-                            <h4>Visual Studio</h4>
+                        <div class="name align-content-center">
+                            <h4 class="mb-0 ">Visual Studio</h4>
                         </div>
                     </div>
                     <div [ngStyle]="{'background':isDarkTheme?'#111111':'#ECF0FF'}"
-                        class="stack d-flex justify-content-between">
+                        class="stack d-flex justify-content-between hover-card">
                         <div class="logo">
                             <img src="../../../../assets/dm/services/react.svg" alt="">
                         </div>
-                        <div class="name">
-                            <h4>React</h4>
+                        <div class="name align-content-center">
+                            <h4 class="mb-0 ">React</h4>
                         </div>
                     </div>
                     <div [ngStyle]="{'background':isDarkTheme?'#111111':'#ECF0FF'}"
-                        class="stack d-flex justify-content-between">
+                        class="stack d-flex justify-content-between hover-card">
                         <div class="logo">
                             <img src="../../../../assets/dm/services/git.svg" alt="">
                         </div>
-                        <div class="name">
-                            <h4>Gitlab</h4>
+                        <div class="name align-content-center">
+                            <h4 class="mb-0 ">Gitlab</h4>
                         </div>
                     </div>
                 </div>
