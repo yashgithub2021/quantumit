@@ -90,7 +90,11 @@ button {
     /* Add transition property */
 }
 
-.si-one:hover::before {
+.si-one:hover::before,
+.fa-phone-volume,
+.fa-envelope-open,
+.fa-location-pin,
+.fa-fax {
     animation: vibrate 1s ease;
 }
 

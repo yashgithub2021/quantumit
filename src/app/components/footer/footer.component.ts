@@ -43,11 +43,7 @@ export class FooterComponent implements OnInit {
       link: 'fax:+1.212.9876543'
     },
   ]
-  isHovering: boolean = false;
-
-  toggleEnvelopeHovered() {
-    this.isHovering = !this.isHovering;
-  }
+  isHovering: boolean[] = [];
 
   pageLabels = [
     {
@@ -116,6 +112,9 @@ export class FooterComponent implements OnInit {
   ngOnInit(): void {
     this.darkModeCheck()
     console.log(this.isDarkMode)
+    this.contacts.forEach(() => {
+      this.isHovering.push(false);
+    });
   }
 
   darkModeCheck() {

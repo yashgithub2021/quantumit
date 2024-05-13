@@ -15,19 +15,23 @@
                 </div>
             </div>
             <div class="contact-info-div">
-                <div class="contanct-info-+content d-flex align-items-center" *ngFor="let contact of contacts">
+                <div class="contanct-info-+content d-flex align-items-center"
+                    *ngFor="let contact of contacts; let i = index">
                     <button
-                        [ngStyle]="{background:isDarkMode?'#343538':'linear-gradient(91.58deg, #43BAFF 0.52%, #7044B3 100%)'}"
-                        class="btn rounded-circle text-align-center"><i (mouseenter)="isHovering = true"
-                            (mouseleave)="isHovering = false" class="m-0 fs-6 fa-solid w-100 text-align-center"
-                            [class]="isHovering ? contact.hoverIcon : contact.icon"></i></button>
+                        [ngStyle]="{background: isDarkMode ? '#343538' : 'linear-gradient(91.58deg, #43BAFF 0.52%, #7044B3 100%)'}"
+                        class="btn rounded-circle text-align-center" (mouseenter)="isHovering[i] = true"
+                        (mouseleave)="isHovering[i] = false">
+                        <i class="m-0 fs-6 fa-solid w-100 text-align-center"
+                            [class]="isHovering[i] ? contact.hoverIcon : contact.icon"></i>
+                    </button>
                     <div>
                         <label for="btn" class="text-secondary">
                             {{contact.label}}
                             <p>
                                 <a [ngStyle]="{'color': isDarkMode ? 'white' : 'black'}"
-                                    class="m-0  text-decoration-none fw-semibold contact-value"
-                                    [href]="contact.link">{{contact.value}}</a>
+                                    class="m-0  text-decoration-none fw-semibold contact-value" [href]="contact.link"
+                                    (mouseenter)="isHovering[i] = true"
+                                    (mouseleave)="isHovering[i] = false">{{contact.value}}</a>
                             </p>
                         </label>
                     </div>

@@ -97,7 +97,7 @@
 
             <div class="what-we-do w-100 h-100 mt-lg-5">
                 <div class="row w-100 h-100  g-4 align-items-center">
-                    <div data-aos="slide-up" *ngFor="let data of aiService" class="col-lg-4 col-12">
+                    <div data-aos="slide-up" *ngFor="let data of aiService" class="service-card col-lg-4 col-12">
                         <div [ngClass]="isDarkTheme?'ai-bg-dark':'ai-bg-light'"
                             class="col-details px-5 ai-data py-lg-2 d-flex align-items-start justify-content-evenly flex-column">
                             <div data-aos="slide-up" class="serial-no">
@@ -253,6 +253,7 @@
         </div>
     </div>
 </div>
+<app-form></app-form>
 <!-- <ngx-spinner bdColor="rgba(0, 0, 0, 0.8)" size="medium" color="#fff" type="ball-running-dots" [fullScreen]="true">
     <p style="color: white"> Loading... </p>
 </ngx-spinner><app-form></app-form> -->

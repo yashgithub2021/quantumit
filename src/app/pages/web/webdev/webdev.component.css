@@ -75,6 +75,14 @@
     width: 100vw;
 }
 
+.hover-card:hover {
+    cursor: pointer;
+    transform: translateY(-5px) scale(1.050) translateZ(0);
+    box-shadow: 0 24px 36px rgba(0, 0, 0, 0.11),
+        0 24px 46px var(--box-shadow-color);
+    transition: all 0.5s;
+}
+
 .step-num {
     padding: 15px;
     border-left: 1px solid #43BAFF;
@@ -202,9 +210,10 @@
 }
 
 @media (min-width:1180px) and (max-width:1366px) {
-    .app-details-container{
-        justify-content: center!important;
+    .app-details-container {
+        justify-content: center !important;
     }
+
     .project-two .app-details-container {
         padding-left: 30px;
     }

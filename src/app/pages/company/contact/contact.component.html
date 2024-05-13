@@ -8,15 +8,19 @@
                             <h1 class="text-white">Get In Touch</h1>
                             <div
                                 class="socials d-flex flex-wrap w-50 justify-content-lg-evenly gap-3 justify-content-center">
-                                <div class="email d-flex justify-content-start align-items-end">
-                                    <i class="fa-solid fa-envelope mx-2 fs-5"></i>
+                                <div (mouseenter)="isHoveringMail = false" (mouseleave)="isHoveringMail= true"
+                                    class="email d-flex justify-content-start align-items-end">
+                                    <i *ngIf="isHoveringMail" class="fa-solid fa-envelope mx-2 fs-5"></i>
+                                    <i *ngIf="!isHoveringMail" class="fa-solid fa-envelope-open mx-2 fs-5"></i>
                                     <a style="color: white;" href="mailto:sales@quantumitinnovation.com"
                                         class="mb-0 fw-bold mx-2 text-decoration-underline ">
                                         sales@quantumitinnovation.com
                                     </a>
                                 </div>
-                                <div class="phone d-flex justify-content-start align-items-end">
-                                    <i class="fa-solid fa-phone mx-2 fs-5"></i>
+                                <div (mouseenter)="isHoveringPhone = false" (mouseleave)="isHoveringPhone= true"
+                                    class="phone d-flex justify-content-start align-items-end">
+                                    <i *ngIf="isHoveringPhone" class="fa-solid fa-phone mx-2 fs-5"></i>
+                                    <i *ngIf="!isHoveringPhone" class="fa-solid fa-phone-volume mx-2 fs-5"></i>
                                     <a style="color: white;" href="tel:91 971 799 8517"
                                         class="mb-0 fw-bold mx-2 text-decoration-none ">+ 91
                                         971 799 8517</a>
@@ -57,7 +61,7 @@
             <div class="d-flex justify-content-center align-items-center">
                 <div class="addr-cont gap-3 d-flex flex-wrap justify-content-center">
                     <div [ngStyle]="{'background':isDarkMode?'#111111':'#ECF0FF'}"
-                        class="address p-4  rounded-3 align-items-center flex-column gap-4 d-flex justify-content-center">
+                        class="address p-4 hover-card rounded-3 align-items-center flex-column gap-4 d-flex justify-content-center">
                         <div class="image">
                             <img src="../../../../assets/contact/USA.svg" alt="">
                         </div>
@@ -71,7 +75,7 @@
                         </div>
                     </div>
                     <div [ngStyle]="{'background':isDarkMode?'#111111':'#ECF0FF'}"
-                        class="address p-4  rounded-3 align-items-center flex-column gap-4 d-flex justify-content-center">
+                        class="address p-4 hover-card rounded-3 align-items-center flex-column gap-4 d-flex justify-content-center">
                         <div class="image">
                             <img src="../../../../assets/contact/IND.svg" alt="">
                         </div>
@@ -85,7 +89,7 @@
                         </div>
                     </div>
                     <div [ngStyle]="{'background':isDarkMode?'#111111':'#ECF0FF'}"
-                        class="address p-4  rounded-3 align-items-center flex-column gap-4 d-flex justify-content-center">
+                        class="address p-4 hover-card rounded-3 align-items-center flex-column gap-4 d-flex justify-content-center">
                         <div class="image">
                             <img src="../../../../assets/contact/uk.svg" alt="">
                         </div>
@@ -134,12 +138,16 @@
                         </h2>
                         <div [id]="'faqCollapse' + i" class="accordion-collapse collapse">
                             <div class="accordion-body">
-                                <p class="opacity-50">
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                    Ipsum
-                                    been the industry's standard dummy text ever since the
-                                </p>
-                                <div class="list">
+
+                                <div class="question">
+                                    <h4>{{faq.question}}?</h4>
+                                </div>
+                                <div class="ans">
+                                    <p class="opacity-50">
+                                        {{faq.answer}}
+                                    </p>
+                                </div>
+                                <div *ngIf="faq.keyPoints[0].length>0 " class="list">
                                     <ul class="list-unstyled">
                                         <li class="d-flex align-items-center list-unstyled my-3"
                                             *ngFor="let check of faq.keyPoints">
@@ -148,14 +156,6 @@
                                             <p class="fw-light m-0 list-check">{{check}}</p>
                                         </li>
                                     </ul>
-                                </div>
-                                <div class="question">
-                                    <h4>{{faq.question}}?</h4>
-                                </div>
-                                <div class="ans">
-                                    <p class="opacity-50">
-                                        {{faq.answer}}
-                                    </p>
                                 </div>
                             </div>
                         </div>
