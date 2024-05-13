@@ -308,8 +308,8 @@
     }
 
     .heading>p {
-        font-size: 12px !important;
-        line-height: 16px;
+        font-size: 16px !important;
+        line-height: 23px;
     }
 
 
@@ -383,8 +383,13 @@
         height: 50% !important;
     }
 
-    .frame-4>.container>.head>.success-desc>p {
+    <<<<<<< HEAD .frame-4>.container>.head>.success-desc>p {
         font-size: 12px !important;
         line-height: 16px;
+
+        =======.frame-4>.container>.head>.success-desc>p {
+            font-size: 16px !important;
+            line-height: 23px;
+            >>>>>>>238ed53c6d965324ca3553744465a9189db4e4a8
+        }
     }
-}

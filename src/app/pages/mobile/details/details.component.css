@@ -335,11 +335,16 @@
     }
 
     .step-title p {
-        font-size: 12px!important;
+        font-size: 12px !important;
     }
 
-    .steps-container {
+    .steps-container2 {
         align-items: start;
+    }
+
+    .txt p {
+        font-size: 16px;
+        line-height: 23px;
     }
 
 }

@@ -113,7 +113,9 @@ figure {
     }
 
     .desc>p {
-        font-size: 12px;
+        font-size: 16px;
+        line-height: 23px;
+        text-align: center;
     }
 
     .miletone-number {
@@ -142,6 +144,11 @@ figure {
     .frame-1 .frame-2-head .txt>h1 {
         font-size: 28px;
         line-height: 38px;
+    }
+
+    .frame-1,
+    .frame-4 {
+        padding: 1rem !important;
     }
 
 
