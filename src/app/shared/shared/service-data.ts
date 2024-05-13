@@ -480,6 +480,159 @@ export const mobileGameDevelopment = {
     ]
 };
 
+export const internetOfThings = {
+    title1: "Revolutionize your business with",
+    title2: "Internet of Things Solutions",
+    img1: "../../../../assets/mobile/service/img1.png",
+    img2: "../../../../assets/mobile/service/img2.png",
+    descriptionOne: [
+        "Unlock the potential of connected devices and data with Quantum IT's Internet of Things (IoT) services, aimed at revolutionizing your business operations and enhancing decision-making capabilities.",
+        "In today's interconnected world, IoT technology enables seamless communication between devices, systems, and users, opening up new opportunities for innovation and efficiency.",
+    ],
+
+    descriptionTwo: [
+        "Seeking reliable IoT solutions?",
+        "Quantum IT offers a comprehensive range of IoT services tailored to meet the unique requirements of your business.",
+        "Our team of IoT specialists excels in designing and implementing IoT solutions that drive tangible outcomes, from optimizing processes to improving customer experiences and creating new revenue streams",
+        " With a focus on innovation and customer satisfaction, we are committed to helping your business harness the full potential of IoT technology."
+    ],
+    serviceTitle: "Key Features of IoT Solutions",
+    services: [
+        {
+            num: "01.",
+            title: "Device Connectivity",
+            desc: "Connect and manage a diverse range of devices, sensors, and equipment to gather real-time data and insights for informed decision-making.",
+            img: '../../../../assets/mobile/service/service-icon1.svg'
+        },
+        {
+            num: "02.",
+            title: "Data Analytics",
+            desc: "Analyze vast amounts of IoT-generated data to uncover valuable insights, trends, and patterns that drive business intelligence and operational efficiency",
+            img: '../../../../assets/mobile/service/md.svg'
+        },
+        {
+            num: "03.",
+            title: "Remote Monitoring and Control",
+            desc: "Monitor and control IoT devices and systems remotely, enabling proactive maintenance, troubleshooting, and optimization.",
+            img: '../../../../assets/mobile/service/mad.svg'
+        },
+        {
+            num: "04.",
+            title: "Scalability",
+            desc: "Scale your IoT deployments effortlessly to accommodate growing data volumes, device counts, and business requirements, ensuring flexibility and adaptability.",
+            img: '../../../../assets/mobile/service/mat.svg'
+        },
+        {
+            num: "05.",
+            title: "Security and Compliance",
+            desc: " Implement robust security measures and compliance protocols to safeguard IoT data, devices, and networks from cyber threats and regulatory risks.",
+            img: '../../../../assets/mobile/service/ema.svg'
+        },
+        {
+            num: "06.",
+            title: "Integration Capabilities",
+            desc: "Integrate IoT solutions seamlessly with your existing IT infrastructure and business applications to streamline workflows and maximize ROI.",
+            img: '../../../../assets/mobile/service/mgd.svg'
+        }
+    ],
+    methodologyBtnTitle: "Our Approach",
+    methodologyTitle: "Innovate with our proven <br> methodologies:",
+    steps: [
+        {
+            num: 1,
+            title: " Comprehensive Assessment",
+            desc: "We conduct a thorough assessment of your requirements, existing infrastructure, and IoT readiness to identify opportunities and challenges."
+        },
+        {
+            num: 2,
+            title: "Tailored Solutions",
+            desc: "We design customized IoT solutions that align with your business objectives and technological capabilities."
+        },
+        {
+            num: 3,
+            title: "Agile Development",
+            desc: "We follow agile development methodologies to iteratively design, develop, and deploy IoT solutions."
+        }
+    ]
+};
+
+export const roboticProcessAutomation = {
+    title1: "Emerging Technology of",
+    title2: "Robotic Process Automation",
+    img1: "../../../../assets/mobile/service/img1.png",
+    img2: "../../../../assets/mobile/service/img2.png",
+    descriptionOne: [
+        "Revolutionize your business processes with Quantum IT's Robotic Process Automation (RPA) services, designed to streamline operations, increase efficiency, and drive productivity.",
+        "In today's digital age, businesses are constantly seeking ways to automate repetitive tasks and optimize workflows.",
+        "Our RPA solutions leverage cutting-edge technology to automate manual processes, allowing your team to focus on more strategic initiatives and value-added activities."
+    ],
+
+    descriptionTwo: [
+        "Looking for reliable RPA solutions?",
+        "Quantum IT offers a comprehensive suite of RPA services tailored to meet the unique needs of your business.",
+        "Our team of RPA experts specializes in implementing automation solutions that deliver tangible results, from cost savings to increased accuracy and faster turnaround times.",
+        " With a focus on innovation and excellence, we are committed to helping your business unlock the full potential of RPA technology."
+    ],
+    serviceTitle: "Significant Features of RPA",
+    services: [
+        {
+            num: "01.",
+            title: "Process Automation",
+            desc: "Automate repetitive tasks and workflows across your organization to increase efficiency and reduce manual errors, freeing up time for employees to focus on high-value activities.",
+            img: '../../../../assets/mobile/service/service-icon1.svg'
+        },
+        {
+            num: "02.",
+            title: "Scalability",
+            desc: "Scale your automation initiatives seamlessly as your business grows, allowing you to adapt to changing demands and maximize ROI from your RPA investments.",
+            img: '../../../../assets/mobile/service/md.svg'
+        },
+        {
+            num: "03.",
+            title: "Cognitive Automation",
+            desc: "Harness the power of AI and machine learning to automate complex tasks that require cognitive capabilities, such as natural language processing and decision-making.",
+            img: '../../../../assets/mobile/service/mad.svg'
+        },
+        {
+            num: "04.",
+            title: "Integration Capabilities",
+            desc: "Integrate RPA seamlessly with your existing IT infrastructure and applications, ensuring smooth data flow and interoperability across systems.",
+            img: '../../../../assets/mobile/service/mat.svg'
+        },
+        {
+            num: "05.",
+            title: "Analytics and Reporting",
+            desc: "Gain valuable insights into your automation workflows with advanced analytics and reporting tools, allowing you to track performance, identify bottlenecks, and optimize processes.",
+            img: '../../../../assets/mobile/service/ema.svg'
+        },
+        {
+            num: "06.",
+            title: "Compliance and Security",
+            desc: "Ensure compliance with industry regulations and data security standards by implementing robust security measures and audit trails within your RPA workflows",
+            img: '../../../../assets/mobile/service/mgd.svg'
+        }
+    ],
+    methodologyBtnTitle: "Our Approach",
+    methodologyTitle: "Innovate with our proven <br> methodologies:",
+    steps: [
+        {
+            num: 1,
+            title: "Understanding Your Business",
+            desc: "It allows us to develop RPA solutions that are tailored to your specific needs."
+        },
+        {
+            num: 2,
+            title: "Strategic Planning",
+            desc: "We develop strategic automation plans that prioritize your business objectives and target areas for automation."
+        },
+        {
+            num: 3,
+            title: "Continuous Improvement",
+            desc: "We continuously monitor and optimize your RPA solutions, making data-driven adjustments to enhance performance."
+        }
+    ]
+};
+
 // =============================================Digital Marketing Services=====================================================================================================================================================================
 
 export const seoServices = {

@@ -128,7 +128,7 @@ export class HomeComponent implements OnInit {
   fetchReviews() {
     this.api.getReviews()
       .subscribe((res: any) => {
-        this.reviews = res.reviews
+        this.reviews = res.faqs
         console.log(this.reviews.rating)
       })
   }

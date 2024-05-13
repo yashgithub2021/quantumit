@@ -4,7 +4,7 @@
                 <div class="top-wrap w-auto">
                         <a class="custom-logo-link navbar-brand m-0 m-lg-auto">
                                 <img routerLink="/" height="49" [ngClass]="{ 'black-image': !isDarkTheme }" width="114"
-                                        src="../../../assets/logo-white 1.png">
+                                        src="../../../assets/logo-white.png">
                         </a>
                         <button class="navbar-toggler border-0" type="button" data-toggle="collapse"
                                 data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -210,12 +210,12 @@
                                                                         Intelligence</a></li>
                                                         <li><a [ngClass]="isDarkTheme?'text-white':'text-black'"
                                                                         class="dropdown-item border-0"
-                                                                        routerLink="artificial-intelligence"
+                                                                        [routerLink]="['app-development', 'details', 'iot']"
                                                                         (click)="closeNavbar()">Internet of Things</a>
                                                         </li>
                                                         <li><a [ngClass]="isDarkTheme?'text-white':'text-black'"
                                                                         class="dropdown-item border-0"
-                                                                        routerLink="artificial-intelligence"
+                                                                        [routerLink]="['app-development', 'details', 'roboticProcessAutomation']"
                                                                         (click)="closeNavbar()">Robotic Process
                                                                         Automation</a></li>
                                                 </ul>

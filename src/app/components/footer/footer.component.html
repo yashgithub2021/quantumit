@@ -5,7 +5,7 @@
             <div class="quantum">
                 <div routerLink="/" class="logo">
                     <img [ngStyle]="{'filter': isDarkMode ? 'none' : 'invert(1)'}" height="49" width="114"
-                        src="../../../assets/logo-white 1.png" alt="">
+                        src="../../../assets/logo-white.png" alt="">
                 </div>
                 <div class="tagline">
                     <p class="text-secondary">Quantum IT Innovation stands at the forefront of digital transformation,
@@ -18,8 +18,9 @@
                 <div class="contanct-info-+content d-flex align-items-center" *ngFor="let contact of contacts">
                     <button
                         [ngStyle]="{background:isDarkMode?'#343538':'linear-gradient(91.58deg, #43BAFF 0.52%, #7044B3 100%)'}"
-                        class="btn rounded-circle text-align-center"><i
-                            class="m-0 fs-6 fa-solid w-100 text-align-center" [class]="contact.icon"></i></button>
+                        class="btn rounded-circle text-align-center"><i (mouseenter)="isHovering = true"
+                            (mouseleave)="isHovering = false" class="m-0 fs-6 fa-solid w-100 text-align-center"
+                            [class]="isHovering ? contact.hoverIcon : contact.icon"></i></button>
                     <div>
                         <label for="btn" class="text-secondary">
                             {{contact.label}}

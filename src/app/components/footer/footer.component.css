@@ -18,35 +18,61 @@ button {
     width: 48px;
 }
 
+.fa-solid {
+    transition: all 1s ease;
+}
+
 .social-icon {
     height: 100px;
     width: 170px;
     border-radius: 6px;
     position: relative;
+    overflow: hidden;
 }
 
-@keyframes bounce {
+@keyframes vibrate {
+    0% {
+        transform: rotate(0deg);
+    }
 
-    0%,
-    100%,
-    20%,
-    50%,
-    80% {
-        -webkit-transform: translateY(0);
-        -ms-transform: translateY(0);
-        transform: translateY(0)
+    10% {
+        transform: rotate(-5deg);
+    }
+
+    20% {
+        transform: rotate(5deg);
+    }
+
+    30% {
+        transform: rotate(0deg);
     }
 
     40% {
-        -webkit-transform: translateY(-30px);
-        -ms-transform: translateY(-30px);
-        transform: translateY(-30px)
+        transform: rotate(5deg);
+    }
+
+    50% {
+        transform: rotate(-5deg);
     }
 
     60% {
-        -webkit-transform: translateY(-15px);
-        -ms-transform: translateY(-15px);
-        transform: translateY(-15px)
+        transform: rotate(0deg);
+    }
+
+    70% {
+        transform: rotate(-5deg);
+    }
+
+    80% {
+        transform: rotate(5deg);
+    }
+
+    90% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(-5deg);
     }
 }
 
@@ -60,15 +86,20 @@ button {
     background-position: top right;
     border-radius: 0px 6px 0 0;
     opacity: 20%;
-    transition: background-position 0.5s ease;
     overflow: hidden;
     /* Add transition property */
 }
 
 .si-one:hover::before {
-    animation: bounce 1s ease;
-    overflow: hidden;
-    /* Change background position on hover */
+    animation: vibrate 1s ease;
+}
+
+.si-two:hover::before {
+    animation: vibrate 1s ease;
+}
+
+.si-three:hover::before {
+    animation: vibrate 1s ease;
 }
 
 
@@ -102,6 +133,15 @@ button {
 
 .contact-value {
     font-size: 1.25rem;
+    transition: all 1s ease;
+}
+
+.contact-value:hover,
+.pages p:hover {
+    /* color: black !important; */
+    background: linear-gradient(91.58deg, #43BAFF 0.52%, #7044B3 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 @media(max-width:1366px) {
