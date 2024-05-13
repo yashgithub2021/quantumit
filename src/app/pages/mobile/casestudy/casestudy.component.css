@@ -151,12 +151,15 @@ figure {
         padding: 1rem !important;
     }
 
-    .frame-3{
+    .frame-3 {
         background: linear-gradient(90deg, #43BAFF 0%, #7141B1 100%);
     }
-    .frame-3> .app-details > .details {
+
+    .frame-3>.app-details>.details {
         align-items: unset;
     }
+
     .result-heading {
         padding: 3rem 2rem;
     }
+}
