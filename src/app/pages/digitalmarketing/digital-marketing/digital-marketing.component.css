@@ -353,6 +353,10 @@
 .blank {
     display: none;
 }
+.align-middle>.learn:hover{
+    color:rgb(48, 48, 201);
+    transition: all 0.3s ease-in-out;
+}
 
 @media(max-width:1180px) {
     .frame-4>.container>.heading>.text {
@@ -364,10 +368,6 @@
     .tagline {
         font-size: 60px;
         line-height: 70px;
-    }
-
-    .frame-6>.container {
-        height: 75vh !important;
     }
 }
 

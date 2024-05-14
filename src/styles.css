@@ -76,7 +76,7 @@ i {
 
 .hover-card:hover {
     cursor: pointer;
-    transform: translateY(-15px) translateZ(0);
+    transform: translateY(-5px) scale(1.03) translateZ(0);
     box-shadow: 0 24px 36px rgba(0, 0, 0, 0.11),
         0 24px 46px var(--box-shadow-color);
     transition: all 0.5s ease-in-out;

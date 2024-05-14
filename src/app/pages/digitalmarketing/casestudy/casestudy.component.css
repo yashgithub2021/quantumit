@@ -115,6 +115,14 @@
 .jetbrains {
     font-family: 'Mono';
 }
+.app-details > .details > .detail:not(:last-child) {
+    border-right: 3px solid white;
+    padding-right: 4%;
+    padding-left: 4%;
+}
+.app-details > .details > .detail {
+    padding-left: 4%;
+}
 
 @media(max-width:768px) {
     .frame-2-head .desc {
@@ -175,6 +183,10 @@
     }
     .heading> .frame-2-head > div:first-child {
         padding-bottom: 0px;
+    }
+    .app-details>.details>.detail:not(:last-child) {
+        border-right: 3px solid white;
+        padding-right: 3%;
     }
     
 }

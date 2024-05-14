@@ -130,6 +130,14 @@ figure {
 .app-details>.details>.detail>.title>.linear-text {
     white-space: nowrap;
 }
+.app-details > .details > .detail:not(:last-child) {
+    border-right: 3px solid white;
+    padding-right: 4%;
+    padding-left: 4%;
+}
+.app-details > .details > .detail {
+    padding-left: 4%;
+}
 
 @media(max-width:1366px) {
     .banner {
@@ -196,5 +204,9 @@ figure {
         flex-wrap: wrap;
         align-items: center;
         justify-content: center !important;
+    }
+    .app-details > .details > .detail:not(:last-child) {
+        padding-right: 3%;
+        padding-left: 0%;
     }
 }

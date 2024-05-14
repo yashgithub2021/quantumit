@@ -159,7 +159,7 @@
     }
 
     .project {
-        height: 50vh;
+        height: 55vh;
     }
 }
 
@@ -192,7 +192,7 @@
     }
 
     .project {
-        height: 60vh;
+        height: 32vh;
     }
 
     .app-details {
@@ -201,6 +201,8 @@
 
     .app-details-container {
         height: 100% !important;
+        width: 100%!important;
+        margin-left: 20px!important;
     }
 }
 
@@ -225,7 +227,7 @@
     }
 
     .project {
-        height: 60vh;
+        height: 65vh;
     }
 
     .project-container {

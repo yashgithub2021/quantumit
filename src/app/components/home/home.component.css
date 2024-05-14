@@ -339,7 +339,7 @@
     border-radius: 20px;
     overflow: hidden;
     -webkit-transition: 8s ease-in-out;
-    transition: 8s ease-in-out;
+    transition: 3s ease-in-out;
 }
 
 .project-one:hover::before,
