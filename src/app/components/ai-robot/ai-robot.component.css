@@ -184,6 +184,9 @@
     color: #4b4ba1;
     transition: all 0.5s ease-in-out;
 }
+.sub-heading{
+    font-size: 18px;
+}
 
 @media (min-width: 768px) and (max-width: 1024px) {
     .frame-1 {
@@ -329,5 +332,8 @@
 
     .milestone-img {
         height: 35px;
+    }
+    .sub-heading{
+        font-size: 16px;
     }
 }

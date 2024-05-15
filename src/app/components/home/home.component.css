@@ -471,6 +471,9 @@
     height: 50px;
     background: white;
 }
+.sub-heading{
+    font-size: 24px!important;
+}
 
 @media(min-width:1366px) and (min-height:1024px) {
     .section3>.left-side {

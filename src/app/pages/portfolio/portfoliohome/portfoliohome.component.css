@@ -73,7 +73,38 @@
     top: 20%;
     cursor: pointer;
 }
-
+.miletone-number h1{
+    font-size: 68px; 
+    font-weight: bolder;
+}
+.miletone-title p{
+    font-size: 24px;
+}
+.desc p{
+    font-size: 24px;
+    line-height: 34px;
+}
+.app-details h3{
+    font-size: 42px;
+}
+.app-details p{
+    font-size: 24px;
+}
+.button button{
+    font-size: 18px;
+}
+@media(max-width:768px){
+    .miletone-number h1{
+        font-size: 50px; 
+        font-weight: bolder;
+    }
+    .miletone-title p{
+        font-size: 18px;
+    }
+    .button button{
+        font-size: 16px;
+    }
+}
 @media (max-width: 575.98px) {
 
     .numbers-section {
@@ -108,5 +139,25 @@
         font-size: 10px;
         line-height: 20px;
         padding: 5px 12px 5px 12px;
+    }
+    .button button{
+        font-size: 12px;
+    }
+    .desc p{
+        font-size: 16px;
+        line-height: 23px;
+    }
+    .miletone-number h1{
+        font-size: 28px; 
+        font-weight: bolder;
+    }
+    .miletone-title p{
+        font-size: 16px;
+    }
+    .app-details h3{
+        font-size: 22px;
+    }
+    .app-details p{
+        font-size: 16px;
     }
 }

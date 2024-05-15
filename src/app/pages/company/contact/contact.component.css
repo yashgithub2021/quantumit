@@ -72,7 +72,11 @@
 .num-cont {
     padding: 82px 60px;
 }
-
+.num-cont>div h1{
+    font-size: 68px;
+    line-height: 78px;
+    font-weight: bolder;
+}
 .our-process-btn {
     padding: 7px 15px 7px 15px;
     gap: 0px;
@@ -148,6 +152,13 @@
     border-radius: 10px;
 
 }
+@media(max-width:768px){
+    .num-cont>div h1{
+        font-size: 50px;
+        line-height: 60px;
+        font-weight: bolder;
+    }
+}
 
 @media (min-width:575.98px) and (max-width:768px) {
 
@@ -159,6 +170,11 @@
 @media (max-width: 575.98px) {
     .num-cont {
         padding: 10px;
+    }
+    .num-cont>div h1{
+        font-size: 24px;
+        line-height: 30px;
+        font-weight: bolder;
     }
 
     .w-50,

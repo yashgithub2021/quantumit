@@ -139,6 +139,15 @@
 .view-more .fa-arrow-right {
     color: #43BAFF;
 }
+.app-details .details{
+    font-size:18px!important;
+}
+.frame-4 > .container> .head> .success-desc > p {
+    font-size:24px;
+}
+.frame-4 > .container > .head> .success-desc{
+	width:100%!important;
+}
 
 @media(min-width:1024px) and (max-width:1366px) {
     .project-one>.project-container>.app-image>.project-img-container {
@@ -350,11 +359,11 @@
     }
 
     .miletone-number {
-        font-size: 15px !important;
+        font-size: 22px !important;
     }
 
     .miletone-title {
-        font-size: 10px !important;
+        font-size: 16px !important;
     }
 
     .buttons-milestone {
@@ -388,5 +397,8 @@
     .frame-4>.container>.head>.success-desc>p {
         font-size: 16px !important;
         line-height: 23px;
+    }
+    .app-details .details{
+        font-size:16px!important;
     }
 }
