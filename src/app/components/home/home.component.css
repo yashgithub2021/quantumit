@@ -55,8 +55,8 @@
 }
 
 .light::before {
-    animation: fadeInOpacityLight 5.5s ease-in-out forwards infinite;
-    background-image: url('../../../assets/backgroungimages/home-light.png');
+    /* animation: fadeInOpacityLight 5.5s ease-in-out forwards infinite;
+    background-image: url('../../../assets/backgroungimages/home-light.png'); */
     /* animation: none; */
     z-index: -1;
     content: '';
@@ -82,7 +82,7 @@
 
 .tagline {
     font-size: 68px;
-    line-height: 78px;
+    line-height: 80px;
 }
 
 .btn {
@@ -102,6 +102,10 @@
     transition: all 0.6s ease;
 
     /* width: 100%; */
+}
+
+.cards p {
+    font-size: 18px;
 }
 
 .cards:hover {
@@ -155,8 +159,8 @@
 
 
 .section3-tagline {
-    font-size: 56px;
-    line-height: 70px;
+    font-size: 50px;
+    line-height: 60px;
 }
 
 .right-side>.container>.btn-container {
@@ -229,15 +233,23 @@
 }
 
 .sec4-headline {
-    width: 60%;
+    width: 75%;
+}
+
+.sec4-headline h1, .sec6-text h1, .heading .text .txt h1 {
+    font-size: 42px;
+    line-height: 48px;
+    font-weight: 700;
 }
 
 .miletone-number {
     font-size: 48px;
+    line-height: 48px;
 }
 
 .miletone-title {
     font-size: 14px;
+    line-height: 16.8px;
 }
 
 .services-section {
@@ -352,7 +364,13 @@
 
 .project-one-details {
     bottom: 0%;
-    height: 50%
+    height: 50%;
+    align-items: end!important;
+}
+.decs{
+    font-size: 16px;
+    line-height: 28px;
+    padding-bottom: 10px;
 }
 
 
@@ -462,23 +480,58 @@
 .customer-feedback>.cf-cont-light {
     background: none;
 }
+.customer-name h5{
+    font-size: 20px;
+    line-height: 33px;
+
+}
+.customer-name p{
+    font-size:16px;
+    line-height:16px;
+}
 
 .feedback {
-    font-size: 16px;
+    font-size: 22px;
+    line-height: 33px;
 }
-.profile>img{
+
+.profile>img {
     width: 50px;
     height: 50px;
     background: white;
 }
-.sub-heading{
-    font-size: 24px!important;
+
+.sub-heading {
+    font-size: 21px !important;
+    line-height: 27px;
 }
 
-@media(min-width:1366px) and (min-height:1024px) {
+.service-card .title h4 {
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.service-card .description p {
+    font-size: 16px;
+    line-height: 25px;
+}
+.project-title{
+    font-size: 32px;
+    line-height: 40.32px;
+}
+
+@media(min-width:1181px) {
     .section3>.left-side {
-        height: 56vh;
-        width: 70%;
+        height: 80vh;
+        width: 75%;
+        position: relative;
+    }
+}
+
+@media(min-width:1181px) and (min-height:1024px) {
+    .section3>.left-side {
+        height: 57vh;
+        width: 75%;
         position: relative;
     }
 
@@ -708,7 +761,7 @@
     .cards {
         margin: 0px;
     }
-    
+
     .section2 {
         padding-left: 20px;
         padding-right: 15px;
@@ -810,9 +863,21 @@
         font-size: 15px;
     }
 
-    .decs {
+    .decs{
         font-size: 10px;
+        line-height: 18px;
+        padding-bottom: 30px;
     }
+    .customer-name h5{
+        font-size: 12px;
+        line-height: 18px;
+    
+    }
+    .customer-name p{
+        font-size:10px;
+        line-height:12px;
+    }
+     
 
     .lm-btn {
         font-size: 10px;
@@ -904,7 +969,7 @@
         align-items: center !important;
     }
 
-    .section5>.container>.heading>.text>.txt>h1 {
+    .section5>.container>.heading>.text>.txt>h1 , .sec6-text h1 {
         font-size: 22px !important;
         line-height: 30px;
     }
@@ -990,6 +1055,10 @@
 
     .cards {
         padding: 20px 14px;
+    }
+
+    .cards p {
+        font-size: 12px;
     }
 
     .our-service-btn {
