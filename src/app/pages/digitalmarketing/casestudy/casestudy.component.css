@@ -115,7 +115,32 @@
 .jetbrains {
     font-family: 'Mono';
 }
+.app-details > .details > .detail:not(:last-child) {
+    border-right: 3px solid white;
+    padding-right: 4%;
+    padding-left: 4%;
+}
+.app-details > .details > .detail {
+    padding-left: 4%;
+}
+.txt>h1 {
+    font-size: 42px;
+    line-height: 50px;
+}
 
+.txt>h2 {
+    font-size: 42px;
+    line-height: 50px;
+}
+
+.frame-1 .txt>h1 {
+    font-size: 68px;
+    line-height: 78px;
+    font-weight: bolder;
+}
+.desc p {
+    font-size: 24px;
+}
 @media(max-width:768px) {
     .frame-2-head .desc {
         justify-content: center !important;
@@ -175,6 +200,14 @@
     }
     .heading> .frame-2-head > div:first-child {
         padding-bottom: 0px;
+    }
+    .app-details>.details>.detail:not(:last-child) {
+        border-right: 3px solid white;
+        padding-right: 3%;
+    }
+    .desc p {
+        font-size: 16px;
+        line-height: 23px;
     }
     
 }

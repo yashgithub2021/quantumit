@@ -120,6 +120,21 @@
     justify-content: center;
 }
 
+.step-title p:last-child {
+    font-size: 18px!important;
+    opacity: 0.5;
+}
+
+.detaile p {
+    font-size: 24px;
+    line-height: 34px;
+}
+
+.frame .heading .txt h1 {
+    font-size: 42px;
+    line-height: 52px;
+}
+
 @media (max-width: 575.98px) {
 
     .w-75,

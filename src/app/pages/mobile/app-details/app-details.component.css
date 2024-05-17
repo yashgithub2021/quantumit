@@ -21,8 +21,8 @@
     object-fit: cover;
 }
 .sec4-headline>.service-tagline{
-    font-size: 38px;
-    line-height: 48px;
+    font-size: 42px;
+    line-height: 52px;
 }
 .desc{
     width: 100%!important;
@@ -37,6 +37,11 @@
         border-right: 3px solid white;
         padding-right: 8%;
     }
+    .app-details > .details > .detail:hover {
+        
+        transform: scale(1.05);
+        transition: transform 0.5s ease;
+    }
 }
 @media (max-width: 1024px) {
 
@@ -47,6 +52,9 @@
 
     .desc-txt {
         font-size: 15px;
+    }.sec4-headline>.service-tagline{
+        font-size: 38px;
+        line-height: 48px;
     }
 }
 @media (max-width:575.98px){

@@ -14,7 +14,11 @@
 .black-image {
     filter: invert(1);
 }
-
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
 
 .menu-item-1814 {
     /* background: #141414; */
@@ -124,6 +128,9 @@ li {
     background-color: #333333;
 
 }
+.custom-logo-link>img{
+    width:190px;
+}
 
 @media(min-width:1024px) {
     .form-check {
@@ -133,12 +140,16 @@ li {
     .custom-logo-link {
         padding-left: 60px
     }
+    
 }
 
 @media(max-width:1180px) {
 
     ul>li {
         white-space: nowrap;
+    }
+    .custom-logo-link>img{
+        width:150px;
     }
 }
 
@@ -204,6 +215,9 @@ li {
         padding-bottom: 18px;
         text-transform: uppercase;
     }
+    .custom-logo-link>img{
+        width:130px;
+    }
 }
 
 @media (max-width: 575.98px) {
@@ -223,5 +237,8 @@ li {
     .custom-logo-link {
         padding-left: 16px;
         justify-content: start;
+    }
+    .custom-logo-link>img{
+        width:120px;
     }
 }

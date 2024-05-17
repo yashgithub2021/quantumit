@@ -35,8 +35,8 @@
     object-fit: cover;
 }
 .sec4-headline>.service-tagline{
-    font-size: 38px;
-    line-height: 48px;
+    font-size: 42px;
+    line-height: 52px;
 }
 .desc{
     width: 100%!important;
@@ -63,6 +63,10 @@
 
     .desc-txt {
         font-size: 15px;
+    }
+    .sec4-headline>.service-tagline{
+        font-size: 38px;
+        line-height: 48px;
     }
 }
 @media (max-width:575.98px){

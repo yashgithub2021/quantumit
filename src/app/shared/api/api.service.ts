@@ -64,7 +64,7 @@ export class ApiService {
   }
 
   getFAQ() {
-    return this.http.get(`${this.baseUrl}api/faq/faq`)
+    return this.http.get(`${this.baseUrl}api/faq/faq`);
   }
 
   saveContactForm(form: any) {

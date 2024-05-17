@@ -1,8 +1,8 @@
 export const androidService = {
     title1: "Android App",
     title2: "Development Solutions",
-    img1: "../../../../assets/mobile/service/img1.png",
-    img2: "../../../../assets/mobile/service/img2.png",
+    img1: "../../../../assets/services/ios_android/representation-user-experience-interface-design (1) (1).jpg",
+    img2: "../../../../assets/services/ios_android/representation-user-experience-interface-design (2).jpg",
     descriptionOne: [
         "Our Android app development services offer a comprehensive solution for businesses seeking to establish a strong presence on the Android platform. With the widespread adoption of Android devices worldwide, having a customized mobile application tailored to this ecosystem is essential for reaching and engaging with a diverse audience.",
         "Our team of experienced Android app developers leverages the latest technologies and best practices to build robust, scalable, and user-friendly applications.",
@@ -81,8 +81,8 @@ export const androidService = {
 export const iOsService = {
     title1: "Crafting Exceptional",
     title2: "iOS Experiences",
-    img1: "../../../../assets/mobile/service/ios1.png",
-    img2: "../../../../assets/mobile/service/ios2.png",
+    img1: "../../../../assets/services/ios_android/representations-user-experience-interface-design (1).jpg",
+    img2: "../../../../assets/services/ios_android/team-of-ux-ui-designer-mobile-development-experien-2023-11-27-05-07-31-utc (1).jpg",
     descriptionOne: [
         "Embark on a journey of innovation with our iOS app development services, designed to propel your business to new heights on the iOS platform. With iOS devices being widely embraced worldwide, a bespoke mobile application tailored to this ecosystem is imperative for connecting with a diverse audience.",
         "Our adept team of iOS app developers harnesses cutting-edge technologies and industry insights to craft dynamic, scalable, and intuitive applications. Whether you seek a streamlined utility app or a sophisticated enterprise solution, we possess the acumen to deliver outcomes that captivate users and drive business growth.",
@@ -161,8 +161,8 @@ export const iOsService = {
 export const swiftAppDevelopment = {
     title1: "Transforming Businesses with",
     title2: "Swift App Development",
-    img1: "../../../../assets/mobile/service/swift1.png",
-    img2: "../../../../assets/mobile/service/swift2.jpeg",
+    img1: "../../../../assets/services/shift_app_dev/men_and_women_chatting_on_the_app.jpg",
+    img2: "../../../../assets/services/shift_app_dev/representation-user-experience-interface-design (2).jpg",
     descriptionOne: [
         "Embark on a journey of innovation with our Swift app development services, meticulously designed to propel your business forward in the mobile landscape. With Swift gaining prominence as a versatile and powerful programming language, having a custom-built mobile application is crucial for reaching diverse audiences.",
         "Our skilled team utilizes cutting-edge technologies to craft dynamic, scalable, and intuitive applications. Whether you need a utility app or a sophisticated enterprise solution, we deliver captivating user experiences that drive business growth.",
@@ -241,8 +241,8 @@ export const swiftAppDevelopment = {
 export const crossPlatformAppDevelopment = {
     title1: "Revolutionizing Cross Platform",
     title2: "App Development",
-    img1: "../../../../assets/mobile/service/img1.png",
-    img2: "../../../../assets/mobile/service/img2.png",
+    img1: "../../../../assets/services/cross_platform/banner-4-1200x630.jpg",
+    img2: "../../../../assets/services/cross_platform/cross-platform-app-d.jpg",
     descriptionOne: [
         "Step into the realm of innovation with our cross-platform app development services, tailored to elevate your brand presence across multiple platforms. As the demand for apps across various operating systems grows, having a versatile solution becomes paramount for reaching diverse audiences. ",
         "Our adept team harnesses cutting-edge technologies to create dynamic, scalable, and intuitive applications that seamlessly adapt to different platforms. Whether you need a utility app or a sophisticated enterprise solution, we deliver captivating user experiences that drive business growth.",
@@ -322,8 +322,8 @@ export const crossPlatformAppDevelopment = {
 export const iPadAppDevelopment = {
     title1: "Empowering Businesses with",
     title2: "iPad App Development",
-    img1: "../../../../assets/mobile/service/img1.png",
-    img2: "../../../../assets/mobile/service/img2.png",
+    img1: "../../../../assets/services/ipad_app_deve/10_iPad_Apps_for_Engineers-Techn.jpg",
+    img2: "../../../../assets/services/ipad_app_deve/a833bbcd2062c2b407db5d92d2ed4824.jpg",
     descriptionOne: [
         "Step into the realm of innovation with our iPad app development services, designed to elevate your brand presence on the iOS platform and beyond. As the demand for versatile apps across multiple platforms grows, having a tailored solution becomes essential for reaching diverse audiences. Our skilled team leverages cutting-edge technologies to create dynamic, scalable, and intuitive applications that seamlessly adapt to the iPad's unique features and other platforms.",
         "Whether you need a utility app or a sophisticated enterprise solution, we deliver captivating user experiences that drive business growth.",
@@ -402,8 +402,8 @@ export const iPadAppDevelopment = {
 export const mobileGameDevelopment = {
     title1: "Exciting Adventures with",
     title2: "Mobile Game Development",
-    img1: "../../../../assets/mobile/service/img1.png",
-    img2: "../../../../assets/mobile/service/img2.png",
+    img1: "../../../../assets/services/mobile_game_dev/image-closeup-of-focused-man-playing-video-game-on-2023-11-27-04-59-04-utc.jpg",
+    img2: "../../../../assets/services/mobile_game_dev/person-is-taking-picture-city-while-holding-their-smartphone.jpg",
     descriptionOne: [
         "Expand your gaming horizons with our comprehensive suite of Quantum IT’s services designed to support your game throughout its lifecycle. From post-launch updates and feature enhancements to community engagement and monetization strategies, we provide the ongoing support and guidance you need to ensure the long-term success and profitability of your game. With Quantum IT Innovation by your side, you can confidently navigate the dynamic landscape of mobile gaming and achieve your goals of creating a standout game that resonates with players worldwide.",
         "With the growing popularity of mobile gaming, having a captivating and engaging game is essential for success. Our skilled team of developers utilizes cutting-edge technologies to create immersive and entertaining gaming experiences that keep players coming back for more. Step into the exciting world of mobile gaming with our mobile game development services, crafted to bring your gaming ideas to life and captivate audiences across various platforms.",
@@ -639,6 +639,8 @@ export const seoServices = {
     serviceTitle: "Top-notch",
     serviceTitle2: "search engine optimization",
     title1: "Boost your organic ranking with top-tier SEO services",
+    img1:"../../../assets/services/seo/1690.jpg",
+    img2:"../../../assets/services/seo/7378453_32010.jpg",
     descriptionOne: [
         "Transform your online presence and achieve higher organic rankings with our comprehensive suite of SEO services, meticulously crafted to meet the unique demands of the USA, UK and Indian market.",
         "Our expert team utilizes cutting-edge strategies and industry best practices to optimize your website, enhance visibility, and drive targeted traffic, ensuring sustainable growth and success in the competitive digital landscape."
@@ -700,6 +702,8 @@ export const payPerClickServices = {
     serviceTitle: "Maximize ROI with",
     serviceTitle2: "Pay Per Click",
     title1: "Maximize ROI with Pay Per Click",
+    img1:"../../../assets/services/pay_per_click/45929.jpg",
+    img2:"../../../assets/services/pay_per_click/Wavy_Tech-15_Single-06.jpg",
     descriptionOne: [
         "Elevate your online advertising game with Quantum IT's top-notch Pay Per Click (PPC) services, a cornerstone of our comprehensive digital marketing solutions.",
         "Seamlessly tailored to meet the unique demands of businesses in the USA, UK, and India, our PPC strategies are designed to boost your visibility, drive targeted traffic, and maximize your ROI in today's competitive digital landscape.",
@@ -761,6 +765,8 @@ export const socialMediaServices = {
     serviceTitle: "Enhance Your Brand's Presence with",
     serviceTitle2: "Social Media Marketing",
     title1: "Enhance Your Brand's Presence with Social Media Marketing",
+    img1:"../../../assets/services/pay_per_click/45929.jpg",
+    img2:"../../../assets/services/pay_per_click/Wavy_Tech-15_Single-06.jpg",
     descriptionOne: [
         "Step into the realm of social media marketing with Quantum IT's top-tier services, a pivotal component of our comprehensive digital marketing strategies.",
         "Carefully crafted to cater to the diverse needs of businesses across the USA, UK, and India, our social media marketing solutions are designed to elevate your online presence, engage your target audience, and drive tangible results in today's dynamic digital landscape."
@@ -819,6 +825,8 @@ export const contentMarketingServices = {
     serviceTitle: "Boost Your Brand's Visibility with",
     serviceTitle2: "Content Marketing",
     title1: "Boost Your Brand's Visibility with Content Marketing",
+    img1:"../../../assets/services/pay_per_click/45929.jpg",
+    img2:"../../../assets/services/pay_per_click/Wavy_Tech-15_Single-06.jpg",
     descriptionOne: [
         "Immerse yourself in the world of content marketing with Quantum IT's premium services, a cornerstone of our comprehensive digital marketing solutions.",
         "Meticulously tailored to meet the diverse needs of businesses across the USA, UK, and India, our content marketing strategies are crafted to elevate your online presence, engage your target audience, and drive tangible results in today's competitive digital landscape."
@@ -878,6 +886,8 @@ export const websiteDevServices = {
     serviceTitle: "Elevate Your Online Presence with",
     serviceTitle2: "Website Development",
     title1: "Elevate Your Online Presence with Website Development",
+    img1:"../../../assets/services/pay_per_click/45929.jpg",
+    img2:"../../../assets/services/pay_per_click/Wavy_Tech-15_Single-06.jpg",
     descriptionOne: [
         "Immerse yourself in the realm of website development with Quantum IT's premium services, a cornerstone of our comprehensive digital solutions.",
         "Meticulously tailored to meet the diverse needs of businesses across the USA, UK, and India, our website development strategies are crafted to enhance your online presence, engage your target audience, and drive tangible results in today's competitive digital landscape."
@@ -936,6 +946,8 @@ export const mobileDevServices = {
     serviceTitle: "Journey of Innovation with",
     serviceTitle2: "Mobile App Development",
     title1: "Journey of Innovation with Mobile App Development",
+    img1:"../../../assets/services/pay_per_click/45929.jpg",
+    img2:"../../../assets/services/pay_per_click/Wavy_Tech-15_Single-06.jpg",
     descriptionOne: [
         "Dive into the world of mobile app development with Quantum IT's cutting-edge services, an essential component of our holistic digital solutions.",
         "Meticulously tailored to meet the diverse needs of businesses across the USA, UK, and India, our mobile app development strategies are designed to elevate your brand presence, engage your audience, and drive tangible results in today's dynamic digital landscape."
@@ -994,6 +1006,8 @@ export const emailMarketingServices = {
     serviceTitle: "Maximize Engagement with",
     serviceTitle2: "Email Marketing",
     title1: "Maximize Engagement with Email Marketing",
+    img1:"../../../assets/services/pay_per_click/45929.jpg",
+    img2:"../../../assets/services/pay_per_click/Wavy_Tech-15_Single-06.jpg",
     descriptionOne: [
         "Enhance your online marketing efforts with Quantum IT's top-tier email marketing services, an integral part of our comprehensive digital marketing solutions.",
         "Carefully crafted to meet the unique needs of businesses across various industries, our email marketing strategies are designed to amplify engagement, nurture leads, and maximize your return on investment (ROI) in today's competitive digital landscape."
@@ -1051,6 +1065,8 @@ export const conversionRateOptimizationServices = {
     serviceTitle: "Maximize Conversions with",
     serviceTitle2: "Conversion Rate Optimization",
     title1: "Conversion Rate Optimization",
+    img1:"../../../assets/services/pay_per_click/45929.jpg",
+    img2:"../../../assets/services/pay_per_click/Wavy_Tech-15_Single-06.jpg",
     descriptionOne: [
         "Elevate your digital marketing strategy with Quantum IT's top-notch Conversion Rate Optimization (CRO) services, an essential component of our comprehensive digital marketing solutions.",
         "Meticulously tailored to meet the unique needs of businesses in various industries, our CRO strategies are crafted to enhance user experience, increase conversions, and maximize your return on investment (ROI) in today's competitive digital landscape."
@@ -1108,6 +1124,8 @@ export const paidSearchAdvertisingServices = {
     serviceTitle: "Maximize Results with",
     serviceTitle2: "Paid Search Advertising",
     title1: "Maximize Results with Paid Search Advertising",
+    img1:"../../../assets/services/pay_per_click/45929.jpg",
+    img2:"../../../assets/services/pay_per_click/Wavy_Tech-15_Single-06.jpg",
     descriptionOne: [
         "Elevate your online advertising game with Quantum IT's top-notch Paid Search Advertising services, a pivotal component of our comprehensive digital marketing solutions.",
         "Tailored to meet the unique demands of businesses in diverse industries, our Paid Search Advertising strategies are meticulously crafted to boost visibility, drive targeted traffic, and deliver measurable results in today's competitive digital landscape."
@@ -1168,6 +1186,8 @@ export const phpDevelopmentServices = {
     serviceTitle: "Unleash the Power of",
     serviceTitle2: "PHP Development",
     title1: "Unleash the Power of PHP Development",
+    img1:"../../../assets/services/Php_dev/7040859.jpg",
+    img2:"../../../assets/services/Php_dev/programmer-outsource-developer-team-coding-technol-2023-11-27-05-33-16-utc.jpg",
     descriptionOne: [
         "Explore the world of PHP development with Quantum IT's expertise, an integral part of our comprehensive web development solutions.",
         "Tailored to meet the diverse needs of businesses across the USA, UK, and India, our PHP development services are designed to empower your online presence, streamline processes, and drive impactful results in today's competitive digital landscape."
@@ -1225,6 +1245,8 @@ export const dotNetDevelopmentServices = {
     serviceTitle: "Unleash the Potential of",
     serviceTitle2: ".NET Development",
     title1: "Unleash the Potential of .NET Development",
+    img1:"../../../assets/services/dot_net_developer/dotnet_iso_1.jpg",
+    img2:"../../../assets/services/dot_net_developer/net-performance-problems.jpg",
     descriptionOne: [
         "Experience the power of .NET development with Quantum IT's expert services, a cornerstone of our comprehensive software development solutions.",
         "Tailored to meet the diverse needs of businesses across the globe, our .NET development services are designed to deliver robust, scalable, and secure software solutions that drive efficiency and innovation in today's digital landscape."
@@ -1282,6 +1304,8 @@ export const rubyOnRailsDevelopmentServices = {
     serviceTitle: "Unleash the Power of",
     serviceTitle2: "Ruby on Rails (ROR) Development",
     title1: "Unleash the Power of Ruby on Rails (ROR) Development",
+    img1:"../../../assets/services/ror_dev/10_Best_Ruby_Gems_for_Ruby_on_Ra.jpg",
+    img2:"../../../assets/services/ror_dev/Ruby_On_Rails_Web_Development_Co.jpg",
     descriptionOne: [
         "Experience the dynamic capabilities of Ruby on Rails (ROR) development with Quantum IT's expert services, a cornerstone of our comprehensive software development solutions.",
         "Tailored to meet the diverse needs of businesses worldwide, our ROR development services are designed to deliver robust, scalable, and secure web applications that drive innovation and efficiency in today's digital landscape."
@@ -1339,6 +1363,8 @@ export const nodejsDevelopmentServices = {
     serviceTitle: "Unleash the Power of",
     serviceTitle2: "Node.js Development",
     title1: "Unleash the Power of Node.js Development",
+    img1:"../../../assets/services/nodejs_dev/Nodejs-Application-Development.jpg",
+    img2:"../../../assets/services/nodejs_dev/nodejs.jpg",
     descriptionOne: [
         "Explore the dynamic capabilities of Node.js development with Quantum IT's expert services, a cornerstone of our comprehensive software development solutions.",
         "Tailored to meet the diverse needs of businesses worldwide, our Node.js development services are engineered to deliver robust, scalable, and high-performance web applications that drive innovation and efficiency in today's digital landscape."
@@ -1396,6 +1422,8 @@ export const joomlaDevelopmentServices = {
     serviceTitle: "Unleash the Power of",
     serviceTitle2: "Joomla Development",
     title1: "Unleash the Power of Joomla Development",
+    img1:"../../../assets/services/joomla_dev/Joomla-development-company.jpg",
+    img2:"../../../assets/services/joomla_dev/Joomla-Development.jpg",
     descriptionOne: [
         "Discover the dynamic capabilities of Joomla development with Quantum IT's expert services, a cornerstone of our comprehensive software development solutions.",
         "Tailored to meet the diverse needs of businesses worldwide, our Joomla development services are engineered to deliver robust, scalable, and feature-rich web applications that drive innovation and efficiency in today's digital landscape."

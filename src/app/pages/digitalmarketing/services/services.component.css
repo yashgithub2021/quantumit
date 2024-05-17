@@ -177,10 +177,24 @@
     border: 1px solid #5E5A5A6E
 }
 
-.tech-stack>div {
-    gap: 10px;
+.frame-5>.container>.tech-stack>div {
+    grid-gap: 20px;
+    justify-content: center!important;
 }
-
+.tech-stack > div > .stack {
+    min-width: 295px;
+    justify-content: center !important;
+}
+.brief p{
+    font-size: 18px;
+}
+.frame-1 .frame-2-head .txt > h1{
+    font-size: 68px;
+    line-height: 78px;
+}
+.sub-heading{
+    font-size: 24px;
+}
 @media (max-width: 1366px) {
     .text>.txt {
         margin-top: 20px !important;
@@ -188,9 +202,6 @@
 }
 
 @media(max-width:1180px) {
-    .frame-5>.container>.tech-stack>div {
-        grid-gap: 20px;
-    }
 
     .text>.txt {
         margin-top: 20px !important;
@@ -257,7 +268,10 @@
 }
 
 @media(max-width:768px) {
-
+    .frame-1 .frame-2-head .txt > h1{
+        font-size: 50px;
+        line-height: 55px;
+    }
     .frame-2>.service-section {
         padding-left: 5px;
     }
@@ -271,6 +285,13 @@
     .txt>h1 {
         font-size: 22px;
         line-height: 30px;
+    }
+    .brief p{
+        font-size: 16px;
+    }
+    .frame-1 .frame-2-head .txt > h1{
+        font-size: 28px;
+        line-height: 38px;
     }
 
     .frame-1 .txt>h1 {
@@ -359,5 +380,8 @@
 
     .our-marketing-btn>i {
         padding: 5px;
+    }
+    .sub-heading{
+        font-size: 16px;
     }
 }

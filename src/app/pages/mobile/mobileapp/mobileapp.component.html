@@ -9,7 +9,7 @@
                         <h1 class="tagline text-center text-md-start fw-bolder w-lg-50">Premier
                             <span class="linear-text">Mobile App Development </span>Innovations
                         </h1>
-                        <p class="fs-5 text-align-center text-lg-left ">
+                        <p class="fs-4 text-align-center text-lg-left ">
                             Our Mobile App Development services redefine the digital landscape, pushing boundaries with
                             revolutionary solutions that drive success.
                         </p>
@@ -46,7 +46,7 @@
                         </h1>
                     </div>
 
-                    <div data-aos="fade-up" class="w-75 my-3">
+                    <div data-aos="fade-up" class=" our-process-content w-75 my-3">
                         <h3 class="fw-light">What We Do</h3>
                     </div>
 
@@ -103,7 +103,7 @@
                             <div data-aos="slide-up" class="serial-no">
                                 <h3 class="fw-light" style="color: #43BAFF;">{{data?.num}}</h3>
                             </div>
-                            <div data-aos="slide-up" class="title w-75">
+                            <div data-aos="slide-up" class="title w-100">
                                 <h4 class="">{{data?.title}}</h4>
                             </div>
                             <div data-aos="slide-up" class="desc w-100">
@@ -126,7 +126,7 @@
                         within 24 hours.</div>
                 </div>
                 <div class="buttons-milestone d-flex justify-content-start">
-                    <button (click)="scrollToFooter()" class="btn-lm btn-primary mx-3 px-lg-4 p-2 py-lg-3 ">Get In
+                    <button (click)="scrollToFooter()" class="btn-lm btn-primary mx-3 px-lg-4 p-2 py-lg-2 "style="white-space:nowrap;">Get In
                         Touch</button>
                 </div>
             </div>
@@ -166,8 +166,11 @@
                                     <div class="name">
                                         <h2>{{projects[0]?.name}}</h2>
                                     </div>
-                                    <div class="details fw-lighter text-align-center text-lg-start fs-5">
+                                    <!-- <div class="details fw-lighter text-align-center text-lg-start fs-5">
                                         {{(projects[0]?.description.length>100)? (projects[0]?.description | slice:0:100)+'...':(projects[0]?.description)}}
+                                    </div> -->
+                                    <div class="details fw-lighter text-align-center text-lg-start fs-4">
+                                        {{projects[0]?.description | truncateAtPoint}}
                                     </div>
                                     <div [routerLink]="'app-details/' + projects[0]?._id" (click)="scrollToTop()"
                                         class="view-more fw-light d-flex align-items-center">
@@ -197,7 +200,7 @@
                                     <div class="name">
                                         <h2>{{projects[1]?.name}}</h2>
                                     </div>
-                                    <div class="details text-align-center text-lg-start fw-lighter fs-5">
+                                    <div class="details text-align-center text-lg-start fw-lighter fs-4">
 
                                         {{(projects[1]?.description.length>100)? (projects[1]?.description | slice:0:100)+'...':(projects[1]?.description)}}
                                     </div>
@@ -229,7 +232,7 @@
                                     <div class="name">
                                         <h2>{{projects[2]?.name}}</h2>
                                     </div>
-                                    <div class="details text-align-center text-lg-start fw-lighter fs-5">
+                                    <div class="details text-align-center text-lg-start fw-lighter fs-4">
                                         {{(projects[2]?.description.length>100)? (projects[2]?.description |
                                         slice:0:100)+'...':(projects[2]?.description)}}
                                     </div>

@@ -8,7 +8,7 @@
                     </button>
                 </div>
                 <div class="txt w-100 mt-3">
-                    <h1 class="text-align-center text-lg-start">
+                    <h1 class="text-align-center fw-bolder text-lg-start">
                         <span class="linear-text text-decoration-underline">{{androidService.title1}} </span>
                         {{androidService.title2}}
                     </h1>
@@ -72,7 +72,7 @@
                                 <h5 class="">{{data.title}}</h5>
                             </div>
                             <div class="desc w-100">
-                                <p style="color: #8990AC; line-height:30px">{{data.desc}}</p>
+                                <p style="color: #8990AC;">{{data.desc}}</p>
                             </div>
                             <div class="image-container">
                                 <img [src]="data.img" alt="Image" class="corner-image">
@@ -112,8 +112,8 @@
                         <ng-container *ngFor="let step of androidService.steps">
                             <div
                                 class="step-title w-100 mt-3 mt-lg-0 d-flex flex-column align-items-center justify-content-center">
-                                <p class="w-50 fw-lighter fs-5 text-align-center">{{step.title}}</p>
-                                <p class="w-75 fw-lighter fs-6 text-align-center" style="color: #B5B5B5;">{{step.desc}}
+                                <p class="w-50 fw-lighter fs-4 text-align-center">{{step.title}}</p>
+                                <p class="w-75 fw-lighter text-align-center" style="color: #B5B5B5;font-size: 18px;">{{step.desc}}
                                 </p>
                             </div>
                             <div class="step-dashed-line visually-hidden"></div>
@@ -173,8 +173,8 @@
                         <ng-container>
                             <div
                                 class="step-title w-100 mt-3 mt-lg-0 d-flex flex-column align-items-center justify-content-center">
-                                <p class="w-50 fw-lighter fs-5 text-align-center">{{step.title}}</p>
-                                <p class="w-75 fw-lighter fs-6 text-align-center" style="color: #B5B5B5;">{{step.desc}}
+                                <p class="w-50 fw-lighter fs-4 text-align-center">{{step.title}}</p>
+                                <p class="w-75 fw-lighter text-align-center" style="color: #B5B5B5;font-size:18px;">{{step.desc}}
                                 </p>
                             </div>
                             <div class="step-dashed-line visually-hidden"></div>
@@ -210,14 +210,14 @@
                     </h1>
                 </div>
                 <div class="txt w-100 mt-3 mt-lg-0">
-                    <p class="text-align-center text-lg-start text-capitalize">we rank your website at top of google
+                    <p class="text-align-center text-lg-start text-capitalize sub-heading">we rank your website at top of google
                         Everest
                     </p>
                 </div>
             </div>
             <div class="container w-100 d-flex">
                 <div class="processes w-100 d-flex flex-column">
-                    <div class="process d-flex ">
+                    <div class="process d-flex hover-card ">
                         <div class="logo mx-3">
                             <div class="process-square">
                                 <img src="../../../../assets/dm/services/obj.svg" alt="">
@@ -232,7 +232,7 @@
 
                         </div>
                     </div>
-                    <div class="process d-flex ">
+                    <div class="process d-flex hover-card ">
                         <div class="logo mx-3">
                             <div class="process-square">
                                 <img src="../../../../assets/mobile/service/gps.svg" alt="">
@@ -247,7 +247,7 @@
 
                         </div>
                     </div>
-                    <div class="process d-flex ">
+                    <div class="process d-flex hover-card ">
                         <div class="logo mx-3">
                             <div class="process-square">
                                 <img src="../../../../assets/dm/services/comp.svg" alt="">
@@ -262,7 +262,7 @@
 
                         </div>
                     </div>
-                    <div class="process d-flex ">
+                    <div class="process d-flex hover-card ">
                         <div class="logo mx-3">
                             <div class="process-square">
                                 <img src="../../../../assets/mobile/service/xamp.svg" alt="">
@@ -277,7 +277,7 @@
 
                         </div>
                     </div>
-                    <div class="process d-flex ">
+                    <div class="process d-flex hover-card ">
                         <div class="logo mx-3">
                             <div class="process-square">
                                 <img src="../../../../assets/mobile/service/pay.svg" alt="">
@@ -292,7 +292,7 @@
 
                         </div>
                     </div>
-                    <div class="process d-flex ">
+                    <div class="process d-flex hover-card ">
                         <div class="logo mx-3">
                             <div class="process-square">
                                 <img src="../../../../assets/dm/services/comp.svg" alt="">
@@ -307,7 +307,7 @@
 
                         </div>
                     </div>
-                    <div class="process d-flex ">
+                    <div class="process d-flex hover-card ">
                         <div class="logo mx-3">
                             <div class="process-square">
                                 <img src="../../../../assets/mobile/service/watch.svg" alt="">
@@ -322,7 +322,7 @@
 
                         </div>
                     </div>
-                    <div class="process d-flex ">
+                    <div class="process d-flex hover-card ">
                         <div class="logo mx-3">
                             <div class="process-square">
                                 <img src="../../../../assets/mobile/service/port.svg" alt="">

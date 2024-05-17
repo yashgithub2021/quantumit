@@ -37,18 +37,22 @@ export class DigitalMarketingComponent implements OnInit {
     },
   ]
 
+
   our_stories = [
     {
-      name: "Goldmiths Corpo Engagement rates.",
-      num: "+30%",
+      name: " Online Plants NZ Organic Traffic",
+      num: "+319k",
+      types:['Organic Engagement', 'SEO', 'Marketing']
     },
     {
-      name: "Goldmiths Corpo Engagement rates.",
-      num: "+30%",
+      name: "Seanautic Marine Inc. Africa Organic Traffic",
+      num: "+34.7k",
+      types:['Keyword Ranking', 'SEO', 'Marketing']
     },
     {
-      name: "Goldmiths Corpo Engagement rates.",
-      num: "+30%",
+      name: "Diva Beauty Organic Traffic",
+      num: "+991k",
+      types:['Keyword Ranking', 'SEO', 'Marketing']
     },
   ]
 

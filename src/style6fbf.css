@@ -1045,7 +1045,7 @@ h1 {
         width: 100%;
         max-width: 1400px;
         border-bottom: 1px solid #0000000d;
-        padding-bottom: 8px;
+        /* padding-bottom: 8px; */
     }
 
     .navbar-fixed-anim .primary-menu-inner {

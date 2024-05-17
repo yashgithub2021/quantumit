@@ -66,7 +66,22 @@ figure {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
+.frame-2-head .txt > h1{
+    font-size: 42px;
+}
+.frame-1 .frame-2-head .txt > h1{
+    font-size: 48px;
+    line-height: 72px;
+    font-weight: 500;
+}
+.desc>p {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+}
+.list h3{
+    font-size: 24px;
+}
 @media(max-width:1366px) {
     .miletone-number {
         font-size: 40px;
@@ -92,9 +107,27 @@ figure {
     .app-details>.details {
         width: 95% !important;
     }
+    .frame-1 .frame-2-head .txt > h1{
+        font-size: 50px;
+        line-height: 60px;
+    }
+    .list h3{
+        font-size: 22px;
+    }
 }
 
 @media (max-width: 575.98px) {
+    .frame-2-head .txt > h1{
+        font-size: 24px;
+    }
+    .list h3{
+        font-size: 16px;
+    }
+    .frame-1 .frame-2-head .txt > h1{
+        font-size: 28px;
+        line-height: 38px;
+    }
+    
     .w-75 {
         width: 100% !important;
     }

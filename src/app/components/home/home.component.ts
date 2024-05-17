@@ -128,8 +128,12 @@ export class HomeComponent implements OnInit {
   fetchReviews() {
     this.api.getReviews()
       .subscribe((res: any) => {
-        this.reviews = res.faqs
+        this.reviews = res.feedbacks;
+        console.log(res);
+        console.log(this.reviews);
         console.log(this.reviews.rating)
+      },err=>{
+        console.log(err);
       })
   }
 

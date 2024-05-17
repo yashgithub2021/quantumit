@@ -353,6 +353,16 @@
 .blank {
     display: none;
 }
+.align-middle>.learn:hover{
+    color:rgb(48, 48, 201);
+    transition: all 0.3s ease-in-out;
+}
+.step-title p {
+    font-size: 18px!important;
+}
+.sub-heading{
+    font-size: 18px;
+}
 
 @media(max-width:1180px) {
     .frame-4>.container>.heading>.text {
@@ -364,10 +374,6 @@
     .tagline {
         font-size: 60px;
         line-height: 70px;
-    }
-
-    .frame-6>.container {
-        height: 75vh !important;
     }
 }
 
@@ -402,12 +408,13 @@
     }
 
     .heading>p {
-        font-size: 16px;
+        font-size: 16px!important;
         line-height: 23px;
     }
 
     td p {
-        font-size: 7px;
+        font-size: 12px;
+        color: #B5B5B5;
     }
 
     td h4 {
@@ -447,7 +454,7 @@
     }
 
     .step-title p {
-        font-size: 14px !important;
+        font-size: 12px !important;
         width: 100% !important;
     }
     .step-title p:first-child{
@@ -489,5 +496,8 @@
 
     .our-marketing-btn>i {
         padding: 5px;
+    }
+    .sub-heading{
+        font-size: 16px;
     }
 }
