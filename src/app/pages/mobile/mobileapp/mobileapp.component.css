@@ -111,10 +111,6 @@
     background-repeat: no-repeat;
 }
 
-.frame-4>.container>.head>.success-desc>p {
-    color: #999999;
-}
-
 .ai-data {
     /* box-sizing: border-box; */
     height: 400px;
@@ -124,20 +120,20 @@
 
 .ai-data .serial-no h3 {
     font-size: 24px;
-    font-weight: 500!important;
+    font-weight: 500 !important;
     line-height: 24px;
 }
 
 .ai-data .title h4 {
     font-size: 24px;
     line-height: 36px;
-    font-weight: 500!important;
+    font-weight: 500 !important;
 }
 
 .ai-data .desc p {
     font-size: 18px;
     line-height: 30px;
-    font-weight: 400!important;
+    font-weight: 400 !important;
 }
 
 .ai-bg-dark {
@@ -185,16 +181,46 @@
     color: #43BAFF;
 }
 
+.app-details .name h2 {
+    font-size: 30px;
+    line-height: 44px;
+    font-weight: 500 !important;
+}
+
 .app-details .details {
     font-size: 18px !important;
+    line-height: 32px;
+    font-weight: 400 !important;
+}
+
+.view-more {
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 500 !important;
 }
 
 .frame-4>.container>.head>.success-desc>p {
-    font-size: 24px;
+    font-size: 18px;
+    line-height: 43px;
+    font-weight: 400 !important;
+    color: #999999;
+
 }
 
 .frame-4>.container>.head>.success-desc {
     width: 100% !important;
+}
+
+.miletone-number {
+    font-size: 36px;
+    line-height: 54px;
+    font-weight: 700 !important;
+}
+
+.miletone-title {
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 400 !important;
 }
 
 @media(min-width:1024px) and (max-width:1366px) {
@@ -341,12 +367,6 @@
         padding-bottom: 51px;
         padding-top: 30px;
     }
-
-    .frame-4>.container>.head>.success-desc>p {
-        font-size: 1.25rem;
-        font-weight: lighter;
-        color: unset;
-    }
 }
 
 @media (max-width: 575.98px) {
@@ -413,10 +433,12 @@
 
     .miletone-number {
         font-size: 22px !important;
+        line-height: 32px;
     }
 
     .miletone-title {
         font-size: 16px !important;
+        line-height: 25px;
     }
 
     .buttons-milestone {
@@ -425,10 +447,6 @@
 
     .success-desc {
         width: 90% !important;
-    }
-
-    .app-details-container {
-        width: 95% !important;
     }
 
     .project-container {
@@ -448,28 +466,51 @@
     }
 
     .frame-4>.container>.head>.success-desc>p {
-        font-size: 16px !important;
-        line-height: 23px;
+        font-size: 12px !important;
+        line-height: 20px;
+    }
+
+    .app-details .name h2 {
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: 500 !important;
     }
 
     .app-details .details {
         font-size: 16px !important;
+        line-height: 25px;
+        font-weight: 400 !important;
     }
+    .app-details-container {
+        margin-left: 0px !important;
+        width:100%!important;
+    }
+
+    .view-more {
+        font-size: 12px;
+        line-height: 15px;
+        font-weight: 500 !important;
+    }
+
+    .ai-data {
+        height: 300px;
+    }
+
     .ai-data .serial-no h3 {
         font-size: 18px;
-        font-weight: 500!important;
+        font-weight: 500 !important;
         line-height: 20px;
     }
-    
+
     .ai-data .title h4 {
         font-size: 18px;
         line-height: 25px;
-        font-weight: 500!important;
+        font-weight: 500 !important;
     }
-    
+
     .ai-data .desc p {
         font-size: 12px;
-        line-height: 20px;
-        font-weight: 400!important;
+        line-height: 20px !important;
+        font-weight: 400 !important;
     }
 }
