@@ -70,13 +70,14 @@ figure {
     font-size: 42px;
 }
 .frame-1 .frame-2-head .txt > h1{
-    font-size: 68px;
-    line-height: 78px;
-    font-weight: 700;
+    font-size: 48px;
+    line-height: 72px;
+    font-weight: 500;
 }
 .desc>p {
-    font-size: 24px;
-    line-height: 30px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
 }
 .list h3{
     font-size: 24px;

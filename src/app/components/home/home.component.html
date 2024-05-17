@@ -28,7 +28,7 @@
                         class=" position-relative col cards d-flex flex-column align-items-center justify-content-evenly">
                         <i class="fa-solid fa-arrow-right  position-absolute text-secondary"
                             style="transform: rotate(325deg); top:10px; right:10px"></i>
-                        <img [src]="data.img" alt="">
+                        <img [src]="data.img" alt="logo">
                         <p>{{data.label}}</p>
                     </div>
                 </div>
@@ -228,7 +228,7 @@
     <!-- Section7 -->
     <div class="container section7 w-100 mt-5" id="customers">
         <div class="container h-100">
-            <ngb-carousel *ngIf="reviews.length > 0">
+            <ngb-carousel *ngIf="reviews?.length > 0">
                 <ng-template ngbSlide *ngFor="let review of reviews">
                     <div class="customer-feedback h-100 w-100 p-5 p-md-3" data-aos="fade-up">
                         <div [ngClass]="isDarkTheme ? 'cf-cont-dark' : 'cf-cont-light'"

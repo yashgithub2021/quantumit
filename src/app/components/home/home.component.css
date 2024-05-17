@@ -236,7 +236,7 @@
     width: 75%;
 }
 
-.sec4-headline h1, .sec6-text h1, .heading .text .txt h1 {
+.service-tagline, .sec6-text h1, .heading .text .txt h1 {
     font-size: 42px;
     line-height: 48px;
     font-weight: 700;
@@ -461,7 +461,7 @@
 }
 
 .customer-feedback>.cf-cont {
-    width: 540px;
+    width: 700px;
     height: auto;
     padding: 25px 30px;
     gap: 25px;
@@ -583,7 +583,6 @@
 
     .customer-feedback>.cf-cont {
         width: 440px;
-        height: 290px;
         padding: 10px 20px;
     }
 }
@@ -591,7 +590,6 @@
 @media (max-width: 1024px) {
     .customer-feedback>.container {
         width: 420px;
-        height: 200px;
     }
 
     .feedback {
@@ -993,7 +991,7 @@
 
     .section3-tagline {
         font-size: 22px;
-        line-height: 30px;
+        line-height: 28px;
         margin-bottom: 20px;
     }
 

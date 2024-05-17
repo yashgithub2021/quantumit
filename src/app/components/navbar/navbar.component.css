@@ -14,7 +14,11 @@
 .black-image {
     filter: invert(1);
 }
-
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
 
 .menu-item-1814 {
     /* background: #141414; */
