@@ -71,6 +71,8 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    font-size: 17px;
+    font-weight: 400 !important;
     /* Position for vertical line */
 }
 
@@ -179,21 +181,57 @@
 
 .frame-5>.container>.tech-stack>div {
     grid-gap: 20px;
-    justify-content: center!important;
+    justify-content: center !important;
 }
-.tech-stack > div > .stack {
+
+.tech-stack>div>.stack {
     min-width: 295px;
     justify-content: center !important;
 }
-.brief p{
-    font-size: 18px;
+.stack .name h5 {
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 400 !important;
 }
-.frame-1 .frame-2-head .txt > h1{
-    font-size: 68px;
-    line-height: 78px;
+
+.brief p {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 400 !important;
 }
-.sub-heading{
-    font-size: 24px;
+
+.frame-2-head .txt>h1 {
+    font-size: 48px;
+    line-height: 60px;
+    font-weight: 600 !important;
+}
+
+.sub-heading {
+    font-size: 16px;
+    font-weight: 400 !important;
+    line-height: 20px;
+}
+
+.step-title p:first-child {
+    font-size: 25px;
+    font-weight: 400 !important;
+    line-height: 30px;
+}
+
+.step-title p:last-child {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27px;
+}
+.text > .title > h4 {
+    font-size: 22px;
+    white-space: nowrap;
+    line-height: 26px;
+    font-weight: 400 !important;
+}
+.text >.desc >p{
+    font-size:16px;
+    line-height: 25px;
 }
 @media (max-width: 1366px) {
     .text>.txt {
@@ -258,9 +296,11 @@
         width: 100%;
         height: 100%;
     }
+
     .frame-1 {
         padding-top: 50px;
     }
+
     .stack {
         min-width: 290px;
         justify-content: center !important;
@@ -268,10 +308,6 @@
 }
 
 @media(max-width:768px) {
-    .frame-1 .frame-2-head .txt > h1{
-        font-size: 50px;
-        line-height: 55px;
-    }
     .frame-2>.service-section {
         padding-left: 5px;
     }
@@ -286,10 +322,18 @@
         font-size: 22px;
         line-height: 30px;
     }
-    .brief p{
-        font-size: 16px;
+
+    .brief p {
+        font-size: 12px;
+        line-height: 20px;
     }
-    .frame-1 .frame-2-head .txt > h1{
+
+    .step-square {
+        font-size: 14px;
+        /* Position for vertical line */
+    }
+
+    .frame-2-head .txt>h1 {
         font-size: 28px;
         line-height: 38px;
     }
@@ -306,7 +350,8 @@
     .service-section .text {
         width: 90% !important;
     }
-    .service-section .text .title h2{
+
+    .service-section .text .title h2 {
         font-size: 22px;
         line-height: 30px;
     }
@@ -344,13 +389,21 @@
     }
 
     .step-title p {
-        font-size: 10px !important;
         width: 75% !important;
     }
 
+    .step-title p:first-child {
+        font-size: 16px;
+        line-height: 25px;
+    }
 
-    .step-title p {
-        font-size: 12px!important;
+    .step-title p:last-child {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .our-marketing-btn {
+        padding: 15px 20px;
     }
 
     .steps-container2 {
@@ -374,6 +427,11 @@
         width: 300px;
         justify-content: center !important;
     }
+    .stack .name h5 {
+        font-size: 12px;
+        line-height: 15px;
+    }
+
     .our-marketing-btn {
         padding: 15px 20px;
     }
@@ -381,7 +439,20 @@
     .our-marketing-btn>i {
         padding: 5px;
     }
-    .sub-heading{
-        font-size: 16px;
+
+    .sub-heading {
+        font-size: 12px;
+        line-height: 18px;
+        opacity: 0.5;
+    }
+
+    .text>.title>h4 {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .text> .desc>p{
+        font-size: 12px;
+        line-height: 20px;
+        opacity: 0.5;
     }
 }

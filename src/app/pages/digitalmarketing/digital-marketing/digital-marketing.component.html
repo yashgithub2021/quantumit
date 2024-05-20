@@ -11,7 +11,7 @@
                     the future of <br class=" d-lg-none">
                     <span class="linear-text"> Digital Marketing</span>
                 </h1>
-                <p data-aos="fade-in" class="head-desc text-align-center w-75 fs-4">
+                <p data-aos="fade-in" class="head-desc text-align-center w-75">
                     Delve into our comprehensive array of services to witness the transformative evolution of digital
                     marketing, where innovation meets strategy, and possibilities are limitless.
                 </p>
@@ -123,26 +123,26 @@
                             <th scope="row" class="align-middle p-4">
                                 <img [ngStyle]="{filter:isDarkTheme?'none':'invert(1)'}" [src]="data.img" alt="">
                             </th>
-                            <td class="align-middle p-4">
-                                <h4 class="fw-light">{{data.heading}}</h4>
-                                <p class="m-0 fw-lighter sub-heading" style="color:#B5B5B5">{{data.tail}}</p>
+                            <td class="align-middle second-td p-4">
+                                <h4 class="">{{data.heading}}</h4>
+                                <p class="m-0  " style="color:#B5B5B5">{{data.tail}}</p>
                             </td>
-                            <td class="align-middle p-4">
-                                <p class="m-0 sub-heading" style="color:#B5B5B5">{{data.desc}}</p>
+                            <td class="align-middle third-td p-4">
+                                <p class="m-0 " style="color:#B5B5B5">{{data.desc}}</p>
                                 <div class="list mb-2" *ngIf="data.list">
                                     <ul class=" list-unstyled  row">
                                         <li data-aos="fade-up"
                                             class=" d-flex col-6 align-items-center justify-content-start list-unstyled my-3"
                                             *ngFor="let list of data.list">
                                             <i class="fa-solid fa-check mx-2"></i>
-                                            <p class="fw-light m-0 list-check">{{list}}</p>
+                                            <p class=" m-0 list-check">{{list}}</p>
                                         </li>
                                     </ul>
                                 </div>
                             </td>
-                            <td class="align-middle py-4 px-2 ">
+                            <td class="align-middle py-4 px-2 fourth-td ">
                                 <p [routerLink]="['services', data.link]" (click)="scrollToTop()"
-                                    class="m-0 table-lm fw-light learn sub-heading">Learn
+                                    class="m-0 table-lm learn ">Learn
                                     More <i class="fa-solid fa-arrow-right text-secondary"
                                         style="transform: rotate(325deg);"></i></p>
                             </td>

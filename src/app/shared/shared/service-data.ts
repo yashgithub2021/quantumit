@@ -483,8 +483,8 @@ export const mobileGameDevelopment = {
 export const internetOfThings = {
     title1: "Revolutionize your business with",
     title2: "Internet of Things Solutions",
-    img1: "../../../../assets/mobile/service/img1.png",
-    img2: "../../../../assets/mobile/service/img2.png",
+    img1: "../../../../assets/services/IOT/74.jpg",
+    img2: "../../../../assets/services/IOT/internet_of_things_concept.jpg",
     descriptionOne: [
         "Unlock the potential of connected devices and data with Quantum IT's Internet of Things (IoT) services, aimed at revolutionizing your business operations and enhancing decision-making capabilities.",
         "In today's interconnected world, IoT technology enables seamless communication between devices, systems, and users, opening up new opportunities for innovation and efficiency.",
@@ -559,8 +559,8 @@ export const internetOfThings = {
 export const roboticProcessAutomation = {
     title1: "Emerging Technology of",
     title2: "Robotic Process Automation",
-    img1: "../../../../assets/mobile/service/img1.png",
-    img2: "../../../../assets/mobile/service/img2.png",
+    img1: "../../../../assets/services/Robitic_process/3d-rendering-biorobots-concept.jpg",
+    img2: "../../../../assets/services/Robitic_process/By-adopting-Robotic-Process-Auto.jpg",
     descriptionOne: [
         "Revolutionize your business processes with Quantum IT's Robotic Process Automation (RPA) services, designed to streamline operations, increase efficiency, and drive productivity.",
         "In today's digital age, businesses are constantly seeking ways to automate repetitive tasks and optimize workflows.",
@@ -765,8 +765,8 @@ export const socialMediaServices = {
     serviceTitle: "Enhance Your Brand's Presence with",
     serviceTitle2: "Social Media Marketing",
     title1: "Enhance Your Brand's Presence with Social Media Marketing",
-    img1:"../../../assets/services/pay_per_click/45929.jpg",
-    img2:"../../../assets/services/pay_per_click/Wavy_Tech-15_Single-06.jpg",
+    img1:"../../../assets/services/Social_media_mark/hands-holding-smartphone-social-media-concept.jpg",
+    img2:"../../../assets/services/Social_media_mark/medium-shot-woman-influencer-marketing-concept.jpg",
     descriptionOne: [
         "Step into the realm of social media marketing with Quantum IT's top-tier services, a pivotal component of our comprehensive digital marketing strategies.",
         "Carefully crafted to cater to the diverse needs of businesses across the USA, UK, and India, our social media marketing solutions are designed to elevate your online presence, engage your target audience, and drive tangible results in today's dynamic digital landscape."
@@ -825,8 +825,8 @@ export const contentMarketingServices = {
     serviceTitle: "Boost Your Brand's Visibility with",
     serviceTitle2: "Content Marketing",
     title1: "Boost Your Brand's Visibility with Content Marketing",
-    img1:"../../../assets/services/pay_per_click/45929.jpg",
-    img2:"../../../assets/services/pay_per_click/Wavy_Tech-15_Single-06.jpg",
+    img1:"../../../assets/services/Content_marketing/aerial-view-man-working-computer.jpg",
+    img2:"../../../assets/services/Content_marketing/content-marketing-modish-online-business-ecommerce-marketing-strategy.jpg",
     descriptionOne: [
         "Immerse yourself in the world of content marketing with Quantum IT's premium services, a cornerstone of our comprehensive digital marketing solutions.",
         "Meticulously tailored to meet the diverse needs of businesses across the USA, UK, and India, our content marketing strategies are crafted to elevate your online presence, engage your target audience, and drive tangible results in today's competitive digital landscape."
@@ -886,8 +886,8 @@ export const websiteDevServices = {
     serviceTitle: "Elevate Your Online Presence with",
     serviceTitle2: "Website Development",
     title1: "Elevate Your Online Presence with Website Development",
-    img1:"../../../assets/services/pay_per_click/45929.jpg",
-    img2:"../../../assets/services/pay_per_click/Wavy_Tech-15_Single-06.jpg",
+    img1:"../../../assets/services/Website_dev/html-system-website-concept.jpg",
+    img2:"../../../assets/services/Website_dev/person-front-computer-working-html.jpg",
     descriptionOne: [
         "Immerse yourself in the realm of website development with Quantum IT's premium services, a cornerstone of our comprehensive digital solutions.",
         "Meticulously tailored to meet the diverse needs of businesses across the USA, UK, and India, our website development strategies are crafted to enhance your online presence, engage your target audience, and drive tangible results in today's competitive digital landscape."
@@ -946,8 +946,8 @@ export const mobileDevServices = {
     serviceTitle: "Journey of Innovation with",
     serviceTitle2: "Mobile App Development",
     title1: "Journey of Innovation with Mobile App Development",
-    img1:"../../../assets/services/pay_per_click/45929.jpg",
-    img2:"../../../assets/services/pay_per_click/Wavy_Tech-15_Single-06.jpg",
+    img1:"../../../assets/services/mobile_app_dev/5794866.jpg",
+    img2:"../../../assets/services/mobile_app_dev/ui-ux-representations-with-smartphone (1).jpg",
     descriptionOne: [
         "Dive into the world of mobile app development with Quantum IT's cutting-edge services, an essential component of our holistic digital solutions.",
         "Meticulously tailored to meet the diverse needs of businesses across the USA, UK, and India, our mobile app development strategies are designed to elevate your brand presence, engage your audience, and drive tangible results in today's dynamic digital landscape."
@@ -1186,8 +1186,8 @@ export const phpDevelopmentServices = {
     serviceTitle: "Unleash the Power of",
     serviceTitle2: "PHP Development",
     title1: "Unleash the Power of PHP Development",
-    img1:"../../../assets/services/Php_dev/7040859.jpg",
-    img2:"../../../assets/services/Php_dev/programmer-outsource-developer-team-coding-technol-2023-11-27-05-33-16-utc.jpg",
+    img1:"../../../assets/services/Php_dev/programmer-outsource-developer-team-coding-technol-2023-11-27-05-33-16-utc.jpg",
+    img2:"../../../assets/services/Php_dev/7040859.jpg",
     descriptionOne: [
         "Explore the world of PHP development with Quantum IT's expertise, an integral part of our comprehensive web development solutions.",
         "Tailored to meet the diverse needs of businesses across the USA, UK, and India, our PHP development services are designed to empower your online presence, streamline processes, and drive impactful results in today's competitive digital landscape."
@@ -1245,8 +1245,8 @@ export const dotNetDevelopmentServices = {
     serviceTitle: "Unleash the Potential of",
     serviceTitle2: ".NET Development",
     title1: "Unleash the Potential of .NET Development",
-    img1:"../../../assets/services/dot_net_developer/dotnet_iso_1.jpg",
-    img2:"../../../assets/services/dot_net_developer/net-performance-problems.jpg",
+    img1:"../../../assets/services/dot_net_developer/net-performance-problems.jpg",
+    img2:"../../../assets/services/dot_net_developer/dotnet_iso_1.jpg",
     descriptionOne: [
         "Experience the power of .NET development with Quantum IT's expert services, a cornerstone of our comprehensive software development solutions.",
         "Tailored to meet the diverse needs of businesses across the globe, our .NET development services are designed to deliver robust, scalable, and secure software solutions that drive efficiency and innovation in today's digital landscape."

@@ -592,10 +592,6 @@
         width: 420px;
     }
 
-    .feedback {
-        font-size: 13px;
-    }
-
     .section3>.left-side {
         height: 65vh;
     }
@@ -934,6 +930,7 @@
 
     .feedback {
         font-size: 12px;
+        line-height:20px;
     }
 
 
