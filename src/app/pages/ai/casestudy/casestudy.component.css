@@ -126,15 +126,26 @@
 }
 
 .detaile p {
-    font-size: 24px;
-    line-height: 34px;
+    font-size: 19px;
+    line-height: 28px;
+    font-weight: 500!important;
 }
 
 .frame .heading .txt h1 {
-    font-size: 42px;
-    line-height: 52px;
+    font-size: 48px;
+    line-height: 60px;
+    font-weight: 700!important;
 }
-
+.txt p{
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 500!important;
+}
+.desc p{
+    font-size: 19px!important;
+    line-height: 28px;
+    font-weight: 500!important;
+}
 @media (max-width: 575.98px) {
 
     .w-75,
@@ -150,6 +161,10 @@
     .circles {
         width: 100%;
     }
+    .detaile p {
+        font-size: 16px;
+        line-height: 20px;
+    }
 
     .our-process-btn {
         font-size: 12px;
@@ -157,9 +172,14 @@
         padding: 5px 12px 5px 12px;
     }
 
-    .txt>h1 {
-        font-size: 28px;
-        line-height: 38px;
+    .frame .heading .txt h1 {
+        font-size: 22px;
+        line-height: 30px;
+    }
+    .txt p{
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 500!important;
     }
 
     .our-marketing-btn {

@@ -72,11 +72,20 @@
 .num-cont {
     padding: 82px 60px;
 }
-.num-cont>div h1{
+
+.num-cont>div h1 {
     font-size: 68px;
-    line-height: 78px;
-    font-weight: bolder;
+    line-height: 60px;
+    font-weight: 700;
 }
+
+.socials .email a,
+.socials .phone a {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 700;
+}
+
 .our-process-btn {
     padding: 7px 15px 7px 15px;
     gap: 0px;
@@ -152,12 +161,55 @@
     border-radius: 10px;
 
 }
-@media(max-width:768px){
-    .num-cont>div h1{
-        font-size: 50px;
-        line-height: 60px;
-        font-weight: bolder;
-    }
+
+.frame-2-head>.txt>h1 {
+    font-size: 48px;
+    line-height: 52px;
+    font-weight: 600;
+}
+
+.desc p {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 400 !important;
+}
+
+.name h4 {
+    font-size: 24px;
+    line-height: 26px;
+    font-weight: 700;
+}
+
+.address p {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.questions button {
+
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 33px;
+}
+
+.question h4 {
+
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 33px;
+
+}
+
+.ans p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30.1px;
+}
+.list p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
 }
 
 @media (min-width:575.98px) and (max-width:768px) {
@@ -171,10 +223,16 @@
     .num-cont {
         padding: 10px;
     }
-    .num-cont>div h1{
+
+    .num-cont>div h1 {
         font-size: 24px;
         line-height: 30px;
-        font-weight: bolder;
+    }
+
+    .socials .email a,
+    .socials .phone a {
+        font-size: 16px;
+        line-height: 25px;
     }
 
     .w-50,
@@ -201,5 +259,43 @@
     .frame-2-head>.txt>h1 {
         font-size: 22px;
         line-height: 30px;
+    }
+
+    .desc p {
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    .name h4 {
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .address p {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .questions button {
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .question h4 {
+
+        font-size: 18px;
+        line-height: 20px;
+
+    }
+
+    .list p {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 23.1px;
+    }
+
+    .ans p {
+        font-size: 16px;
+        line-height: 23px;
     }
 }
