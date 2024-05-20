@@ -123,23 +123,55 @@
 .app-details > .details > .detail {
     padding-left: 4%;
 }
-.txt>h1 {
-    font-size: 42px;
-    line-height: 50px;
+.frame-2-head .txt>h1 ,.txt h2{
+    font-size: 48px;
+    line-height: 60px;
+    font-weight: 600 !important;
 }
 
-.txt>h2 {
-    font-size: 42px;
-    line-height: 50px;
+.desc>p {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+}
+.title h3 {
+    font-size: 30px;
+    line-height: 37px;
+    font-weight: 500 !important;
+}
+.detail .desc p{
+    white-space: nowrap;
+    text-align: center;
+}
+.detail .desc p{
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 400!important;
+}
+.title h5{
+    font-size: 20px;
+    line-height: 27px;
+    font-weight: 600!important;
+}
+.card-body .desc p{
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 400!important;
+}
+.miletone-number {
+    font-size: 48px;
+    line-height: 48px;
+    font-weight: 700!important;
 }
 
-.frame-1 .txt>h1 {
-    font-size: 68px;
-    line-height: 78px;
-    font-weight: bolder;
+.miletone-title {
+    font-size: 14px;
+    font-weight: 700!important;
+    line-height: 16px;
+    text-align: center;
 }
-.desc p {
-    font-size: 24px;
+.num-sec .row div{
+    padding: 0px;
 }
 @media(max-width:768px) {
     .frame-2-head .desc {
@@ -165,7 +197,8 @@
     }
 
     .title h3 {
-        font-size: 15px;
+        font-size: 14px;
+        line-height: 25px;
     }
 
     .numbers-section {
@@ -186,17 +219,13 @@
         padding: 5px 12px 5px 12px;
     }
 
-    .frame-2-head .txt>h1 {
+    .frame-2-head .txt>h1 ,.txt h2{
         font-size: 22px;
         line-height: 30px;
     }
-    .frame-1 .frame-2-head .txt>h1{
-        font-size: 28px;
-        line-height: 38px;
-    }
     .frame-2-head .desc>p {
         font-size: 16px;
-        line-height: 23px;  
+        line-height: 23px;
     }
     .heading> .frame-2-head > div:first-child {
         padding-bottom: 0px;
@@ -205,9 +234,34 @@
         border-right: 3px solid white;
         padding-right: 3%;
     }
-    .desc p {
+    .app-details > .details> .detail:not(:last-child) {
+        padding-left: 0%;
+    }
+    .desc>p {
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
+    }
+    .detail .desc p{
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .title h5{
         font-size: 16px;
         line-height: 23px;
     }
-    
+    .card-body .desc p{
+        font-size: 12px;
+        line-height: 18px;
+        text-align: start!important;
+    }
+    .miletone-number {
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+    .miletone-title {
+        font-size: 12px;
+
+    }
 }

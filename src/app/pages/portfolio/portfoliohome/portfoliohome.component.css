@@ -24,6 +24,7 @@
 .service-tagline {
     font-size: 42px;
     line-height: 50px;
+    font-weight: 600!important;
 }
 
 .category-selected {
@@ -74,37 +75,36 @@
     cursor: pointer;
 }
 .miletone-number h1{
-    font-size: 68px; 
-    font-weight: bolder;
+    font-size: 48px; 
+    line-height: 60px;
+    font-weight: 700;
 }
 .miletone-title p{
-    font-size: 24px;
+    font-size: 22px;
+    line-height: 24px;
+    font-weight: 400!important;
 }
-.desc p{
-    font-size: 24px;
-    line-height: 34px;
+.desc p {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
 }
-.app-details h3{
-    font-size: 42px;
+.app-detail h3{
+    font-size: 30px;
+    line-height: 37px;
+    font-weight: 500!important;
 }
-.app-details p{
-    font-size: 24px;
+.app-detail p{
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 400!important;
 }
 .button button{
-    font-size: 18px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height:17px;
 }
-@media(max-width:768px){
-    .miletone-number h1{
-        font-size: 50px; 
-        font-weight: bolder;
-    }
-    .miletone-title p{
-        font-size: 18px;
-    }
-    .button button{
-        font-size: 16px;
-    }
-}
+
 @media (max-width: 575.98px) {
 
     .numbers-section {
@@ -142,22 +142,26 @@
     }
     .button button{
         font-size: 12px;
+        line-height: 15px;
     }
     .desc p{
-        font-size: 16px;
-        line-height: 23px;
+        font-size: 14px;
+        line-height: 20px;
     }
     .miletone-number h1{
-        font-size: 28px; 
-        font-weight: bolder;
+        font-size: 22px;
+        line-height:30px;
     }
     .miletone-title p{
         font-size: 16px;
+        line-height: 20px;
     }
-    .app-details h3{
+    .app-detail h3{
         font-size: 22px;
+        line-height: 25px;
     }
-    .app-details p{
+    .app-detail p{
         font-size: 16px;
+        line-height: 20px;
     }
 }

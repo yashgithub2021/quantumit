@@ -116,11 +116,16 @@ figure {
 }
 
 .miletone-number {
-    font-size: 50px;
+    font-size: 48px;
+    line-height: 48px;
+    font-weight: 700!important;
 }
 
 .miletone-title {
-    font-size: 15px;
+    font-size: 14px;
+    font-weight: 700!important;
+    line-height: 16px;
+    text-align: center;
 }
 
 .numbers-section .heading {
@@ -141,31 +146,34 @@ figure {
     padding-left: 4%;
 }
 
-.txt>h1 {
-    font-size: 42px;
-    line-height: 50px;
-}
-
-.txt>h2 {
-    font-size: 42px;
-    line-height: 50px;
-}
-
-.frame-1 .txt>h1 {
-    font-size: 68px;
-    line-height: 78px;
-    font-weight: bolder;
+.frame-2-head .txt>h1 ,.txt h2{
+    font-size: 48px;
+    line-height: 60px;
+    font-weight: 600 !important;
 }
 
 .desc p {
-    font-size: 24px;
     white-space: nowrap;
     text-wrap: wrap;
-    text-align: start;
+}
+.title h3 {
+    font-size: 30px;
+    line-height: 37px;
+    font-weight: 500 !important;
+}
+.desc>p {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
 }
 .detail .desc p{
     white-space: nowrap;
     text-align: center;
+}
+.detail .desc p{
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 400!important;
 }
 @media(max-width:1366px) {
     .banner {
@@ -179,20 +187,6 @@ figure {
 }
 
 @media(max-width:768px) {
-    .txt>h1 {
-        font-size: 28px;
-        line-height: 38px;
-    }
-
-    .txt>h2 {
-        font-size: 28px;
-        line-height: 38px;
-    }
-
-    .frame-1 .txt>h1 {
-        font-size: 50px;
-        line-height: 60px;
-    }
 
     .desc p {
         text-align: center;
@@ -213,12 +207,18 @@ figure {
     }
 
     .title h3 {
-        font-size: 15px;
+        font-size: 14px;
+        line-height: 25px;
     }
 
-    .desc p {
+    .desc>p {
+        font-size: 14px;
+        line-height: 20px;
         text-align: center;
-        font-size: 16px;
+    }
+    .detail .desc p{
+        font-size: 14px;
+        line-height: 20px;
     }
 
     .numbers-section {
@@ -226,11 +226,16 @@ figure {
     }
 
     .miletone-number {
-        font-size: 15px;
+        font-size: 22px;
+        line-height: 30px;
     }
 
     .miletone-title {
-        font-size: 10px;
+        font-size: 12px;
+
+    }
+    .num-sec .row div{
+        padding: 0px;
     }
 
     .our-process-btn,
@@ -244,21 +249,11 @@ figure {
         padding: 0px;
     }
 
-    .txt>h1 {
+    .frame-2-head .txt>h1 ,.txt h2{
         font-size: 22px;
         line-height: 30px;
     }
 
-    .txt>h2 {
-        font-size: 22px;
-        line-height: 30px;
-    }
-
-    .frame-1 .txt>h1 {
-        font-size: 28px;
-        line-height: 38px;
-        font-weight: bolder;
-    }
 
     .app-details>.details {
         flex-wrap: wrap;

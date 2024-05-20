@@ -54,38 +54,54 @@ figure {
 }
 
 .miletone-number {
-    font-size: 50px;
+    font-size: 48px;
+    line-height: 48px;
+    font-weight: 700!important;
     background: linear-gradient(91.58deg, #43BAFF 0.52%, #7044B3 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .miletone-title {
-    font-size: 15px;
+    font-size: 14px;
+    font-weight: 700!important;
+    line-height: 16px;
     background: linear-gradient(91.58deg, #43BAFF 0.52%, #7044B3 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.frame-2-head .txt > h1{
-    font-size: 42px;
-}
-.frame-1 .frame-2-head .txt > h1{
+
+.frame-2-head .txt>h1 {
     font-size: 48px;
-    line-height: 72px;
-    font-weight: 500;
+    line-height: 60px;
+    font-weight: 600 !important;
 }
+.detail .desc p{
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 400!important;
+}
+
 .desc>p {
     font-size: 16px;
     line-height: 24px;
     font-weight: 500;
+    opacity: 0.5;
 }
-.list h3{
-    font-size: 24px;
+
+.title h3 {
+    font-size: 30px;
+    line-height: 37px;
+    font-weight: 500 !important;
 }
+
+.list h3 {
+    font-size: 30px;
+    font-weight: 400!important;
+    line-height:33px;
+}
+
 @media(max-width:1366px) {
-    .miletone-number {
-        font-size: 40px;
-    }
 
     .app-details>.details>.detail:not(:last-child) {
         border-right: 3px solid white;
@@ -97,37 +113,26 @@ figure {
     .frame-3>.app-details>.details {
         align-items: end;
     }
-
-    .miletone-number {
-        font-size: 35px;
-    }
 }
 
 @media (max-width:768px) {
     .app-details>.details {
         width: 95% !important;
     }
-    .frame-1 .frame-2-head .txt > h1{
-        font-size: 50px;
-        line-height: 60px;
-    }
-    .list h3{
-        font-size: 22px;
-    }
+
 }
 
 @media (max-width: 575.98px) {
-    .frame-2-head .txt > h1{
+    .frame-2-head .txt>h1 {
         font-size: 24px;
+        line-height: 30px;
     }
-    .list h3{
+
+    .list h3 {
         font-size: 16px;
+        line-height: 20px;
     }
-    .frame-1 .frame-2-head .txt > h1{
-        font-size: 28px;
-        line-height: 38px;
-    }
-    
+
     .w-75 {
         width: 100% !important;
     }
@@ -142,21 +147,30 @@ figure {
     }
 
     .title h3 {
-        font-size: 15px;
+        font-size: 14px;
+        line-height: 25px;
     }
-
+    .detail .desc p{
+        font-size: 14px;
+        line-height: 20px;
+    }
     .desc>p {
-        font-size: 16px;
-        line-height: 23px;
+        font-size: 14px;
+        line-height: 20px;
         text-align: center;
     }
 
     .miletone-number {
-        font-size: 20px;
+        font-size: 22px;
+        line-height: 30px;
     }
 
     .miletone-title {
         font-size: 12px;
+
+    }
+    .num-sec .row div{
+        padding-right: 0px;
     }
 
     .casestudy::before {
@@ -172,11 +186,6 @@ figure {
     .txt>h1 {
         font-size: 22px;
         line-height: 30px;
-    }
-
-    .frame-1 .frame-2-head .txt>h1 {
-        font-size: 28px;
-        line-height: 38px;
     }
 
     .frame-1,

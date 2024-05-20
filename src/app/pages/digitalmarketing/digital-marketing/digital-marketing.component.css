@@ -140,6 +140,9 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    font-size: 19px;
+    line-height: 25px;
+    font-weight: 400!important;
     /* Position for vertical line */
 }
 
@@ -169,6 +172,9 @@
     justify-content: center;
     text-align: center;
     color: black;
+    font-size: 19px;
+    line-height: 25px;
+    font-weight: 400!important;
     /* Position for vertical line */
 }
 
@@ -363,10 +369,23 @@
     color:rgb(48, 48, 201);
     transition: all 0.3s ease-in-out;
 }
-.step-title p {
-    font-size: 22px!important;
-    font-weight: 600!important;
-    line-height: 40px;
+.step-title {
+    width:27%!important;
+}
+
+.step-title p{
+    font-weight: 400!important;
+    width:90%!important;
+}
+
+.step-title p:first-child {
+    font-size: 25px !important;
+    line-height: 30px;
+    width: 65%!important;
+}
+.step-title p:last-child {
+    font-size: 16px !important;
+    line-height: 27px;
 }
 .sub-heading{
     font-size: 22px;
@@ -405,6 +424,21 @@ td h4{
     font-size: 15px;
     line-height: 15px;
     font-weight: 400;
+}
+.details .name h3{
+    font-size: 26px;
+    line-height: 31px;
+    font-weight: 400;
+}
+.details .num h2{
+    font-size: 40px;
+    font-weight: 400!important;
+    line-height: 40px;
+}
+.desc p{
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 400!important;
 }
 @media(max-width:1180px) {
     .frame-4>.container>.heading>.text {
@@ -476,6 +510,20 @@ td h4{
         line-height: 15px;
         font-weight: 400;
     }
+    .details .name h3{
+        font-size: 22px;
+        line-height: 30px;
+        font-weight: 400;
+    }
+    .details .num h2{
+        font-size: 28px;
+        font-weight: 400!important;
+        line-height: 30px;
+    }
+    .desc p{
+        font-size: 12px;
+        line-height: 14px;
+    }
     .txt h1 {
         font-size: 22px;
         line-height: 30px;    
@@ -499,16 +547,28 @@ td h4{
         line-height: 21px;
         border-radius: 8px !important;
     }
+    .step-square{
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .step-square-light{
+        font-size: 16px;
+        line-height: 20px;
+    }
 
     .step-circle {
         margin: 0;
     }
 
-    .step-title p {
+    .step-title p:first-child {
         font-size: 16px !important;
-        line-height: 30px;
-        width: 100% !important;
+        line-height: 25px;
     }
+    .step-title p:last-child {
+        font-size: 12px !important;
+        line-height: 20px;
+    }
+
     .step-title p:first-child{
         margin-top: 10px;
     }
@@ -531,11 +591,13 @@ td h4{
 
     .frame-6 {
         padding-left: 0px;
+        padding-right:0px;
         height: 180vh;
     }
 
     .frame-6>.container {
         padding-left: 0px;
+        padding-right:0px;
         padding-top: 50px;
     }
 
