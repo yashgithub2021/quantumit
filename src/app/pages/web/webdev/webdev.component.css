@@ -9,7 +9,14 @@
 
 .tagline {
     font-size: 68px;
-    line-height: 78px;
+    line-height: 80px;
+    font-weight: 800 !important;
+}
+
+.frame-1>.heading>p {
+    font-size: 21px !important;
+    line-height: 27px;
+    font-weight: 400 !important;
 }
 
 .linear-text {
@@ -87,7 +94,11 @@
     padding: 15px;
     border-left: 1px solid #43BAFF;
     letter-spacing: 1px;
+    font-size: 16px;
+    font-weight: 500 !important;
+    line-height: 24px;
 }
+
 
 .step-desc {
     background: linear-gradient(120.79deg, #43BAFF -49.01%, rgba(67, 186, 255, 0) 13.65%);
@@ -116,6 +127,14 @@
 
 .our-steps-title {
     font-size: 20px;
+    font-weight: 600 !important;
+    line-height: 30px;
+}
+
+.step-desc .details {
+    font-size: 16px;
+    font-weight: 500 !important;
+    line-height: 24px;
 }
 
 
@@ -202,14 +221,39 @@
 .project-two>.project-container>.app-details>.app-details-container {
     color: black;
 }
-p{
+
+p {
     font-size: 24px;
 }
-.app-details .details{
-    font-size: 18px!important;
+
+.app-details .details {
+    font-size: 18px !important;
+    line-height: 32px;
+    font-weight: 400 !important;
 }
-.view-more>p{
+
+.view-more>p {
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 500 !important;
+}
+
+.our-process>h1 {
+    font-size: 42px;
+    line-height: 54px;
+    font-weight: 700 !important;
+}
+
+.sub-heading {
     font-size: 18px;
+    font-weight: 500 !important;
+    line-height: 30px;
+}
+
+.app-details-container .name>h2 {
+    font-size: 30px;
+    font-weight: 600 !important;
+    line-height: 44px;
 }
 
 @media (min-width:1180px) and (max-width:1366px) {
@@ -262,20 +306,11 @@ p{
         padding: 3px 9px;
     }
 
-    .app-details-container .name>h2 {
-        font-size: 20px;
-    }
-
-    .app-details-container .details {
-        font-size: 16px !important;
-    }
-
     .app-details-container .view-more {
         margin-top: 20px;
     }
 
     .app-details-container .view-more>p {
-        font-size: 18px;
         margin-right: 0.5rem !important;
     }
 }
@@ -426,16 +461,7 @@ p{
 
 @media(max-width:768px) {
     .frame-1 {
-        height: 70vh;
-    }
-
-    .frame-1>.heading>.tagline {
-        font-size: 55px;
-        line-height: 70px;
-    }
-
-    .frame-1>.heading>p {
-        font-size: 16px !important;
+        height: 80vh;
     }
 
     .frame-2 {
@@ -455,10 +481,6 @@ p{
         margin-bottom: 25px;
     }
 
-    .app-details>.app-details-container>.details {
-        font-size: 16px !important;
-        margin-bottom: 25px;
-    }
 
     .project-two>.project-container>.app-details>.app-details-container>.details {
         font-size: 16px !important;
@@ -475,10 +497,14 @@ p{
 }
 
 @media (max-width: 575.98px) {
-    .view-more p{
-        font-size: 16px;
+
+    
+    .view-more>p {
         color: rgb(75, 75, 214);
+        font-size: 14px;
+        line-height: 16px;
     }
+
     .our-process-btn {
         font-size: 10px;
         line-height: 20px;
@@ -518,13 +544,45 @@ p{
     .frame-1>.heading>p {
         font-size: 16px !important;
         line-height: 23px;
-        width:75%;
+        width: 75%;
+        font-weight: 400 !important;
     }
 
     .frame-2-text {
         font-size: 27px;
         line-height: 36px;
         letter-spacing: 0px;
+    }
+
+    .steps .row {
+        gap: 30px;
+        margin-bottom: 30px;
+    }
+
+    .step-num {
+        font-size: 12px;
+        font-weight: 500 !important;
+        line-height: 20px;
+    }
+
+    .our-steps-title {
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    .step-desc .details {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .app-details-container .name>h2 {
+        font-size: 22px;
+        line-height: 32px;
+    }
+
+    .app-details .details {
+        font-size: 14px !important;
+        line-height: 25px;
     }
 
     .frame-3 {
@@ -549,9 +607,9 @@ p{
         width: 100% !important;
     }
 
-    p {
-        text-align: center;
-        font-size: 16px;
+    .sub-heading {
+        font-size: 14px;
+        line-height: 20px;
     }
 
     .project-container {
@@ -582,7 +640,8 @@ p{
     .app-image {
         height: 50% !important;
     }
-        .project-img-container> .project-image{
-            height: 28vh !important;
-        }
+
+    .project-img-container>.project-image {
+        height: 28vh !important;
+    }
 }
