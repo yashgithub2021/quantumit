@@ -2,15 +2,31 @@
         id="navbarColor01">
         <div class="container-fluid primary-menu-inner px-0">
                 <div class="top-wrap w-auto">
-                        <a class="custom-logo-link navbar-brand m-0 m-lg-auto">
-                                <img routerLink="/" height="49" [ngClass]="{ 'black-image': !isDarkTheme }" width="114"
-                                        src="../../../assets/logo-white.png">
-                        </a>
                         <button class="navbar-toggler border-0" type="button" data-toggle="collapse"
                                 data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                                 aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon"></span>
                         </button>
+                        <a class="custom-logo-link navbar-brand m-0 m-lg-auto">
+                                <img routerLink="/" height="49" [ngClass]="{ 'black-image': !isDarkTheme }" width="114"
+                                        src="../../../assets/logo-white.png">
+                        </a>
+                        <div class="d-flex align-items-center justifycontent-center d-lg-none w-auto pe-3 ">
+                                <div class="form-check ps-0 ">
+        
+                                        <input (click)="toggleTheme()" [checked]="isDarkTheme" type="checkbox" class="checkbox"
+                                                id="checkbox">
+                                        <label for="checkbox" class="checkbox-label mb-0"
+                                                [ngStyle]="{'background':isDarkTheme?'#111':'white'}">
+                                                <img style="filter: invert(1);" src="../../../assets/sun.svg" alt="">
+                                                <i class="fa-regular fa-moon text-black"></i>
+                                                <span class="ball">
+                                                        <img *ngIf="!isDarkTheme" src="../../../assets/sun.svg" alt="">
+                                                        <i *ngIf="isDarkTheme" class="fa-regular fa-moon"></i>
+                                                </span>
+                                        </label>
+                                </div>
+                        </div>
                 </div>
                 <div class="collapse navbar-collapse w-100 justify-content-start justify-content-lg-center"
                         id="navbarSupportedContent">
@@ -271,9 +287,6 @@
                 </div>
                 <div class="collapse navbar-collapse justify-content-end w-auto">
                         <div class="form-check form-switch">
-                                <!-- <input (click)="toggleTheme()" class="form-check-input" type="checkbox" role="switch"
-                    id="flexSwitchCheckChecked" [checked]="isDarkTheme">
-                <label class="form-check-label" for="flexSwitchCheckChecked"></label> -->
 
                                 <input (click)="toggleTheme()" [checked]="isDarkTheme" type="checkbox" class="checkbox"
                                         id="checkbox">
@@ -283,7 +296,6 @@
                                         <i class="fa-regular fa-moon text-black"></i>
                                         <span class="ball">
                                                 <img *ngIf="!isDarkTheme" src="../../../assets/sun.svg" alt="">
-                                                <!-- <img *ngIf="isDarkTheme" src="../../../assets/moon.svg" alt=""> -->
                                                 <i *ngIf="isDarkTheme" class="fa-regular fa-moon"></i>
                                         </span>
                                 </label>

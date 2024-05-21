@@ -22,7 +22,7 @@
             <div class="d-flex align-items-center flex-column h-100 w-100 ">
                 <div class="d-flex align-items-center flex-column flex-lg-row my-5 h-100 w-100">
                     <div class="text w-75 pe-lg-5 p-0">
-                        <div class="brief opacity-50">
+                        <div class="brief "[ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">
                             <p *ngFor="let description of androidService.descriptionOne">
                                 {{description}}
                             </p>
@@ -34,7 +34,7 @@
                 </div>
                 <div class="d-flex align-items-center my-5 flex-column flex-lg-row-reverse">
                     <div class="text w-75 ps-lg-5 p-0">
-                        <div class="brief opacity-50">
+                        <div class="brief" [ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">
                             <p *ngFor="let description of androidService.descriptionTwo">
                                 {{description}}
                             </p>
@@ -72,7 +72,7 @@
                                 <h5 class="">{{data.title}}</h5>
                             </div>
                             <div class="desc w-100">
-                                <p style="color: #8990AC;">{{data.desc}}</p>
+                                <p [ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">{{data.desc}}</p>
                             </div>
                             <div class="image-container">
                                 <img [src]="data.img" alt="Image" class="corner-image">
@@ -99,9 +99,9 @@
 
                     <div class="steps-container squares w-100 mt-lg-5 mt-4 mb-lg-3 ">
                         <ng-container *ngFor="let step of androidService.steps">
-                            <div class="step-line"></div>
-                            <div class="step-square">Step 0{{step.num}}</div>
-                            <div class="step-line"></div>
+                            <div class="step-line"[ngStyle]="{'background-color':isDarkTheme?'white':'black'}"></div>
+                            <div class=""[ngClass]="isDarkTheme?'step-square':'step-square-light'">Step 0{{step.num}}</div>
+                            <div class="step-line"[ngStyle]="{'background-color':isDarkTheme?'white':'black'}"></div>
                         </ng-container>
                         <!-- <div class="step-square">Step 02</div>
                         <div class="step-line"></div>
@@ -113,7 +113,7 @@
                             <div
                                 class="step-title w-100 mt-3 mt-lg-0 d-flex flex-column align-items-center justify-content-center">
                                 <p class="w-50  text-align-center">{{step.title}}</p>
-                                <p class="w-75  text-align-center" style="color: #B5B5B5;">{{step.desc}}
+                                <p class="w-75  text-align-center" [ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">{{step.desc}}
                                 </p>
                             </div>
                             <div class="step-dashed-line visually-hidden"></div>
@@ -164,9 +164,9 @@
                   <div class="carousel-item"*ngFor="let step of androidService.steps;let i=index;"[ngClass]="{'active': i === 0}">
                     <div class="steps-container squares w-100 mt-lg-5 mt-4 mb-lg-3 ">
                         <ng-container >
-                            <div class="step-line"></div>
-                            <div class="step-square">Step 0{{step.num}}</div>
-                            <div class="step-line"></div>
+                            <div class="step-line"[ngStyle]="{'background-color':isDarkTheme?'white':'black'}"></div>
+                            <div class=""[ngClass]="isDarkTheme?'step-square':'step-square-light'">Step 0{{step.num}}</div>
+                            <div class="step-line"[ngStyle]="{'background-color':isDarkTheme?'white':'black'}"></div>
                         </ng-container>
                     </div>
                     <div class="steps-container steps-container2 gap-lg-3 w-100 mt-5 ">
@@ -174,7 +174,7 @@
                             <div
                                 class="step-title w-100 mt-3 mt-lg-0 d-flex flex-column align-items-center justify-content-center">
                                 <p class="w-50 text-align-center">{{step.title}}</p>
-                                <p class="w-75 text-align-center" style="color: #B5B5B5;">{{step.desc}}
+                                <p class="w-75 text-align-center" [ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">{{step.desc}}
                                 </p>
                             </div>
                             <div class="step-dashed-line visually-hidden"></div>
@@ -210,7 +210,7 @@
                     </h1>
                 </div>
                 <div class="txt w-100 mt-3 mt-lg-0">
-                    <p class="text-align-center opacity-50 text-lg-start text-capitalize sub-heading">we rank your website at top of google
+                    <p class="text-align-center  text-lg-start text-capitalize sub-heading"[ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">we rank your website at top of google
                         Everest
                     </p>
                 </div>

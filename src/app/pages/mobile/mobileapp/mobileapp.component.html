@@ -107,7 +107,7 @@
                                 <h4 class="">{{data?.title}}</h4>
                             </div>
                             <div data-aos="slide-up" class="desc w-100">
-                                <p style="color: #8990AC; line-height:30px">{{data?.desc}}</p>
+                                <p style=" line-height:30px"[ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">{{data?.desc}}</p>
                             </div>
                         </div>
                     </div>
@@ -146,7 +146,7 @@
                 </div>
 
                 <div class="success-desc w-50 my-2 text-align-center" data-aos="slide-up">
-                    <p>We assist businesses in healthcare real estate and various other industries
+                    <p [ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">We assist businesses in healthcare real estate and various other industries
                         in capitalizing on new opportunities and navigating business challenges.</p>
                 </div>
             </div>
