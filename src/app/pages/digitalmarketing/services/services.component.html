@@ -35,8 +35,7 @@
                         </div>
                     </div>
                     <div class="image h-100 w-75 w-lg-50">
-                        <img class=" rounded-3" [src]="serviceDetails.img1"
-                            alt="">
+                        <img class=" rounded-3" [src]="serviceDetails.img1" alt="">
                     </div>
                 </div>
                 <div
@@ -71,8 +70,7 @@
                         </div>
                     </div>
                     <div class="image h-100 w-100">
-                        <img class=" rounded-3" [src]="serviceDetails.img2"
-                            alt="">
+                        <img class=" rounded-3" [src]="serviceDetails.img2" alt="">
                     </div>
                 </div>
             </div>
@@ -188,19 +186,19 @@
                         </ng-container>
                     </div>
 
-                  </div>
+                    </div>
                 </div>
                 <div class="container button w-100 d-flex mt-5 align-items-center justify-content-center">
                     <button [ngStyle]="{'background':isDarkTheme?'#111111':'#ECF0FF'}"
                         [ngClass]="isDarkTheme?'text-white':'text-black'" class="our-marketing-btn ">
-                        <i [ngClass]="isDarkTheme?'text-white':'text-black'"
-                            class="fa-solid fa-arrow-left  mx-2" href="#carouselExampleControls" role="button" data-slide="prev"></i>
+                        <i [ngClass]="isDarkTheme?'text-white':'text-black'" class="fa-solid fa-arrow-left  mx-2"
+                            href="#carouselExampleControls" role="button" data-slide="prev"></i>
                         Our SEO Services
-                        <i [ngClass]="isDarkTheme?'text-white':'text-black'"
-                            class="fa-solid fa-arrow-right  mx-2"href="#carouselExampleControls" role="button" data-slide="next"></i>
+                        <i [ngClass]="isDarkTheme?'text-white':'text-black'" class="fa-solid fa-arrow-right  mx-2"
+                            href="#carouselExampleControls" role="button" data-slide="next"></i>
                     </button>
                 </div>
-              </div>
+            </div>
         </div>
     </div>
 
@@ -219,13 +217,14 @@
                 </div>
                 <div class="txt w-100">
                     <p class="text-align-center text-lg-start text-capitalize sub-heading "[ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">we rank your website at top of google
+
                         Everest
                     </p>
                 </div>
             </div>
             <div class="container w-100 d-flex">
                 <div class="processes d-flex flex-column">
-                    <div *ngFor="let approach of serviceDetails.ourApproach"
+                    <div data-aos="fade-up" *ngFor="let approach of serviceDetails.ourApproach"
                         class="process d-flex justify-content-between hover-card ">
                         <div class="logo mx-3">
                             <div class="process-square">
@@ -312,7 +311,7 @@
     </div>
 
     <div class="frame-5 my-5">
-        <div class="container px-lg-5 d-flex flex-column align-items-center align-items-lg-start">
+        <div class="container px-lg-3 d-flex flex-column align-items-center align-items-lg-start">
             <div class="text my-5 frame-2-head w-100 d-flex flex-column align-items-center  ">
                 <div class="button mb-4">
                     <button class="our-process-btn">
@@ -327,7 +326,7 @@
             </div>
             <div class="tech-stack my-5 w-100">
                 <div class="d-flex flex-wrap w-100 justify-content-between m-auto  align-items-center">
-                    <div [ngStyle]="{background:isDarkTheme?'#111111':'#ECF0FF'}"
+                    <div data-aos="fade-up" [ngStyle]="{background:isDarkTheme?'#111111':'#ECF0FF'}"
                         class="stack d-flex align-items-center justify-content-between hover-card">
                         <div class="logo mx-3">
                             <img src="../../../../assets/dm/services/figma.svg" alt="">
@@ -336,7 +335,7 @@
                             <h5 class=" fw-light">Figma</h5>
                         </div>
                     </div>
-                    <div [ngStyle]="{background:isDarkTheme?'#111111':'#ECF0FF'}"
+                    <div data-aos="fade-down" [ngStyle]="{background:isDarkTheme?'#111111':'#ECF0FF'}"
                         class="stack d-flex align-items-center justify-content-between hover-card">
                         <div class="logo mx-3">
                             <img src="../../../../assets/dm/services/vs.svg" alt="">
@@ -345,7 +344,7 @@
                             <h5 class=" fw-light">Visual Studio</h5>
                         </div>
                     </div>
-                    <div [ngStyle]="{background:isDarkTheme?'#111111':'#ECF0FF'}"
+                    <div data-aos="fade-up" [ngStyle]="{background:isDarkTheme?'#111111':'#ECF0FF'}"
                         class="stack d-flex align-items-center justify-content-between hover-card">
                         <div class="logo mx-3">
                             <img src="../../../../assets/dm/services/react.svg" alt="">
@@ -354,7 +353,7 @@
                             <h5 class=" fw-light">React</h5>
                         </div>
                     </div>
-                    <div [ngStyle]="{background:isDarkTheme?'#111111':'#ECF0FF'}"
+                    <div data-aos="fade-down" [ngStyle]="{background:isDarkTheme?'#111111':'#ECF0FF'}"
                         class="stack d-flex align-items-center justify-content-between hover-card">
                         <div class="logo mx-3">
                             <img src="../../../../assets/dm/services/git.svg" alt="">
