@@ -119,6 +119,7 @@
     height: 5px;
     background-color: white;
     top: 50%;
+    opacity: 0.5;
 }
 
 .nums .vertical-line {
@@ -127,6 +128,7 @@
     background-color: white;
     left: 50%;
     padding: 0px;
+    opacity: 0.5;
 }
 
 .nums p {
@@ -292,9 +294,9 @@
     }
 
     .miletone-title {
-        font-size: 10px;
+        font-size: 12px;
         line-height: 15px;
-        font-weight: 400;
+        font-weight: 400!important;
     }
 
     .name h4 {

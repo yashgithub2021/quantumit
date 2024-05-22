@@ -29,7 +29,23 @@
     justify-content: center;
     text-align: center;
     color: white;
+    font-size: 22px;
+    line-height: 20px;
+    font-weight: 400 !important;
     /* Position for vertical line */
+}
+
+.step-title p:first-child {
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: 400 !important;
+}
+
+.step-title p:last-child {
+    font-size: 18px!important;
+    line-height: 27px;
+    font-weight: 400 !important;
+    opacity: 0.5;
 }
 
 .step-square::after {
@@ -120,32 +136,31 @@
     justify-content: center;
 }
 
-.step-title p:last-child {
-    font-size: 18px!important;
-    opacity: 0.5;
-}
 
 .detaile p {
     font-size: 19px;
     line-height: 28px;
-    font-weight: 500!important;
+    font-weight: 500 !important;
 }
 
 .frame .heading .txt h1 {
     font-size: 48px;
     line-height: 60px;
-    font-weight: 700!important;
+    font-weight: 700 !important;
 }
-.txt p{
+
+.txt p {
     font-size: 18px;
     line-height: 25px;
-    font-weight: 500!important;
+    font-weight: 500 !important;
 }
-.desc p{
-    font-size: 19px!important;
+
+.desc p {
+    font-size: 19px !important;
     line-height: 28px;
-    font-weight: 500!important;
+    font-weight: 500 !important;
 }
+
 @media (max-width: 575.98px) {
 
     .w-75,
@@ -161,6 +176,7 @@
     .circles {
         width: 100%;
     }
+
     .detaile p {
         font-size: 16px;
         line-height: 20px;
@@ -176,12 +192,36 @@
         font-size: 22px;
         line-height: 30px;
     }
-    .txt p{
+
+    .txt p {
         font-size: 16px;
         line-height: 20px;
-        font-weight: 500!important;
+        font-weight: 500 !important;
     }
 
+    .step-square {
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .step-title p:first-child {
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    .step-title p:last-child {
+        font-size: 16px!important;
+        line-height: 23px;
+    }
+    .steps-container-last .step-title p{
+        font-size: 12px !important;
+        line-height: 20px;
+        margin: 4px;
+    }
+    .desc p {
+        font-size: 16px !important;
+        line-height: 25px;
+    }
     .our-marketing-btn {
         padding: 15px 20px;
     }

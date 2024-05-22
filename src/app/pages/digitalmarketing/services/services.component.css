@@ -75,6 +75,36 @@
     font-weight: 400 !important;
     /* Position for vertical line */
 }
+.step-square-light {
+    width: 70px;
+    height: 60px;
+    background: linear-gradient(91.58deg, #43BAFF 0.52%, #7044B3 100%);
+    position: relative;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 400 !important;
+    /* Position for vertical line */
+}
+.step-square-light::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    /* Position the vertical line below the square */
+    left: 50%;
+    /* Position the vertical line in the middle of the square */
+    transform: translateX(-50%);
+    /* Center the vertical line horizontally */
+    height: 100%;
+    width: 1px;
+    /* Width of the vertical line */
+    background-color: black;
+    /* Color of the vertical line */
+}
+
 
 .step-square::after {
     content: '';

@@ -6,13 +6,9 @@
     margin: 20px 0;
 }
 
-.desc-txt {
-    font-size: 20px;
-    line-height: 25.2px;
-}
-
 .list-check {
-    font-size: 18px;
+    font-size: 20px;
+    font-weight: 400!important;
     letter-spacing: 2px;
 }
 
@@ -22,15 +18,32 @@
 }
 .sec4-headline>.service-tagline{
     font-size: 42px;
-    line-height: 52px;
+    line-height: 60px;
+    font-weight: 600!important;
 }
 .desc{
     width: 100%!important;
 }
 .desc > p {
-    font-size: 24px;
-    line-height: 30px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500!important;
     text-align: center;
+}
+.details .desc >p{
+    font-size:18px;
+    line-height: 22px;
+    font-weight: 400!important;
+}
+.title h3 {
+    font-size: 30px;
+    line-height: 37px;
+    font-weight: 500!important;
+}
+.desc-txt {
+    font-size: 20px;
+    line-height: 25.2px;
+    font-weight: 400!important;
 }
 @media (max-width: 1366px) {
     .app-details > .details > .detail:not(:last-child) {
@@ -48,13 +61,6 @@
     .w-50,
     .w-75 {
         width: 100% !important;
-    }
-
-    .desc-txt {
-        font-size: 15px;
-    }.sec4-headline>.service-tagline{
-        font-size: 38px;
-        line-height: 48px;
     }
 }
 @media (max-width:575.98px){
@@ -75,14 +81,26 @@
         line-height: 30px;
     }
     .desc{
-        width:75%!important
+        width:100%!important
     }
     .desc > p {
         font-size: 14px;
-        line-height: 23px;
+        line-height: 20px;
         text-align: center;
     }
+    .details .desc >p{
+        font-size:12px;
+        line-height: 18px;
+    }
     .title h3 {
+        font-size: 14px;
+        line-height: 25px;
+    }
+    .desc-txt {
+        font-size: 14px;
+        line-height: 20.2px;
+    }
+    .list-check{
         font-size: 14px;
     }
     .app-details > .details > .detail:not(:last-child) {
