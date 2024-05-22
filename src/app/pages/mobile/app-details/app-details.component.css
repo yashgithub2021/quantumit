@@ -11,6 +11,12 @@
     font-weight: 400!important;
     letter-spacing: 2px;
 }
+.project{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 .project-img {
     height: 400px;
@@ -23,6 +29,9 @@
 }
 .desc{
     width: 100%!important;
+}
+.desc1{
+    width: 75%!important;
 }
 .desc > p {
     font-size: 16px;
@@ -83,6 +92,7 @@
     .desc{
         width:100%!important
     }
+    
     .desc > p {
         font-size: 14px;
         line-height: 20px;

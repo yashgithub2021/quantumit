@@ -39,7 +39,7 @@
                         <h1>How Can We Help You?</h1>
                     </div>
                     <div class="txt w-75 text-center my-lg-3" data-aos="slide-up">
-                        <p class="fw-light sub-heading " style="color: #EFEDFDB2;">Let's do great work together</p>
+                        <p class="fw-light sub-heading "[ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">Let's do great work together</p>
                     </div>
 
                     <div class="steps-container circles">
@@ -125,10 +125,10 @@
                             </th>
                             <td class="align-middle second-td p-4">
                                 <h4 class="">{{data.heading}}</h4>
-                                <p class="m-0  " style="color:#B5B5B5">{{data.tail}}</p>
+                                <p class="m-0  " [ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">{{data.tail}}</p>
                             </td>
                             <td class="align-middle third-td p-4">
-                                <p class="m-0 " style="color:#B5B5B5">{{data.desc}}</p>
+                                <p class="m-0 " [ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">{{data.desc}}</p>
                                 <div class="list mb-2" *ngIf="data.list">
                                     <ul class=" list-unstyled  row">
                                         <li data-aos="fade-up"

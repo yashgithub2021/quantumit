@@ -795,7 +795,7 @@
     }
 
     .section3>.left-side::before {
-        background-image: url("https://s3-alpha-sig.figma.com/img/7d11/d6fc/c57c2c3612202f0e529fea7a50146624?Expires=1715558400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=DfB2wVtiEYk~MdDdyLQjxz1bqZ2bXZzZXYMmKh4zX09kmJrWzH-RG1Z9uNBqRh1kD52C4uYzIv9E0OV7brbSSyoA30uTa91qGsZE9rwRpgRYPZ370LKL6BmhgSKfG7FZtKSvCnjXCes8bHE246q-Dm2nOj0K2MpOkSh94L3dY2nDhDV12oFEW5WmbvY8d229aFsyO09ENbnG7msf9dPIeSaI9ev4oqztAWRwh4c9GRlLF1JWmZUPdcw6Kx3N2LOi-5VCJV2wUmgaQDv-lUHtMdXgDvd~Cnfbv~qrqzaqAtnFa2vfoFVWHFFAeD25MpwTOmR7Pib3ENpJbL2xjalNsw__");
+        background-image: url('../../../assets/home/banner.jpg');
         background-size: cover;
         border-radius: 22px;
         width: 100% !important;
