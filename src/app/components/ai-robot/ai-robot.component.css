@@ -247,7 +247,10 @@
 @media (max-width: 575.98px) {
 
     .frame-1 {
-        height: 70vh;
+        height: 55vh;
+    }
+    .frame-1::before{
+        background-size: 100% 180%;
     }
 
     .frame-1 .heading p {

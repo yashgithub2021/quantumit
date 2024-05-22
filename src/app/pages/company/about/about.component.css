@@ -195,6 +195,17 @@
         font-size: 34px;
 
     }
+    .miletone-number {
+        font-size: 30px;
+        font-weight: 800;
+        line-height: 35px;
+    }
+
+    .miletone-title {
+        font-size: 18px;
+        line-height: 20px;
+        font-weight: 400!important;
+    }
 
     .about-us>.container>.what-we-do {
         padding-top: 0px !important;
