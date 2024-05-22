@@ -284,6 +284,18 @@
     font-weight: 400 !important;
 }
 
+.hover-card {
+    transition: all 0.5s ease-in-out;
+}
+
+.hover-card:hover {
+    cursor: pointer;
+    transform: translateY(-5px) scale(1.03) translateZ(0);
+    box-shadow: 0 24px 36px rgba(0, 0, 0, 0.11),
+        0 24px 46px var(--box-shadow-color);
+    transition: all 0.5s ease-in-out;
+}
+
 @media (max-width: 1024px) {
 
     p {
@@ -424,6 +436,10 @@
         width: 100% !important;
     }
 
+    .frame-4::before {
+        width: 95%;
+
+    }
 
     .step-title p:first-child {
         font-size: 16px;

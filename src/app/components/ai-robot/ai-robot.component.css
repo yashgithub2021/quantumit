@@ -8,7 +8,7 @@
 }
 
 .frame-1::before {
-    background-image: url("https://s3-alpha-sig.figma.com/img/93d7/a9ae/3cb40b66ce03620e9f155ffbd096bb32?Expires=1714348800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=iRN4ui-0p1EvHSGeL5x-hUZBbFQ4ANBWjd6ZpXOsy1URVtL6W1cT4B8ciPS8tOzNKnd-dp7Igqv9~6f3kyLNU8FC~Vcqw0xCp4xVZXZzEQe90cpTmJVKMPeF~ZrO6Ua23-0h6D0Mv68LcItosWltujEPI~mCFNJw79JEsHncGGfHd0NK1CKbvmL8~KLIQ1bT28XUiXztElNOJF8DiHO3BHYMP47s3l3FJx3TgywwMqyAyt68Ff3YYo4QcdKUkzLuNYqMzUJMMWUzDJh~n1LbelKkjQUXzZ2~n5VwtOp~anxp8JIcooS4D4QfHcX3qglacMTRnk8bt8RPwwv3YBnDKA__");
+    background-image: url("../../../assets/ai/banner.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -212,6 +212,7 @@
     line-height: 34px;
     font-weight: 400 !important;
 }
+
 .number h1 {
     font-size: 45px;
     line-height: 57px;
@@ -295,7 +296,7 @@
     .title h3 {
         font-size: 20px;
         line-height: 24px;
-    }   
+    }
 
     .number h1 {
         text-align: center;

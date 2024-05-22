@@ -188,6 +188,7 @@
     min-width: 295px;
     justify-content: center !important;
 }
+
 .stack .name h5 {
     font-size: 16px;
     line-height: 16px;
@@ -223,16 +224,31 @@
     font-weight: 400;
     line-height: 27px;
 }
-.text > .title > h4 {
+
+.text>.title>h4 {
     font-size: 22px;
     white-space: nowrap;
     line-height: 26px;
     font-weight: 400 !important;
 }
-.text >.desc >p{
-    font-size:16px;
+
+.text>.desc>p {
+    font-size: 16px;
     line-height: 25px;
 }
+
+.hover-card {
+    transition: all 0.5s ease-in-out;
+}
+
+.hover-card:hover {
+    cursor: pointer;
+    transform: translateY(-5px) scale(1.03) translateZ(0);
+    box-shadow: 0 24px 36px rgba(0, 0, 0, 0.11),
+        0 24px 46px var(--box-shadow-color);
+    transition: all 0.5s ease-in-out;
+}
+
 @media (max-width: 1366px) {
     .text>.txt {
         margin-top: 20px !important;
@@ -427,6 +443,7 @@
         width: 300px;
         justify-content: center !important;
     }
+
     .stack .name h5 {
         font-size: 12px;
         line-height: 15px;
@@ -450,7 +467,8 @@
         font-size: 14px;
         line-height: 18px;
     }
-    .text> .desc>p{
+
+    .text>.desc>p {
         font-size: 12px;
         line-height: 20px;
         opacity: 0.5;

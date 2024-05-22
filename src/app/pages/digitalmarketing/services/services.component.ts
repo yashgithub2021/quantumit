@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ApiService } from 'src/app/shared/api/api.service';
+import AOS from 'aos';
 
 @Component({
   selector: 'app-services',
@@ -14,6 +15,9 @@ export class ServicesComponent {
   constructor(private api: ApiService, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
+    AOS.init({
+      duration: 2000,
+    })
     this.isDarkTheme = this.api.isDarkTheme();
     this.themechange()
     this.route.data.subscribe((data: any) => {
