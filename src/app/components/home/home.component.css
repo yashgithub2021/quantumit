@@ -626,6 +626,11 @@
     }
 
 }
+@media (max-width:1024px) and (min-width:821px){
+    .section3 > .left-side {
+        width: 101%;
+    }
+}
 
 @media(max-width:1024px) and (min-height:1366px) {
     .section3>.left-side {
@@ -663,7 +668,8 @@
     }
 
     .section3>.left-side::before {
-        width: 110% !important;
+        width: 107% !important;
+        height:90%!important
     }
 
     .section3>.right-side>.container {
