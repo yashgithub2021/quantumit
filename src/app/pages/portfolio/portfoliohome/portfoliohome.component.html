@@ -10,8 +10,9 @@
                             </h1>
                         </div>
                         <div class="miletone-title ">
-                            <p class="">Welcome to quantum, where collaboration, expertise, and client-centricity intersect
-                                to shape the <br> future of digital innovation.</p>
+                            <p class="">Welcome to quantum, where collaboration, expertise, and client-centricity
+                                intersect
+                                to shape the future of digital innovation.</p>
                         </div>
                     </div>
                 </div>
@@ -64,6 +65,11 @@
             </div>
         </div>
         <div class="container-fluid my-4 apps">
+            <div class="d-flex justify-content-center align-items-center mb-3" *ngIf="loadingStatus">
+                <div class="spinner-border text-success" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+            </div>
             <div class="d-flex justify-content-center apps-container">
                 <div class="w-100 d-flex justify-content-evenly gap-3 gap-lg-0">
                     <div class="app1-cont d-flex flex-column gap-3">

@@ -259,7 +259,7 @@ button {
 
 @media (max-width: 575.98px) {
     footer {
-        height: 175vh;
+        height: 165vh;
     }
 
     footer>.container {
@@ -305,7 +305,7 @@ button {
 
 @media (max-width: 375px) {
     footer{
-        justify-content: center!important;
+        justify-content: start!important;
     }
     footer>.container {
         height: auto;
@@ -313,5 +313,10 @@ button {
 
     .social-links-container {
         height: auto;
+    }
+}
+@media (max-width:374px){
+    footer{
+        height: 150px;
     }
 }
