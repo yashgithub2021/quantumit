@@ -498,7 +498,7 @@ p {
 
 @media (max-width: 575.98px) {
 
-    
+
     .view-more>p {
         color: rgb(75, 75, 214);
         font-size: 14px;
@@ -630,6 +630,10 @@ p {
 
     .text-black {
         color: white !important;
+    }
+
+    .text-white {
+        color: black !important;
     }
 
     .project-img-container {
