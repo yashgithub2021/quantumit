@@ -10,13 +10,15 @@ export class PortfoliohomeComponent implements OnInit {
 
   isDarkTheme!: boolean
   activeTab: string = 'all'
-  projects: any
+  projects: any;
+  loadingStatus:boolean=true;
   constructor(private api: ApiService) { }
 
   ngOnInit(): void {
     this.isDarkTheme = this.api.isDarkTheme();
-    this.themechange()
-    this.fetchProjects()
+    this.themechange();
+    this.fetchProjects();
+    this.scrollToTop();
   }
 
   themechange() {
@@ -35,26 +37,43 @@ export class PortfoliohomeComponent implements OnInit {
   }
 
   fetchProjects() {
-    this.changeTab('all')
+    this.loadingStatus=true;
+    this.changeTab('all');
     this.api.getProjects().subscribe((res: any) => {
       this.projects = res.project
       console.log(this.projects)
-    })
+    },err=>{
+      this.loadingStatus=false;
+    },()=>{
+      this.loadingStatus=false;
+    });
   }
 
   fetchWebProjects() {
+    this.loadingStatus=true;
+
     this.changeTab('web-design')
     this.api.getWebAppProjects().subscribe((res: any) => {
       this.projects = res.projects
       console.log(res.projects)
+    },err=>{
+      this.loadingStatus=false;
+    },()=>{
+      this.loadingStatus=false;
     })
   }
 
   fetchAppProjects() {
+    this.loadingStatus=true;
+
     this.changeTab('app')
     this.api.getMobileAppProjects().subscribe((res: any) => {
       this.projects = res.projects
       console.log(this.projects)
+    },err=>{
+      this.loadingStatus=false;
+    },()=>{
+      this.loadingStatus=false;
     })
   }
 
