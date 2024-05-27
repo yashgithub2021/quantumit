@@ -26,13 +26,13 @@
                         <h1 class="text-capitalize">How Does It Work</h1>
                     </div>
 
-                    <div class="steps-container squares w-100 mt-lg-5 mt-4 mb-lg-3 ">
+                    <div class="steps-container squares w-100 mt-lg-5 mt-4 mb-lg-3">
                         <div [ngStyle]="{'background':isDarkTheme?'#fff':'black'}" class="step-line"></div>
-                        <div class="step-square">01</div>
+                        <div class="" [ngClass]="isDarkTheme?'step-square':'step-square-light'">01</div>
                         <div [ngStyle]="{'background':isDarkTheme?'#fff':'black'}" class="step-line"></div>
-                        <div class="step-square">02</div>
+                        <div class="" [ngClass]="isDarkTheme?'step-square':'step-square-light'">02</div>
                         <div [ngStyle]="{'background':isDarkTheme?'#fff':'black'}" class="step-line"></div>
-                        <div class="step-square">03</div>
+                        <div class="" [ngClass]="isDarkTheme?'step-square':'step-square-light'">03</div>
                         <div [ngStyle]="{'background':isDarkTheme?'#fff':'black'}" class="step-line"></div>
                     </div>
                     <div class="steps-container-1 gap-lg-3 w-100 mt-5 ">

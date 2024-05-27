@@ -50,7 +50,6 @@ export class AiRobotComponent implements OnInit {
     AOS.init({
       duration: 2000,
     })
-
     this.isDarkTheme = this.api.isDarkTheme();
     this.themechange()
   }
