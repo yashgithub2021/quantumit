@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit } from '@angular/core';
 import * as Aos from 'aos';
 import { ApiService } from 'src/app/shared/api/api.service';
 
@@ -10,12 +10,14 @@ import { ApiService } from 'src/app/shared/api/api.service';
 export class CasestudyComponent implements OnInit {
 
   isDarkTheme!: boolean
-  constructor(private api: ApiService) { }
+  constructor(private api: ApiService,private elementRef:ElementRef) {
+   }
 
   ngOnInit(): void {
     Aos.init({
       duration: 2000,
     })
+    this.scrollToTop();
     this.isDarkTheme = this.api.isDarkTheme();
     this.themechange()
   }
@@ -24,5 +26,8 @@ export class CasestudyComponent implements OnInit {
     this.api.themeChanged.subscribe((isDarkTheme: boolean) => {
       this.isDarkTheme = isDarkTheme;
     });
+  }
+  scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 }
