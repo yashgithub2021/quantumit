@@ -41,7 +41,7 @@
             </div>
             <div class=" w-100 px-lg-5 px-2 align-content-between">
                 <div class="desc">
-                    <p class=" "[ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">
+                    <p class=" " [ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">
                         From crafting bespoke websites to developing innovative mobile apps, harnessing the power of
                         artificial intelligence, to driving digital marketing strategies, we empower businesses to
                         thrive in the digital age. Our expert team combines creativity, technology, and strategic
@@ -50,8 +50,10 @@
                 </div>
                 <div class="nums d-flex align-items-center justify-content-center">
                     <div class="row position-relative">
-                        <div class="horizontal-line position-absolute "[ngStyle]="{'background-color':isDarkTheme?'white':'black'}"></div>
-                        <div class="vertical-line position-absolute"[ngStyle]="{'background-color':isDarkTheme?'white':'black'}"></div>
+                        <div class="horizontal-line position-absolute "
+                            [ngStyle]="{'background-color':isDarkTheme?'white':'black'}"></div>
+                        <div class="vertical-line position-absolute"
+                            [ngStyle]="{'background-color':isDarkTheme?'white':'black'}"></div>
                         <div class="col-6">
                             <h1 [ngStyle]="{'color':isDarkTheme?'white':'#43BAFF'}" class="number text-align-center">30
                             </h1>
@@ -95,8 +97,8 @@
                         [ngStyle]="{'background':isDarkTheme?'#242627':'#ECF0FF'}">
                         <div class="d-flex gap-3 flex-column h-100 w-100 justify-content-between">
                             <p style="font-size: 14px;" class="text-uppercase fw-lighter">{{partner.title}}</p>
-                            <img style="mix-blend-mode: luminosity;" [width]="partner.width" [height]="partner.height"
-                                [src]="partner.img" alt="">
+                            <img style="filter: grayscale(100)" [ngStyle]="{filter:isDarkTheme?'none':'invert(1)'}"
+                                [width]="partner.width" [height]="partner.height" [src]="partner.img" alt="">
                             <p class="mb-0 opacity-50">{{partner.name}}</p>
                         </div>
                     </div>
@@ -244,7 +246,7 @@
                             </div>
                             <div class="text mx-3 ">
                                 <div class="desc">
-                                    <p class=" fw-light"[ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">
+                                    <p class=" fw-light" [ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">
                                         2024
                                     </p>
                                 </div>
@@ -254,7 +256,7 @@
                                     </h4>
                                 </div>
                                 <div class="desc">
-                                    <p class=" fw-light"[ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">
+                                    <p class=" fw-light" [ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">
                                         Top Mobile App Development
                                     </p>
                                 </div>
@@ -267,7 +269,7 @@
                             </div>
                             <div class="text mx-3 ">
                                 <div class="desc">
-                                    <p class="  fw-light"[ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">
+                                    <p class="  fw-light" [ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">
                                         2024
                                     </p>
                                 </div>
@@ -277,7 +279,7 @@
                                     </h4>
                                 </div>
                                 <div class="desc">
-                                    <p class=" fw-light"[ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">
+                                    <p class=" fw-light" [ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">
                                         Top Mobile App Developers
                                     </p>
                                 </div>
@@ -290,7 +292,7 @@
                             </div>
                             <div class="text mx-3 ">
                                 <div class="desc">
-                                    <p class=" fw-light"[ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">
+                                    <p class=" fw-light" [ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">
                                         2024
                                     </p>
                                 </div>
@@ -300,7 +302,7 @@
                                     </h4>
                                 </div>
                                 <div class="desc">
-                                    <p class=" fw-light"[ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">
+                                    <p class=" fw-light" [ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">
                                         Site Of the Month
                                     </p>
                                 </div>
@@ -313,7 +315,7 @@
                             </div>
                             <div class="text mx-3 ">
                                 <div class="desc">
-                                    <p class="  fw-light"[ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">
+                                    <p class="  fw-light" [ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">
                                         2024
                                     </p>
                                 </div>
@@ -323,7 +325,7 @@
                                     </h4>
                                 </div>
                                 <div class="desc">
-                                    <p class=" fw-light"[ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">
+                                    <p class=" fw-light" [ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">
                                         Certified Mobile App Developer
                                     </p>
                                 </div>
@@ -336,7 +338,7 @@
                             </div>
                             <div class="text mx-3 ">
                                 <div class="desc">
-                                    <p class="  fw-light"[ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">
+                                    <p class="  fw-light" [ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">
                                         2024
                                     </p>
                                 </div>
@@ -346,7 +348,7 @@
                                     </h4>
                                 </div>
                                 <div class="desc">
-                                    <p class="  fw-light"[ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">
+                                    <p class="  fw-light" [ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">
                                         Certified Mobile App Developer
                                     </p>
                                 </div>

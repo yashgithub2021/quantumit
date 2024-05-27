@@ -36,7 +36,7 @@ export class AboutComponent implements OnInit {
     },
     {
       title: "Web Design",
-      img: "../../../../assets/carousel/5.png.svg",
+      img: "../../../../assets/about/5.png.png",
       name: "Tourism",
       height: "50",
       width: "120"
