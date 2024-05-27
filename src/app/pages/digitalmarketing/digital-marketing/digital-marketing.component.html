@@ -30,58 +30,63 @@
         <div class="container d-flex flex-column justify-content-center my-5 px-lg-5">
             <div class="heading d-flex justify-content-center align-items-center">
                 <div class="d-none d-sm-block">
-                <div class="text w-100 d-flex flex-column justify-content-center align-items-center">
-                    <div class="button my-lg-3" data-aos="slide-up">
-                        <button class="our-process-btn">
-                            Our Process
-                        </button>
-                    </div>
-                    <div class="txt w-75 text-center my-lg-3" data-aos="slide-up">
-                        <h1>How Can We Help You?</h1>
-                    </div>
-                    <div class="txt w-75 text-center my-lg-3" data-aos="slide-up">
-                        <p class="fw-light sub-heading " [ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">Let's do great
-                            work together</p>
-                    </div>
+                    <div class="text w-100 d-flex flex-column justify-content-center align-items-center">
+                        <div class="button my-lg-3" data-aos="slide-up">
+                            <button class="our-process-btn">
+                                Our Process
+                            </button>
+                        </div>
+                        <div class="txt w-75 text-center my-lg-3" data-aos="slide-up">
+                            <h1>How Can We Help You?</h1>
+                        </div>
+                        <div class="txt w-75 text-center my-lg-3" data-aos="slide-up">
+                            <p class="fw-light sub-heading " [ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">Let's do
+                                great
+                                work together</p>
+                        </div>
 
-                    <div class="steps-container circles">
-                        <div [ngClass]="isDarkTheme?'step-first-circle':'step-first-circle-light'"
-                            class="align-content-center text-align-center" data-aos="fade-up">
-                            <img height="30" width="30" src="../../../../assets/dm/first-circle.svg" alt="">
+                        <div class="steps-container circles">
+                            <div [ngClass]="isDarkTheme?'step-first-circle':'step-first-circle-light'"
+                                class="align-content-center text-align-center" data-aos="fade-up">
+                                <img height="30" width="30" src="../../../../assets/dm/first-circle.svg" alt="">
+                            </div>
+                            <div [ngClass]="isDarkTheme?'step-dashed-line':'step-dashed-line-light'"
+                                data-aos="slide-up">
+                            </div>
+                            <div [ngClass]="isDarkTheme?'step-circle':'step-circle-light'" data-aos="fade-down"></div>
+                            <div [ngClass]="isDarkTheme?'step-dashed-line':'step-dashed-line-light'"
+                                data-aos="slide-up">
+                            </div>
+                            <div [ngClass]="isDarkTheme?'step-circle':'step-circle-light'" data-aos="fade-up"></div>
+                            <div [ngClass]="isDarkTheme?'step-dashed-line':'step-dashed-line-light'"
+                                data-aos="slide-up">
+                            </div>
+                            <div [ngClass]="isDarkTheme?'step-circle':'step-circle-light'" data-aos="fade-down"></div>
+                            <!-- Add more circles and dashed lines as needed -->
                         </div>
-                        <div [ngClass]="isDarkTheme?'step-dashed-line':'step-dashed-line-light'" data-aos="slide-up">
+                        <div class="steps-container w-100 mt-4" data-aos="fade-up">
+                            <div class="step-title w-25 d-flex justify-content-center">
+                                <p class="w-75 fw-light text-align-center">Refresh your website content optimal
+                                    performance
+                                </p>
+                            </div>
+                            <div class="step-dashed-line visually-hidden"></div>
+                            <div class="step-title w-25 d-flex justify-content-center">
+                                <p class="w-75 fw-light text-align-center">Revitalize User Experience Design</p>
+                            </div>
+                            <div class="step-dashed-line visually-hidden"></div>
+                            <div class="step-title w-25 d-flex justify-content-center">
+                                <p class="w-75 fw-light text-align-center">Request a no-cost website review now</p>
+                            </div>
+                            <div class="step-dashed-line visually-hidden"></div>
+                            <div class="step-title w-25 d-flex justify-content-center">
+                                <p class="w-75 fw-light text-align-center">Enhance your SEO Rankings for better online
+                                    presence</p>
+                            </div>
+                            <div class="step-dashed-line visually-hidden"></div>
                         </div>
-                        <div [ngClass]="isDarkTheme?'step-circle':'step-circle-light'" data-aos="fade-down"></div>
-                        <div [ngClass]="isDarkTheme?'step-dashed-line':'step-dashed-line-light'" data-aos="slide-up">
-                        </div>
-                        <div [ngClass]="isDarkTheme?'step-circle':'step-circle-light'" data-aos="fade-up"></div>
-                        <div [ngClass]="isDarkTheme?'step-dashed-line':'step-dashed-line-light'" data-aos="slide-up">
-                        </div>
-                        <div [ngClass]="isDarkTheme?'step-circle':'step-circle-light'" data-aos="fade-down"></div>
-                        <!-- Add more circles and dashed lines as needed -->
-                    </div>
-                    <div class="steps-container w-100 mt-4" data-aos="fade-up">
-                        <div class="step-title w-25 d-flex justify-content-center">
-                            <p class="w-75 fw-light text-align-center">Refresh your website content optimal performance
-                            </p>
-                        </div>
-                        <div class="step-dashed-line visually-hidden"></div>
-                        <div class="step-title w-25 d-flex justify-content-center">
-                            <p class="w-75 fw-light text-align-center">Revitalize User Experience Design</p>
-                        </div>
-                        <div class="step-dashed-line visually-hidden"></div>
-                        <div class="step-title w-25 d-flex justify-content-center">
-                            <p class="w-75 fw-light text-align-center">Request a no-cost website review now</p>
-                        </div>
-                        <div class="step-dashed-line visually-hidden"></div>
-                        <div class="step-title w-25 d-flex justify-content-center">
-                            <p class="w-75 fw-light text-align-center">Enhance your SEO Rankings for better online
-                                presence</p>
-                        </div>
-                        <div class="step-dashed-line visually-hidden"></div>
                     </div>
                 </div>
-            </div>
                 <!-- custom added -->
                 <div class="text w-100 d-flex flex-column justify-content-center align-items-center d-block d-sm-none">
                     <div class="button my-lg-3" data-aos="slide-up">
@@ -185,13 +190,13 @@
                                 </div>
                             </div>
                         </div>
-                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button"
-                            data-slide="prev">
+                        <a [ngStyle]="{filter:isDarkTheme?'none':'invert(1)'}" class="carousel-control-prev"
+                            href="#carouselExampleControls" role="button" data-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="sr-only">Previous</span>
                         </a>
-                        <a class="carousel-control-next" href="#carouselExampleControls" role="button"
-                            data-slide="next">
+                        <a [ngStyle]="{filter:isDarkTheme?'none':'invert(1)'}" class="carousel-control-next"
+                            href="#carouselExampleControls" role="button" data-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="sr-only">Next</span>
                         </a>
@@ -503,7 +508,7 @@
         </div>
     </div>
     <div class="learnMore d-flex align-items-center justify-content-center">
-        <button routerLink="services" (click)="scrollToTop()"
+        <button routerLink="casestudy" (click)="scrollToTop()"
             class="btn-lm fs-5 rounded d-flex align-items-center justify-content-between">View
             All
         </button>
