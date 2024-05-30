@@ -145,7 +145,7 @@
                     </div>
                 </div>
                 <div class="learnMore">
-                    <button routerLink="portfolio"type="button"
+                    <button routerLink="portfolio" type="button"
                         class="btn fs-5 rounded d-flex align-items-center justify-content-between">View All
                     </button>
                 </div>
@@ -228,45 +228,49 @@
     </div>
 
     <!-- Section7 -->
-    <div class="container section7 w-100 mt-5" id="customers">
-        <div class="container h-100">
-            <ngb-carousel [ngStyle]="{'filter':isDarkTheme?'none':'invert(1)'}" #myCarousel *ngIf="reviews?.length > 0">
-                <ng-template ngbSlide *ngFor="let review of reviews">
-                    <div class="customer-feedback h-100 w-100 p-5 p-md-3" data-aos="fade-up">
-                        <div [ngStyle]="{'filter':isDarkTheme?'none':'invert(1)'}"
-                            [ngClass]="isDarkTheme ? 'cf-cont-dark' : 'cf-cont-light'"
-                            class="container cf-cont d-flex flex-column justify-content-around align-items-start">
-                            <div class="stars">
-                                <i *ngFor="let star of getStars(review.stars)" class="fa-solid fa-star mx-1"
-                                    [ngStyle]="{'color':isDarkTheme ? 'white' : '#212529'}"></i>
-                            </div>
-                            <div class="feedback " [ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">{{review.message}}
-                            </div>
-                            <div class="customer d-flex justify-content-between w-100 align-items-end">
-                                <div class="customer-name">
-                                    <h5>{{review.name}}</h5>
-                                    <p class="m-0 " [ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">{{review.designation}}
-                                    </p>
+    <div class="container-fluid section7 w-100 mt-5" id="customers">
+        <div class="container-fluid h-100">
+            <ngb-carousel [showNavigationIndicators]="showNavigationIndicators"
+                [ngStyle]="{'filter':isDarkTheme ? 'none' : 'invert(1)'}" #myCarousel>
+                <ng-template ngbSlide *ngFor="let reviewPair of groupedReviews">
+                    <div class="d-flex flex-column flex-md-row justify-content-around h-100 w-100">
+                        <div *ngFor="let review of reviewPair" class="customer-feedback h-100 w-100 p-5 p-md-3"
+                            data-aos="fade-up">
+                            <div [ngStyle]="{'filter':isDarkTheme ? 'none' : 'invert(1)'}"
+                                [ngClass]="isDarkTheme ? 'cf-cont-dark' : 'cf-cont-light'"
+                                class="container cf-cont d-flex flex-column justify-content-around align-items-start">
+                                <div class="stars">
+                                    <i *ngFor="let star of getStars(review.stars)" class="fa-solid fa-star mx-1"
+                                        [ngStyle]="{'color':isDarkTheme ? 'white' : '#212529'}"></i>
                                 </div>
-                                <div class="profile">
-                                    <img height="50" width="50" style="border-radius: 50px;" class="object-fit-contain"
-                                        [src]="review.profileImg" alt="profile">
+                                <div class="feedback" [ngStyle]="{'opacity':isDarkTheme ? '0.5' : '1'}">
+                                    {{review.message}}</div>
+                                <div class="customer d-flex justify-content-between w-100 align-items-end">
+                                    <div class="customer-name">
+                                        <h5>{{review.name}}</h5>
+                                        <p class="m-0" [ngStyle]="{'opacity':isDarkTheme ? '0.5' : '1'}">
+                                            {{review.designation}}</p>
+                                    </div>
+                                    <div class="profile">
+                                        <img height="50" width="50" style="border-radius: 50px;"
+                                            class="object-fit-contain" [src]="review.profileImg" alt="profile">
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </ng-template>
-                <a class=" custom-prev" role="button" (click)="myCarousel.prev()">
-                    <span class="carousel-control-prev-icon " aria-hidden="true"></span>
+                <!-- <a class="custom-prev " role="button" (click)="myCarousel.prev()">
+                    <span class="carousel-control-prev-icon justify-content-start" aria-hidden="true"></span>
                     <span class="sr-only">Previous</span>
                 </a>
-
-                <!-- Custom next button -->
-                <a class=" custom-next" role="button" (click)="myCarousel.next()">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <a class="custom-next " role="button" (click)="myCarousel.next()">
+                    <span class="carousel-control-next-icon justify-content-end" aria-hidden="true"></span>
                     <span class="sr-only">Next</span>
-                </a>
+                </a> -->
             </ngb-carousel>
+
+
         </div>
     </div>
 

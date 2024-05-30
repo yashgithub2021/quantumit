@@ -11,7 +11,7 @@ import { ApiService } from 'src/app/shared/api/api.service';
 })
 export class HomeComponent implements OnInit {
   isDarkTheme: boolean;
-
+  showNavigationIndicators = false
   constructor(private api: ApiService, private elementRef: ElementRef) {
     this.isDarkTheme = this.api.isDarkTheme();
   }
@@ -112,6 +112,7 @@ export class HomeComponent implements OnInit {
   ]
 
   reviews: any
+  groupedReviews!: any[][];
 
   ngOnInit(): void {
     AOS.init({
@@ -125,16 +126,26 @@ export class HomeComponent implements OnInit {
     });
   }
 
-  fetchReviews() {
-    this.api.getReviews()
-      .subscribe((res: any) => {
+  fetchReviews(): void {
+    this.api.getReviews().subscribe(
+      (res: any) => {
         this.reviews = res.feedbacks;
+        this.groupedReviews = this.groupReviews(this.reviews);
         console.log(res);
         console.log(this.reviews);
-        console.log(this.reviews.rating)
-      },err=>{
+      },
+      err => {
         console.log(err);
-      })
+      }
+    );
+  }
+
+  groupReviews(reviews: any[]): any[][] {
+    const groupedReviews = [];
+    for (let i = 0; i < reviews.length; i += 2) {
+      groupedReviews.push(reviews.slice(i, i + 2));
+    }
+    return groupedReviews;
   }
 
   // Inside your component class
