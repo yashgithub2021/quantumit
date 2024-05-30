@@ -275,12 +275,12 @@ p {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: start;
     }
 
     .our-process,
     .desc {
-        width: 75% !important;
+        /* width: 75% !important; */
     }
 }
 

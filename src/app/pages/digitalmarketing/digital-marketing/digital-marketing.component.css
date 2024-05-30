@@ -388,7 +388,7 @@
 }
 
 .step-title p:last-child {
-    font-size: 16px !important;
+    font-size: 22px !important;
     line-height: 27px;
 }
 
@@ -399,7 +399,7 @@
 }
 
 .txt h1 {
-    font-size: 48px;
+    font-size: 42px;
     line-height: 60px;
     font-weight: 700;
 }

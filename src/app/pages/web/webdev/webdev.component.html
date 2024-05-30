@@ -3,15 +3,15 @@
         <div data-aos="fade-in"
             class="heading w-100 h-100 d-flex flex-column align-items-center justify-content-center ">
             <h1 class="tagline text-center fw-bolder w-lg-50">Supreme
-                <span class="linear-text">Web Development </span>Solutions
+                <span class="linear-text">Web <br> Development </span>Solutions
             </h1>
             <p class="fs-4 text-align-center text-capitalize">
-                Top-tier web development services, tailored to <br> perfection
+                Top-tier web development services, tailored to perfection <br>
                 for your digital needs.
             </p>
             <div class="buttons d-flex justify-content-center w-100 mt-3">
                 <button class="btn btn-primary mx-3 px-2 px-lg-4 py-3" (click)="scrollToProcess()">Get Started</button>
-                <button class="btn btn-outline-primary mx-3 px-2 px-lg-4 py-3 text-uppercase "
+                <button class="btn text-white btn-outline-primary mx-3 px-2 px-lg-4 py-3 text-uppercase "
                     (click)="scrollToForm()">learn
                     More</button>
             </div>
@@ -44,14 +44,14 @@
                 <button class="our-process-btn">Our Process</button>
             </div>
 
-            <div class="our-process my-2" data-aos="slide-up">
-                <h1 class="text-center">How Quantum develops top-notch websites</h1>
+            <div class="our-process my-2 w-100" data-aos="slide-up">
+                <h1 class="text-left w-100">How Quantum develops top-notch websites</h1>
             </div>
 
             <div class="desc w-100 my-2" data-aos="slide-up">
-                <p class="text-center sub-heading" [ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">Our refined methodology
+                <p class="text-left sub-heading" [ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">Our refined methodology
                     guarantees premium website
-                    development, elevating
+                    development, elevating <br>
                     brands with precision.</p>
             </div>
         </div>
@@ -110,7 +110,7 @@
                 <p class="sub-heading" [ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">We help businesses from healthcare,
                     transportation, real estate,
                     communication,
-                    and other
+                    and other <br>
                     industries seize new opportunities, overcome business challenges.</p>
             </div>
         </div>
@@ -180,13 +180,14 @@
                                 <div class="name">
                                     <h2>{{projects[1].name}}</h2>
                                 </div>
-                                <div class="details text-black fw-lighter text-align-center text-lg-start text-l fs-4">
+                                <div
+                                    class="details text-black opacity-50 fw-lighter text-align-center text-lg-start text-l fs-4">
                                     {{(projects[1].description.length>100)? (projects[1].description | slice:0:100)+'...':(projects[1].description)}}
                                 </div>
                                 <div [routerLink]="'details/' + projects[1]?._id" (click)="scrollToTop()"
                                     class="view-more fw-light d-flex align-items-center">
-                                    <p class="p-0 me-4 mb-0">View More Details</p>
-                                    <i class="fa fa-solid fa-arrow-right " style="color:inherit"></i>
+                                    <p class="p-0 me-4 mb-0" style="color:#656AE5">View More Details</p>
+                                    <i class="fa fa-solid fa-arrow-right " style="color:#656AE5"></i>
                                 </div>
                             </div>
                             <div [ngClass]="isDarkTheme?'text-black':'text-white'"
