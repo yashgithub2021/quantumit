@@ -27,6 +27,11 @@
     line-height: 60px;
     font-weight: 600!important;
 }
+.about-project .sec4-headline>.service-tagline{
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 600!important;
+}
 .desc{
     width: 100%!important;
 }
@@ -42,6 +47,11 @@
 .details .desc >p{
     font-size:18px;
     line-height: 22px;
+    font-weight: 400!important;
+}
+.about-project .desc >p{
+    font-size: 20px;
+    line-height: 25px;
     font-weight: 400!important;
 }
 .title h3 {
@@ -101,6 +111,11 @@
     .details .desc >p{
         font-size:12px;
         line-height: 18px;
+    }
+    .about-project .desc >p{
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 400!important;
     }
     .title h3 {
         font-size: 14px;
