@@ -24,7 +24,7 @@
                     </div>
                 </div>
             </div>
-            <div class="image h-100 w-100">
+            <div class="image h-100 ">
                 <img class="w-100" src="../../../assets/mobile/heading.svg" alt="">
             </div>
         </div>
@@ -99,7 +99,7 @@
                 <div class="row w-100 h-100  g-4 align-items-center">
                     <div data-aos="slide-up" *ngFor="let data of aiService" class="service-card col-lg-4 col-12">
                         <div [ngClass]="isDarkTheme?'ai-bg-dark':'ai-bg-light'"
-                            class="col-details px-5 ai-data py-lg-2 d-flex align-items-start justify-content-evenly flex-column">
+                            class="col-details px-4 ai-data py-lg-2 d-flex align-items-start justify-content-evenly flex-column">
                             <div data-aos="slide-up" class="serial-no">
                                 <h3 class="fw-light" style="color: #43BAFF;">{{data?.num}}</h3>
                             </div>
@@ -107,8 +107,9 @@
                                 <h4 class="">{{data?.title}}</h4>
                             </div>
                             <div data-aos="slide-up" class="desc w-100">
-                                <p style=" line-height:30px"[ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">{{data?.desc}}</p>
+                                <p style=" line-height:30px;color: #8990AC;"[ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">{{data?.desc}}</p>
                             </div>
+
                         </div>
                     </div>
                 </div>
