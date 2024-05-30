@@ -74,7 +74,7 @@
     content: '';
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 165%;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -220,6 +220,9 @@
     position: relative;
     height: auto;
     width: 100%;
+}
+.section4 .services-section .heading{
+    width: 65%!important;
 }
 
 .section4::before {
@@ -535,8 +538,8 @@
 }
 
 .project-title {
-    font-size: 32px;
-    line-height: 40.32px;
+    font-size: 24px;
+    line-height: 30.32px;
 }
 
 @media(min-width:1181px) {
@@ -627,6 +630,8 @@
 
     .sec4-headline {
         width: 100%;
+    }.dark::before {
+        height: 140%;
     }
 
 }
@@ -696,7 +701,9 @@
     .section1 {
         height: 50vh;
     }
-
+    .dark::before {
+        height: 170%;
+    }
     .container>.tagline {
         font-size: 50px;
         line-height: 55px;
@@ -779,6 +786,10 @@
 
 @media (max-width: 575.98px) {
 
+    .section4 .services-section .heading{
+        width: 80%!important;
+    }
+
     .cards {
         margin: 0px;
     }
@@ -845,6 +856,7 @@
     .service-tagline {
         font-size: 22px;
         line-height: 30px;
+        margin-top: 10px;
     }
 
     .miletone-number {
@@ -1034,8 +1046,8 @@
     }
 
     .section1>div>div:nth-child(2)>h1 {
-        font-size: 16px !important;
-        line-height: 23px;
+        font-size: 12px !important;
+        line-height: 16px;
     }
 
     .section1>div>div:nth-child(2) {
@@ -1062,9 +1074,7 @@
         height: 30vh;
     }
 
-    .dark::before {
-        height: 170%;
-    }
+    
 
     /* .section2>.categories>div {
         background: #141414;
