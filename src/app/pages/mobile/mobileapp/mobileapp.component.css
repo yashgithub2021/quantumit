@@ -8,7 +8,10 @@
 }
 
 .mobile-app {
-    height: 100vh;
+    height: 80vh;
+}
+.mobile-app .image{
+    width:55%!important;
 }
 
 .mobile-app-dark {
@@ -33,6 +36,8 @@
     font-size: 21px !important;
     line-height: 27px;
     font-weight: 400 !important;
+    margin-top:20px;
+    margin-bottom: 20px;
 }
 
 .our-process>h1,
@@ -41,11 +46,15 @@
     line-height: 54px;
     font-weight: 700 !important;
 }
+.our-process>h1{
+    margin-bottom: 40px!important;
+}
 
 .our-process-content h3 {
     font-size: 30px;
     line-height: 30px;
     font-weight: 500 !important;
+    margin-bottom: 30px;
 }
 
 .list li p {
@@ -249,6 +258,9 @@
     .mobile-app {
         height: auto;
     }
+    .mobile-app .image{
+        width:100%!important;
+    }
 
     .ai-data,
     .frame-2 .container {
@@ -383,6 +395,8 @@
     .heading>p {
         font-size: 14px !important;
         line-height: 20px;
+        margin-top: 0px;
+        margin-bottom: 20px;
     }
 
 
@@ -397,10 +411,14 @@
         font-size: 22px;
         line-height: 30px;
     }
+    .our-process>h1{
+        margin-bottom: 30px!important;
+    }
 
     .our-process-content h3 {
         font-size: 18px;
         line-height: 20px;
+        margin-bottom: 20px;
     }
 
     .list li p {
