@@ -62,43 +62,43 @@ export class DigitalMarketingComponent implements OnInit {
       img: "../../../assets/dm/table-img.svg",
       heading: "Search Engine",
       tail: "Optimization",
-      desc: "Health and care consulting refers to the practice of providing expert advice and guidance.",
+      desc: "SEO is the process of enhancing a website's visibility and ranking on <br> search engine results pages to increase organic traffic and improve <br> online presence.",
       link: "seoServices"
     },
     {
       img: "../../../assets/dm/paid-search.svg",
       heading: "Paid Search",
       tail: "Marketing",
-      desc: "Paid search marketing involves placing targeted ads on search engine results pages to increase visibility and drive traffic to websites.",
+      desc: "Paid search marketing involves placing targeted ads on search engine <br> results pages to increase visibility and drive traffic to websites.",
       link: "paidSearch"
     },
     {
       img: "../../../assets/dm/conversion-rate.svg",
       heading: "Conversion Rate",
       tail: "Optimization",
-      desc: "Conversion rate optimization (CRO) improves the percentage of website visitors who take a desired action, ultimately increasing the effectiveness of a website.",
+      desc: "Conversion rate optimization (CRO) improves the percentage of <br> website visitors who take a desired action, ultimately increasing <br> the effectiveness of a website.",
       link: "conversionRateOptimization"
     },
     {
       img: "../../../assets/dm/social-media.svg",
       heading: "Social Media",
       tail: "Marketing",
-      desc: "Social media marketing involves leveraging social platforms to connect with audiences, build brand awareness, and drive engagement and sales.",
-      list: ["Social Media Design", "Custom ad strategy", "Advanced demographic targeting", "Social Media Management", "Unique ads campaigns"],
+      desc: "Social media marketing involves leveraging social platforms to connect <br> with audiences, build brand awareness, and drive engagement and sales.",
+      list: ["Social Media Design", "Social Media Management", "Custom ad strategy", "Unique ads campaigns", "Advanced demographic <br> targeting"],
       link: "socialMedia"
     },
     {
       img: "../../../assets/dm/email.svg",
       heading: "Email marketing",
       tail: "Solutions",
-      desc: "Providing financial advice, including cost reduction strategies, financial planning, and risk management.",
+      desc: "Providing financial advice, including cost reduction strategies, financial <br> planning, and risk management.",
       link: "emailMarketing"
     },
     {
       img: "../../../assets/dm/ppc.svg",
       heading: "Pay-Per-Click (PPC)",
       tail: "Advertising",
-      desc: "Pay-per-click (PPC) advertising enables businesses to display ads on search engines and other platforms, paying only when users click on their ads.",
+      desc: "Pay-per-click (PPC) advertising enables businesses to display ads <br> on search engines and other platforms, paying only when users click <br> on their ads.",
       link: "payPerClick"
     },
   ]
