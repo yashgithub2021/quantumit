@@ -1,7 +1,7 @@
 <div id="form" class="container form p-1 p-lg-5">
     <div class="container h-100 w-100 d-flex flex-column flex-lg-row justify-content-center align-items-start">
         <div
-            class="options h-auto w-100 d-flex flex-column align-items-center align-items-lg-start gap-lg-5 gap-2 justify-content-center ">
+            class="options h-auto w-75 d-flex flex-column align-items-center align-items-lg-start gap-lg-5 gap-2 justify-content-center ">
             <div class="text">
                 <h1>Let’s Talk About :</h1>
             </div>
@@ -21,7 +21,7 @@
             <div *ngIf="visibleForm === 'project'"
                 class="container h-100 w-100 d-flex flex-column align-items-center justify-content-center">
                 <div class="desc w-100">
-                    <p class="fw-lighter text-left "[ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">
+                    <p class="fw-lighter text-left " [ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">
                         Have a project in mind that you think we’d be a great fit for <br>it? We’d love to know what
                         you’re
                         thinking
@@ -33,8 +33,9 @@
                             <div class="col-6">
                                 <div class="input d-flex flex-column">
                                     <label for="firstName">First Name</label>
-                                    <input formControlName="firstName" id="firstName" placeholder="Input first name"
-                                        type="text" [ngClass]="isDarkTheme ? 'bg-dark' : 'bg-light'"
+                                    <input formControlName="firstName" id="firstName"
+                                        placeholder="Input your first name in here" type="text"
+                                        [ngClass]="isDarkTheme ? 'bg-dark' : 'bg-light'"
                                         [ngStyle]="{'color':isDarkTheme?'white':'black'}">
                                     <div *ngIf="form.get('firstName')?.invalid && form.get('firstName')?.touched"
                                         class="text-danger">
@@ -45,8 +46,10 @@
                             <div class="col-6">
                                 <div class="input d-flex flex-column">
                                     <label for="lastName">Last Name</label>
-                                    <input formControlName="lastName" id="lastName" placeholder="Input last name"
-                                        type="text" [ngClass]="isDarkTheme ? 'bg-dark' : 'bg-light'"[ngStyle]="{'color':isDarkTheme?'white':'black'}">
+                                    <input formControlName="lastName" id="lastName"
+                                        placeholder="Input your last name in here" type="text"
+                                        [ngClass]="isDarkTheme ? 'bg-dark' : 'bg-light'"
+                                        [ngStyle]="{'color':isDarkTheme?'white':'black'}">
                                     <div *ngIf="form.get('lastName')?.invalid && form.get('lastName')?.touched"
                                         class="text-danger">
                                         Last Name is required
@@ -57,9 +60,11 @@
                         <div class="row my-3">
                             <div class="col-6">
                                 <div class="input d-flex flex-column">
-                                    <label for="email">Email Address</label>
-                                    <input formControlName="email" id="email" placeholder="Input email" type="email"
-                                        [ngClass]="isDarkTheme ? 'bg-dark' : 'bg-light'"[ngStyle]="{'color':isDarkTheme?'white':'black'}">
+                                    <label for="email">Email</label>
+                                    <input formControlName="email" id="email"
+                                        placeholder="Input your email address in here" type="email"
+                                        [ngClass]="isDarkTheme ? 'bg-dark' : 'bg-light'"
+                                        [ngStyle]="{'color':isDarkTheme?'white':'black'}">
                                     <div *ngIf="form.get('email')?.invalid && form.get('email')?.touched"
                                         class="text-danger">
                                         Email is required
@@ -73,8 +78,9 @@
                                 <div class="input d-flex flex-column">
                                     <label for="companyName">Company Name</label>
                                     <input formControlName="companyName" id="companyName"
-                                        placeholder="Input company name" type="text"
-                                        [ngClass]="isDarkTheme ? 'bg-dark' : 'bg-light'"[ngStyle]="{'color':isDarkTheme?'white':'black'}">
+                                        placeholder="Input your company name in here" type="text"
+                                        [ngClass]="isDarkTheme ? 'bg-dark' : 'bg-light'"
+                                        [ngStyle]="{'color':isDarkTheme?'white':'black'}">
                                     <div *ngIf="form.get('companyName')?.invalid && form.get('companyName')?.touched"
                                         class="text-danger">
                                         Company Name is required
@@ -86,8 +92,10 @@
                             <div class="col-12">
                                 <div class="input d-flex flex-column">
                                     <label for="message">Message</label>
-                                    <textarea formControlName="message" id="message" placeholder="Write your message"
-                                        [ngClass]="isDarkTheme ? 'bg-dark' : 'bg-light'"[ngStyle]="{'color':isDarkTheme?'white':'black'}"></textarea>
+                                    <textarea formControlName="message" id="message"
+                                        placeholder="Write your messages in here"
+                                        [ngClass]="isDarkTheme ? 'bg-dark' : 'bg-light'"
+                                        [ngStyle]="{'color':isDarkTheme?'white':'black'}"></textarea>
                                     <div *ngIf="form.get('message')?.invalid && form.get('message')?.touched"
                                         class="text-danger">
                                         Message is required
@@ -97,8 +105,8 @@
                         </div>
                         <div class="row my-5">
                             <div class="col-6">
-                                <button [disabled]="form.invalid" type="submit" class="btn btn-primary"
-                                    (click)="submitForm()">Send messages</button>
+                                <button [disabled]="form.invalid" type="submit" class="btn btn-primary rounded-3"
+                                    (click)="submitForm()">Send Messages</button>
                             </div>
                         </div>
                     </form>
@@ -118,8 +126,9 @@
                                 <div class="input d-flex flex-column">
                                     <label for="">First Name</label>
                                     <input formControlName="firstName" name="firstName" id="firstName"
-                                        placeholder="Input first name your in here" type="text"
-                                        [ngClass]="isDarkTheme?'bg-dark':'bg-light'"[ngStyle]="{'color':isDarkTheme?'white':'black'}" required>
+                                        placeholder="Input your first name in here" type="text"
+                                        [ngClass]="isDarkTheme?'bg-dark':'bg-light'"
+                                        [ngStyle]="{'color':isDarkTheme?'white':'black'}" required>
                                     <div
                                         *ngIf="joinform.get('firstName')?.invalid && joinform.get('firstName')?.touched">
                                         <div *ngIf="joinform.get('firstName')?.errors?.['required']"
@@ -133,8 +142,9 @@
                                 <div class="input d-flex flex-column">
                                     <label for="">Last Name</label>
                                     <input formControlName="lastName" name="lastName" id="lastName"
-                                        placeholder="Input last name your in here" type="text"
-                                        [ngClass]="isDarkTheme?'bg-dark':'bg-light'"[ngStyle]="{'color':isDarkTheme?'white':'black'}" required>
+                                        placeholder="Input your last name in here" type="text"
+                                        [ngClass]="isDarkTheme?'bg-dark':'bg-light'"
+                                        [ngStyle]="{'color':isDarkTheme?'white':'black'}" required>
                                     <div *ngIf="joinform.get('lastName')?.invalid && joinform.get('lastName')?.touched">
                                         <div *ngIf="joinform.get('lastName')?.errors?.['required']" class="text-danger">
                                             LastName is required
@@ -148,8 +158,9 @@
                                 <div class="input d-flex flex-column">
                                     <label for="">Email</label>
                                     <input formControlName="email" name="email" id="email"
-                                        placeholder="Input email your in here" type="text"
-                                        [ngClass]="isDarkTheme?'bg-dark':'bg-light'"[ngStyle]="{'color':isDarkTheme?'white':'black'}" required>
+                                        placeholder="Input your email in here" type="text"
+                                        [ngClass]="isDarkTheme?'bg-dark':'bg-light'"
+                                        [ngStyle]="{'color':isDarkTheme?'white':'black'}" required>
                                     <div *ngIf="joinform.get('email')?.invalid && joinform.get('email')?.touched">
                                         <div *ngIf="joinform.get('email')?.errors?.['required']" class="text-danger">
                                             Email
@@ -164,7 +175,8 @@
                                 <div class="input d-flex flex-column mt-3 mt-sm-0">
                                     <label for="">Resume</label>
                                     <input formControlName="resume" type="file"
-                                        [ngClass]="isDarkTheme?'bg-dark':'bg-light'"[ngStyle]="{'color':isDarkTheme?'white':'black'}" required
+                                        [ngClass]="isDarkTheme?'bg-dark':'bg-light'"
+                                        [ngStyle]="{'color':isDarkTheme?'white':'black'}" required
                                         accept=".png, .jpg, .jpeg, .pdf">
                                 </div>
                             </div>
@@ -173,8 +185,10 @@
                             <div class="col-12">
                                 <div class="input d-flex flex-column">
                                     <label for="message">Message</label>
-                                    <textarea formControlName="message" id="message" placeholder="Write your message"
-                                        [ngClass]="isDarkTheme ? 'bg-dark' : 'bg-light'"[ngStyle]="{'color':isDarkTheme?'white':'black'}"></textarea>
+                                    <textarea formControlName="message" id="message"
+                                        placeholder="Write your messages in here"
+                                        [ngClass]="isDarkTheme ? 'bg-dark' : 'bg-light'"
+                                        [ngStyle]="{'color':isDarkTheme?'white':'black'}"></textarea>
                                     <div *ngIf="joinform.get('message')?.invalid && joinform.get('message')?.touched"
                                         class="text-danger">
                                         Message is required
@@ -185,8 +199,8 @@
                         <div class="row my-5">
                             <div class="col-6">
                                 <button (click)="submitJoinForm()" [disabled]="joinform.invalid"
-                                    class="btn btn-primary">
-                                    Send Message
+                                    class="btn btn-primary rounded-3">
+                                    Send Messages
                                 </button>
                             </div>
                         </div>
@@ -206,8 +220,10 @@
                             <div class="col-6">
                                 <div class="input d-flex flex-column">
                                     <label for="firstName">First Name</label>
-                                    <input formControlName="firstName" id="firstName" placeholder="Input first name"
-                                        type="text" [ngClass]="isDarkTheme ? 'bg-dark' : 'bg-light'"[ngStyle]="{'color':isDarkTheme?'white':'black'}">
+                                    <input formControlName="firstName" id="firstName"
+                                        placeholder="Input your first name in here" type="text"
+                                        [ngClass]="isDarkTheme ? 'bg-dark' : 'bg-light'"
+                                        [ngStyle]="{'color':isDarkTheme?'white':'black'}">
                                     <div *ngIf="form.get('firstName')?.invalid && form.get('firstName')?.touched"
                                         class="text-danger">
                                         First Name is required
@@ -217,8 +233,10 @@
                             <div class="col-6">
                                 <div class="input d-flex flex-column">
                                     <label for="lastName">Last Name</label>
-                                    <input formControlName="lastName" id="lastName" placeholder="Input last name"
-                                        type="text" [ngClass]="isDarkTheme ? 'bg-dark' : 'bg-light'"[ngStyle]="{'color':isDarkTheme?'white':'black'}">
+                                    <input formControlName="lastName" id="lastName"
+                                        placeholder="Input your last name in here" type="text"
+                                        [ngClass]="isDarkTheme ? 'bg-dark' : 'bg-light'"
+                                        [ngStyle]="{'color':isDarkTheme?'white':'black'}">
                                     <div *ngIf="form.get('lastName')?.invalid && form.get('lastName')?.touched"
                                         class="text-danger">
                                         Last Name is required
@@ -230,8 +248,9 @@
                             <div class="col-6">
                                 <div class="input d-flex flex-column">
                                     <label for="email">Email</label>
-                                    <input formControlName="email" id="email" placeholder="Input email" type="email"
-                                        [ngClass]="isDarkTheme ? 'bg-dark' : 'bg-light'"[ngStyle]="{'color':isDarkTheme?'white':'black'}">
+                                    <input formControlName="email" id="email" placeholder="Input your email in here"
+                                        type="email" [ngClass]="isDarkTheme ? 'bg-dark' : 'bg-light'"
+                                        [ngStyle]="{'color':isDarkTheme?'white':'black'}">
                                     <div *ngIf="form.get('email')?.invalid && form.get('email')?.touched"
                                         class="text-danger">
                                         Email is required
@@ -245,8 +264,9 @@
                                 <div class="input d-flex flex-column">
                                     <label for="companyName">Company Name</label>
                                     <input formControlName="companyName" id="companyName"
-                                        placeholder="Input company name" type="text"
-                                        [ngClass]="isDarkTheme ? 'bg-dark' : 'bg-light'"[ngStyle]="{'color':isDarkTheme?'white':'black'}">
+                                        placeholder="Input your company name in here" type="text"
+                                        [ngClass]="isDarkTheme ? 'bg-dark' : 'bg-light'"
+                                        [ngStyle]="{'color':isDarkTheme?'white':'black'}">
                                     <div *ngIf="form.get('companyName')?.invalid && form.get('companyName')?.touched"
                                         class="text-danger">
                                         Company Name is required
@@ -258,8 +278,10 @@
                             <div class="col-12">
                                 <div class="input d-flex flex-column">
                                     <label for="message">Message</label>
-                                    <textarea formControlName="message" id="message" placeholder="Write your message"
-                                        [ngClass]="isDarkTheme ? 'bg-dark' : 'bg-light'"[ngStyle]="{'color':isDarkTheme?'white':'black'}"></textarea>
+                                    <textarea formControlName="message" id="message"
+                                        placeholder="Write your messages in here"
+                                        [ngClass]="isDarkTheme ? 'bg-dark' : 'bg-light'"
+                                        [ngStyle]="{'color':isDarkTheme?'white':'black'}"></textarea>
                                     <div *ngIf="form.get('message')?.invalid && form.get('message')?.touched"
                                         class="text-danger">
                                         Message is required
@@ -269,8 +291,8 @@
                         </div>
                         <div class="row my-5">
                             <div class="col-6">
-                                <button [disabled]="form.invalid" type="submit" class="btn btn-primary"
-                                    (click)="submitForm()">Submit</button>
+                                <button [disabled]="form.invalid" type="submit" class="btn btn-primary rounded-3"
+                                    (click)="submitForm()">Send Messages</button>
                             </div>
                         </div>
                     </form>

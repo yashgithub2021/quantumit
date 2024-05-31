@@ -115,8 +115,8 @@
                             <div
                                 class="step-title w-100 mt-3 mt-lg-0 d-flex flex-column align-items-center justify-content-center">
                                 <p class="w-50  text-align-center">{{step.title}}</p>
-                                <p class="w-75  text-align-center" [ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">
-                                    {{step.desc}}
+                                <p class="w-100  text-align-center" [ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}"
+                                    [innerHTML]="step.desc">
                                 </p>
                             </div>
                             <div class="step-dashed-line visually-hidden"></div>

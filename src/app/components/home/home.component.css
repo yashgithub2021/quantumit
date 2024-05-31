@@ -512,7 +512,7 @@
 .feedback {
     font-size: 22px;
     line-height: 33px;
-    font-weight: 300!important;
+    font-weight: 300 !important;
 }
 
 .profile>img {
@@ -635,8 +635,9 @@
     }
 
 }
-@media (max-width:1024px) and (min-width:821px){
-    .section3 > .left-side {
+
+@media (max-width:1024px) and (min-width:821px) {
+    .section3>.left-side {
         width: 101%;
     }
 }
@@ -678,7 +679,7 @@
 
     .section3>.left-side::before {
         width: 107% !important;
-        height:90%!important
+        height: 90% !important
     }
 
     .section3>.right-side>.container {

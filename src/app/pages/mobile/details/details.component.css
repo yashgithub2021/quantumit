@@ -69,7 +69,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
+    padding: 0px 75px;
 }
 
 .step {
@@ -103,6 +103,7 @@
     text-align: center;
     /* Position for vertical line */
 }
+
 .step-square-light {
     width: 70px;
     height: 60px;
@@ -115,6 +116,7 @@
     text-align: center;
     /* Position for vertical line */
 }
+
 .step-square-light::after {
     content: '';
     position: absolute;
@@ -130,6 +132,7 @@
     background-color: black;
     /* Color of the vertical line */
 }
+
 .step-square::after {
     content: '';
     position: absolute;
@@ -245,7 +248,7 @@
 }
 
 .tech-stack>div {
-    justify-content: center !important;
+    /* justify-content: center !important; */
     gap: 20px;
 }
 
