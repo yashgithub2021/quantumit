@@ -211,11 +211,11 @@
 
 .frame-5>.container>.tech-stack>div {
     grid-gap: 20px;
-    justify-content: center !important;
+    justify-content: start !important;
 }
 
 .tech-stack>div>.stack {
-    min-width: 295px;
+    min-width: 240px;
     justify-content: center !important;
 }
 
