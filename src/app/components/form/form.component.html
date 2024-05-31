@@ -57,7 +57,7 @@
                         <div class="row my-3">
                             <div class="col-6">
                                 <div class="input d-flex flex-column">
-                                    <label for="email">Email</label>
+                                    <label for="email">Email Address</label>
                                     <input formControlName="email" id="email" placeholder="Input email" type="email"
                                         [ngClass]="isDarkTheme ? 'bg-dark' : 'bg-light'"[ngStyle]="{'color':isDarkTheme?'white':'black'}">
                                     <div *ngIf="form.get('email')?.invalid && form.get('email')?.touched"
@@ -98,7 +98,7 @@
                         <div class="row my-5">
                             <div class="col-6">
                                 <button [disabled]="form.invalid" type="submit" class="btn btn-primary"
-                                    (click)="submitForm()">Submit</button>
+                                    (click)="submitForm()">Send messages</button>
                             </div>
                         </div>
                     </form>

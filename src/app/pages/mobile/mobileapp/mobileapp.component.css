@@ -71,10 +71,10 @@
 
 .btn-lm {
     color: white;
-    padding: 10px 20px;
+    padding: 20px 40px!important;
     background-color: #43BAFF;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 .frame-2 {
@@ -154,7 +154,7 @@
 }
 
 .numbers-section {
-    height: 200px;
+    height: 300px;
     border-radius: 5px;
     padding: 40px 150px;
     background: linear-gradient(90deg, #43BAFF 0%, #7141B1 100%);
@@ -210,9 +210,9 @@
 
 .frame-4>.container>.head>.success-desc>p {
     font-size: 18px;
-    line-height: 43px;
+    line-height: 33px;
     font-weight: 400 !important;
-
+    color: #8A91AD;
 }
 
 .frame-4>.container>.head>.success-desc {
@@ -220,15 +220,20 @@
 }
 
 .miletone-number {
-    font-size: 36px;
+    font-size: 36px!important;
     line-height: 54px;
     font-weight: 700 !important;
+    margin-bottom: 25px;
 }
 
 .miletone-title {
-    font-size: 22px;
+    font-size: 22px!important;
     line-height: 32px;
     font-weight: 400 !important;
+}
+.what-we-do {
+    display: flex;
+    justify-content: center;
 }
 
 @media(min-width:1024px) and (max-width:1366px) {
@@ -344,6 +349,9 @@
     .frames>.mobile-app>.header>.image {
         padding: 10px;
     }
+    .frame-4>.container>.head>.success-desc>p {
+        line-height: 25px;    
+    }
 }
 
 @media(max-width:768px) {
@@ -451,6 +459,7 @@
     .miletone-number {
         font-size: 22px !important;
         line-height: 32px;
+        margin-bottom: 10px;
     }
 
     .miletone-title {

@@ -111,7 +111,12 @@
     background: #0000004D;
     box-shadow: 0px -1px 0px 0px #FFFFFF1A inset;
 }
-
+.card-text{
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 700;
+    color:white
+}
 .jetbrains {
     font-family: 'Mono';
 }
@@ -188,6 +193,10 @@
 
     .frame-2-head .desc>p {
         text-align: center;
+    }
+    .card-text{
+        font-size: 12px;
+        line-height: 18px;
     }
 }
 

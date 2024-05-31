@@ -7,6 +7,12 @@
     height: 100vh;
 }
 
+.steps-container-1{
+    align-items: center !important;
+    display: flex;
+    justify-content: center;
+}
+
 .digital-marketing::before {
     background-image: url("../../../../assets/backgroungimages/dm.svg");
     background-position: center;
@@ -333,7 +339,9 @@
 .frame-6 {
     height: auto;
 }
-
+.frame-5 .txt{
+    width:50%!important;
+}
 .our-gm-btn {
     font-size: 12px;
     padding: 7px 15px 7px 15px;
@@ -463,8 +471,14 @@ td h4 {
 }
 
 @media(max-width:768px) {
+    .frame-5 .txt{
+        width:75%!important;
+    }
     .frame-6>.container {
         height: 100vh !important;
+    }
+    .step-title {
+        width: 100% !important;
     }
 }
 
@@ -576,11 +590,13 @@ td h4 {
     .step-square {
         font-size: 16px;
         line-height: 20px;
+        background: linear-gradient(91.58deg, rgb(67, 186, 255) 0.52%, rgb(112, 68, 179) 100%);
     }
 
     .step-square-light {
         font-size: 16px;
         line-height: 20px;
+        background: linear-gradient(91.58deg, rgb(67, 186, 255) 0.52%, rgb(112, 68, 179) 100%);
     }
 
     .step-circle {

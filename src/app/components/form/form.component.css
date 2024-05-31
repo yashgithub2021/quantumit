@@ -1,9 +1,19 @@
 .form {
     height: 100vh;
 }
+.text h1{
+    font-size:48px!important;
+    line-height: 63px;
+    font-weight: 700;
 
+}
 .opt {
     cursor: pointer;
+}
+.option h3{
+    font-size:32px;
+    line-height: 43px;
+    font-weight: 700!important;
 }
 
 .blue-opt {
@@ -56,13 +66,22 @@ textarea {
     .form {
         height: 60vh;
     }
+    .option h3{
+        font-size:23px;
+        line-height: 30px;
+    }
 }
 
 @media(max-width:768px) {
     .form {
         height: 70vh;
     }
+    .text h1{
+        font-size: 23px !important;
+        line-height: 33px;
+    }
 }
+
 
 @media (max-width: 575.98px) {
     .form {
