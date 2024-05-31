@@ -48,8 +48,8 @@
                         We’re Global and Growing
                     </h1>
                 </div>
-                <div class="desc w-50 align-items-center">
-                    <p class="text-align-center"[ngStyle]="{'opacity':isDarkMode ?'0.5':'1'}">
+                <div class="desc w-50 align-items-center mt-3">
+                    <p class="text-align-center" [ngStyle]="{'opacity':isDarkMode ?'0.5':'1'}">
                         Building an enterprise level site doesn't need nightmare or cost your thousands. Felix is
                         purpose built
                     </p>
@@ -69,13 +69,13 @@
                             <h4>United States</h4>
                         </div>
                         <div class="address w-75">
-                            <p class=" text-align-center"[ngStyle]="{'opacity':isDarkMode ?'0.5':'1'}">
+                            <p class=" text-align-center" [ngStyle]="{'opacity':isDarkMode ?'0.5':'1'}">
                                 173 E Columbine LN, Westfield, Indiana <br> 46074-9741.
                             </p>
                         </div>
                     </div>
                     <div [ngStyle]="{'background':isDarkMode?'#111111':'#ECF0FF'}"
-                        class="address p-4 hover-card rounded-3 align-items-center flex-column gap-4 d-flex justify-content-center">
+                        class="address p-4 hover-card rounded-3 align-items-center flex-column gap-4 d-flex justify-content-center position-relative">
                         <div class="image">
                             <img src="../../../../assets/contact/IND.svg" alt="">
                         </div>
@@ -83,10 +83,11 @@
                             <h4>India</h4>
                         </div>
                         <div class="address w-75">
-                            <p class="text-align-center"[ngStyle]="{'opacity':isDarkMode ?'0.5':'1'}">
+                            <p class="text-align-center" [ngStyle]="{'opacity':isDarkMode ?'0.5':'1'}">
                                 H-11, 1st Floor, Sector 63, Noida - 201301
                             </p>
                         </div>
+                        <button class="btn position-absolute text-white rounded-5">Main Office</button>
                     </div>
                     <div [ngStyle]="{'background':isDarkMode?'#111111':'#ECF0FF'}"
                         class="address p-4 hover-card rounded-3 align-items-center flex-column gap-4 d-flex justify-content-center">
@@ -97,7 +98,7 @@
                             <h4>United Kingdom</h4>
                         </div>
                         <div class="address w-75">
-                            <p class="  text-align-center"[ngStyle]="{'opacity':isDarkMode ?'0.5':'1'}">
+                            <p class="  text-align-center" [ngStyle]="{'opacity':isDarkMode ?'0.5':'1'}">
                                 55/123 Norman Street,
                                 Sydney NSW 20
                             </p>
@@ -143,7 +144,7 @@
                                     <h4>{{faq.question}}?</h4>
                                 </div>
                                 <div class="ans">
-                                    <p class=""[ngStyle]="{'opacity':isDarkMode?'0.5':'1'}">
+                                    <p class="" [ngStyle]="{'opacity':isDarkMode?'0.5':'1'}">
                                         {{faq.answer}}
                                     </p>
                                 </div>

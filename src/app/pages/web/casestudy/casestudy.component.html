@@ -15,8 +15,9 @@
                             </h1>
                         </div>
                         <div class="desc w-75 d-flex align-items-center">
-                            <p class=" "[ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">
-                                Explore Wikistrings, an innovative platform for interactive guitar string evaluation. With a sleek interface and strong backend, it offers seamless performance on any device.
+                            <p class=" " [ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">
+                                Explore Wikistrings, an innovative platform for interactive guitar string evaluation.
+                                With a sleek interface and strong backend, it offers seamless performance on any device.
                             </p>
                         </div>
                     </div>
@@ -101,7 +102,7 @@
 
 
                 <div class="desc w-100 mt-4 mt-lg-0 align-items-center">
-                    <p class=" mb-0 text-align-center"[ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">
+                    <p class=" mb-0 text-align-center" [ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">
                         ​Integrating complex user interaction features while maintaining performance and accessibility.
 
                     </p>
@@ -127,7 +128,8 @@
                 </div>
             </div>
         </div>
-        <div class="heading d-flex flex-column mb-lg-5 mb-lg-0 flex-lg-row justify-content-between align-items-center">
+        <div class="heading d-flex flex-column mb-lg-5 mb-lg-0 flex-lg-row justify-content-between align-items-center"
+            style="margin-top:6rem;">
             <div class="text frame-2-head w-100 d-flex align-items-start flex-column ">
                 <div class="button ">
                     <button class="our-process-btn">
@@ -142,8 +144,9 @@
 
 
                 <div class="desc w-75 mt-2 align-items-center">
-                    <p class=" text-start"[ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">
-                        Employing a modular development approach, optimizing code for efficiency, and conducting extensive user testing to ensure seamless functionality across devices.
+                    <p class=" text-start" [ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">
+                        Employing a modular development approach, optimizing code for efficiency, and conducting
+                        extensive user testing to ensure seamless functionality across devices.
                     </p>
                     <!-- <p class=" opacity-50 mb-0 text-center">
                         An integrated system of lights on the device and micro-interaction in the application was
@@ -153,8 +156,8 @@
             </div>
         </div>
     </div>
-    <div class="container mt-4 mt-lg-0 d-flex justify-content-center">
-        <img class="w-100" src="../../../../assets/webdev/casestudy.svg" alt="">
+    <div class="container mt-4 mt-lg-0 d-flex justify-content-center p-5">
+        <img class="w-75" src="../../../../assets/webdev/casestudy.svg" alt="">
     </div>
     <div class="container mt-5">
         <div class="container-fluid numbers w-100 p-0">
@@ -181,8 +184,8 @@
                             <div *ngFor="let nums of sectionFourNums" class="col-3 text-white">
                                 <div class="miletone-number fw-bolder">{{nums.num}}</div>
                                 <div>
-                                    <p class="miletone-title fw-light text-uppercase ">
-                                        {{nums.heading}}
+                                    <p class="miletone-title fw-light text-uppercase mt-3">
+                                        ● {{nums.heading}}
                                     </p>
                                 </div>
                             </div>

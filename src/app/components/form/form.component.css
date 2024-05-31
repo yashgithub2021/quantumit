@@ -28,6 +28,17 @@ textarea {
     color: white;
 }
 
+input::placeholder,
+textarea::placeholder {
+    color: #CFD3D7 !important;
+}
+
+.btn-primary {
+    background: #43BAFF;
+    color: white;
+    padding: 10px 30px;
+}
+
 .desc p {
     font-size: 16px;
     line-height: 24px;

@@ -59,6 +59,12 @@
     animation: vibrate 1s ease;
 }
 
+.btn {
+    background: linear-gradient(91.58deg, #43BAFF 0.52%, #7044B3 100%);
+    left: 10px;
+    top: 10px;
+}
+
 .numbers-section::before {
     z-index: -1;
     content: "";
@@ -74,7 +80,7 @@
 }
 
 .num-cont>div h1 {
-    font-size: 68px;
+    font-size: 48px;
     line-height: 60px;
     font-weight: 700;
 }
@@ -206,6 +212,7 @@
     font-weight: 400;
     line-height: 30.1px;
 }
+
 .list p {
     font-size: 20px;
     font-weight: 400;
