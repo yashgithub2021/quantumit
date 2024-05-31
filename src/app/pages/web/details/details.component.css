@@ -41,10 +41,18 @@
 .desc{
     width: 100%!important;
 }
-.desc > p {
-    font-size: 24px;
-    line-height: 30px;
+.desc-1{
+    width:80%!important;
+}
+.desc-1 > p {
+    font-size: 16px;
+    line-height: 24px;
     text-align: center;
+}
+.frame-3 .desc p{
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 400!important;
 }
 
 @media (max-width: 1366px) {
@@ -77,6 +85,10 @@
         background: linear-gradient(90deg, #43BAFF 0%, #7141B1 100%);
         padding: 5px;
     }
+    .frame-3 .desc p{
+        font-size: 14px;
+        line-height: 20px;
+    }
     .our-process-btn {
         font-size: 10px;
         line-height: 20px;
@@ -87,7 +99,7 @@
         line-height: 30px;
     }
     .desc{
-        width:75%!important
+        width:100%!important
     }
     .desc > p {
         font-size: 14px;
