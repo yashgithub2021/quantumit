@@ -33,8 +33,8 @@
 }
 
 .heading>p {
-    font-size: 21px !important;
-    line-height: 27px;
+    font-size: 16px !important;
+    line-height: 25px;
     font-weight: 400 !important;
     margin-top:20px;
     margin-bottom: 20px;
@@ -58,8 +58,8 @@
 }
 
 .list li p {
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 16px;
+    line-height: 28px;
     font-weight: 400 !important;
 }
 
@@ -75,6 +75,7 @@
     background-color: #43BAFF;
     border: none;
     border-radius: 10px;
+    font-size: 16px!important;
 }
 
 .frame-2 {
@@ -197,8 +198,8 @@
 }
 
 .app-details .details {
-    font-size: 18px !important;
-    line-height: 32px;
+    font-size: 16px !important;
+    line-height: 30px;
     font-weight: 400 !important;
 }
 
@@ -209,8 +210,8 @@
 }
 
 .frame-4>.container>.head>.success-desc>p {
-    font-size: 18px;
-    line-height: 33px;
+    font-size: 16px;
+    line-height: 30px;
     font-weight: 400 !important;
     color: #8A91AD;
 }
@@ -227,8 +228,8 @@
 }
 
 .miletone-title {
-    font-size: 22px!important;
-    line-height: 32px;
+    font-size: 16px!important;
+    line-height: 28px;
     font-weight: 400 !important;
 }
 .what-we-do {
@@ -463,8 +464,8 @@
     }
 
     .miletone-title {
-        font-size: 16px !important;
-        line-height: 25px;
+        font-size: 14px !important;
+        line-height: 23px;
     }
 
     .buttons-milestone {
@@ -503,8 +504,8 @@
     }
 
     .app-details .details {
-        font-size: 16px !important;
-        line-height: 25px;
+        font-size: 14px !important;
+        line-height: 23px;
         font-weight: 400 !important;
     }
     .app-details-container {

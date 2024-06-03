@@ -87,8 +87,8 @@
 
 .socials .email a,
 .socials .phone a {
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 16px;
+    line-height: 25px;
     font-weight: 700;
 }
 
@@ -175,8 +175,8 @@
 }
 
 .desc p {
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 16px;
+    line-height: 25px;
     font-weight: 400 !important;
 }
 
@@ -194,29 +194,29 @@
 
 .questions button {
 
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 400;
-    line-height: 33px;
+    line-height: 30px;
 }
 
 .question h4 {
 
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 400;
-    line-height: 33px;
+    line-height: 30px;
 
 }
 
 .ans p {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 400;
-    line-height: 30.1px;
+    line-height: 25px;
 }
 
 .list p {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 400!important;
-    line-height: 30px;
+    line-height: 25px;
 }
 
 @media (min-width:575.98px) and (max-width:768px) {
@@ -238,8 +238,8 @@
 
     .socials .email a,
     .socials .phone a {
-        font-size: 16px;
-        line-height: 25px;
+        font-size: 14px;
+        line-height: 23px;
     }
 
     .w-50,

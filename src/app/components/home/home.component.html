@@ -11,7 +11,7 @@
                 <h1 class="text-center sub-heading fs-5 fw-light w-lg-50 text-capitalize">Comprehensive solutions for
                     seamless
                     development and
-                    maintenance of your digital platforms.</h1>
+                    maintenance<br class="d-none d-sm-block"> of your digital platforms.</h1>
             </div>
             <div class="container d-flex align-items-center justify-content-center my-3">
                 <button (click)="scrollToGetStarted()" class="btn btn-primary fs-6 rounded-3 p-3">Let’s Begin</button>
@@ -58,7 +58,7 @@
                     </div>
                     <div class="container btn-container d-flex align-items-center justify-content-start my-3">
                         <button (click)="scrollToGetServices()"
-                            class="btn fs-5 rounded d-flex align-items-center justify-content-between">
+                            class="btn rounded d-flex align-items-center justify-content-between">
                             Begin Your Journey
                             <i class="fa-solid fa-arrow-right ms-3"></i>
                         </button>
@@ -100,7 +100,7 @@
             <div id="services" class="container services w-100 h-100">
                 <div class="row">
                     <div *ngFor="let service of ourServices" data-aos="slide-up"
-                        class="service-card col-md-4 d-flex flex-column align-items-center justify-content-center px-lg-5 px-2 my-4">
+                        class="service-card col-lg-4 col-md-6  d-flex flex-column align-items-center justify-content-center px-lg-5 px-2 my-4">
                         <div class="image my-3">
                             <img [src]="service.img" alt="Mobile">
                         </div>
@@ -144,8 +144,13 @@
                         <h1>Our Successful Projects</h1>
                     </div>
                 </div>
+                <div class="learnMore my-2 d-none d-sm-block">
+                    <button routerLink="portfolio" type="button"
+                        class="btn fs-5 rounded d-flex align-items-center justify-content-between">View All
+                    </button>
+                </div>
             </div>
-            <div class="projects-section d-flex flex-column flex-lg-row container">
+            <div class="projects-section d-flex flex-column flex-lg-row container ">
                 <div data-aos="fade-in"
                     class="container p-0 project-sec-one project-one flex-lg-grow-1 position-relative">
                     <div
@@ -192,7 +197,7 @@
                     </div>
                 </div>
             </div>
-            <div class="learnMore my-2">
+            <div class="learnMore my-2 d-block d-sm-none">
                 <button routerLink="portfolio" type="button"
                     class="btn fs-5 rounded d-flex align-items-center justify-content-between">View All
                 </button>

@@ -47,7 +47,7 @@
 }
 
 .heading>p {
-    font-size: 17px !important;
+    font-size: 16px !important;
     line-height: 27px;
     font-weight: 400 !important;
 }
@@ -270,6 +270,7 @@
     background-color: #43BAFF;
     border: none;
     border-radius: 5px;
+    font-size: 16px!important;
 }
 
 .table-bordered {
@@ -315,7 +316,7 @@
 }
 
 .table-lm {
-    font-size: 13px;
+    font-size: 16px;
     cursor: pointer;
 }
 
@@ -343,7 +344,7 @@
     width:50%!important;
 }
 .our-gm-btn {
-    font-size: 12px;
+    font-size: 14px;
     padding: 7px 15px 7px 15px;
     gap: 0px;
     border-radius: 32px;
@@ -396,12 +397,12 @@
 }
 
 .step-title p:last-child {
-    font-size: 22px !important;
-    line-height: 27px;
+    font-size: 16px !important;
+    line-height: 25px;
 }
 
 .sub-heading {
-    font-size: 22px;
+    font-size: 16px;
     font-weight: 400 !important;
     line-height: 28px;
 }
@@ -429,7 +430,7 @@ td h4 {
 }
 
 .second-td p {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 25px;
     font-weight: 400;
 }
@@ -447,7 +448,7 @@ td h4 {
 }
 
 .details .name h3 {
-    font-size: 26px;
+    font-size: 25px;
     line-height: 31px;
     font-weight: 400;
 }
@@ -459,7 +460,7 @@ td h4 {
 }
 
 .desc p {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 14px;
     font-weight: 400 !important;
 }
@@ -507,7 +508,7 @@ td h4 {
     }
 
     .heading>p {
-        font-size: 16px !important;
+        font-size: 14px !important;
         line-height: 23px;
     }
 
@@ -571,7 +572,7 @@ td h4 {
 
     .btn-lm {
         padding: 5px 10px;
-        font-size: 15px !important;
+        font-size: 14px !important;
     }
 
     .our-process-btn {
@@ -658,7 +659,7 @@ td h4 {
     }
 
     .sub-heading {
-        font-size: 16px;
+        font-size: 14px;
         line-height: 25px;
     }
 }

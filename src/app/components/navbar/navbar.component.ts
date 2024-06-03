@@ -9,6 +9,8 @@ import { ApiService } from 'src/app/shared/api/api.service';
 export class NavbarComponent {
 
   isDarkTheme!: boolean;
+  isDropdownOpen = false;
+
 
   constructor(private api: ApiService, private cdr: ChangeDetectorRef) {
     this.isDarkTheme = this.api.isDarkTheme();
@@ -22,6 +24,7 @@ export class NavbarComponent {
       // Collapse the navbar
       navToggler.click();
     }
+    this.isDropdownOpen=false;
   }
 
   toggleTheme(): void {
@@ -29,5 +32,8 @@ export class NavbarComponent {
     this.isDarkTheme = this.api.isDarkTheme();
     this.cdr.detectChanges(); // Force change detection
 
+  }
+  toggleDropdown(isOpen: boolean) {
+    this.isDropdownOpen = isOpen;
   }
 }

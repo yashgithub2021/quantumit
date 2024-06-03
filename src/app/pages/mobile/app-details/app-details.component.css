@@ -7,7 +7,7 @@
 }
 
 .list-check {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 400!important;
     letter-spacing: 2px;
 }
@@ -45,12 +45,12 @@
     text-align: center;
 }
 .details .desc >p{
-    font-size:18px;
+    font-size:16px;
     line-height: 22px;
     font-weight: 400!important;
 }
 .about-project .desc >p{
-    font-size: 20px;
+    font-size: 16px;
     line-height: 25px;
     font-weight: 400!important;
 }
@@ -60,7 +60,7 @@
     font-weight: 500!important;
 }
 .desc-txt {
-    font-size: 20px;
+    font-size: 16px;
     line-height: 25.2px;
     font-weight: 400!important;
 }
