@@ -228,13 +228,13 @@
     </div>
 
     <!-- Section7 -->
-    <div class="container-fluid section7 w-100 mt-5" id="customers">
+    <div class="container-fluid section7 w-100 my-5 pb-5" id="customers">
         <div class="container-fluid h-100">
             <ngb-carousel [showNavigationIndicators]="showNavigationIndicators"
                 [ngStyle]="{'filter':isDarkTheme ? 'none' : 'invert(1)'}" #myCarousel>
                 <ng-template ngbSlide *ngFor="let reviewPair of groupedReviews">
-                    <div class="d-flex flex-column flex-md-row justify-content-around h-100 w-100">
-                        <div *ngFor="let review of reviewPair" class="customer-feedback h-100 w-100 p-5 p-md-3"
+                    <div class="d-flex flex-column flex-md-row justify-content-center h-100 w-100">
+                        <div *ngFor="let review of reviewPair" class="customer-feedback h-100 w-auto p-5 p-md-3"
                             data-aos="fade-up">
                             <div [ngStyle]="{'filter':isDarkTheme ? 'none' : 'invert(1)'}"
                                 [ngClass]="isDarkTheme ? 'cf-cont-dark' : 'cf-cont-light'"

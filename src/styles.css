@@ -31,19 +31,13 @@
 
 /* Hide scrollbar */
 ::-webkit-scrollbar {
-    width: 0;
+    /* width: 10px; */
     /* Remove scrollbar width */
-    height: 0;
+    /* height: 0; */
     /* Remove scrollbar height */
-    background: transparent;
+    /* background: transparent; */
     /* Set background to transparent */
 }
-
-/* Optional: Prevent corner from displaying */
-::-webkit-scrollbar-corner {
-    display: none;
-}
-
 
 :root {
     --custom: #8C8C8C;
