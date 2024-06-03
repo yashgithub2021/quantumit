@@ -160,8 +160,12 @@
 
 
 .section3-tagline {
-    font-size: 50px;
-    line-height: 60px;
+    font-size: 42px;
+    line-height: 50px;
+}
+.right-side > .container {
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .right-side>.container>.btn-container {
@@ -852,6 +856,9 @@
     .section5::before {
         width: 95%;
     }
+    .projects-section {
+        padding:0px;
+    }
 
     .service-tagline {
         font-size: 22px;
@@ -941,10 +948,13 @@
     .learnMore {
         width: 100%;
         display: flex;
-        justify-content: center;
+        justify-content: center!important;
         align-items: center;
     }
-
+    .learnMore button{
+        width:100%;
+        justify-content: center!important;
+    }
 
     .section6 {
         height: auto;
@@ -953,7 +963,9 @@
     .our-customers {
         height: 25vh;
     }
-
+    .our-customers img{
+        width: 100%;
+    }
     .our-customers::before {
         height: 80%;
         width: 80%;
@@ -996,6 +1008,7 @@
 
     .section5>div {
         margin-bottom: 0px !important;
+        padding: 0px;
     }
 
     .section5>.container>.heading {
