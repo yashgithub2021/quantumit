@@ -137,9 +137,9 @@ figure {
 }
 
 .app-details>.details>.detail:not(:last-child) {
-    border-right: 3px solid white;
-    padding-right: 4%;
-    padding-left: 4%;
+    border-right: 3px solid rgb(208, 194, 194);
+    padding-right: 6%;
+    padding-left: 6%;
 }
 
 .app-details>.details>.detail {
@@ -185,7 +185,19 @@ figure {
         height: 37vh;
     }
 }
-
+@media(max-width:1024px){
+    .app-details>.details{
+        justify-content: center!important;
+    }
+    .app-details>.details>.detail:not(:last-child) {
+        border-right: 3px solid rgb(208, 194, 194);
+        padding-right: 2%;
+        padding-left: 2%;
+    }
+    .app-details>.details>.detail {
+        padding-left: 2%;
+    }
+}
 @media(max-width:768px) {
 
     .desc p {
@@ -193,11 +205,17 @@ figure {
     }
 
     .app-details .details {
-        width: 100% !important;
-        flex-wrap: wrap;
-        justify-content: center;
+        width: 35% !important;
         align-items: center !important;
         justify-content: center !important;
+    }
+    .app-details > .details> .detail:not(:last-child) {
+        border-right: 3px solid rgb(208, 194, 194);
+        padding-right: 6%;
+        padding-left: 6%;
+    }
+    .app-details>.details>.detail {
+        padding-left: 6%;
     }
 }
 
@@ -256,13 +274,13 @@ figure {
 
 
     .app-details>.details {
-        flex-wrap: wrap;
+        /* flex-wrap: wrap; */
         align-items: center;
         justify-content: center !important;
     }
 
     .app-details>.details>.detail:not(:last-child) {
-        padding-right: 3%;
+        padding-right: 9%;
         padding-left: 0%;
     }
 }
