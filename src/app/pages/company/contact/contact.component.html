@@ -154,7 +154,7 @@
                                             *ngFor="let check of faq.keyPoints">
                                             <i [ngClass]="isDarkMode ? 'text-white' : 'text-black'"
                                                 class="fa-solid fa-check mx-2"></i>
-                                            <p class="fw-light m-0 list-check">{{check}}</p>
+                                            <p class="fw-light m-0 list-check "[ngStyle]="{'opacity':isDarkMode?'0.5':'1'}">{{check}}</p>
                                         </li>
                                     </ul>
                                 </div>
