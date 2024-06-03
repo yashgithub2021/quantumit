@@ -284,25 +284,25 @@
     }
 
     .questions button {
-        font-size: 18px;
+        font-size: 16px;
         line-height: 20px;
     }
 
     .question h4 {
 
-        font-size: 18px;
+        font-size: 16px;
         line-height: 20px;
 
     }
 
     .list p {
-        font-size: 16px;
+        font-size: 12px;
         font-weight: 400;
         line-height: 23.1px;
     }
 
     .ans p {
-        font-size: 16px;
+        font-size: 12px;
         line-height: 23px;
     }
 }
