@@ -13,9 +13,9 @@
                         </a>
                         <div class="d-flex align-items-center justifycontent-center d-lg-none w-auto pe-3 ">
                                 <div class="form-check ps-0 ">
-        
-                                        <input (click)="toggleTheme()" [checked]="isDarkTheme" type="checkbox" class="checkbox"
-                                                id="checkbox">
+
+                                        <input (click)="toggleTheme()" [checked]="isDarkTheme" type="checkbox"
+                                                class="checkbox" id="checkbox">
                                         <label for="checkbox" class="checkbox-label mb-0"
                                                 [ngStyle]="{'background':isDarkTheme?'#111':'white'}">
                                                 <img style="filter: invert(1);" src="../../../assets/sun.svg" alt="">
@@ -215,8 +215,8 @@
                                                 </ul>
                                                 <ul>
                                                         <li><a [ngClass]="isDarkTheme?'text-white':'text-black'"
-                                                                        class="dropdown-item border-0"
-                                                                        (click)="closeNavbar()">Emerging Technology</a>
+                                                                        class="dropdown-item border-0">Emerging
+                                                                        Technology</a>
                                                         </li>
                                                         <li><a [ngClass]="isDarkTheme?'text-white':'text-black'"
                                                                         class="dropdown-item border-0"
@@ -253,7 +253,6 @@
                                                 <ul>
                                                         <li><a [ngClass]="isDarkTheme?'text-white':'text-black'"
                                                                         class="dropdown-item border-0"
-                                                                        routerLink="app-development/casestudy"
                                                                         (click)="closeNavbar()">Case Study</a></li>
                                                         <li><a [ngClass]="isDarkTheme?'text-white':'text-black'"
                                                                         class="dropdown-item border-0"

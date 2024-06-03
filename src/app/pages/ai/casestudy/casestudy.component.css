@@ -203,6 +203,10 @@
 
 @media (max-width: 575.98px) {
 
+    .banner-img {
+        height: 150px;
+    }
+
     .w-75,
     .w-25,
     .w-50 {
