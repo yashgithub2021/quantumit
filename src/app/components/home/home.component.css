@@ -228,8 +228,9 @@
     height: auto;
     width: 100%;
 }
-.section4 .services-section .heading{
-    width: 65%!important;
+
+.section4 .services-section .heading {
+    width: 65% !important;
 }
 
 .section4::before {
@@ -485,7 +486,7 @@
 }
 
 .customer-feedback>.cf-cont {
-    width: 700px;
+    width: 500px;
     height: auto;
     padding: 25px 30px;
     gap: 25px;
@@ -496,6 +497,7 @@
     border-style: solid;
     border-color: #7E829917;
     box-shadow: 0px 4px 22px 0px #00000014;
+    /* margin: 0 */
 }
 
 .customer-feedback>.cf-cont-dark {
@@ -518,7 +520,7 @@
 }
 
 .feedback {
-    font-size: 22px;
+    font-size: 16px;
     line-height: 33px;
     font-weight: 300 !important;
 }
@@ -638,7 +640,9 @@
 
     .sec4-headline {
         width: 100%;
-    }.dark::before {
+    }
+
+    .dark::before {
         height: 140%;
     }
 
@@ -709,9 +713,11 @@
     .section1 {
         height: 50vh;
     }
+
     .dark::before {
         height: 170%;
     }
+
     .container>.tagline {
         font-size: 50px;
         line-height: 55px;
@@ -794,8 +800,8 @@
 
 @media (max-width: 575.98px) {
 
-    .section4 .services-section .heading{
-        width: 80%!important;
+    .section4 .services-section .heading {
+        width: 80% !important;
     }
 
     .cards {
@@ -1092,7 +1098,7 @@
         height: 30vh;
     }
 
-    
+
 
     /* .section2>.categories>div {
         background: #141414;

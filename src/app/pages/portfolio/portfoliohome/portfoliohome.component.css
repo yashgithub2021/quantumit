@@ -24,7 +24,7 @@
 .service-tagline {
     font-size: 42px;
     line-height: 50px;
-    font-weight: 600!important;
+    font-weight: 600 !important;
 }
 
 .category-selected {
@@ -74,46 +74,56 @@
     top: 20%;
     cursor: pointer;
 }
-.miletone-number h1{
-    font-size: 48px; 
+
+.miletone-number h1 {
+    font-size: 48px;
     line-height: 60px;
     font-weight: 700;
 }
+
 .miletone-title p{
     font-size: 16px;
     line-height: 23px;
     font-weight: 400!important;
     font-family: Barlow !important;
 }
+
 .desc p {
     font-size: 16px;
     line-height: 26px;
     font-weight: 400;
 }
-.app-detail h3{
+
+.app-detail h3 {
     font-size: 30px;
     line-height: 37px;
-    font-weight: 500!important;
+    font-weight: 500 !important;
 }
 .app-detail p{
     font-size: 16px;
     line-height: 22px;
-    font-weight: 400!important;
+    font-weight: 400 !important;
 }
 .button button{
     font-size: 16px;
+    font-size: 14px;
     font-weight: 700;
-    line-height:17px;
+    line-height: 17px;
 }
 
 @media (max-width: 575.98px) {
 
     .numbers-section {
-        padding: 10px
+        padding: 25px;
     }
-    .view-project{
-        right:15px;
+
+    .view-project {
+        right: 15px;
+        height: 60px;
+        top: 0;
+        right: 0;
     }
+
     .w-75,
     .w-50 {
         width: 100% !important;
@@ -141,27 +151,33 @@
         line-height: 20px;
         padding: 5px 12px 5px 12px;
     }
-    .button button{
+
+    .button button {
         font-size: 12px;
         line-height: 15px;
     }
-    .desc p{
+
+    .desc p {
         font-size: 14px;
         line-height: 20px;
     }
-    .miletone-number h1{
+
+    .miletone-number h1 {
         font-size: 22px;
-        line-height:30px;
+        line-height: 30px;
     }
-    .miletone-title p{
+
+    .miletone-title p {
         font-size: 16px;
         line-height: 23px;
     }
-    .app-detail h3{
+
+    .app-detail h3 {
         font-size: 22px;
         line-height: 25px;
     }
-    .app-detail p{
+
+    .app-detail p {
         font-size: 16px;
         line-height: 20px;
     }
