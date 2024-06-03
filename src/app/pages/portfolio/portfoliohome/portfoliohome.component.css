@@ -81,10 +81,10 @@
     font-weight: 700;
 }
 
-.miletone-title p {
-    font-size: 22px;
-    line-height: 24px;
-    font-weight: 400 !important;
+.miletone-title p{
+    font-size: 16px;
+    line-height: 23px;
+    font-weight: 400!important;
     font-family: Barlow !important;
 }
 
@@ -99,14 +99,13 @@
     line-height: 37px;
     font-weight: 500 !important;
 }
-
-.app-detail p {
-    font-size: 18px;
+.app-detail p{
+    font-size: 16px;
     line-height: 22px;
     font-weight: 400 !important;
 }
-
-.button button {
+.button button{
+    font-size: 16px;
     font-size: 14px;
     font-weight: 700;
     line-height: 17px;

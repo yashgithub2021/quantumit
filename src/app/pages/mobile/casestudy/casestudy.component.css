@@ -63,9 +63,9 @@ figure {
 }
 
 .miletone-title {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 700!important;
-    line-height: 16px;
+    line-height: 18px;
     background: linear-gradient(91.58deg, #43BAFF 0.52%, #7044B3 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -98,9 +98,9 @@ figure {
 }
 
 .list h3 {
-    font-size: 30px;
+    font-size: 16px;
     font-weight: 400!important;
-    line-height:33px;
+    line-height:23px;
 }
 
 @media(max-width:1366px) {

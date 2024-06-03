@@ -91,6 +91,7 @@
     background-color: #43BAFF;
     border: none;
     border-radius: 0px;
+    font-size: 16px!important;
 }
 
 .cards {
@@ -105,7 +106,7 @@
 }
 
 .cards p {
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .cards:hover {
@@ -162,6 +163,7 @@
 .section3-tagline {
     font-size: 42px;
     line-height: 50px;
+    font-weight: 700;
 }
 .right-side > .container {
     padding-left: 50px;
@@ -174,10 +176,11 @@
 
 
 .section3-desc {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 400;
-    line-height: 30px;
+    line-height: 25px;
     text-align: left;
+    opacity: 0.9;
 }
 
 .slider {
@@ -259,8 +262,8 @@
 }
 
 .miletone-title {
-    font-size: 14px;
-    line-height: 16.8px;
+    font-size: 16px;
+    line-height: 25px;
 }
 
 .services-section {
@@ -341,6 +344,7 @@
     height: 65vh;
     width: 100%;
     margin-top: 3rem;
+    padding: 0px;
 }
 
 .project-sec-one {
@@ -528,7 +532,7 @@
 }
 
 .sub-heading {
-    font-size: 21px !important;
+    font-size: 16px !important;
     line-height: 27px;
     font-weight: 400 !important;
 }
@@ -1068,6 +1072,7 @@
         font-size: 12px !important;
         line-height: 16px;
     }
+    
 
     .section1>div>div:nth-child(2) {
         margin-top: 0px !important;

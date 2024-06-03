@@ -14,8 +14,8 @@
 }
 
 .frame-1>.heading>p {
-    font-size: 21px !important;
-    line-height: 27px;
+    font-size: 16px !important;
+    line-height: 25px;
     font-weight: 400 !important;
 }
 
@@ -203,6 +203,7 @@
 
 .view-more {
     cursor: pointer;
+    margin-top: 15px;
 }
 
 .app-button-one {
@@ -227,8 +228,8 @@ p {
 }
 
 .app-details .details {
-    font-size: 18px !important;
-    line-height: 32px;
+    font-size: 16px !important;
+    line-height: 30px;
     font-weight: 400 !important;
 }
 
@@ -245,9 +246,9 @@ p {
 }
 
 .sub-heading {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500 !important;
-    line-height: 30px;
+    line-height: 25px;
 }
 
 .app-details-container .name>h2 {
@@ -542,7 +543,7 @@ p {
     }
 
     .frame-1>.heading>p {
-        font-size: 16px !important;
+        font-size: 14px !important;
         line-height: 23px;
         width: 75%;
         font-weight: 400 !important;
