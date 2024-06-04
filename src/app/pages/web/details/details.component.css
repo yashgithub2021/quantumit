@@ -32,31 +32,36 @@
 
 .project-img {
     height: 400px;
-    object-fit: cover;
+    object-fit: contain;
 }
-.sec4-headline>.service-tagline{
+
+.sec4-headline>.service-tagline {
     font-size: 42px;
     line-height: 52px;
 }
-.desc{
-    width: 100%!important;
+
+.desc {
+    width: 100% !important;
 }
-.desc-1{
-    width:80%!important;
+
+.desc-1 {
+    width: 80% !important;
 }
-.desc-1 > p {
+
+.desc-1>p {
     font-size: 16px;
     line-height: 24px;
     text-align: center;
 }
-.frame-3 .desc p{
+
+.frame-3 .desc p {
     font-size: 18px;
     line-height: 22px;
-    font-weight: 400!important;
+    font-weight: 400 !important;
 }
 
 @media (max-width: 1366px) {
-    .app-details > .details > .detail:not(:last-child) {
+    .app-details>.details>.detail:not(:last-child) {
         border-right: 3px solid white;
         padding-right: 8%;
     }
@@ -72,44 +77,59 @@
     .desc-txt {
         font-size: 15px;
     }
-    .sec4-headline>.service-tagline{
+
+    .sec4-headline>.service-tagline {
         font-size: 38px;
         line-height: 48px;
     }
 }
-@media (max-width:575.98px){
-    .container{
-        padding:0px;
+
+@media (max-width:575.98px) {
+    .container {
+        padding: 0px;
     }
-    .frame-3{
+
+    .frame-3 {
         background: linear-gradient(90deg, #43BAFF 0%, #7141B1 100%);
         padding: 5px;
     }
-    .frame-3 .desc p{
+
+    .frame-3 .desc p {
         font-size: 14px;
         line-height: 20px;
     }
+
     .our-process-btn {
         font-size: 10px;
         line-height: 20px;
         padding: 5px 12px 5px 12px;
     }
-    .sec4-headline>.service-tagline{
+
+    .sec4-headline>.service-tagline {
         font-size: 22px;
         line-height: 30px;
     }
-    .desc{
-        width:100%!important
+
+    .desc {
+        width: 100% !important
     }
-    .desc > p {
+
+    .project-img {
+        border: none !important;
+        height: 200px;
+    }
+
+    .desc>p {
         font-size: 14px;
         line-height: 23px;
         text-align: center;
     }
+
     .title h3 {
         font-size: 14px;
     }
-    .app-details > .details > .detail:not(:last-child) {
+
+    .app-details>.details>.detail:not(:last-child) {
         border-right: 3px solid white;
         padding-right: 4%;
     }

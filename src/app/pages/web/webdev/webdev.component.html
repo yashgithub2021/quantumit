@@ -11,7 +11,12 @@
             </p>
             <div class="buttons d-flex justify-content-center w-100 mt-3">
                 <button class="btn btn-primary mx-3 px-2 px-lg-4 py-3" (click)="scrollToProcess()">Get Started</button>
-                <button class="btn btn-outline-primary mx-3 px-2 px-lg-4 py-3 text-uppercase "[ngStyle]="{color:isDarkTheme?'white':'black'}"
+                <button [ngClass]="isDarkTheme?'text-black':'text-white'"
+                    class="btn d-block d-lg-none text-black btn-outline-primary mx-3 px-2 px-lg-4 py-3 text-uppercase "
+                    (click)="scrollToForm()">learn
+                    More</button>
+                <button [ngClass]="isDarkTheme?'text-white':'text-black'"
+                    class="btn d-lg-block d-none btn-outline-primary mx-3 px-2 px-lg-4 py-3 text-uppercase "
                     (click)="scrollToForm()">learn
                     More</button>
             </div>
@@ -45,7 +50,7 @@
             </div>
 
             <div class="our-process my-2 w-100" data-aos="slide-up">
-                <h1 class="text-left w-100">How Quantum develops top-notch websites</h1>
+                <h1 class=" text-lg-start text-center w-100">How Quantum develops top-notch websites</h1>
             </div>
 
             <div class="desc w-100 my-2" data-aos="slide-up">
