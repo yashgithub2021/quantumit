@@ -213,7 +213,7 @@
 
 .frame-5>.container>.tech-stack>div {
     grid-gap: 20px;
-    justify-content: start !important;
+    justify-content: center !important;
 }
 
 .tech-stack>div>.stack {

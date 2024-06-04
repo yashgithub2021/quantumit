@@ -116,14 +116,14 @@
 
 .nums .horizontal-line {
     width: 100%;
-    height: 5px;
+    height: 3px;
     background-color: white;
     top: 50%;
     opacity: 0.5;
 }
 
 .nums .vertical-line {
-    width: 5px;
+    width: 3px;
     height: 100%;
     background-color: white;
     left: 50%;
@@ -274,7 +274,11 @@
         line-height: 18px;
         font-weight: 400 !important;
     }
+    .our-numbers,.num-sec{
+        padding-left: 0px;
+        padding-right: 0px;
 
+    }
     .desc-txt {
         font-size: 15px;
     }

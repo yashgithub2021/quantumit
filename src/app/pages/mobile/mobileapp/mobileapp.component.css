@@ -155,7 +155,7 @@
 }
 
 .numbers-section {
-    height: 300px;
+    height:275px;
     border-radius: 5px;
     padding: 40px 150px;
     background: linear-gradient(90deg, #43BAFF 0%, #7141B1 100%);
@@ -421,7 +421,7 @@
         line-height: 30px;
     }
     .our-process>h1{
-        margin-bottom: 30px!important;
+        margin-bottom: 10px!important;
     }
 
     .our-process-content h3 {
@@ -455,6 +455,7 @@
 
     .btn-lm {
         font-size: 12px;
+        padding:6px 10px!important;
     }
 
     .miletone-number {
