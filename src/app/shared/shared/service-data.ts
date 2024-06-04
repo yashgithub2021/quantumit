@@ -58,7 +58,7 @@ export const androidService = {
         },
     ],
     methodologyBtnTitle: "Our Methodologies",
-    methodologyTitle: "Our Methodologies for App <br> Development",
+    methodologyTitle: "Our Methodologies for App Development",
     steps: [
         {
             num: 1,
@@ -139,7 +139,7 @@ export const iOsService = {
         },
     ],
     methodologyBtnTitle: "Our Approach",
-    methodologyTitle: "Unleash innovation through our proven <br> methodologies",
+    methodologyTitle: "Unleash innovation through our proven methodologies",
     steps: [
         {
             num: 1,

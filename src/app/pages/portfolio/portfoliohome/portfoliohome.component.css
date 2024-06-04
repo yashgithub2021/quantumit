@@ -6,6 +6,9 @@
     padding: 50px 50px;
     background: linear-gradient(90deg, #43BAFF 0%, #7141B1 100%);
 }
+.latest-news{
+    width:60%!important;
+}
 
 .our-service-btn {
     padding: 7px 15px 7px 15px;

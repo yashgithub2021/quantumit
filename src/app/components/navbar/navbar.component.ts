@@ -9,7 +9,8 @@ import { ApiService } from 'src/app/shared/api/api.service';
 export class NavbarComponent {
 
   isDarkTheme!: boolean;
-  isDropdownOpen = false;
+  isDropdownOpenService = false;
+  isDropdownOpenCaseStudy=false;
 
 
   constructor(private api: ApiService, private cdr: ChangeDetectorRef) {
@@ -18,13 +19,18 @@ export class NavbarComponent {
 
   closeNavbar() {
     // Check if the navbar is collapsed
+    this.scrollToTop();
     const navToggler = document.querySelector('.navbar-toggler') as HTMLButtonElement | null;
     console.log(navToggler);
     if (navToggler && navToggler.getAttribute('aria-expanded') === 'true') {
       // Collapse the navbar
       navToggler.click();
     }
-    this.isDropdownOpen=false;
+    this.isDropdownOpenService=false;
+    this.isDropdownOpenCaseStudy=false;
+  }
+  scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 
   toggleTheme(): void {
@@ -34,6 +40,9 @@ export class NavbarComponent {
 
   }
   toggleDropdown(isOpen: boolean) {
-    this.isDropdownOpen = isOpen;
+    this.isDropdownOpenService = isOpen;    
+  }
+  toggleDropdownCaseStudy(isOpen:boolean){
+    this.isDropdownOpenCaseStudy=isOpen;
   }
 }

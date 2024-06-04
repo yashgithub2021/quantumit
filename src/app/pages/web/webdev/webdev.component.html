@@ -11,7 +11,7 @@
             </p>
             <div class="buttons d-flex justify-content-center w-100 mt-3">
                 <button class="btn btn-primary mx-3 px-2 px-lg-4 py-3" (click)="scrollToProcess()">Get Started</button>
-                <button class="btn text-white btn-outline-primary mx-3 px-2 px-lg-4 py-3 text-uppercase "
+                <button class="btn btn-outline-primary mx-3 px-2 px-lg-4 py-3 text-uppercase "[ngStyle]="{color:isDarkTheme?'white':'black'}"
                     (click)="scrollToForm()">learn
                     More</button>
             </div>
@@ -110,7 +110,7 @@
                 <p class="sub-heading" [ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">We help businesses from healthcare,
                     transportation, real estate,
                     communication,
-                    and other <br>
+                    and other
                     industries seize new opportunities, overcome business challenges.</p>
             </div>
         </div>

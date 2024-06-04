@@ -11,7 +11,9 @@ import { ApiService } from 'src/app/shared/api/api.service';
 })
 export class HomeComponent implements OnInit {
   isDarkTheme: boolean;
-  showNavigationIndicators = false
+  showNavigationIndicators = false;
+
+
   constructor(private api: ApiService, private elementRef: ElementRef) {
     this.isDarkTheme = this.api.isDarkTheme();
   }
@@ -156,7 +158,6 @@ export class HomeComponent implements OnInit {
     }
     return stars;
   }
-
   scrollToFooter() {
     const footer = this.elementRef.nativeElement.querySelector('#form');
     if (footer) {
