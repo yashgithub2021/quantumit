@@ -443,6 +443,14 @@
         margin-bottom: 0px !important;
     }
 
+    .frame-4::before {
+        width: 96%;
+    }
+
+    .frame-5>.container>.tech-stack>div {
+        justify-content: center !important;
+    }
+
     .step-title p {
         width: 75% !important;
     }
@@ -453,7 +461,7 @@
     }
 
     .step-title p:last-child {
-        font-size: 12px;
+        font-size: 12px !important;
         line-height: 20px;
     }
 

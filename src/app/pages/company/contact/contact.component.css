@@ -215,7 +215,7 @@
 
 .list p {
     font-size: 16px;
-    font-weight: 400!important;
+    font-weight: 400 !important;
     line-height: 25px;
 }
 
@@ -228,7 +228,7 @@
 
 @media (max-width: 575.98px) {
     .num-cont {
-        padding: 10px;
+        padding: 25px 10px 10px 10px;
     }
 
     .num-cont>div h1 {

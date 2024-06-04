@@ -130,7 +130,7 @@ export class HomeComponent implements OnInit {
     this.api.getReviews().subscribe(
       (res: any) => {
         this.reviews = res.feedbacks;
-        this.groupedReviews = this.groupReviews(this.reviews);
+        this.groupReviews();
         console.log(res);
         console.log(this.reviews);
       },
@@ -140,13 +140,30 @@ export class HomeComponent implements OnInit {
     );
   }
 
-  groupReviews(reviews: any[]): any[][] {
+  groupReviews(): void {
     const groupedReviews = [];
-    for (let i = 0; i < reviews.length; i += 2) {
-      groupedReviews.push(reviews.slice(i, i + 2));
+    const screenWidth = window.innerWidth;
+
+    if (screenWidth < 768) {
+      // Mobile view: one review per slide
+      for (let i = 0; i < this.reviews.length; i++) {
+        groupedReviews.push([this.reviews[i]]);
+      }
+    } else {
+      // Desktop view: two reviews per slide
+      for (let i = 0; i < this.reviews.length; i += 2) {
+        groupedReviews.push(this.reviews.slice(i, i + 2));
+      }
     }
-    return groupedReviews;
+
+    this.groupedReviews = groupedReviews;
   }
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event: Event) {
+    this.groupReviews();
+  }
+
 
   // Inside your component class
   getStars(rating: number): number[] {

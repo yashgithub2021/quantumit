@@ -7,7 +7,7 @@
     height: 100vh;
 }
 
-.steps-container-1{
+.steps-container-1 {
     align-items: center !important;
     display: flex;
     justify-content: center;
@@ -270,7 +270,7 @@
     background-color: #43BAFF;
     border: none;
     border-radius: 5px;
-    font-size: 16px!important;
+    font-size: 16px !important;
 }
 
 .table-bordered {
@@ -340,9 +340,11 @@
 .frame-6 {
     height: auto;
 }
-.frame-5 .txt{
-    width:50%!important;
+
+.frame-5 .txt {
+    width: 50% !important;
 }
+
 .our-gm-btn {
     font-size: 14px;
     padding: 7px 15px 7px 15px;
@@ -472,12 +474,14 @@ td h4 {
 }
 
 @media(max-width:768px) {
-    .frame-5 .txt{
-        width:75%!important;
+    .frame-5 .txt {
+        width: 75% !important;
     }
+
     .frame-6>.container {
         height: 100vh !important;
     }
+
     .step-title {
         width: 100% !important;
     }
@@ -508,7 +512,7 @@ td h4 {
     }
 
     .heading>p {
-        font-size: 14px !important;
+        font-size: 12px !important;
         line-height: 23px;
     }
 
@@ -583,7 +587,7 @@ td h4 {
 
     .frame-1 button {
         padding: 10px 18px !important;
-        font-size: 14px !important;
+        font-size: 12px !important;
         line-height: 21px;
         border-radius: 8px !important;
     }
@@ -637,7 +641,7 @@ td h4 {
     .frame-6 {
         padding-left: 0px;
         padding-right: 0px;
-        height: 180vh;
+        height: 170vh;
     }
 
     .frame-6>.container {
