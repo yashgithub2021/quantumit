@@ -6,8 +6,9 @@
     padding: 50px 50px;
     background: linear-gradient(90deg, #43BAFF 0%, #7141B1 100%);
 }
-.latest-news{
-    width:60%!important;
+
+.latest-news {
+    width: 60% !important;
 }
 
 .our-service-btn {
@@ -84,10 +85,10 @@
     font-weight: 700;
 }
 
-.miletone-title p{
+.miletone-title p {
     font-size: 16px;
     line-height: 23px;
-    font-weight: 400!important;
+    font-weight: 400 !important;
     font-family: Barlow !important;
 }
 
@@ -98,16 +99,18 @@
 }
 
 .app-detail h3 {
-    font-size: 30px;
+    font-size: 20px;
     line-height: 37px;
     font-weight: 500 !important;
 }
-.app-detail p{
+
+.app-detail p {
     font-size: 16px;
     line-height: 22px;
     font-weight: 400 !important;
 }
-.button button{
+
+.button button {
     font-size: 16px;
     font-size: 14px;
     font-weight: 700;

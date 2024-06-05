@@ -19,8 +19,8 @@
                         </p>
                     </div>
                 </div>
-                <div class="image mt-3 w-100">
-                    <img class="rounded-2 w-100" [src]="projectDetails.image" alt="">
+                <div class="image mt-3 w-100 text-align-center">
+                    <img class="rounded-2" width="1000" style="height: 500px;" [src]="projectDetails.image" alt="">
                 </div>
 
                 <div class="project-details">
@@ -108,7 +108,8 @@
                                 <li [ngStyle]="{'background-color':isDarkTheme?'black':'white','color':isDarkTheme?'white':'black'}"
                                     class="list-group-item d-flex align-items-center my-1 border-0 ps-0"
                                     *ngFor="let check of projectDetails.keyPoints">
-                                    <p class="fw-light mb-0 ms-2 list-check"[ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">{{check}}</p>
+                                    <p class="fw-light mb-0 ms-2 list-check"
+                                        [ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">{{check}}</p>
                                 </li>
                             </ul>
                         </div>
@@ -131,7 +132,8 @@
                                 <li [ngStyle]="{'background-color':isDarkTheme?'black':'white','color':isDarkTheme?'white':'black'}"
                                     class="list-group-item d-flex align-items-center my-1 border-0 ps-0 "
                                     *ngFor="let check of projectDetails.keyInsights">
-                                    <p class="fw-light mb-0 ms-2 list-check"[ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">{{check}}</p>
+                                    <p class="fw-light mb-0 ms-2 list-check"
+                                        [ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">{{check}}</p>
                                 </li>
                             </ul>
                         </div>

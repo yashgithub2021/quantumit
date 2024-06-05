@@ -1,19 +1,22 @@
 .form {
     height: 100vh;
 }
-.text h1{
-    font-size:48px!important;
+
+.text h1 {
+    font-size: 42px !important;
     line-height: 63px;
     font-weight: 700;
 
 }
+
 .opt {
     cursor: pointer;
 }
-.option h3{
-    font-size:32px;
+
+.option h3 {
+    font-size: 20px;
     line-height: 43px;
-    font-weight: 700!important;
+    font-weight: 700 !important;
 }
 
 .blue-opt {
@@ -77,8 +80,9 @@ textarea::placeholder {
     .form {
         height: 60vh;
     }
-    .option h3{
-        font-size:23px;
+
+    .option h3 {
+        font-size: 23px;
         line-height: 30px;
     }
 }
@@ -87,7 +91,8 @@ textarea::placeholder {
     .form {
         height: 70vh;
     }
-    .text h1{
+
+    .text h1 {
         font-size: 23px !important;
         line-height: 33px;
     }

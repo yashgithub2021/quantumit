@@ -45,7 +45,7 @@ export class DigitalMarketingComponent implements OnInit {
       types: ['Organic Engagement', 'SEO', 'Marketing']
     },
     {
-      name: "Seanautic Marine Inc. Africa Organic Traffic",
+      name: "Seanautic Marine Inc. Organic Traffic",
       num: "+34.7k",
       types: ['Keyword Ranking', 'SEO', 'Marketing']
     },

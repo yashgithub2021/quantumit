@@ -53,7 +53,7 @@
 }
 
 .step-title p:first-child {
-    font-size: 25px;
+    font-size: 20px !important;
     line-height: 30px;
     font-weight: 400 !important;
 }

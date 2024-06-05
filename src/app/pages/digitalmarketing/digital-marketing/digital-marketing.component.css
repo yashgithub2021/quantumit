@@ -426,7 +426,7 @@ tr th img {
 }
 
 td h4 {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 400;
     line-height: 33px;
 }
@@ -450,7 +450,7 @@ td h4 {
 }
 
 .details .name h3 {
-    font-size: 25px;
+    font-size: 20px;
     line-height: 31px;
     font-weight: 400;
 }
@@ -573,14 +573,16 @@ td h4 {
         line-height: 30px;
         margin-top: 30px;
     }
-    .txt1 h1{
-        margin-top:0px;
+
+    .txt1 h1 {
+        margin-top: 0px;
     }
 
     .btn-lm {
         padding: 5px 10px;
         font-size: 14px !important;
     }
+
     .our-gm-btn {
         font-size: 12px;
     }

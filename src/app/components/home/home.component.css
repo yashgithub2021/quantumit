@@ -91,7 +91,7 @@
     background-color: #43BAFF;
     border: none;
     border-radius: 0px;
-    font-size: 16px!important;
+    font-size: 16px !important;
 }
 
 .cards {
@@ -165,7 +165,8 @@
     line-height: 50px;
     font-weight: 700;
 }
-.right-side > .container {
+
+.right-side>.container {
     padding-left: 50px;
     padding-right: 50px;
 }
@@ -548,7 +549,7 @@
 }
 
 .project-title {
-    font-size: 24px;
+    font-size: 20px;
     line-height: 30.32px;
 }
 
@@ -833,8 +834,9 @@
     .section5::before {
         width: 95%;
     }
+
     .projects-section {
-        padding:0px;
+        padding: 0px;
     }
 
     .service-tagline {
@@ -925,12 +927,13 @@
     .learnMore {
         width: 100%;
         display: flex;
-        justify-content: center!important;
+        justify-content: center !important;
         align-items: center;
     }
-    .learnMore button{
-        width:100%;
-        justify-content: center!important;
+
+    .learnMore button {
+        width: 100%;
+        justify-content: center !important;
     }
 
     .section6 {
@@ -940,9 +943,11 @@
     .our-customers {
         height: 25vh;
     }
-    .our-customers img{
+
+    .our-customers img {
         width: 100%;
     }
+
     .our-customers::before {
         height: 80%;
         width: 80%;
@@ -1039,7 +1044,7 @@
         font-size: 12px !important;
         line-height: 16px;
     }
-    
+
 
     .section1>div>div:nth-child(2) {
         margin-top: 0px !important;

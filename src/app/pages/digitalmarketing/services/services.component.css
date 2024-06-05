@@ -234,7 +234,7 @@
 }
 
 .frame-2-head .txt>h1 {
-    font-size: 48px;
+    font-size: 42px;
     line-height: 60px;
     font-weight: 600 !important;
 }
@@ -246,7 +246,7 @@
 }
 
 .step-title p:first-child {
-    font-size: 25px;
+    font-size: 20px !important;
     font-weight: 400 !important;
     line-height: 30px;
     width: 39% !important;
@@ -260,7 +260,7 @@
 }
 
 .text>.title>h4 {
-    font-size: 22px;
+    font-size: 20px;
     white-space: nowrap;
     line-height: 26px;
     font-weight: 400 !important;

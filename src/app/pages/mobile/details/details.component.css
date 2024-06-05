@@ -250,7 +250,7 @@
 
 .frame-2-head .txt>h1,
 .txt>h1 {
-    font-size: 48px;
+    font-size: 42px;
     line-height: 60px;
     font-weight: 600 !important;
 }
@@ -284,14 +284,16 @@
     font-weight: 400 !important;
     line-height: 20px;
 }
+
 .steps-container2 {
     align-items: start;
 }
+
 .step-title p:first-child {
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 400;
     line-height: 30px;
-    width:60%!important;
+    width: 60% !important;
 }
 
 .step-title p:last-child {
@@ -323,8 +325,9 @@
         0 24px 46px var(--box-shadow-color);
     transition: all 0.5s ease-in-out;
 }
-.txt1{
-    width:60%!important;
+
+.txt1 {
+    width: 60% !important;
 }
 
 @media (max-width: 1024px) {
@@ -390,6 +393,7 @@
     .frame-3 .image>img {
         width: 100% !important;
     }
+
     .txt {
         width: 100% !important;
     }
@@ -474,13 +478,13 @@
     .step-title p:first-child {
         font-size: 16px;
         line-height: 25px;
-        width: 100%!important;
+        width: 100% !important;
     }
 
     .step-title p:last-child {
         font-size: 12px;
         line-height: 20px;
-        width:100%!important;
+        width: 100% !important;
     }
 
     .our-marketing.btn {
@@ -537,9 +541,11 @@
         font-size: 12px;
         line-height: 20px;
     }
-    .steps-container{
-        padding:0px 0px;
+
+    .steps-container {
+        padding: 0px 0px;
     }
+
     .steps-container2 {
         align-items: start;
     }

@@ -10,8 +10,9 @@
 .mobile-app {
     height: 80vh;
 }
-.mobile-app .image{
-    width:55%!important;
+
+.mobile-app .image {
+    width: 55% !important;
 }
 
 .mobile-app-dark {
@@ -36,7 +37,7 @@
     font-size: 16px !important;
     line-height: 25px;
     font-weight: 400 !important;
-    margin-top:20px;
+    margin-top: 20px;
     margin-bottom: 20px;
 }
 
@@ -46,8 +47,9 @@
     line-height: 54px;
     font-weight: 700 !important;
 }
-.our-process>h1{
-    margin-bottom: 40px!important;
+
+.our-process>h1 {
+    margin-bottom: 40px !important;
 }
 
 .our-process-content h3 {
@@ -71,11 +73,11 @@
 
 .btn-lm {
     color: white;
-    padding: 20px 40px!important;
+    padding: 20px 40px !important;
     background-color: #43BAFF;
     border: none;
     border-radius: 10px;
-    font-size: 16px!important;
+    font-size: 16px !important;
 }
 
 .frame-2 {
@@ -129,7 +131,7 @@
 }
 
 .ai-data .serial-no h3 {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 500 !important;
     line-height: 24px;
 }
@@ -155,7 +157,7 @@
 }
 
 .numbers-section {
-    height:275px;
+    height: 275px;
     border-radius: 5px;
     padding: 40px 150px;
     background: linear-gradient(90deg, #43BAFF 0%, #7141B1 100%);
@@ -221,17 +223,18 @@
 }
 
 .miletone-number {
-    font-size: 36px!important;
+    font-size: 36px !important;
     line-height: 54px;
     font-weight: 700 !important;
     margin-bottom: 25px;
 }
 
 .miletone-title {
-    font-size: 16px!important;
+    font-size: 16px !important;
     line-height: 28px;
     font-weight: 400 !important;
 }
+
 .what-we-do {
     display: flex;
     justify-content: center;
@@ -264,8 +267,9 @@
     .mobile-app {
         height: auto;
     }
-    .mobile-app .image{
-        width:100%!important;
+
+    .mobile-app .image {
+        width: 100% !important;
     }
 
     .ai-data,
@@ -350,8 +354,9 @@
     .frames>.mobile-app>.header>.image {
         padding: 10px;
     }
+
     .frame-4>.container>.head>.success-desc>p {
-        line-height: 25px;    
+        line-height: 25px;
     }
 }
 
@@ -420,8 +425,9 @@
         font-size: 22px;
         line-height: 30px;
     }
-    .our-process>h1{
-        margin-bottom: 10px!important;
+
+    .our-process>h1 {
+        margin-bottom: 10px !important;
     }
 
     .our-process-content h3 {
@@ -455,7 +461,7 @@
 
     .btn-lm {
         font-size: 12px;
-        padding:6px 10px!important;
+        padding: 6px 10px !important;
     }
 
     .miletone-number {
@@ -509,9 +515,10 @@
         line-height: 23px;
         font-weight: 400 !important;
     }
+
     .app-details-container {
         margin-left: 0px !important;
-        width:100%!important;
+        width: 100% !important;
     }
 
     .view-more {

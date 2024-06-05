@@ -58,7 +58,7 @@
         </div>
 
         <div class="container addresses">
-            <div class="d-flex justify-content-center align-items-center">
+            <div class="d-flex mb-3 justify-content-center align-items-center">
                 <div class="addr-cont gap-3 d-flex flex-wrap justify-content-center">
                     <div [ngStyle]="{'background':isDarkMode?'#111111':'#ECF0FF'}"
                         class="address p-4 hover-card rounded-3 align-items-center flex-column gap-4 d-flex justify-content-center">
@@ -102,6 +102,52 @@
                                 55/123 Norman Street,
                                 Sydney NSW 20
                             </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center align-items-center">
+                <div class="addr-cont gap-3 d-flex flex-wrap justify-content-center">
+                    <div [ngStyle]="{'background':isDarkMode?'#111111':'#ECF0FF'}"
+                        class="address addr-col-2 p-4 hover-card rounded-3 align-items-center flex-column gap-4 d-flex justify-content-center">
+                        <div class="image">
+                            <img src="../../../../assets/contact/can.svg" alt="">
+                        </div>
+                        <div class="name">
+                            <h4>Ontario Canada</h4>
+                        </div>
+                        <div class="address w-75">
+                            <p class=" text-align-center" [ngStyle]="{'opacity':isDarkMode ?'0.5':'1'}">
+                                +1 587 603 6054 Ext - 101
+                            </p>
+                        </div>
+                    </div>
+                    <div [ngStyle]="{'background':isDarkMode?'#111111':'#ECF0FF'}"
+                        class="address addr-col-2 p-4 hover-card rounded-3 align-items-center flex-column gap-4 d-flex justify-content-center position-relative">
+                        <div class="image">
+                            <img src="../../../../assets/contact/USA.svg" alt="">
+                        </div>
+                        <div class="name">
+                            <h4>California USA</h4>
+                        </div>
+                        <div class="address w-75">
+                            <p class="text-align-center" [ngStyle]="{'opacity':isDarkMode ?'0.5':'1'}">
+                                +1 213 341 0348 Ext - 101
+                            </p>
+                        </div>
+                        <!-- <button class="btn position-absolute text-white rounded-5">Main Office</button> -->
+                    </div>
+                    <div [ngStyle]="{'background':isDarkMode?'#111111':'#ECF0FF'}"
+                        class="address addr-col-2 p-4 hover-card rounded-3 align-items-center flex-column gap-4 d-flex justify-content-center">
+                        <div class="image">
+                            <img src="../../../../assets/contact/aus.svg" alt="">
+                        </div>
+                        <div class="name">
+                            <h4>Melbourne Australia</h4>
+                        </div>
+                        <div class="address w-75">
+                            <p class="  text-align-center" [ngStyle]="{'opacity':isDarkMode ?'0.5':'1'}">
+                                +61 370 424 786
                         </div>
                     </div>
                 </div>
@@ -154,7 +200,7 @@
                                             *ngFor="let check of faq.keyPoints">
                                             <i [ngClass]="isDarkMode ? 'text-white' : 'text-black'"
                                                 class="fa-solid fa-check mx-2"></i>
-                                            <p class="fw-light m-0 list-check "[ngStyle]="{'opacity':isDarkMode?'0.5':'1'}">{{check}}</p>
+                                            <p class="fw-light m-0 list-check">{{check}}</p>
                                         </li>
                                     </ul>
                                 </div>

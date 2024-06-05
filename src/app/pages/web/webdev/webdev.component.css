@@ -224,7 +224,7 @@
 }
 
 p {
-    font-size: 24px;
+    font-size: 20px;
 }
 
 .app-details .details {
@@ -428,11 +428,11 @@ p {
 
 @media (max-width: 992px) {
 
-    .project-one::before,
+    /* .project-one::before,
     .project-two::before,
     .project-three::before {
         background-image: none;
-    }
+    } */
 
     .project {
         height: 60vh;
@@ -467,7 +467,7 @@ p {
 
     .frame-2 {
         height: 43vh;
-        width: 104vw;
+        width: 100vw;
     }
 
     .frame-3>.f3-container {
@@ -479,7 +479,7 @@ p {
     }
 
     .project-container>.app-details {
-        margin-bottom: 25px;
+        margin: 20px 0;
     }
 
 
@@ -621,8 +621,9 @@ p {
     .project-two::before,
     .project-three::before {
         width: 100%;
-        height: 80%;
+        height: 100%;
         background-size: cover;
+        border-radius: 10px;
     }
 
     .app-details-container {

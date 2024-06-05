@@ -168,8 +168,12 @@
 
 }
 
+.addr-col-2 {
+    min-width: 342px;
+}
+
 .frame-2-head>.txt>h1 {
-    font-size: 48px;
+    font-size: 42px;
     line-height: 52px;
     font-weight: 600;
 }
@@ -181,7 +185,7 @@
 }
 
 .name h4 {
-    font-size: 24px;
+    font-size: 20px;
     line-height: 26px;
     font-weight: 700;
 }
@@ -194,14 +198,14 @@
 
 .questions button {
 
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 400;
     line-height: 30px;
 }
 
 .question h4 {
 
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 400;
     line-height: 30px;
 
@@ -255,6 +259,10 @@
     .numbers-section::before {
 
         height: 18%;
+    }
+
+    .addr-col-2 {
+        min-width: 270px;
     }
 
     .our-process-btn {
