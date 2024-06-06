@@ -4,12 +4,12 @@
             <div class="numbers-section rounded-3 d-flex align-items-center justify-content-center container w-100">
                 <div class="latest-news d-flex text-align-center w-75 justify-content-center align-content-center">
                     <div class="text-white">
-                        <div class="miletone-number">
+                        <div class="milestone-number">
                             <h1 class="">
                                 Our Portfolio
                             </h1>
                         </div>
-                        <div class="miletone-title ">
+                        <div class="milestone-title">
                             <p class="">Explore our diverse portfolio of digital solutions.</p>
                         </div>
                     </div>
@@ -18,13 +18,13 @@
         </div>
         <div class="container heading w-100 h-100 d-flex flex-column align-items-center justify-content-center">
             <div class="desc align-self-center mt-3 w-75">
-                <p class=" opacity-50 text-align-center">
+                <p class="opacity-50 text-align-center">
                     Proud projects that make us stand out
                 </p>
             </div>
         </div>
         <div class="container mt-4 categories d-flex justify-content-center w-100">
-            <div class="container gap-3 gap-lg-0 d-flex flex-wrap w-75 justify-content-evenly ">
+            <div class="container gap-3 gap-lg-0 d-flex flex-wrap w-75 justify-content-evenly">
                 <div class="button">
                     <button (click)="fetchProjects()"
                         [ngStyle]="{'background':activeTab==='all'?'linear-gradient(91.58deg, #43BAFF 0.52%, #7044B3 100%)':''}"
@@ -33,19 +33,19 @@
                 </div>
                 <div class="button">
                     <button (click)="fetchWebProjects()"
-                        [ngStyle]="{'background':activeTab==='web-design'?'linear-gradient(91.58deg, #43BAFF 0.52%, #7044B3 100%)':''}"
+                        [ngStyle]="{'background':activeTab==='Web Development'?'linear-gradient(91.58deg, #43BAFF 0.52%, #7044B3 100%)':''}"
                         [ngClass]="isDarkTheme?'category-btn':'category-btn-light'" class="btn w-100">Web
                         Design</button>
                 </div>
                 <div class="button">
                     <button (click)="fetchAppProjects()"
-                        [ngStyle]="{'background':activeTab==='app'?'linear-gradient(91.58deg, #43BAFF 0.52%, #7044B3 100%)':''}"
+                        [ngStyle]="{'background':activeTab==='Mobile App'?'linear-gradient(91.58deg, #43BAFF 0.52%, #7044B3 100%)':''}"
                         [ngClass]="isDarkTheme?'category-btn':'category-btn-light'" class="btn w-100">App
-                        design</button>
+                        Design</button>
                 </div>
                 <div class="button">
                     <button (click)="webAppTab()"
-                        [ngStyle]="{'background':activeTab==='web-app'?'linear-gradient(91.58deg, #43BAFF 0.52%, #7044B3 100%)':''}"
+                        [ngStyle]="{'background':activeTab==='Web App'?'linear-gradient(91.58deg, #43BAFF 0.52%, #7044B3 100%)':''}"
                         [ngClass]="isDarkTheme?'category-btn':'category-btn-light'" class="btn w-100">Web
                         App</button>
                 </div>
@@ -60,135 +60,141 @@
             <div class="d-flex justify-content-center apps-container">
                 <div class="w-100 d-flex justify-content-evenly gap-3 gap-lg-0">
                     <div class="app1-cont d-flex flex-column gap-3">
-                        <div *ngIf="projects[0]" class="app p-3 rounded-3"
+                        <div *ngIf="filteredProjects[0]" class="app p-3 rounded-3"
                             [ngStyle]="{'background-color':isDarkTheme?'#111111':'#ECF0FF'}">
                             <img (click)="scrollToTop()"
-                                [routerLink]="(projects[0].category[0] === 'Web Development' || projects[0].category[0] === 'Web App') ? '/web-development/details/' + projects[0]._id : '/app-development/app-details/' + projects[0]._id"
+                                [routerLink]="(filteredProjects[0].category[0] === 'Web Development' || filteredProjects[0].category[0] === 'Web App') ? '/web-development/details/' + filteredProjects[0]._id : '/app-development/app-details/' + filteredProjects[0]._id"
                                 src="../../../../assets/portfolio/view-project.svg" class="view-project" alt="">
                             <div class="app-img">
                                 <img class="rounded-3" width="400" height="550"
-                                    src="../../../../assets/portfolio/app1.svg" alt="">
+                                    [src]="filteredProjects[0].portfolioImage?filteredProjects[0].portfolioImage:'../../../../assets/portfolio/app1.svg'"
+                                    alt="">
                             </div>
-                            <div class="app-detail  mt-4">
+                            <div class="app-detail mt-4">
                                 <h3>
-                                    {{projects[0]?.name}}
+                                    {{filteredProjects[0]?.name}}
                                 </h3>
                                 <p>
-                                    {{projects[0]?.category[0]}}
+                                    {{filteredProjects[0]?.category[0]}}
                                 </p>
                             </div>
                         </div>
-                        <div *ngIf="projects[2]" class="app p-3 rounded-3"
+                        <div *ngIf="filteredProjects[2]" class="app p-3 rounded-3"
                             [ngStyle]="{'background':isDarkTheme?'#111111':'#ECF0FF'}">
                             <img (click)="scrollToTop()"
-                                [routerLink]="(projects[2].category[0] === 'Web Development' || projects[2].category[0] === 'Web App') ? '/web-development/details/' + projects[2]._id : '/app-development/app-details/' + projects[2]._id"
+                                [routerLink]="(filteredProjects[2].category[0] === 'Web Development' || filteredProjects[2].category[0] === 'Web App') ? '/web-development/details/' + filteredProjects[2]._id : '/app-development/app-details/' + filteredProjects[2]._id"
                                 src="../../../../assets/portfolio/view-project.svg" class="view-project" alt="">
                             <div class="app-img">
                                 <img class="rounded-3" width="400" height="550"
-                                    src="../../../../assets/portfolio/app3.svg" alt="">
+                                    [src]="filteredProjects[2].portfolioImage?filteredProjects[2].portfolioImage:'../../../../assets/portfolio/app2.svg'"
+                                    alt="">
                             </div>
-                            <div class="app-detail  mt-4">
+                            <div class="app-detail mt-4">
                                 <h3>
-                                    {{projects[2]?.name}}
+                                    {{filteredProjects[2]?.name}}
                                 </h3>
                                 <p>
-                                    {{projects[2]?.category[0]}}
+                                    {{filteredProjects[2]?.category[0]}}
                                 </p>
                             </div>
                         </div>
-                        <div *ngIf="projects[4]" class="app p-3 rounded-3"
+                        <div *ngIf="filteredProjects[4]" class="app p-3 rounded-3"
                             [ngStyle]="{'background':isDarkTheme?'#111111':'#ECF0FF'}">
                             <img (click)="scrollToTop()"
-                                [routerLink]="(projects[4].category[0] === 'Web Development' || projects[4].category[0] === 'Web App') ? '/web-development/details/' + projects[4]._id : '/app-development/app-details/' + projects[4]._id"
+                                [routerLink]="(filteredProjects[4].category[0] === 'Web Development' || filteredProjects[4].category[0] === 'Web App') ? '/web-development/details/' + filteredProjects[4]._id : '/app-development/app-details/' + filteredProjects[4]._id"
                                 src="../../../../assets/portfolio/view-project.svg" class="view-project" alt="">
                             <div class="app-img">
                                 <img class="rounded-3" width="400" height="550"
-                                    src="../../../../assets/portfolio/app5.svg" alt="">
+                                    [src]="filteredProjects[4].portfolioImage?filteredProjects[4].portfolioImage:'../../../../assets/portfolio/app3.svg'"
+                                    alt="">
                             </div>
-                            <div class="app-detail  mt-4">
+                            <div class="app-detail mt-4">
                                 <h3>
-                                    {{projects[4]?.name}}
+                                    {{filteredProjects[4]?.name}}
                                 </h3>
                                 <p>
-                                    {{projects[4]?.category[0]}}
+                                    {{filteredProjects[4]?.category[0]}}
                                 </p>
                             </div>
                         </div>
-                        <div *ngIf="projects[6]" class="app p-3 rounded-3"
+                        <div *ngIf="filteredProjects[6]" class="app p-3 rounded-3"
                             [ngStyle]="{'background':isDarkTheme?'#111111':'#ECF0FF'}">
                             <img (click)="scrollToTop()"
-                                [routerLink]="(projects[6].category[0] === 'Web Development' || projects[6].category[0] === 'Web App') ? '/web-development/details/' + projects[6]._id : '/app-development/app-details/' + projects[6]._id"
+                                [routerLink]="(filteredProjects[6].category[0] === 'Web Development' || filteredProjects[6].category[0] === 'Web App') ? '/web-development/details/' + filteredProjects[6]._id : '/app-development/app-details/' + filteredProjects[6]._id"
                                 src="../../../../assets/portfolio/view-project.svg" class="view-project" alt="">
                             <div class="app-img">
                                 <img class="rounded-3" width="400" height="550"
-                                    src="../../../../assets/portfolio/app7.svg" alt="">
+                                    [src]="filteredProjects[6].portfolioImage?filteredProjects[6].portfolioImage:'../../../../assets/portfolio/app7.svg'"
+                                    alt="">
                             </div>
-                            <div class="app-detail  mt-4">
+                            <div class="app-detail mt-4">
                                 <h3>
-                                    {{projects[6]?.name}}
+                                    {{filteredProjects[6]?.name}}
                                 </h3>
                                 <p>
-                                    {{projects[6]?.category[0]}}
+                                    {{filteredProjects[6]?.category[0]}}
                                 </p>
                             </div>
                         </div>
                     </div>
                     <div class="app2-cont gap-3 justify-content-center d-flex flex-column">
-                        <div *ngIf="projects[1]" class="app p-3 rounded-3"
+                        <div *ngIf="filteredProjects[1]" class="app p-3 rounded-3"
                             [ngStyle]="{'background':isDarkTheme?'#111111':'#ECF0FF'}">
                             <div class="app-img">
                                 <img (click)="scrollToTop()"
-                                    [routerLink]="(projects[1].category[0] === 'Web Development' || projects[1].category[0] === 'Web App') ? '/web-development/details/' + projects[1]._id : '/app-development/app-details/' + projects[1]._id"
+                                    [routerLink]="(filteredProjects[1].category[0] === 'Web Development' || filteredProjects[1].category[0] === 'Web App') ? '/web-development/details/' + filteredProjects[1]._id : '/app-development/app-details/' + filteredProjects[1]._id"
                                     src="../../../../assets/portfolio/view-project.svg" class="view-project" alt="">
                                 <img class="rounded-3" width="400" height="550"
-                                    src="../../../../assets/portfolio/app2.svg" alt="">
+                                    [src]="filteredProjects[1].portfolioImage?filteredProjects[1].portfolioImage:'../../../../assets/portfolio/app2.svg'"
+                                    alt="">
                             </div>
-                            <div class="app-detail  mt-4">
+                            <div class="app-detail mt-4">
                                 <h3>
-                                    {{projects[1]?.name}}
+                                    {{filteredProjects[1]?.name}}
                                 </h3>
                                 <p>
-                                    {{projects[1]?.category[0]}}
+                                    {{filteredProjects[1]?.category[0]}}
                                 </p>
                             </div>
                         </div>
-                        <div *ngIf="projects[3]" class="app p-3 rounded-3"
+                        <div *ngIf="filteredProjects[3]" class="app p-3 rounded-3"
                             [ngStyle]="{'background':isDarkTheme?'#111111':'#ECF0FF'}">
                             <img (click)="scrollToTop()"
-                                [routerLink]="(projects[3].category[0] === 'Web Development' || projects[3].category[0] === 'Web App') ? '/web-development/details/' + projects[3]._id : '/app-development/app-details/' + projects[3]._id"
+                                [routerLink]="(filteredProjects[3].category[0] === 'Web Development' || filteredProjects[3].category[0] === 'Web App') ? '/web-development/details/' + filteredProjects[3]._id : '/app-development/app-details/' + filteredProjects[3]._id"
                                 src="../../../../assets/portfolio/view-project.svg" class="view-project" alt="">
                             <div class="app-img">
                                 <img class="rounded-3" width="400" height="550"
-                                    src="../../../../assets/portfolio/app4.svg" alt="">
+                                    [src]="filteredProjects[3].portfolioImage?filteredProjects[3].portfolioImage:'../../../../assets/portfolio/app4.svg'"
+                                    alt="">
                             </div>
-                            <div class="app-detail  mt-4">
+                            <div class="app-detail mt-4">
                                 <h3>
-                                    {{projects[3].name}}
+                                    {{filteredProjects[3].name}}
                                 </h3>
                                 <p>
-                                    {{projects[3]?.category[0]}}
+                                    {{filteredProjects[3]?.category[0]}}
                                 </p>
                             </div>
                         </div>
-                        <div *ngIf="projects[5]" class="app p-3 rounded-3"
+                        <div *ngIf="filteredProjects[5]" class="app p-3 rounded-3"
                             [ngStyle]="{'background':isDarkTheme?'#111111':'#ECF0FF'}">
                             <img (click)="scrollToTop()"
-                                [routerLink]="(projects[5].category[0] === 'Web Development' || projects[5].category[0] === 'Web App') ? '/web-development/details/' + projects[5]._id : '/app-development/app-details/' + projects[5]._id"
+                                [routerLink]="(filteredProjects[5].category[0] === 'Web Development' || filteredProjects[5].category[0] === 'Web App') ? '/web-development/details/' + filteredProjects[5]._id : '/app-development/app-details/' + filteredProjects[5]._id"
                                 src="../../../../assets/portfolio/view-project.svg" class="view-project" alt="">
                             <div class="app-img">
                                 <img class="rounded-3" width="400" height="550"
-                                    src="../../../../assets/portfolio/app6.svg" alt="">
+                                    [src]="filteredProjects[5].portfolioImage?filteredProjects[5].portfolioImage:'../../../../assets/portfolio/app6.svg'"
+                                    alt="">
                             </div>
-                            <div class="app-detail  mt-4">
+                            <div class="app-detail mt-4">
                                 <h3>
-                                    {{projects[5]?.name}}
+                                    {{filteredProjects[5]?.name}}
                                 </h3>
                                 <p>
-                                    {{projects[5]?.category[0]}}
+                                    {{filteredProjects[5]?.category[0]}}
                                 </p>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
