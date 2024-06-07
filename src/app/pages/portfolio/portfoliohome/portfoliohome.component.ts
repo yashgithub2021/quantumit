@@ -10,8 +10,9 @@ export class PortfoliohomeComponent implements OnInit {
 
   isDarkTheme!: boolean
   activeTab: string = 'all'
-  projects: any;
-  loadingStatus:boolean=true;
+  projects: any[] = [];
+  filteredProjects: any[] = [];
+  loadingStatus: boolean = true;
   constructor(private api: ApiService) { }
 
   ngOnInit(): void {
@@ -31,50 +32,49 @@ export class PortfoliohomeComponent implements OnInit {
     this.activeTab = tab
   }
 
-  webAppTab() {
-    this.fetchWebProjects()
-    this.changeTab('web-app')
-  }
+  // webAppTab() {
+  //   this.fetchWebProjects()
+  //   this.changeTab('web-app')
+  // }
 
-  fetchProjects() {
-    this.loadingStatus=true;
-    this.changeTab('all');
-    this.api.getProjects().subscribe((res: any) => {
-      this.projects = res.project
-      console.log(this.projects)
-    },err=>{
-      this.loadingStatus=false;
-    },()=>{
-      this.loadingStatus=false;
-    });
+  fetchProjects(): void {
+    this.loadingStatus = true;
+    this.api.getProjects().subscribe(
+      (res: any) => {
+        this.projects = res.project;
+        this.filteredProjects = [...this.projects];
+        this.filterProjects('all');
+        this.loadingStatus = false;
+      },
+      err => {
+        console.error(err);
+        this.loadingStatus = false;
+      }
+    );
+  }
+  filterProjects(category: string): void {
+    if (category === 'all') {
+      this.filteredProjects = this.projects;
+    } else {
+      this.filteredProjects = this.projects.filter((project: any) =>
+        project.category.includes(category)
+      );
+    }
   }
 
   fetchWebProjects() {
-    this.loadingStatus=true;
-
-    this.changeTab('web-design')
-    this.api.getWebAppProjects().subscribe((res: any) => {
-      this.projects = res.projects
-      console.log(res.projects)
-    },err=>{
-      this.loadingStatus=false;
-    },()=>{
-      this.loadingStatus=false;
-    })
+    this.filterProjects('Web App');
+    this.activeTab = 'Web Development'
   }
 
   fetchAppProjects() {
-    this.loadingStatus=true;
+    this.filterProjects('Mobile App');
+    this.activeTab = 'Mobile App'
+  }
 
-    this.changeTab('app')
-    this.api.getMobileAppProjects().subscribe((res: any) => {
-      this.projects = res.projects
-      console.log(this.projects)
-    },err=>{
-      this.loadingStatus=false;
-    },()=>{
-      this.loadingStatus=false;
-    })
+  webAppTab() {
+    this.filterProjects('Web App');
+    this.activeTab = 'Web App'
   }
 
   scrollToTop() {
