@@ -489,8 +489,9 @@
 .customer-feedback>.cf-cont {
     width: 500px;
     height: auto;
+    min-height:335px;
     padding: 25px 30px;
-    gap: 25px;
+    gap: 0px;
     border-radius: 40px;
     border: 1px;
     opacity: 0px;

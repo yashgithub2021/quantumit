@@ -192,4 +192,17 @@ button .carousel-control-prev {
     font-weight: 900;
     font-style: italic;
   }
-  
+  app-home .section7 .carousel-control-next{
+    right:-50px!important;
+  }
+  app-home .section7 .carousel-control-prev{
+    left:-50px!important;
+  }
+  @media(max-width:575.98px){
+    app-home .section7 .carousel-control-next{
+      right:-25px!important;
+    }
+    app-home .section7 .carousel-control-prev{
+      left:-25px!important;
+    }
+  }

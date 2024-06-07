@@ -146,7 +146,7 @@ export class HomeComponent implements OnInit {
     const groupedReviews = [];
     const screenWidth = window.innerWidth;
 
-    if (screenWidth < 768) {
+    if (screenWidth < 1024) {
       // Mobile view: one review per slide
       for (let i = 0; i < this.reviews.length; i++) {
         groupedReviews.push([this.reviews[i]]);
