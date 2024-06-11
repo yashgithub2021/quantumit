@@ -173,11 +173,13 @@
     font-size: 16px;
     line-height: 23px;
     font-weight: 500 !important;
+    font-family: Plus Jakarta Sans !important;
+    letter-spacing: 1px;
 }
 
 .frame .heading .txt h1 {
-    font-size: 48px;
-    line-height: 60px;
+    font-size: 42px;
+    line-height: 50px;
     font-weight: 700 !important;
 }
 
