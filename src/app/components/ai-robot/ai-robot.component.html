@@ -81,6 +81,10 @@
                         <h5 [ngStyle]="{background:isDarkTheme?'#111111':'#ECF0FF'}" class=" fw-lighter">{{img.title}}
                         </h5>
                     </div>
+                    <div class="slide" *ngFor="let img of aiService">
+                        <h5 [ngStyle]="{background:isDarkTheme?'#111111':'#ECF0FF'}" class=" fw-lighter">{{img.title}}
+                        </h5>
+                    </div>
                 </div>
             </div>
         </div>

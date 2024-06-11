@@ -51,7 +51,7 @@
 .slider .slide-track {
     animation: scroll 40s linear infinite;
     display: flex;
-    width: calc(250px * 14);
+    width: calc(250px * 21);
 }
 
 .slider .slide {
@@ -96,7 +96,7 @@
 }
 
 .miletone-number {
-    font-size: 50px;
+    font-size:42px;
 }
 
 .miletone-title {
@@ -131,8 +131,8 @@
     padding-left: 4%;
 }
 .frame-2-head .txt>h1 ,.txt h2{
-    font-size: 48px;
-    line-height: 60px;
+    font-size: 42px;
+    line-height: 50px;
     font-weight: 600 !important;
 }
 
@@ -166,14 +166,14 @@
     font-weight: 400!important;
 }
 .miletone-number {
-    font-size: 48px;
-    line-height: 48px;
+    font-size: 42px;
+    line-height: 50px;
     font-weight: 700!important;
 }
 
 .miletone-title {
     font-size: 16px;
-    font-weight: 700!important;
+    font-weight: 600!important;
     line-height: 16px;
     text-align: center;
 }

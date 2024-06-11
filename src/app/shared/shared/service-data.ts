@@ -1065,8 +1065,8 @@ export const conversionRateOptimizationServices = {
     serviceTitle: "Maximize Conversions with",
     serviceTitle2: "Conversion Rate Optimization",
     title1: "Conversion Rate Optimization",
-    img1: "../../../assets/services/pay_per_click/45929.jpg",
-    img2: "../../../assets/services/pay_per_click/Wavy_Tech-15_Single-06.jpg",
+    img1: "../../../assets/services/conversionRate/conversion1.jpg",
+    img2: "../../../assets/services/conversionRate/conversion2.jpg",
     descriptionOne: [
         "Elevate your digital marketing strategy with Quantum IT's top-notch Conversion Rate Optimization (CRO) services, an essential component of our comprehensive digital marketing solutions.",
         "Meticulously tailored to meet the unique needs of businesses in various industries, our CRO strategies are crafted to enhance user experience, increase conversions, and maximize your return on investment (ROI) in today's competitive digital landscape."

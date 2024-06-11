@@ -119,7 +119,12 @@
     border-radius: 50%;
     /* margin-right: 20px; */
 }
-
+.step-circle,.step-circle-light{
+    transition: transform 0.1s ease-in-out;
+}
+.step-circle:hover,.step-circle-light:hover {
+    transform: scale(1.3); 
+}
 .step-first-circle {
     width: 60px;
     height: 60px;
