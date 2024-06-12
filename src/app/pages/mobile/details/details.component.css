@@ -300,6 +300,8 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 27px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .our-marketing.btn {
@@ -413,6 +415,10 @@
         min-width: 275px;
         justify-content: center !important;
     }
+    .step-title p:last-child {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
 }
 
 @media (max-width: 575.98px) {
@@ -479,6 +485,7 @@
         font-size: 16px;
         line-height: 25px;
         width: 100% !important;
+
     }
 
     .step-title p:last-child {
