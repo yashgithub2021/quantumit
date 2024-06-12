@@ -107,7 +107,7 @@
 }
 
 .accordion {
-    --bs-accordion-bg: #111111;
+    --bs-accordion-bg: #000000;
     --bs-accordion-color: white;
     --bs-accordion-active-bg: black;
     --bs-accordion-btn-bg: black;
@@ -122,7 +122,7 @@
 }
 
 .accordion-light {
-    --bs-accordion-bg: #ECF0FF;
+    --bs-accordion-bg: #ffffff;
     --bs-accordion-color: black;
     --bs-accordion-active-bg: #ECF0FF;
     --bs-accordion-btn-bg: #ECF0FF;
@@ -232,7 +232,7 @@
 
 @media (max-width: 575.98px) {
     .num-cont {
-        padding: 25px 10px 10px 10px;
+        padding: 25px 0px 10px 0px;
     }
 
     .num-cont>div h1 {
@@ -258,7 +258,7 @@
 
     .numbers-section::before {
 
-        height: 18%;
+        height: 15%;
     }
 
     .addr-col-2 {
@@ -292,8 +292,8 @@
     }
 
     .questions button {
-        font-size: 16px;
-        line-height: 20px;
+        font-size: 14px;
+        line-height: 15px;
     }
 
     .question h4 {

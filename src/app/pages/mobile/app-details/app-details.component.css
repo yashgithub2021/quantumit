@@ -19,7 +19,7 @@
 }
 
 .project-img {
-    height: 400px;
+    height: auto;
     object-fit: cover;
 }
 .sec4-headline>.service-tagline{

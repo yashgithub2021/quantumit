@@ -501,7 +501,6 @@ p {
 
 
     .view-more>p {
-        color: rgb(75, 75, 214);
         font-size: 14px;
         line-height: 16px;
     }
@@ -601,7 +600,7 @@ p {
     .heading-process {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: start;
     }
 
     .desc {
@@ -637,6 +636,9 @@ p {
     .text-white {
         color: black !important;
     }
+    .project{
+        height: 68vh;
+    }
 
     .project-img-container {
         height: 75% !important;
@@ -645,7 +647,11 @@ p {
 
     .app-image {
         height: 50% !important;
+        display: flex;
+        justify-content: center;
+        align-items:center;
     }
+
 
     .project-img-container>.project-image {
         height: 28vh !important;

@@ -180,7 +180,7 @@
     border: none;
     color: white;
     border-radius: 5px;
-    padding: 5px 10px;
+    padding: 5px 17px;
     background: #43BAFF;
 }
 
@@ -488,10 +488,12 @@
     }
 
     .project-img-container {
-        height: 80% !important;
-        width: 70% !important;
+        height: 95% !important;
+        width: 95% !important;
     }
-
+    .project-image{
+        min-height: 170px;
+    }
     .app-image {
         display: flex;
         justify-content: center;

@@ -131,7 +131,7 @@
                         class="project-one project w-100 position-relative d-flex justify-content-center align-items-center">
                         <div
                             class="project-container h-75 w-100 position-absolute d-flex flex-column flex-lg-row p-lg-5">
-                            <div class="app-details h-100 w-100 d-flex align-items-center justify-content-center">
+                            <div class="app-details h-100 w-100 d-flex align-items-center justify-content-center order-2 order-sm-1">
                                 <div data-aos="fade-up"
                                     class="app-details-container d-none text-white w-50 h-100 m-auto d-lg-flex flex-column align-items-center align-items-lg-start justify-content-evenly ">
                                     <div>
@@ -166,13 +166,13 @@
                                     </div>
                                     <div [routerLink]="'details/' + project._id" (click)="scrollToTop()"
                                         class="view-more fw-light d-flex align-items-center">
-                                        <p class="p-0 me-4 mb-0">View More Details</p>
+                                        <p class="p-0 me-4 mb-0"[ngClass]="isDarkTheme?'text-black':'text-white'">View More Details</p>
                                         <i class="fa fa-solid fa-arrow-right"
                                             [ngClass]="isDarkTheme?'text-black':'text-white'"></i>
                                     </div>
                                 </div>
                             </div>
-                            <div data-aos="fade-up" class="app-image h-100 w-100">
+                            <div data-aos="fade-up" class="app-image h-100 w-100 order-1 order-sm-2">
                                 <div class="container project-img-container h-100 w-100 overflow-hidden p-0">
                                     <img class="project-image border-white border-3 rounded-1 w-100 h-100"
                                         [src]="project.image" alt="">
@@ -184,7 +184,7 @@
                         class="project-two project w-100 position-relative d-flex justify-content-center align-items-center">
                         <div
                             class="project-container h-75 w-100 position-absolute d-flex p-lg-5 flex-lg-row-reverse flex-column">
-                            <div class="app-details h-100 w-100 d-flex align-items-center justify-content-center">
+                            <div class="app-details h-100 w-100 d-flex align-items-center justify-content-center order-2 order-sm-1">
                                 <div
                                     class="app-details-container text-black d-none w-75 h-100 m-auto d-lg-flex flex-column align-items-center align-items-lg-start justify-content-evenly ">
                                     <div>
@@ -200,8 +200,8 @@
                                     </div>
                                     <div [routerLink]="'details/' + project._id" (click)="scrollToTop()"
                                         class="view-more fw-light d-flex align-items-center">
-                                        <p class="p-0 me-4 mb-0" style="color:#656AE5">View More Details</p>
-                                        <i class="fa fa-solid fa-arrow-right " style="color:#656AE5"></i>
+                                        <p class="p-0 me-4 mb-0" >View More Details</p>
+                                        <i class="fa fa-solid fa-arrow-right "style="color:black;" ></i>
                                     </div>
                                 </div>
                                 <div
@@ -218,13 +218,13 @@
                                     </div>
                                     <div [routerLink]="'details/' + project._id" (click)="scrollToTop()"
                                         class="view-more fw-light d-flex align-items-center">
-                                        <p class="p-0 me-4 mb-0">View More Details</p>
-                                        <i class="fa fa-solid fa-arrow-right " style="color:inherit"
-                                            [ngClass]="isDarkTheme?'text-black':'text-white'"></i>
+                                        <p class="p-0 me-4 mb-0"style="color:black;">View More Details</p>
+                                        <i class="fa fa-solid fa-arrow-right "
+                                        style="color:black;"></i>
                                     </div>
                                 </div>
                             </div>
-                            <div data-aos="fade-up" class="app-image h-100 w-100">
+                            <div data-aos="fade-up" class="app-image h-100 w-100 order-1 order-sm-2">
                                 <div class="container project-img-container h-100 w-100 overflow-hidden p-0">
                                     <img class="project-image border-white border-3 rounded-1 w-100 h-100"
                                         [src]="project.image" alt="">
