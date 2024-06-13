@@ -56,7 +56,7 @@ figure {
 .miletone-number {
     font-size: 48px;
     line-height: 48px;
-    font-weight: 700!important;
+    font-weight: 700 !important;
     background: linear-gradient(91.58deg, #43BAFF 0.52%, #7044B3 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -64,7 +64,7 @@ figure {
 
 .miletone-title {
     font-size: 16px;
-    font-weight: 700!important;
+    font-weight: 700 !important;
     line-height: 18px;
     background: linear-gradient(91.58deg, #43BAFF 0.52%, #7044B3 100%);
     -webkit-background-clip: text;
@@ -77,10 +77,10 @@ figure {
     font-weight: 600 !important;
 }
 
-.detail .desc p{
+.detail .desc p {
     font-size: 18px;
     line-height: 22px;
-    font-weight: 400!important;
+    font-weight: 400 !important;
 }
 
 .desc>p {
@@ -99,8 +99,8 @@ figure {
 
 .list h3 {
     font-size: 16px;
-    font-weight: 400!important;
-    line-height:23px;
+    font-weight: 400 !important;
+    line-height: 23px;
 }
 
 @media(max-width:1366px) {
@@ -110,14 +110,17 @@ figure {
         padding-right: 4%;
     }
 }
-@media(min-width:1024px){
-    .problem-statement .desc p{
-        width:90%;
+
+@media(min-width:1024px) {
+    .problem-statement .desc p {
+        width: 90%;
     }
-    .problems-stat-border{
-        width: 90%!important;
+
+    .problems-stat-border {
+        width: 90% !important;
     }
 }
+
 @media(max-width:820px) {
     .frame-3>.app-details>.details {
         align-items: end;
@@ -128,20 +131,21 @@ figure {
     .app-details>.details {
         width: 95% !important;
     }
-    .desc p{
+
+    .desc p {
         text-align: center;
     }
 }
 
 @media (max-width: 575.98px) {
     .frame-2-head .txt>h1 {
-        font-size: 24px;
-        line-height: 30px;
+        font-size: 22px;
+        line-height: 26px;
     }
 
     .list h3 {
-        font-size: 16px;
-        line-height: 20px;
+        font-size: 14px;
+        line-height: 15px;
     }
 
     .w-75 {
@@ -161,26 +165,38 @@ figure {
         font-size: 14px;
         line-height: 25px;
     }
-    .detail .desc p{
+
+    .detail .desc p {
         font-size: 14px;
         line-height: 20px;
     }
+
     .desc>p {
-        font-size: 14px;
-        line-height: 20px;
-        text-align: center;
+        font-size: 12px;
+        line-height: 18px;
+        text-align: start;
+    }
+
+    .miletone-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* align-items: center; */
+        text-align: start;
+        padding-left: 33%;
     }
 
     .miletone-number {
-        font-size: 22px;
-        line-height: 30px;
+        font-size: 48px;
+        line-height: 48px;
     }
 
     .miletone-title {
-        font-size: 12px;
+        font-size: 14px;
 
     }
-    .num-sec .row div{
+
+    .num-sec .row div {
         padding-right: 0px;
     }
 
@@ -191,8 +207,9 @@ figure {
     .our-process-btn {
         font-size: 10px;
         line-height: 20px;
-        padding: 5px 12px 5px 12px;
+        padding: 4px 10px 4px 10px;
     }
+
 
     .txt>h1 {
         font-size: 22px;

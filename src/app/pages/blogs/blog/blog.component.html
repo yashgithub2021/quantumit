@@ -1,18 +1,18 @@
 <div class="container-fluid ">
-    <div class="container d-flex flex-column frame-1-container">
-        <div class="frame-1 h-100 w-100">
+    <div class="container d-flex flex-column frame-1-container p-0">
+        <div class="frame-1 h-100 w-100 p-0">
             <div class="container numbers w-100 my-5">
                 <div class="numbers-section rounded-3 d-flex align-items-center justify-content-center container w-100">
                     <div class="latest-news d-flex text-align-center w-75 justify-content-center align-content-center">
                         <div class="text-white">
-                            <div class="miletone-number fw-bolder">
+                            <div class="blog-heading fw-bolder">
                                 <h1>
                                     Latest News & Articles
                                 </h1>
                             </div>
-                            <div class="miletone-title fw-light">
+                            <div class="blog-title fw-light">
                                 <p>Welcome to quantum, where collaboration, expertise, and client-centricity intersect
-                                    to <br>shape the future of digital innovation.</p>
+                                    to <br class="d-none d-md-block">shape the future of digital innovation.</p>
                             </div>
                         </div>
                     </div>
@@ -26,7 +26,7 @@
                     <div class="card py-4 my-3 m-lg-3 w-100"
                         [ngStyle]="{'color':isDarkTheme?'white':'black','background':isDarkTheme?'#111111':'#ECF0FF'}">
                         <div class="card-body">
-                            <h4 class="card-title linear-text d-inline-block ps-3">Popular</h4>
+                            <h4 class="card-title card-title1 linear-text d-inline-block ps-3">Popular</h4>
                         </div>
                         <div class="card-body popular">
                             <div class="container d-flex justify-content-between">
@@ -214,7 +214,7 @@
                     </div>
                 </div>
                 <div class="contributor-image position-relative w-100 h-auto flex-lg-grow-1 mx-0 mx-lg-2">
-                    <div class="text-white single-cont w-50 d-flex flex-column h-100 p-5 top-0 position-absolute">
+                    <div class="text-white single-cont w-50 d-flex flex-column h-100 p-sm-5 p-3 top-0 position-absolute">
                         <div class="title my-2">
                             <h2>Technologies For Future Of Healthcare</h2>
                         </div>
