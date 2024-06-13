@@ -200,6 +200,16 @@
         font-size: 12px;
         line-height: 18px;
     }
+    .app-details>.details>.detail:not(:last-child) {
+        border-right: 3px solid white;
+        padding-right: 3%;
+        padding-left: 1%;
+        padding-left: 0%;
+
+    }
+    .numbers-section {
+        padding: 0px 0px;
+    }
 }
 
 @media (max-width: 575.98px) {
@@ -227,16 +237,17 @@
     .our-process-btn, .our-result-btn {
         font-size: 10px;
         line-height: 20px;
-        padding: 5px 12px 5px 12px;
+        padding: 4px 10px 4px 10px;
     }
 
     .frame-2-head .txt>h1 ,.txt h2{
         font-size: 22px;
-        line-height: 30px;
+        line-height: 26px;
     }
     .frame-2-head .desc>p {
-        font-size: 16px;
-        line-height: 23px;
+        font-size: 12px;
+        line-height: 18px;
+        text-align: start;
     }
     .heading> .frame-2-head > div:first-child {
         padding-bottom: 0px;
@@ -266,13 +277,22 @@
         line-height: 18px;
         text-align: start!important;
     }
+    .miletone-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* align-items: center; */
+        text-align: start;
+        padding-left: 33%!important;
+    }
+
     .miletone-number {
-        font-size: 22px;
-        line-height: 30px;
+        font-size: 48px;
+        line-height: 48px;
     }
 
     .miletone-title {
         font-size: 12px;
-
+        text-align: start;
     }
 }
