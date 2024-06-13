@@ -175,7 +175,7 @@
                 <div class="accordion" [ngClass]="isDarkMode ? '' : 'accordion-light'"
                     id="accordionPanelsStayOpenExample">
                     <div *ngFor="let faq of faqs; let i = index" class="accordion-item my-3">
-                        <h2 class="accordion-header border-bottom-0">
+                        <h2 class="accordion-header mb-3">
                             <button [ngClass]="isDarkMode ? 'text-white' : 'text-black'"
                                 class="accordion-button border-0" type="button" data-bs-toggle="collapse"
                                 [attr.data-bs-target]="'#faqCollapse' + i" aria-expanded="true"
@@ -183,7 +183,7 @@
                                 {{faq.question}}?
                             </button>
                         </h2>
-                        <div [id]="'faqCollapse' + i" class="accordion-collapse collapse">
+                        <div [id]="'faqCollapse' + i" class="accordion-collapse collapse"[ngStyle]="{background:isDarkMode?'#111111':'rgb(236 240 255)'}"style="border-radius:20px;">
                             <div class="accordion-body">
 
                                 <div class="question">

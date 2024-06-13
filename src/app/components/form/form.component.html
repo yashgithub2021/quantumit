@@ -5,7 +5,7 @@
             <div class="text">
                 <h1>Let’s Talk About :</h1>
             </div>
-            <div class="option d-flex flex-lg-column flex-row gap-4">
+            <div class="option d-flex flex-lg-column flex-row gap-sm-4 gap-2">
                 <div (click)="changeForm('project')" [ngClass]="visibleForm === 'project'?'blue-opt':'opt'">
                     <h3>New Project</h3>
                 </div>
@@ -22,7 +22,7 @@
                 class="container h-100 w-100 d-flex flex-column align-items-center justify-content-center">
                 <div class="desc w-100">
                     <p class="fw-lighter text-left " [ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">
-                        Have a project in mind that you think we’d be a great fit for <br>it? We’d love to know what
+                        Have a project in mind that you think we’d be a great fit for <br class="d-none d-sm-block">it? We’d love to know what
                         you’re
                         thinking
                     </p>
@@ -30,8 +30,8 @@
                 <div class="form-container w-100">
                     <form [formGroup]="form" (ngSubmit)="submitForm()">
                         <div class="row my-3">
-                            <div class="col-6">
-                                <div class="input d-flex flex-column">
+                            <div class="col-sm-6 col-12">
+                                <div class="input d-flex flex-column mb-3">
                                     <label for="firstName">First Name</label>
                                     <input formControlName="firstName" id="firstName"
                                         placeholder="Input your first name in here" type="text"
@@ -43,8 +43,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6">
-                                <div class="input d-flex flex-column">
+                            <div class="col-sm-6 col-12">
+                                <div class="input d-flex flex-column ">
                                     <label for="lastName">Last Name</label>
                                     <input formControlName="lastName" id="lastName"
                                         placeholder="Input your last name in here" type="text"
@@ -58,8 +58,8 @@
                             </div>
                         </div>
                         <div class="row my-3">
-                            <div class="col-6">
-                                <div class="input d-flex flex-column">
+                            <div class="col-sm-6 col-12">
+                                <div class="input d-flex flex-column mb-3">
                                     <label for="email">Email</label>
                                     <input formControlName="email" id="email"
                                         placeholder="Input your email address in here" type="email"
@@ -74,7 +74,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6">
+                            <div class="col-sm-6 col-12">
                                 <div class="input d-flex flex-column">
                                     <label for="companyName">Company Name</label>
                                     <input formControlName="companyName" id="companyName"
@@ -104,8 +104,8 @@
                             </div>
                         </div>
                         <div class="row my-5">
-                            <div class="col-6">
-                                <button [disabled]="form.invalid" type="submit" class="btn btn-primary rounded-3"
+                            <div class="col-sm-6 col-12">
+                                <button [disabled]="form.invalid" type="submit" class=" w-100 btn btn-primary rounded-3"
                                     (click)="submitForm()">Send Messages</button>
                             </div>
                         </div>
@@ -115,15 +115,15 @@
             <div *ngIf="visibleForm === 'joining'"
                 class="container h-100 w-100 d-flex flex-column align-items-center justify-content-center">
                 <div class="desc w-100">
-                    <p class="color:#A2A9B0 fw-lighter text-left">
+                    <p class="color:#A2A9B0 fw-lighter text-left"[ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">
                         We connect millions of people to the moments that matter.
                     </p>
                 </div>
                 <div class="form-container w-100">
                     <form action="" [formGroup]="joinform" (ngSubmit)="submitJoinForm()">
                         <div class="row my-3">
-                            <div class="col-6">
-                                <div class="input d-flex flex-column">
+                            <div class="col-sm-6 col-12">
+                                <div class="input d-flex flex-column mb-3">
                                     <label for="">First Name</label>
                                     <input formControlName="firstName" name="firstName" id="firstName"
                                         placeholder="Input your first name in here" type="text"
@@ -138,7 +138,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6">
+                            <div class="col-sm-6 col-12">
                                 <div class="input d-flex flex-column">
                                     <label for="">Last Name</label>
                                     <input formControlName="lastName" name="lastName" id="lastName"
@@ -154,8 +154,8 @@
                             </div>
                         </div>
                         <div class="row my-3">
-                            <div class="col-sm-6">
-                                <div class="input d-flex flex-column">
+                            <div class="col-sm-6 col-12">
+                                <div class="input d-flex flex-column mb-3">
                                     <label for="">Email</label>
                                     <input formControlName="email" name="email" id="email"
                                         placeholder="Input your email in here" type="text"
@@ -171,7 +171,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-6">
+                            <div class="col-sm-6 col-12">
                                 <div class="input d-flex flex-column mt-3 mt-sm-0">
                                     <label for="">Resume</label>
                                     <input formControlName="resume" type="file"
@@ -197,9 +197,9 @@
                             </div>
                         </div>
                         <div class="row my-5">
-                            <div class="col-6">
+                            <div class="col-sm-6 col-12">
                                 <button (click)="submitJoinForm()" [disabled]="joinform.invalid"
-                                    class="btn btn-primary rounded-3">
+                                    class="btn btn-primary rounded-3 w-100">
                                     Send Messages
                                 </button>
                             </div>
@@ -210,15 +210,15 @@
             <div *ngIf="visibleForm === 'enquries'"
                 class="container h-100 w-100 d-flex flex-column align-items-center justify-content-center">
                 <div class="desc w-100">
-                    <p class="color:#A2A9B0 fw-lighter text-left">
+                    <p class="color:#A2A9B0 fw-lighter text-left"[ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">
                         We connect millions of people to the moments that matter.
                     </p>
                 </div>
                 <div class="form-container w-100">
                     <form [formGroup]="form" (ngSubmit)="submitForm()">
                         <div class="row my-3">
-                            <div class="col-6">
-                                <div class="input d-flex flex-column">
+                            <div class="col-sm-6 col-12">
+                                <div class="input d-flex flex-column mb-3">
                                     <label for="firstName">First Name</label>
                                     <input formControlName="firstName" id="firstName"
                                         placeholder="Input your first name in here" type="text"
@@ -230,7 +230,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6">
+                            <div class="col-sm-6 col-12">
                                 <div class="input d-flex flex-column">
                                     <label for="lastName">Last Name</label>
                                     <input formControlName="lastName" id="lastName"
@@ -245,8 +245,8 @@
                             </div>
                         </div>
                         <div class="row my-3">
-                            <div class="col-6">
-                                <div class="input d-flex flex-column">
+                            <div class="col-sm-6 col-12">
+                                <div class="input d-flex flex-column mb-3">
                                     <label for="email">Email</label>
                                     <input formControlName="email" id="email" placeholder="Input your email in here"
                                         type="email" [ngClass]="isDarkTheme ? 'bg-dark' : 'bg-light'"
@@ -260,7 +260,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6">
+                            <div class="col-sm-6 col-12">
                                 <div class="input d-flex flex-column">
                                     <label for="companyName">Company Name</label>
                                     <input formControlName="companyName" id="companyName"
@@ -290,8 +290,8 @@
                             </div>
                         </div>
                         <div class="row my-5">
-                            <div class="col-6">
-                                <button [disabled]="form.invalid" type="submit" class="btn btn-primary rounded-3"
+                            <div class="col-sm-6 col-12">
+                                <button [disabled]="form.invalid" type="submit" class="w-100 btn btn-primary rounded-3"
                                     (click)="submitForm()">Send Messages</button>
                             </div>
                         </div>

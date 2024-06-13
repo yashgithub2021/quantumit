@@ -157,12 +157,12 @@
             </div>
 
             <div class="projects container">
-                <div class="container d-flex d-lg-block flex-column gap-5 gap-lg-0 h-100 w-100">
+                <div class="container d-flex d-lg-block flex-column gap-5 gap-lg-0 h-100 w-100 p-2">
                     <ng-container *ngFor="let project of projects;let i=index">
                         <div *ngIf="i%2==0"
-                            class="project-one project w-100 position-relative d-flex justify-content-center align-items-center">
+                            class="project-one project w-100 position-relative d-flex justify-content-center align-items-center ">
                             <div [ngStyle]="{background:isDarkTheme?'#111111':'#ECF0FF'}"
-                                class="project-container h-75 w-100 position-absolute d-flex flex-column flex-lg-row p-lg-5">
+                                class="project-container h-75 w-100 position-absolute d-flex flex-column flex-lg-row p-lg-5 p-2">
                                 <div class="app-details h-100 w-100 d-flex align-items-center justify-content-center">
                                     <div data-aos="fade-in"
                                         class="app-details-container w-75 h-100 m-auto d-flex flex-column align-items-center align-items-lg-start justify-content-evenly ">
@@ -194,9 +194,9 @@
                             </div>
                         </div>
                         <div *ngIf="i%2!=0"
-                            class="project-two project w-100 position-relative d-flex justify-content-center align-items-center">
+                            class="project-two project w-100 position-relative d-flex justify-content-center align-items-center ">
                             <div [ngStyle]="{background:isDarkTheme?'#111111':'#ECF0FF'}"
-                                class="project-container h-75 w-100 position-absolute d-flex p-lg-5 flex-lg-row-reverse flex-column">
+                                class="project-container h-75 w-100 position-absolute d-flex p-lg-5 flex-lg-row-reverse flex-column p-2">
                                 <div class="app-details h-100 w-100 d-flex align-items-center justify-content-center">
                                     <div data-aos="fade-in"
                                         class="app-details-container align-items-center align-items-lg-start w-75 h-100 m-auto d-flex flex-column justify-content-evenly ">

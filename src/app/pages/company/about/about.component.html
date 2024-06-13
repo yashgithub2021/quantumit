@@ -20,7 +20,8 @@
             </div>
             <div class="sec4-headline w-100 mt-3 mt-lg-0 ">
                 <h1 class="service-tagline text-start text-capitalize pt-sm-3">
-                    We specialize in delivering cutting-edge <br> solutions across web development, app <br>development,
+                    We specialize in delivering cutting-edge <br class="d-none d-sm-block"> solutions across web
+                    development, app <br class="d-none d-sm-block">development,
                     AI, and
                     digital marketing domains.
                 </h1>
@@ -93,10 +94,10 @@
         </div>
         <div class="container partners w-100 my-5 pb-5">
             <div class="row g-4 my-3">
-                <div class="col-lg-3 col-12 hover-card" *ngFor="let partner of partners">
-                    <div class="container-fluid partner-detail px-5 py-4"
+                <div class="col-lg-3 col-6 hover-card" *ngFor="let partner of partners">
+                    <div class="container-fluid partner-detail px-sm-5 py-sm-4 px-3 py-3"
                         [ngStyle]="{'background':isDarkTheme?'#242627':'#ECF0FF'}">
-                        <div class="d-flex gap-3 flex-column h-100 w-100 justify-content-between">
+                        <div class="d-flex gap-sm-3 gap-1 flex-column h-100 w-100 justify-content-between">
                             <p style="font-size: 14px;" class="text-uppercase fw-lighter">{{partner.title}}</p>
                             <img style="filter: grayscale(100)" [ngStyle]="{filter:isDarkTheme?'none':'invert(1)'}"
                                 [width]="partner.width" [height]="partner.height" [src]="partner.img" alt="">
@@ -137,8 +138,8 @@
 
         <div class="container our-numbers w-100 mt-5 pb-5">
             <div class="num-sec container w-100">
-                <div class="row text-align-center justify-content-center align-content-center">
-                    <div *ngFor="let nums of sectionFourNums" class="col-3 ">
+                <div class="row text-align-center justify-content-sm-center align-content-sm-center">
+                    <div *ngFor="let nums of sectionFourNums" class="col-sm-3 col-12 pb-3 pb-sm-0">
                         <div class="miletone-number fw-bolder mb-1">{{nums.num}}</div>
                         <div>
                             <p class="miletone-title fw-light text-capitalize ">
@@ -153,7 +154,7 @@
         <div
             class="what-we-do container d-flex align-items-center flex-column gap-4 gap-lg-0 flex-lg-row mt-0 pt-0 mt-lg-5 pt-lg-5">
 
-            <div class=" w-75 pe-lg-5 px-3 align-content-between">
+            <div class=" w-75 pe-lg-5 px-3 align-content-between ">
                 <div class="desc">
                     <div
                         class="container px-0 heading w-100 h-100 d-flex flex-column align-items-center justify-content-start">
@@ -165,6 +166,18 @@
                         <div class="sec4-headline w-100 mt-3 mt-lg-0  align-self-start my-3">
                             <h1 class="service-tagline w-100 text-center text-lg-start text-capitalize">
                                 Our Mission</h1>
+                        </div>
+                    </div>
+                    <div class="d-block d-sm-none">
+                        <div class="images row g-lg-5 g-3 w-100 ">
+                            <div class="col-6">
+                                <img width="500" height="820" class="rounded-4"
+                                    src="../../../../assets/about/view-professional-business-people-working-together.jpg" alt="">
+                            </div>
+                            <div class="col-6">
+                                <img width="500" height="820" class="rounded-4"
+                                    src="../../../../assets/about/coworkers-discussing-business-project-indoors.jpg" alt="">
+                            </div>
                         </div>
                     </div>
                     <p class=" opacity-50 my-3">
@@ -184,16 +197,19 @@
                     </ul>
                 </div>
             </div>
-            <div class="images row g-lg-5 g-3 w-100">
-                <div class="col-6">
-                    <img width="500" height="820" class="rounded-4"
-                        src="../../../../assets/about/view-professional-business-people-working-together.jpg" alt="">
-                </div>
-                <div class="col-6">
-                    <img width="500" height="820" class="rounded-4"
-                        src="../../../../assets/about/coworkers-discussing-business-project-indoors.jpg" alt="">
+            <div class="d-none d-sm-block">
+                <div class="images row g-lg-5 g-3 w-100 ">
+                    <div class="col-6">
+                        <img width="500" height="820" class="rounded-4"
+                            src="../../../../assets/about/view-professional-business-people-working-together.jpg" alt="">
+                    </div>
+                    <div class="col-6">
+                        <img width="500" height="820" class="rounded-4"
+                            src="../../../../assets/about/coworkers-discussing-business-project-indoors.jpg" alt="">
+                    </div>
                 </div>
             </div>
+            
         </div>
 
         <!-- <div class="quote mt-5 w-100 ">

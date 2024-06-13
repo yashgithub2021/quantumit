@@ -25,7 +25,7 @@
     <div class="container d-flex frame-2">
         <div class="container d-flex flex-column justify-content-between my-5 px-lg-5">
             <div class="heading d-flex flex-column mb-5 mb-lg-0 flex-lg-row justify-content-between align-items-center">
-                <div class="text w-75 d-flex frame-2-head align-items-center align-items-lg-start flex-column "
+                <div class="text w-75 d-flex frame-2-head align-items-start align-items-sm-center align-items-lg-start flex-column "
                     data-aos="slide-up">
                     <div class="button">
                         <button class="our-process-btn">
@@ -33,7 +33,7 @@
                         </button>
                     </div>
                     <div class="txt w-100">
-                        <h1 class=" text-align-center text-lg-start">Artificial intelligence <br>
+                        <h1 class=" text-align-start text-align-sm-center text-lg-start">Artificial intelligence <br>
                             development across all domains</h1>
                     </div>
                 </div>
@@ -92,15 +92,40 @@
 
     <div [ngClass]="isDarkTheme?'frame-4':'frame-4-light'" class="container w-100">
         <div class="container d-flex flex-column flex-lg-row w-100 h-100">
+            <div class="d-block d-sm-none ai-image">
+                <div class="frame-4-image position-relative w-100 h-100 d-flex align-items-center justify-content-center">
+                    <div data-aos="zoom-in" class="ai-showcase container w-100 position-absolute h-auto">
+                        <div [ngStyle]="{'backdrop-filter': isDarkTheme? 'blur(10px)':'blur(180px)'}"
+                            class="ai-showcase-inner d-flex flex-column justify-content-center p-lg-4 ">
+                            <div class="head d-flex justify-content-between align-items-center">
+                                <div class="txt">
+                                    <p class="showcase-txt">How to use AI to take better notes</p>
+                                </div>
+                                <div data-aos="zoom-out" class="button showcase-btn">
+                                    <img src="../../../assets/ai/magic.png" alt="">
+                                    <button class="magic-btn" routerLink="../ai/casestudy">
+                                        Click To See AI Case Study
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="tail">
+                                <p class="fw-lighter showcase-txt m-0">What can LLMs like GPT do, specifically for
+                                    note-taking?
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="text w-100 h-100 d-flex d-lg-block justify-content-center">
                 <div class="text frame-4-cont w-100 d-flex flex-column h-100 justify-content-evenly ">
-                    <div class="button align-self-center align-self-lg-start" data-aos="zoom-in">
+                    <div class="button align-self-start align-self-sm-center align-self-lg-start" data-aos="zoom-in">
                         <button class="our-process-btn">
                             About Us
                         </button>
                     </div>
-                    <div class="txt w-100 text-align-center text-lg-start" data-aos="zoom-in">
-                        <h1>Cutting-edge <br> technology <br> integrating AI and <br> Machine Learning</h1>
+                    <div class="txt w-100 text-align-start text-align-sm-center text-lg-start" data-aos="zoom-in">
+                        <h1>Cutting-edge <br class="d-none d-sm-block"> technology <br class="d-none d-sm-block"> integrating AI and <br class="d-none d-sm-block"> Machine Learning</h1>
                     </div>
                     <div class="desc" data-aos="zoom-in">
                         <p class="m-0 desc-txt sub-heading">
@@ -130,29 +155,31 @@
                     </div>
                 </div>
             </div>
-            <div class="frame-4-image position-relative w-100 h-100 d-flex align-items-center justify-content-center">
-                <div data-aos="zoom-in" class="ai-showcase container w-100 position-absolute h-auto">
-                    <div [ngStyle]="{'backdrop-filter': isDarkTheme? 'blur(10px)':'blur(180px)'}"
-                        class="ai-showcase-inner d-flex flex-column justify-content-center p-lg-4 ">
-                        <div class="head d-flex justify-content-between align-items-center">
-                            <div class="txt">
-                                <p class="showcase-txt">How to use AI to take better notes</p>
+            <!-- <div class="d-none d-sm-block"> -->
+                <div class="frame-4-image position-relative w-100 d-none d-sm-flex align-items-center justify-content-center">
+                    <div data-aos="zoom-in" class="ai-showcase container w-100 position-absolute h-auto">
+                        <div [ngStyle]="{'backdrop-filter': isDarkTheme? 'blur(10px)':'blur(180px)'}"
+                            class="ai-showcase-inner d-flex flex-column justify-content-center p-lg-4 ">
+                            <div class="head d-flex justify-content-between align-items-center">
+                                <div class="txt">
+                                    <p class="showcase-txt">How to use AI to take better notes</p>
+                                </div>
+                                <div data-aos="zoom-out" class="button showcase-btn">
+                                    <img src="../../../assets/ai/magic.png" alt="">
+                                    <button class="magic-btn" routerLink="../ai/casestudy">
+                                        Click To See AI Case Study
+                                    </button>
+                                </div>
                             </div>
-                            <div data-aos="zoom-out" class="button showcase-btn">
-                                <img src="../../../assets/ai/magic.png" alt="">
-                                <button class="magic-btn" routerLink="../ai/casestudy">
-                                    Click To See AI Case Study
-                                </button>
+                            <div class="tail">
+                                <p class="fw-lighter showcase-txt m-0">What can LLMs like GPT do, specifically for
+                                    note-taking?
+                                </p>
                             </div>
-                        </div>
-                        <div class="tail">
-                            <p class="fw-lighter showcase-txt m-0">What can LLMs like GPT do, specifically for
-                                note-taking?
-                            </p>
                         </div>
                     </div>
                 </div>
-            </div>
+            <!-- </div> -->
         </div>
     </div>
 
@@ -163,15 +190,15 @@
                     What We Do
                 </button>
             </div>
-            <div class="txt w-75 text-align-center px-5 my-lg-4" data-aos="slide-up">
+            <div class="txt w-75 text-align-center px-sm-5 px-2 my-lg-4" data-aos="slide-up">
                 <h1>Deliver dynamic business solutions using data science, machine learning, and AI technologies
                     tailored to your needs.</h1>
             </div>
         </div>
         <div class="milestones container my-3">
-            <div class="row d-flex align-items-center justify-content-lg-center justify-content-evenly">
+            <div class="row custom-gap d-flex align-items-center justify-content-lg-center justify-content-evenly">
                 <div *ngFor="let stone of milestones" data-aos="slide-up"
-                    class="col-3 milestone-col mx-lg-2 d-flex align-items-center flex-column flex-lg-row justify-content-around h-100">
+                    class="col-sm-3 col-8 milestone-col mx-lg-2 d-flex align-items-center flex-sm-column flex-row  flex-lg-row justify-content-around h-100">
                     <div class="image">
                         <img [src]="stone.img" class="milestone-img" alt="">
                     </div>
