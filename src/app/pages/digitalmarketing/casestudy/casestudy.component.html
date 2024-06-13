@@ -1,16 +1,16 @@
 <div class="contianer-fluid casestudy">
-    <div class="container frame-1 p-1 p-sm-5 my-2">
+    <div class="container frame-1 p-3 p-sm-0 p-lg-3 my-2">
         <div class="heading d-flex flex-column mb-lg-5 mb-lg-0 flex-lg-row justify-content-between align-items-center">
             <div class="text frame-2-head w-100 d-flex align-items-center align-items-lg-start flex-column ">
-                <div class="d-flex flex-column flex-lg-row">
+                <div class="d-flex flex-column flex-lg-row mt-2">
                     <div class="w-100 d-flex justify-content-center flex-column">
-                        <div class="button d-flex d-lg-block justify-content-center">
+                        <div class="button d-flex d-lg-block justify-content-sm-center justify-content-start">
                             <button class="our-process-btn">
                                 Marketing Case Study
                             </button>
                         </div>
                         <div class="txt w-75 mt-3">
-                            <h1 class="text-align-center text-lg-start text-capitalize">
+                            <h1 class="text-start text-sm-center text-lg-start text-capitalize">
                                 Seanautic Marine Inc.
                             </h1>
                         </div>
@@ -96,21 +96,21 @@
 
     <div class="container frame-3 mt-5">
         <div class="heading d-flex flex-column mb-lg-5 mb-lg-0 flex-lg-row justify-content-between align-items-center">
-            <div class="text frame-2-head w-100 d-flex align-items-center flex-column ">
+            <div class="text frame-2-head w-100 d-flex align-items-sm-center align-items-start flex-column ">
                 <div class="button">
                     <button class="our-process-btn">
                         Challenges
                     </button>
                 </div>
                 <div class="txt w-100 mt-3">
-                    <h1 class="text-align-center text-capitalize">
+                    <h1 class="text-sm-center text-start text-capitalize">
                         The Problem Statement
                     </h1>
                 </div>
 
 
                 <div class="desc w-75 align-items-center">
-                    <p class="  mb-0 text-align-center" [ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">
+                    <p class="  mb-0 text-start text-sm-center" [ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">
                         One significant challenge faced was the lack of visibility and engagement across their target
                         audience. Despite offering essential services their online presence was relatively low.
 
@@ -143,21 +143,21 @@
         </div>
         <div
             class="heading d-flex flex-column mb-lg-5 mb-lg-0 flex-lg-row justify-content-between align-items-center mt-5">
-            <div class="text frame-2-head w-100 d-flex align-items-center flex-column ">
+            <div class="text frame-2-head w-100 d-flex align-items-start align-items-sm-center flex-column ">
                 <div class="button">
                     <button class="our-process-btn">
                         Solution
                     </button>
                 </div>
                 <div class="txt w-100 mt-3">
-                    <h1 class="text-align-center text-capitalize">
+                    <h1 class="text-sm-center tex-start text-capitalize">
                         Solution Implementation
                     </h1>
                 </div>
 
 
                 <div class="desc w-75 align-items-center">
-                    <p class="  text-align-center" [ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">
+                    <p class=" text-start text-sm-center" [ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">
                         Quantum IT devised a comprehensive digital marketing strategy focused on enhancing Seanautic
                         Marine Inc. / ECTN-Africa's online visibility and engagement. This resulted in increased organic
                         traffic. We also helped rank several of their primary keywords on top charts.
@@ -171,7 +171,7 @@
         </div>
     </div>
     <div class="container d-flex justify-content-center">
-        <div class="container w-75 d-flex flex-column flex-lg-row justify-content-between gap-3">
+        <div class="container w-75 d-flex flex-column flex-lg-row justify-content-between gap-3 p-0 ">
             <div class="cards d-flex gap-3 flex-column justify-content-between">
                 <div class="card p-0 p-sm-3 rounded-3" [ngStyle]="{background:isDarkTheme?'#111111':'#ECF0FF'}"
                     [ngClass]="isDarkTheme?'text-white':'text-black'">
@@ -336,7 +336,7 @@
         </div>
     </div>
     <div class=" mt-4">
-        <div class="numbers w-100">
+        <div class="numbers w-100 p-2 p-sm-0">
             <div class="numbers-section rounded-3  w-100">
                 <div
                     class="heading d-flex flex-column mb-lg-0 flex-lg-row justify-content-between align-items-center">
@@ -357,7 +357,7 @@
                 <div class="container our-numbers w-100 mt-lg-5 mt-3">
                     <div class="num-sec container w-100">
                         <div class="row text-align-center justify-content-center align-content-center">
-                            <div *ngFor="let nums of sectionFourNums" class="col-lg-3 col-6 text-white">
+                            <div *ngFor="let nums of sectionFourNums" class="miletone-container col-lg-3 col-sm-6 col-12 text-white mb-5">
                                 <div class="miletone-number fw-bolder">{{nums.num}}</div>
                                 <div>
                                     <p class="miletone-title fw-bold text-uppercase mt-3">

@@ -200,9 +200,16 @@ figure {
     }
 }
 @media(max-width:768px) {
-
+    .desc{
+        width:100%!important;
+        justify-content: center;
+    }
     .desc p {
         text-align: center;
+        width: 75%;
+    }
+    .details .desc p {
+        width: 100%;
     }
 
     .app-details .details {
@@ -211,7 +218,7 @@ figure {
         justify-content: center !important;
     }
     .app-details > .details> .detail:not(:last-child) {
-        border-right: 3px solid rgb(208, 194, 194);
+        border-right: 1px solid rgb(208, 194, 194);
         padding-right: 6%;
         padding-left: 6%;
     }
@@ -224,6 +231,13 @@ figure {
     .w-75 {
         width: 100% !important;
     }
+    .desc{
+        width:100%!important;
+        justify-content: start;
+    }
+    .desc p{
+        width: 100%!important;
+    }
 
     .title h3 {
         font-size: 14px;
@@ -231,27 +245,33 @@ figure {
     }
 
     .desc>p {
-        font-size: 14px;
-        line-height: 20px;
-        text-align: center;
+        font-size: 12px;
+        line-height: 18px;
+        text-align: start;
     }
     .detail .desc p{
-        font-size: 14px;
-        line-height: 20px;
+        font-size: 12px;
+        line-height: 18px;
     }
 
     .numbers-section {
         padding: 10px
     }
-
-    .miletone-number {
-        font-size: 22px;
-        line-height: 30px;
+    .miletone-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* align-items: center; */
+        text-align: start;
+        padding-left: 33%!important;
     }
-
+    .miletone-number {
+        font-size: 48px;
+        line-height: 48px;
+    }
     .miletone-title {
-        font-size: 12px;
-
+        font-size: 14px;
+        text-align: start;
     }
     .num-sec .row div{
         padding: 0px;
@@ -259,9 +279,9 @@ figure {
 
     .our-process-btn,
     .our-result-btn {
-        font-size: 10px;
+        font-size: 9px;
         line-height: 20px;
-        padding: 5px 12px 5px 12px;
+        padding: 4px 10px 4px 10px;
     }
 
     .numbers-section .heading {
