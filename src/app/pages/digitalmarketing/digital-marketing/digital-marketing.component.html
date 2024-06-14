@@ -29,8 +29,8 @@
     <div class="frame-2 container d-flex" id="our-process">
         <div class="container d-flex flex-column justify-content-center my-5 px-lg-5">
             <div class="heading d-flex justify-content-center align-items-center">
-                <div class="d-none d-sm-block">
-                    <div class="text w-100 d-flex flex-column justify-content-center align-items-center">
+                <div class=" d-block">
+                    <div class="text d-sm-flex d-none w-100 flex-column justify-content-center align-items-center">
                         <div class="button my-lg-3" data-aos="slide-up">
                             <button class="our-process-btn">
                                 Our Process
@@ -86,9 +86,87 @@
                             <div class="step-dashed-line visually-hidden"></div>
                         </div>
                     </div>
+                    <div class="text w-100 d-sm-none d-flex flex-column justify-content-center align-items-center">
+                        <div class="button my-lg-3" data-aos="slide-up">
+                            <button class="our-process-btn">
+                                Our Process
+                            </button>
+                        </div>
+                        <div class="txt w-75 text-center my-lg-3" data-aos="slide-up">
+                            <h1>How Can We Help You?</h1>
+                        </div>
+                        <div class="txt w-75 text-center my-lg-3" data-aos="slide-up">
+                            <p class="fw-light sub-heading " [ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">Let's do
+                                great
+                                work together</p>
+                        </div>
+
+                        <!-- <div class="steps-container circles">
+                            <div [ngClass]="isDarkTheme?'step-first-circle':'step-first-circle-light'"
+                                class="align-content-center text-align-center" data-aos="fade-up">
+                                <img height="30" width="30" src="../../../../assets/dm/first-circle.svg" alt="">
+                            </div>
+                            <div [ngClass]="isDarkTheme?'step-dashed-line':'step-dashed-line-light'"
+                                data-aos="slide-up">
+                            </div>
+                            <div [ngClass]="isDarkTheme?'step-circle':'step-circle-light'" data-aos="fade-down"></div>
+                            <div [ngClass]="isDarkTheme?'step-dashed-line':'step-dashed-line-light'"
+                                data-aos="slide-up">
+                            </div>
+                            <div [ngClass]="isDarkTheme?'step-circle':'step-circle-light'" data-aos="fade-up"></div>
+                            <div [ngClass]="isDarkTheme?'step-dashed-line':'step-dashed-line-light'"
+                                data-aos="slide-up">
+                            </div>
+                            <div [ngClass]="isDarkTheme?'step-circle':'step-circle-light'" data-aos="fade-down"></div>
+                        </div> -->
+                        <div class="steps-container">
+                            <div class="step align-content-center text-align-center"
+                                [ngClass]="isDarkTheme?'step-dark':'step-light'" data-aos="fade-up">
+                                <div class=" align-content-center"
+                                    [ngClass]="isDarkTheme?'step-first-circle':'step-first-circle-light'">
+                                    <img height="30" width="30" src="../../../../assets/dm/first-circle.svg" alt="">
+                                </div>
+                                <div class="step-title">
+                                    <p class="fw-light text-align-center">Refresh your website content <br> optimal
+                                        performance</p>
+                                </div>
+                                <div [ngClass]="isDarkTheme?'step-dashed-line':'step-dashed-line-light'"></div>
+                            </div>
+
+                            <div class="step align-content-center text-align-center"
+                                [ngClass]="isDarkTheme?'step-dark':'step-light'" data-aos="fade-down">
+                                <div [ngClass]="isDarkTheme?'step-circle':'step-circle-light'"></div>
+                                <div class="step-title">
+                                    <p class="fw-light text-align-center">Revitalize User Experience <br> Design</p>
+                                </div>
+                                <div [ngClass]="isDarkTheme?'step-dashed-line':'step-dashed-line-light'"></div>
+                            </div>
+
+                            <div class="step align-content-center text-align-center"
+                                [ngClass]="isDarkTheme?'step-dark':'step-light'" data-aos="fade-up">
+                                <div [ngClass]="isDarkTheme?'step-circle':'step-circle-light'"></div>
+                                <div class="step-title">
+                                    <p class="fw-light text-align-center">Request a no-cost <br> website review now</p>
+                                </div>
+                                <div [ngClass]="isDarkTheme?'step-dashed-line':'step-dashed-line-light'"></div>
+                            </div>
+
+                            <div class="step align-content-center text-align-center"
+                                [ngClass]="isDarkTheme?'step-dark':'step-light'" data-aos="fade-down">
+                                <div [ngClass]="isDarkTheme?'step-circle':'step-circle-light'"></div>
+                                <div class="step-title">
+                                    <p class="fw-light text-align-center">Enhance your SEO Rankings <br> for better
+                                        online
+                                        presence</p>
+                                </div>
+                                <!-- <div class="step-dashed-line"></div> -->
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
                 <!-- custom added -->
-                <div class="text w-100 d-flex flex-column justify-content-center align-items-center d-block d-sm-none">
+                <div class="text w-100  flex-column justify-content-center align-items-center d-none">
                     <div class="button my-lg-3" data-aos="slide-up">
                         <button class="our-process-btn">
                             Our Process
