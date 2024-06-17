@@ -65,7 +65,8 @@ export class MobileappComponent implements OnInit {
     console.log(this.list1)
     this.isDarkTheme = this.api.isDarkTheme();
     this.themechange()
-    this.fetchMobileProjects()
+    this.fetchMobileProjects();
+    this.scrollToTop();
   }
 
   themechange() {

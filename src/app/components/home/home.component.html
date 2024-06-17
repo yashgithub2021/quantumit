@@ -27,7 +27,7 @@
                 [ngClass]="isDarkTheme?'categories-dark':'categories-light'">
                 <div class="row gap-lg-0 gap-3" data-aos="fade-up">
                     <div *ngFor="let data of services" [ngClass]="isDarkTheme?'dark-card':'light-card'"
-                        class=" position-relative col cards d-flex flex-column align-items-center justify-content-evenly">
+                        class=" position-relative col cards d-flex flex-column align-items-center justify-content-evenly"[routerLink]="data.link">
                         <i class="fa-solid fa-arrow-right  position-absolute text-secondary"
                             style="transform: rotate(325deg); top:10px; right:10px"></i>
                         <img [src]="data.img" alt="logo">
@@ -122,7 +122,7 @@
         <div class="container numbers w-100">
             <div class="numbers-section container w-100">
                 <div class="row text-align-center justify-content-center align-content-center">
-                    <div *ngFor="let nums of sectionFourNums" class="col-3 text-white">
+                    <div *ngFor="let nums of sectionFourNums" class="miletone-container col-sm-3 col-12 text-white">
                         <div class="miletone-number fw-bolder">{{nums.num}}</div>
                         <div class="miletone-title fw-bolder text-uppercase">● {{nums.heading}}</div>
                     </div>

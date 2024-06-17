@@ -108,7 +108,8 @@ export class DigitalMarketingComponent implements OnInit {
     AOS.init({
       duration: 2000,
     })
-    this.themechange()
+    this.themechange();
+    this.scrollToTop();
   }
 
   themechange() {

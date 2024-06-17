@@ -8,7 +8,7 @@
                 </div>
                 <h1 data-aos="fade-in" class="tagline text-center fw-bolder w-100 ">Experience our services and
                     foresee
-                    the future of <br class=" d-lg-none">
+                    the future of <br class=" d-none d-sm-block d-lg-none">
                     <span class="linear-text"> Digital Marketing</span>
                 </h1>
                 <p data-aos="fade-in" class="head-desc text-align-center w-75 mt-4">
@@ -92,7 +92,7 @@
                                 Our Process
                             </button>
                         </div>
-                        <div class="txt w-75 text-center my-lg-3" data-aos="slide-up">
+                        <div class="txt w-75 process-title text-center my-lg-3" data-aos="slide-up">
                             <h1>How Can We Help You?</h1>
                         </div>
                         <div class="txt w-75 text-center my-lg-3" data-aos="slide-up">
@@ -321,7 +321,7 @@
                     [ngClass]="isDarkTheme?' table-dark':'table-light'">
                     <tbody>
                         <tr *ngFor="let data of tableData" data-aos="fade-up">
-                            <td scope="row" class="align-middle p-4 w-auto">
+                            <td scope="row" class="align-middle first-td p-4 w-auto">
                                 <img [ngStyle]="{filter:isDarkTheme?'none':'invert(1)'}" [src]="data.img" alt=""
                                     class="w-auto">
                             </td>
@@ -329,7 +329,7 @@
                                 <h4 class="">{{data.heading}}</h4>
                                 <p class="m-0  " [ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">{{data.tail}}</p>
                             </td>
-                            <td class="align-middle w-auto third-td p-4">
+                            <td class="align-middle w-auto third-td p-4 d-none d-sm-block">
                                 <p class="m-0 w-auto d-inline " [ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}"
                                     [innerHTML]="data.desc">
                                 </p>

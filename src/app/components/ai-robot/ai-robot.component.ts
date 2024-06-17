@@ -51,7 +51,8 @@ export class AiRobotComponent implements OnInit {
       duration: 2000,
     })
     this.isDarkTheme = this.api.isDarkTheme();
-    this.themechange()
+    this.themechange();
+    this.scrollToTop();
   }
 
   checks = ["Chatbot API", "Facial Recognition API", "Natural language processing APIs", "AWS ML Solutions"]
@@ -79,7 +80,9 @@ export class AiRobotComponent implements OnInit {
       this.isDarkTheme = isDarkTheme;
     });
   }
-
+  scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
   scrollToForm() {
     const footer = this.elementRef.nativeElement.querySelector('#form');
     if (footer) {
