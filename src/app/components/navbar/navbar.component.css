@@ -10,10 +10,21 @@
     color: rgb(0 0 0);
 }
 
+.active {
+    background: linear-gradient(91.58deg, #43BAFF 0.52%, #7044B3 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.active1 >a{
+    color: rgb(93, 93, 212)!important;
+}
+
 /* styles.css (or your component-specific CSS file) */
 .black-image {
     filter: invert(1);
 }
+
 .navbar {
     position: sticky;
     top: 0;
@@ -129,8 +140,9 @@ li {
     background-color: #333333;
 
 }
-.custom-logo-link>img{
-    width:190px;
+
+.custom-logo-link>img {
+    width: 190px;
 }
 
 @media(min-width:1024px) {
@@ -141,16 +153,18 @@ li {
     .custom-logo-link {
         padding-left: 60px
     }
-    
+
 }
 
 @media(max-width:1180px) {
 
     ul>li {
         white-space: nowrap;
+        text-transform: capitalize;
     }
-    .custom-logo-link>img{
-        width:135px;
+
+    .custom-logo-link>img {
+        width: 135px;
     }
 }
 
@@ -193,10 +207,11 @@ li {
         width: 100% !important;
     }
 
-    .top-wrap >button{
-        padding-right:2.5rem;
+    .top-wrap>button {
+        padding-right: 2.5rem;
         padding-left: 1rem;
     }
+
     .navbar-toggler:focus,
     .navbar-toggler:active {
         outline: none !important;
@@ -221,8 +236,9 @@ li {
         padding-bottom: 18px;
         text-transform: uppercase;
     }
-    .custom-logo-link>img{
-        width:130px;
+
+    .custom-logo-link>img {
+        width: 130px;
     }
 }
 
@@ -243,9 +259,10 @@ li {
     .custom-logo-link {
         padding-left: 16px;
         justify-content: center;
-        align-items: center!important;
+        align-items: center !important;
     }
-    .custom-logo-link>img{
-        width:120px;
+
+    .custom-logo-link>img {
+        width: 100px;
     }
 }

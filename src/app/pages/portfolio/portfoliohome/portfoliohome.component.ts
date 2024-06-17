@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit } from '@angular/core';
 import { ApiService } from 'src/app/shared/api/api.service';
 
 @Component({
@@ -13,7 +13,7 @@ export class PortfoliohomeComponent implements OnInit {
   projects: any[] = [];
   filteredProjects: any[] = [];
   loadingStatus: boolean = true;
-  constructor(private api: ApiService) { }
+  constructor(private api: ApiService, private elementRef: ElementRef) { }
 
   ngOnInit(): void {
     this.isDarkTheme = this.api.isDarkTheme();
@@ -28,14 +28,6 @@ export class PortfoliohomeComponent implements OnInit {
     });
   }
 
-  changeTab(tab: string) {
-    this.activeTab = tab
-  }
-
-  // webAppTab() {
-  //   this.fetchWebProjects()
-  //   this.changeTab('web-app')
-  // }
 
   fetchProjects(): void {
     this.loadingStatus = true;
@@ -53,8 +45,12 @@ export class PortfoliohomeComponent implements OnInit {
     );
   }
   filterProjects(category: string): void {
+    this.scrollToMiddeleOfProjectCard();
     if (category === 'all') {
+      this.activeTab = 'all';
+
       this.filteredProjects = this.projects;
+      // console.log(this.filteredProjects);
     } else {
       this.filteredProjects = this.projects.filter((project: any) =>
         project.category.includes(category)
@@ -79,5 +75,11 @@ export class PortfoliohomeComponent implements OnInit {
 
   scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+  scrollToMiddeleOfProjectCard() {
+    const contentMiddle = this.elementRef.nativeElement.querySelector('.app-detail');
+    if (contentMiddle) {
+      contentMiddle.scrollIntoView({ behavior: 'smooth', block: 'end' });
+    }
   }
 }

@@ -49,7 +49,8 @@ export class WebdevComponent implements OnInit {
     })
     this.isDarkTheme = this.api.isDarkTheme();
     this.fetchWebProjects()
-    this.themechange()
+    this.themechange();
+    this.scrollToTop();
   }
 
   fetchWebProjects() {

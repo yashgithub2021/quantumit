@@ -21,19 +21,23 @@ export class HomeComponent implements OnInit {
   services = [
     {
       label: 'App Development',
-      img: '../../../assets/appdev.png'
+      img: '../../../assets/appdev.png',
+      link:'app-development'
     },
     {
       label: 'Web   Development',
-      img: '../../../assets/web dev.png'
+      img: '../../../assets/web dev.png',
+      link:'web-development'
     },
     {
       label: 'Digital Marketing',
-      img: '../../../assets/dm.png'
+      img: '../../../assets/dm.png',
+      link:'digital-marketing'
     },
     {
       label: 'Artificial Intelligence (AI)',
-      img: '../../../assets/ai.png'
+      img: '../../../assets/ai.png',
+      link:'artificial-intelligence'
     },
   ]
 
