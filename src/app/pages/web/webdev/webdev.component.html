@@ -143,8 +143,7 @@
 
                                     <div class="details fw-lighter text-align-center text-lg-start fs-4">
 
-                                        {{(project.description.length>100)? (project.description |
-                                        slice:0:100)+'...':(project.description)}}
+                                        {{project.description |truncateAtPoint}}
                                     </div>
                                     <div [routerLink]="'details/' + project?._id" (click)="scrollToTop()"
                                         class="view-more fw-light d-flex align-items-center">
@@ -153,16 +152,15 @@
                                     </div>
                                 </div>
                                 <div data-aos="fade-up"
-                                    class="app-details-container d-lg-none w-50 h-100 m-auto d-flex flex-column align-items-center align-items-lg-start justify-content-evenly ">
+                                    class="app-details-container d-lg-none w-50 h-100 m-auto d-flex flex-column align-items-start align-items-sm-center align-items-lg-start justify-content-evenly p-sm-0 p-4">
                                     <div>
                                         <button class="app-button app-button-one">App</button>
                                     </div>
                                     <div class="name">
                                         <h2>{{project.name}}</h2>
                                     </div>
-                                    <div class="details fw-lighter text-align-center text-lg-start fs-4">
-                                        {{(project.description.length>100)? (project.description |
-                                        slice:0:100)+'...':(project.description)}}
+                                    <div class="details fw-lighter text-start text-sm-center text-lg-start fs-4">
+                                        {{project.description | truncateAtPoint}}
                                     </div>
                                     <div [routerLink]="'details/' + project._id" (click)="scrollToTop()"
                                         class="view-more fw-light d-flex align-items-center">
@@ -195,8 +193,7 @@
                                     </div>
                                     <div
                                         class="details text-black opacity-50 fw-lighter text-align-center text-lg-start text-l fs-4">
-                                        {{(project.description.length>100)? (project.description |
-                                        slice:0:100)+'...':(project.description)}}
+                                        {{project.description | truncateAtPoint}}
                                     </div>
                                     <div [routerLink]="'details/' + project._id" (click)="scrollToTop()"
                                         class="view-more fw-light d-flex align-items-center">
@@ -205,16 +202,19 @@
                                     </div>
                                 </div>
                                 <div
-                                    class="app-details-container w-75 h-100 m-auto d-lg-none d-flex flex-column align-items-center align-items-lg-start justify-content-evenly ">
+                                    class="app-details-container w-75 h-100 m-auto d-lg-none d-flex flex-column align-items-start align-items-sm-center align-items-lg-start justify-content-evenly p-sm-0 p-4">
                                     <div>
                                         <button class="app-button app-button-two">App</button>
                                     </div>
                                     <div class="name">
                                         <h2>{{projects[1].name}}</h2>
                                     </div>
-                                    <div class="details fw-lighter text-align-center text-lg-start text-l fs-4">
+                                    <!-- <div class="details fw-lighter text-start  text-sm-center text-lg-start text-l fs-4">
                                         {{(project.description.length>100)? (project.description |
                                         slice:0:100)+'...':(project.description)}}
+                                    </div> -->
+                                    <div class="details fw-lighter text-start  text-sm-center text-lg-start text-l fs-4">
+                                        {{project.description | truncateAtPoint}}
                                     </div>
                                     <div [routerLink]="'details/' + project._id" (click)="scrollToTop()"
                                         class="view-more fw-light d-flex align-items-center">

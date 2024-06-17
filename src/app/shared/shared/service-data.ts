@@ -1006,8 +1006,8 @@ export const emailMarketingServices = {
     serviceTitle: "Maximize Engagement with",
     serviceTitle2: "Email Marketing",
     title1: "Maximize Engagement with Email Marketing",
-    img1: "../../../assets/services/pay_per_click/45929.jpg",
-    img2: "../../../assets/services/pay_per_click/Wavy_Tech-15_Single-06.jpg",
+    img1: "../../../assets/services/email_marketing/email_img1.jpg",
+    img2: "../../../assets/services/email_marketing/email_img2.jpg",
     descriptionOne: [
         "Enhance your online marketing efforts with Quantum IT's top-tier email marketing services, an integral part of our comprehensive digital marketing solutions.",
         "Carefully crafted to meet the unique needs of businesses across various industries, our email marketing strategies are designed to amplify engagement, nurture leads, and maximize your return on investment (ROI) in today's competitive digital landscape."
@@ -1124,8 +1124,8 @@ export const paidSearchAdvertisingServices = {
     serviceTitle: "Maximize Results with",
     serviceTitle2: "Paid Search Advertising",
     title1: "Maximize Results with Paid Search Advertising",
-    img1: "../../../assets/services/pay_per_click/45929.jpg",
-    img2: "../../../assets/services/pay_per_click/Wavy_Tech-15_Single-06.jpg",
+    img1: "../../../assets/services/paidSearch/img1.jpg",
+    img2: "../../../assets/services/paidSearch/img2.jpg",
     descriptionOne: [
         "Elevate your online advertising game with Quantum IT's top-notch Paid Search Advertising services, a pivotal component of our comprehensive digital marketing solutions.",
         "Tailored to meet the unique demands of businesses in diverse industries, our Paid Search Advertising strategies are meticulously crafted to boost visibility, drive targeted traffic, and deliver measurable results in today's competitive digital landscape."
