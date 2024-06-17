@@ -2,7 +2,7 @@ import { Component, ElementRef, OnInit } from '@angular/core';
 import AOS from 'aos';
 import { NgxSpinnerService } from 'ngx-spinner';
 import { ApiService } from 'src/app/shared/api/api.service';
-
+import {TruncateAtPointPipe} from "src/app/shared/pipes/truncate-at-point.pipe"
 @Component({
   selector: 'app-mobileapp',
   templateUrl: './mobileapp.component.html',

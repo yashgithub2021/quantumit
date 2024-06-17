@@ -4,12 +4,14 @@ import { FormComponent } from 'src/app/components/form/form.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ToastrModule } from 'ngx-toastr';
 import { NgxSpinnerModule } from 'ngx-spinner';
+import { TruncateAtPointPipe } from '../pipes/truncate-at-point.pipe';
 
 
 
 @NgModule({
   declarations: [
-    FormComponent
+    FormComponent,
+    TruncateAtPointPipe
   ],
   imports: [
     CommonModule,
@@ -22,8 +24,9 @@ import { NgxSpinnerModule } from 'ngx-spinner';
       progressBar: true
     }),
     NgxSpinnerModule.forRoot({ type: 'ball-running-dots' }),
+  
   ],
-  exports: [FormComponent],
+  exports: [FormComponent,TruncateAtPointPipe],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class SharedModule { }
