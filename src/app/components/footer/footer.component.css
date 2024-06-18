@@ -243,11 +243,11 @@ button {
 
     footer {
         justify-content: start !important;
-        height: 130vh;
+        height: 160vh;
     }
 
     footer>.container {
-        height: 80vh;
+        height: 141vh;
     }
 
 }
