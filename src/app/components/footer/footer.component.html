@@ -8,11 +8,13 @@
                         src="../../../assets/logo-white.png" alt="">
                 </div>
                 <div class="tagline">
-                    <p class="text-secondary text-container"[ngClass]="{'collapsed': !isExpanded, 'expanded': isExpanded}">Quantum IT Innovation stands at the forefront of digital transformation,
-                        offering cutting-edge solutions that revolutionize businesses. With a dedicated focus on
-                        innovation, we harness the power of technology to propel your organization into the future,
-                        ensuring success in today's dynamic landscape. </p>
-                        <button class="d-block d-sm-none" (click)="toggleReadMore()">{{ isExpanded ? 'Read Less' : 'Read More' }}</button>
+                    <p class="text-secondary text-container"
+                        [ngClass]="{'collapsed': !isExpanded, 'expanded': isExpanded}">Quantum IT Innovation stands at
+                        the forefront of digital transformation, offering solutions that revolutionize businesses.
+                        Focussing on innovation, we harness the power of technology to propel your organization into the
+                        future. </p>
+                    <button class="d-block d-sm-none" (click)="toggleReadMore()">{{ isExpanded ? 'Read Less' :
+                        'ReadMore' }}</button>
                 </div>
             </div>
             <div class="contact-info-div">
@@ -58,13 +60,15 @@
                 </div>
                 <div class="container pages-container d-flex d-sm-none justify-content-start row">
                     <div class="d-flex flex-column col-6 " *ngFor="let page of pageLabels;let i=index;">
-                        <div class=""[ngStyle]="{'border-right':i==0?'1px solid #262626':'none'}">
+                        <div class="" [ngStyle]="{'border-right':i==0?'1px solid #262626':'none'}">
                             <div class="heading">
                                 <h5 [ngStyle]="{'color': isDarkMode ? 'white' : 'black'}" class=" fw-bold">
                                     {{page.heading}}</h5>
                             </div>
-                            <div class="pages"[ngStyle]="{'display':i==2?'flex':'block'}">
-                                <p style="cursor:pointer" class="text-secondary mb-4 "[ngStyle]="{'margin-right':i==2?'20px':'0px','margin-top':i==2?'20px':'10px'}" [routerLink]="page.link"
+                            <div class="pages" [ngStyle]="{'display':i==2?'flex':'block'}">
+                                <p style="cursor:pointer" class="text-secondary mb-4 "
+                                    [ngStyle]="{'margin-right':i==2?'20px':'0px','margin-top':i==2?'20px':'10px'}"
+                                    [routerLink]="page.link"
                                     (click)="page.label === 'Services' ? scrollToGetServices() : scrollToTop()"
                                     *ngFor="let page of page.pages">
                                     {{page.label}}</p>
