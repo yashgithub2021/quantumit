@@ -13,32 +13,32 @@ export class CasestudyComponent implements OnInit {
   aiService = [
     {
       img: "../../../assets/ai/Frame1.png",
-      title: "Predictive Analysis"
+      title: "Search Engine Optimization (SEO)"
     },
 
     {
       img: "../../../assets/ai/Frame2.png",
-      title: "Data Engineers"
+      title: "Content Marketing"
     },
 
     {
       img: "../../../assets/ai/Frame3.png",
-      title: "Deep Learning"
+      title: "Pay-Per-Click (PPC) Advertising"
     },
 
     {
       img: "../../../assets/ai/Frame4.png",
-      title: "Healthcare"
+      title: "Social Media Marketing (SMM)"
     },
 
     {
       img: "../../../assets/ai/Frame5.png",
-      title: "Data Mining"
+      title: "Email Marketing"
     },
 
     {
       img: "../../../assets/ai/Frame6.png",
-      title: "Statistical Modeling"
+      title: "Affiliate Marketing"
     },
 
   ]
