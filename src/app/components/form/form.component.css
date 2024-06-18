@@ -27,18 +27,24 @@
 }
 
 .bg-dark {
-    background-color: #111111 !important;
+    background-color: #2e2c2c !important;
 }
 
 .bg-light {
-    background-color: #ECF0FF !important;
+    background-color: #d1eeff !important;
 }
 
 input,
 textarea {
-    border-radius: 0;
+    /* border-radius: 0;
     border: 1px solid #636D79 !important;
-    color: white;
+    color: white; */
+    /* border: none; */
+    border-radius: 10px;
+    border-bottom: 2px solid #50bfff;
+}
+input:hover , textarea:hover{
+    scale: 1.02;
 }
 
 input::placeholder,

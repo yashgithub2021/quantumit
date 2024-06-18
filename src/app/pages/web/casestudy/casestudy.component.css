@@ -119,12 +119,12 @@ figure {
 .miletone-number {
     font-size: 42px;
     line-height: 50px;
-    font-weight: 700!important;
+    font-weight: 700 !important;
 }
 
 .miletone-title {
     font-size: 16px;
-    font-weight: 600!important;
+    font-weight: 600 !important;
     line-height: 16px;
     text-align: center;
 }
@@ -139,7 +139,7 @@ figure {
 
 .app-details>.details>.detail:not(:last-child) {
     border-right: 3px solid rgb(208, 194, 194);
-    padding-right: 6%;
+    padding-right: 7%;
     padding-left: 6%;
 }
 
@@ -147,7 +147,8 @@ figure {
     padding-left: 4%;
 }
 
-.frame-2-head .txt>h1 ,.txt h2{
+.frame-2-head .txt>h1,
+.txt h2 {
     font-size: 42px;
     line-height: 50px;
     font-weight: 600 !important;
@@ -157,25 +158,30 @@ figure {
     white-space: nowrap;
     text-wrap: wrap;
 }
+
 .title h3 {
     font-size: 30px;
     line-height: 37px;
     font-weight: 500 !important;
 }
+
 .desc>p {
     font-size: 16px;
     line-height: 24px;
     font-weight: 500;
 }
-.detail .desc p{
+
+.detail .desc p {
     white-space: nowrap;
     text-align: center;
 }
-.detail .desc p{
+
+.detail .desc p {
     font-size: 16px;
     line-height: 22px;
-    font-weight: 400!important;
+    font-weight: 400 !important;
 }
+
 @media(max-width:1366px) {
     .banner {
         height: auto !important;
@@ -186,28 +192,35 @@ figure {
         height: 37vh;
     }
 }
-@media(max-width:1024px){
-    .app-details>.details{
-        justify-content: center!important;
+
+@media(max-width:1024px) {
+    .app-details>.details {
+        justify-content: center !important;
     }
+
     .app-details>.details>.detail:not(:last-child) {
         border-right: 3px solid rgb(208, 194, 194);
         padding-right: 2%;
         padding-left: 2%;
     }
+
     .app-details>.details>.detail {
         padding-left: 2%;
     }
 }
+
 @media(max-width:768px) {
-    .desc{
-        width:100%!important;
+    .desc {
+        width: 100% !important;
         justify-content: center;
     }
+
+
     .desc p {
         text-align: center;
         width: 75%;
     }
+
     .details .desc p {
         width: 100%;
     }
@@ -217,11 +230,13 @@ figure {
         align-items: center !important;
         justify-content: center !important;
     }
-    .app-details > .details> .detail:not(:last-child) {
+
+    .app-details>.details>.detail:not(:last-child) {
         border-right: 1px solid rgb(208, 194, 194);
         padding-right: 6%;
         padding-left: 6%;
     }
+
     .app-details>.details>.detail {
         padding-left: 6%;
     }
@@ -231,12 +246,14 @@ figure {
     .w-75 {
         width: 100% !important;
     }
-    .desc{
-        width:100%!important;
+
+    .desc {
+        width: 100% !important;
         justify-content: start;
     }
-    .desc p{
-        width: 100%!important;
+
+    .desc p {
+        width: 100% !important;
     }
 
     .title h3 {
@@ -249,7 +266,8 @@ figure {
         line-height: 18px;
         text-align: start;
     }
-    .detail .desc p{
+
+    .detail .desc p {
         font-size: 12px;
         line-height: 18px;
     }
@@ -257,23 +275,27 @@ figure {
     .numbers-section {
         padding: 10px
     }
+
     .miletone-container {
         display: flex;
         flex-direction: column;
         justify-content: center;
         /* align-items: center; */
         text-align: start;
-        padding-left: 33%!important;
+        padding-left: 33% !important;
     }
+
     .miletone-number {
         font-size: 48px;
         line-height: 48px;
     }
+
     .miletone-title {
         font-size: 14px;
         text-align: start;
     }
-    .num-sec .row div{
+
+    .num-sec .row div {
         padding: 0px;
     }
 
@@ -288,7 +310,8 @@ figure {
         padding: 0px;
     }
 
-    .frame-2-head .txt>h1 ,.txt h2{
+    .frame-2-head .txt>h1,
+    .txt h2 {
         font-size: 22px;
         line-height: 30px;
     }
