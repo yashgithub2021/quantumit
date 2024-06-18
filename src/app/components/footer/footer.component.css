@@ -155,7 +155,7 @@ button {
     footer {
 
         justify-content: start !important;
-        height: 115vh;
+        height: 105vh;
     }
 }
 
@@ -163,7 +163,7 @@ button {
     footer {
 
         justify-content: start !important;
-        height: 125vh;
+        height: 100vh;
     }
 }
 
@@ -236,7 +236,7 @@ button {
 
     footer {
         justify-content: start !important;
-        height: 140vh;
+        height: 130vh;
     }
 
     footer>.container {
@@ -248,7 +248,7 @@ button {
 @media(max-width:768px) {
     footer {
         justify-content: start !important;
-        height: 145vh;
+        height: 140vh;
     }
 
     footer>.container {
@@ -267,7 +267,7 @@ button {
 
 @media (max-width: 575.98px) {
     footer {
-        height: 170vh;
+        height: 150vh;
     }
 
     footer>.container {

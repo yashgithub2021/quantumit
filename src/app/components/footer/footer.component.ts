@@ -39,13 +39,13 @@ export class FooterComponent implements OnInit {
       label: 'Address',
       value: 'India: H-11, 1st Floor, Sector 63, Noida - 201301'
     },
-    {
-      icon: 'fa-print',
-      hoverIcon: 'fa-fax',
-      label: 'Fax',
-      value: '+1-212-9876543',
-      link: 'fax:+1.212.9876543'
-    },
+    // {
+    //   icon: 'fa-print',
+    //   hoverIcon: 'fa-fax',
+    //   label: 'Fax',
+    //   value: '+1-212-9876543',
+    //   link: 'fax:+1.212.9876543'
+    // },
   ]
   isHovering: boolean[] = [];
 
