@@ -40,11 +40,11 @@
 .slider {
     height: 100px;
     margin: auto;
-    /* overflow: hidden; */
+    overflow: hidden;
     position: relative;
-    width: 100vw;
+    width: 90%;
     /* Adjust this width as needed */
-    /* max-width: 1200px; */
+    max-width: 1200px;
     /* Optional: Set a maximum width for larger screens */
 }
 
