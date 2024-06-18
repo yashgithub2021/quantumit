@@ -1,8 +1,8 @@
 footer {
-    /* position: fixed; */
-    bottom: 0;
     height: auto;
     font-family: 'Plus Jakarta Sans';
+    justify-content: start !important;
+
 }
 
 footer * {
@@ -151,48 +151,7 @@ button {
 .quantum .tagline p {
     font-size: 16px;
 }
-@media (min-width:1367px){
-    footer {
 
-        justify-content: start !important;
-        height: 88vh;
-    }
-}
-@media(min-width:1367px) {
-    footer {
-
-        justify-content: start !important;
-        height: 105vh;
-    }
-}
-
-@media(max-width:1366px) {
-    footer {
-
-        justify-content: start !important;
-        height: 100vh;
-    }
-}
-
-
-@media(min-width:821px) and (max-width:1180px) {
-    footer {
-        justify-content: start !important;
-        height: 125vh;
-    }
-
-    footer>.container {
-        height: 80vh;
-    }
-}
-
-/* this is form ipad pro portrait */
-@media(max-width:1366px) and (min-height: 1366px) {
-    footer>.container {
-        height: 50vh;
-
-    }
-}
 
 @media(min-width:1025px) and (max-width:1180px) {
     footer>.container {
@@ -214,11 +173,6 @@ button {
 
     footer>.container div:nth-child(1) {
         justify-content: start;
-    }
-
-    .ipad-mini-landscape {
-        width: 100vw;
-        height: 100vh;
     }
 }
 
@@ -242,29 +196,12 @@ button {
         width: 130px;
     }
 
-    footer {
-        justify-content: start !important;
-        height: 160vh;
-    }
-
-    footer>.container {
-        height: 141vh;
-    }
-
 }
 
 @media(max-width:768px) {
-    footer {
-        justify-content: start !important;
-        height: 140vh;
-    }
-
-    footer>.container {
-        height: 95vh;
-    }
 
     .social-links-container {
-        height: 55vh;
+        height: auto;
     }
 
     .social-links-container>.social-icon {
@@ -274,13 +211,6 @@ button {
 }
 
 @media (max-width: 575.98px) {
-    footer {
-        height: 150vh;
-    }
-
-    footer>.container {
-        height: 125vh;
-    }
 
     .text-container {
         overflow: hidden;
@@ -345,24 +275,4 @@ button {
         font-weight: 400 !important;
     }
 
-}
-
-@media (max-width: 375px) {
-    footer {
-        justify-content: start !important;
-    }
-
-    footer>.container {
-        height: auto;
-    }
-
-    .social-links-container {
-        height: auto;
-    }
-}
-
-@media (max-width:374px) {
-    footer {
-        height: 150px;
-    }
 }

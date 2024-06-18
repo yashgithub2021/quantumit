@@ -12,32 +12,41 @@ export class CasestudyComponent {
   aiService = [
     {
       img: "../../../assets/ai/Frame1.png",
-      title: "Predictive Analysis"
+      title: "User Experience (UX)"
     },
 
     {
       img: "../../../assets/ai/Frame2.png",
-      title: "Data Engineers"
+      title: "Functionality"
     },
 
     {
       img: "../../../assets/ai/Frame3.png",
-      title: "Deep Learning"
+      title: "Performance"
     },
 
     {
       img: "../../../assets/ai/Frame4.png",
-      title: "Healthcare"
+      title: "Security"
     },
 
     {
       img: "../../../assets/ai/Frame5.png",
-      title: "Data Mining"
+      title: "Deployment"
     },
 
     {
       img: "../../../assets/ai/Frame6.png",
-      title: "Statistical Modeling"
+      title: "Maintenance"
+    },{
+      img: "../../../assets/ai/Frame6.png",
+      title: "Optimization"
+    },{
+      img: "../../../assets/ai/Frame6.png",
+      title: "Testing"
+    },{
+      img: "../../../assets/ai/Frame6.png",
+      title: "User Adoption"
     },
 
   ]
