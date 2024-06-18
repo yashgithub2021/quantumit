@@ -142,7 +142,7 @@ li {
 }
 
 .custom-logo-link>img {
-    width: 190px;
+    width: 160px;
 }
 
 @media(min-width:1024px) {
@@ -164,7 +164,7 @@ li {
     }
 
     .custom-logo-link>img {
-        width: 135px;
+        width: 160px;
     }
 }
 
@@ -238,7 +238,7 @@ li {
     }
 
     .custom-logo-link>img {
-        width: 130px;
+        width: 160px;
     }
 }
 
