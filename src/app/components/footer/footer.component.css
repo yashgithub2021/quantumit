@@ -158,7 +158,7 @@ button {
         height: 88vh;
     }
 }
-@media(max-width:1366px) {
+@media(min-width:1367px) {
     footer {
 
         justify-content: start !important;
@@ -166,7 +166,7 @@ button {
     }
 }
 
-@media(max-width:1326px) {
+@media(max-width:1366px) {
     footer {
 
         justify-content: start !important;
@@ -174,10 +174,11 @@ button {
     }
 }
 
+
 @media(min-width:821px) and (max-width:1180px) {
     footer {
         justify-content: start !important;
-        height: 130vh;
+        height: 125vh;
     }
 
     footer>.container {

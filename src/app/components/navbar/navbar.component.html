@@ -7,9 +7,13 @@
                                 aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon"></span>
                         </button>
-                        <a class="custom-logo-link navbar-brand m-0 m-lg-auto">
+                        <a class="custom-logo-link navbar-brand m-0 m-lg-auto" *ngIf="isDarkTheme" >
                                 <img routerLink="/" height="49" [ngClass]="{ 'black-image': !isDarkTheme }" width="114"
                                         src="../../../assets/logo-white.png">
+                        </a>
+                        <a class="custom-logo-link navbar-brand m-0 m-lg-auto"*ngIf="!isDarkTheme">
+                                <img routerLink="/" height="49"  width="114"
+                                        src="../../../assets/Logo light mode app logo.png">
                         </a>
                         <div class="d-flex align-items-center justifycontent-center d-lg-none w-auto pe-3 ">
                                 <div class="form-check ps-0 ">
