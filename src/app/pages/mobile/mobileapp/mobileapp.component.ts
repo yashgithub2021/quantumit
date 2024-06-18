@@ -61,7 +61,7 @@ export class MobileappComponent implements OnInit {
     AOS.init({
       duration: 2000,
     })
-    this.list1 = ["Android App Development", "Swift App Development", "iOS App Development", "iPad App Development", "Cross Platform App"]
+    this.list1 = ["Android App Development", "Swift App Development", "iOS App Development", "iPad App Development", "Cross Platform App Development"]
     console.log(this.list1)
     this.isDarkTheme = this.api.isDarkTheme();
     this.themechange()

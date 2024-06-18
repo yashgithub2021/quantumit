@@ -464,6 +464,7 @@ td h4 {
     font-size: 20px;
     line-height: 31px;
     font-weight: 400;
+    white-space: nowrap;
 }
 
 .details .num h2 {
@@ -571,6 +572,7 @@ td h4 {
         font-size: 18px;
         line-height: 30px;
         font-weight: 400;
+        
     }
 
     .details .num h2 {
