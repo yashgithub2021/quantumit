@@ -9,7 +9,11 @@ import { ApiService } from 'src/app/shared/api/api.service';
 export class FooterComponent implements OnInit {
 
   isDarkMode!: boolean
+  isExpanded: boolean = false;
+
   constructor(private api: ApiService, private elementRef: ElementRef) { }
+
+  
 
 
   facebook = "www.facebook.com/quantumitinnovationindia"
@@ -115,6 +119,9 @@ export class FooterComponent implements OnInit {
     this.contacts.forEach(() => {
       this.isHovering.push(false);
     });
+  }
+  toggleReadMore() {
+    this.isExpanded = !this.isExpanded;
   }
 
   darkModeCheck() {
