@@ -43,7 +43,7 @@ textarea {
 
 input::placeholder,
 textarea::placeholder {
-    color: #CFD3D7 !important;
+    color: var(--placeholder-color, gray)!important;
 }
 
 .btn-primary {
