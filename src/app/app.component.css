@@ -22,10 +22,16 @@
 }
 
 .alert-warning-light {
-    --bs-alert-color: black;
+    /* --bs-alert-color: black;
     --bs-alert-bg: white;
     --bs-alert-border-color: white;
-    --bs-alert-link-color: var(--bs-warning-text-emphasis);
+    --bs-alert-link-color: var(--bs-warning-text-emphasis); */
+
+    background: linear-gradient(91.58deg, #43BAFF 0.52%, #7044B3 100%);
+    opacity: 0.8;
+    /* background: #ECF0FF; */
+    color: white;
+    border: none;
 }
 
 .alert-warning-light::before {

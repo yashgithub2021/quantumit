@@ -151,7 +151,14 @@ button {
 .quantum .tagline p {
     font-size: 16px;
 }
-@media(min-width:1327px) {
+@media (min-width:1367px){
+    footer {
+
+        justify-content: start !important;
+        height: 88vh;
+    }
+}
+@media(max-width:1366px) {
     footer {
 
         justify-content: start !important;
