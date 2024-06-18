@@ -147,8 +147,9 @@ button {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.quantum .tagline p{
-    font-size:16px;
+
+.quantum .tagline p {
+    font-size: 16px;
 }
 
 @media(max-width:1366px) {
@@ -259,19 +260,44 @@ button {
 
 @media (max-width: 575.98px) {
     footer {
-        height: 165vh;
+        height: 170vh;
     }
 
     footer>.container {
         height: 125vh;
     }
 
+    .text-container {
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        /* Number of lines to show */
+        -webkit-box-orient: vertical;
+    }
+
+    .text-container.expanded {
+        -webkit-line-clamp: unset;
+    }
+
+    .tagline button {
+        color: white;
+        background: transparent;
+        border: none;
+        white-space: nowrap;
+        margin: 0px;
+        /* padding: 0px; */
+        height: 30px;
+        cursor: pointer;
+    }
+
     .contact-value {
         font-size: 14px;
     }
-    .heading{
-        margin: 0px!important;
+
+    .heading {
+        margin: 0px !important;
     }
+
     .heading>h5 {
         font-size: 16px;
         white-space: nowrap;
@@ -286,7 +312,7 @@ button {
     }
 
     .ipad-mini-landscape {
-        margin: 0px ;
+        margin: 0px;
         padding: 0px;
     }
 
@@ -297,18 +323,20 @@ button {
     .pages-container>div {
         margin: 0px;
     }
-    .quantum .tagline p{
-        font-size:14px;
+
+    .quantum .tagline p {
+        font-size: 14px;
         line-height: 24px;
-        font-weight: 400!important;
+        font-weight: 400 !important;
     }
 
 }
 
 @media (max-width: 375px) {
-    footer{
-        justify-content: start!important;
+    footer {
+        justify-content: start !important;
     }
+
     footer>.container {
         height: auto;
     }
@@ -317,8 +345,9 @@ button {
         height: auto;
     }
 }
-@media (max-width:374px){
-    footer{
+
+@media (max-width:374px) {
+    footer {
         height: 150px;
     }
 }
