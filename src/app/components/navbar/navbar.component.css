@@ -5,6 +5,9 @@
 .navbar-light {
     background: #ECF0FF;
 }
+.primary-menu-inner{
+    border-bottom: none;
+}
 
 .navbar-light .navbar-nav .nav-link {
     color: rgb(0 0 0);
