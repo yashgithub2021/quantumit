@@ -125,7 +125,7 @@
 }
 .app-details > .details > .detail:not(:last-child) {
     border-right: 3px solid white;
-    padding-right: 4%;
+    padding-right: 6%;
     padding-left: 4%;
 }
 .app-details > .details > .detail {
