@@ -49,8 +49,10 @@ export class AppComponent implements OnInit {
   @HostListener('window:scroll', [])
   onWindowScroll() {
     const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
-
-    if (currentScrollTop < this.previousScrollTop) {
+    if(currentScrollTop==0){
+      this.isVisible=true;
+    }
+    else if (currentScrollTop < this.previousScrollTop) {
       // Scrolling up
       this.isVisible = false;
     } else {

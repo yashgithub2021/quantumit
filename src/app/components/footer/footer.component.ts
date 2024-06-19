@@ -62,11 +62,12 @@ export class FooterComponent implements OnInit {
           link: 'company/about'
         },
         {
-          label: 'Services',
-        },
-        {
           label: 'Portfolio',
           link: 'portfolio'
+        },
+        {
+          label: 'Contact',
+          link: 'company/contact'
         },
       ]
     },
@@ -90,20 +91,40 @@ export class FooterComponent implements OnInit {
           label: 'Artificial Intelligence',
           link: 'artificial-intelligence'
         },
+        {
+          label:'Cross Platform App',
+          link:'app-development/details/crossPlatform'
+        },
+        {
+          label:'Social Media',
+          link:'digital-marketing/services/socialMedia'
+        }
       ]
     },
     {
-      heading: 'Contact Us',
+      heading: 'Company Details',
       pages: [
         {
-          label: 'New Project',
+          label: 'Privacy Policy',
+          link: 'company/privacy-policy'
+        },
+        {
+          label: 'Terms and Condition',
+          link: 'company/terms-and-condition'
+        },
+        {
+          label: 'Refund and Return Policy',
+          link: 'company/refund-cancellation-policy'
+        },
+        
+        {
+          label: 'Partnership',
           link: 'company/contact'
         },
         {
-          label: 'Careers',
-          link: 'company/contact'
+          label: 'Disclamer',
+          link: 'company/disclamer'
         },
-
         {
           label: 'Inquires',
           link: 'company/contact'
