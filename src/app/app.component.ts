@@ -1,4 +1,4 @@
-import { Component, OnInit, Renderer2 } from '@angular/core';
+import { Component, HostListener, OnInit, Renderer2 } from '@angular/core';
 import { ApiService } from './shared/api/api.service';
 
 @Component({
@@ -11,7 +11,11 @@ export class AppComponent implements OnInit {
 
   title = 'quantumit';
   theme = 'dark'
-  isDarkMode!: boolean
+  isDarkMode!: boolean;
+  //this is for show and hide arrow button on window
+  isVisible = true;
+  previousScrollTop = 0;
+
   ngOnInit() {
     // Check theme preference from local storage or service and apply it
     this.isDarkMode = this.isDarkTheme(); // Example: Get theme preference from local storage or service
@@ -37,5 +41,22 @@ export class AppComponent implements OnInit {
     this.api.themeChanged.subscribe((isDarkTheme: boolean) => {
       this.isDarkMode = isDarkTheme;
     });
+  }
+  scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+    const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (currentScrollTop < this.previousScrollTop) {
+      // Scrolling up
+      this.isVisible = false;
+    } else {
+      // Scrolling down
+      this.isVisible = true;
+    }
+    this.previousScrollTop = currentScrollTop;
   }
 }

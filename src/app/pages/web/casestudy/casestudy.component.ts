@@ -54,26 +54,46 @@ export class CasestudyComponent {
   sectionFourNums = [
     {
       num: "330+",
-      heading: "Active Clients"
+      heading: "Active Clients",
+      currentNum:0
     },
     {
       num: "850+",
-      heading: "Projects done"
+      heading: "Projects done",
+      currentNum:0
     },
     {
       num: "25+",
-      heading: "team advisors"
+      heading: "team advisors",
+      currentNum:0
     },
     {
       num: "10+",
-      heading: "glorious years"
+      heading: "glorious years",
+      currentNum:0
     },
 
   ]
 
   ngOnInit(): void {
     this.isDarkTheme = this.api.isDarkTheme();
-    this.themechange()
+    this.themechange();
+    this.sectionFourNums.forEach(item => {
+      this.incrementNumber(item);
+    });
+  }
+  incrementNumber(item:any) {
+    const targetNum = parseInt(item.num.replace('+', ''), 10);
+    const stepTime = 40; // milliseconds
+    const increment = Math.ceil(targetNum / 100)+1; // Adjust as needed
+
+    const interval = setInterval(() => {
+      item.currentNum += increment;
+      if (item.currentNum >= targetNum) {
+        item.currentNum = targetNum;
+        clearInterval(interval);
+      }
+    }, stepTime);
   }
 
   themechange() {
