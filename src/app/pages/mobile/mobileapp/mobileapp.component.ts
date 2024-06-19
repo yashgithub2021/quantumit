@@ -21,7 +21,7 @@ export class MobileappComponent implements OnInit {
 
     {
       num: "02.",
-      title: "Refined Sprint Planning",
+      title: "Achieve Clarity and Precision with Our Refined Sprint Planning",
       desc: "Our streamlined sprint planning ensures precise goals and timelines, facilitating smooth project execution."
     },
 
@@ -40,7 +40,7 @@ export class MobileappComponent implements OnInit {
     {
       num: "05.",
       title: "Conduct comprehensive code reviews",
-      desc: "Thorough code reviews guarantee high-quality, standards-compliant software, fostering reliability and excellence"
+      desc: "Thorough code reviews guarantee high-quality, standard-compliant software, fostering reliability while ensuring consistency across the codebase."
     },
 
     {
