@@ -81,7 +81,7 @@ button {
     height: 100%;
     width: 100%;
     content: "";
-    background-image: url("../../../assets/socials/dribbble.png");
+    background-image: url("../../../assets/socials/linkedin.png");
     background-repeat: no-repeat;
     background-position: top right;
     border-radius: 0px 6px 0 0;
@@ -124,7 +124,7 @@ button {
     height: 100%;
     width: 100%;
     content: "";
-    background-image: url("../../../assets/socials/youtube.png");
+    background-image: url("../../../assets/socials/instagram.png");
     background-repeat: no-repeat;
     background-position: top right;
     border-radius: 0px 6px 0 0;
