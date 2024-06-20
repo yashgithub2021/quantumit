@@ -140,7 +140,7 @@ figure {
 .app-details>.details>.detail:not(:last-child) {
     border-right: 3px solid rgb(208, 194, 194);
     padding-right: 7%;
-    padding-left: 6%;
+    padding-left: 3%;
 }
 
 .app-details>.details>.detail {

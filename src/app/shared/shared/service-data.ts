@@ -543,17 +543,17 @@ export const internetOfThings = {
         {
             num: 1,
             title: " Comprehensive Assessment",
-            desc: "We conduct a thorough assessment of your requirements, existing infrastructure, and IoT readiness to identify opportunities and challenges."
+            desc: "We thoroughly evaluate your business needs and existing infrastructure to identify opportunities for IoT integration. Our detailed assessments ensure that our solutions align perfectly with your goals."
         },
         {
             num: 2,
             title: "Tailored Solutions",
-            desc: "We design customized IoT solutions that align with your business objectives and technological capabilities."
+            desc: "We develop customized IoT solutions designed to address your specific challenges and enhance operational efficiency. Each solution is crafted to seamlessly integrate with your current systems."
         },
         {
             num: 3,
             title: "Agile Development",
-            desc: "We follow agile development methodologies to iteratively design, develop, and deploy IoT solutions."
+            desc: "Our agile development approach ensures rapid deployment and continuous improvement of IoT applications. By iterating quickly and incorporating feedback, we deliver flexible and scalable solutions"
         }
     ]
 };
@@ -620,17 +620,17 @@ export const roboticProcessAutomation = {
         {
             num: 1,
             title: "Understanding Your Business",
-            desc: "It allows us to develop RPA solutions that are tailored to your specific needs."
+            desc: "We deeply analyze your operations to tailor RPA solutions that meet specific needs."
         },
         {
             num: 2,
             title: "Strategic Planning",
-            desc: "We develop strategic automation plans that prioritize your business objectives and target areas for automation."
+            desc: "We develop automation plans to achieve your business objectives efficiently."
         },
         {
             num: 3,
             title: "Continuous Improvement",
-            desc: "We continuously monitor and optimize your RPA solutions, making data-driven adjustments to enhance performance."
+            desc: " We implement data driven adjustments to ensure sustained success and adaptability."
         }
     ]
 };
@@ -716,7 +716,7 @@ export const payPerClickServices = {
     ],
     title2: "Why Choose Us?",
     descriptionTwo: [
-        "Looking for results-driven PPC solutions?",
+        "Why Choose Our PPC Services?",
         "Our expertise in PPC management ensures that your campaigns deliver tangible outcomes, driving increased website traffic, leads, and conversions.",
         "With a focus on data-driven approaches and innovative strategies, we're committed to optimizing your PPC campaigns to achieve your business goals effectively."
     ],
@@ -725,17 +725,17 @@ export const payPerClickServices = {
         {
             num: 1,
             title: "Tailored PPC Campaigns",
-            desc: "From Google Ads to social media advertising, we craft customized PPC campaigns ensuring maximum impact and visibility across platforms."
+            desc: "We design customized PPC campaigns to align perfectly with your business goals."
         },
         {
             num: 2,
             title: "Strategic Keyword Targeting",
-            desc: "Our keyword research and analysis ensure that your PPC campaigns target high-value keywords that drive relevant traffic to your website."
+            desc: "We optimize ad visibility by focusing on the high-value keywords for your audience."
         },
         {
             num: 3,
             title: "Comprehensive Campaign Monitoring",
-            desc: "We continuously monitor and analyze your PPC campaigns' performance to drive continuous improvement."
+            desc: "We continuously track and adjust your PPC campaigns to ensure optimal performance."
         }
     ],
     ourApproach: [
@@ -1085,17 +1085,17 @@ export const conversionRateOptimizationServices = {
         {
             num: 1,
             title: "Tailored Conversion Strategies",
-            desc: "From website optimization to landing page design and beyond, we develop customized CRO strategies to maximize conversions and engagement across your digital platforms."
+            desc: "We develop customized CRO strategies to enhance your website's conversion rates."
         },
         {
             num: 2,
             title: "Strategic Audience Targeting",
-            desc: "Our in-depth audience analysis ensures that your conversion strategies are tailored to resonate with your target audience, driving higher engagement and conversion rates."
+            desc: "We identify and target key audience segments to maximize conversion rates."
         },
         {
             num: 3,
             title: "Comprehensive Performance Monitoring",
-            desc: "We continuously monitor and analyze the performance of your conversion campaigns, leveraging key metrics to drive ongoing optimization and improvement."
+            desc: " We continuously monitor performance to ensure and maintain optimal conversion rates."
         }
     ],
     ourApproach: [
