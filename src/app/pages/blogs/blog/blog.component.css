@@ -70,6 +70,9 @@
     /* Color of the border */
     opacity: 10%;
 }
+.frame-3>.contributors-section{
+    min-height: 60vh!important;
+}
 
 .frame-3>.contributors-section>.contributors>.card {
     width: 20rem;
