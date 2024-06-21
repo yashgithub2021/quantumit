@@ -68,10 +68,6 @@ export class FooterComponent implements OnInit {
         {
           label: 'Contact',
           link: 'company/contact'
-        },
-        {
-          label:'Blog',
-          link:'blog'
         }
       ]
     },

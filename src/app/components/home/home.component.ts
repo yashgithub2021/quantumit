@@ -100,20 +100,24 @@ export class HomeComponent implements OnInit {
 
   sectionFourNums = [
     {
-      num: "330 +",
-      heading: "ACTIVE CLIENTS"
+      num: "330+",
+      heading: "ACTIVE CLIENTS",
+      currentNum:0
     },
     {
       num: "850 +",
-      heading: "Projects done"
+      heading: "Projects done",
+      currentNum:0
     },
     {
-      num: "25 +",
-      heading: "team advisors"
+      num: "25+",
+      heading: "team advisors",
+      currentNum:0
     },
     {
-      num: "10 +",
-      heading: "glorious years"
+      num: "10+",
+      heading: "glorious years",
+      currentNum:0
     },
   ]
 
@@ -130,6 +134,9 @@ export class HomeComponent implements OnInit {
       this.isDarkTheme = isDarkTheme;
       // Perform actions based on theme change
     });
+    this.sectionFourNums.forEach(item=>{
+      this.incrementNumber(item);
+    })
   }
 
   fetchReviews(): void {
@@ -202,5 +209,18 @@ export class HomeComponent implements OnInit {
     if (footer) {
       footer.scrollIntoView({ behavior: 'smooth', block: 'end' });
     }
+  }
+  incrementNumber(item:any) {
+    const targetNum = parseInt(item.num.replace('+', ''), 10);
+    const stepTime = 40; // milliseconds
+    const increment = Math.ceil(targetNum / 100)+1; // Adjust as needed
+
+    const interval = setInterval(() => {
+      item.currentNum += increment;
+      if (item.currentNum >= targetNum) {
+        item.currentNum = targetNum;
+        clearInterval(interval);
+      }
+    }, stepTime);
   }
 }
