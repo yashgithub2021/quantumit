@@ -5,7 +5,7 @@ import { EventEmitter, Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class ApiService {
-  baseUrl = 'https://quantumitbackend.adaptable.app/'
+  baseUrl = 'https://quantumit-backend.onrender.com/'
   private darkTheme = true;
   themeChanged: EventEmitter<boolean> = new EventEmitter<boolean>();
 
