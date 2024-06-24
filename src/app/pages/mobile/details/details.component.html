@@ -21,29 +21,34 @@
         <div class="service-section">
             <div class="d-flex align-items-center flex-column h-100 w-100 ">
                 <div class="d-flex align-items-center flex-column flex-lg-row my-5 h-100 w-100">
-                    <div class="text w-75 pe-lg-5 p-0">
+                    <!-- <div class="text w-100 p-0">
                         <div class="brief " [ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">
                             <p *ngFor="let description of androidService.descriptionOne">
                                 {{description}}
                             </p>
+                            
                         </div>
-                    </div>
-                    <div class="image h-100 w-50">
-                        <img class="rounded-3" [src]="androidService.img1" alt="">
+                        
+                    </div> -->
+                    <div class="image h-100 w-100">
+                        <img class="rounded-3 w-100"style="max-height:100vh;" [src]="androidService.img1" alt="">
                     </div>
                 </div>
                 <div class="d-flex align-items-center my-5 flex-column flex-lg-row-reverse">
-                    <div class="text w-75 ps-lg-5 p-0">
+                    <div class="text w-100 p-0">
                         <div class="brief" [ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">
+                            <p *ngFor="let description of androidService.descriptionOne">
+                                {{description}}
+                            </p>
                             <p *ngFor="let description of androidService.descriptionTwo">
                                 {{description}}
                             </p>
                         </div>
                     </div>
-                    <div class="image h-100 w-50">
+                    <!-- <div class="image h-100 w-100">
 
                         <img class="rounded-3" [src]="androidService.img2" alt="">
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>

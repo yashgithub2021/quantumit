@@ -1,0 +1,88 @@
+<div class="container-fluid portfolio">
+    <div class="container d-flex flex-column">
+        <div class="container numbers w-100 my-5">
+            <div class="numbers-section rounded-3 d-flex align-items-center justify-content-center container w-100">
+                <div class="latest-news d-flex text-align-center w-75 justify-content-center align-content-center">
+                    <div class="text-white">
+                        <div class="milestone-number">
+                            <h1 class="">
+                                Casestudy
+                            </h1>
+                        </div>
+                        <div class="milestone-title">
+                            <p class="">Explore our diverse casestudy of digital solutions.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container heading w-100 h-100 d-flex flex-column align-items-center justify-content-center">
+            <div class="desc align-self-center mt-3 w-75">
+                <p class="opacity-50 text-align-center">
+                    Proud projects that make us stand out
+                </p>
+            </div>
+        </div>
+        <div class="container mt-4 categories d-flex justify-content-center w-100">
+            <div class="container gap-3 gap-lg-0 d-flex flex-wrap w-75 justify-content-evenly">
+                <div class="button">
+                    <button (click)="fetchAppProjects()"
+                        [ngStyle]="{'background':activeTab==='Mobile App'?'linear-gradient(91.58deg, #43BAFF 0.52%, #7044B3 100%)':''}"
+                        [ngClass]="isDarkTheme?'category-btn':'category-btn-light'" class="btn w-100">Mobile App
+                        </button>
+                </div>
+                <div class="button">
+                    <button (click)="fetchWebProjects()"
+                        [ngStyle]="{'background':activeTab==='Web Development'?'linear-gradient(91.58deg, #43BAFF 0.52%, #7044B3 100%)':''}"
+                        [ngClass]="isDarkTheme?'category-btn':'category-btn-light'" class="btn w-100">Web
+                        App</button>
+                </div>
+                <div class="button">
+                    <button (click)="fetchAppProjects()"
+                        [ngStyle]="{'background':activeTab==='Digital Marketing'?'linear-gradient(91.58deg, #43BAFF 0.52%, #7044B3 100%)':''}"
+                        [ngClass]="isDarkTheme?'category-btn':'category-btn-light'" class="btn w-100">Digital
+                        Marketing</button>
+                </div>
+                <div class="button">
+                    <button (click)="fetchWebProjects()"
+                        [ngStyle]="{'background':activeTab==='Artificial Intilligence'?'linear-gradient(91.58deg, #43BAFF 0.52%, #7044B3 100%)':''}"
+                        [ngClass]="isDarkTheme?'category-btn':'category-btn-light'" class="btn w-100">Artificial
+                        Intelligence</button>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid my-4 apps">
+            <div class="d-flex justify-content-center align-items-center mb-3" *ngIf="loadingStatus">
+                <div class="spinner-border text-success" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center apps-container">
+                <div class="w-100 d-flex justify-content-evenly gap-3 gap-lg-0">
+                    <div class="app2-cont gap-3 justify-content-center d-flex flex-column">
+                        <div *ngIf="filteredProjects[0]" class="app p-3 rounded-3"
+                            [ngStyle]="{'background':isDarkTheme?'#111111':'#ECF0FF'}">
+                            <div class="app-img">
+                                <img (click)="scrollToTop()"
+                                    routerLink="app-development/casestudy"
+                                    src="../../../../assets/portfolio/view-project.svg" class="view-project" alt="">
+                                <img class="rounded-3" width="400" height="550"
+                                    [src]="filteredProjects[0].portfolioImage?filteredProjects[0].portfolioImage:'../../../../assets/portfolio/app2.svg'"
+                                    alt="">
+                            </div>
+                            <div class="app-detail mt-4">
+                                <h3>
+                                    {{filteredProjects[0]?.name}}
+                                </h3>
+                                <p>
+                                    {{filteredProjects[0]?.category[0]}}
+                                </p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

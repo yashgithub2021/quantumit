@@ -11,7 +11,7 @@ export class CasestudyComponent implements OnInit {
 
   sectionFourNums = [
     {
-      num: "330+",
+      num: "220+",
       heading: "Active Clients",
       currentNum:0
     },
