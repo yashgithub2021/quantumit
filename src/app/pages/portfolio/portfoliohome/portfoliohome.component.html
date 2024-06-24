@@ -195,6 +195,25 @@
                                 </p>
                             </div>
                         </div>
+                        <div *ngIf="filteredProjects[7]" class="app p-3 rounded-3"
+                            [ngStyle]="{'background':isDarkTheme?'#111111':'#ECF0FF'}">
+                            <img (click)="scrollToTop()"
+                                [routerLink]="(filteredProjects[7].category[0] === 'Web Development' || filteredProjects[7].category[0] === 'Web App') ? '/web-development/details/' + filteredProjects[5]._id : '/app-development/app-details/' + filteredProjects[7]._id"
+                                src="../../../../assets/portfolio/view-project.svg" class="view-project" alt="">
+                            <div class="app-img">
+                                <img class="rounded-3" width="400" height="550"
+                                    [src]="filteredProjects[7].portfolioImage?filteredProjects[7].portfolioImage:'../../../../assets/portfolio/app6.svg'"
+                                    alt="">
+                            </div>
+                            <div class="app-detail mt-4">
+                                <h3>
+                                    {{filteredProjects[7]?.name}}
+                                </h3>
+                                <p>
+                                    {{filteredProjects[7]?.category[0]}}
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

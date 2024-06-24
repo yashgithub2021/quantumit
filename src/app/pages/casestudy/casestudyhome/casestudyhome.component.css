@@ -1,0 +1,190 @@
+* {
+    font-family: 'Plus Jakarta Sans';
+}
+
+.numbers-section {
+    padding: 50px 50px;
+    background: linear-gradient(90deg, #43BAFF 0%, #7141B1 100%);
+}
+
+.latest-news {
+    width: 60% !important;
+}
+
+.our-service-btn {
+    padding: 7px 15px 7px 15px;
+    gap: 0px;
+    border-radius: 32px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    border: 1px solid #0099FF;
+    box-shadow: 0px -7px 11px 0px #A48FFF1F inset;
+    background: linear-gradient(91.58deg, #43BAFF 0.52%, #7044B3 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    backdrop-filter: blur(2px);
+}
+
+.service-tagline {
+    font-size: 42px;
+    line-height: 50px;
+    font-weight: 600 !important;
+}
+
+.category-selected {
+    width: Hug (126px)px;
+    height: Hug (59px)px;
+    padding: 20px 35px 21px 35px;
+    gap: 10px;
+    border-radius: 236.53px;
+    opacity: 0px;
+    color: white;
+    background: linear-gradient(91.58deg, #43BAFF 0.52%, #7044B3 100%);
+}
+
+.category-btn {
+    width: Hug (152px)px;
+    height: Hug (59px)px;
+    padding: 20px 35px 21px 35px;
+    gap: 10px;
+    border-radius: 236.53px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    color: white;
+    background: #111111;
+    border: 1px solid #FFFFFF
+}
+
+.category-btn-light {
+    width: Hug (152px)px;
+    height: Hug (59px)px;
+    padding: 20px 35px 21px 35px;
+    gap: 10px;
+    border-radius: 236.53px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    color: black;
+    background: #ECF0FF;
+    border: 1px solid #FFFFFF
+}
+
+.app {
+    position: relative;
+}
+
+.view-project {
+    position: absolute;
+    right: 0;
+    top: 20%;
+    cursor: pointer;
+}
+
+.miletone-number h1 {
+    font-size: 48px;
+    line-height: 60px;
+    font-weight: 700;
+}
+
+.miletone-title p {
+    font-size: 16px;
+    line-height: 23px;
+    font-weight: 400 !important;
+    font-family: Barlow !important;
+}
+
+.desc p {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+}
+
+.app-detail h3 {
+    font-size: 20px;
+    line-height: 37px;
+    font-weight: 500 !important;
+}
+
+.app-detail p {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400 !important;
+}
+
+.button button {
+    font-size: 16px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+}
+
+@media (max-width: 575.98px) {
+
+    .numbers-section {
+        padding: 25px;
+    }
+
+    .view-project {
+        right: 15px;
+        height: 60px;
+        top: 0;
+        right: 0;
+    }
+
+    .w-75,
+    .w-50 {
+        width: 100% !important;
+    }
+
+    .category-btn,
+    .category-selected {
+        padding: 15px;
+    }
+
+    .our-service-btn {
+        font-size: 10px;
+        line-height: 20px;
+        padding: 5px 12px 5px 12px;
+    }
+
+    .sec4-headline>.service-tagline {
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+    .categories .btn {
+        padding: 15px;
+        font-size: 10px;
+        line-height: 20px;
+        padding: 5px 12px 5px 12px;
+    }
+
+    .button button {
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    .desc p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .miletone-number h1 {
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+    .miletone-title p {
+        font-size: 16px;
+        line-height: 23px;
+    }
+
+    .app-detail h3 {
+        font-size: 22px;
+        line-height: 25px;
+    }
+
+    .app-detail p {
+        font-size: 16px;
+        line-height: 20px;
+    }
+}

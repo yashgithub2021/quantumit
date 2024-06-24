@@ -23,6 +23,9 @@ const routes: Routes = [
     path: 'blog', loadChildren: () => import('./pages/blogs/blogs.module').then(m => m.BlogsModule)
   },
   {
+    path: 'casestudy', loadChildren: () => import('./pages/casestudy/casestudy.module').then(m => m.CasestudyModule)
+  },
+  {
     path: 'digital-marketing', loadChildren: () => import('./pages/digitalmarketing/digitalmarketing.module').then(m => m.DigitalmarketingModule)
   },
   {

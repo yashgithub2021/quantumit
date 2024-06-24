@@ -22,7 +22,7 @@
         <div class="service-section">
             <div class="d-flex align-items-center flex-column h-100 w-100 ">
                 <div class="d-flex align-items-center flex-column flex-lg-row my-5 h-100 w-100">
-                    <div class="text w-75 pe-lg-5 p-0">
+                    <!-- <div class="text w-75 pe-lg-5 p-0">
                         <div class="title">
                             <h2 class="mb-3">
                                 {{serviceDetails.title1}}
@@ -32,21 +32,25 @@
                             <p *ngFor="let desc of serviceDetails.descriptionOne">
                                 {{desc}}
                             </p>
+                            
                         </div>
-                    </div>
-                    <div class="image h-100 w-75 w-lg-50">
-                        <img class=" rounded-3" [src]="serviceDetails.img1" alt="">
+                    </div> -->
+                    <div class="image h-100 w-100">
+                        <img class=" rounded-3 w-100" [src]="serviceDetails.img1" alt="">
                     </div>
                 </div>
                 <div
                     class="ipad-width d-flex align-items-center mt-5 my-lg-5 justify-content-start flex-column flex-lg-row-reverse">
-                    <div class="text w-100 ps-lg-5 p-0">
+                    <div class="text w-100  p-0">
                         <div class="title">
                             <h2 class="mb-3 text-capitalize">
                                 {{serviceDetails.title2}}
                             </h2>
                         </div>
                         <div class="brief "[ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">
+                            <p *ngFor="let desc of serviceDetails.descriptionOne">
+                                {{desc}}
+                            </p>
                             <p *ngFor="let desc of serviceDetails.descriptionTwo">
                                 {{desc}}
                             </p>
@@ -69,9 +73,9 @@
                             </p> -->
                         </div>
                     </div>
-                    <div class="image h-100 w-100">
+                    <!-- <div class="image h-100 w-100">
                         <img class=" rounded-3 w-100" [src]="serviceDetails.img2" alt="">
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>

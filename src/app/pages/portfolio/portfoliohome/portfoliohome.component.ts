@@ -50,7 +50,7 @@ export class PortfoliohomeComponent implements OnInit {
       this.activeTab = 'all';
 
       this.filteredProjects = this.projects;
-      // console.log(this.filteredProjects);
+      console.log(this.filteredProjects);
     } else {
       this.filteredProjects = this.projects.filter((project: any) =>
         project.category.includes(category)
