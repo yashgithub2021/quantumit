@@ -69,6 +69,7 @@
                         </div>
                     </div>
                     <div [routerLink]="['inner-blog/'+blogs[3]._id]" class="card my-3 m-lg-3 w-100"
+                        style="cursor: pointer;"
                         [ngStyle]="{'color':isDarkTheme?'white':'black','background':isDarkTheme?'#111111':'#ECF0FF'}">
                         <img style="height: 40%;" src="../../../../assets/blog/blog1.png" class="card-img-top"
                             alt="...">
@@ -107,7 +108,8 @@
                             </div>
                         </div>
                     </div>
-                    <div [routerLink]="['inner-blog/'+blogs[4]._id]" class="card my-3 m-lg-3 w-100"
+                    <div style="cursor: pointer;" [routerLink]="['inner-blog/'+blogs[4]._id]"
+                        class="card my-3 m-lg-3 w-100"
                         [ngStyle]="{'color':isDarkTheme?'white':'black','background':isDarkTheme?'#111111':'#ECF0FF'}">
                         <img style="height: 40%;" src="../../../../assets/blog/blog2.png" class="card-img-top"
                             alt="...">

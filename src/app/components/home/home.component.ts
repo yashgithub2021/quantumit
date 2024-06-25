@@ -22,22 +22,22 @@ export class HomeComponent implements OnInit {
     {
       label: 'App Development',
       img: '../../../assets/appdev.png',
-      link:'app-development'
+      link: 'app-development'
     },
     {
       label: 'Web   Development',
       img: '../../../assets/web dev.png',
-      link:'web-development'
+      link: 'web-development'
     },
     {
       label: 'Digital Marketing',
       img: '../../../assets/dm.png',
-      link:'digital-marketing'
+      link: 'digital-marketing'
     },
     {
       label: 'Artificial Intelligence (AI)',
       img: '../../../assets/ai.png',
-      link:'artificial-intelligence'
+      link: 'artificial-intelligence'
     },
   ]
 
@@ -100,24 +100,24 @@ export class HomeComponent implements OnInit {
 
   sectionFourNums = [
     {
-      num: "220+",
+      num: "250+",
       heading: "ACTIVE CLIENTS",
-      currentNum:0
+      currentNum: 0
     },
     {
       num: "850 +",
       heading: "Projects done",
-      currentNum:0
+      currentNum: 0
     },
     {
       num: "25+",
       heading: "team advisors",
-      currentNum:0
+      currentNum: 0
     },
     {
       num: "10+",
       heading: "glorious years",
-      currentNum:0
+      currentNum: 0
     },
   ]
 
@@ -134,7 +134,7 @@ export class HomeComponent implements OnInit {
       this.isDarkTheme = isDarkTheme;
       // Perform actions based on theme change
     });
-    this.sectionFourNums.forEach(item=>{
+    this.sectionFourNums.forEach(item => {
       this.incrementNumber(item);
     })
   }
@@ -210,10 +210,10 @@ export class HomeComponent implements OnInit {
       footer.scrollIntoView({ behavior: 'smooth', block: 'end' });
     }
   }
-  incrementNumber(item:any) {
+  incrementNumber(item: any) {
     const targetNum = parseInt(item.num.replace('+', ''), 10);
     const stepTime = 40; // milliseconds
-    const increment = Math.ceil(targetNum / 100)+1; // Adjust as needed
+    const increment = Math.ceil(targetNum / 100) + 1; // Adjust as needed
 
     const interval = setInterval(() => {
       item.currentNum += increment;
