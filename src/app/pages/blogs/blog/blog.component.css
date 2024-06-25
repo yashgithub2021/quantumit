@@ -6,17 +6,20 @@
     padding: 50px 50px;
     background: linear-gradient(90deg, #43BAFF 0%, #7141B1 100%);
 }
-.blog-heading h1{
+
+.blog-heading h1 {
     font-size: 48px;
     line-height: 60px;
-    font-weight: 700!important;
+    font-weight: 700 !important;
 }
-.blog-title p{
-    font-size: 18px;
+
+.blog-title p {
+    font-size: 16px;
     line-height: 24px;
-    font-weight: 400!important;
+    font-weight: 400 !important;
 }
-.card-title1{
+
+.card-title1 {
     font-size: 24px;
     line-height: 32px;
     font-weight: 600;
@@ -70,8 +73,9 @@
     /* Color of the border */
     opacity: 10%;
 }
-.frame-3>.contributors-section{
-    min-height: 60vh!important;
+
+.frame-3>.contributors-section {
+    min-height: 60vh !important;
 }
 
 .frame-3>.contributors-section>.contributors>.card {
@@ -153,18 +157,22 @@
     .latest-news {
         width: 100% !important;
     }
-    .blog-heading h1{
+
+    .blog-heading h1 {
         font-size: 22px;
         line-height: 27px;
     }
-    .blog-title p{
+
+    .blog-title p {
         font-size: 12px;
         line-height: 15px;
     }
+
     .numbers-section {
         padding: 50px 5px;
     }
-    .contributors{
-        width:100%!important;
+
+    .contributors {
+        width: 100% !important;
     }
 }

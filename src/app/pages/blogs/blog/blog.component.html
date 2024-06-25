@@ -32,7 +32,7 @@
                             <div class="container d-flex justify-content-between">
                                 <div class="text">
                                     <h4 class="fw-light  w-75 text-capitalize">{{blogs[0]?.title}}</h4>
-                                    <span class=" opacity-50  days">15 Videos</span>
+                                    <!-- <span class=" opacity-50  days">15 Videos</span> -->
                                 </div>
                                 <div class="arrow">
                                     <i [ngClass]="isDarkTheme?'text-white':'text-black'"
@@ -45,7 +45,7 @@
                             <div class="container d-flex justify-content-between">
                                 <div class="text">
                                     <h4 class="fw-light  w-75 text-capitalize">{{blogs[1]?.title}}</h4>
-                                    <span class=" opacity-50  days">15 Videos</span>
+                                    <!-- <span class=" opacity-50  days">15 Videos</span> -->
                                 </div>
                                 <div class="arrow">
                                     <i [ngClass]="isDarkTheme?'text-white':'text-black'"
@@ -58,7 +58,7 @@
                             <div class="container d-flex justify-content-between">
                                 <div class="text">
                                     <h4 class="fw-light  w-75 text-capitalize">{{blogs[2]?.title}}</h4>
-                                    <span class=" opacity-50  days">15 Videos</span>
+                                    <!-- <span class=" opacity-50  days">15 Videos</span> -->
                                 </div>
                                 <div class="arrow">
                                     <i [ngClass]="isDarkTheme?'text-white':'text-black'"
@@ -68,7 +68,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card my-3 m-lg-3 w-100"
+                    <div [routerLink]="['inner-blog/'+blogs[3]._id]" class="card my-3 m-lg-3 w-100"
                         [ngStyle]="{'color':isDarkTheme?'white':'black','background':isDarkTheme?'#111111':'#ECF0FF'}">
                         <img style="height: 40%;" src="../../../../assets/blog/blog1.png" class="card-img-top"
                             alt="...">
@@ -107,24 +107,24 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card my-3 m-lg-3 w-100"
+                    <div [routerLink]="['inner-blog/'+blogs[4]._id]" class="card my-3 m-lg-3 w-100"
                         [ngStyle]="{'color':isDarkTheme?'white':'black','background':isDarkTheme?'#111111':'#ECF0FF'}">
                         <img style="height: 40%;" src="../../../../assets/blog/blog2.png" class="card-img-top"
                             alt="...">
                         <div class="card-body px-3">
                             <div class="container">
-                                <h5 class="card-title  fw-lighter">{{blogs[3]?.category}} - <span
-                                        class="days opacity-50">{{blogs[3]?.readTime}}</span></h5>
+                                <h5 class="card-title  fw-lighter">{{blogs[4]?.category}} - <span
+                                        class="days opacity-50">{{blogs[4]?.readTime}}</span></h5>
                             </div>
                         </div>
                         <div class="card-body px-3">
                             <div class="container d-flex justify-content-between">
                                 <div class="text flex-column d-flex">
                                     <h5 class="fw-light ">
-                                        {{blogs[3]?.title}}
+                                        {{blogs[4]?.title}}
                                     </h5>
                                     <p class="opacity-50">
-                                        {{(blogs[3]?.description.length>100)?(blogs[3]?.description | slice:0:100)+'...':(blogs[3]?.description)}}
+                                        {{(blogs[4]?.description.length>100)?(blogs[4]?.description | slice:0:100)+'...':(blogs[4]?.description)}}
                                     </p>
                                 </div>
                             </div>
@@ -138,7 +138,7 @@
                                             alt="">
                                     </div>
                                     <div class="name mx-2 ">
-                                        <p>{{blogs[3]?.author.authorName}}</p>
+                                        <p>{{blogs[4]?.author.authorName}}</p>
                                     </div>
                                 </div>
                                 <div style="opacity: 50%;" class="time">

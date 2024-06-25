@@ -21,13 +21,13 @@
 }
 
 .desc-txt {
-    font-size: 20px;
-    line-height: 25.2px;
+    font-size: 16px;
+    line-height: 30px;
 }
 
 .list-check {
-    font-size: 18px;
-    letter-spacing: 2px;
+    font-size: 16px;
+    letter-spacing: 0px;
 }
 
 .project-img {
@@ -44,6 +44,10 @@
 .numbers-section {
     padding: 82px 60px;
     background: linear-gradient(90deg, #43BAFF 0%, #7141B1 100%);
+}
+
+.numbers-section h4 {
+    font-size: 22px;
 }
 
 .title {
