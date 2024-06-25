@@ -1,7 +1,7 @@
 export const androidService = {
     title1: "Android App",
     title2: "Development Solutions",
-    img1: "../../../../assets/services/android/img5.jpg",
+    img1: "../../../../assets/services/android/img1.png",
     // img2: "../../../../assets/services/ios_android/img1.jpg",
     descriptionOne: [
         "Our Android app development services offer a comprehensive solution for businesses seeking to establish a strong presence on the Android platform. With the widespread adoption of Android devices worldwide, having a customized mobile application tailored to this ecosystem is essential for reaching and engaging with a diverse audience.",
@@ -162,7 +162,7 @@ export const iOsService = {
 export const swiftAppDevelopment = {
     title1: "Transforming Businesses with",
     title2: "Swift App Development",
-    img1: "../../../../assets/services/shift_app_dev/img1.png",
+    img1: "../../../../assets/services/shift_app_dev/img1.jpg",
     img2: "../../../../assets/services/shift_app_dev/representation-user-experience-interface-design (2).jpg",
     descriptionOne: [
         "Embark on a journey of innovation with our Swift app development services, meticulously designed to propel your business forward in the mobile landscape.",
@@ -324,7 +324,7 @@ export const crossPlatformAppDevelopment = {
 export const iPadAppDevelopment = {
     title1: "Empowering Businesses with",
     title2: "iPad App Development",
-    img1: "../../../../assets/services/ipad_app_deve/img1.jpg",
+    img1: "../../../../assets/services/ipad_app_deve/img1.png",
     // img2: "../../../../assets/services/ipad_app_deve/a833bbcd2062c2b407db5d92d2ed4824.jpg",
     descriptionOne: [
         "Step into the realm of innovation with our iPad app development services, designed to elevate your brand presence on the iOS platform and beyond.",
@@ -485,7 +485,7 @@ export const mobileGameDevelopment = {
 export const internetOfThings = {
     title1: "Revolutionize your business with",
     title2: "Internet of Things Solutions",
-    img1: "../../../../assets/services/IOT/img1.jpg",
+    img1: "../../../../assets/services/IOT/img.png",
     // img2: "../../../../assets/services/IOT/internet_of_things_concept.jpg",
     descriptionOne: [
         "Unlock the potential of connected devices and data with Quantum IT's Internet of Things (IoT) services, aimed at revolutionizing your business operations and enhancing decision-making capabilities.",
@@ -641,7 +641,7 @@ export const seoServices = {
     serviceTitle: "Top-notch",
     serviceTitle2: "search engine optimization",
     title1: "Boost your organic ranking with top-tier SEO services",
-    img1: "../../../assets/services/seo/img1.jpg",
+    img1: "../../../assets/services/seo/img1.png",
     // img2: "../../../assets/services/seo/7378453_32010.jpg",
     descriptionOne: [
         "Transform your online presence and achieve higher organic rankings with our comprehensive suite of SEO services, meticulously crafted to meet the unique demands of the USA, UK and Indian market.",
@@ -767,7 +767,7 @@ export const socialMediaServices = {
     serviceTitle: "Enhance Your Brand's Presence with",
     serviceTitle2: "Social Media Marketing",
     title1: "Enhance Your Brand's Presence with Social Media Marketing",
-    img1: "../../../assets/services/Social_media_mark/img1.png",
+    img1: "../../../assets/services/Social_media_mark/img1.jpg",
     img2: "../../../assets/services/Social_media_mark/medium-shot-woman-influencer-marketing-concept.jpg",
     descriptionOne: [
         "Step into the realm of social media marketing with Quantum IT's top-tier services, a pivotal component of our comprehensive digital marketing strategies.",
@@ -1189,7 +1189,7 @@ export const phpDevelopmentServices = {
     serviceTitle: "Unleash the Power of",
     serviceTitle2: "PHP Development",
     title1: "Unleash the Power of PHP Development",
-    img1: "../../../assets/services/Php_dev/img1.jpg",
+    img1: "../../../assets/services/Php_dev/img.png",
     // img2: "../../../assets/services/Php_dev/7040859.jpg",
     descriptionOne: [
         "Explore the world of PHP development with Quantum IT's expertise, an integral part of our comprehensive web development solutions.",
@@ -1249,7 +1249,7 @@ export const dotNetDevelopmentServices = {
     serviceTitle: "Unleash the Potential of",
     serviceTitle2: ".NET Development",
     title1: "Unleash the Potential of .NET Development",
-    img1: "../../../assets/services/dot_net_developer/img1.jpg",
+    img1: "../../../assets/services/dot_net_developer/img.png",
     img2: "../../../assets/services/dot_net_developer/dotnet_iso_1.jpg",
     descriptionOne: [
         "Experience the power of .NET development with Quantum IT's expert services, a cornerstone of our comprehensive software development solutions.",
@@ -1309,7 +1309,7 @@ export const rubyOnRailsDevelopmentServices = {
     serviceTitle: "Unleash the Power of",
     serviceTitle2: "Ruby on Rails (ROR) Development",
     title1: "Unleash the Power of Ruby on Rails (ROR) Development",
-    img1: "../../../assets/services/ror_dev/img1.jpg",
+    img1: "../../../assets/services/ror_dev/img.png",
     img2: "../../../assets/services/ror_dev/Ruby_On_Rails_Web_Development_Co.jpg",
     descriptionOne: [
         "Experience the dynamic capabilities of Ruby on Rails (ROR) development with Quantum IT's expert services, a cornerstone of our comprehensive software development solutions.",

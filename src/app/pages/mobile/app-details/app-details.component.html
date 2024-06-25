@@ -99,7 +99,7 @@
                             </h1>
                         </div>
                         <div class="desc mt-3">
-                            <p class="m-0 desc-txt text-left" style="color:#959595">
+                            <p class="m-0 desc-txt text-left" style="color:#959595;">
                                 {{projectDetails.aboutProject}}
                             </p>
                         </div>
@@ -108,7 +108,7 @@
                                 <li [ngStyle]="{'background-color':isDarkTheme?'black':'white','color':isDarkTheme?'white':'black'}"
                                     class="list-group-item d-flex align-items-center my-1 border-0 ps-0"
                                     *ngFor="let check of projectDetails.keyPoints">
-                                    <p class="fw-light mb-0 ms-2 list-check"
+                                    <p class="fw-light mb-0 ms-2 list-check" style="letter-spacing:0px"
                                         [ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">{{check}}</p>
                                 </li>
                             </ul>
@@ -133,7 +133,8 @@
                                     class="list-group-item d-flex align-items-center my-1 border-0 ps-0 "
                                     *ngFor="let check of projectDetails.keyInsights">
                                     <p class="fw-light mb-0 ms-2 list-check"
-                                        [ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">{{check}}</p>
+                                        [ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}" style="letter-spacing:0px">
+                                        {{check}}</p>
                                 </li>
                             </ul>
                         </div>

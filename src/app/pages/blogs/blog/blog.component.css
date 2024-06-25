@@ -32,6 +32,10 @@
 
 }
 
+.text h4 {
+    font-size: 20px;
+}
+
 .contributor-image::before {
     content: "";
     background-position: top;

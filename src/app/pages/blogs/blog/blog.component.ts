@@ -1,17 +1,18 @@
 import { Component, OnInit } from '@angular/core';
 import { ApiService } from 'src/app/shared/api/api.service';
-
+import { TitleCasePipe } from '@angular/common';
 @Component({
   selector: 'app-blog',
   templateUrl: './blog.component.html',
-  styleUrls: ['./blog.component.css']
+  styleUrls: ['./blog.component.css'],
+  providers: [TitleCasePipe]
 })
 export class BlogComponent implements OnInit {
 
   isDarkTheme!: boolean;
   blogs: any
   contributors: any
-  constructor(private api: ApiService) { }
+  constructor(private api: ApiService, private titlecase: TitleCasePipe) { }
 
   ngOnInit(): void {
     this.isDarkTheme = this.api.isDarkTheme();

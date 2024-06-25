@@ -27,9 +27,9 @@
                         <div class="card col py-4 my-3 m-lg-3 w-100"
                             [ngStyle]="{'color':isDarkTheme?'white':'black','background':isDarkTheme?'#111111':'#ECF0FF'}">
                             <div class="card-body ">
-                                <h4 class="card-title card-title1 linear-text d-inline-block ps-3">Popular</h4>
+                                <h4 class="card-title card-title1 linear-text d-inline-block ps-3">Categories</h4>
                             </div>
-                            <div class="card-body popular">
+                            <div class="card-body popular" routerLink="inner-blog/66795ec3a37d607032b766b5">
                                 <div class="container d-flex justify-content-between">
                                     <div class="text">
                                         <h4 class="fw-light  w-100 text-capitalize">App Development</h4>
@@ -44,7 +44,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="card-body popular">
+                            <div class="card-body popular" routerLink="inner-blog/667962640b494ad0884d5e05">
                                 <div class="container d-flex justify-content-between">
                                     <div class="text">
                                         <h4 class="fw-light  w-100 text-capitalize">Website Development</h4>
@@ -56,7 +56,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="card-body popular">
+                            <div class="card-body popular" routerLink="inner-blog/66795c8ea37d607032b766af">
                                 <div class="container d-flex justify-content-between">
                                     <div class="text">
                                         <h4 class="fw-light  w-100 text-capitalize">SEO</h4>
@@ -68,7 +68,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="card-body popular">
+                            <div class="card-body popular" routerLink="inner-blog/667968600b494ad0884d5e09">
                                 <div class="container d-flex justify-content-between">
                                     <div class="text">
                                         <h4 class="fw-light  w-100 text-capitalize">App Store Optimization</h4>
@@ -80,7 +80,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="card-body popular">
+                            <div class="card-body popular" routerLink="inner-blog/66794424a37d607032b76653">
                                 <div class="container d-flex justify-content-between">
                                     <div class="text">
                                         <h4 class="fw-light  w-100 text-capitalize">Digital Marketing</h4>
@@ -92,7 +92,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="card-body">
+                            <div class="card-body" routerLink="inner-blog/6630bfb418c3b9df7378027a">
                                 <div class="container d-flex justify-content-between">
                                     <div class="text">
                                         <h4 class="fw-light  w-100 text-capitalize">Robotic Process Automation</h4>
@@ -114,8 +114,8 @@
                                 <img style="height: 40%;" [src]="blog.image" class="card-img-top" alt="...">
                                 <div class="card-body px-3">
                                     <div class="container">
-                                        <h5 class="card-title  fw-lighter">{{blog?.category}} - <span
-                                                class="days opacity-50">{{blog?.readTime}}</span></h5>
+                                        <h5 class="card-title text-capitalize fw-lighter">{{blog?.category}}
+                                            - <span class="days opacity-50">{{blog?.readTime}}</span></h5>
                                     </div>
                                 </div>
                                 <div class="card-body px-3">

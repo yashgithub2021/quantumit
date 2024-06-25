@@ -16,28 +16,28 @@ export class CasestudyhomeComponent implements OnInit {
   mobileCaseStudy = [
     {
       name: "Mobile App Development",
-      portfolioImage: '',
+      portfolioImage: '../../../../assets/casestudybanner/AMPSPORTFOLIO.webp',
       link: '/app-development/casestudy'
     }
   ]
   webCaseStudy = [
     {
       name: "Web App Development",
-      portfolioImage: '',
+      portfolioImage: '../../../../assets/casestudybanner/WIKISTRINGS.png',
       link: '/web-development/casestudy'
     }
   ]
   dmCaseStudy = [
     {
       name: "Digital Marketing",
-      portfolioImage: '',
+      portfolioImage: '../../../../assets/casestudybanner/Seanautic.png',
       link: '/digital-marketing/casestudy'
     }
   ]
   aiCaseStudy = [
     {
       name: "Artificial Intelligence",
-      portfolioImage: '',
+      portfolioImage: '../../../../assets/casestudybanner/AI.png',
       link: '/ai/casestudy'
     }
   ]
@@ -58,6 +58,7 @@ export class CasestudyhomeComponent implements OnInit {
   }
 
   ChangeCaseStudy(caseStudy: string) {
+    this.scrollToMiddeleOfProjectCard()
     switch (caseStudy) {
       case 'Mobile App':
         this.filteredProjects = this.webCaseStudy
