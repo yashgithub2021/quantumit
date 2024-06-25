@@ -9,7 +9,7 @@
                 </div>
                 <div class="txt w-100 mt-3">
                     <h1 class="text-align-center fw-bolder text-lg-start">
-                        <span class="linear-text text-decoration-underline">{{androidService.title1}} </span><br class="d-none d-lg-block">
+                        <span class="linear-text text-decoration-underline">{{androidService.title1}} </span>
                         {{androidService.title2}}
                     </h1>
                 </div>
@@ -31,7 +31,7 @@
                         
                     </div> -->
                     <div class="image h-100 w-100">
-                        <img class="rounded-3 w-100"style="max-height:100vh;" [src]="androidService.img1" alt="">
+                        <img class="w-100" style="max-height:65vh; object-fit:cover" [src]="androidService.img1" alt="">
                     </div>
                 </div>
                 <div class="d-flex align-items-center my-5 flex-column flex-lg-row-reverse">
@@ -57,14 +57,14 @@
 
     <div class="container d-flex frame-2">
         <div class="container d-flex flex-column justify-content-between my-5 px-lg-5">
-            <div class="text frame-2-head w-100 d-flex align-items-center align-items-lg-start flex-column ">
+            <div class="text frame-2-head w-100 d-flex align-items-center flex-column ">
                 <div class="button">
                     <button class="our-process-btn">
                         Services
                     </button>
                 </div>
-                <div class="txt w-50">
-                    <h1 class="text-capitalize text-align-center text-lg-left">{{androidService.serviceTitle}}</h1>
+                <div class="txt w-100">
+                    <h1 class="text-capitalize text-align-center">{{androidService.serviceTitle}}</h1>
                 </div>
             </div>
 
@@ -366,21 +366,21 @@
     </div>
 
     <div class="frame-5 my-5">
-        <div class="container d-flex w-75 flex-column">
-            <div class="text my-5 frame-2-head w-50 d-flex flex-column align-items-center align-items-lg-start ">
+        <div class="container px-lg-3 d-flex w-75 flex-column">
+            <div class="text my-5 frame-2-head w-100 d-flex flex-column align-items-center">
                 <div class="button mb-4">
                     <button class="our-process-btn">
                         Our Tools
                     </button>
                 </div>
                 <div class="txt w-100">
-                    <h1 class="text-align-center text-lg-start text-capitalize">
+                    <h1 class="text-align-center text-capitalize">
                         Our Design Technology Tool Stack
                     </h1>
                 </div>
             </div>
             <div class="tech-stack my-5 w-100">
-                <div class="d-flex flex-wrap w-100 justify-content-between m-auto  align-items-center">
+                <div class="d-flex flex-wrap w-100 justify-content-center m-auto  align-items-center">
                     <div [ngStyle]="{'background':isDarkTheme?'#111111':'#ECF0FF'}"
                         class="stack d-flex justify-content-between hover-card">
                         <div class="logo">

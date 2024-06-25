@@ -1,8 +1,8 @@
 export const androidService = {
     title1: "Android App",
     title2: "Development Solutions",
-    img1: "../../../../assets/services/ios_android/img5.jpg",
-    img2: "../../../../assets/services/ios_android/img1.jpg",
+    img1: "../../../../assets/services/android/img5.jpg",
+    // img2: "../../../../assets/services/ios_android/img1.jpg",
     descriptionOne: [
         "Our Android app development services offer a comprehensive solution for businesses seeking to establish a strong presence on the Android platform. With the widespread adoption of Android devices worldwide, having a customized mobile application tailored to this ecosystem is essential for reaching and engaging with a diverse audience.",
         "Our team of experienced Android app developers leverages the latest technologies and best practices to build robust, scalable, and user-friendly applications.",
@@ -642,7 +642,7 @@ export const seoServices = {
     serviceTitle2: "search engine optimization",
     title1: "Boost your organic ranking with top-tier SEO services",
     img1: "../../../assets/services/seo/img1.jpg",
-    img2: "../../../assets/services/seo/7378453_32010.jpg",
+    // img2: "../../../assets/services/seo/7378453_32010.jpg",
     descriptionOne: [
         "Transform your online presence and achieve higher organic rankings with our comprehensive suite of SEO services, meticulously crafted to meet the unique demands of the USA, UK and Indian market.",
         "Our expert team utilizes cutting-edge strategies and industry best practices to optimize your website, enhance visibility, and drive targeted traffic, ensuring sustainable growth and success in the competitive digital landscape."
@@ -1190,7 +1190,7 @@ export const phpDevelopmentServices = {
     serviceTitle2: "PHP Development",
     title1: "Unleash the Power of PHP Development",
     img1: "../../../assets/services/Php_dev/img1.jpg",
-    img2: "../../../assets/services/Php_dev/7040859.jpg",
+    // img2: "../../../assets/services/Php_dev/7040859.jpg",
     descriptionOne: [
         "Explore the world of PHP development with Quantum IT's expertise, an integral part of our comprehensive web development solutions.",
         "Tailored to meet the diverse needs of businesses across the USA, UK, and India, our PHP development services are designed to empower your online presence, streamline processes, and drive impactful results in today's competitive digital landscape."
@@ -1203,6 +1203,7 @@ export const phpDevelopmentServices = {
         "With a proven track record of success and a dedication to client satisfaction, Quantum IT stands as your trusted partner in harnessing the full potential of PHP development.",
         "Connect with us today to discover how our PHP development services can elevate your online presence and drive your business forward."
     ],
+    service: "Our PHP Development Solutions",
     steps: [
         {
             num: 1,
@@ -1262,6 +1263,7 @@ export const dotNetDevelopmentServices = {
         "With a proven track record of success and a dedication to client satisfaction, Quantum IT stands as your trusted partner in harnessing the full potential of .NET development.",
         "Connect with us today to discover how our .NET development services can propel your business forward and unlock new opportunities for success."
     ],
+    service: "Our .NET Development Solutions",
     steps: [
         {
             num: 1,
@@ -1321,6 +1323,7 @@ export const rubyOnRailsDevelopmentServices = {
         "With a proven track record of success and a dedication to client satisfaction, Quantum IT stands as your trusted partner in leveraging the power of ROR development.",
         "Connect with us today to discover how our ROR development services can help you unlock new opportunities for success and growth."
     ],
+    service: "Our ROR Development Solutions",
     steps: [
         {
             num: 1,
@@ -1366,7 +1369,7 @@ export const nodejsDevelopmentServices = {
     serviceTitle: "Unleash the Power of",
     serviceTitle2: "Node.js Development",
     title1: "Unleash the Power of Node.js Development",
-    img1: "../../../assets/services/nodejs_dev/img1.jpg",
+    img1: "../../../assets/services/nodejs_dev/img1.png",
     // img2: "../../../assets/services/nodejs_dev/nodejs.jpg",
     descriptionOne: [
         "Explore the dynamic capabilities of Node.js development with Quantum IT's expert services, a cornerstone of our comprehensive software development solutions.",
@@ -1380,6 +1383,7 @@ export const nodejsDevelopmentServices = {
         "With a proven track record of success and a dedication to client satisfaction, Quantum IT stands as your trusted partner in leveraging the power of Node.js development.",
         "Connect with us today to discover how our Node.js development services can help you unlock new opportunities for success and growth."
     ],
+    service: "Our Node.js Development Solutions",
     steps: [
         {
             num: 1,
@@ -1439,6 +1443,7 @@ export const joomlaDevelopmentServices = {
         "With a proven track record of success and a dedication to client satisfaction, Quantum IT stands as your trusted partner in leveraging the power of Joomla development.",
         "Connect with us today to discover how our Joomla development services can help you unlock new opportunities for success and growth."
     ],
+    service: "Our Joomla Development Solutions",
     steps: [
         {
             num: 1,
