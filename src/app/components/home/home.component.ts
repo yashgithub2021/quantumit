@@ -210,6 +210,11 @@ export class HomeComponent implements OnInit {
       footer.scrollIntoView({ behavior: 'smooth', block: 'end' });
     }
   }
+
+  scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
   incrementNumber(item: any) {
     const targetNum = parseInt(item.num.replace('+', ''), 10);
     const stepTime = 40; // milliseconds

@@ -49,6 +49,12 @@
                         [ngClass]="isDarkTheme?'category-btn':'category-btn-light'" class="btn w-100">Web
                         App</button>
                 </div>
+                <div class="button">
+                    <button (click)="dmTab()"
+                        [ngStyle]="{'background':activeTab==='Digital Marketing'?'linear-gradient(91.58deg, #43BAFF 0.52%, #7044B3 100%)':''}"
+                        [ngClass]="isDarkTheme?'category-btn':'category-btn-light'" class="btn w-100">Digital
+                        Marketing</button>
+                </div>
             </div>
         </div>
         <div class="container-fluid my-4 apps">

@@ -26,25 +26,26 @@
         <div class="container mt-4 categories d-flex justify-content-center w-100">
             <div class="container gap-3 gap-lg-0 d-flex flex-wrap w-75 justify-content-evenly">
                 <div class="button">
-                    <button (click)="fetchAppProjects()"
+                    <button (click)="ChangeCaseStudy('Mobile App')"
                         [ngStyle]="{'background':activeTab==='Mobile App'?'linear-gradient(91.58deg, #43BAFF 0.52%, #7044B3 100%)':''}"
                         [ngClass]="isDarkTheme?'category-btn':'category-btn-light'" class="btn w-100">Mobile App
-                        </button>
+                        Development
+                    </button>
                 </div>
                 <div class="button">
-                    <button (click)="fetchWebProjects()"
+                    <button (click)="ChangeCaseStudy('Web Development')"
                         [ngStyle]="{'background':activeTab==='Web Development'?'linear-gradient(91.58deg, #43BAFF 0.52%, #7044B3 100%)':''}"
                         [ngClass]="isDarkTheme?'category-btn':'category-btn-light'" class="btn w-100">Web
-                        App</button>
+                        App Development</button>
                 </div>
                 <div class="button">
-                    <button (click)="fetchAppProjects()"
+                    <button (click)="ChangeCaseStudy('Digital Marketing')"
                         [ngStyle]="{'background':activeTab==='Digital Marketing'?'linear-gradient(91.58deg, #43BAFF 0.52%, #7044B3 100%)':''}"
                         [ngClass]="isDarkTheme?'category-btn':'category-btn-light'" class="btn w-100">Digital
                         Marketing</button>
                 </div>
                 <div class="button">
-                    <button (click)="fetchWebProjects()"
+                    <button (click)="ChangeCaseStudy('Artificial Intilligence')"
                         [ngStyle]="{'background':activeTab==='Artificial Intilligence'?'linear-gradient(91.58deg, #43BAFF 0.52%, #7044B3 100%)':''}"
                         [ngClass]="isDarkTheme?'category-btn':'category-btn-light'" class="btn w-100">Artificial
                         Intelligence</button>
@@ -52,20 +53,19 @@
             </div>
         </div>
         <div class="container-fluid my-4 apps">
-            <div class="d-flex justify-content-center align-items-center mb-3" *ngIf="loadingStatus">
+            <!-- <div class="d-flex justify-content-center align-items-center mb-3">
                 <div class="spinner-border text-success" role="status">
                     <span class="sr-only">Loading...</span>
                 </div>
-            </div>
+            </div> -->
             <div class="d-flex justify-content-center apps-container">
                 <div class="w-100 d-flex justify-content-evenly gap-3 gap-lg-0">
                     <div class="app2-cont gap-3 justify-content-center d-flex flex-column">
                         <div *ngIf="filteredProjects[0]" class="app p-3 rounded-3"
                             [ngStyle]="{'background':isDarkTheme?'#111111':'#ECF0FF'}">
                             <div class="app-img">
-                                <img (click)="scrollToTop()"
-                                    routerLink="app-development/casestudy"
-                                    src="../../../../assets/portfolio/view-project.svg" class="view-project" alt="">
+                                <img (click)="scrollToTop()" src="../../../../assets/portfolio/view-project.svg"
+                                    [routerLink]="filteredProjects[0].link" class="view-project" alt="">
                                 <img class="rounded-3" width="400" height="550"
                                     [src]="filteredProjects[0].portfolioImage?filteredProjects[0].portfolioImage:'../../../../assets/portfolio/app2.svg'"
                                     alt="">
@@ -74,12 +74,9 @@
                                 <h3>
                                     {{filteredProjects[0]?.name}}
                                 </h3>
-                                <p>
-                                    {{filteredProjects[0]?.category[0]}}
-                                </p>
                             </div>
                         </div>
-                        
+
                     </div>
                 </div>
             </div>

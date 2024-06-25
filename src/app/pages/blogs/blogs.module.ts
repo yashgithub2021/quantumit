@@ -5,6 +5,7 @@ import { BlogsRoutingModule } from './blogs-routing.module';
 import { BlogComponent } from './blog/blog.component';
 import { InnerblogComponent } from './innerblog/innerblog.component';
 import { SharedModule } from 'src/app/shared/shared/shared.module';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -14,6 +15,7 @@ import { SharedModule } from 'src/app/shared/shared/shared.module';
   ],
   imports: [
     CommonModule,
+    FormsModule,
     BlogsRoutingModule,
     SharedModule
   ]

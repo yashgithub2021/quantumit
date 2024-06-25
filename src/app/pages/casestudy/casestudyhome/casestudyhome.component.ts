@@ -6,20 +6,49 @@ import { ApiService } from 'src/app/shared/api/api.service';
   templateUrl: './casestudyhome.component.html',
   styleUrls: ['./casestudyhome.component.css']
 })
-export class CasestudyhomeComponent implements OnInit{
+export class CasestudyhomeComponent implements OnInit {
 
   isDarkTheme!: boolean
   activeTab: string = 'Mobile App'
   projects: any[] = [];
   filteredProjects: any[] = [];
-  loadingStatus: boolean = true;
+
+  mobileCaseStudy = [
+    {
+      name: "Mobile App Development",
+      portfolioImage: '',
+      link: '/app-development/casestudy'
+    }
+  ]
+  webCaseStudy = [
+    {
+      name: "Web App Development",
+      portfolioImage: '',
+      link: '/web-development/casestudy'
+    }
+  ]
+  dmCaseStudy = [
+    {
+      name: "Digital Marketing",
+      portfolioImage: '',
+      link: '/digital-marketing/casestudy'
+    }
+  ]
+  aiCaseStudy = [
+    {
+      name: "Artificial Intelligence",
+      portfolioImage: '',
+      link: '/ai/casestudy'
+    }
+  ]
+  // loadingStatus: boolean = true;
   constructor(private api: ApiService, private elementRef: ElementRef) { }
 
   ngOnInit(): void {
     this.isDarkTheme = this.api.isDarkTheme();
     this.themechange();
-    this.fetchProjects();
     this.scrollToTop();
+    this.filteredProjects = this.mobileCaseStudy
   }
 
   themechange() {
@@ -28,24 +57,44 @@ export class CasestudyhomeComponent implements OnInit{
     });
   }
 
+  ChangeCaseStudy(caseStudy: string) {
+    switch (caseStudy) {
+      case 'Mobile App':
+        this.filteredProjects = this.webCaseStudy
+        this.activeTab = caseStudy
+        break;
+      case 'Web Development':
+        this.filteredProjects = this.webCaseStudy
+        this.activeTab = caseStudy
+        break;
+      case 'Digital Marketing':
+        this.filteredProjects = this.dmCaseStudy
+        this.activeTab = caseStudy
+        break
+      case 'Artificial Intilligence':
+        this.filteredProjects = this.aiCaseStudy
+        this.activeTab = caseStudy
+        break
+    }
+  }
 
   fetchProjects(): void {
-    this.loadingStatus = true;
+    // this.loadingStatus = true;
     this.api.getProjects().subscribe(
       (res: any) => {
         this.projects = res.project;
         console.log(this.projects);
         this.filteredProjects = [...this.projects];
-        this.filterProjects('Mobile App','AMPS');
-        this.loadingStatus = false;
+        this.filterProjects('Mobile App', 'AMPS');
+        // this.loadingStatus = false;
       },
       err => {
         console.error(err);
-        this.loadingStatus = false;
+        // this.loadingStatus = false;
       }
     );
   }
-  filterProjects(category: string,projectName:string): void {
+  filterProjects(category: string, projectName: string): void {
     this.scrollToMiddeleOfProjectCard();
     if (category === 'all') {
       this.activeTab = 'all';
@@ -59,19 +108,19 @@ export class CasestudyhomeComponent implements OnInit{
       console.log(this.filteredProjects);
     }
   }
-  
+
   fetchWebProjects() {
-    this.filterProjects('Web App','');
+    this.filterProjects('Web App', '');
     this.activeTab = 'Web Development'
   }
 
   fetchAppProjects() {
-    this.filterProjects('Mobile App','AMPS');
+    this.filterProjects('Mobile App', 'AMPS');
     this.activeTab = 'Mobile App'
   }
 
   webAppTab() {
-    this.filterProjects('Web App','');
+    this.filterProjects('Web App', '');
     this.activeTab = 'Web App'
   }
 

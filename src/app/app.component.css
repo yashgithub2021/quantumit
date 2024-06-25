@@ -58,19 +58,21 @@
 span {
     cursor: pointer;
 }
+
 .move {
     background: linear-gradient(91.58deg, #43BAFF 0.52%, #7044B3 100%);
     position: fixed;
-    bottom: 10px;
-    right: 10px;
-    width:60px;
-    height:60px;
+    bottom: 20px;
+    left: 10px;
+    width: 60px;
+    height: 60px;
     border-radius: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.move a{
+
+.move a {
     display: flex;
     justify-content: center;
     align-items: center;

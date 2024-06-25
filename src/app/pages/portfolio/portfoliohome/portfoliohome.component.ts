@@ -73,6 +73,12 @@ export class PortfoliohomeComponent implements OnInit {
     this.activeTab = 'Web App'
   }
 
+  dmTab() {
+    this.filterProjects('Digital Marketing');
+    this.activeTab = 'Digital Marketing'
+    console.log(this.filteredProjects.length)
+  }
+
   scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
