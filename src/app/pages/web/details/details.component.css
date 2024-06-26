@@ -60,10 +60,26 @@
     font-weight: 400 !important;
 }
 
+.app-details>.details>.detail:not(:last-child) {
+    border-right: 3px solid white;
+    padding-right: 6%;
+    padding-left: 6%;
+}
+
+.app-details>.details>.detail:last-child {
+
+    padding-left: 6%;
+}
+
 @media (max-width: 1366px) {
     .app-details>.details>.detail:not(:last-child) {
         border-right: 3px solid white;
-        padding-right: 8%;
+        padding-right: 6%;
+        padding-left: 6%;
+    }
+
+    .app-details>.details>.detail:last-child {
+        padding-left: 6%;
     }
 }
 
