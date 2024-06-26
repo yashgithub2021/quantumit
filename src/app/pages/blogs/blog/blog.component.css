@@ -59,6 +59,10 @@
 .popular {
     max-height: 100px;
     position: relative;
+    cursor: pointer;
+}
+.popular-last{
+    cursor: pointer;
 }
 
 .popular::after {
