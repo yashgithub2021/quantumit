@@ -17,28 +17,32 @@ export class CasestudyhomeComponent implements OnInit {
     {
       name: "Mobile App Development",
       portfolioImage: '../../../../assets/casestudybanner/AMPSPORTFOLIO.webp',
-      link: '/app-development/casestudy'
+      link: '/app-development/casestudy',
+      projectName:'AMPS'
     }
   ]
   webCaseStudy = [
     {
       name: "Web App Development",
       portfolioImage: '../../../../assets/casestudybanner/WIKISTRINGS.png',
-      link: '/web-development/casestudy'
+      link: '/web-development/casestudy',
+      projectName:'WikiString'
     }
   ]
   dmCaseStudy = [
     {
       name: "Digital Marketing",
       portfolioImage: '../../../../assets/casestudybanner/Seanautic.png',
-      link: '/digital-marketing/casestudy'
+      link: '/digital-marketing/casestudy',
+      projectName:'Seanautic marine Inc'
     }
   ]
   aiCaseStudy = [
     {
       name: "Artificial Intelligence",
       portfolioImage: '../../../../assets/casestudybanner/AI.png',
-      link: '/ai/casestudy'
+      link: '/ai/casestudy',
+      projectName:'Capsule Endoscopy'
     }
   ]
   // loadingStatus: boolean = true;
@@ -61,7 +65,7 @@ export class CasestudyhomeComponent implements OnInit {
     this.scrollToMiddeleOfProjectCard()
     switch (caseStudy) {
       case 'Mobile App':
-        this.filteredProjects = this.webCaseStudy
+        this.filteredProjects = this.mobileCaseStudy
         this.activeTab = caseStudy
         break;
       case 'Web Development':
@@ -79,51 +83,51 @@ export class CasestudyhomeComponent implements OnInit {
     }
   }
 
-  fetchProjects(): void {
-    // this.loadingStatus = true;
-    this.api.getProjects().subscribe(
-      (res: any) => {
-        this.projects = res.project;
-        console.log(this.projects);
-        this.filteredProjects = [...this.projects];
-        this.filterProjects('Mobile App', 'AMPS');
-        // this.loadingStatus = false;
-      },
-      err => {
-        console.error(err);
-        // this.loadingStatus = false;
-      }
-    );
-  }
-  filterProjects(category: string, projectName: string): void {
-    this.scrollToMiddeleOfProjectCard();
-    if (category === 'all') {
-      this.activeTab = 'all';
+  // fetchProjects(): void {
+  //   // this.loadingStatus = true;
+  //   this.api.getProjects().subscribe(
+  //     (res: any) => {
+  //       this.projects = res.project;
+  //       console.log(this.projects);
+  //       this.filteredProjects = [...this.projects];
+  //       this.filterProjects('Mobile App', 'AMPS');
+  //       // this.loadingStatus = false;
+  //     },
+  //     err => {
+  //       console.error(err);
+  //       // this.loadingStatus = false;
+  //     }
+  //   );
+  // }
+  // filterProjects(category: string, projectName: string): void {
+  //   this.scrollToMiddeleOfProjectCard();
+  //   if (category === 'all') {
+  //     this.activeTab = 'all';
 
-      this.filteredProjects = this.projects;
-      // console.log(this.filteredProjects);
-    } else {
-      this.filteredProjects = this.projects.filter((project: any) =>
-        project.category.includes(category) && project.name.includes(projectName)
-      );
-      console.log(this.filteredProjects);
-    }
-  }
+  //     this.filteredProjects = this.projects;
+  //     // console.log(this.filteredProjects);
+  //   } else {
+  //     this.filteredProjects = this.projects.filter((project: any) =>
+  //       project.category.includes(category) && project.name.includes(projectName)
+  //     );
+  //     console.log(this.filteredProjects);
+  //   }
+  // }
 
-  fetchWebProjects() {
-    this.filterProjects('Web App', '');
-    this.activeTab = 'Web Development'
-  }
+  // fetchWebProjects() {
+  //   this.filterProjects('Web App', '');
+  //   this.activeTab = 'Web Development'
+  // }
 
-  fetchAppProjects() {
-    this.filterProjects('Mobile App', 'AMPS');
-    this.activeTab = 'Mobile App'
-  }
+  // fetchAppProjects() {
+  //   this.filterProjects('Mobile App', 'AMPS');
+  //   this.activeTab = 'Mobile App'
+  // }
 
-  webAppTab() {
-    this.filterProjects('Web App', '');
-    this.activeTab = 'Web App'
-  }
+  // webAppTab() {
+  //   this.filterProjects('Web App', '');
+  //   this.activeTab = 'Web App'
+  // }
 
   scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });

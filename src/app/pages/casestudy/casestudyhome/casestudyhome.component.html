@@ -10,7 +10,7 @@
                             </h1>
                         </div>
                         <div class="milestone-title">
-                            <p class="">Explore our diverse casestudy of digital solutions.</p>
+                            <p class="">Look Into Our Success Stories</p>
                         </div>
                     </div>
                 </div>
@@ -19,12 +19,12 @@
         <div class="container heading w-100 h-100 d-flex flex-column align-items-center justify-content-center">
             <div class="desc align-self-center mt-3 w-75">
                 <p class="opacity-50 text-align-center">
-                    Proud projects that make us stand out
+                    Real Results from Our Proven SEO Strategies
                 </p>
             </div>
         </div>
         <div class="container mt-4 categories d-flex justify-content-center w-100">
-            <div class="container gap-3 gap-lg-0 d-flex flex-wrap w-75 justify-content-evenly">
+            <div class="container gap-3 gap-lg-4 d-flex flex-wrap w-100 justify-content-center">
                 <div class="button">
                     <button (click)="ChangeCaseStudy('Mobile App')"
                         [ngStyle]="{'background':activeTab==='Mobile App'?'linear-gradient(91.58deg, #43BAFF 0.52%, #7044B3 100%)':''}"
@@ -70,9 +70,12 @@
                                     [src]="filteredProjects[0].portfolioImage" alt="">
                             </div>
                             <div class="app-detail mt-4">
+
                                 <h3>
-                                    {{filteredProjects[0]?.name}}
+
+                                    {{filteredProjects[0]?.projectName}}
                                 </h3>
+                                <p>{{filteredProjects[0]?.name}}</p>
                             </div>
                         </div>
 
