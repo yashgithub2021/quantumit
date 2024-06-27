@@ -289,11 +289,11 @@
             <div class="slider" [ngStyle]="{background:isDarkTheme?'#111111':'#ECF0FF'}">
                 <div class="slide-track">
                     <div class="slide" *ngFor="let img of brandLogo">
-                        <img [ngStyle]="{filter:isDarkTheme?'grayscale(100%)':'invert(1)'}" height="100" width="100"
+                        <img [ngStyle]="{filter:isDarkTheme?'invert(0)':'invert(1)'}" height="100" width="100"
                             [src]="img.img" class="d-block w-auto" alt="...">
                     </div>
                     <div class="slide" *ngFor="let img of brandLogo">
-                        <img [ngStyle]="{filter:isDarkTheme?'grayscale(100%)':'invert(1)'}" height="100" width="100"
+                        <img [ngStyle]="{filter:isDarkTheme?'invert(0)':'invert(1)'}" height="100" width="100"
                             [src]="img.img" class="d-block w-auto" alt="...">
                     </div>
                 </div>

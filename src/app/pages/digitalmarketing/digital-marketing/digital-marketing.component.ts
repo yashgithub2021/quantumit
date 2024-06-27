@@ -15,25 +15,25 @@ export class DigitalMarketingComponent implements OnInit {
 
   brandLogo = [
     {
-      img: '../../../assets/carousel/one.svg'
+      img: '../../../assets/carousel/one.png'
     },
     {
-      img: '../../../assets/carousel/two.svg'
+      img: '../../../assets/carousel/two.png'
     },
     {
-      img: '../../../assets/carousel/three.svg'
+      img: '../../../assets/carousel/three.png'
     },
     {
-      img: '../../../assets/carousel/4.png.svg'
+      img: '../../../assets/carousel/four.png'
     },
     {
-      img: '../../../assets/carousel/one.svg'
+      img: '../../../assets/carousel/five.png'
     },
     {
-      img: '../../../assets/carousel/5.png.svg'
+      img: '../../../assets/carousel/six.png'
     },
     {
-      img: '../../../assets/carousel/6.png.svg'
+      img: '../../../assets/carousel/seven.png'
     },
   ]
 

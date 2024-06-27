@@ -55,7 +55,7 @@ export class CasestudyComponent implements OnInit {
       currentNum:0
     },
     {
-      num: "25+",
+      num: "250+",
       heading: "team advisors",
       currentNum:0
     },
