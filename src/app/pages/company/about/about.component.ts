@@ -48,7 +48,7 @@ export class AboutComponent implements OnInit {
       heading: "In Business"
     },
     {
-      num: "75,000+",
+      num: "1000+",
       heading: "Customers"
     },
     {

@@ -71,9 +71,10 @@
 }
 
 .number {
-    font-size: 100px;
-    line-height: 120px;
+    font-size: 60px;
+    line-height: 90px;
     font-weight: 700;
+
 }
 
 .partner-detail {
@@ -144,6 +145,7 @@
     font-size: 16px;
     line-height: 18px;
     font-weight: 400;
+    margin-bottom: 30px;
 }
 
 .what-we-do .desc p {

@@ -22,6 +22,34 @@
         </div>
     </div>
 
+    <div class="frame-5 my-lg-5" id="wwd">
+        <div class="text w-100 d-flex flex-column  justify-content-center align-items-center">
+            <div class="button" data-aos="slide-up">
+                <button class="our-process-btn">
+                    What We Do
+                </button>
+            </div>
+            <div class="txt w-75 text-align-center px-sm-5 px-2 my-lg-4" data-aos="slide-up">
+                <h1 style="font-size:20px!important;line-height:35px!important;">Deliver dynamic business solutions using data science, machine learning, and AI technologies
+                    tailored to your needs.</h1>
+            </div>
+        </div>
+        <div class="milestones container my-3">
+            <div class="row custom-gap d-flex align-items-center justify-content-lg-center justify-content-evenly">
+                <div *ngFor="let stone of milestones" data-aos="slide-up"
+                    class="col-sm-3 col-8 milestone-col m-lg-2 d-flex align-items-center flex-sm-column flex-row  flex-lg-row justify-content-around h-100"style="max-width:250px;">
+                    <div class="image">
+                        <img [src]="stone.img" class="milestone-img" alt=""style="height:50px;">
+                    </div>
+                    <div class="number d-flex flex-column justify-content-center justify-content-lg-start ">
+                        <h1 class=" fw-lighter">{{stone.num}}</h1>
+                        <p class="m-0">{{stone.title}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="container d-flex frame-2">
         <div class="container d-flex flex-column justify-content-between my-5 px-lg-5">
             <div class="heading d-flex flex-column mb-5 mb-lg-0 flex-lg-row justify-content-between align-items-center">
@@ -54,6 +82,65 @@
                 </div>
             </div>
         </div>
+    </div>
+
+    <div class="container my-lg-5">
+        <div class="container d-flex align-items-center justify-content-center">
+            <div class="text w-100 d-flex flex-column  justify-content-center align-items-center">
+                <div class="button" data-aos="zoom-in">
+                    <button class="our-process-btn">
+                        Our Services
+                    </button>
+                </div>
+                <div class="txt w-50 text-align-center">
+                    <h1 class=" text-capitalize">Our Generative AI</h1>
+                </div>
+            </div>
+        </div>
+        <div class="what-we-do w-100 h-100 mt-lg-5 container" data-aos="zoom-in">
+            <div class="row w-100 h-100 gap-2 justify-content-center">
+                <div *ngFor="let data of ourAIGenerative" data-aos="zoom-out"style="box-shadow:0px 0px 1px black;border-radius:10px;"
+                    [ngStyle]="{background:isDarkTheme?'#111111':'#ECF0FF'}"
+                    class=" col-lg-3 col-6 ai-data2 pt-lg-5 px-lg-5 pb-lg-3 d-flex  align-items-center justify-content-around flex-column">
+                    <div class="image">
+                        <img [src]="data.img" alt="" style="height:30px;">
+                    </div>
+                    <div class="title w-100 text-center">
+                        <h3 class=" fw-lighter"style="font-size:18px;">{{data.title}}</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="container my-lg-5">
+        <div class="container d-flex align-items-center justify-content-center">
+            <div class="text w-100 d-flex flex-column  justify-content-center align-items-center">
+                <div class="button" data-aos="zoom-in">
+                    <button class="our-process-btn">
+                        Our Services
+                    </button>
+                </div>
+                <div class="txt w-50 text-align-center">
+                    <h1 class=" text-capitalize">Our AI Services</h1>
+                </div>
+            </div>
+        </div>
+        <div class="what-we-do w-100 h-100 mt-lg-5 container" data-aos="zoom-in">
+            <div class="row w-100 h-100 justify-content-center gap-2">
+                <div *ngFor="let data of ourAIServices" data-aos="zoom-out"style="box-shadow:0px 0px 1px black;border-radius:10px;"
+                    [ngStyle]="{background:isDarkTheme?'#111111':'#ECF0FF'}"
+                    class=" col-lg-3 col-6 ai-data2 pt-lg-5 px-lg-5 pb-lg-3 d-flex  align-items-center justify-content-around flex-column">
+                    <div class="image">
+                        <img [src]="data.img" alt="" style="height:35px;">
+                    </div>
+                    <div class="title w-100 text-center">
+                        <h3 class=" fw-lighter"style="font-size:18px;">{{data.title}}</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
 
     <div class="frame-3 container-fluid my-lg-5">
@@ -183,7 +270,7 @@
         </div>
     </div>
 
-    <div class="frame-5 my-lg-5" id="wwd">
+    <!-- <div class="frame-5 my-lg-5" id="wwd">
         <div class="text w-100 d-flex flex-column  justify-content-center align-items-center">
             <div class="button" data-aos="slide-up">
                 <button class="our-process-btn">
@@ -191,16 +278,16 @@
                 </button>
             </div>
             <div class="txt w-75 text-align-center px-sm-5 px-2 my-lg-4" data-aos="slide-up">
-                <h1>Deliver dynamic business solutions using data science, machine learning, and AI technologies
+                <h1 style="font-size:20px!important;line-height:35px!important;">Deliver dynamic business solutions using data science, machine learning, and AI technologies
                     tailored to your needs.</h1>
             </div>
         </div>
         <div class="milestones container my-3">
             <div class="row custom-gap d-flex align-items-center justify-content-lg-center justify-content-evenly">
                 <div *ngFor="let stone of milestones" data-aos="slide-up"
-                    class="col-sm-3 col-8 milestone-col mx-lg-2 d-flex align-items-center flex-sm-column flex-row  flex-lg-row justify-content-around h-100">
+                    class="col-sm-3 col-8 milestone-col m-lg-2 d-flex align-items-center flex-sm-column flex-row  flex-lg-row justify-content-around h-100"style="max-width:250px;">
                     <div class="image">
-                        <img [src]="stone.img" class="milestone-img" alt="">
+                        <img [src]="stone.img" class="milestone-img" alt=""style="height:50px;">
                     </div>
                     <div class="number d-flex flex-column justify-content-center justify-content-lg-start ">
                         <h1 class=" fw-lighter">{{stone.num}}</h1>
@@ -209,7 +296,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 </div>
 
 <app-form></app-form>

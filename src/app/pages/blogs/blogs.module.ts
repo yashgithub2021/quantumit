@@ -6,6 +6,7 @@ import { BlogComponent } from './blog/blog.component';
 import { InnerblogComponent } from './innerblog/innerblog.component';
 import { SharedModule } from 'src/app/shared/shared/shared.module';
 import { FormsModule } from '@angular/forms';
+import {NgxPaginationModule} from 'ngx-pagination';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { FormsModule } from '@angular/forms';
     CommonModule,
     FormsModule,
     BlogsRoutingModule,
-    SharedModule
+    SharedModule,
+    NgxPaginationModule
   ]
 })
 export class BlogsModule { }
