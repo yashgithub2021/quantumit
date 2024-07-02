@@ -2,6 +2,7 @@
     font-family: 'Plus Jakarta Sans';
 }
 
+
 .numbers-section {
     padding: 50px 50px;
     background: linear-gradient(90deg, #43BAFF 0%, #7141B1 100%);
@@ -20,7 +21,7 @@
 }
 
 .card-title1 {
-    font-size: 24px;
+    font-size: 22px;
     line-height: 32px;
     font-weight: 600;
 }
@@ -33,7 +34,7 @@
 }
 
 .text h4 {
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .contributor-image::before {

@@ -100,7 +100,7 @@ export class HomeComponent implements OnInit {
 
   sectionFourNums = [
     {
-      num: "250+",
+      num: "400+",
       heading: "ACTIVE CLIENTS",
       currentNum: 0
     },

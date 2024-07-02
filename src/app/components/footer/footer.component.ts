@@ -37,7 +37,7 @@ export class FooterComponent implements OnInit {
       icon: 'fa-location-dot',
       hoverIcon: 'fa-location-pin',
       label: 'Address',
-      value: 'India: H-11, 1st Floor, Sector 63, Noida - 201301'
+      value: 'A20 Knowledge Park-II, Greater Noida, UP -201310'
     },
     // {
     //   icon: 'fa-print',

@@ -45,6 +45,92 @@ export class AiRobotComponent implements OnInit {
     },
 
   ]
+  ourAIGenerative: any[] = [
+    {
+      img: '../../../assets/services/AI_service/aigenerator/img1.png',
+      title: 'Generative Ai Development',
+      link: ''
+    }, {
+      img: '../../../assets/services/AI_service/aigenerator/img2.png',
+      title: 'Generative Ai  integration services',
+      link: ''
+    }, {
+      img: '../../../assets/services/AI_service/aigenerator/img3.png',
+      title: 'Generative Ai  consulting company',
+      link: ''
+    }, {
+      img: '../../../assets/services/AI_service/aigenerator/img4.png',
+      title: 'hire generative ai engineers',
+      link: ''
+    }, {
+      img: '../../../assets/services/AI_service/aigenerator/img5.png',
+      title: 'Ai Agent Development',
+      link: ''
+    }, {
+      img: '../../../assets/services/AI_service/aigenerator/img6.png',
+      title: 'Ai Copilot Development',
+      link: ''
+    }, {
+      img: '../../../assets/services/AI_service/aigenerator/img7.png',
+      title: 'Hire Prompt Engineers',
+      link: ''
+    }, {
+      img: '../../../assets/services/AI_service/aigenerator/img8.png',
+      title: 'Adaptive Ai Development Co.',
+      link: ''
+    }, {
+      img: '../../../assets/services/AI_service/aigenerator/img9.png',
+      title: 'ChatGPT Developers',
+      link: ''
+    }, {
+      img: '../../../assets/services/AI_service/aigenerator/img10.png',
+      title: 'Stable Diffusion Developers',
+      link: ''
+    }, {
+      img: '../../../assets/services/AI_service/aigenerator/img11.png',
+      title: 'ChatGPT Integration Service',
+      link: ''
+    }, {
+      img: '../../../assets/services/AI_service/aigenerator/img12.png',
+      title: 'Large Language Model',
+      link: ''
+    },
+  ]
+  ourAIServices: any[] = [
+    {
+      img: '../../../assets/services/AI_service/aiservice/img1.png',
+      title: 'Ai Development',
+      link: ''
+    }, {
+      img: '../../../assets/services/AI_service/aiservice/img2.png',
+      title: 'Ai Consulting',
+      link: ''
+    }, {
+      img: '../../../assets/services/AI_service/aiservice/img3.png',
+      title: 'Ai As A Service',
+      link: ''
+    }, {
+      img: '../../../assets/services/AI_service/aiservice/img4.png',
+      title: 'hire Action Transformer Developer',
+      link: ''
+    }, {
+      img: '../../../assets/services/AI_service/aiservice/img5.png',
+      title: 'Ai Agent Development',
+      link: ''
+    }, {
+      img: '../../../assets/services/AI_service/aiservice/img6.png',
+      title: 'MLOps Consulting service',
+      link: ''
+    }, {
+      img: '../../../assets/services/AI_service/aiservice/img7.png',
+      title: 'Enterprise Ai Development',
+      link: ''
+    }, {
+      img: '../../../assets/services/AI_service/aiservice/img8.png',
+      title: 'Ai Chatbot Development Co.',
+      link: ''
+    }
+  ]
 
   ngOnInit(): void {
     AOS.init({
@@ -57,21 +143,46 @@ export class AiRobotComponent implements OnInit {
 
   checks = ["Chatbot API", "Facial Recognition API", "Natural language processing APIs", "AWS ML Solutions"]
 
+  // milestones = [
+  //   {
+  //     img: "../../../assets/ai/25.svg",
+  //     num: "25+",
+  //     title: "Countries Represented"
+  //   },
+  //   {
+  //     img: "../../../assets/ai/1200.svg",
+  //     num: "1200+",
+  //     title: "Completed Projects"
+  //   },
+  //   {
+  //     img: "../../../assets/ai/140.svg",
+  //     num: "140+",
+  //     title: "Team Members"
+  //   },
+  // ]
   milestones = [
     {
+      num: "400+",
+      title: "Active Clients",
       img: "../../../assets/ai/25.svg",
-      num: "25+",
-      title: "Countries Represented"
+
     },
     {
+      num: "850 +",
+      title: "Projects Done",
       img: "../../../assets/ai/1200.svg",
-      num: "1200+",
-      title: "Completed Projects"
+
     },
     {
+      num: "250+",
+      title: "Team Advisors",
       img: "../../../assets/ai/140.svg",
-      num: "140+",
-      title: "Team Members"
+
+    },
+    {
+      num: "10+",
+      title: "Glorious Years",
+      img: '../../../assets/services/AI_service/aigenerator/img8.png',
     },
   ]
 

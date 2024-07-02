@@ -11,7 +11,12 @@ export class BlogComponent implements OnInit {
 
   isDarkTheme!: boolean;
   blogs: any
-  contributors: any
+  contributors: any;
+
+  pageSize:number=4;
+  currentPage:number=1;
+  totalItem!:number;
+
   constructor(private api: ApiService, private titlecase: TitleCasePipe) { }
 
   ngOnInit(): void {
@@ -30,7 +35,8 @@ export class BlogComponent implements OnInit {
   fetchBlogs() {
     this.api.getBlogs()
       .subscribe((res: any) => {
-        this.blogs = res.blogs
+        this.blogs = res.blogs;
+        this.totalItem=this.blogs.length;
         console.log(this.blogs)
       })
   }
@@ -41,5 +47,16 @@ export class BlogComponent implements OnInit {
         this.contributors = res.contributors
         console.log(this.contributors)
       })
+  }
+  pageChanged(currentPage:any){
+    // console.log(currentPage);
+    this.currentPage=currentPage;
+    this.scrollToContent();
+  }
+  scrollToContent(): void {
+    const element = document.querySelector('.single-blog');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
   }
 }

@@ -3,206 +3,214 @@
 
 /* Light Theme */
 .light-theme {
-    background-color: #ffffff;
-    color: #000000 !important;
+  background-color: #ffffff;
+  color: #000000 !important;
 }
 
 /* Dark Theme */
 .dark-theme {
-    background-color: #000000;
-    color: #ffffff !important;
+  background-color: #000000;
+  color: #ffffff !important;
 }
 
 .accordion-button {
-    color: white !important;
+  color: white !important;
 }
 
 @keyframes fadeInOpacity {
 
-    0%,
-    100% {
-        opacity: 0%;
-    }
+  0%,
+  100% {
+    opacity: 0%;
+  }
 
-    50% {
-        opacity: 30%;
-    }
+  50% {
+    opacity: 30%;
+  }
 }
 
 /* Hide scrollbar */
 ::-webkit-scrollbar {
-    /* width: 10px; */
-    /* Remove scrollbar width */
-    /* height: 0; */
-    /* Remove scrollbar height */
-    /* background: transparent; */
-    /* Set background to transparent */
+  /* width: 10px; */
+  /* Remove scrollbar width */
+  /* height: 0; */
+  /* Remove scrollbar height */
+  /* background: transparent; */
+  /* Set background to transparent */
 }
 
 :root {
-    --custom: #8C8C8C;
-    --bs-table-bg: #000000 !important;
+  --custom: #8C8C8C;
+  --bs-table-bg: #000000 !important;
 }
 
 i {
-    color: white;
-    font-size: 15px;
+  color: white;
+  font-size: 15px;
 }
 
 
 .our-process-btn {
-    padding: 7px 15px 7px 15px;
-    gap: 0px;
-    border-radius: 32px;
-    border: 1px 0px 0px 0px;
-    opacity: 0px;
-    border: 1px solid #0099FF;
-    box-shadow: 0px -7px 11px 0px #A48FFF1F inset;
-    background: linear-gradient(91.58deg, #43BAFF 0.52%, #7044B3 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    backdrop-filter: blur(2px);
+  padding: 7px 15px 7px 15px;
+  gap: 0px;
+  border-radius: 32px;
+  border: 1px 0px 0px 0px;
+  opacity: 0px;
+  border: 1px solid #0099FF;
+  box-shadow: 0px -7px 11px 0px #A48FFF1F inset;
+  background: linear-gradient(91.58deg, #43BAFF 0.52%, #7044B3 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  backdrop-filter: blur(2px);
 }
 
 .hover-card {
-    transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .hover-card:hover {
-    cursor: pointer;
-    transform: translateY(-5px) scale(1.03) translateZ(0);
-    box-shadow: 0 24px 36px rgba(0, 0, 0, 0.11),
-        0 24px 46px var(--box-shadow-color);
-    transition: all 0.5s ease-in-out;
+  cursor: pointer;
+  transform: translateY(-5px) scale(1.03) translateZ(0);
+  box-shadow: 0 24px 36px rgba(0, 0, 0, 0.11),
+    0 24px 46px var(--box-shadow-color);
+  transition: all 0.5s ease-in-out;
 }
 
 button .carousel-control-next {
-    justify-content: end;
+  justify-content: end;
 }
 
 button .carousel-control-prev {
-    justify-content: start;
+  justify-content: start;
 }
 
 /* for barlow font  */
 .barlow-thin {
-    font-family: "Barlow", sans-serif;
-    font-weight: 100;
-    font-style: normal;
+  font-family: "Barlow", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.barlow-extralight {
+  font-family: "Barlow", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.barlow-light {
+  font-family: "Barlow", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.barlow-regular {
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.barlow-medium {
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.barlow-semibold {
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.barlow-bold {
+  font-family: "Barlow", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.barlow-extrabold {
+  font-family: "Barlow", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.barlow-black {
+  font-family: "Barlow", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.barlow-thin-italic {
+  font-family: "Barlow", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.barlow-extralight-italic {
+  font-family: "Barlow", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.barlow-light-italic {
+  font-family: "Barlow", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.barlow-regular-italic {
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.barlow-medium-italic {
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.barlow-semibold-italic {
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.barlow-bold-italic {
+  font-family: "Barlow", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.barlow-extrabold-italic {
+  font-family: "Barlow", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.barlow-black-italic {
+  font-family: "Barlow", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+app-home .section7 .carousel-control-next {
+  right: -50px !important;
+}
+
+app-home .section7 .carousel-control-prev {
+  left: -50px !important;
+}
+
+app-blog .blogs-pagination-container .ngx-pagination .current {
+  border-radius: 5px;
+}
+
+@media(max-width:575.98px) {
+  app-home .section7 .carousel-control-next {
+    right: -25px !important;
   }
-  
-  .barlow-extralight {
-    font-family: "Barlow", sans-serif;
-    font-weight: 200;
-    font-style: normal;
+
+  app-home .section7 .carousel-control-prev {
+    left: -25px !important;
   }
-  
-  .barlow-light {
-    font-family: "Barlow", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-  }
-  
-  .barlow-regular {
-    font-family: "Barlow", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .barlow-medium {
-    font-family: "Barlow", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-  }
-  
-  .barlow-semibold {
-    font-family: "Barlow", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-  }
-  
-  .barlow-bold {
-    font-family: "Barlow", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-  }
-  
-  .barlow-extrabold {
-    font-family: "Barlow", sans-serif;
-    font-weight: 800;
-    font-style: normal;
-  }
-  
-  .barlow-black {
-    font-family: "Barlow", sans-serif;
-    font-weight: 900;
-    font-style: normal;
-  }
-  
-  .barlow-thin-italic {
-    font-family: "Barlow", sans-serif;
-    font-weight: 100;
-    font-style: italic;
-  }
-  
-  .barlow-extralight-italic {
-    font-family: "Barlow", sans-serif;
-    font-weight: 200;
-    font-style: italic;
-  }
-  
-  .barlow-light-italic {
-    font-family: "Barlow", sans-serif;
-    font-weight: 300;
-    font-style: italic;
-  }
-  
-  .barlow-regular-italic {
-    font-family: "Barlow", sans-serif;
-    font-weight: 400;
-    font-style: italic;
-  }
-  
-  .barlow-medium-italic {
-    font-family: "Barlow", sans-serif;
-    font-weight: 500;
-    font-style: italic;
-  }
-  
-  .barlow-semibold-italic {
-    font-family: "Barlow", sans-serif;
-    font-weight: 600;
-    font-style: italic;
-  }
-  
-  .barlow-bold-italic {
-    font-family: "Barlow", sans-serif;
-    font-weight: 700;
-    font-style: italic;
-  }
-  
-  .barlow-extrabold-italic {
-    font-family: "Barlow", sans-serif;
-    font-weight: 800;
-    font-style: italic;
-  }
-  
-  .barlow-black-italic {
-    font-family: "Barlow", sans-serif;
-    font-weight: 900;
-    font-style: italic;
-  }
-  app-home .section7 .carousel-control-next{
-    right:-50px!important;
-  }
-  app-home .section7 .carousel-control-prev{
-    left:-50px!important;
-  }
-  @media(max-width:575.98px){
-    app-home .section7 .carousel-control-next{
-      right:-25px!important;
-    }
-    app-home .section7 .carousel-control-prev{
-      left:-25px!important;
-    }
-  }
+}
