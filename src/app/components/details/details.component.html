@@ -1,0 +1,808 @@
+<div class="contianer-fluid services appdev-page"*ngIf="!differentPageStatus">
+    <div class="container frame-1 p-5 pb-0 my-2">
+        <div class="heading d-flex flex-column flex-lg-row justify-content-between align-items-center">
+            <div class="text frame-2-head w-100 d-flex align-items-center align-items-lg-start flex-column ">
+                <div class="button">
+                    <button class="our-process-btn">
+                        Home > <span style="color: white;" class="">Services Details</span>
+                    </button>
+                </div>
+                <div class="txt w-100 mt-3">
+                    <h1 class="text-align-center fw-bolder text-lg-start">
+                        <span class="linear-text text-decoration-underline">{{androidService.title1}} </span>
+                        {{androidService.title2}}
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="frame-3 container p-0 p-lg-5 mb-2">
+        <div class="service-section">
+            <div class="d-flex align-items-center flex-column h-100 w-100 ">
+                <div class="d-flex align-items-center flex-column flex-lg-row my-5 h-100 w-100">
+                    <!-- <div class="text w-100 p-0">
+                        <div class="brief " [ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">
+                            <p *ngFor="let description of androidService.descriptionOne">
+                                {{description}}
+                            </p>
+                            
+                        </div>
+                        
+                    </div> -->
+                    <div class="image h-100 w-100 ">
+                        <img class="w-100" style="max-height:65vh; object-fit:cover;border-radius:10px;opacity:0.8" [src]="androidService.img1" alt="">
+                    </div>
+                </div>
+                <div class="d-flex align-items-center my-5 flex-column flex-lg-row-reverse">
+                    <div class="text w-100 p-0">
+                        <div class="brief" [ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">
+                            <p *ngFor="let description of androidService.descriptionOne">
+                                {{description}}
+                            </p>
+                            <p *ngFor="let description of androidService.descriptionTwo">
+                                {{description}}
+                            </p>
+                        </div>
+                    </div>
+                    <!-- <div class="image h-100 w-100">
+
+                        <img class="rounded-3" [src]="androidService.img2" alt="">
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container d-flex frame-2">
+        <div class="container d-flex flex-column justify-content-between my-5 px-lg-5">
+            <div class="text frame-2-head w-100 d-flex align-items-center flex-column ">
+                <div class="button">
+                    <button class="our-process-btn">
+                        Services
+                    </button>
+                </div>
+                <div class="txt w-100">
+                    <h1 class="text-capitalize text-align-center">{{androidService.serviceTitle}}</h1>
+                </div>
+            </div>
+
+            <div class="what-we-do w-100 h-100 mt-5">
+                <div class="row w-100 h-100  g-4 align-items-center">
+                    <div data-aos="fade-up" *ngFor="let data of androidService.services"
+                        class="col-lg-4 col-md-6 col-12 hover-card">
+                        <div [ngStyle]="{background:isDarkTheme?'#111111':'#ECF0FF'}"
+                            class="col-details px-4 ai-data py-4 py-lg-2 d-flex align-items-start justify-content-evenly flex-column">
+                            <div class="title w-75">
+                                <h5 class="">{{data.title}}</h5>
+                            </div>
+                            <div class="desc w-100">
+                                <p [ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">{{data.desc}}</p>
+                            </div>
+                            <div class="image-container">
+                                <img [src]="data.img" alt="Image" class="corner-image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="frame-3 container-fluid px-0 d-flex">
+        <div class="container-fluid d-flex flex-column justify-content-center my-5 px-lg-5">
+            <div class="heading d-none  d-lg-flex justify-content-center align-items-center">
+                <div class="text w-100 d-flex flex-column justify-content-center align-items-center ">
+                    <div class="button my-3">
+                        <button class="our-process-btn">
+                            {{androidService.methodologyBtnTitle}}
+                        </button>
+                    </div>
+                    <div class="txt txt1 w-75 text-center my-3">
+                        <h1 class="text-capitalize" [innerHTML]="androidService.methodologyTitle"></h1>
+                    </div>
+
+                    <div class="steps-container squares w-100 mt-lg-5 mt-4 mb-lg-3 ">
+                        <ng-container *ngFor="let step of androidService.steps">
+                            <div class="step-line" [ngStyle]="{'background-color':isDarkTheme?'white':'black'}"></div>
+                            <div class="" [ngClass]="isDarkTheme?'step-square':'step-square-light'">Step 0{{step.num}}
+                            </div>
+                            <div class="step-line" [ngStyle]="{'background-color':isDarkTheme?'white':'black'}"></div>
+                        </ng-container>
+                        <!-- <div class="step-square">Step 02</div>
+                        <div class="step-line"></div>
+                        <div class="step-square">Step 03</div>
+                        <div class="step-line"></div> -->
+                    </div>
+                    <div class="steps-container steps-container2 gap-lg-3 w-100 mt-5 ">
+                        <ng-container *ngFor="let step of androidService.steps">
+                            <div
+                                class="step-title w-100 mt-3 mt-lg-0 d-flex flex-column align-items-center justify-content-center">
+                                <p class="w-50  text-align-center">{{step.title}}</p>
+                                <p class="w-100  text-align-center" [ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}"
+                                    [innerHTML]="step.desc">
+                                </p>
+                            </div>
+                            <div class="step-dashed-line visually-hidden"></div>
+                        </ng-container>
+                        <!-- <div
+                            class="step-title w-25 mt-3 mt-lg-0 d-flex justify-content-center align-items-center flex-column">
+                            <p class="w-50 fw-lighter fs-5 text-align-center">UX/UI Design
+                            </p>
+                            <p class="w-75 fw-lighter fs-6 text-align-center" style="color: #B5B5B5;">UX/UI design
+                                focuses on creating intuitive and visually appealing interfaces that prioritize user
+                                experience and satisfaction in digital products.</p>
+                        </div>
+                        <div class="step-dashed-line visually-hidden"></div>
+                        <div
+                            class="step-title w-25 mt-3 mt-lg-0 d-flex justify-content-center align-items-center flex-column">
+                            <p class="w50 fw-lighter fs-5 text-align-center">Testing</p>
+                            <p class="w-75 fw-lighter fs-6 text-align-center" style="color: #B5B5B5;">Testing ensures
+                                the functionality, performance, and usability of digital products to deliver a seamless
+                                user experience.</p>
+                        </div>
+                        <div class="step-dashed-line visually-hidden"></div> -->
+                    </div>
+
+                    <div class="container button w-100 d-flex mt-5 align-items-center justify-content-center">
+                        <button [ngStyle]="{'background':isDarkTheme?'#111111':'#ECF0FF'}"
+                            [ngClass]="isDarkTheme?'text-white':'text-black'" class="our-marketing-btn ">
+                            <!-- <i [ngClass]="isDarkTheme?'text-white':'text-black'"
+                                class="fa-solid fa-arrow-left  mx-2"></i> -->
+                            Our Services
+                            <!-- <i [ngClass]="isDarkTheme?'text-white':'text-black'"
+                                class="fa-solid fa-arrow-right  mx-2"></i> -->
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div id="carouselExampleControls" class="carousel slide d-block d-lg-none" data-ride="carousel">
+                <div class="carousel-inner ">
+                    <div class="text w-100 d-flex flex-column justify-content-center align-items-center ">
+                        <div class="button my-3">
+                            <button class="our-process-btn">
+                                {{androidService.methodologyBtnTitle}}
+                            </button>
+                        </div>
+                        <div class="txt w-75 text-center my-3">
+                            <h1 class="text-capitalize" [innerHTML]="androidService.methodologyTitle"></h1>
+                        </div>
+                    </div>
+                    <div class="carousel-item" *ngFor="let step of androidService.steps;let i=index;"
+                        [ngClass]="{'active': i === 0}">
+                        <div class="steps-container squares w-100 mt-lg-5 mt-4 mb-lg-3 ">
+                            <ng-container>
+                                <div class="step-line" [ngStyle]="{'background-color':isDarkTheme?'white':'black'}">
+                                </div>
+                                <div class="" [ngClass]="isDarkTheme?'step-square':'step-square-light'">Step
+                                    0{{step.num}}</div>
+                                <div class="step-line" [ngStyle]="{'background-color':isDarkTheme?'white':'black'}">
+                                </div>
+                            </ng-container>
+                        </div>
+                        <div class="steps-container steps-container2 gap-lg-3 w-100 mt-5 ">
+                            <ng-container>
+                                <div
+                                    class="step-title w-100 mt-3 mt-lg-0 d-flex flex-column align-items-center justify-content-center">
+                                    <p class="w-50 text-align-center">{{step.title}}</p>
+                                    <p class="w-75 text-align-center" [ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">
+                                        {{step.desc}}
+                                    </p>
+                                </div>
+                                <div class="step-dashed-line visually-hidden"></div>
+                            </ng-container>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="container button w-100 d-flex mt-5 align-items-center justify-content-center">
+                    <button [ngStyle]="{'background':isDarkTheme?'#111111':'#ECF0FF'}"
+                        [ngClass]="isDarkTheme?'text-white':'text-black'" class="our-marketing-btn ">
+                        <i [ngClass]="isDarkTheme?'text-white':'text-black'" class="fa-solid fa-arrow-left  mx-2"
+                            href="#carouselExampleControls" role="button" data-slide="prev"></i>
+                        Our Services
+                        <i [ngClass]="isDarkTheme?'text-white':'text-black'" class="fa-solid fa-arrow-right  mx-2"
+                            href="#carouselExampleControls" role="button" data-slide="next"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="frame-4 my-5 container-fluid our-process">
+        <div class="container d-flex flex-column justify-content-center">
+            <!-- <div class="container d-flex flex-column flex-lg-row justify-content-center"> -->
+
+            <div class="text frame-2-head w-100 d-flex flex-column align-items-center align-items-lg-start ">
+                <div class="button align-self-center">
+                    <button class="our-process-btn">
+                        Our Integrations
+                    </button>
+                </div>
+                <div class="txt w-100 my-3">
+                    <h1 class="text-align-center  text-capitalize">Our Integrations
+                    </h1>
+                    <!-- <h1 class="text-align-center text-lg-start text-capitalize">Our Integrations
+                    </h1> -->
+                </div>
+                <div class="txt w-100 mt-3 mt-lg-0">
+                    <p class="text-align-center text-capitalize sub-heading"
+                        [ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">we rank your website at top of google
+
+                        Everest
+                    </p>
+                    <!-- <p class="text-align-center  text-lg-start text-capitalize sub-heading"[ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">we rank your website at top of google
+
+                        Everest
+                    </p> -->
+                </div>
+            </div>
+            <div class="container w-100 d-flex">
+                <div class="processes w-100  row justify-content-space-evenly">
+                    <div class="process d-flex hover-card col-md-6">
+                        <div class="logo mx-3">
+                            <div class="process-square">
+                                <img src="../../../../assets/dm/services/obj.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="text mx-3 ">
+                            <div class="title">
+                                <h4>
+                                    Beacon Integration
+                                </h4>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="process d-flex hover-card col-md-6">
+                        <div class="logo mx-3">
+                            <div class="process-square">
+                                <img src="../../../../assets/mobile/service/gps.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="text mx-3 ">
+                            <div class="title">
+                                <h4>
+                                    GPS Integration
+                                </h4>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="process d-flex hover-card col-md-6">
+                        <div class="logo mx-3">
+                            <div class="process-square">
+                                <img src="../../../../assets/dm/services/comp.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="text mx-3 ">
+                            <div class="title">
+                                <h4>
+                                    Third party Integration
+                                </h4>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="process d-flex hover-card col-md-6">
+                        <div class="logo mx-3">
+                            <div class="process-square">
+                                <img src="../../../../assets/mobile/service/xamp.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="text mx-3 ">
+                            <div class="title">
+                                <h4>
+                                    XMPP Chat Server
+                                </h4>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="process d-flex hover-card col-md-6">
+                        <div class="logo mx-3">
+                            <div class="process-square">
+                                <img src="../../../../assets/mobile/service/pay.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="text mx-3 ">
+                            <div class="title">
+                                <h4>
+                                    Payment Gateway
+                                </h4>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="process d-flex hover-card col-md-6">
+                        <div class="logo mx-3">
+                            <div class="process-square">
+                                <img src="../../../../assets/dm/services/comp.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="text mx-3 ">
+                            <div class="title">
+                                <h4>
+                                    MDM Integration
+                                </h4>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="process d-flex hover-card col-md-6">
+                        <div class="logo mx-3">
+                            <div class="process-square">
+                                <img src="../../../../assets/mobile/service/watch.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="text mx-3 ">
+                            <div class="title">
+                                <h4>
+                                    Wearable Integration
+                                </h4>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="process d-flex hover-card col-md-6">
+                        <div class="logo mx-3">
+                            <div class="process-square">
+                                <img src="../../../../assets/mobile/service/port.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="text mx-3 ">
+                            <div class="title">
+                                <h4>
+                                    Porting & Migration
+                                </h4>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="frame-5 my-5">
+        <div class="container px-lg-3 d-flex w-75 flex-column">
+            <div class="text my-5 frame-2-head w-100 d-flex flex-column align-items-center">
+                <div class="button mb-4">
+                    <button class="our-process-btn">
+                        Our Tools
+                    </button>
+                </div>
+                <div class="txt w-100">
+                    <h1 class="text-align-center text-capitalize">
+                        Our Design Technology Tool Stack
+                    </h1>
+                </div>
+            </div>
+            <div class="tech-stack my-5 w-100">
+                <div class="d-flex flex-wrap w-100 justify-content-center m-auto  align-items-center">
+                    <div [ngStyle]="{'background':isDarkTheme?'#111111':'#ECF0FF'}"
+                        class="stack d-flex justify-content-between hover-card">
+                        <div class="logo">
+                            <img src="../../../../assets/dm/services/figma.svg" alt="">
+                        </div>
+                        <div class="name align-content-center">
+                            <h4 class="mb-0 ">Figma</h4>
+                        </div>
+                    </div>
+                    <div [ngStyle]="{'background':isDarkTheme?'#111111':'#ECF0FF'}"
+                        class="stack d-flex justify-content-between hover-card">
+                        <div class="logo">
+                            <img src="../../../../assets/dm/services/vs.svg" alt="">
+                        </div>
+                        <div class="name align-content-center">
+                            <h4 class="mb-0 ">Visual Studio</h4>
+                        </div>
+                    </div>
+                    <div [ngStyle]="{'background':isDarkTheme?'#111111':'#ECF0FF'}"
+                        class="stack d-flex justify-content-between hover-card">
+                        <div class="logo">
+                            <img src="../../../../assets/dm/services/react.svg" alt="">
+                        </div>
+                        <div class="name align-content-center">
+                            <h4 class="mb-0 ">React</h4>
+                        </div>
+                    </div>
+                    <div [ngStyle]="{'background':isDarkTheme?'#111111':'#ECF0FF'}"
+                        class="stack d-flex justify-content-between hover-card">
+                        <div class="logo">
+                            <img src="../../../../assets/dm/services/git.svg" alt="">
+                        </div>
+                        <div class="name align-content-center">
+                            <h4 class="mb-0 ">Gitlab</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="digital-page container-fluid"*ngIf="differentPageStatus">
+    <div class="contianer-fluid services">
+        <div class="container frame-1 px-lg-5 pt-lg-5 ps-4 my-4 my-lg-0">
+            <div class="heading d-flex flex-column m-0 flex-lg-row justify-content-between align-items-center">
+                <div class="text frame-2-head w-100 d-flex align-items-start  flex-column ">
+                    <div class="button">
+                        <button class="our-process-btn">
+                            Home > <span style="color: white;" class="">Services</span>
+                        </button>
+                    </div>
+                    <div class="txt w-100 mt-3 mt-lg-5">
+                        <h1 class="text-align-start  text-capitalize fw-bolder">{{serviceDetails.serviceTitle}}
+                            <span class="linear-text text-decoration-underline">{{serviceDetails.serviceTitle2}}</span>
+                            Services
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="frame-2 container p-0 p-lg-5 my-2">
+            <div class="service-section">
+                <div class="d-flex align-items-center flex-column h-100 w-100 ">
+                    <div class="d-flex align-items-center flex-column flex-lg-row my-5 h-100 w-100">
+                        <!-- <div class="text w-75 pe-lg-5 p-0">
+                            <div class="title">
+                                <h2 class="mb-3">
+                                    {{serviceDetails.title1}}
+                                </h2>
+                            </div>
+                            <div class="brief"[ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">
+                                <p *ngFor="let desc of serviceDetails.descriptionOne">
+                                    {{desc}}
+                                </p>
+                                
+                            </div>
+                        </div> -->
+                        <div class="image h-100 w-100 text-align-center">
+                            <img class=" w-100" height="150" style="max-height:65vh; object-fit:cover; max-width:70vw;border-radius:10px;opacity:0.8;"
+                                [src]="serviceDetails.img1" alt="">
+                        </div>
+                    </div>
+                    <div
+                        class="ipad-width d-flex align-items-center mt-5 my-lg-5 justify-content-start flex-column flex-lg-row-reverse">
+                        <div class="text w-100  p-0">
+                            <div class="title">
+                                <h2 class="mb-3 text-capitalize">
+                                    {{serviceDetails.title2}}
+                                </h2>
+                            </div>
+                            <div class="brief " [ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">
+                                <p *ngFor="let desc of serviceDetails.descriptionOne">
+                                    {{desc}}
+                                </p>
+                                <p *ngFor="let desc of serviceDetails.descriptionTwo">
+                                    {{desc}}
+                                </p>
+    
+                                <!-- <p>
+                                    Higher visibility leads to increased website traffic, which can result in more leads,
+                                    conversions, and revenue. Additionally, SEO helps build credibility and trust with
+                                    users, as websites that appear at the top of search results are often perceived as more
+                                    authoritative and reliable. In today's competitive digital landscape, investing in SEO
+                                    is essential for staying ahead of the competition and achieving long-term success.
+                                </p>
+    
+                                <p>
+                                    Are you searching for a top-tier SEO company that delivers tangible results? Look no
+                                    further. Our team specializes in driving real, measurable outcomes through strategic
+                                    search engine optimization tactics. With a proven track record of success, we combine
+                                    innovative strategies, industry expertise, and data-driven approaches to elevate your
+                                    online presence and propel your business to new heights. Partner with Quantum IT and
+                                    experience the difference of working with a results-oriented SEO leader.
+                                </p> -->
+                            </div>
+                        </div>
+                        <!-- <div class="image h-100 w-100">
+                            <img class=" rounded-3 w-100" [src]="serviceDetails.img2" alt="">
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="frame-3 container-fluid px-0 d-flex">
+            <div class="container-fluid d-flex flex-column justify-content-center my-5 px-lg-5">
+                <div class="heading d-none d-sm-flex justify-content-center align-items-center">
+                    <div class="text w-100 d-flex flex-column justify-content-center align-items-center ">
+                        <div class="button my-3">
+                            <button class="our-process-btn">
+                                Our Services
+                            </button>
+                        </div>
+                        <div class="txt w-75 text-center my-3">
+                            <h1 class="text-capitalize">{{serviceDetails.service}}</h1>
+                        </div>
+    
+                        <div class="steps-container squares w-100 mt-lg-5 mt-4 mb-lg-3 ">
+                            <ng-container *ngFor="let step of serviceDetails.steps">
+                                <div class="step-line" [ngStyle]="{'background-color':isDarkTheme?'white':'black'}"></div>
+                                <div class="" [ngClass]="isDarkTheme?'step-square':'step-square-light'">Step 0{{step.num}}
+                                </div>
+                                <div class="step-line" [ngStyle]="{'background-color':isDarkTheme?'white':'black'}"></div>
+                            </ng-container>
+                            <!-- <div class="step-line"></div>
+                            <div class="step-square">Step 01</div>
+                            <div class="step-line"></div>
+                            <div class="step-square">Step 02</div>
+                            <div class="step-line"></div>
+                            <div class="step-square">Step 03</div>
+                            <div class="step-line"></div> -->
+                        </div>
+                        <div class="steps-container steps-container2 w-100 mt-5 ">
+                            <ng-container *ngFor="let step of serviceDetails.steps">
+                                <div
+                                    class="step-title w-100 mt-3 mt-lg-0 d-flex flex-column align-items-center justify-content-center">
+                                    <p class="w-75 fw-lighter fs-4 text-align-center">{{step.title}}</p>
+                                    <p class="w-75 fw-lighter text-align-center"
+                                        [ngStyle]="{'opacity':isDarkTheme?'1':'1'}">{{step.desc}}
+                                    </p>
+                                </div>
+                                <div class="step-dashed-line visually-hidden"></div>
+                            </ng-container>
+                            <!-- <div
+                                class="step-title w-25 mt-3 mt-lg-0 d-flex flex-column align-items-center justify-content-center">
+                                <p class="w-50 fw-lighter fs-5 text-align-center">Off Page
+                                    SEO</p>
+                                <p class="w-75 fw-lighter fs-6 text-align-center" style="color: #B5B5B5;">Off-page SEO
+                                    builds website authority with tactics like backlinks and social media engagement.</p>
+                            </div>
+                            <div class="step-dashed-line visually-hidden"></div>
+                            <div
+                                class="step-title w-25 mt-3 mt-lg-0 d-flex justify-content-center align-items-center flex-column">
+                                <p class="w-50 fw-lighter fs-5 text-align-center">Ecommerce
+                                    SEO
+                                </p>
+                                <p class="w-75 fw-lighter fs-6 text-align-center" style="color: #B5B5B5;">
+                                    E-Commerce SEO boosts online store visibility and sales through tailored optimization
+                                    strategies.</p>
+                            </div>
+                            <div class="step-dashed-line visually-hidden"></div>
+                            <div
+                                class="step-title w-25 mt-3 mt-lg-0 d-flex justify-content-center align-items-center flex-column">
+                                <p class="w50 fw-lighter fs-5 text-align-center">Enterprise
+                                    SEO</p>
+                                <p class="w-75 fw-lighter fs-6 text-align-center" style="color: #B5B5B5;">
+                                    Enterprise SEO optimizes large-scale websites for maximum visibility and impact.</p>
+                            </div>
+                            <div class="step-dashed-line visually-hidden"></div> -->
+                        </div>
+    
+                        <div class="container button w-100 d-flex mt-3 mt-lg-5 align-items-center justify-content-center">
+                            <button [ngStyle]="{'background':isDarkTheme?'#111111':'#ECF0FF'}"
+                                [ngClass]="isDarkTheme?'text-white':'text-black'" class="our-marketing-btn ">
+                                <!-- <i [ngClass]="isDarkTheme?'text-white':'text-black'"
+                                    class="fa-solid fa-arrow-left  mx-2"></i> -->
+                                Our Services
+                                <!-- <i [ngClass]="isDarkTheme?'text-white':'text-black'"
+                                    class="fa-solid fa-arrow-right  mx-2"></i> -->
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div id="carouselExampleControls" class="carousel slide d-block d-sm-none" data-ride="carousel">
+                    <div class="carousel-inner ">
+                        <div class="text w-100 d-flex flex-column justify-content-center align-items-center ">
+                            <div class="button my-3">
+                                <button class="our-process-btn">
+                                    Our Services
+                                </button>
+                            </div>
+                            <div class="txt w-75 text-center my-3">
+                                <h1 class="text-capitalize">{{serviceDetails.service}}</h1>
+                            </div>
+                        </div>
+                        <div class="carousel-item" *ngFor="let step of serviceDetails.steps;let i=index;"
+                            [ngClass]="{'active': i === 0}">
+                            <div class="steps-container squares w-100 mt-lg-5 mt-4 mb-lg-3 ">
+                                <ng-container>
+                                    <div class="step-line" [ngStyle]="{'background-color':isDarkTheme?'white':'black'}">
+                                    </div>
+                                    <div class="" [ngClass]="isDarkTheme?'step-square':'step-square-light'">Step
+                                        0{{step.num}}</div>
+                                    <div class="step-line" [ngStyle]="{'background-color':isDarkTheme?'white':'black'}">
+                                    </div>
+                                </ng-container>
+                            </div>
+                            <div class="steps-container steps-container2 gap-lg-3 w-100 mt-5 ">
+                                <ng-container>
+                                    <div
+                                        class="step-title w-100 mt-3 mt-lg-0 d-flex flex-column align-items-center justify-content-center">
+                                        <p class="w-75 fw-lighter fs-4 text-align-center">{{step.title}}</p>
+                                        <p class="w-75 fw-lighter fs-6 text-align-center"
+                                            [ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">{{step.desc}}
+                                        </p>
+                                    </div>
+                                    <div class="step-dashed-line visually-hidden"></div>
+                                </ng-container>
+                            </div>
+    
+                        </div>
+                    </div>
+                    <div class="container button w-100 d-flex mt-5 align-items-center justify-content-center">
+                        <button [ngStyle]="{'background':isDarkTheme?'#111111':'#ECF0FF'}"
+                            [ngClass]="isDarkTheme?'text-white':'text-black'" class="our-marketing-btn ">
+                            <i [ngClass]="isDarkTheme?'text-white':'text-black'" class="fa-solid fa-arrow-left  mx-2"
+                                href="#carouselExampleControls" role="button" data-slide="prev"></i>
+                            Our Services
+                            <i [ngClass]="isDarkTheme?'text-white':'text-black'" class="fa-solid fa-arrow-right  mx-2"
+                                href="#carouselExampleControls" role="button" data-slide="next"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="frame-4 my-5 container-fluid our-process">
+            <div
+                class="container d-flex flex-column flex-lg-row justify-content-center align-items-center align-items-lg-start">
+                <div class="text frame-2-head w-50 d-flex flex-column align-items-center align-items-lg-start ">
+                    <div class="button">
+                        <button class="our-process-btn">
+                            Our Services
+                        </button>
+                    </div>
+                    <div class="txt w-100">
+                        <h1 class="text-align-center text-lg-start text-capitalize">Our Approach
+                        </h1>
+                    </div>
+                    <div class="txt w-100">
+                        <p class="text-align-center text-lg-start text-capitalize sub-heading "
+                            [ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">we rank your website at top of google
+    
+                            Everest
+                        </p>
+                    </div>
+                </div>
+                <div class="container w-100 d-flex">
+                    <div class="processes d-flex flex-column">
+                        <div data-aos="fade-up" *ngFor="let approach of serviceDetails.ourApproach"
+                            class="process d-flex justify-content-between hover-card ">
+                            <div class="logo mx-3">
+                                <div class="process-square">
+                                    <img [src]="approach.img" alt="">
+                                </div>
+                            </div>
+                            <div class="text mx-3 ">
+                                <div class="title">
+                                    <h4>{{approach.title}}
+    
+                                    </h4>
+                                </div>
+                                <div class="desc mt-3">
+                                    <p class=" fw-light " [ngStyle]="{'opacity':isDarkTheme?'1':'1'}">
+                                        {{approach.desc}}
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="process d-flex justify-content-between">
+                            <div class="logo mx-3">
+                                <div class="process-square">
+                                    <img [src]="approach.img" alt="">
+                                </div>
+                            </div>
+                            <div class="text mx-3 ">
+                                <div class="title">
+                                    <h4>Keyword Research
+    
+                                    </h4>
+                                </div>
+                                <div class="desc">
+                                    <p class=" fw-light">
+                                        We begin by comprehensively understanding your business objectives, target audience,
+                                        and unique requirements to tailor our strategies accordingly.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="process d-flex justify-content-between">
+                            <div class="logo mx-3">
+                                <div class="process-square">
+                                    <img src="../../../../assets/dm/services/comp.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="text mx-3 ">
+                                <div class="title">
+                                    <h4>Understanding Competitors
+    
+                                    </h4>
+                                </div>
+                                <div class="desc">
+                                    <p class=" fw-light">
+                                        By analyzing competitors' strategies and performance, we gain valuable insights to
+                                        refine our approach and stay ahead in the digital landscape.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="process d-flex justify-content-between">
+                            <div class="logo mx-3">
+                                <div class="process-square">
+                                    <img src="../../../../assets/dm/services/web.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="text mx-3 ">
+                                <div class="title">
+                                    <h4>Web Design & Development
+    
+                                    </h4>
+                                </div>
+                                <div class="desc">
+                                    <p class=" fw-light">
+                                        Our expert team combines cutting-edge design principles with advanced development
+                                        techniques to create visually stunning and user-friendly websites that effectively
+                                        engage your audience and drive conversions.
+                                    </p>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="frame-5 my-5">
+            <div class="container px-lg-3 d-flex flex-column align-items-center align-items-lg-start">
+                <div class="text my-5 frame-2-head w-100 d-flex flex-column align-items-center  ">
+                    <div class="button mb-4">
+                        <button class="our-process-btn">
+                            Our Tools
+                        </button>
+                    </div>
+                    <div class="txt w-75">
+                        <h1 class="text-align-center text-capitalize">
+                            Our Design Technology Tool Stack
+                        </h1>
+                    </div>
+                </div>
+                <div class="tech-stack my-5 w-100">
+                    <div class="d-flex flex-wrap w-100 justify-content-between m-auto  align-items-center">
+                        <div data-aos="fade-up" [ngStyle]="{background:isDarkTheme?'#111111':'#ECF0FF'}"
+                            class="stack d-flex align-items-center justify-content-between hover-card">
+                            <div class="logo mx-3">
+                                <img src="../../../../assets/dm/services/figma.svg" alt="">
+                            </div>
+                            <div class="name mx-3">
+                                <h5 class=" fw-light">Figma</h5>
+                            </div>
+                        </div>
+                        <div data-aos="fade-down" [ngStyle]="{background:isDarkTheme?'#111111':'#ECF0FF'}"
+                            class="stack d-flex align-items-center justify-content-between hover-card">
+                            <div class="logo mx-3">
+                                <img src="../../../../assets/dm/services/vs.svg" alt="">
+                            </div>
+                            <div class="name mx-3">
+                                <h5 class=" fw-light">Visual Studio</h5>
+                            </div>
+                        </div>
+                        <div data-aos="fade-up" [ngStyle]="{background:isDarkTheme?'#111111':'#ECF0FF'}"
+                            class="stack d-flex align-items-center justify-content-between hover-card">
+                            <div class="logo mx-3">
+                                <img src="../../../../assets/dm/services/react.svg" alt="">
+                            </div>
+                            <div class="name mx-3">
+                                <h5 class=" fw-light">React</h5>
+                            </div>
+                        </div>
+                        <div data-aos="fade-down" [ngStyle]="{background:isDarkTheme?'#111111':'#ECF0FF'}"
+                            class="stack d-flex align-items-center justify-content-between hover-card">
+                            <div class="logo mx-3">
+                                <img src="../../../../assets/dm/services/git.svg" alt="">
+                            </div>
+                            <div class="name mx-3">
+                                <h5 class=" fw-light">Gitlab</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<app-form></app-form>

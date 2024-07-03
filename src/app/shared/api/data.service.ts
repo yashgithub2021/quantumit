@@ -12,27 +12,27 @@ export class DataService implements Resolve<any> {
 
   resolve(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): Observable<any> {
     const id = route.paramMap.get('id');
-    if (id === 'android') {
+    if (id === 'android-application-development-company') {
       return of({ title: 'Android App', services: androidService });
-    } else if (id === 'ios') {
+    } else if (id === 'iphone-application-development-company') {
       return of({ title: 'iOS App', services: iOsService });
-    } else if (id === 'swift') {
+    } else if (id === 'swift-application-development-company') {
       return of({ title: 'swift App', services: swiftAppDevelopment });
-    } else if (id === 'crossPlatform') {
+    } else if (id === 'cross-platform-mobile-app-development') {
       return of({ title: 'cross Platfom App', services: crossPlatformAppDevelopment });
-    } else if (id === 'iPad') {
+    } else if (id === 'ipad-app-development-company') {
       return of({ title: 'iPad App', services: iPadAppDevelopment });
-    } else if (id === 'mobileGame') {
+    } else if (id === 'mobile-game-development-company') {
       return of({ title: 'mobileGame App', services: mobileGameDevelopment });
     } else if (id === 'iot') {
       return of({ title: 'internet of things', services: internetOfThings });
-    } else if (id === 'roboticProcessAutomation') {
+    } else if (id === 'robotic-process-automation') {
       return of({ title: 'RAP', services: roboticProcessAutomation });
-    } else if (id === 'seoServices') {
+    } else if (id === 'seo-services-company') {
       return of({ title: 'seo Services', services: seoServices });
-    } else if (id === 'payPerClick') {
+    } else if (id === 'ppc-campaign-management-services') {
       return of({ title: 'payPerClick Services', services: payPerClickServices });
-    } else if (id === 'socialMedia') {
+    } else if (id === 'social-media-marketing') {
       return of({ title: 'socialMedia Services', services: socialMediaServices });
     } else if (id === 'emailMarketing') {
       return of({ title: 'emailMarketing Services', services: emailMarketingServices });
@@ -46,15 +46,15 @@ export class DataService implements Resolve<any> {
       return of({ title: 'websiteDev Services', services: websiteDevServices });
     } else if (id === 'mobileDev') {
       return of({ title: 'mobileDev Services', services: mobileDevServices });
-    } else if (id === 'php') {
+    } else if (id === 'php-development-company') {
       return of({ title: 'php Services', services: phpDevelopmentServices });
-    } else if (id === 'dotnet') {
+    } else if (id === 'dotnet-development-company') {
       return of({ title: 'dotnet Services', services: dotNetDevelopmentServices });
-    } else if (id === 'ror') {
+    } else if (id === 'ruby-on-rails-development-company') {
       return of({ title: 'ror Services', services: rubyOnRailsDevelopmentServices });
-    } else if (id === 'node') {
+    } else if (id === 'node-js-development') {
       return of({ title: 'node Services', services: nodejsDevelopmentServices });
-    } else if (id === 'joomla') {
+    } else if (id === 'joomla-development-company') {
       return of({ title: 'joomla Services', services: joomlaDevelopmentServices });
     } else {
       return of(null); // Return null for unknown IDs
