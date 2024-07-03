@@ -72,6 +72,11 @@ export class PortfoliohomeComponent implements OnInit {
     this.filterProjects('Web App');
     this.activeTab = 'Web App'
   }
+  webSite() {
+    this.filterProjects('Website');
+    this.activeTab = 'Website'
+  }
+
 
   dmTab() {
     this.filterProjects('Digital Marketing');
