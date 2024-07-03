@@ -16,6 +16,7 @@ export class BlogComponent implements OnInit {
   pageSize:number=4;
   currentPage:number=1;
   totalItem!:number;
+  loadingStatus:boolean=true;
 
   constructor(private api: ApiService, private titlecase: TitleCasePipe) { }
 
@@ -37,7 +38,10 @@ export class BlogComponent implements OnInit {
       .subscribe((res: any) => {
         this.blogs = res.blogs;
         this.totalItem=this.blogs.length;
+        this.loadingStatus=false;
         console.log(this.blogs)
+      },err=>{
+        this.loadingStatus=false;
       })
   }
 
