@@ -17,7 +17,6 @@ import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgxSpinnerModule } from 'ngx-spinner';
 import { DetailsComponent } from './components/details/details.component';
-import { ServicesComponent } from './components/services/services.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,7 +26,6 @@ import { ServicesComponent } from './components/services/services.component';
     WebdevComponent,
     AiRobotComponent,
     DetailsComponent,
-    ServicesComponent
   ],
   imports: [
     BrowserModule,

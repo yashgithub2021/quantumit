@@ -8,7 +8,6 @@ import { FormComponent } from './components/form/form.component';
 import { MobileModule } from './pages/mobile/mobile.module';
 import { DetailsComponent } from './components/details/details.component';
 import { DataService } from './shared/api/data.service';
-import { ServicesComponent } from './components/services/services.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent, },
@@ -39,7 +38,7 @@ const routes: Routes = [
     path: 'portfolio', loadChildren: () => import('./pages/portfolio/portfolio.module').then(m => m.PortfolioModule)
   },
   { path: 'form', component: FormComponent },
-  
+
   { path:':id',component:DetailsComponent, resolve: {
     services: DataService 
   }},
