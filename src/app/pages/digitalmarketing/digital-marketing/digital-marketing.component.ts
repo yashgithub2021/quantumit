@@ -47,7 +47,8 @@ export class DigitalMarketingComponent implements OnInit {
     {
       name: "Seanautic Marine Inc. Organic Traffic",
       num: "+34.7k",
-      types: ['Keyword Ranking', 'SEO', 'Marketing']
+      types: ['Keyword Ranking', 'SEO', 'Marketing'],
+      link:'/digital-marketing/casestudy'
     },
     {
       name: "Diva Beauty Of Organic Traffic",

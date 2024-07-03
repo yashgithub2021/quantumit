@@ -73,6 +73,7 @@ export class CasestudyComponent implements OnInit {
     this.sectionFourNums.forEach(item => {
       this.incrementNumber(item);
     });
+    this.scrollToTop();
   }
   incrementNumber(item:any) {
     const targetNum = parseInt(item.num.replace('+', ''), 10);
@@ -91,5 +92,8 @@ export class CasestudyComponent implements OnInit {
     this.api.themeChanged.subscribe((isDarkTheme: boolean) => {
       this.isDarkTheme = isDarkTheme;
     });
+  }
+  scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 }

@@ -289,11 +289,11 @@
             <div class="slider" [ngStyle]="{background:isDarkTheme?'#111111':'#ECF0FF'}">
                 <div class="slide-track">
                     <div class="slide" *ngFor="let img of brandLogo">
-                        <img [ngStyle]="{filter:isDarkTheme?'invert(0)':'invert(1)'}" height="100" width="100"
+                        <img [ngStyle]="{filter:isDarkTheme?'invert(0)':'invert(1)'}" style="height:55px;"
                             [src]="img.img" class="d-block w-auto" alt="...">
                     </div>
                     <div class="slide" *ngFor="let img of brandLogo">
-                        <img [ngStyle]="{filter:isDarkTheme?'invert(0)':'invert(1)'}" height="100" width="100"
+                        <img [ngStyle]="{filter:isDarkTheme?'invert(0)':'invert(1)'}" style="height:55px;"
                             [src]="img.img" class="d-block w-auto" alt="...">
                     </div>
                 </div>
@@ -557,7 +557,7 @@
                                 </div>
                             </div>
                             <div class="details w-100 h-100">
-                                <div class="text d-flex flex-column ">
+                                <div class="text d-flex flex-column "routerLink="{{story.link}}">
                                     <div data-aos="fade-up" class="name my-2">
                                         <h3 class="">{{story.name}}</h3>
                                     </div>
