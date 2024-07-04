@@ -8,7 +8,6 @@ import { DetailsComponent } from './details/details.component';
 import { CasestudyComponent } from './casestudy/casestudy.component';
 import { AppDetailsComponent } from './app-details/app-details.component';
 import { NgxSpinnerModule } from 'ngx-spinner';
-import { TruncateAtPointPipe } from 'src/app/shared/pipes/truncate-at-point.pipe';
 
 
 @NgModule({

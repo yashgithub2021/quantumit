@@ -49,86 +49,86 @@ export class AiRobotComponent implements OnInit {
     {
       img: '../../../assets/services/AI_service/aigenerator/img1.png',
       title: 'Generative Ai Development',
-      link: ''
+      link: '/ai/Generative-Ai-Development'
     }, {
       img: '../../../assets/services/AI_service/aigenerator/img2.png',
-      title: 'Generative Ai  integration services',
-      link: ''
+      title: 'Generative Ai integration services',
+      link: 'Generative-Ai-Integration-Services'
     }, {
       img: '../../../assets/services/AI_service/aigenerator/img3.png',
-      title: 'Generative Ai  consulting company',
-      link: ''
+      title: 'Generative Ai consulting company',
+      link: 'Generative-Ai-consulting-company'
     }, {
       img: '../../../assets/services/AI_service/aigenerator/img4.png',
       title: 'hire generative ai engineers',
-      link: ''
+      link: 'hire-generative-ai-engineers'
     }, {
       img: '../../../assets/services/AI_service/aigenerator/img5.png',
       title: 'Ai Agent Development',
-      link: ''
+      link: 'Ai-Agent-Development'
     }, {
       img: '../../../assets/services/AI_service/aigenerator/img6.png',
       title: 'Ai Copilot Development',
-      link: ''
+      link: 'Ai-Copilot-Development'
     }, {
       img: '../../../assets/services/AI_service/aigenerator/img7.png',
       title: 'Hire Prompt Engineers',
-      link: ''
+      link: 'Hire-Prompt-Engineers'
     }, {
       img: '../../../assets/services/AI_service/aigenerator/img8.png',
       title: 'Adaptive Ai Development Co.',
-      link: ''
+      link: 'Adaptive-Ai-Development-Co.'
     }, {
       img: '../../../assets/services/AI_service/aigenerator/img9.png',
       title: 'ChatGPT Developers',
-      link: ''
+      link: 'ChatGPT-Developers'
     }, {
       img: '../../../assets/services/AI_service/aigenerator/img10.png',
       title: 'Stable Diffusion Developers',
-      link: ''
+      link: 'Stable-Diffusion-Developers'
     }, {
       img: '../../../assets/services/AI_service/aigenerator/img11.png',
       title: 'ChatGPT Integration Service',
-      link: ''
+      link: 'ChatGPT-Integration-Service'
     }, {
       img: '../../../assets/services/AI_service/aigenerator/img12.png',
       title: 'Large Language Model',
-      link: ''
+      link: 'Large-Language-Model'
     },
   ]
   ourAIServices: any[] = [
     {
       img: '../../../assets/services/AI_service/aiservice/img1.png',
       title: 'Ai Development',
-      link: ''
+      link: 'Ai-Development'
     }, {
       img: '../../../assets/services/AI_service/aiservice/img2.png',
       title: 'Ai Consulting',
-      link: ''
+      link: 'Ai-Consulting'
     }, {
       img: '../../../assets/services/AI_service/aiservice/img3.png',
       title: 'Ai As A Service',
-      link: ''
+      link: 'Ai-As-A-Service'
     }, {
       img: '../../../assets/services/AI_service/aiservice/img4.png',
       title: 'hire Action Transformer Developer',
-      link: ''
+      link: 'Hire-Action-Transformer-Developer'
     }, {
       img: '../../../assets/services/AI_service/aiservice/img5.png',
       title: 'Ai Agent Development',
-      link: ''
+      link: 'Ai-Agent-Development'
     }, {
       img: '../../../assets/services/AI_service/aiservice/img6.png',
       title: 'MLOps Consulting service',
-      link: ''
+      link: 'MLOps-Consulting-service'
     }, {
       img: '../../../assets/services/AI_service/aiservice/img7.png',
       title: 'Enterprise Ai Development',
-      link: ''
+      link: 'Enterprise-Ai-Development'
     }, {
       img: '../../../assets/services/AI_service/aiservice/img8.png',
       title: 'Ai Chatbot Development Co.',
-      link: ''
+      link: 'Ai-Chatbot-Development-Co'
     }
   ]
 

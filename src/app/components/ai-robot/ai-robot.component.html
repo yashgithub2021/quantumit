@@ -30,16 +30,18 @@
                 </button>
             </div>
             <div class="txt w-75 text-align-center px-sm-5 px-2 my-lg-4" data-aos="slide-up">
-                <h1 style="font-size:20px!important;line-height:35px!important;">Deliver dynamic business solutions using data science, machine learning, and AI technologies
+                <h1 style="font-size:20px!important;line-height:35px!important;">Deliver dynamic business solutions
+                    using data science, machine learning, and AI technologies
                     tailored to your needs.</h1>
             </div>
         </div>
         <div class="milestones container my-3">
             <div class="row custom-gap d-flex align-items-center justify-content-lg-center justify-content-evenly">
                 <div *ngFor="let stone of milestones" data-aos="slide-up"
-                    class="col-sm-3 col-8 milestone-col m-lg-2 d-flex align-items-center flex-sm-column flex-row  flex-lg-row justify-content-around h-100"style="max-width:250px;">
+                    class="col-sm-3 col-8 milestone-col m-lg-2 d-flex align-items-center flex-sm-column flex-row  flex-lg-row justify-content-around h-100"
+                    style="max-width:250px;">
                     <div class="image">
-                        <img [src]="stone.img" class="milestone-img" alt=""style="height:50px;">
+                        <img [src]="stone.img" class="milestone-img" alt="" style="height:50px;">
                     </div>
                     <div class="number d-flex flex-column justify-content-center justify-content-lg-start ">
                         <h1 class=" fw-lighter">{{stone.num}}</h1>
@@ -99,19 +101,22 @@
         </div>
         <div class="what-we-do w-100 h-100 mt-lg-5 container" data-aos="zoom-in">
             <div class="row w-100 h-100 gap-2 justify-content-center">
-                <div *ngFor="let data of ourAIGenerative;let i=index;" data-aos="zoom-out"style="box-shadow:0px 0px 1px black;border-radius:10px;"
-                    [ngStyle]="{background:isDarkTheme?'#111111':'#ECF0FF'}"
-                    class=" col-lg-3 col-6 ai-data2 pt-lg-5 px-lg-5 pb-lg-3 d-flex  align-items-center justify-content-around flex-column">
-                    <div class="image"*ngIf="i!=9">
-                        <img [src]="data.img" alt="" style="height:40px;">
+                <ng-container *ngFor="let data of ourAIGenerative;let i=index;">
+                    <div routerLink="{{data.link}}" data-aos="zoom-out" style="box-shadow:0px 0px 1px black;border-radius:10px;"
+                        [ngStyle]="{background:isDarkTheme?'#111111':'#ECF0FF'}"
+                        class=" col-lg-3 col-6 ai-data2 pt-lg-5 px-lg-5 pb-lg-3 d-flex  align-items-center justify-content-around flex-column">
+                        <div class="image" *ngIf="i!=9">
+                            <img [src]="data.img" alt="" style="height:40px;">
+                        </div>
+                        <div class="image" *ngIf="i==9">
+                            <img [src]="data.img" alt="" style="height:25px;">
+                        </div>
+                        <div class="title w-100 text-center">
+                            <h3 class=" fw-lighter text-capitalize" style="font-size:18px;">{{data.title}}</h3>
+                        </div>
                     </div>
-                    <div class="image"*ngIf="i==9">
-                        <img [src]="data.img" alt="" style="height:25px;">
-                    </div>
-                    <div class="title w-100 text-center">
-                        <h3 class=" fw-lighter text-capitalize"style="font-size:18px;">{{data.title}}</h3>
-                    </div>
-                </div>
+                </ng-container>
+
             </div>
         </div>
 
@@ -131,14 +136,15 @@
         </div>
         <div class="what-we-do w-100 h-100 mt-lg-5 container" data-aos="zoom-in">
             <div class="row w-100 h-100 justify-content-center gap-2">
-                <div *ngFor="let data of ourAIServices" data-aos="zoom-out"style="box-shadow:0px 0px 1px black;border-radius:10px;"
+                <div *ngFor="let data of ourAIServices" data-aos="zoom-out"
+                    style="box-shadow:0px 0px 1px black;border-radius:10px;"
                     [ngStyle]="{background:isDarkTheme?'#111111':'#ECF0FF'}"
                     class=" col-lg-3 col-6 ai-data2 pt-lg-5 px-lg-5 pb-lg-3 d-flex  align-items-center justify-content-around flex-column">
                     <div class="image">
                         <img [src]="data.img" alt="" style="height:40px;">
                     </div>
                     <div class="title w-100 text-center">
-                        <h3 class=" fw-lighter text-capitalize"style="font-size:18px;">{{data.title}}</h3>
+                        <h3 class=" fw-lighter text-capitalize" style="font-size:18px;">{{data.title}}</h3>
                     </div>
                 </div>
             </div>
@@ -183,7 +189,8 @@
     <div [ngClass]="isDarkTheme?'frame-4':'frame-4-light'" class="container w-100">
         <div class="container d-flex flex-column flex-lg-row w-100 h-100">
             <div class="d-block d-sm-none ai-image">
-                <div class="frame-4-image position-relative w-100 h-100 d-flex align-items-center justify-content-center">
+                <div
+                    class="frame-4-image position-relative w-100 h-100 d-flex align-items-center justify-content-center">
                     <div data-aos="zoom-in" class="ai-showcase container w-100 position-absolute h-auto">
                         <div [ngStyle]="{'backdrop-filter': isDarkTheme? 'blur(10px)':'blur(180px)'}"
                             class="ai-showcase-inner d-flex flex-column justify-content-center p-lg-4 ">
@@ -215,7 +222,8 @@
                         </button>
                     </div>
                     <div class="txt w-100 text-align-start text-align-sm-center text-lg-start" data-aos="zoom-in">
-                        <h1>Cutting-edge <br class="d-none d-sm-block"> technology <br class="d-none d-sm-block"> integrating AI and <br class="d-none d-sm-block"> Machine Learning</h1>
+                        <h1>Cutting-edge <br class="d-none d-sm-block"> technology <br class="d-none d-sm-block">
+                            integrating AI and <br class="d-none d-sm-block"> Machine Learning</h1>
                     </div>
                     <div class="desc" data-aos="zoom-in">
                         <p class="m-0 desc-txt sub-heading">
@@ -246,29 +254,30 @@
                 </div>
             </div>
             <!-- <div class="d-none d-sm-block"> -->
-                <div class="frame-4-image position-relative w-100 d-none d-sm-flex align-items-center justify-content-center">
-                    <div data-aos="zoom-in" class="ai-showcase container w-100 position-absolute h-auto">
-                        <div [ngStyle]="{'backdrop-filter': isDarkTheme? 'blur(10px)':'blur(180px)'}"
-                            class="ai-showcase-inner d-flex flex-column justify-content-center p-lg-4 ">
-                            <div class="head d-flex justify-content-between align-items-center">
-                                <div class="txt">
-                                    <p class="showcase-txt">How to use AI to take better notes</p>
-                                </div>
-                                <div data-aos="zoom-out" class="button showcase-btn">
-                                    <img src="../../../assets/ai/magic.png" alt="">
-                                    <button class="magic-btn" routerLink="../ai/casestudy">
-                                        Click To See AI Case Study
-                                    </button>
-                                </div>
+            <div
+                class="frame-4-image position-relative w-100 d-none d-sm-flex align-items-center justify-content-center">
+                <div data-aos="zoom-in" class="ai-showcase container w-100 position-absolute h-auto">
+                    <div [ngStyle]="{'backdrop-filter': isDarkTheme? 'blur(10px)':'blur(180px)'}"
+                        class="ai-showcase-inner d-flex flex-column justify-content-center p-lg-4 ">
+                        <div class="head d-flex justify-content-between align-items-center">
+                            <div class="txt">
+                                <p class="showcase-txt">How to use AI to take better notes</p>
                             </div>
-                            <div class="tail">
-                                <p class="fw-lighter showcase-txt m-0">What can LLMs like GPT do, specifically for
-                                    note-taking?
-                                </p>
+                            <div data-aos="zoom-out" class="button showcase-btn">
+                                <img src="../../../assets/ai/magic.png" alt="">
+                                <button class="magic-btn" routerLink="../ai/casestudy">
+                                    Click To See AI Case Study
+                                </button>
                             </div>
+                        </div>
+                        <div class="tail">
+                            <p class="fw-lighter showcase-txt m-0">What can LLMs like GPT do, specifically for
+                                note-taking?
+                            </p>
                         </div>
                     </div>
                 </div>
+            </div>
             <!-- </div> -->
         </div>
     </div>

@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { ActivatedRouteSnapshot, Resolve, RouterStateSnapshot } from '@angular/router';
 import { Observable, of } from 'rxjs';
-import { androidService, contentMarketingServices, conversionRateOptimizationServices, crossPlatformAppDevelopment, dotNetDevelopmentServices, emailMarketingServices, iOsService, iPadAppDevelopment, internetOfThings, joomlaDevelopmentServices, mobileDevServices, mobileGameDevelopment, nodejsDevelopmentServices, paidSearchAdvertisingServices, payPerClickServices, phpDevelopmentServices, roboticProcessAutomation, rubyOnRailsDevelopmentServices, seoServices, socialMediaServices, swiftAppDevelopment, websiteDevServices } from '../shared/service-data';
+import { GenerativeAiDevelopment, androidService, contentMarketingServices, conversionRateOptimizationServices, crossPlatformAppDevelopment, dotNetDevelopmentServices, emailMarketingServices, iOsService, iPadAppDevelopment, internetOfThings, joomlaDevelopmentServices, mobileDevServices, mobileGameDevelopment, nodejsDevelopmentServices, paidSearchAdvertisingServices, payPerClickServices, phpDevelopmentServices, roboticProcessAutomation, rubyOnRailsDevelopmentServices, seoServices, socialMediaServices, swiftAppDevelopment, websiteDevServices } from '../shared/service-data';
 
 @Injectable({
   providedIn: 'root'
@@ -56,6 +56,50 @@ export class DataService implements Resolve<any> {
       return of({ title: 'node Services', services: nodejsDevelopmentServices });
     } else if (id === 'joomla-development-company') {
       return of({ title: 'joomla Services', services: joomlaDevelopmentServices });
+    }
+    //for ai generative services
+    else if (id === 'Generative-Ai-Development') {
+      return of({ title: 'Generative Ai Development', services: GenerativeAiDevelopment });
+    }else if (id === 'Generative-Ai-Integration-Services') {
+      return of({ title: 'Generative Ai Integration Services', services: joomlaDevelopmentServices });
+    }else if (id === 'Generative-Ai-consulting-company') {
+      return of({ title: 'Generative Ai consulting company', services: joomlaDevelopmentServices });
+    }else if (id === 'hire-generative-ai-engineers') {
+      return of({ title: 'hire generative ai engineers', services: joomlaDevelopmentServices });
+    }else if (id === 'Ai-Agent-Development') {
+      return of({ title: 'Ai Agent Development', services: joomlaDevelopmentServices });
+    }else if (id === 'Ai-Copilot-Development') {
+      return of({ title: 'Ai Copilot Development', services: joomlaDevelopmentServices });
+    }else if (id === 'Hire-Prompt-Engineers') {
+      return of({ title: 'Hire Prompt Engineers', services: joomlaDevelopmentServices });
+    }else if (id === 'Adaptive-Ai-Development-Co.') {
+      return of({ title: 'Adaptive Ai Development Co.', services: joomlaDevelopmentServices });
+    }else if (id === 'ChatGPT-Developers') {
+      return of({ title: 'ChatGPT Developers', services: joomlaDevelopmentServices });
+    }else if (id === 'Stable-Diffusion-Developers') {
+      return of({ title: 'Stable Diffusion Developers', services: joomlaDevelopmentServices });
+    }else if (id === 'ChatGPT-Integration-Service') {
+      return of({ title: 'ChatGPT Integration Service', services: joomlaDevelopmentServices });
+    }else if (id === 'Large-Language-Model') {
+      return of({ title: 'Large Language Model', services: joomlaDevelopmentServices });
+    }
+    //for ai service
+    else if (id === 'Ai-Development') {
+      return of({ title: 'Ai Development', services: joomlaDevelopmentServices });
+    }else if (id === 'Ai-Consulting') {
+      return of({ title: 'Ai Consulting', services: joomlaDevelopmentServices });
+    }else if (id === 'Ai-As-A-Service') {
+      return of({ title: 'Ai As A Service', services: joomlaDevelopmentServices });
+    }else if (id === 'Hire-Action-Transformer-Developer') {
+      return of({ title: 'Hire Action Transformer Developer', services: joomlaDevelopmentServices });
+    }else if (id === 'Ai-Agent-Development') {
+      return of({ title: 'Ai Agent Development', services: joomlaDevelopmentServices });
+    } else if (id === 'MLOps-Consulting-service') {
+      return of({ title: 'MLOps Consulting service', services: joomlaDevelopmentServices });
+    }else if (id === 'Enterprise-Ai-Development') {
+      return of({ title: 'Enterprise Ai Development', services: joomlaDevelopmentServices });
+    }else if (id === 'Ai-Chatbot-Development-Co') {
+      return of({ title: 'Ai Chatbot Development Co', services: joomlaDevelopmentServices });
     } else {
       return of(null); // Return null for unknown IDs
     }

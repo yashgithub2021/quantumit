@@ -21,11 +21,11 @@
     <!-- scrollbar -->
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="4000">
         <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1" class=""></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2" class=""></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="3" class=""></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="4" class=""></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"[ngStyle]="{'background':isDarkTheme ?'#FFFFFF':'black'}"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1" class=""[ngStyle]="{'background':isDarkTheme ?'#FFFFFF':'black'}"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2" class=""[ngStyle]="{'background':isDarkTheme ?'#FFFFFF':'black'}"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3" class=""[ngStyle]="{'background':isDarkTheme ?'#FFFFFF':'black'}"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="4" class=""[ngStyle]="{'background':isDarkTheme ?'#FFFFFF':'black'}"></li>
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -365,7 +365,7 @@
             </div>
         </div>
         <div class="our-customers d-flex container">
-            <img src="../../../assets/home/home_map_light.png" alt="">
+            <img src="../../../assets/home/map.png" alt="">
         </div>
     </div>
 
