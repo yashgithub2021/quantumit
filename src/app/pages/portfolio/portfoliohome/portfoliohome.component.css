@@ -3,12 +3,14 @@
 }
 
 .numbers-section {
-    padding: 50px 50px;
+    padding: 60px 60px;
     background: linear-gradient(90deg, #43BAFF 0%, #7141B1 100%);
 }
 
 .latest-news {
     width: 60% !important;
+    min-height:120px;
+
 }
 
 .our-service-btn {

@@ -1,5 +1,5 @@
 <div class="contianer-fluid services">
-    <div class="container frame-1 p-5 pb-0 my-2">
+    <div class="container frame-1 px-5 p-sm-5 pb-0 my-2">
         <div class="heading d-flex flex-column flex-lg-row justify-content-between align-items-center">
             <div class="text frame-2-head w-100 d-flex align-items-center align-items-lg-start flex-column ">
                 <div class="button">
@@ -7,34 +7,39 @@
                         Home > <span style="color: white;" class="">Services Details</span>
                     </button>
                 </div>
-                <div class="txt w-100 mt-3">
+                <!-- <div class="txt w-100 mt-3">
                     <h1 class="text-align-center fw-bolder text-lg-start">
                         <span class="linear-text text-decoration-underline">{{androidService.title1}} </span>
                         {{androidService.title2}}
                     </h1>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
 
-    <div class="frame-3 container p-0 p-lg-5 mb-2">
+    <div class="frame-3 container p-0 px-lg-5">
         <div class="service-section">
             <div class="d-flex align-items-center flex-column h-100 w-100 ">
-                <div class="d-flex align-items-center flex-column flex-lg-row my-5 h-100 w-100">
-                    <!-- <div class="text w-100 p-0">
-                        <div class="brief " [ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">
-                            <p *ngFor="let description of androidService.descriptionOne">
+                <div class="d-flex gap-5 align-items-center flex-column flex-lg-row my-sm-5 h-100 w-100">
+                    <div class="text w-100 p-0">
+                        <div class="brief ">
+                            <div class="txt w-100 mt-3">
+                                <h1 class="text-align-center fw-bolder text-lg-start">
+                                    <span class="linear-text text-decoration-underline">{{androidService.title1}} </span>
+                                    {{androidService.title2}}
+                                </h1>
+                            </div>
+                            <p *ngFor="let description of androidService.descriptionTwo"[ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">
                                 {{description}}
                             </p>
-                            
                         </div>
-                        
-                    </div> -->
+                    </div>
                     <div class="image h-100 w-100 ">
-                        <img class="w-100" style="max-height:65vh; object-fit:cover;border-radius:10px;opacity:0.8" [src]="androidService.img1" alt="">
+                        <img class="w-100" style=" object-fit:cover;border-radius:10px;opacity:0.8"
+                            [src]="androidService.img1" alt="">
                     </div>
                 </div>
-                <div class="d-flex align-items-center my-5 flex-column flex-lg-row-reverse">
+                <!-- <div class="d-flex align-items-center my-5 flex-column flex-lg-row-reverse">
                     <div class="text w-100 p-0">
                         <div class="brief" [ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">
                             <p *ngFor="let description of androidService.descriptionOne">
@@ -45,15 +50,42 @@
                             </p>
                         </div>
                     </div>
-                    <!-- <div class="image h-100 w-100">
+                    <div class="image h-100 w-100">
 
                         <img class="rounded-3" [src]="androidService.img2" alt="">
-                    </div> -->
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="">
+        <div class="d-flex justify-content-center align-items-center mt-3">
+            <div class="slider" [ngClass]="isDarkTheme?'slider-dark':'slider-light'">
+                <div class="slide-track">
+                    <div class="slide" *ngFor="let img of brandLogo">
+                        <img [ngStyle]="{filter:isDarkTheme?'invert(0)':'invert(1)'}" style="height:55px"
+                            [src]="img.img" class="d-block w-auto" alt="...">
+                    </div>
+                    <div class="slide" *ngFor="let img of brandLogo">
+                        <img [ngStyle]="{filter:isDarkTheme?'invert(0)':'invert(1)'}" style="height:55px"
+                            [src]="img.img" class="d-block w-auto" alt="...">
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
+    <div class="container numbers w-100 mt-5">
+        <div class="numbers-section container w-100">
+            <div class="row text-align-center justify-content-center align-content-center">
+                <div *ngFor="let nums of sectionFourNums" class="miletone-container col-sm-3 col-12 text-white">
+                    <div class="miletone-number fw-bolder">{{nums.currentNum}} +</div>
+                    <div class="miletone-title fw-bolder text-uppercase">● {{nums.heading}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="container d-flex frame-2">
         <div class="container d-flex flex-column justify-content-between my-5 px-lg-5">
@@ -387,7 +419,7 @@
                             <img src="../../../../assets/dm/services/figma.svg" alt="">
                         </div>
                         <div class="name align-content-center">
-                            <h4 class="mb-0 text-uppercase">Figma</h4>
+                            <h4 class="mb-0 text-uppercase ">Figma</h4>
                         </div>
                     </div>
                     <div [ngStyle]="{'background':isDarkTheme?'#111111':'#ECF0FF'}"
@@ -405,7 +437,7 @@
                             <img src="../../../../assets/dm/services/react.svg" alt="">
                         </div>
                         <div class="name align-content-center">
-                            <h4 class="mb-0 text-uppercase">React</h4>
+                            <h4 class="mb-0 text-uppercase ">React</h4>
                         </div>
                     </div>
                     <div [ngStyle]="{'background':isDarkTheme?'#111111':'#ECF0FF'}"

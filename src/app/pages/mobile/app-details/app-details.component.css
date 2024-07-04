@@ -68,6 +68,10 @@
     .app-details > .details > .detail:not(:last-child) {
         border-right: 3px solid white;
         padding-right: 6%;
+        padding-left: 3%;
+    }
+    .app-details > .details > .detail:last-child {
+        padding-left: 3%;
     }
     .app-details > .details > .detail:hover {
         

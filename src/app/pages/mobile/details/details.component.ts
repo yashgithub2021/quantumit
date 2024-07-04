@@ -23,8 +23,8 @@ export class DetailsComponent implements OnInit {
     this.isDarkTheme = this.api.isDarkTheme();
     this.themechange()
     this.route.data.subscribe((data: any) => {
-      console.log(data.services.services)
-      this.androidService = data.services.services
+      console.log(data.services.services);
+      this.androidService = data.services.services;
     });
   }
 

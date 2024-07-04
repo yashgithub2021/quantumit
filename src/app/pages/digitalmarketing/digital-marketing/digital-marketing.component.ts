@@ -42,7 +42,8 @@ export class DigitalMarketingComponent implements OnInit {
     {
       name: " Online Plants NZ Organic Traffic",
       num: "+319k",
-      types: ['Organic Engagement', 'SEO', 'Marketing']
+      types: ['Organic Engagement', 'SEO', 'Marketing'],
+      link:'/digital-marketing/casestudy'
     },
     {
       name: "Seanautic Marine Inc. Organic Traffic",
@@ -53,7 +54,8 @@ export class DigitalMarketingComponent implements OnInit {
     {
       name: "Diva Beauty Of Organic Traffic",
       num: "+991k",
-      types: ['Keyword Ranking', 'SEO', 'Marketing']
+      types: ['Keyword Ranking', 'SEO', 'Marketing'],
+      link:'/digital-marketing/casestudy'
     },
   ]
 

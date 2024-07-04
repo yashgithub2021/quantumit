@@ -1484,3 +1484,84 @@ export const joomlaDevelopmentServices = {
         }
     ]
 };
+
+// ai services
+export const GenerativeAiDevelopment = {
+    title1: "Android App",
+    title2: "Development Solutions",
+    img1: "../../../../assets/services/android/img1.png",
+    // img2: "../../../../assets/services/ios_android/img1.jpg",
+    descriptionOne: [
+        "Our Android app development services offer a comprehensive solution for businesses seeking to establish a strong presence on the Android platform. With the widespread adoption of Android devices worldwide, having a customized mobile application tailored to this ecosystem is essential for reaching and engaging with a diverse audience.",
+        "Our team of experienced Android app developers leverages the latest technologies and best practices to build robust, scalable, and user-friendly applications.",
+        "Whether you need a simple utility app or a complex enterprise-level solution, we have the expertise to deliver results that drive engagement and deliver value to your users."
+    ],
+    descriptionTwo: [
+        "One of the key aspects of our Android app development services is our focus on user experience (UX) design.",
+        "We understand the importance of creating intuitive, visually appealing interfaces that provide seamless navigation and functionality.",
+        "Through careful UI/UX design, we ensure that your app not only looks great but also delivers an exceptional user experience that keeps users coming back for more."
+    ],
+    serviceTitle: "We provide services like",
+    services: [
+        {
+            num: "01.",
+            title: "Mobile App Strategy",
+            desc: "Our mobile app strategy integrates market research, user-centric design, and agile development to create impactful apps aligned with your business goals.",
+            img: '../../../../assets/mobile/service/service-icon1.svg'
+        },
+
+        {
+            num: "02.",
+            title: "Mobile App Design",
+            desc: "Mobile app design focuses on creating intuitive, visually appealing interfaces optimized for seamless user experiences on smartphones and tablets.",
+            img: '../../../../assets/mobile/service/md.svg'
+        },
+
+        {
+            num: "03.",
+            title: "Mobile App Development",
+            desc: "Mobile app development involves designing, building, and launching applications tailored for use on smartphones and tablets across various platforms.",
+            img: '../../../../assets/mobile/service/mad.svg'
+        },
+
+        {
+            num: "04.",
+            title: "Mobile App Testing",
+            desc: "Mobile app testing ensures the functionality, usability, and performance of applications across different devices and platforms to deliver a seamless user experience.",
+            img: '../../../../assets/mobile/service/mat.svg'
+        },
+
+        {
+            num: "05.",
+            title: "Enterprise Mobile App",
+            desc: "Enterprise mobile apps are designed to address the specific needs and workflows of large organizations, enhancing productivity and efficiency in the workplace.",
+            img: '../../../../assets/mobile/service/ema.svg'
+        },
+
+        {
+            num: "06.",
+            title: "Mobile Game Development",
+            desc: "Mobile game development involves creating interactive and engaging gaming experiences optimized for smartphones and tablets, catering to a diverse audience of gamers.",
+            img: '../../../../assets/mobile/service/mgd.svg'
+        },
+    ],
+    methodologyBtnTitle: "Our Methodologies",
+    methodologyTitle: "Our Methodologies for App Development",
+    steps: [
+        {
+            num: 1,
+            title: "Ideation",
+            desc: "Ideation in app development involves brainstorming and refining concepts to create innovative and effective solutions for mobile applications."
+        },
+        {
+            num: 2,
+            title: "UX/UI Design",
+            desc: "UX/UI design focuses on creating intuitive and visually appealing interfaces that prioritize user experience and satisfaction in digital products."
+        },
+        {
+            num: 3,
+            title: "Testing",
+            desc: "Testing ensures the functionality, performance, and usability of digital products to deliver a seamless user experience."
+        }
+    ]
+}
