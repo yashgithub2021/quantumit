@@ -15,7 +15,7 @@ export class MobileappComponent implements OnInit {
   aiService = [
     {
       num: "01.",
-      title: "Curate a skilled team ensuring synergy and expertise",
+      title: "Curate a skilled team, ensuring synergy and expertise",
       desc: "Our app development starts with building a specialized team, ensuring every project receives expert attention and collaboration."
     },
 
@@ -40,7 +40,7 @@ export class MobileappComponent implements OnInit {
     {
       num: "05.",
       title: "Conduct comprehensive code reviews",
-      desc: "Thorough code reviews guarantee high-quality, standard-compliant software, fostering reliability while ensuring consistency across the codebase."
+      desc: "Thorough code reviews guarantee high-quality, standard-compliant software, fostering reliability and consistency across the codebase."
     },
 
     {

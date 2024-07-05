@@ -12,7 +12,8 @@ export class AppDetailsComponent implements OnInit {
   checks = ["Chatbot API", "Facial Recognition API", "Natural language processing APIs", "AWS ML Solutions"]
   isDarkTheme!: boolean;
   projectId!: any
-  projectDetails!: any
+  projectDetails!: any;
+  loadingStatus:boolean=true;
 
   ngOnInit(): void {
     this.isDarkTheme = this.api.isDarkTheme();
@@ -34,8 +35,12 @@ export class AppDetailsComponent implements OnInit {
   }
   fetchProjectDetails() {
     this.api.getProjectsById(this.projectId).subscribe((res: any) => {
-      this.projectDetails = res.project
+      this.projectDetails = res.project;
+      this.loadingStatus=false;
+
       console.log(this.projectDetails)
+    },err=>{
+      this.loadingStatus=false;
     })
   }
 }
