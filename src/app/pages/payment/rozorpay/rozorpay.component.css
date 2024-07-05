@@ -1,0 +1,14 @@
+.container-fluid{
+    background: -webkit-linear-gradient(left, #3931af, #00c6ff);
+}
+.payment-btn{
+    border: none;
+    border-radius: 1.5rem;
+    padding: 2%;
+    background: #0062cc;
+    color: #fff;
+    font-weight: 600;
+    width: 200px;
+    cursor: pointer;
+    text-align: center;
+}

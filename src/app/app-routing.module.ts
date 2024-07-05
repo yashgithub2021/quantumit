@@ -37,6 +37,9 @@ const routes: Routes = [
   {
     path: 'portfolio', loadChildren: () => import('./pages/portfolio/portfolio.module').then(m => m.PortfolioModule)
   },
+  {
+    path:'payment',loadChildren:()=> import('./pages/payment/payment.module').then(m=>m.PaymentModule)
+  },
   { path: 'form', component: FormComponent },
 
   { path:':id',component:DetailsComponent, resolve: {

@@ -1487,81 +1487,96 @@ export const joomlaDevelopmentServices = {
 
 // ai services
 export const GenerativeAiDevelopment = {
-    title1: "Android App",
-    title2: "Development Solutions",
+    title1: "Generative AI",
+    title2: "Integration Services",
     img1: "../../../../assets/services/android/img1.png",
     // img2: "../../../../assets/services/ios_android/img1.jpg",
     descriptionOne: [
-        "Our Android app development services offer a comprehensive solution for businesses seeking to establish a strong presence on the Android platform. With the widespread adoption of Android devices worldwide, having a customized mobile application tailored to this ecosystem is essential for reaching and engaging with a diverse audience.",
-        "Our team of experienced Android app developers leverages the latest technologies and best practices to build robust, scalable, and user-friendly applications.",
-        "Whether you need a simple utility app or a complex enterprise-level solution, we have the expertise to deliver results that drive engagement and deliver value to your users."
+        "For today’s competitive world, using the power of artificial intelligence is imperative for businesses that want to increase their effectiveness in order to stay ahead. At Quantum IT, we aim at creating more generative AI integration systems to suit different organisations' needs. We have developed integration services that allow you to incorporate AI technologies into your current system thus improving operations and unlocking new growth prospects."
     ],
     descriptionTwo: [
-        "One of the key aspects of our Android app development services is our focus on user experience (UX) design.",
-        "We understand the importance of creating intuitive, visually appealing interfaces that provide seamless navigation and functionality.",
-        "Through careful UI/UX design, we ensure that your app not only looks great but also delivers an exceptional user experience that keeps users coming back for more."
+        "For today’s competitive world, using the power of artificial intelligence is imperative for businesses that want to increase their effectiveness in order to stay ahead. At Quantum IT, we aim at creating more generative AI integration systems to suit different organisations' needs. We have developed integration services that allow you to incorporate AI technologies into your current system thus improving operations and unlocking new growth prospects."
     ],
-    serviceTitle: "We provide services like",
+    serviceTitle: "Our Generative AI Integration Services",
     services: [
         {
             num: "01.",
-            title: "Mobile App Strategy",
-            desc: "Our mobile app strategy integrates market research, user-centric design, and agile development to create impactful apps aligned with your business goals.",
+            title: "Generative AI Custom Application Development",
+            desc: "Transform customer interaction and internal process management patterns through unique generative AI apps. Highly customizable tools like advanced chatbots or smart question-answering tools can be added directly into your company’s business processes improving operational efficiency and customer satisfaction.",
             img: '../../../../assets/mobile/service/service-icon1.svg'
         },
 
         {
             num: "02.",
-            title: "Mobile App Design",
-            desc: "Mobile app design focuses on creating intuitive, visually appealing interfaces optimized for seamless user experiences on smartphones and tablets.",
+            title: "Consulting on Generative AI",
+            desc: "Our team specialises in AI integration consulting which requires a strategic approach so that you can gain a competitive edge. We will evaluate your business needs and existing systems in order to recommend customised artificial intelligence solutions that align with your objectives. Our guidance will make implementing the use of generative AI easy for you while also allowing you to make informed decisions and drive innovation.",
             img: '../../../../assets/mobile/service/md.svg'
         },
 
         {
             num: "03.",
-            title: "Mobile App Development",
-            desc: "Mobile app development involves designing, building, and launching applications tailored for use on smartphones and tablets across various platforms.",
+            title: "Integrating it into Workflow",
+            desc: "Simplify your organisation’s operations through smooth gen AI integration into your workflow. If you are in healthcare, finance, retail or manufacturing, our solutions can automate processes, improve decision-making models and boost productivity. We work closely with your team to ensure an effortless combination that maximises the benefits of artificial intelligence technology.",
             img: '../../../../assets/mobile/service/mad.svg'
         },
 
         {
             num: "04.",
-            title: "Mobile App Testing",
-            desc: "Mobile app testing ensures the functionality, usability, and performance of applications across different devices and platforms to deliver a seamless user experience.",
+            title: "Ongoing Upkeep and Assistance",
+            desc: "Our dedication goes beyond just implementation; we offer comprehensive support and maintenance services for your AI integration solutions ensuring optimal performance. From predictive monitoring systems and up-to-date software patches to responsive technical back-ups, we protect your investment from unforeseen operational risks.",
             img: '../../../../assets/mobile/service/mat.svg'
         },
-
+        
+    ],
+    our_steps: [
         {
-            num: "05.",
-            title: "Enterprise Mobile App",
-            desc: "Enterprise mobile apps are designed to address the specific needs and workflows of large organizations, enhancing productivity and efficiency in the workplace.",
-            img: '../../../../assets/mobile/service/ema.svg'
+            stepNo: "Step 01",
+            title: "Heightened Efficiency",
+            desc: "By automating repetitive tasks and organising workflow, one can make their firm more efficient in its operations."
         },
+        {
+            stepNo: "Step 02",
+            title: "Inventive Approaches",
+            desc: "Enhance customer interactions, improve decision-making processes or build new products by using our tailored artificial intelligence integration technologies."
+        },
+        {
+            stepNo: "Step 03",
+            title: "Growth That Can Be Scaled",
+            desc: "This flexibility is vital especially in businesses where things change quickly and one needs to grow their AI capabilities along with it."
+        }
+    ],
+    our_steps2: [
 
         {
-            num: "06.",
-            title: "Mobile Game Development",
-            desc: "Mobile game development involves creating interactive and engaging gaming experiences optimized for smartphones and tablets, catering to a diverse audience of gamers.",
-            img: '../../../../assets/mobile/service/mgd.svg'
+            stepNo: "Step 04",
+            title: "Expert Guidance",
+            desc: "Take advantage of the expertise and technical proficiency we offer to guide you through the complexities of the generative AI integration process. Our group of AI experts will work closely with you, understand your business goals, evaluate your existing infrastructure, and suggest a customised AI solution that ensures efficiency in terms of ROI and other strategic outcomes."
+        },
+        {
+            stepNo: "Step 05",
+            title: "Long-term Support",
+            desc: "Ensure continuous value from your AI solutions through our ongoing maintenance and support services. With proactive monitoring, regular updates, as well as responsive tech assistance; our goal is to optimise the performance and reliability of your AI-powered workflow. Our full-range coverage minimises downtime enabling maximised output."
         },
     ],
-    methodologyBtnTitle: "Our Methodologies",
-    methodologyTitle: "Our Methodologies for App Development",
-    steps: [
+    integrations:[
         {
-            num: 1,
-            title: "Ideation",
-            desc: "Ideation in app development involves brainstorming and refining concepts to create innovative and effective solutions for mobile applications."
+            name:'Healthcare',
         },
         {
-            num: 2,
-            title: "UX/UI Design",
-            desc: "UX/UI design focuses on creating intuitive and visually appealing interfaces that prioritize user experience and satisfaction in digital products."
+            name:'Finance',
         },
         {
-            num: 3,
-            title: "Testing",
-            desc: "Testing ensures the functionality, performance, and usability of digital products to deliver a seamless user experience."
-        }
+            name:'Retail',
+        },
+        {
+            name:'Manufacturing',
+        },
+        {
+            name:'Telecommunications',
+        },
+        {
+            name:'Education',
+        },
     ]
+    
 }
