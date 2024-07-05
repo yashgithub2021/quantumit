@@ -7,6 +7,7 @@ import { DigitalMarketingComponent } from './digital-marketing/digital-marketing
 import { FormComponent } from 'src/app/components/form/form.component';
 import { SharedModule } from 'src/app/shared/shared/shared.module';
 import { CasestudyComponent } from './casestudy/casestudy.component';
+import { DetailsComponent } from './details/details.component';
 
 
 @NgModule({
@@ -14,6 +15,7 @@ import { CasestudyComponent } from './casestudy/casestudy.component';
     DigitalMarketingComponent,
     ServicesComponent,
     CasestudyComponent,
+    DetailsComponent,
 
   ],
   imports: [

@@ -21,11 +21,16 @@
     <!-- scrollbar -->
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="4000">
         <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"[ngStyle]="{'background':isDarkTheme ?'#FFFFFF':'black'}"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1" class=""[ngStyle]="{'background':isDarkTheme ?'#FFFFFF':'black'}"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2" class=""[ngStyle]="{'background':isDarkTheme ?'#FFFFFF':'black'}"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="3" class=""[ngStyle]="{'background':isDarkTheme ?'#FFFFFF':'black'}"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="4" class=""[ngStyle]="{'background':isDarkTheme ?'#FFFFFF':'black'}"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"
+                [ngStyle]="{'background':isDarkTheme ?'#FFFFFF':'black'}"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1" class=""
+                [ngStyle]="{'background':isDarkTheme ?'#FFFFFF':'black'}"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2" class=""
+                [ngStyle]="{'background':isDarkTheme ?'#FFFFFF':'black'}"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3" class=""
+                [ngStyle]="{'background':isDarkTheme ?'#FFFFFF':'black'}"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="4" class=""
+                [ngStyle]="{'background':isDarkTheme ?'#FFFFFF':'black'}"></li>
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -232,22 +237,24 @@
             </div>
             <div id="services" class="container services w-100 h-100">
                 <div class="row">
-                    <div *ngFor="let service of ourServices" data-aos="slide-up"
-                        class="service-card col-lg-4 col-md-6  d-flex flex-column align-items-center justify-content-center px-lg-5 px-2 my-4">
-                        <div class="image my-3">
-                            <img [src]="service.img" alt="Mobile">
+                    <ng-container *ngFor="let service of ourServices">
+                        <div data-aos="slide-up"routerLink="{{service.link}}"
+                            class="service-card col-lg-4 col-md-6  d-flex flex-column align-items-center justify-content-center px-lg-5 px-2 my-4">
+                            <div class="image my-3">
+                                <img [src]="service.img" alt="Mobile">
+                            </div>
+                            <div class="title my-3 text-align-center">
+                                <h4>
+                                    {{service.title}}
+                                </h4>
+                            </div>
+                            <div class="description">
+                                <p class="fw-light text-align-center">
+                                    {{service.desc}}
+                                </p>
+                            </div>
                         </div>
-                        <div class="title my-3 text-align-center">
-                            <h4>
-                                {{service.title}}
-                            </h4>
-                        </div>
-                        <div class="description">
-                            <p class="fw-light text-align-center">
-                                {{service.desc}}
-                            </p>
-                        </div>
-                    </div>
+                    </ng-container>
                 </div>
             </div>
 
