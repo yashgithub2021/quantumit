@@ -79,7 +79,7 @@ export class DigitalMarketingComponent implements OnInit {
       img: "../../../assets/dm/conversion-rate.svg",
       heading: "Conversion Rate",
       tail: "Optimization",
-      desc: "Conversion rate optimization (CRO) improves the percentage of <br> website visitors who take a desired action, ultimately increasing <br> the effectiveness of a website.",
+      desc: "Conversion Rate Optimization (CRO) improves the percentage of <br> website visitors who take a desired action, ultimately increasing <br> the effectiveness of a website.",
       link: "conversionRateOptimization"
     },
     {

@@ -221,18 +221,17 @@
                 </div>
     
                 <div class="our-process my-2 w-100" data-aos="slide-up">
-                    <h1 class=" text-start w-100">How Quantum develops Top-notch websites</h1>
+                    <h1 class=" text-start w-100">{{androidService.our_steps_title}}</h1>
                 </div>
     
                 <div class="desc w-100 my-2" data-aos="slide-up">
-                    <p class="text-left sub-heading" [ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">Our refined methodology
-                        guarantees premium website
-                        development, elevating <br>
-                        brands with precision.</p>
+                    <p class="text-left sub-heading" [ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">
+                        {{androidService.our_steps_description}}
+                    </p>
                 </div>
             </div>
             <div class="steps mt-lg-4">
-                <div class="row">
+                <div class="row"*ngIf="androidService.our_steps">
                     <div class="col-12 col-lg-4 hover-card" data-aos="fade-in" *ngFor="let steps of androidService.our_steps">
                         <div class="container">
                             <div class="step-num ">
@@ -249,7 +248,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row"*ngIf="androidService.our_steps2">
                     <div class="col-lg-6 col-12 hover-card" data-aos="fade-in" *ngFor="let steps of androidService.our_steps2">
                         <div class="container">
                             <div class="step-num ">

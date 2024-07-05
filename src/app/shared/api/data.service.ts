@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { ActivatedRouteSnapshot, Resolve, RouterStateSnapshot } from '@angular/router';
 import { Observable, of } from 'rxjs';
-import { GenerativeAiDevelopment, androidService, contentMarketingServices, conversionRateOptimizationServices, crossPlatformAppDevelopment, dotNetDevelopmentServices, emailMarketingServices, iOsService, iPadAppDevelopment, internetOfThings, joomlaDevelopmentServices, mobileDevServices, mobileGameDevelopment, nodejsDevelopmentServices, paidSearchAdvertisingServices, payPerClickServices, phpDevelopmentServices, roboticProcessAutomation, rubyOnRailsDevelopmentServices, seoServices, socialMediaServices, swiftAppDevelopment, websiteDevServices } from '../shared/service-data';
+import { GenerativeAiConsultingCompany, GenerativeAiDevelopment, GenerativeAiIntegrationServices, HireGenerativeAiEngineers, androidService, contentMarketingServices, conversionRateOptimizationServices, crossPlatformAppDevelopment, dotNetDevelopmentServices, emailMarketingServices, iOsService, iPadAppDevelopment, internetOfThings, joomlaDevelopmentServices, mobileDevServices, mobileGameDevelopment, nodejsDevelopmentServices, paidSearchAdvertisingServices, payPerClickServices, phpDevelopmentServices, roboticProcessAutomation, rubyOnRailsDevelopmentServices, seoServices, socialMediaServices, swiftAppDevelopment, websiteDevServices } from '../shared/service-data';
 
 @Injectable({
   providedIn: 'root'
@@ -61,11 +61,11 @@ export class DataService implements Resolve<any> {
     else if (id === 'Generative-Ai-Development') {
       return of({ title: 'Generative Ai Development', services: GenerativeAiDevelopment });
     }else if (id === 'Generative-Ai-Integration-Services') {
-      return of({ title: 'Generative Ai Integration Services', services: joomlaDevelopmentServices });
+      return of({ title: 'Generative Ai Integration Services', services: GenerativeAiIntegrationServices });
     }else if (id === 'Generative-Ai-consulting-company') {
-      return of({ title: 'Generative Ai consulting company', services: joomlaDevelopmentServices });
+      return of({ title: 'Generative Ai consulting company', services: GenerativeAiConsultingCompany });
     }else if (id === 'hire-generative-ai-engineers') {
-      return of({ title: 'hire generative ai engineers', services: joomlaDevelopmentServices });
+      return of({ title: 'hire generative ai engineers', services: HireGenerativeAiEngineers });
     }else if (id === 'Ai-Agent-Development') {
       return of({ title: 'Ai Agent Development', services: joomlaDevelopmentServices });
     }else if (id === 'Ai-Copilot-Development') {
