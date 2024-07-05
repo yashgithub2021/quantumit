@@ -69,32 +69,43 @@ export class HomeComponent implements OnInit {
     {
       img: '../../../assets/services-icons/Vector.svg',
       title: 'Web Development',
-      desc: "Crafting engaging online experiences through bespoke web development solutions, tailored to elevate your brand's digital presence."
+      desc: "Crafting engaging online experiences through bespoke web development solutions, tailored to elevate your brand's digital presence.",
+      link:'/web-development'
     },
     {
       img: '../../../assets/services-icons/mobile.svg',
       title: 'Mobile App',
-      desc: 'Transform your ideas into intuitive mobile experiences with our expert app development services, driving engagement and growth.'
+      desc: 'Transform your ideas into intuitive mobile experiences with our expert app development services, driving engagement and growth.',
+      link:'/app-development'
+
     },
     {
       img: '../../../assets/services-icons/uiux.svg',
       title: 'Software Development',
-      desc: 'Redefine your business landscape with our tailored software solutions, engineered for efficiency and scalability.'
+      desc: 'Redefine your business landscape with our tailored software solutions, engineered for efficiency and scalability.',
+      link:'/web-development'
+
     },
     {
       img: '../../../assets/services-icons/qa.svg',
       title: 'Social Media Optimization',
-      desc: 'Enhance your online presence and interaction with our targeted social media optimization services, crafted for optimal impact and visibility.'
+      desc: 'Enhance your online presence and interaction with our targeted social media optimization services, crafted for optimal impact and visibility.',
+      link:'/digital-marketing'
+
     },
     {
       img: '../../../assets/services-icons/it-consultancy.svg',
       title: 'Artificial Intelligence',
-      desc: 'Utilize our advanced artificial intelligence solutions, customized to meet your specific needs, to fuel innovation and streamline efficiency throughout your business processes.'
+      desc: 'Utilize our advanced artificial intelligence solutions, customized to meet your specific needs, to fuel innovation and streamline efficiency throughout your business processes.',
+      link:'/artificial-intelligence'
+
     },
     {
       img: '../../../assets/services-icons/dedicated-team.svg',
       title: 'Digital Marketing',
-      desc: "Boost your brand's online presence and reach with our effective digital marketing strategies, crafted to enhance visibility, engagement, and conversions."
+      desc: "Boost your brand's online presence and reach with our effective digital marketing strategies, crafted to enhance visibility, engagement, and conversions.",
+      link:'/digital-marketing'
+
     },
   ]
 

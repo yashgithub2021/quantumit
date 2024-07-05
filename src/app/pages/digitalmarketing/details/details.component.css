@@ -1,0 +1,139 @@
+* {
+    font-family: 'Plus Jakarta Sans';
+}
+
+.container {
+    margin: 20px 0;
+}
+
+.list-check {
+    font-size: 16px;
+    font-weight: 400!important;
+    letter-spacing: 2px;
+}
+.project{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-img {
+    height: auto;
+    object-fit: cover;
+}
+.sec4-headline>.service-tagline{
+    font-size: 42px;
+    line-height: 60px;
+    font-weight: 600!important;
+}
+.about-project .sec4-headline>.service-tagline{
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 600!important;
+}
+.desc{
+    width: 100%!important;
+}
+.desc1{
+    width: 75%!important;
+}
+.desc > p {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500!important;
+    text-align: center;
+}
+.details .desc >p{
+    font-size:16px;
+    line-height: 22px;
+    font-weight: 400!important;
+}
+.about-project .desc >p{
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 400!important;
+}
+.title h3 {
+    font-size: 30px;
+    line-height: 37px;
+    font-weight: 500!important;
+}
+.desc-txt {
+    font-size: 16px;
+    line-height: 25.2px;
+    font-weight: 400!important;
+}
+@media (max-width: 1366px) {
+    .app-details > .details > .detail:not(:last-child) {
+        border-right: 3px solid white;
+        padding-right: 6%;
+        padding-left: 3%;
+    }
+    .app-details > .details > .detail:last-child {
+        padding-left: 3%;
+    }
+    .app-details > .details > .detail:hover {
+        
+        transform: scale(1.05);
+        transition: transform 0.5s ease;
+    }
+}
+@media (max-width: 1024px) {
+
+    .w-50,
+    .w-75 {
+        width: 100% !important;
+    }
+}
+@media (max-width:575.98px){
+    .container{
+        padding:0px;
+    }
+    .frame-3{
+        background: linear-gradient(90deg, #43BAFF 0%, #7141B1 100%);
+        padding: 5px;
+    }
+    .our-process-btn {
+        font-size: 10px;
+        line-height: 20px;
+        padding: 5px 12px 5px 12px;
+    }
+    .sec4-headline>.service-tagline{
+        font-size: 22px;
+        line-height: 30px;
+    }
+    .desc{
+        width:100%!important
+    }
+    
+    .desc > p {
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
+    }
+    .details .desc >p{
+        font-size:12px;
+        line-height: 18px;
+    }
+    .about-project .desc >p{
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 400!important;
+    }
+    .title h3 {
+        font-size: 14px;
+        line-height: 25px;
+    }
+    .desc-txt {
+        font-size: 14px;
+        line-height: 20.2px;
+    }
+    .list-check{
+        font-size: 14px;
+    }
+    .app-details > .details > .detail:not(:last-child) {
+        border-right: 3px solid white;
+        padding-right: 4%;
+    }
+}
