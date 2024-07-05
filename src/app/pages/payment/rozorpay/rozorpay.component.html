@@ -1,0 +1,79 @@
+<div class="container-fluid ">
+    <div class="row justify-content-center">
+        <div class="col-md-6 col-sm-12 bg-light text-dark my-5 rounded-3">
+            <div class="mt-5">
+                <div class="">
+                    <h3 class="text-center">Make a Payment Online</h3>
+                    <form class="p-5"[formGroup]="form" (ngSubmit)="onSubmit()">
+                        <div class="row register-form">
+                            <h4>Billing Information</h4>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Name*" formControlName="name"
+                                         required />
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="Email*" formControlName="email"
+                                        required />
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Mobile*" formControlName="mobile"
+                                        required />
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Address*"
+                                    formControlName="address" required />
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="City*" formControlName="city"
+                                        required />
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="State*" formControlName="state"
+                                        required />
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Zip*" formControlName="zip"
+                                        required />
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Country*"
+                                    formControlName="country" required />
+                                </div>
+                            </div>
+                            <h4>Payment Information</h4>
+                            <div class="col-md-12 text-center">
+                                <div class="form-group">
+                                    <select required class="form-control" formControlName="currencyType" >
+                                        <option disabled selected value="">Choose Currency Type</option>
+                                        <option value="INR">INR - Indian Rupee</option>
+                                        <option value="AUD">AUD - Australian Dollar</option>
+                                        <option value="CAD">CAD - Canadian Dollar</option>
+                                        <option value="EUR">EUR - Euro</option>
+                                        <option value="GBP">GBP - Pound Sterling</option>
+                                        <option value="SGD">SGD - Singapore Dollar</option>
+                                        <option value="USD">USD - United States Dollar</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <input type="number" class="form-control" placeholder="Amount*" formControlName="amount"
+                                        id="amount" value="" required />
+                                </div>
+                                <div class="form-group">
+                                    <input type="number" class="form-control" placeholder="Amount(in INR)"
+                                     required disabled />
+                                </div>
+                                <button class="payment-btn mt-3" type="submit">Make Paymet</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-12 text-center mt-5">
+                    <p style="font-size:10px">NOTE* : Any dispute regarding payments would be subject
+                        to the jurisdiction of India</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

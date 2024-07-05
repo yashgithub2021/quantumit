@@ -103,7 +103,7 @@
             <div class="what-we-do w-100 h-100 mt-5">
                 <div class="row w-100 h-100  g-4 align-items-center">
                     <div data-aos="fade-up" *ngFor="let data of androidService.services"
-                        class="col-lg-4 col-md-6 col-12 hover-card">
+                        class="col-lg-6 col-md-6 col-12 hover-card">
                         <div [ngStyle]="{background:isDarkTheme?'#111111':'#ECF0FF'}"
                             class="col-details px-4 ai-data py-4 py-lg-2 d-flex align-items-start justify-content-evenly flex-column">
                             <div class="title w-75">
@@ -121,8 +121,8 @@
             </div>
         </div>
     </div>
-
-    <div class="frame-3 container-fluid px-0 d-flex">
+    <!-- steps container -->
+    <!-- <div class="frame-3 container-fluid px-0 d-flex">
         <div class="container-fluid d-flex flex-column justify-content-center my-5 px-lg-5">
             <div class="heading d-none  d-lg-flex justify-content-center align-items-center">
                 <div class="text w-100 d-flex flex-column justify-content-center align-items-center ">
@@ -142,10 +142,7 @@
                             </div>
                             <div class="step-line" [ngStyle]="{'background-color':isDarkTheme?'white':'black'}"></div>
                         </ng-container>
-                        <!-- <div class="step-square">Step 02</div>
-                        <div class="step-line"></div>
-                        <div class="step-square">Step 03</div>
-                        <div class="step-line"></div> -->
+                        
                     </div>
                     <div class="steps-container steps-container2 gap-lg-3 w-100 mt-5 ">
                         <ng-container *ngFor="let step of androidService.steps">
@@ -158,35 +155,9 @@
                             </div>
                             <div class="step-dashed-line visually-hidden"></div>
                         </ng-container>
-                        <!-- <div
-                            class="step-title w-25 mt-3 mt-lg-0 d-flex justify-content-center align-items-center flex-column">
-                            <p class="w-50 fw-lighter fs-5 text-align-center">UX/UI Design
-                            </p>
-                            <p class="w-75 fw-lighter fs-6 text-align-center" style="color: #B5B5B5;">UX/UI design
-                                focuses on creating intuitive and visually appealing interfaces that prioritize user
-                                experience and satisfaction in digital products.</p>
-                        </div>
-                        <div class="step-dashed-line visually-hidden"></div>
-                        <div
-                            class="step-title w-25 mt-3 mt-lg-0 d-flex justify-content-center align-items-center flex-column">
-                            <p class="w50 fw-lighter fs-5 text-align-center">Testing</p>
-                            <p class="w-75 fw-lighter fs-6 text-align-center" style="color: #B5B5B5;">Testing ensures
-                                the functionality, performance, and usability of digital products to deliver a seamless
-                                user experience.</p>
-                        </div>
-                        <div class="step-dashed-line visually-hidden"></div> -->
+                        
                     </div>
 
-                    <!-- <div class="container button w-100 d-flex mt-5 align-items-center justify-content-center">
-                        <button [ngStyle]="{'background':isDarkTheme?'#111111':'#ECF0FF'}"
-                            [ngClass]="isDarkTheme?'text-white':'text-black'" class="our-marketing-btn ">
-                            <i [ngClass]="isDarkTheme?'text-white':'text-black'"
-                                class="fa-solid fa-arrow-left  mx-2"></i>
-                            Our Services
-                            <i [ngClass]="isDarkTheme?'text-white':'text-black'"
-                                class="fa-solid fa-arrow-right  mx-2"></i>
-                        </button>
-                    </div> -->
                 </div>
             </div>
             <div id="carouselExampleControls" class="carousel slide d-block d-lg-none" data-ride="carousel">
@@ -240,6 +211,63 @@
                 </div>
             </div>
         </div>
+    </div> -->
+
+    <div class="frame-3 mt-5 mt-lg-0 d-flex align-items-center justify-content-center mt-lg-3">
+        <div id="our-process" class="container f3-container h-75 w-75 m-auto d-flex flex-column">
+            <div class="heading-process mb-3 mb-lg-0 ">
+                <div class="button my-2 d-flex justify-content-start" data-aos="slide-up">
+                    <button class="our-process-btn">Our Process</button>
+                </div>
+    
+                <div class="our-process my-2 w-100" data-aos="slide-up">
+                    <h1 class=" text-start w-100">How Quantum develops Top-notch websites</h1>
+                </div>
+    
+                <div class="desc w-100 my-2" data-aos="slide-up">
+                    <p class="text-left sub-heading" [ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">Our refined methodology
+                        guarantees premium website
+                        development, elevating <br>
+                        brands with precision.</p>
+                </div>
+            </div>
+            <div class="steps mt-lg-4">
+                <div class="row">
+                    <div class="col-12 col-lg-4 hover-card" data-aos="fade-in" *ngFor="let steps of androidService.our_steps">
+                        <div class="container">
+                            <div class="step-num ">
+                                {{steps.stepNo}}
+                            </div>
+                            <div class="step-desc">
+                                <div class="title ">
+                                    <h2 class="our-steps-title">{{steps.title}}</h2>
+                                </div>
+                                <div class="details" [ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">
+                                    {{steps.desc}}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-12 hover-card" data-aos="fade-in" *ngFor="let steps of androidService.our_steps2">
+                        <div class="container">
+                            <div class="step-num ">
+                                {{steps.stepNo}}
+                            </div>
+                            <div class="step-desc h-100 w-100">
+                                <div class="title ">
+                                    <h3 class="our-steps-title">{{steps.title}}</h3>
+                                </div>
+                                <div class="details" [ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">
+                                    {{steps.desc}}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <div class="frame-4 my-5 container-fluid our-process">
@@ -258,21 +286,10 @@
                     <!-- <h1 class="text-align-center text-lg-start text-capitalize">Our Integrations
                     </h1> -->
                 </div>
-                <div class="txt w-100 mt-3 mt-lg-0">
-                    <p class="text-align-center text-capitalize sub-heading"
-                        [ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">we rank your website at top of google
-
-                        Everest
-                    </p>
-                    <!-- <p class="text-align-center  text-lg-start text-capitalize sub-heading"[ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">we rank your website at top of google
-
-                        Everest
-                    </p> -->
-                </div>
             </div>
             <div class="container w-100 d-flex">
                 <div class="processes w-100  row justify-content-space-evenly">
-                    <div class="process d-flex hover-card col-md-6">
+                    <div class="process d-flex hover-card col-md-6"*ngFor="let ingegration of androidService.integrations">
                         <div class="logo mx-3">
                             <div class="process-square">
                                 <img src="../../../../assets/dm/services/obj.svg" alt="">
@@ -281,13 +298,13 @@
                         <div class="text mx-3 ">
                             <div class="title">
                                 <h4>
-                                    Beacon Integration
+                                    {{ingegration.name}}
                                 </h4>
                             </div>
 
                         </div>
                     </div>
-                    <div class="process d-flex hover-card col-md-6">
+                    <!-- <div class="process d-flex hover-card col-md-6">
                         <div class="logo mx-3">
                             <div class="process-square">
                                 <img src="../../../../assets/mobile/service/gps.svg" alt="">
@@ -391,7 +408,7 @@
                             </div>
 
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
