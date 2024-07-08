@@ -190,6 +190,9 @@
     line-height: 26px;
     font-weight: 700;
 }
+.address-details{
+    width:80%!important;
+}
 
 .address p {
     font-size: 16px;
