@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { ApiService } from 'src/app/shared/api/api.service';
 
 @Component({
@@ -7,8 +8,37 @@ import { ApiService } from 'src/app/shared/api/api.service';
   styleUrls: ['./casestudy.component.css']
 })
 export class CasestudyComponent {
-  isDarkTheme!: boolean
-  constructor(private api: ApiService) { }
+  isDarkTheme!: boolean;
+
+  allCaseStudyNevigate:any[]=[
+    {
+      name: "Mobile App Development",
+      portfolioImage: '../../../../assets/casestudybanner/AMPSPORTFOLIO.webp',
+      link: '/app-development/casestudy',
+      projectName:'AMPS'
+    },
+    {
+      name: "Web App Development",
+      portfolioImage: '../../../../assets/casestudybanner/WIKISTRINGS.png',
+      link: '/web-development/casestudy',
+      projectName:'WikiString'
+    },
+    {
+      name: "Digital Marketing",
+      portfolioImage: '../../../../assets/casestudybanner/Seanautic.png',
+      link: '/digital-marketing/casestudy',
+      projectName:'Seanautic marine Inc'
+    },
+    {
+      name: "Artificial Intelligence",
+      portfolioImage: '../../../../assets/casestudybanner/AI.png',
+      link: '/ai/casestudy',
+      projectName:'Capsule Endoscopy'
+    }
+  ];
+  nextProjectCount:number=1;
+
+  constructor(private api: ApiService,private router:Router) { }
   aiService = [
     {
       img: "../../../assets/ai/Frame1.png",
@@ -81,6 +111,8 @@ export class CasestudyComponent {
     this.sectionFourNums.forEach(item => {
       this.incrementNumber(item);
     });
+    this.scrollToTop();
+
   }
   incrementNumber(item:any) {
     const targetNum = parseInt(item.num.replace('+', ''), 10);
@@ -100,5 +132,32 @@ export class CasestudyComponent {
     this.api.themeChanged.subscribe((isDarkTheme: boolean) => {
       this.isDarkTheme = isDarkTheme;
     });
+  }
+  navigateToSpecificCaseStudy(){
+    this.router.navigate([this.allCaseStudyNevigate[this.nextProjectCount].link]);
+    this.scrollToTop();
+  }
+  scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  prev(){
+    if(this.nextProjectCount==0){
+      this.nextProjectCount=this.nextProjectCount;
+    }
+
+    else if(this.nextProjectCount>0 && this.nextProjectCount<=this.allCaseStudyNevigate.length-1){
+      this.nextProjectCount--;
+      this.navigateToSpecificCaseStudy();
+    }
+  }
+  next(){
+    if(this.nextProjectCount==this.allCaseStudyNevigate.length-1){
+      this.nextProjectCount=this.nextProjectCount;
+    }
+    else if(this.nextProjectCount<=this.allCaseStudyNevigate.length-1){
+      this.nextProjectCount++;
+      this.navigateToSpecificCaseStudy();
+    }
   }
 }

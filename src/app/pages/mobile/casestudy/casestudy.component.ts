@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { ApiService } from 'src/app/shared/api/api.service';
 
 @Component({
@@ -8,6 +9,34 @@ import { ApiService } from 'src/app/shared/api/api.service';
 })
 export class CasestudyComponent implements OnInit {
   isDarkTheme!: boolean
+
+  allCaseStudyNevigate:any[]=[
+    {
+      name: "Mobile App Development",
+      portfolioImage: '../../../../assets/casestudybanner/AMPSPORTFOLIO.webp',
+      link: '/app-development/casestudy',
+      projectName:'AMPS'
+    },
+    {
+      name: "Web App Development",
+      portfolioImage: '../../../../assets/casestudybanner/WIKISTRINGS.png',
+      link: '/web-development/casestudy',
+      projectName:'WikiString'
+    },
+    {
+      name: "Digital Marketing",
+      portfolioImage: '../../../../assets/casestudybanner/Seanautic.png',
+      link: '/digital-marketing/casestudy',
+      projectName:'Seanautic marine Inc'
+    },
+    {
+      name: "Artificial Intelligence",
+      portfolioImage: '../../../../assets/casestudybanner/AI.png',
+      link: '/ai/casestudy',
+      projectName:'Capsule Endoscopy'
+    }
+  ];
+  nextProjectCount:number=0;
 
   sectionFourNums = [
     {
@@ -32,7 +61,7 @@ export class CasestudyComponent implements OnInit {
     },
 
   ]
-  constructor(private api: ApiService){
+  constructor(private api: ApiService,private router:Router){
 
   }
   ngOnInit(): void {
@@ -41,6 +70,8 @@ export class CasestudyComponent implements OnInit {
     this.sectionFourNums.forEach(item => {
       this.incrementNumber(item);
     });
+    this.scrollToTop();
+
   }
   themechange() {
     this.api.themeChanged.subscribe((isDarkTheme: boolean) => {
@@ -59,5 +90,22 @@ export class CasestudyComponent implements OnInit {
         clearInterval(interval);
       }
     }, stepTime);
+  }
+
+  navigateToSpecificCaseStudy(){
+    this.router.navigate([this.allCaseStudyNevigate[this.nextProjectCount].link]);
+    this.scrollToTop();
+  }
+  scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+  next(){
+    if(this.nextProjectCount==this.allCaseStudyNevigate.length-1){
+      this.nextProjectCount=this.nextProjectCount;
+    }
+    else if(this.nextProjectCount<=this.allCaseStudyNevigate.length-1){
+      this.nextProjectCount++;
+      this.navigateToSpecificCaseStudy();
+    }
   }
 }
