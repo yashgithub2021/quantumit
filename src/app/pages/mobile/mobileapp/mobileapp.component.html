@@ -157,7 +157,7 @@
         <div class="container d-flex flex-column align-items-center justify-content-center">
             <div class="head w-100 h-100 d-flex flex-column align-items-center justify-content-center">
                 <div class="button my-2" data-aos="slide-up">
-                    <button class="our-process-btn">Our Projects</button>
+                    <button routerLink="/portfolio" class="our-process-btn">Our Projects</button>
                 </div>
 
                 <div class="our-process my-2 " data-aos="slide-up">
@@ -181,7 +181,7 @@
                                     <div data-aos="fade-in"
                                         class="app-details-container w-75 h-100 m-auto d-flex flex-column align-items-center align-items-lg-start justify-content-evenly ">
                                         <div>
-                                            <button class="app-button app-button-one text-capitalize">App</button>
+                                            <button class="app-button app-button-one text-capitalize">{{project.category[0]}}</button>
                                         </div>
                                         <div class="name">
                                             <h2>{{project.name}}</h2>
@@ -215,7 +215,7 @@
                                     <div data-aos="fade-in"
                                         class="app-details-container align-items-center align-items-lg-start w-75 h-100 m-auto d-flex flex-column justify-content-evenly ">
                                         <div>
-                                            <button class="app-button app-button-two text-capitalize">App</button>
+                                            <button class="app-button app-button-two text-capitalize">{{project.category[0]}}</button>
                                         </div>
                                         <div class="name">
                                             <h2>{{project.name}}</h2>

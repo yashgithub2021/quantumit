@@ -881,8 +881,8 @@
     }
 
     .miletone-number {
-        font-size: 48px;
-        line-height: 48px;
+        font-size: 40px;
+        line-height: 37px;
     }
 
     .miletone-title {
@@ -978,7 +978,7 @@
     }
 
     .our-customers {
-        height: 33vh;
+        /* height: 33vh; */
     }
 
     .our-customers img {
