@@ -69,7 +69,7 @@
                             <div *ngFor="let blog of blogs | paginate: { id: 'foo',
                                 itemsPerPage: pageSize,
                                 currentPage: currentPage,
-                                totalItems: totalItem }" [routerLink]="['inner-blog/'+blog._id]"
+                                totalItems: totalItem }" [routerLink]="['inner-blog/'+blog.id]"
                                 class="card g-col-6 my-3 m-lg-3 w-100 g-3" style="cursor: pointer;"
                                 [ngStyle]="{'color':isDarkTheme?'white':'black','background':isDarkTheme?'#111111':'#ECF0FF'}">
                                 <img style="height: 40%;" [src]="blog.image" class="card-img-top" alt="...">
@@ -100,7 +100,7 @@
                                                     src="../../../../assets/blog/profile.svg" alt="">
                                             </div>
                                             <div class="name mx-2 ">
-                                                <p>{{blog?.author.authorName}}</p>
+                                                <p>{{blog?.authorName}}</p>
                                             </div>
                                         </div>
                                         <div style="opacity: 50%;" class="time">
