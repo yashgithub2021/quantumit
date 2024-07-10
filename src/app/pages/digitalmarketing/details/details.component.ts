@@ -1,17 +1,18 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ApiService } from 'src/app/shared/api/api.service';
+
 
 @Component({
   selector: 'app-details',
   templateUrl: './details.component.html',
   styleUrls: ['./details.component.css']
 })
-export class DetailsComponent {
-
+export class DetailsComponent implements OnInit{
+  constructor(private api: ApiService, private activeRoute: ActivatedRoute,private router:Router) { }
   checks = ["Chatbot API", "Facial Recognition API", "Natural language processing APIs", "AWS ML Solutions"]
   isDarkTheme!: boolean;
-  projectId!: any
+  projectId!: any;
   projectDetails!: any;
   loadingStatus:boolean=true;
 
@@ -19,10 +20,9 @@ export class DetailsComponent {
   filteredProjects:any[]=[];
   nextProjectCount!:number;
 
-  constructor(private api: ApiService, private activeRoute: ActivatedRoute,private router:Router) { }
-
   ngOnInit(): void {
     this.isDarkTheme = this.api.isDarkTheme();
+
     this.getAllProjects();
 
     this.themechange()
@@ -45,19 +45,19 @@ export class DetailsComponent {
     this.api.getProjectsById(this.projectId).subscribe((res: any) => {
       this.projectDetails = res.project;
       this.loadingStatus=false;
+
       console.log(this.projectDetails)
     },err=>{
       this.loadingStatus=false;
     })
   }
-
   getAllProjects(){
     this.api.getProjects().subscribe(
       (res: any) => {
         this.projects = res.project;
         this.filteredProjects = [...this.projects];
         this.filteredProjects=this.filteredProjects.filter(project=>{
-          if(project.category[0]=='Web App' ||project.category[0]=='Website'){
+          if(project.category[0]=='Digital Marketing'){
             return project;
           }
         });

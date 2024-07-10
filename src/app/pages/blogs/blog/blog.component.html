@@ -33,69 +33,23 @@
                             <div class="card-body ">
                                 <h4 class="card-title card-title1 linear-text d-inline-block ps-3">Categories</h4>
                             </div>
-                            <div class="card-body popular" routerLink="inner-blog/66795ec3a37d607032b766b5">
-                                <div class="container d-flex justify-content-between">
-                                    <div class="text">
-                                        <h4 class="fw-light  w-100 text-capitalize">App Development</h4>
-                                        <!-- <span class=" opacity-50  days">15 Videos</span> -->
-                                    </div>
-                                    <div class="arrow">
-                                        <!-- <i [ngClass]="isDarkTheme?'text-white':'text-black'"
-                                            [routerLink]="['inner-blog/'+blogs[0]._id]"
-                                            class="fa fa-solid fa-arrow-right"></i> -->
-                                        <i [ngClass]="isDarkTheme?'text-white':'text-black'"
-                                            class="fa fa-solid fa-arrow-right"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-body popular" routerLink="inner-blog/667962640b494ad0884d5e05">
-                                <div class="container d-flex justify-content-between">
-                                    <div class="text">
-                                        <h4 class="fw-light  w-100 text-capitalize">Website Development</h4>
-                                        <!-- <span class=" opacity-50  days">15 Videos</span> -->
-                                    </div>
-                                    <div class="arrow">
-                                        <i [ngClass]="isDarkTheme?'text-white':'text-black'"
-                                            class="fa fa-solid fa-arrow-right"></i>
+                            <ng-container *ngFor="let category of categories">
+                                <div class="card-body popular" routerLink="{{category.link}}">
+                                    <div class="container d-flex justify-content-between">
+                                        <div class="text">
+                                            <h4 class="fw-light  w-100 text-capitalize">{{category.name}}</h4>
+                                            <!-- <span class=" opacity-50  days">15 Videos</span> -->
+                                        </div>
+                                        <div class="arrow">
+                                            <!-- <i [ngClass]="isDarkTheme?'text-white':'text-black'"
+                                                [routerLink]="['inner-blog/'+blogs[0]._id]"
+                                                class="fa fa-solid fa-arrow-right"></i> -->
+                                            <i [ngClass]="isDarkTheme?'text-white':'text-black'"
+                                                class="fa fa-solid fa-arrow-right"></i>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="card-body popular" routerLink="inner-blog/66795c8ea37d607032b766af">
-                                <div class="container d-flex justify-content-between">
-                                    <div class="text">
-                                        <h4 class="fw-light  w-100 text-capitalize">SEO</h4>
-                                        <!-- <span class=" opacity-50  days">15 Videos</span> -->
-                                    </div>
-                                    <div class="arrow">
-                                        <i [ngClass]="isDarkTheme?'text-white':'text-black'"
-                                            class="fa fa-solid fa-arrow-right"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-body popular" routerLink="inner-blog/667968600b494ad0884d5e09">
-                                <div class="container d-flex justify-content-between">
-                                    <div class="text">
-                                        <h4 class="fw-light  w-100 text-capitalize">App Store Optimization</h4>
-                                        <!-- <span class=" opacity-50  days">15 Videos</span> -->
-                                    </div>
-                                    <div class="arrow">
-                                        <i [ngClass]="isDarkTheme?'text-white':'text-black'"
-                                            class="fa fa-solid fa-arrow-right"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-body popular" routerLink="inner-blog/66794424a37d607032b76653">
-                                <div class="container d-flex justify-content-between">
-                                    <div class="text">
-                                        <h4 class="fw-light  w-100 text-capitalize">Digital Marketing</h4>
-                                        <!-- <span class=" opacity-50  days">15 Videos</span> -->
-                                    </div>
-                                    <div class="arrow">
-                                        <i [ngClass]="isDarkTheme?'text-white':'text-black'"
-                                            class="fa fa-solid fa-arrow-right"></i>
-                                    </div>
-                                </div>
-                            </div>
+                            </ng-container>
                             <div class="card-body popular-last" routerLink="inner-blog/6630bfb418c3b9df7378027a">
                                 <div class="container d-flex justify-content-between">
                                     <div class="text">
@@ -115,7 +69,7 @@
                             <div *ngFor="let blog of blogs | paginate: { id: 'foo',
                                 itemsPerPage: pageSize,
                                 currentPage: currentPage,
-                                totalItems: totalItem }" [routerLink]="['inner-blog/'+blog._id]"
+                                totalItems: totalItem }" [routerLink]="['inner-blog/'+blog.id]"
                                 class="card g-col-6 my-3 m-lg-3 w-100 g-3" style="cursor: pointer;"
                                 [ngStyle]="{'color':isDarkTheme?'white':'black','background':isDarkTheme?'#111111':'#ECF0FF'}">
                                 <img style="height: 40%;" [src]="blog.image" class="card-img-top" alt="...">
@@ -146,7 +100,7 @@
                                                     src="../../../../assets/blog/profile.svg" alt="">
                                             </div>
                                             <div class="name mx-2 ">
-                                                <p>{{blog?.author.authorName}}</p>
+                                                <p>{{blog?.authorName}}</p>
                                             </div>
                                         </div>
                                         <div style="opacity: 50%;" class="time">

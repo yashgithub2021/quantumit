@@ -1487,81 +1487,412 @@ export const joomlaDevelopmentServices = {
 
 // ai services
 export const GenerativeAiDevelopment = {
-    title1: "Android App",
-    title2: "Development Solutions",
+    title1: "Generative",
+    title2: "AI Development",
     img1: "../../../../assets/services/android/img1.png",
     // img2: "../../../../assets/services/ios_android/img1.jpg",
     descriptionOne: [
-        "Our Android app development services offer a comprehensive solution for businesses seeking to establish a strong presence on the Android platform. With the widespread adoption of Android devices worldwide, having a customized mobile application tailored to this ecosystem is essential for reaching and engaging with a diverse audience.",
-        "Our team of experienced Android app developers leverages the latest technologies and best practices to build robust, scalable, and user-friendly applications.",
-        "Whether you need a simple utility app or a complex enterprise-level solution, we have the expertise to deliver results that drive engagement and deliver value to your users."
+        "At Quantum IT, we tame Generative AI’s disruptive power to reshape your business. Our broad range of generative AI services encompassing strategic consultancy, solution development and continuous support are meticulously developed to bring change within your company."
     ],
     descriptionTwo: [
-        "One of the key aspects of our Android app development services is our focus on user experience (UX) design.",
-        "We understand the importance of creating intuitive, visually appealing interfaces that provide seamless navigation and functionality.",
-        "Through careful UI/UX design, we ensure that your app not only looks great but also delivers an exceptional user experience that keeps users coming back for more."
+        "At Quantum IT, we tame Generative AI’s disruptive power to reshape your business. Our broad range of generative AI services encompassing strategic consultancy, solution development and continuous support are meticulously developed to bring change within your company."
     ],
-    serviceTitle: "We provide services like",
+    serviceTitle: "Our Generative AI Development Services",
     services: [
         {
             num: "01.",
-            title: "Mobile App Strategy",
-            desc: "Our mobile app strategy integrates market research, user-centric design, and agile development to create impactful apps aligned with your business goals.",
+            title: "Strategic Consulting",
+            desc: "We work with our clients to create a deep understanding of their general business goals and challenges in the context of their particular industry. We identify areas where machine learning will be most valuable, conduct feasibility tests for AI projects, and define a roadmap that is aligned with corporate strategy.",
             img: '../../../../assets/mobile/service/service-icon1.svg'
         },
 
         {
             num: "02.",
-            title: "Mobile App Design",
-            desc: "Mobile app design focuses on creating intuitive, visually appealing interfaces optimized for seamless user experiences on smartphones and tablets.",
+            title: "Solution Development",
+            desc: "From brainstorming to implementation we create strong generative AI development solutions that merge seamlessly into existing systems. We have a development process that includes understanding your needs, making solution architecture within the technology stack you are using, building and training AI models with your data which can be integrated smoothly in your current processes and systems.",
             img: '../../../../assets/mobile/service/md.svg'
         },
 
         {
             num: "03.",
-            title: "Mobile App Development",
-            desc: "Mobile app development involves designing, building, and launching applications tailored for use on smartphones and tablets across various platforms.",
+            title: "Domain-Specific Generative AI Model Development",
+            desc: "Our main activity is designing exclusive industry-specific generative artificial intelligence which matches business requirements of various companies. We are specialised across many areas encompassing health facilities, finance management, marketing spheres along with other sectors where our solutions provide a competitive advantage.",
             img: '../../../../assets/mobile/service/mad.svg'
         },
 
         {
             num: "04.",
-            title: "Mobile App Testing",
-            desc: "Mobile app testing ensures the functionality, usability, and performance of applications across different devices and platforms to deliver a seamless user experience.",
+            title: "Continuous Support",
+            desc: "Our commitment to your success does not end at the deployment stage. We give ongoing maintenance and support to make sure that your generative AI solutions stay effective and up-to-date. This includes performance monitoring, regular updates to keep your AI solutions updated with the latest changes in AI technology, tech support for resolving any issues, as well as a scalability feature that helps you grow and scale your AI solutions in line with business growth.",
             img: '../../../../assets/mobile/service/mat.svg'
         },
 
+    ],
+    our_steps_title: 'Our Process to Build Generative AI Solutions',
+    our_steps_description: 'Quantum IT builds tailored generative AI development solutions for your business, which involves following a meticulous and structured process. This is how our software developers complete this task',
+    our_steps: [
         {
-            num: "05.",
-            title: "Enterprise Mobile App",
-            desc: "Enterprise mobile apps are designed to address the specific needs and workflows of large organizations, enhancing productivity and efficiency in the workplace.",
-            img: '../../../../assets/mobile/service/ema.svg'
+            stepNo: "Step 01",
+            title: "Assessment",
+            desc: "Firstly, we carry out an extensive assessment of existing systems, business goals, and specific requirements. We do this by having detailed conversations which let us know what challenges you are facing and what outcomes you expect from generative AI systems."
+        },
+        {
+            stepNo: "Step 02",
+            title: "Strategy Building",
+            desc: "As per our findings above, we then develop a strategic plan outlining the direction for your generative AI project including; selecting right AI models, specifying project milestones and setting clear targets & metrics for success."
+        },
+        {
+            stepNo: "Step 03",
+            title: "Integration",
+            desc: "After deployment, we integrate this system with your existing solutions/ workflows so that they may maximise its value for better results."
+        }
+        ,
+        // {
+        //     stepNo: "Step 04",
+        //     title: "Deployment",
+        //     desc: "Once all tests have been done successfully, we deploy it. We will make sure that its implementation is smooth and does not disrupt your business activities at any point."
+        // }
+    ],
+    our_steps2: [
+
+        {
+            stepNo: "Step 05",
+            title: "Design and Development",
+            desc: "Our experienced developers take their time to design and develop your generative AI solution through: Data Collection and Preparation: A process where data is collected and pre-processed prior to being fed into the machine learning modelsModel Selection and Training: The choice of the best generative AI models and training them using your data. Solution Architecture: Creating an architecture that allows you to incorporate the AI models into your existing systems."
+        },
+        {
+            stepNo: "Step 06",
+            title: "Testing",
+            desc: "We also have a comprehensive testing phase before deploying the generative AI solution in order to ensure its accuracy, reliability as well as its performance. Our tests include: Functional Testing: Checking if the solution behaves as expected. Performance Testing: Making sure that the solution is running at optimal levels under different circumstances. Security Testing: Uncovering and closing potential security vulnerabilities."
+        }
+    ],
+    integrations: [
+        {
+            name: 'Cutting-Edge Technology',
+        },
+        {
+            name: 'Expertise Across AI Technologies',
+        },
+        {
+            name: 'Customised Industry Specific Solutions',
+        },
+        {
+            name: 'Proven Track Record',
+        },
+        {
+            name: 'Full Support',
+        }
+    ]
+
+}
+export const GenerativeAiIntegrationServices = {
+    title1: "Generative AI",
+    title2: "Integration Services",
+    img1: "../../../../assets/services/android/img1.png",
+    // img2: "../../../../assets/services/ios_android/img1.jpg",
+    descriptionOne: [
+        "For today’s competitive world, using the power of artificial intelligence is imperative for businesses that want to increase their effectiveness in order to stay ahead. At Quantum IT, we aim at creating more generative AI integration systems to suit different organisations' needs. We have developed integration services that allow you to incorporate AI technologies into your current system thus improving operations and unlocking new growth prospects."
+    ],
+    descriptionTwo: [
+        "For today’s competitive world, using the power of artificial intelligence is imperative for businesses that want to increase their effectiveness in order to stay ahead. At Quantum IT, we aim at creating more generative AI integration systems to suit different organisations' needs. We have developed integration services that allow you to incorporate AI technologies into your current system thus improving operations and unlocking new growth prospects."
+    ],
+    serviceTitle: "Our Generative AI Integration Services",
+    services: [
+        {
+            num: "01.",
+            title: "Generative AI Custom Application Development",
+            desc: "Transform customer interaction and internal process management patterns through unique generative AI apps. Highly customizable tools like advanced chatbots or smart question-answering tools can be added directly into your company’s business processes improving operational efficiency and customer satisfaction.",
+            img: '../../../../assets/mobile/service/service-icon1.svg'
         },
 
         {
-            num: "06.",
-            title: "Mobile Game Development",
-            desc: "Mobile game development involves creating interactive and engaging gaming experiences optimized for smartphones and tablets, catering to a diverse audience of gamers.",
-            img: '../../../../assets/mobile/service/mgd.svg'
+            num: "02.",
+            title: "Consulting on Generative AI",
+            desc: "Our team specialises in AI integration consulting which requires a strategic approach so that you can gain a competitive edge. We will evaluate your business needs and existing systems in order to recommend customised artificial intelligence solutions that align with your objectives. Our guidance will make implementing the use of generative AI easy for you while also allowing you to make informed decisions and drive innovation.",
+            img: '../../../../assets/mobile/service/md.svg'
+        },
+
+        {
+            num: "03.",
+            title: "Integrating it into Workflow",
+            desc: "Simplify your organisation’s operations through smooth gen AI integration into your workflow. If you are in healthcare, finance, retail or manufacturing, our solutions can automate processes, improve decision-making models and boost productivity. We work closely with your team to ensure an effortless combination that maximises the benefits of artificial intelligence technology.",
+            img: '../../../../assets/mobile/service/mad.svg'
+        },
+
+        {
+            num: "04.",
+            title: "Ongoing Upkeep and Assistance",
+            desc: "Our dedication goes beyond just implementation; we offer comprehensive support and maintenance services for your AI integration solutions ensuring optimal performance. From predictive monitoring systems and up-to-date software patches to responsive technical back-ups, we protect your investment from unforeseen operational risks.",
+            img: '../../../../assets/mobile/service/mat.svg'
+        },
+
+    ],
+    our_steps_title: 'Our Process to Build Generative AI Solutions',
+    our_steps_description: 'Quantum IT builds tailored generative AI development solutions for your business, which involves following a meticulous and structured process. This is how our software developers complete this task',
+    our_steps: [
+        {
+            stepNo: "Step 01",
+            title: "Heightened Efficiency",
+            desc: "By automating repetitive tasks and organising workflow, one can make their firm more efficient in its operations."
+        },
+        {
+            stepNo: "Step 02",
+            title: "Inventive Approaches",
+            desc: "Enhance customer interactions, improve decision-making processes or build new products by using our tailored artificial intelligence integration technologies."
+        },
+        {
+            stepNo: "Step 03",
+            title: "Growth That Can Be Scaled",
+            desc: "This flexibility is vital especially in businesses where things change quickly and one needs to grow their AI capabilities along with it."
+        }
+    ],
+    our_steps2: [
+
+        {
+            stepNo: "Step 04",
+            title: "Expert Guidance",
+            desc: "Take advantage of the expertise and technical proficiency we offer to guide you through the complexities of the generative AI integration process. Our group of AI experts will work closely with you, understand your business goals, evaluate your existing infrastructure, and suggest a customised AI solution that ensures efficiency in terms of ROI and other strategic outcomes."
+        },
+        {
+            stepNo: "Step 05",
+            title: "Long-term Support",
+            desc: "Ensure continuous value from your AI solutions through our ongoing maintenance and support services. With proactive monitoring, regular updates, as well as responsive tech assistance; our goal is to optimise the performance and reliability of your AI-powered workflow. Our full-range coverage minimises downtime enabling maximised output."
         },
     ],
-    methodologyBtnTitle: "Our Methodologies",
-    methodologyTitle: "Our Methodologies for App Development",
-    steps: [
+    integrations: [
         {
-            num: 1,
-            title: "Ideation",
-            desc: "Ideation in app development involves brainstorming and refining concepts to create innovative and effective solutions for mobile applications."
+            name: 'Healthcare',
         },
         {
-            num: 2,
-            title: "UX/UI Design",
-            desc: "UX/UI design focuses on creating intuitive and visually appealing interfaces that prioritize user experience and satisfaction in digital products."
+            name: 'Finance',
         },
         {
-            num: 3,
-            title: "Testing",
-            desc: "Testing ensures the functionality, performance, and usability of digital products to deliver a seamless user experience."
+            name: 'Retail',
+        },
+        {
+            name: 'Manufacturing',
+        },
+        {
+            name: 'Telecommunications',
+        },
+        {
+            name: 'Education',
+        },
+    ]
+
+}
+export const GenerativeAiConsultingCompany = {
+    title1: "generative",
+    title2: "AI consulting services",
+    img1: "../../../../assets/services/android/img1.png",
+    // img2: "../../../../assets/services/ios_android/img1.jpg",
+    descriptionOne: [
+        "Make Quantum IT your reliable partner in using the transformative ability of generative AI to improve business operations and product offerings. Our inclusive generative AI consulting services consist of profound expertise in advanced AI technologies and adherence to ethical principles. This means that our AI solutions are not only state-of-the-art but also have the right attitude towards their use."
+    ],
+    descriptionTwo: [
+        "Make Quantum IT your reliable partner in using the transformative ability of generative AI to improve business operations and product offerings. Our inclusive generative AI consulting services consist of profound expertise in advanced AI technologies and adherence to ethical principles. This means that our AI solutions are not only state-of-the-art but also have the right attitude towards their use."
+    ],
+    serviceTitle: "Quantum IT’s Generative Artificial Intelligence Consulting Services",
+    services: [
+        {
+            num: "01.",
+            title: "Generative Case Identification and Feasibility Analysis",
+            desc: "Our team assists you in identifying potential use cases of generative AI within your enterprise. We conduct feasibility studies to evaluate whether implementing generative AI is possible or not, giving you information upon which you can base your decisions.",
+            img: '../../../../assets/mobile/service/service-icon1.svg'
+        },
+
+        {
+            num: "02.",
+            title: "Evaluation and Selection of Generative AI Technologies",
+            desc: "We carry out a comprehensive assessment of various generative AI models such as GPT, Llama, PaLM, Gemini, Claude, and Mistral among others. Our analysis ensures that proper choices are made on relevant AI technologies for your organisation's specific needs.",
+            img: '../../../../assets/mobile/service/md.svg'
+        },
+
+        {
+            num: "03.",
+            title: "Consultation for Compliance and Security",
+            desc: "With our knowledge of major regulations e.g., GDPR, CCPA, and HIPAA we ensure that data privacy is upheld concerning your generative AI solution while ensuring system compliance by mitigating.",
+            img: '../../../../assets/mobile/service/mad.svg'
+        },
+
+        {
+            num: "04.",
+            title: "Data Engineering",
+            desc: "In our data engineering expertise, we prepare your data for training models through various advanced tools and techniques. Our machine learning capacities, which we employ, help in developing meaningful customised models with capacities to undertake specific tasks like forecast analysis.",
+            img: '../../../../assets/mobile/service/mat.svg'
+        },{
+            num: "05.",
+            title: "Custom LLM Development",
+            desc: "We as one of the leading AI consulting firms, optimise your company-specific large language models (LLMs). We do this by selecting the appropriate pre-trained model, preparing your confidential data and then fine-tuning the system so that it gives responses that are specific to a particular domain.",
+            img: '../../../../assets/mobile/service/mat.svg'
+        },{
+            num: "06.",
+            title: "Generative AI Solution Development",
+            desc: "Our generative AI solutions include recommendation systems and due diligence research tools among others. Our AI co-pilots and agents also enable businesses to streamline their operations, have actionable insights and lead to unmatched efficiency in operation.",
+            img: '../../../../assets/mobile/service/mat.svg'
+        },
+        {
+            num: "07.",
+            title: "Generative AI Integration",
+            desc: "We work closely with your organisation towards the successful integration of generative AI applications into existing systems as well as processes. This is our aim so that you minimise interruptions while increasing adoption of generative AI’s benefits thus making it possible for you to use its capabilities efficiently.",
+            img: '../../../../assets/mobile/service/mat.svg'
+        },{
+            num: "08.",
+            title: "Maintenance and Support",
+            desc: "As one of the best AI consulting firms, we ensure ongoing maintenance functionalities, performance optimization, and adaptability of artificial intelligence software applications as the company demands change. Our goal is to ensure your generative AI solutions are working at their peak by updating, fine-tuning algorithms or offering responsive technical support.",
+            img: '../../../../assets/mobile/service/mat.svg'
+        },
+
+    ],
+    our_steps_title: 'Our Approach to Generative AI Consulting',
+    our_steps_description: '',
+    our_steps: [
+        {
+            stepNo: "Step 01",
+            title: "Data Analysis and Generative Model Selection",
+            desc: "We do this by looking at your data, software programs and technical infrastructure. This process allows us to discover where GANs, VAEs or RNNs can be deployed in your operations. With an understanding of your business context, we will recommend the right generative AI technologies that will optimise performance."
+        },
+        {
+            stepNo: "Step 02",
+            title: "Experimental Development - Pilot Project",
+            desc: "To show how generative AI would work within your business setting, we create a small scale system or a Minimum Viable Product (MVP). We shall see what parts of your generative AI system you need to improve through these experiments. It could be done by testing generative models on the basis of content creation, anomaly detection, or product recommendation tasks."
+        },
+        {
+            stepNo: "Step 03",
+            title: "Full-scale Generative AI Deployment",
+            desc: "On winning the approval of all stakeholders for the pilot project, our team of experts goes ahead with launching the full-scale generative AI system. Our detailed-oriented approach will ensure a smooth and successful deployment thus enabling you to exploit the transformative power of generative AI to enhance efficiency and meet business goals."
+        }
+    ],
+    our_steps2: [
+
+    ],
+    integrations: [
+        {
+            name: 'Generative AI expertise',
+        },
+        {
+            name: 'Personalised Approach',
+        },
+        {
+            name: 'Support through the entire process',
+        },
+        {
+            name: 'Ethical Generative AI Development',
         }
     ]
+
+}
+export const HireGenerativeAiEngineers = {
+    title1: "Hire Generative",
+    title2: " AI Engineers from Quantum IT",
+    img1: "../../../../assets/services/android/img1.png",
+    // img2: "../../../../assets/services/ios_android/img1.jpg",
+    descriptionOne: [
+        "The rapidly evolving world of technology has generative AI as a revolutionary force that can change industries. We are experts in generative AI at Quantum IT, and we have advanced technology-savvy engineers who can help you develop custom-made AI solutions. In order to ensure continuity and efficiency of your already existing infrastructure with minimal interruption, our software engineers focus on developing subject-specific models which could be seamlessly integrated into your system. We are experienced in building foundational models like GPT-4, Llama 3 and Mistral which combine cutting-edge technologies with human artistry to foster innovation in your operations."
+    ],
+    descriptionTwo: [
+        "The rapidly evolving world of technology has generative AI as a revolutionary force that can change industries. We are experts in generative AI at Quantum IT, and we have advanced technology-savvy engineers who can help you develop custom-made AI solutions. In order to ensure continuity and efficiency of your already existing infrastructure with minimal interruption, our software engineers focus on developing subject-specific models which could be seamlessly integrated into your system. We are experienced in building foundational models like GPT-4, Llama 3 and Mistral which combine cutting-edge technologies with human artistry to foster innovation in your operations."
+    ],
+    serviceTitle: "Our Generative AI Engineering Services",
+    services: [
+        {
+            num: "01.",
+            title: "Data Analytics",
+            desc: "Any successful AI project is anchored on effective data analysis. At Quantum IT, our generative AI engineers possess cutting edge skills in the field of data analytics and ML model training. They employ statistical expertise, programming ability, and visualisation skills to aid businesses navigate complex datasets for valuable insights; thereby refining their data strategies as a result.",
+            img: '../../../../assets/mobile/service/service-icon1.svg'
+        },
+
+        {
+            num: "02.",
+            title: "Developing LLMs for domain specificity",
+            desc: "Experience AI that speaks your business language through our domain-specific Large Language Models (LLMs). Our engineers start by deeply understanding your particular area, data as well as business needs. Next, a foundational model is fine-tuned with proprietary data to teach it the peculiarities of the industry’s language for unmatched relevance.",
+            img: '../../../../assets/mobile/service/md.svg'
+        },
+
+        {
+            num: "03.",
+            title:"Development of Generative AI Solutions",
+            desc: "Our generative AI solutions are created to achieve your goals, whether you want to streamline intricate workflows, modify engagement strategies or improve customer-facing systems. Starting from conceptualization and design to extensive testing and deployment, our development process covers everything. we ensure that delivered solutions are solid, dependable and precisely meet your specific conditions.",
+            img: '../../../../assets/mobile/service/mad.svg'
+        },
+
+        {
+            num: "04.",
+            title: "Strategy Development and Consulting",
+            desc: "Complexities of AI integration, however, demand expert advice. To help you with decision-making for your AI projects, our generative AI engineers offer consultative services tailored to this end. These range from assessing new technologies as well as drawing elaborate implementation blueprints that can mitigate risks, ensure scalability or any other strategic insights necessary for your business’ growth.",
+            img: '../../../../assets/mobile/service/mat.svg'
+        },
+        {
+            num: "05.",
+            title: "Integration and Optimization",
+            desc: "Our generative AI engineers focus on incorporating AI solutions into already functioning systems. They do this carefully in order to make it fit perfectly into the organisation’s set-up without affecting other processes. Our experts also go beyond implementing the same by optimising them to deliver optimal performance and provide a holistic approach that improves efficiency and productivity of your organisation.",
+            img: '../../../../assets/mobile/service/mat.svg'
+        },
+        {
+            num: "06.",
+            title: "Performance Monitoring and Maintenance",
+            desc: "AI solutions have long-term success if they undergo continuous maintenance and optimization activities. Our specialists render comprehensive services such as regular model updates, fine-tuning, performance monitoring among others.",
+            img: '../../../../assets/mobile/service/mat.svg'
+        },
+
+    ],
+    our_steps_title: 'Why Hire Quantum IT for Generative AI Engineers?',
+    our_steps_description: '',
+    our_steps: [
+        
+    ],
+    our_steps2: [
+        {
+            stepNo: "Step 01",
+            title: "Collaborative Excellence & Problem-Solving Skills",
+            desc: "We are known for collaborative excellence and the skilled problem-solving of our generative AI engineers. As a result, they become part of your team and allow innovation and teamwork that can drive successful projects. They prove themselves an indispensable asset in any AI project by handling complex challenges as well as creating innovative solutions."
+        },
+        {
+            stepNo: "Step 02",
+            title: "Knowledge of ML and Other Relevant Technologies",
+            desc: "These generative AI models include machine learning (ML), deep learning, neural network architectures and many other relevant techniques. By using these skills, they can develop generative AI solutions which generate creative content with respect to contexts. Knowing how to apply these technologies makes your AI solutions up-to-date and efficient."
+        },
+        {
+            stepNo: "Step 03",
+            title: "Proficiency in Key Generative AI Tools",
+            desc: "Our top-notch AI solutions and custom models are built by our generative AI engineers who have experience in Python language, frameworks like TensorFlow and PyTorch, advanced models such as DALL-E, Midjourney as well as ChatGPT. Creating with these tools ensures that you’re working on your AI projects using the most effective technological methods available."
+        },
+
+        {
+            stepNo: "Step 04",
+            title: "Expertise in AI Algorithms",
+            desc: "Our engineers are very experienced in key machine learning algorithms like Generative Adversarial Networks (GANs), Variational Autoencoders (VAEs), and Recurrent Neural Networks (RNNs). This means that they can develop solutions tailor-made to your exact requirements, thereby ensuring their maximum efficiency."
+        },
+        {
+            stepNo: "Step 05",
+            title: "Data Mining and Analytics",
+            desc: "Our engineers present a strong understanding of elementary mathematics that includes linear algebra, calculus, probability, and statistics. This fundamental knowledge is vital for competent data mining and analytics which help them to extract important insights from intricate datasets thus improving your AI strategies."
+        },
+        {
+            stepNo: "Step 06",
+            title: "We are Committed to Excellence",
+            desc: "Driven by a passion for innovation as well as excellence, our generative AI engineers ensure every project has optimal results. They aim to create high-quality solutions throughout the process that align with your business objectives, making it successful at delivery."
+        },
+    ],
+    integrations: [
+        {
+            name: 'Requirement Assessment',
+        },
+        {
+            name: 'Building Strategy',
+        },
+        {
+            name: 'Designing and Development',
+        },
+        {
+            name: 'Test',
+        },
+        {
+            name: 'Optimization and Deployment',
+        },
+        {
+            name: 'Integration and Support',
+        },
+    ]
+
 }

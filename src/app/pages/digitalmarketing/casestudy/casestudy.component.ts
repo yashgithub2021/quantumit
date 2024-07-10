@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { ApiService } from 'src/app/shared/api/api.service';
 
 @Component({
@@ -8,7 +9,34 @@ import { ApiService } from 'src/app/shared/api/api.service';
 })
 export class CasestudyComponent implements OnInit {
 
-  constructor(private api: ApiService) { }
+  allCaseStudyNevigate: any[] = [
+    {
+      name: "Mobile App Development",
+      portfolioImage: '../../../../assets/casestudybanner/AMPSPORTFOLIO.webp',
+      link: '/app-development/casestudy',
+      projectName: 'AMPS'
+    },
+    {
+      name: "Web App Development",
+      portfolioImage: '../../../../assets/casestudybanner/WIKISTRINGS.png',
+      link: '/web-development/casestudy',
+      projectName: 'WikiString'
+    },
+    {
+      name: "Digital Marketing",
+      portfolioImage: '../../../../assets/casestudybanner/Seanautic.png',
+      link: '/digital-marketing/casestudy',
+      projectName: 'Seanautic marine Inc'
+    },
+    {
+      name: "Artificial Intelligence",
+      portfolioImage: '../../../../assets/casestudybanner/AI.png',
+      link: '/ai/casestudy',
+      projectName: 'Capsule Endoscopy'
+    }
+  ];
+  nextProjectCount: number = 2;
+
   isDarkTheme!: boolean
   aiService = [
     {
@@ -47,25 +75,27 @@ export class CasestudyComponent implements OnInit {
     {
       num: "220+",
       heading: "Active Clients",
-      currentNum:0
+      currentNum: 0
     },
     {
       num: "850+",
       heading: "Projects done",
-      currentNum:0
+      currentNum: 0
     },
     {
       num: "250+",
       heading: "team advisors",
-      currentNum:0
+      currentNum: 0
     },
     {
       num: "10+",
       heading: "glorious years",
-      currentNum:0
+      currentNum: 0
     },
 
   ]
+  constructor(private api: ApiService,private router:Router) { }
+
 
   ngOnInit(): void {
     this.isDarkTheme = this.api.isDarkTheme();
@@ -75,10 +105,10 @@ export class CasestudyComponent implements OnInit {
     });
     this.scrollToTop();
   }
-  incrementNumber(item:any) {
+  incrementNumber(item: any) {
     const targetNum = parseInt(item.num.replace('+', ''), 10);
     const stepTime = 40; // milliseconds
-    const increment = Math.ceil(targetNum / 100)+1; // Adjust as needed
+    const increment = Math.ceil(targetNum / 100) + 1; // Adjust as needed
 
     const interval = setInterval(() => {
       item.currentNum += increment;
@@ -95,5 +125,28 @@ export class CasestudyComponent implements OnInit {
   }
   scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+  navigateToSpecificCaseStudy(){
+    this.router.navigate([this.allCaseStudyNevigate[this.nextProjectCount].link]);
+    this.scrollToTop();
+  }
+  prev(){
+    if(this.nextProjectCount==0){
+      this.nextProjectCount=this.nextProjectCount;
+    }
+
+    else if(this.nextProjectCount>0 && this.nextProjectCount<=this.allCaseStudyNevigate.length-1){
+      this.nextProjectCount--;
+      this.navigateToSpecificCaseStudy();
+    }
+  }
+  next(){
+    if(this.nextProjectCount==this.allCaseStudyNevigate.length-1){
+      this.nextProjectCount=this.nextProjectCount;
+    }
+    else if(this.nextProjectCount<=this.allCaseStudyNevigate.length-1){
+      this.nextProjectCount++;
+      this.navigateToSpecificCaseStudy();
+    }
   }
 }

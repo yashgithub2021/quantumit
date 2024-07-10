@@ -16,11 +16,12 @@
                         the forefront of digital transformation, offering solutions that revolutionize businesses.
                         Focussing on innovation, we harness the power of technology to propel your organization into the
                         future. </p>
-                    <button class="d-block d-sm-none" (click)="toggleReadMore()">{{ isExpanded ? 'Read Less' :
+                    <button class="d-block d-sm-none" [ngStyle]="{color:isDarkMode?'#AEBDE5':'#5f82df'}"
+                        (click)="toggleReadMore()">{{ isExpanded ? 'Read Less' :
                         'ReadMore' }}</button>
                 </div>
             </div>
-            <div class="contact-info-div">
+            <div class="contact-info-div d-none d-sm-block">
                 <div class="contanct-info-+content d-flex align-items-center"
                     *ngFor="let contact of contacts; let i = index">
                     <button
@@ -101,7 +102,33 @@
                             <h5 style="color:white" class="social-platform">Facebook</h5>
                         </div>
                     </a>
-                    
+
+                </div>
+            </div>
+            <div class="contact-info-div d-block d-sm-none">
+                <div class="d-flex flex-row justify-content-center gap-5">
+                    <div class="contanct-info-+content contact-icon-info d-flex align-items-center"
+                        *ngFor="let contact of contacts; let i = index">
+                        <a [href]="contact.link"
+                            [ngStyle]="{background: isDarkMode ? '#343538' : 'linear-gradient(91.58deg, #43BAFF 0.52%, #7044B3 100%)'}"
+                            class="btn rounded-circle text-align-center" (mouseenter)="isHovering[i] = true"
+                            (mouseleave)="isHovering[i] = false">
+                            <i class="m-0 fs-6 fa-solid w-100 text-align-center"
+                                [class]="isHovering[i] ? contact.hoverIcon : contact.icon"></i>
+                        </a>
+                        <!-- <div>
+                            <label for="btn" class="text-secondary">
+                                {{contact.label}}
+                                <p>
+                                    <a [ngStyle]="{'color': isDarkMode ? 'white' : 'black'}"
+                                        class="m-0  text-decoration-none fw-semibold contact-value"
+                                        [href]="contact.link" (mouseenter)="isHovering[i] = true"
+                                        (mouseleave)="isHovering[i] = false">{{contact.value}}</a>
+                                </p>
+                            </label>
+                        </div> -->
+
+                    </div>
                 </div>
             </div>
         </div>

@@ -107,7 +107,7 @@
     <div class="container d-flex flex-column align-items-center justify-content-center">
         <div class="head w-100 h-100 d-flex flex-column align-items-center justify-content-center">
             <div class="button my-2" data-aos="slide-up">
-                <button class="our-process-btn">Our Projects</button>
+                <button routerLink="/portfolio" class="our-process-btn">Our Projects</button>
             </div>
 
             <div class="our-process my-2 " data-aos="slide-up">
@@ -116,11 +116,7 @@
             </div>
 
             <div class="desc w-50 my-2 text-align-center" data-aos="slide-up">
-                <p class="sub-heading" [ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">We help businesses from healthcare,
-                    transportation, real estate,
-                    communication,
-                    and other
-                    industries seize new opportunities, overcome business challenges.</p>
+                <p class="sub-heading" [ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">We help businesses in healthcare, transportation, real estate, communication, and other industries seize new opportunities and overcome business challenges.</p>
             </div>
         </div>
 
@@ -135,7 +131,7 @@
                                 <div data-aos="fade-up"
                                     class="app-details-container d-none text-white w-50 h-100 m-auto d-lg-flex flex-column align-items-center align-items-lg-start justify-content-evenly ">
                                     <div>
-                                        <button class="app-button app-button-one">App</button>
+                                        <button class="app-button app-button-one">{{project.category[0]}}</button>
                                     </div>
                                     <div class="name">
                                         <h2>{{project.name}}</h2>
@@ -154,7 +150,7 @@
                                 <div data-aos="fade-up"
                                     class="app-details-container d-lg-none w-50 h-100 m-auto d-flex flex-column align-items-start align-items-sm-center align-items-lg-start justify-content-evenly p-sm-0 p-4">
                                     <div>
-                                        <button class="app-button app-button-one">App</button>
+                                        <button class="app-button app-button-one">{{project.category[0]}}</button>
                                     </div>
                                     <div class="name">
                                         <h2>{{project.name}}</h2>
@@ -186,7 +182,7 @@
                                 <div
                                     class="app-details-container text-black d-none w-75 h-100 m-auto d-lg-flex flex-column align-items-center align-items-lg-start justify-content-evenly ">
                                     <div>
-                                        <button class="app-button app-button-two">App</button>
+                                        <button class="app-button app-button-two">{{project.category[0]}}</button>
                                     </div>
                                     <div class="name">
                                         <h2>{{project.name}}</h2>
@@ -204,10 +200,10 @@
                                 <div
                                     class="app-details-container w-75 h-100 m-auto d-lg-none d-flex flex-column align-items-start align-items-sm-center align-items-lg-start justify-content-evenly p-sm-0 p-4">
                                     <div>
-                                        <button class="app-button app-button-two">App</button>
+                                        <button class="app-button app-button-two">{{project.category[0]}}</button>
                                     </div>
                                     <div class="name">
-                                        <h2>{{projects[1].name}}</h2>
+                                        <h2>{{project.name}}</h2>
                                     </div>
                                     <!-- <div class="details fw-lighter text-start  text-sm-center text-lg-start text-l fs-4">
                                         {{(project.description.length>100)? (project.description |

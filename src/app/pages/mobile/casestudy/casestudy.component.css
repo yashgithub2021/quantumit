@@ -103,13 +103,13 @@ figure {
     line-height: 23px;
 }
 
-@media(max-width:1366px) {
+/* @media(max-width:1366px) { */
 
     .app-details>.details>.detail:not(:last-child) {
         border-right: 3px solid white;
         padding-right: 6%;
     }
-}
+/* } */
 
 @media(min-width:1024px) {
     .problem-statement .desc p {

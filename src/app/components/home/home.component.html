@@ -21,15 +21,20 @@
     <!-- scrollbar -->
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="4000">
         <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"[ngStyle]="{'background':isDarkTheme ?'#FFFFFF':'black'}"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1" class=""[ngStyle]="{'background':isDarkTheme ?'#FFFFFF':'black'}"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2" class=""[ngStyle]="{'background':isDarkTheme ?'#FFFFFF':'black'}"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="3" class=""[ngStyle]="{'background':isDarkTheme ?'#FFFFFF':'black'}"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="4" class=""[ngStyle]="{'background':isDarkTheme ?'#FFFFFF':'black'}"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"
+                [ngStyle]="{'background':isDarkTheme ?'#FFFFFF':'black'}"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1" class=""
+                [ngStyle]="{'background':isDarkTheme ?'#FFFFFF':'black'}"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2" class=""
+                [ngStyle]="{'background':isDarkTheme ?'#FFFFFF':'black'}"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3" class=""
+                [ngStyle]="{'background':isDarkTheme ?'#FFFFFF':'black'}"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="4" class=""
+                [ngStyle]="{'background':isDarkTheme ?'#FFFFFF':'black'}"></li>
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <div class="section1" style="min-height:75vh;" [ngClass]="isDarkTheme ? 'dark' : 'light'">
+                <div class="section1" [ngClass]="isDarkTheme ? 'dark' : 'light'">
                     <div class=" container d-flex flex-column align-items-center justify-content-center">
                         <div class="container w-lg-50 d-flex align-items-center justify-content-center my-3">
                             <h1 class="tagline text-center fw-bolder">Pioneering Your
@@ -52,7 +57,7 @@
             </div>
             <div class="carousel-item">
                 <div class="container-fluid pt-3 mobile-app w-100 frame-1 d-flex justify-content-center align-items-center"
-                    style="min-height:75vh;" [ngClass]="isDarkTheme?'mobile-app-dark':'mobile-app-light'">
+                     [ngClass]="isDarkTheme?'mobile-app-dark':'mobile-app-light'">
                     <div class="header h-100 container-fluid p-0 d-flex flex-column flex-lg-row">
                         <div class="headline h-100 w-100">
                             <div class="container h-100 d-flex flex-column justify-content-center align-items-center">
@@ -74,7 +79,7 @@
                 </div>
             </div>
             <div class="carousel-item">
-                <div data-aos="fade-in" style="min-height:75vh;"
+                <div data-aos="fade-in" 
                     class=" digital-marketing d-flex align-items-center justify-content-center container-fluid p-0 w-100 frame-1">
                     <div class="container w-100 h-100">
                         <div
@@ -96,7 +101,7 @@
                 </div>
             </div>
             <div class="carousel-item">
-                <div style="min-height:75vh;"
+                <div 
                     class="container frame-1 d-flex flex-column justify-content-center align-items-end">
                     <div data-aos="fade-in"
                         class="heading container w-100 h-100 d-flex flex-column align-items-center justify-content-center ">
@@ -118,7 +123,7 @@
                 </div>
             </div>
             <div class="carousel-item">
-                <div style="min-height:75vh;"
+                <div 
                     class="container frame-1 d-flex flex-column justify-content-center align-items-end">
                     <div data-aos="fade-in"
                         class="heading container w-100 h-100 d-flex flex-column align-items-center justify-content-center ">
@@ -232,22 +237,24 @@
             </div>
             <div id="services" class="container services w-100 h-100">
                 <div class="row">
-                    <div *ngFor="let service of ourServices" data-aos="slide-up"
-                        class="service-card col-lg-4 col-md-6  d-flex flex-column align-items-center justify-content-center px-lg-5 px-2 my-4">
-                        <div class="image my-3">
-                            <img [src]="service.img" alt="Mobile">
+                    <ng-container *ngFor="let service of ourServices">
+                        <div data-aos="slide-up"routerLink="{{service.link}}"
+                            class="service-card col-lg-4 col-md-6  d-flex flex-column align-items-center justify-content-center px-lg-5 px-2 my-4">
+                            <div class="image my-3">
+                                <img [src]="service.img" alt="Mobile">
+                            </div>
+                            <div class="title my-3 text-align-center">
+                                <h4>
+                                    {{service.title}}
+                                </h4>
+                            </div>
+                            <div class="description">
+                                <p class="fw-light text-align-center">
+                                    {{service.desc}}
+                                </p>
+                            </div>
                         </div>
-                        <div class="title my-3 text-align-center">
-                            <h4>
-                                {{service.title}}
-                            </h4>
-                        </div>
-                        <div class="description">
-                            <p class="fw-light text-align-center">
-                                {{service.desc}}
-                            </p>
-                        </div>
-                    </div>
+                    </ng-container>
                 </div>
             </div>
 
@@ -364,7 +371,7 @@
                 </div> -->
             </div>
         </div>
-        <div class="our-customers d-flex container">
+        <div class="our-customers d-flex container justify-content-center">
             <img src="../../../assets/home/map.png" alt="">
         </div>
     </div>

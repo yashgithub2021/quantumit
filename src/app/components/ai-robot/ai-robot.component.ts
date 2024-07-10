@@ -53,47 +53,47 @@ export class AiRobotComponent implements OnInit {
     }, {
       img: '../../../assets/services/AI_service/aigenerator/img2.png',
       title: 'Generative Ai integration services',
-      link: 'Generative-Ai-Integration-Services'
+      link: '/ai/Generative-Ai-Integration-Services'
     }, {
       img: '../../../assets/services/AI_service/aigenerator/img3.png',
       title: 'Generative Ai consulting company',
-      link: 'Generative-Ai-consulting-company'
+      link: '/ai/Generative-Ai-consulting-company'
     }, {
       img: '../../../assets/services/AI_service/aigenerator/img4.png',
       title: 'hire generative ai engineers',
-      link: 'hire-generative-ai-engineers'
+      link: '/ai/hire-generative-ai-engineers'
     }, {
       img: '../../../assets/services/AI_service/aigenerator/img5.png',
       title: 'Ai Agent Development',
-      link: 'Ai-Agent-Development'
+      link: '/ai/Ai-Agent-Development'
     }, {
       img: '../../../assets/services/AI_service/aigenerator/img6.png',
       title: 'Ai Copilot Development',
-      link: 'Ai-Copilot-Development'
+      link: '/ai/Ai-Copilot-Development'
     }, {
       img: '../../../assets/services/AI_service/aigenerator/img7.png',
       title: 'Hire Prompt Engineers',
-      link: 'Hire-Prompt-Engineers'
+      link: '/ai/Hire-Prompt-Engineers'
     }, {
       img: '../../../assets/services/AI_service/aigenerator/img8.png',
       title: 'Adaptive Ai Development Co.',
-      link: 'Adaptive-Ai-Development-Co.'
+      link: '/ai/Adaptive-Ai-Development-Co.'
     }, {
       img: '../../../assets/services/AI_service/aigenerator/img9.png',
       title: 'ChatGPT Developers',
-      link: 'ChatGPT-Developers'
+      link: '/ai/ChatGPT-Developers'
     }, {
       img: '../../../assets/services/AI_service/aigenerator/img10.png',
       title: 'Stable Diffusion Developers',
-      link: 'Stable-Diffusion-Developers'
+      link: '/ai/Stable-Diffusion-Developers'
     }, {
       img: '../../../assets/services/AI_service/aigenerator/img11.png',
       title: 'ChatGPT Integration Service',
-      link: 'ChatGPT-Integration-Service'
+      link: '/ai/ChatGPT-Integration-Service'
     }, {
       img: '../../../assets/services/AI_service/aigenerator/img12.png',
       title: 'Large Language Model',
-      link: 'Large-Language-Model'
+      link: '/ai/Large-Language-Model'
     },
   ]
   ourAIServices: any[] = [

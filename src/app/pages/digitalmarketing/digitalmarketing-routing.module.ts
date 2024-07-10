@@ -4,6 +4,7 @@ import { DigitalMarketingComponent } from './digital-marketing/digital-marketing
 import { ServicesComponent } from './services/services.component';
 import { CasestudyComponent } from './casestudy/casestudy.component';
 import { DataService } from 'src/app/shared/api/data.service';
+import { DetailsComponent } from './details/details.component';
 
 const routes: Routes = [
   {
@@ -16,6 +17,9 @@ const routes: Routes = [
   },
   {
     path: 'casestudy', component: CasestudyComponent
+  },
+  {
+    path: 'details/:id', component: DetailsComponent
   },
 ];
 

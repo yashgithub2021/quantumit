@@ -62,6 +62,9 @@ export class ServiceComponent implements OnInit {
     },
   ]
 
+  
+
+
   constructor(private api: ApiService, private dataService: DataService, private route: ActivatedRoute) { }
 
   ngOnInit(): void {

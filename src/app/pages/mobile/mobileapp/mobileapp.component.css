@@ -433,12 +433,13 @@
     .our-process-content h3 {
         font-size: 18px;
         line-height: 20px;
-        margin-bottom: 20px;
+        margin-top: 30px;
+        margin-left: 16%;
     }
 
     .list li p {
-        font-size: 14px;
-        line-height: 20px;
+        font-size: 12px;
+        line-height: 18px;
     }
 
     .what-we-do {
@@ -457,6 +458,7 @@
 
     .numbers-section {
         padding: 20px;
+        height: 180px;
     }
 
     .btn-lm {
@@ -465,18 +467,14 @@
     }
 
     .miletone-number {
-        font-size: 22px !important;
-        line-height: 32px;
+        font-size: 18px !important;
+        line-height: 21px;
         margin-bottom: 10px;
     }
 
     .miletone-title {
-        font-size: 14px !important;
-        line-height: 23px;
-    }
-
-    .buttons-milestone {
-        width: 100%;
+        font-size: 12px !important;
+        line-height: 18px;
     }
 
     .success-desc {

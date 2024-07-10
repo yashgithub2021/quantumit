@@ -17,7 +17,7 @@ export class WebdevComponent implements OnInit {
     {
       stepNo: "Step 01",
       title: "Planning and Research",
-      desc: "Define the website's purpose, target audience, and goals. Conduct research on competitors and industry trends to inform design and content decisions."
+      desc: "Define the website's purpose, target audience, and goals. Research on competitors and industry trends to inform design and content decisions."
     },
     {
       stepNo: "Step 02",

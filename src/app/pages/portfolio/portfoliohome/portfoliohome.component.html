@@ -16,13 +16,13 @@
                 </div>
             </div>
         </div>
-        <!-- <div class="container heading w-100 h-100 d-flex flex-column align-items-center justify-content-center">
+        <div class="container heading w-100 h-100 d-flex flex-column align-items-center justify-content-center">
             <div class="desc align-self-center mt-3 w-75">
                 <p class="opacity-50 text-align-center">
                     Proud projects that make us stand out
                 </p>
             </div>
-        </div> -->
+        </div>
         <div class="container mt-4 categories d-flex justify-content-center w-100">
             <div class="container gap-3 gap-lg-0 d-flex flex-wrap w-75 justify-content-evenly">
                 <div class="button">
@@ -229,7 +229,7 @@
                             <div *ngIf="i%2==0" class="app p-3 rounded-3"
                                 [ngStyle]="{'background-color':isDarkTheme?'#111111':'#ECF0FF'}">
                                 <img (click)="scrollToTop()"
-                                    [routerLink]="(filteredProject.category[0] === 'Web Development' || filteredProject.category[0] === 'Web App') ? '/web-development/details/' + filteredProject._id : '/app-development/app-details/' + filteredProject._id"
+                                    [routerLink]="(filteredProject.category[0] === 'Web Development' || filteredProject.category[0] === 'Web App'|| filteredProject.category[0] === 'Website') ? '/web-development/details/' + filteredProject._id : filteredProject.category[0]==='Digital Marketing'? '/digital-marketing/details/'+ filteredProject._id : '/app-development/app-details/' + filteredProject._id"
                                     src="../../../../assets/portfolio/view-project.svg" class="view-project" alt="">
                                 <div class="app-img">
                                     <img class="rounded-3" width="400" height="550"
@@ -252,8 +252,8 @@
                             <div *ngIf="i%2==1" class="app p-3 rounded-3" [ngStyle]="{'background':isDarkTheme?'#111111':'#ECF0FF'}">
                                 <div class="app-img">
                                     <img (click)="scrollToTop()"
-                                        [routerLink]="(filteredProject.category[0] === 'Web Development' || filteredProject.category[0] === 'Web App') ? '/web-development/details/' + filteredProject._id : '/app-development/app-details/' + filteredProject._id"
-                                        src="../../../../assets/portfolio/view-project.svg" class="view-project" alt="">
+                                    [routerLink]="(filteredProject.category[0] === 'Web Development' || filteredProject.category[0] === 'Web App'|| filteredProject.category[0] === 'Website') ? '/web-development/details/' + filteredProject._id : filteredProject.category[0]==='Digital Marketing'? '/digital-marketing/details/'+ filteredProject._id : '/app-development/app-details/' + filteredProject._id"
+                                    src="../../../../assets/portfolio/view-project.svg" class="view-project" alt="">
                                     <img class="rounded-3" width="400" height="550"
                                         [src]="filteredProject.portfolioImage?filteredProject.portfolioImage:'../../../../assets/portfolio/app2.svg'"
                                         alt="">
