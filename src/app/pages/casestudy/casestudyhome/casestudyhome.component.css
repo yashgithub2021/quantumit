@@ -81,7 +81,8 @@
     top: 15%;
     cursor: pointer;
     height:120px;
-    rotate: -45deg;
+    /* rotate: -45deg; */
+    border-radius: 50%;
 }
 
 .miletone-number h1 {

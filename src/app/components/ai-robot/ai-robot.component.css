@@ -193,9 +193,9 @@
 }
 
 .ai-showcase-inner-light {
-    background: linear-gradient(0deg, rgba(4, 1, 21, 0.1), rgba(4, 1, 21, 0.1)),
-        radial-gradient(50% 50% at 50% 50%, rgba(168, 127, 255, 0.04) 0%, rgba(168, 127, 255, 0) 100%);
-
+    background:rgb(231, 228, 228);
+    border: 1px solid #FFFFFF1A;
+    border-radius: 25px;
 }
 
 
