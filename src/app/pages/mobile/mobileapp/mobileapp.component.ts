@@ -2,7 +2,9 @@ import { Component, ElementRef, OnInit } from '@angular/core';
 import AOS from 'aos';
 import { NgxSpinnerService } from 'ngx-spinner';
 import { ApiService } from 'src/app/shared/api/api.service';
-import {TruncateAtPointPipe} from "src/app/shared/pipes/truncate-at-point.pipe"
+import { Title, Meta } from '@angular/platform-browser';
+
+
 @Component({
   selector: 'app-mobileapp',
   templateUrl: './mobileapp.component.html',
@@ -10,7 +12,9 @@ import {TruncateAtPointPipe} from "src/app/shared/pipes/truncate-at-point.pipe"
 })
 export class MobileappComponent implements OnInit {
 
-  list1: any[] = []
+  list1: any[] = [];
+  dynamicTitle = 'Mobile App Development Services | Custom Mobile App Development';
+  dynamicDescription = 'Discover top mobile app developers near you at Quantum IT Innovation. We offer custom mobile app development services, including cross-platform solutions. Your best mobile app development company!';
 
   aiService = [
     {
@@ -54,17 +58,21 @@ export class MobileappComponent implements OnInit {
   isDarkTheme!: boolean;
   projects!: any[]
 
-  constructor(private api: ApiService, private elementRef: ElementRef, private spinner: NgxSpinnerService) {
+  constructor(private titleService: Title,
+    private metaService: Meta, private api: ApiService, private elementRef: ElementRef, private spinner: NgxSpinnerService) {
   }
 
   ngOnInit(): void {
+    this.titleService.setTitle(this.dynamicTitle);
+    this.metaService.updateTag({name:'description',content:this.dynamicDescription});
+
     AOS.init({
       duration: 2000,
     })
     this.list1 = ["Android App Development", "Swift App Development", "iOS App Development", "iPad App Development", "Cross Platform App Development"]
     console.log(this.list1)
     this.isDarkTheme = this.api.isDarkTheme();
-    this.themechange()
+    this.themechange();
     this.fetchMobileProjects();
     this.scrollToTop();
   }

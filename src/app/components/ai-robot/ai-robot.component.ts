@@ -1,6 +1,8 @@
 import { Component, OnInit, ElementRef } from '@angular/core';
 import AOS from 'aos';
 import { ApiService } from 'src/app/shared/api/api.service';
+import { Title, Meta } from '@angular/platform-browser';
+
 
 @Component({
   selector: 'app-ai-robot',
@@ -9,9 +11,13 @@ import { ApiService } from 'src/app/shared/api/api.service';
 })
 export class AiRobotComponent implements OnInit {
 
-  isDarkTheme!: boolean
-  constructor(private elementRef: ElementRef, private api: ApiService) { }
+  isDarkTheme!: boolean;
 
+  dynamicTitle = 'AI Development Services | AI Development Company | AI Consulting';
+  dynamicDescription = 'Explore Quantum IT Innovation for expert AI consulting services, chatbot development, and generative AI solutions. Leading AI development company for enterprise solutions.';
+
+  constructor(private titleService: Title,
+    private metaService: Meta,private elementRef: ElementRef, private api: ApiService) { }
 
   aiService = [
     {
@@ -133,6 +139,10 @@ export class AiRobotComponent implements OnInit {
   ]
 
   ngOnInit(): void {
+
+    this.titleService.setTitle(this.dynamicTitle);
+    this.metaService.updateTag({ name: 'description', content: this.dynamicDescription });
+
     AOS.init({
       duration: 2000,
     })
