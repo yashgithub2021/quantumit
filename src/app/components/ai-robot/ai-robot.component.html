@@ -245,7 +245,7 @@
                             Mission</button>
                         <button (click)="scrollToForm()"
                             class="btn btn-outline-primary mx-3 px-2 px-lg-4 py-2 py-lg-2 text-uppercase "
-                            style="white-space:nowrap;color:white;">learn
+                            style="white-space:nowrap;"[ngStyle]="{color:isDarkTheme?'white':'black'}">learn
                             More</button>
                     </div>
                 </div>
