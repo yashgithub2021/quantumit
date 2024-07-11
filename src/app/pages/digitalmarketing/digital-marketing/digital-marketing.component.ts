@@ -66,7 +66,7 @@ export class DigitalMarketingComponent implements OnInit {
       heading: "Search Engine",
       tail: "Optimization",
       desc: "SEO is the process of enhancing a website's visibility and ranking on <br> search engine results pages to increase organic traffic and improve <br> online presence.",
-      link: "seoServices"
+      link: "/seo-services-company"
     },
     {
       img: "../../../assets/dm/paid-search.svg",
@@ -88,7 +88,7 @@ export class DigitalMarketingComponent implements OnInit {
       tail: "Marketing",
       desc: "Social media marketing involves leveraging social platforms to connect <br> with audiences, build brand awareness, and drive engagement and sales.",
       list: ["Social Media Design", "Social Media Management", "Custom ad strategy", "Unique ads campaigns", "Advanced demographic <br> targeting"],
-      link: "services/socialMedia"
+      link: "/social-media-marketing"
     },
     {
       img: "../../../assets/dm/email.svg",

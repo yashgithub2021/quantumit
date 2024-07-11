@@ -64,8 +64,10 @@
                         <div *ngIf="filteredProjects[0]" class="app p-3 rounded-3"
                             [ngStyle]="{'background':isDarkTheme?'#111111':'#ECF0FF'}">
                             <div class="app-img">
-                                <img (click)="scrollToTop()" src="../../../../assets/portfolio/view-project.svg"
+                                <img (click)="scrollToTop()" src="../../../../assets/casestudybanner/veiw_more.png"
                                     [routerLink]="filteredProjects[0].link" class="view-project" alt="">
+                                    
+                                        
                                 <img class="rounded-3" width="400" height="550"
                                     [src]="filteredProjects[0].portfolioImage" alt="">
                             </div>

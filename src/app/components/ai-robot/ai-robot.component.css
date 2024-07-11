@@ -64,17 +64,20 @@
     border: 1px solid #FFFFFF0F;
     box-shadow: 0px 17px 25px 0px #07496F05;
 }
+
 .ai-data2 {
     box-sizing: border-box;
     height: 200px;
     border: 1px solid #FFFFFF0F;
     box-shadow: 0px 17px 25px 0px #07496F05;
     cursor: pointer;
-    max-width:23%;
+    max-width: 23%;
 }
-.ai-data2:hover{
-    border: 3px solid #008DF3;    
+
+.ai-data2:hover {
+    border: 3px solid #008DF3;
 }
+
 .slider {
     height: 100px;
     margin: auto;
@@ -176,6 +179,10 @@
     top: 30%;
 }
 
+.ai-showcase-light {
+    top: 30%;
+}
+
 .ai-showcase-inner {
     background:
         linear-gradient(0deg, rgba(4, 1, 21, 0.1), rgba(4, 1, 21, 0.1)),
@@ -183,6 +190,12 @@
     border: 1px solid #FFFFFF1A;
     border-radius: 25px;
     /* Adds the frosted glass effect */
+}
+
+.ai-showcase-inner-light {
+    background: linear-gradient(0deg, rgba(4, 1, 21, 0.1), rgba(4, 1, 21, 0.1)),
+        radial-gradient(50% 50% at 50% 50%, rgba(168, 127, 255, 0.04) 0%, rgba(168, 127, 255, 0) 100%);
+
 }
 
 
@@ -266,9 +279,11 @@
         background-position: right;
         height: 80%;
     }
-    .frame-4-image{
+
+    .frame-4-image {
         height: 40vh;
     }
+
     .ai-showcase-inner {
         padding: 10px;
         border-radius: 15px;
@@ -340,7 +355,7 @@
         line-height: 40px;
     }
 
-    
+
     .number p {
         text-align: center;
 
@@ -416,8 +431,9 @@
         flex-direction: column;
         justify-content: space-evenly;
     }
-    .custom-gap{
-        gap:20px;
+
+    .custom-gap {
+        gap: 20px;
     }
 
     .milestone-col {
@@ -435,7 +451,7 @@
     }
 
     .sub-heading {
-        font-size: 12px!important;
+        font-size: 12px !important;
         line-height: 20px;
         font-weight: 400 !important;
         letter-spacing: 0.6px;
