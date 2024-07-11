@@ -1,4 +1,10 @@
-<div class="container-fluid website-details d-flex align-items-center justify-content-center">
+<div class="d-flex justify-content-center">
+    <div class="spinner-border text-primary" role="status" *ngIf="loadingStatus">
+        <span class="sr-only">Loading...</span>
+    </div>
+</div>
+
+<div *ngIf="!loadingStatus" class="container-fluid website-details d-flex align-items-center justify-content-center">
     <div class="container-fluid">
         <div class="project d-flex align-items-center flex-column">
             <div class="brief d-flex flex-column align-items-center justify-content-center">
@@ -178,5 +184,12 @@
                 </div>
             </div>
         </div>
+    </div>
+</div>
+
+<div class="container-fluid d-flex justify-content-end mb-5 me-5">
+    <div class="buttons d-flex flex-row align-items-end pe-5 gap-3">
+        <button class="prev our-process-btn cursor-pointer"(click)="prev()"*ngIf="nextBlogCount!=0">Prev</button>
+        <button class="next our-process-btn cursor-pointer"(click)="next()">Next</button>
     </div>
 </div>
