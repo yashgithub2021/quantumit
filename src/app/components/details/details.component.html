@@ -106,7 +106,7 @@
                     <div class="steps-container squares w-100 mt-lg-5 mt-4 mb-lg-3 ">
                         <ng-container *ngFor="let step of androidService.steps">
                             <div class="step-line" [ngStyle]="{'background-color':isDarkTheme?'white':'black'}"></div>
-                            <div class="" [ngClass]="isDarkTheme?'step-square':'step-square-light'">Step 0{{step.num}}
+                            <div class="" [ngClass]="isDarkTheme?'step-square':'step-square-light'"[ngStyle]="{color:isDarkTheme?'':'white'}">Step 0{{step.num}}
                             </div>
                             <div class="step-line" [ngStyle]="{'background-color':isDarkTheme?'white':'black'}"></div>
                         </ng-container>
@@ -522,7 +522,7 @@
                         <div class="steps-container squares w-100 mt-lg-5 mt-4 mb-lg-3 ">
                             <ng-container *ngFor="let step of serviceDetails.steps">
                                 <div class="step-line" [ngStyle]="{'background-color':isDarkTheme?'white':'black'}"></div>
-                                <div class="" [ngClass]="isDarkTheme?'step-square':'step-square-light'">Step 0{{step.num}}
+                                <div class="" [ngClass]="isDarkTheme?'step-square':'step-square-light'"[ngStyle]="{color:isDarkTheme?'':'white'}">Step 0{{step.num}}
                                 </div>
                                 <div class="step-line" [ngStyle]="{'background-color':isDarkTheme?'white':'black'}"></div>
                             </ng-container>

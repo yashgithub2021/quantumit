@@ -77,9 +77,11 @@
 
 .view-project {
     position: absolute;
-    right: 0;
-    top: 20%;
+    right: 20px;
+    top: 15%;
     cursor: pointer;
+    height:120px;
+    rotate: -45deg;
 }
 
 .miletone-number h1 {
@@ -126,10 +128,11 @@
     }
 
     .view-project {
-        right: 15px;
-        height: 60px;
-        top: 0;
-        right: 0;
+        height: 80px;
+        top: 20px;
+        right: 20px;
+        rotate: -45deg;
+
     }
 
     .w-75,

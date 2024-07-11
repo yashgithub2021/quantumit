@@ -1,3 +1,7 @@
+* {
+    font-family: 'Plus Jakarta Sans';
+}
+
 .steps-container {
     display: flex;
     justify-content: center;
@@ -50,6 +54,64 @@
     line-height: 20px;
     font-weight: 400 !important;
     /* Position for vertical line */
+}
+
+@keyframes ripple {
+    from {
+        opacity: 1;
+        transform: scale3d(0.75, 0.75, 1);
+    }
+
+    to {
+        opacity: 0;
+        transform: scale3d(2, 2, 1);
+    }
+}
+
+.step-square::before {
+    opacity: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: '';
+    height: 100%;
+    width: 100%;
+    background: #0460CC;
+    animation-name: ripple;
+    animation-duration: 3s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(.65, 0, .34, 1);
+    z-index: -1;
+}
+
+.step-square-light::before {
+    opacity: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: '';
+    height: 100%;
+    width: 100%;
+    background: #0460CC;
+    animation-name: ripple;
+    animation-duration: 3s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(.65, 0, .34, 1);
+    z-index: -1;
 }
 
 .step-title p:first-child {
@@ -153,6 +215,7 @@
     background: #000000;
     border-radius: 50%;
     margin-right: 20px;
+    transition: transform 0.2s ease;
 }
 
 .step-circle-light {
@@ -162,8 +225,11 @@
     border: 1px solid #7EA6BE;
     border-radius: 50%;
     margin-right: 20px;
+    transition: transform 0.2s ease;
 }
-
+.step-circle:hover,.step-circle-light{
+    transform:scale(1.2);
+}
 .steps-container-1 {
     justify-content: center;
 }
@@ -171,10 +237,8 @@
 
 .detaile p {
     font-size: 16px;
-    line-height: 23px;
+    line-height: 22px;
     font-weight: 500 !important;
-    font-family: Plus Jakarta Sans !important;
-    letter-spacing: 1px;
 }
 
 .frame .heading .txt h1 {
