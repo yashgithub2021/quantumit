@@ -26,8 +26,6 @@ export class DetailsComponent {
     this.getAllProjects();
 
     this.themechange()
-    this.fetchProjectId()
-    this.fetchProjectDetails()
   }
 
   themechange() {
@@ -38,14 +36,16 @@ export class DetailsComponent {
 
   fetchProjectId() {
     this.activeRoute.paramMap.subscribe((id: any) => {
-      this.projectId = id.get('id')
+      this.projectId = id.get('id');
+      this.fetchProjectDetails();
+      this.findIndexOfProject(this.projectId);
     })
   }
   fetchProjectDetails() {
     this.api.getProjectsById(this.projectId).subscribe((res: any) => {
       this.projectDetails = res.project;
       this.loadingStatus=false;
-      console.log(this.projectDetails)
+      console.log(this.projectDetails);
     },err=>{
       this.loadingStatus=false;
     })
@@ -61,6 +61,7 @@ export class DetailsComponent {
             return project;
           }
         });
+        this.fetchProjectId();
         console.log(this.filteredProjects);
       }
     );
@@ -76,9 +77,8 @@ export class DetailsComponent {
     this.router.navigate(['/web-development/details', this.projectId]);
   }
   next(){
-    this.findIndexOfProject(this.projectId);
 
-    if(this.nextProjectCount==this.projects.length-1){
+    if(this.nextProjectCount==this.filteredProjects.length-1){
       this.nextProjectCount=this.nextProjectCount;
     }
     else if(this.nextProjectCount<=this.filteredProjects.length-1){
@@ -89,7 +89,6 @@ export class DetailsComponent {
     }
   }
   prev(){
-    this.findIndexOfProject(this.projectId);
 
     if(this.nextProjectCount==0){
       this.nextProjectCount=this.nextProjectCount;

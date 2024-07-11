@@ -24,7 +24,7 @@ button {
 
 .social-icon {
     height: 100px;
-    width: 170px;
+    width: 180px;
     border-radius: 6px;
     position: relative;
     overflow: hidden;
@@ -151,7 +151,12 @@ button {
 .quantum .tagline p {
     font-size: 16px;
 }
-
+.ipad-mini-landscape1{
+    width:50%;
+}
+.social-links-container{
+    gap:27px;
+}
 
 @media(min-width:1025px) and (max-width:1180px) {
     footer>.container {
@@ -194,6 +199,9 @@ button {
 @media(max-width:820px) {
     .social-icon {
         width: 130px;
+    }
+    .ipad-mini-landscape1{
+        width:100%;
     }
 
 }
@@ -282,5 +290,7 @@ button {
         line-height: 24px;
         font-weight: 400 !important;
     }
-
+    .social-links-container{
+        gap:0px;
+    }
 }

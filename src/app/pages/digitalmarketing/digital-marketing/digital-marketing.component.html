@@ -18,8 +18,8 @@
                 <div class="buttons d-flex justify-content-center w-100 mt-3">
                     <button class="btn btn-primary mx-3 px-2 px-lg-4 py-3" (click)="scrollToProcess()">Get
                         Started</button>
-                    <button class="btn btn-outline-primary mx-3 px-2 px-lg-4 py-3 text-uppercase text-white"
-                        (click)="scrollToForm()">learn
+                    <button class="btn btn-outline-primary mx-3 px-2 px-lg-4 py-3 text-uppercase"
+                        (click)="scrollToForm()"[ngStyle]="{color:isDarkTheme?'':'black'}">learn
                         More</button>
                 </div>
             </div>
@@ -345,7 +345,7 @@
                                 </div> -->
                             </td>
                             <td class="align-middle py-4 px-2 fourth-td w-auto">
-                                <p [routerLink]="['services', data.link]" (click)="scrollToTop()"
+                                <p [routerLink]="[data.link]" (click)="scrollToTop()"
                                     class="m-0 table-lm learn ">Learn
                                     More <i class="fa-solid fa-arrow-right text-secondary"
                                         style="transform: rotate(325deg);"></i></p>
