@@ -19,21 +19,21 @@ export class BlogComponent implements OnInit {
   loadingStatus: boolean = true;
 
   categories: any[] = [
-    { link: 'inner-blog/66795ec3a37d607032b766b5', name: 'App Development' },
-    { link: 'inner-blog/667962640b494ad0884d5e05', name: 'Website Development' },
-    { link: 'inner-blog/66795c8ea37d607032b766af', name: 'SEO' },
-    { link: 'inner-blog/667968600b494ad0884d5e09', name: 'App Store Optimization' },
-    { link: 'inner-blog/66795ec3a37d607032b766b5', name: 'Mobile App Development' },
-    { link: 'inner-blog/6630bfb418c3b9df7378027a', name: 'Artificial Intelligence' },
-    { link: 'inner-blog/66794424a37d607032b76653', name: 'Digital Marketing' },
-    { link: 'inner-blog/6630bfb418c3b9df7378027a', name: 'ChatBot' },
-    { link: 'inner-blog/66795c8ea37d607032b766af', name: 'ORM SEO' },
-    { link: 'inner-blog/667962640b494ad0884d5e05', name: 'Web Development' },
-    { link: 'inner-blog/66795c8ea37d607032b766af', name: 'Local SEO' },
-    { link: 'inner-blog/66795ec3a37d607032b766b5', name: 'Geo Location Mobile App' },
-    { link: 'inner-blog/66794424a37d607032b76653', name: 'Social Media Marketing' },
-    { link: 'inner-blog/66795ec3a37d607032b766b5', name: 'Android App Development' },
-    { link: 'inner-blog/66795ec3a37d607032b766b5', name: 'Mobile Application' },
+    { link: 'inner-blog/3', name: 'App Development' },
+    { link: 'inner-blog/4', name: 'Website Development' },
+    { link: 'inner-blog/2', name: 'SEO' },
+    { link: 'inner-blog/5', name: 'App Store Optimization' },
+    { link: 'inner-blog/3', name: 'Mobile App Development' },
+    { link: 'inner-blog/3', name: 'Artificial Intelligence' },
+    { link: 'inner-blog/2', name: 'Digital Marketing' },
+    { link: 'inner-blog/3', name: 'ChatBot' },
+    { link: 'inner-blog/2', name: 'ORM SEO' },
+    { link: 'inner-blog/4', name: 'Web Development' },
+    { link: 'inner-blog/2', name: 'Local SEO' },
+    { link: 'inner-blog/3', name: 'Geo Location Mobile App' },
+    { link: 'inner-blog/2', name: 'Social Media Marketing' },
+    { link: 'inner-blog/3', name: 'Android App Development' },
+    { link: 'inner-blog/3', name: 'Mobile Application' },
   ]
 
   constructor(private api: ApiService, private titlecase: TitleCasePipe) { }

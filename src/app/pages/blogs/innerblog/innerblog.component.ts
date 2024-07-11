@@ -11,7 +11,11 @@ export class InnerblogComponent implements OnInit {
 
   blogDetail!: any
   blogId: any
-  isDarkTheme!: boolean
+  isDarkTheme!: boolean;
+  nextBlogCount!:number;
+  blogs!:any;
+  loadingStatus:boolean=true;
+
   constructor(private api: ApiService, private active: ActivatedRoute) { }
 
   checks = ["Listen to what they say about you", "Randomised words which don't look even slightly believable.", "Lorem Ipsum generators on the Internet tend to repeat predefined chunks", "Automate multiple scenarios and eliminate tedious tasks. "]
@@ -36,8 +40,9 @@ export class InnerblogComponent implements OnInit {
 
   ngOnInit(): void {
     this.isDarkTheme = this.api.isDarkTheme();
-    this.fetchBlogDetail()
-    this.themechange()
+    this.getBlogId();
+    this.themechange();
+    this.fetchBlogs();
   }
 
   themechange() {
@@ -45,16 +50,32 @@ export class InnerblogComponent implements OnInit {
       this.isDarkTheme = isDarkTheme;
     });
   }
+  // fetchBlogIndex(){
+  //   this.nextBlogCount=this.blogs.
+  // }
+  fetchBlogs() {
+    this.api.getBlogs().subscribe((res: any) => {
+      this.blogs=res;
+      console.log(this.blogs);
+    },err => {
 
-  fetchBlogDetail() {
-    this.active.paramMap.subscribe((res: any) => {
-      this.blogId = res.get('id')
     })
+  }
+  getBlogId(){
+    this.active.paramMap.subscribe((res: any) => {
+      this.blogId = res.get('id');
+      this.fetchBlogDetail();
+    });
+  }
+  fetchBlogDetail() {
 
     this.api.getBlogDetails(this.blogId).subscribe((res: any) => {
       this.blogDetail = res.blogs
       console.log(this.blogDetail)
-      this.modifyQuote()
+      this.modifyQuote();
+      this.loadingStatus=false;
+    },err=>{
+      this.loadingStatus=false;
     })
 
   }
@@ -66,5 +87,12 @@ export class InnerblogComponent implements OnInit {
       // Replace the first word with the first letter wrapped in a span element
       this.blogDetail.quote = `<span class="first-letter fw-bold fs-1">${firstLetter}</span>${this.blogDetail.quote.slice(1)}`;
     }
+  }
+
+  next(){
+
+  }
+  prev(){
+
   }
 }

@@ -7,8 +7,9 @@
     padding: 50px 50px;
     background: linear-gradient(90deg, #43BAFF 0%, #7141B1 100%);
 }
-.latest-news{
-    min-height:140px;
+
+.latest-news {
+    min-height: 140px;
 }
 
 .blog-heading h1 {
@@ -59,6 +60,7 @@
 .card-footer {
     border-top: 1px solid;
 }
+
 .card-footer-light {
     border-top: 1px solid rgb(237, 225, 225);
 }
@@ -68,7 +70,8 @@
     position: relative;
     cursor: pointer;
 }
-.popular-last{
+
+.popular-last {
     cursor: pointer;
 }
 
@@ -98,17 +101,21 @@
     width: 20rem;
 }
 
+.single-blog>div {
+    width: 49%;
+}
+
 @media(max-width:1366px) and (min-height:1024px) {
     .frame-1-container>.frame-3 {
         min-height: 50vh !important;
     }
 }
 
-@media(min-width:1025px) and (max-width:1180px) {
+/* @media(min-width:1025px) and (max-width:1180px) {
     .frame-1-container {
         height: 205vh;
     }
-}
+} */
 
 @media(max-width:1024px) {
     .frame-3>.contributors-section>.contributor-image {
@@ -124,6 +131,14 @@
 
     .frame-3>.contributors-section>.contributors>.card {
         width: 100%;
+    }
+
+    .single-blog>div {
+        width: 80%;
+    }
+
+    .single-blog {
+        justify-content: center;
     }
 }
 
@@ -173,8 +188,9 @@
     .latest-news {
         width: 100% !important;
     }
-    .latest-news{
-        min-height:100px;
+
+    .latest-news {
+        min-height: 100px;
     }
 
     .blog-heading h1 {
@@ -186,7 +202,9 @@
         font-size: 12px;
         line-height: 15px;
     }
-
+    .single-blog>div {
+        width: 100%;
+    }
     .numbers-section {
         padding: 50px 5px;
     }

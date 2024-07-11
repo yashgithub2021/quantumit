@@ -27,7 +27,7 @@
         <div class="frame-2 w-100 h-100" *ngIf="!loadingStatus">
             <div class="container d-flex">
                 <div class="cards row">
-                    <div class="categories col-4">
+                    <div class="categories col-lg-4 col-12">
                         <div class="card col py-4 my-3 m-lg-3 w-100"
                             [ngStyle]="{'color':isDarkTheme?'white':'black','background':isDarkTheme?'#111111':'#ECF0FF'}">
                             <div class="card-body ">
@@ -50,7 +50,7 @@
                                     </div>
                                 </div>
                             </ng-container>
-                            <div class="card-body popular-last" routerLink="inner-blog/6630bfb418c3b9df7378027a">
+                            <div class="card-body popular-last" routerLink="inner-blog/1">
                                 <div class="container d-flex justify-content-between">
                                     <div class="text">
                                         <h4 class="fw-light  w-100 text-capitalize">Robotic Process Automation</h4>
@@ -64,34 +64,34 @@
                             </div>
                         </div>
                     </div>
-                    <div class="blogs blogs-pagination-container col-8">
-                        <div class="single-blog d-grid mb-4" style="  grid-template-columns: auto auto;gap:20px">
+                    <div class="blogs blogs-pagination-container col-lg-8 col-12">
+                        <div class="single-blog row mb-4 ms-md-4" style="gap:10px;min-height:590px;">
                             <div *ngFor="let blog of blogs | paginate: { id: 'foo',
                                 itemsPerPage: pageSize,
                                 currentPage: currentPage,
                                 totalItems: totalItem }" [routerLink]="['inner-blog/'+blog.id]"
-                                class="card g-col-6 my-3 m-lg-3 w-100 g-3" style="cursor: pointer;"
+                                class="card col-lg-5 col-8 my-3 p-0" style="cursor: pointer;height: auto;"
                                 [ngStyle]="{'color':isDarkTheme?'white':'black','background':isDarkTheme?'#111111':'#ECF0FF'}">
                                 <img style="height: 40%;" [src]="blog.image" class="card-img-top" alt="...">
-                                <div class="card-body px-3">
+                                <div class="px-3 mt-3"style="height:auto">
                                     <div class="container">
                                         <h5 class="card-title text-capitalize fw-lighter">{{blog?.category}}
                                             - <span class="days opacity-50">{{blog?.readTime}}</span></h5>
                                     </div>
                                 </div>
-                                <div class="card-body px-3">
+                                <div class=" px-3"style="height:auto">
                                     <div class="container d-flex">
                                         <div class="text">
                                             <h5 class="fw-light ">{{blog?.title}}
                                             </h5>
-                                            <p class="opacity-50">
-                                                {{(blog?.description.length>100)?(blog?.description |
-                                                slice:0:100)+'...':(blog?.description)}}
+                                            <p class="opacity-50"[innerHTML]="(blog?.description.length>100)?(blog?.description |
+                                                slice:0:100)+'...':(blog?.description)">
+                                                
                                             </p>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card-footer text-body-secondary px-3"[ngClass]="isDarkTheme?'card-footer':'card-footer-light'">
+                                <div class="text-body-secondary px-3 "style="height:auto;min-height:80px;max-height:90px;"[ngClass]="isDarkTheme?'card-footer':'card-footer-light'">
                                     <div class="container d-flex justify-content-between"
                                         [ngClass]="isDarkTheme?'text-white':'text-black'">
                                         <div class="profile d-flex justify-content-evenly">
