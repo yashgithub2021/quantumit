@@ -3,6 +3,8 @@ import { ActivatedRoute } from '@angular/router';
 import { ApiService } from 'src/app/shared/api/api.service';
 import { DataService } from 'src/app/shared/api/data.service';
 import AOS from 'aos';
+import { Title, Meta } from '@angular/platform-browser';
+
 
 @Component({
   selector: 'app-details',
@@ -16,9 +18,12 @@ export class DetailsComponent implements OnInit {
   androidService!: any;
   serviceDetails!:any;
   differentPageStatus: boolean = true;
-  constructor(private api: ApiService, private dataService: DataService, private route: ActivatedRoute) { }
+
+  constructor(private titleService: Title,
+    private metaService: Meta,private api: ApiService, private dataService: DataService, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
+
     AOS.init({
       duration: 2000,
     })
@@ -29,6 +34,10 @@ export class DetailsComponent implements OnInit {
       this.checkForDifferentPageRedirect(data.services);
       this.androidService = data.services.services;
       this.serviceDetails=this.androidService;
+      //for seo
+      this.titleService.setTitle(this.androidService.metaTitle || 'Default Title');
+      this.metaService.updateTag({ name: 'description', content:this.androidService.metaDescription || 'Default Description' });
+
     });
 
   }

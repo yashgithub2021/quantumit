@@ -2,6 +2,8 @@ export const androidService = {
     title1: "Android App",
     title2: "Development Solutions",
     img1: "../../../../assets/services/android/img1.png",
+    metaTitle:"Android App Development Company | Android App Development Agency",
+    metaDescription:"Quantum IT Innovation: Leading Android app development agency offering top-notch custom Android app development services. Transform your ideas with our expert team today!",
     // img2: "../../../../assets/services/ios_android/img1.jpg",
     descriptionOne: [
         "Our Android app development services offer a comprehensive solution for businesses seeking to establish a strong presence on the Android platform. With the widespread adoption of Android devices worldwide, having a customized mobile application tailored to this ecosystem is essential for reaching and engaging with a diverse audience.",
@@ -81,6 +83,8 @@ export const androidService = {
 export const iOsService = {
     title1: "Crafting Exceptional",
     title2: "iOS Experiences",
+    metaTitle:"IOS App Development Company | IOS App Development Services",
+    metaDescription:"Quantum IT Innovation offers top-tier iOS app development services. As a leading iOS app development company and agency, we deliver innovative, customized iphone app solutions.",
     img1: "../../../../assets/services/ios_dev/img1.jpg",
     // img2: "../../../../assets/services/ios_android/img4.jpg",
     descriptionOne: [
@@ -162,6 +166,8 @@ export const iOsService = {
 export const swiftAppDevelopment = {
     title1: "Transforming Businesses with",
     title2: "Swift App Development",
+    metaTitle:"App Development with Swift | Swift App Development",
+    metaDescription:"Explore expert Swift app development services at Quantum IT Innovation. We specialize in app development with Swift, delivering cutting-edge solutions globally.",
     img1: "../../../../assets/services/shift_app_dev/img1.jpg",
     img2: "../../../../assets/services/shift_app_dev/representation-user-experience-interface-design (2).jpg",
     descriptionOne: [
@@ -243,6 +249,8 @@ export const swiftAppDevelopment = {
 export const crossPlatformAppDevelopment = {
     title1: "Revolutionizing Cross Platform",
     title2: "App Development",
+    metaTitle:"Cross Platform App Development | Cross Platform Mobile App Development",
+    metaDescription:"Explore Quantum IT Innovation for expert cross platform app development solutions. Enhance your reach with top-notch cross platform mobile app development services.",
     img1: "../../../../assets/services/cross_platform/img1.png",
     img2: "../../../../assets/services/cross_platform/cross-platform-app-d.jpg",
     descriptionOne: [
@@ -324,6 +332,8 @@ export const crossPlatformAppDevelopment = {
 export const iPadAppDevelopment = {
     title1: "Empowering Businesses with",
     title2: "iPad App Development",
+    metaTitle:"Ipad App Development Company | Custom Ipad App Development",
+    metaDescription:"Quantum IT Innovation: Your trusted iPad app development company for custom solutions. Expertise in custom iPad app development tailored to your business needs.",
     img1: "../../../../assets/services/ipad_app_deve/img1.png",
     // img2: "../../../../assets/services/ipad_app_deve/a833bbcd2062c2b407db5d92d2ed4824.jpg",
     descriptionOne: [
@@ -405,6 +415,8 @@ export const iPadAppDevelopment = {
 export const mobileGameDevelopment = {
     title1: "Exciting Adventures with",
     title2: "Mobile Game Development",
+    metaTitle:"Mobile Game Development Company | Mobile Game Companies",
+    metaDescription:"Explore Quantum IT Innovation, a leading mobile game development company. Trusted among mobile game companies for innovative solutions.",
     img1: "../../../../assets/services/mobile_game_dev/img1.png",
     // img2: "../../../../assets/services/mobile_game_dev/person-is-taking-picture-city-while-holding-their-smartphone.jpg",
     descriptionOne: [
@@ -561,6 +573,8 @@ export const internetOfThings = {
 export const roboticProcessAutomation = {
     title1: "Emerging Technology of",
     title2: "Robotic Process Automation",
+    metaTitle:"Robotic Process Automation | RPA Automation | RPA Development",
+    metaDescription:"Discover expert robotic process automation (RPA) solutions with Quantum IT Innovation. We specialize in RPA automation and custom RPA development.",
     img1: "../../../../assets/services/Robitic_process/img1.jpg",
     img2: "../../../../assets/services/Robitic_process/By-adopting-Robotic-Process-Auto.jpg",
     descriptionOne: [

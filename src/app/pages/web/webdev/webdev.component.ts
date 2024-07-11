@@ -1,6 +1,8 @@
 import { Component, OnInit, ElementRef } from '@angular/core';
 import AOS from 'aos';
 import { ApiService } from 'src/app/shared/api/api.service';
+import { Title, Meta } from '@angular/platform-browser';
+
 
 @Component({
   selector: 'app-webdev',
@@ -10,8 +12,13 @@ import { ApiService } from 'src/app/shared/api/api.service';
 export class WebdevComponent implements OnInit {
 
   projects!: any
-  isDarkTheme!: boolean
-  constructor(private elementRef: ElementRef, private api: ApiService) { }
+  isDarkTheme!: boolean;
+
+  dynamicTitle = 'Web App Development Company | Custom Web Development | Quantum IT';
+  dynamicDescription = 'Quantum IT Innovation offers top-tier custom web development services. As a leading web app development company, we excel in custom web application development near you.';
+
+  constructor(private titleService: Title,
+    private metaService: Meta,private elementRef: ElementRef, private api: ApiService) { }
 
   our_steps = [
     {
@@ -44,6 +51,10 @@ export class WebdevComponent implements OnInit {
   ]
 
   ngOnInit(): void {
+
+    this.titleService.setTitle(this.dynamicTitle);
+    this.metaService.updateTag({ name: 'description', content: this.dynamicDescription });
+
     AOS.init({
       duration: 2000,
     })
