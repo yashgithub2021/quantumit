@@ -22,8 +22,6 @@ export class AppDetailsComponent implements OnInit {
     this.isDarkTheme = this.api.isDarkTheme();
     this.getAllProjects();
     this.themechange();
-    this.fetchProjectId();
-    this.fetchProjectDetails();
     this.scrollToTop();
 
   }
@@ -43,6 +41,7 @@ export class AppDetailsComponent implements OnInit {
             return project;
           }
         });
+        this.fetchProjectId();
         console.log(this.filteredProjects);
       }
     );
@@ -50,7 +49,10 @@ export class AppDetailsComponent implements OnInit {
 
   fetchProjectId() {
     this.activeRoute.paramMap.subscribe((id: any) => {
-      this.projectId = id.get('id')
+      this.projectId = id.get('id');
+      console.log(this.projectId);
+      this.fetchProjectDetails();
+      this.findIndexOfProject(this.projectId);
     })
   }
   fetchProjectDetails() {
@@ -67,15 +69,15 @@ export class AppDetailsComponent implements OnInit {
     if(index!=-1){
       this.nextProjectCount=index;
     }
+    console.log(this.filteredProjects);
   }
   findIdOfProject(index:number){
     this.projectId=this.filteredProjects[index]._id;
     this.router.navigate(['/app-development/app-details', this.projectId]);
   }
   next(){
-    this.findIndexOfProject(this.projectId);
 
-    if(this.nextProjectCount==this.projects.length-1){
+    if(this.nextProjectCount==this.filteredProjects.length-1){
       this.nextProjectCount=this.nextProjectCount;
     }
     else if(this.nextProjectCount<=this.filteredProjects.length-1){
@@ -86,7 +88,6 @@ export class AppDetailsComponent implements OnInit {
     }
   }
   prev(){
-    this.findIndexOfProject(this.projectId);
 
     if(this.nextProjectCount==0){
       this.nextProjectCount=this.nextProjectCount;

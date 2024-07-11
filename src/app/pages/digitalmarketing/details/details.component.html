@@ -27,7 +27,7 @@
                     </div>
                 </div>
                 <div class="image mt-3 w-100 text-align-center">
-                    <img class="rounded-2" width="1000" style="height: 500px;" [src]="projectDetails.image" alt="">
+                    <img class="rounded-2" width="1000" style="max-height: 700px;" [src]="projectDetails.image" alt="">
                 </div>
 
                 <div class="project-details">
@@ -152,8 +152,8 @@
     </div>
 </div>
 <div class="container-fluid d-flex justify-content-end mb-5 me-5">
-    <div class="buttons d-flex flex-row align-items-end pe-5">
-        <button class="prev our-process-btn cursor-pointer"(click)="prev()">Prev</button>
-        <button class="next our-process-btn cursor-pointer"(click)="next()">Next</button>
+    <div class="buttons d-flex flex-row align-items-end pe-5 gap-3">
+        <button class="prev our-process-btn cursor-pointer"(click)="prev()"*ngIf="nextProjectCount!=0">Prev</button>
+        <button class="next our-process-btn cursor-pointer"(click)="next()"*ngIf="nextProjectCount!=filteredProjects.length-1">Next</button>
     </div>
 </div>

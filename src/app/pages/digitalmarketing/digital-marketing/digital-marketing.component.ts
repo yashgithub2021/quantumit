@@ -73,14 +73,14 @@ export class DigitalMarketingComponent implements OnInit {
       heading: "Paid Search",
       tail: "Marketing",
       desc: "Paid search marketing involves placing targeted ads on search engine <br> results pages to increase visibility and drive traffic to websites.",
-      link: "paidSearch"
+      link: "services/paidSearch"
     },
     {
       img: "../../../assets/dm/conversion-rate.svg",
       heading: "Conversion Rate",
       tail: "Optimization",
       desc: "Conversion Rate Optimization (CRO) improves the percentage of <br> website visitors who take a desired action, ultimately increasing <br> the effectiveness of a website.",
-      link: "conversionRateOptimization"
+      link: "services/conversionRateOptimization"
     },
     {
       img: "../../../assets/dm/social-media.svg",
@@ -88,21 +88,21 @@ export class DigitalMarketingComponent implements OnInit {
       tail: "Marketing",
       desc: "Social media marketing involves leveraging social platforms to connect <br> with audiences, build brand awareness, and drive engagement and sales.",
       list: ["Social Media Design", "Social Media Management", "Custom ad strategy", "Unique ads campaigns", "Advanced demographic <br> targeting"],
-      link: "socialMedia"
+      link: "services/socialMedia"
     },
     {
       img: "../../../assets/dm/email.svg",
       heading: "Email marketing",
       tail: "Solutions",
       desc: "Providing financial advice, including cost reduction strategies, financial <br> planning, and risk management.",
-      link: "emailMarketing"
+      link: "services/emailMarketing"
     },
     {
       img: "../../../assets/dm/ppc.svg",
       heading: "Pay-Per-Click (PPC)",
       tail: "Advertising",
       desc: "Pay-per-click (PPC) advertising enables businesses to display ads <br> on search engines and other platforms, paying only when users click <br> on their ads.",
-      link: "payPerClick"
+      link: "/ppc-campaign-management-services"
     },
   ]
 

@@ -19,7 +19,7 @@
                                 class="btn-lm btn-primary mx-3 me-lg-3 mx-lg-0 px-lg-4 px-2 py-lg-3">Get
                                 Started</button>
                             <button class="btn btn-outline-primary mx-3 px-lg-4 px-2 py-lg-3 text-uppercase "
-                                style="color:white;" (click)="scrollToFooter()">learn
+                                style="color:white;" (click)="scrollToFooter()"[ngStyle]="{color:isDarkTheme?'':'black'}">learn
                                 More</button>
                         </div>
                     </div>
@@ -43,15 +43,15 @@
                     </div>
 
                     <div data-aos="fade-up" class="our-process my-3">
-                        <h1 class="text-align-center text-lg-start">Services We Offer
+                        <h1 class="text-align-center text-lg-start">What We Do
                         </h1>
                     </div>
 
-                    <div data-aos="fade-up" class=" our-process-content w-75 mt-3">
+                    <!-- <div data-aos="fade-up" class=" our-process-content w-75 mt-3">
                         <h3 class="fw-light mb-0">What We Do</h3>
-                    </div>
+                    </div> -->
 
-                    <div class="list mb-2 d-flex justify-content-center">
+                    <div class="list mb-2 d-flex justify-content-start">
                         <ul class=" list-unstyled ">
                             <li data-aos="fade-up"
                                 class=" d-flex align-items-center justify-content-start list-unstyled my-3"

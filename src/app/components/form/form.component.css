@@ -1,6 +1,9 @@
 .form {
     height: 100vh;
 }
+.form1 .container{
+    padding: 0px;
+}
 
 .text h1 {
     font-size: 42px !important;
@@ -123,13 +126,13 @@ textarea::placeholder {
     }
 
     .opt h3 {
-        font-size: 13px;
-        text-align: center;
+        font-size: 16px;
+        /* text-align: center; */
     }
 
     .blue-opt h3 {
-        font-size: 13px;
-        text-align: center;
+        font-size: 16px;
+        /* text-align: center; */
     }
 
 

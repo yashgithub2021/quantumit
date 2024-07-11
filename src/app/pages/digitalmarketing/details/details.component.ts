@@ -24,10 +24,7 @@ export class DetailsComponent implements OnInit{
     this.isDarkTheme = this.api.isDarkTheme();
 
     this.getAllProjects();
-
     this.themechange()
-    this.fetchProjectId()
-    this.fetchProjectDetails()
   }
 
   themechange() {
@@ -38,7 +35,9 @@ export class DetailsComponent implements OnInit{
 
   fetchProjectId() {
     this.activeRoute.paramMap.subscribe((id: any) => {
-      this.projectId = id.get('id')
+      this.projectId = id.get('id');
+        this.fetchProjectDetails();
+        this.findIndexOfProject(this.projectId);
     })
   }
   fetchProjectDetails() {
@@ -61,6 +60,7 @@ export class DetailsComponent implements OnInit{
             return project;
           }
         });
+        this.fetchProjectId();
         console.log(this.filteredProjects);
       }
     );
@@ -73,12 +73,12 @@ export class DetailsComponent implements OnInit{
   }
   findIdOfProject(index:number){
     this.projectId=this.filteredProjects[index]._id;
-    this.router.navigate(['/web-development/details', this.projectId]);
+    this.router.navigate(['/digital-marketing/details', this.projectId]);
   }
   next(){
-    this.findIndexOfProject(this.projectId);
+    // this.findIndexOfProject(this.projectId);
 
-    if(this.nextProjectCount==this.projects.length-1){
+    if(this.nextProjectCount==this.filteredProjects.length-1){
       this.nextProjectCount=this.nextProjectCount;
     }
     else if(this.nextProjectCount<=this.filteredProjects.length-1){
@@ -89,7 +89,7 @@ export class DetailsComponent implements OnInit{
     }
   }
   prev(){
-    this.findIndexOfProject(this.projectId);
+    // this.findIndexOfProject(this.projectId);
 
     if(this.nextProjectCount==0){
       this.nextProjectCount=this.nextProjectCount;

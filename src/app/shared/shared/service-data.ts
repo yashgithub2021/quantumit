@@ -219,7 +219,7 @@ export const swiftAppDevelopment = {
     steps: [
         {
             num: 1,
-            title: "Innovative Concept Development",
+            title: "Innovative Concept",
             desc: "We brainstorm and refine unique ideas to create standout applications and games."
         },
         {
@@ -234,7 +234,7 @@ export const swiftAppDevelopment = {
         },
         {
             num: 4,
-            title: "Deployment and Ongoing Support",
+            title: "Deployment and Support",
             desc: " We manage efficient deployment and provide continuous support post-launch."
         }
     ]
@@ -309,12 +309,12 @@ export const crossPlatformAppDevelopment = {
         },
         {
             num: 3,
-            title: "Quality Assurance Excellence",
+            title: "Quality Assurance",
             desc: "Implementing rigorous testing procedures to ensure reliability and performance."
         },
         {
             num: 4,
-            title: "Seamless Deployment and Support",
+            title: "Deployment and Support",
             desc: "Guiding you through the deployment process and providing ongoing support for a seamless user experience."
         }
     ]
