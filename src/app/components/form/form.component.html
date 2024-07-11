@@ -22,7 +22,8 @@
                 class="container h-100 w-100 d-flex flex-column align-items-center justify-content-center">
                 <div class="desc w-100">
                     <p class="fw-lighter text-left " [ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">
-                        Have a project in mind that you think we’d be a great fit for <br class="d-none d-sm-block">it? We’d love to know what
+                        Have a project in mind that you think we’d be a great fit for <br class="d-none d-sm-block">it?
+                        We’d love to know what
                         you’re
                         thinking
                     </p>
@@ -33,9 +34,8 @@
                             <div class="col-sm-6 col-12">
                                 <div class="input d-flex flex-column mb-3">
                                     <label for="firstName">First Name</label>
-                                    <input formControlName="firstName" id="firstName"
-                                        placeholder="Enter First Name" type="text"
-                                        [ngClass]="isDarkTheme ? 'bg-dark' : 'bg-light'"
+                                    <input formControlName="firstName" id="firstName" placeholder="Enter First Name"
+                                        type="text" [ngClass]="isDarkTheme ? 'bg-dark' : 'bg-light'"
                                         [ngStyle]="{'color':isDarkTheme?'white':'black'}">
                                     <div *ngIf="form.get('firstName')?.invalid && form.get('firstName')?.touched"
                                         class="text-danger">
@@ -46,9 +46,8 @@
                             <div class="col-sm-6 col-12">
                                 <div class="input d-flex flex-column ">
                                     <label for="lastName">Last Name</label>
-                                    <input formControlName="lastName" id="lastName"
-                                        placeholder="Enter Last Name" type="text"
-                                        [ngClass]="isDarkTheme ? 'bg-dark' : 'bg-light'"
+                                    <input formControlName="lastName" id="lastName" placeholder="Enter Last Name"
+                                        type="text" [ngClass]="isDarkTheme ? 'bg-dark' : 'bg-light'"
                                         [ngStyle]="{'color':isDarkTheme?'white':'black'}">
                                     <div *ngIf="form.get('lastName')?.invalid && form.get('lastName')?.touched"
                                         class="text-danger">
@@ -61,8 +60,7 @@
                             <div class="col-sm-6 col-12">
                                 <div class="input d-flex flex-column mb-3">
                                     <label for="email">Email</label>
-                                    <input formControlName="email" id="email"
-                                        placeholder="Enter Email" type="email"
+                                    <input formControlName="email" id="email" placeholder="Enter Email" type="email"
                                         [ngClass]="isDarkTheme ? 'bg-dark' : 'bg-light'"
                                         [ngStyle]="{'color':isDarkTheme?'white':'black'}">
                                     <div *ngIf="form.get('email')?.invalid && form.get('email')?.touched"
@@ -105,8 +103,8 @@
                         </div>
                         <div class="row my-5">
                             <div class="col-sm-6 col-12">
-                                <button [disabled]="form.invalid" type="submit" class=" w-100 btn btn-primary rounded-3"
-                                    (click)="submitForm()">Send Messages</button>
+                                <button [disabled]="form.invalid" type="submit"
+                                    class=" w-100 btn btn-primary rounded-3">Send Messages</button>
                             </div>
                         </div>
                     </form>
@@ -115,7 +113,7 @@
             <div *ngIf="visibleForm === 'joining'"
                 class="container h-100 w-100 d-flex flex-column align-items-center justify-content-center">
                 <div class="desc w-100">
-                    <p class="color:#A2A9B0 fw-lighter text-left"[ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">
+                    <p class="color:#A2A9B0 fw-lighter text-left" [ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">
                         We connect millions of people to the moments that matter.
                     </p>
                 </div>
@@ -157,9 +155,8 @@
                             <div class="col-sm-6 col-12">
                                 <div class="input d-flex flex-column mb-3">
                                     <label for="">Email</label>
-                                    <input formControlName="email" name="email" id="email"
-                                        placeholder="Enter Email" type="text"
-                                        [ngClass]="isDarkTheme?'bg-dark':'bg-light'"
+                                    <input formControlName="email" name="email" id="email" placeholder="Enter Email"
+                                        type="text" [ngClass]="isDarkTheme?'bg-dark':'bg-light'"
                                         [ngStyle]="{'color':isDarkTheme?'white':'black'}" required>
                                     <div *ngIf="joinform.get('email')?.invalid && joinform.get('email')?.touched">
                                         <div *ngIf="joinform.get('email')?.errors?.['required']" class="text-danger">
@@ -210,7 +207,7 @@
             <div *ngIf="visibleForm === 'enquries'"
                 class="container h-100 w-100 d-flex flex-column align-items-center justify-content-center">
                 <div class="desc w-100">
-                    <p class="color:#A2A9B0 fw-lighter text-left"[ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">
+                    <p class="color:#A2A9B0 fw-lighter text-left" [ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">
                         We connect millions of people to the moments that matter.
                     </p>
                 </div>
@@ -220,9 +217,8 @@
                             <div class="col-sm-6 col-12">
                                 <div class="input d-flex flex-column mb-3">
                                     <label for="firstName">First Name</label>
-                                    <input formControlName="firstName" id="firstName"
-                                        placeholder="Enter First Name" type="text"
-                                        [ngClass]="isDarkTheme ? 'bg-dark' : 'bg-light'"
+                                    <input formControlName="firstName" id="firstName" placeholder="Enter First Name"
+                                        type="text" [ngClass]="isDarkTheme ? 'bg-dark' : 'bg-light'"
                                         [ngStyle]="{'color':isDarkTheme?'white':'black'}">
                                     <div *ngIf="form.get('firstName')?.invalid && form.get('firstName')?.touched"
                                         class="text-danger">
@@ -233,9 +229,8 @@
                             <div class="col-sm-6 col-12">
                                 <div class="input d-flex flex-column">
                                     <label for="lastName">Last Name</label>
-                                    <input formControlName="lastName" id="lastName"
-                                        placeholder="Enter Last Name" type="text"
-                                        [ngClass]="isDarkTheme ? 'bg-dark' : 'bg-light'"
+                                    <input formControlName="lastName" id="lastName" placeholder="Enter Last Name"
+                                        type="text" [ngClass]="isDarkTheme ? 'bg-dark' : 'bg-light'"
                                         [ngStyle]="{'color':isDarkTheme?'white':'black'}">
                                     <div *ngIf="form.get('lastName')?.invalid && form.get('lastName')?.touched"
                                         class="text-danger">
@@ -248,8 +243,8 @@
                             <div class="col-sm-6 col-12">
                                 <div class="input d-flex flex-column mb-3">
                                     <label for="email">Email</label>
-                                    <input formControlName="email" id="email" placeholder="Enter Email"
-                                        type="email" [ngClass]="isDarkTheme ? 'bg-dark' : 'bg-light'"
+                                    <input formControlName="email" id="email" placeholder="Enter Email" type="email"
+                                        [ngClass]="isDarkTheme ? 'bg-dark' : 'bg-light'"
                                         [ngStyle]="{'color':isDarkTheme?'white':'black'}">
                                     <div *ngIf="form.get('email')?.invalid && form.get('email')?.touched"
                                         class="text-danger">
