@@ -69,6 +69,10 @@ export class DetailsComponent implements OnInit {
       this.differentPageStatus=false;
 
     }
+    else if (data.title === 'internet of things') {
+      this.differentPageStatus=false;
+
+    }
     else{
       this.differentPageStatus=true;
 

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { ApiService } from 'src/app/shared/api/api.service';
 
 @Component({
@@ -12,11 +12,11 @@ export class InnerblogComponent implements OnInit {
   blogDetail!: any
   blogId: any
   isDarkTheme!: boolean;
-  nextBlogCount!:number;
-  blogs!:any;
-  loadingStatus:boolean=true;
+  nextBlogCount!: number;
+  blogs!: any;
+  loadingStatus: boolean = true;
 
-  constructor(private api: ApiService, private active: ActivatedRoute) { }
+  constructor(private api: ApiService, private active: ActivatedRoute,private router:Router) { }
 
   checks = ["Listen to what they say about you", "Randomised words which don't look even slightly believable.", "Lorem Ipsum generators on the Internet tend to repeat predefined chunks", "Automate multiple scenarios and eliminate tedious tasks. "]
   sectionFourNums = [
@@ -42,7 +42,6 @@ export class InnerblogComponent implements OnInit {
     this.isDarkTheme = this.api.isDarkTheme();
     this.getBlogId();
     this.themechange();
-    this.fetchBlogs();
   }
 
   themechange() {
@@ -50,21 +49,30 @@ export class InnerblogComponent implements OnInit {
       this.isDarkTheme = isDarkTheme;
     });
   }
-  // fetchBlogIndex(){
-  //   this.nextBlogCount=this.blogs.
-  // }
+  fetchBlogIndex() {
+    const index = this.blogs.findIndex((object:any) => object.id == this.blogId);
+
+    if (index !== -1) {
+      this.nextBlogCount = index;
+      console.log(this.nextBlogCount);
+    } else {
+      console.log('Object not found in the array');
+    }
+  }
   fetchBlogs() {
     this.api.getBlogs().subscribe((res: any) => {
-      this.blogs=res;
+      this.blogs = res.blogs;
       console.log(this.blogs);
-    },err => {
+      this.fetchBlogIndex();
+    }, err => {
 
     })
   }
-  getBlogId(){
+  getBlogId() {
     this.active.paramMap.subscribe((res: any) => {
       this.blogId = res.get('id');
       this.fetchBlogDetail();
+      this.fetchBlogs();
     });
   }
   fetchBlogDetail() {
@@ -73,9 +81,9 @@ export class InnerblogComponent implements OnInit {
       this.blogDetail = res.blogs
       console.log(this.blogDetail)
       this.modifyQuote();
-      this.loadingStatus=false;
-    },err=>{
-      this.loadingStatus=false;
+      this.loadingStatus = false;
+    }, err => {
+      this.loadingStatus = false;
     })
 
   }
@@ -88,11 +96,34 @@ export class InnerblogComponent implements OnInit {
       this.blogDetail.quote = `<span class="first-letter fw-bold fs-1">${firstLetter}</span>${this.blogDetail.quote.slice(1)}`;
     }
   }
-
-  next(){
-
+  findIdOfBlog(index:number){
+    this.blogId=this.blogs[index].id;
+    this.router.navigate(['/blog/inner-blog', this.blogId]);
   }
-  prev(){
 
+  next() {
+    if(this.nextBlogCount==this.blogs.length-1){
+      this.nextBlogCount=this.nextBlogCount;
+    }
+    else if(this.nextBlogCount<=this.blogs.length-1){
+      this.nextBlogCount++;
+      this.findIdOfBlog(this.nextBlogCount);
+      this.fetchBlogDetail();
+      this.scrollToTop();
+    }
+  } 
+  prev() {
+    if(this.nextBlogCount==0){
+      this.nextBlogCount=this.blogs;
+    }
+    else if(this.nextBlogCount>0 && this.nextBlogCount<=this.blogs.length-1){
+      this.nextBlogCount--;
+      this.findIdOfBlog(this.nextBlogCount);
+      this.fetchBlogDetail();
+      this.scrollToTop();
+    }
+  }
+  scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 }

@@ -267,8 +267,8 @@
     }
 
     .process .text .title h4 {
-        font-size: 18px;
-        line-height: 25px;
+        font-size: 14px;
+        line-height: 20px;
         font-weight: 400;
     }
 
@@ -353,11 +353,13 @@
     }
 
     .number {
-        font-size: 35px;
+        font-size: 30px;
         padding-top: 15px;
-        line-height: 45px;
+        line-height: 40px;
     }
-
+    .nums p {
+        font-size: 14px;
+    }
     .partner-detail {
         min-width: 155px;
         min-height:175px;
@@ -367,6 +369,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+    .frame-4 .carousel-indicators li{
+        height:6px;
+        width: 20px;
     }
 
 }

@@ -316,10 +316,10 @@
                     </div>
                 </div>
             </div>
-            <div class="what-we-do w-100 h-100 mt-lg-5">
-                <table class="table table-bordered table-responsive-sm"
+            <div class="what-we-do w-100 h-100 mt-lg-5 d-block d-sm-none">
+                <table class="table table-bordered"
                     [ngClass]="isDarkTheme?' table-dark':'table-light'">
-                    <tbody>
+                    <tbody class="">
                         <tr *ngFor="let data of tableData" data-aos="fade-up">
                             <td scope="row" class="align-middle first-td p-4 w-auto">
                                 <img [ngStyle]="{filter:isDarkTheme?'none':'invert(1)'}" [src]="data.img" alt=""
@@ -329,7 +329,30 @@
                                 <h4 class="">{{data.heading}}</h4>
                                 <p class="m-0  " [ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">{{data.tail}}</p>
                             </td>
-                            <td class="align-middle w-auto third-td p-4 d-none d-sm-block">
+                            <td class="align-middle py-4 px-2 fourth-td w-auto">
+                                <p [routerLink]="[data.link]" (click)="scrollToTop()"
+                                    class="m-0 table-lm learn ">Learn
+                                    More <i class="fa-solid fa-arrow-right text-secondary"
+                                        style="transform: rotate(325deg);"></i></p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="what-we-do w-100 h-100 mt-lg-5 d-none d-sm-block">
+                <table class="table table-bordered table-responsive-sm"
+                    [ngClass]="isDarkTheme?' table-dark':'table-light'">
+                    <tbody class="">
+                        <tr *ngFor="let data of tableData" data-aos="fade-up">
+                            <td scope="row" class="align-middle first-td p-4 w-auto">
+                                <img [ngStyle]="{filter:isDarkTheme?'none':'invert(1)'}" [src]="data.img" alt=""
+                                    class="w-auto">
+                            </td>
+                            <td class="align-middle second-td p-4 w-auto">
+                                <h4 class="">{{data.heading}}</h4>
+                                <p class="m-0  " [ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">{{data.tail}}</p>
+                            </td>
+                            <td class="align-middle w-auto third-td p-4">
                                 <p class="m-0 w-auto d-inline " [ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}"
                                     [innerHTML]="data.desc">
                                 </p>

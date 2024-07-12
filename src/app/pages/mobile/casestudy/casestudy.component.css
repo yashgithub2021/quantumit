@@ -169,12 +169,16 @@ figure {
     .detail .desc p {
         font-size: 14px;
         line-height: 20px;
+        text-align: center;
     }
 
     .desc>p {
         font-size: 12px;
         line-height: 18px;
         text-align: start;
+    }
+    .app-details>.details>.detail:not(:last-child) {
+        border-right:none;
     }
 
     .miletone-container {

@@ -525,7 +525,7 @@ td h4 {
 }
 
 .details .name h3 {
-    font-size: 20px;
+    font-size: 16px;
     line-height: 31px;
     font-weight: 400;
     white-space: nowrap;
@@ -633,16 +633,16 @@ td h4 {
     }
 
     .details .name h3 {
-        font-size: 18px;
-        line-height: 30px;
+        font-size: 16px;
+        line-height: 20px;
         font-weight: 400;
         
     }
 
     .details .num h2 {
-        font-size: 28px;
+        font-size: 16px;
         font-weight: 400 !important;
-        line-height: 30px;
+        line-height: 20px;
     }
 
     .desc p {
@@ -726,13 +726,13 @@ td h4 {
     }
 
     .step-title p:first-child {
-        font-size: 18px !important;
-        line-height: 30px;
+        font-size: 16px !important;
+        line-height: 25px;
     }
 
     .step-title p:last-child {
         font-size: 12px !important;
-        line-height: 16px;
+        line-height: 20px;
     }
 
     .step-title p:first-child {
@@ -754,6 +754,12 @@ td h4 {
 
     .opacity-0 {
         display: none !important;
+    }
+    .slider{
+        height: 80px;
+    }
+    .slider .slide {
+        height: 80px;
     }
 
     .frame-6 {

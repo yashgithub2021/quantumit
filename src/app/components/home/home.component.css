@@ -709,7 +709,7 @@
         height: auto;
     }
     .carousel-item>div{
-        min-height: 50vh;
+        min-height: 40vh;
     }
     .container>.tagline {
         font-size: 50px;
@@ -851,6 +851,12 @@
     .right-side>.container {
         padding: 0px;
     }
+    .slider{
+        height: 80px;
+    }
+    .slider .slide {
+        height: 80px;
+    }
 
     .section3>.right-side>.container {
         padding: 0px 0px;
@@ -881,12 +887,12 @@
     }
 
     .miletone-number {
-        font-size: 40px;
+        font-size: 28px;
         line-height: 37px;
     }
 
     .miletone-title {
-        font-size: 14px;
+        font-size: 12px;
         line-height: 16px;
     }
 

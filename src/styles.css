@@ -208,9 +208,13 @@ app-blog .blogs-pagination-container .ngx-pagination .current {
 @media(max-width:575.98px) {
   app-home .section7 .carousel-control-next {
     right: -25px !important;
+    display: none!important;
   }
 
   app-home .section7 .carousel-control-prev {
     left: -25px !important;
+    display: none;
   }
+
+  
 }

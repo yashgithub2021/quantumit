@@ -401,16 +401,17 @@
     }
 
     .tagline {
-        font-size: 28px;
-        line-height: 38px;
+        font-size: 22px;
+        line-height: 28px;
         letter-spacing: 0px;
     }
 
     .heading>p {
-        font-size: 14px !important;
-        line-height: 20px;
+        font-size: 12px !important;
+        line-height: 18px;
         margin-top: 0px;
         margin-bottom: 20px;
+        width:75%;
     }
 
 
@@ -462,13 +463,16 @@
     }
 
     .btn-lm {
-        font-size: 12px;
+        font-size: 12px!important;
         padding: 6px 10px !important;
+    }
+    .heading .buttons .btn{
+        font-size: 12px;
     }
 
     .miletone-number {
-        font-size: 18px !important;
-        line-height: 21px;
+        font-size: 16px !important;
+        line-height: 20px;
         margin-bottom: 10px;
     }
 
@@ -506,8 +510,9 @@
 
     .app-details .name h2 {
         font-size: 18px;
-        line-height: 44px;
+        line-height: 25px;
         font-weight: 700 !important;
+        margin-bottom: 0px;
     }
 
     .app-details .details {
@@ -547,5 +552,8 @@
         font-size: 12px;
         line-height: 20px !important;
         font-weight: 400 !important;
+    }
+    .project {
+        height: 60vh;
     }
 }

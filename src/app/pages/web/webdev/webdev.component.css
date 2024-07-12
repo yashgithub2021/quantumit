@@ -501,7 +501,7 @@ p {
 
 
     .view-more>p {
-        font-size: 14px;
+        font-size: 12px;
         line-height: 16px;
     }
 
@@ -523,8 +523,8 @@ p {
 
     .frame-1 button {
         padding: 10px 18px !important;
-        font-size: 14px !important;
-        line-height: 21px;
+        font-size: 12px !important;
+        line-height: 18px;
         border-radius: 8px !important;
     }
 
@@ -537,13 +537,13 @@ p {
     }
 
     .frame-1>.heading>.tagline {
-        font-size: 28px;
-        line-height: 38px;
+        font-size: 22px;
+        line-height: 30px;
     }
 
     .frame-1>.heading>p {
         font-size: 12px !important;
-        line-height: 23px;
+        line-height: 20px;
         width: 75%;
         font-weight: 400 !important;
     }
@@ -576,13 +576,14 @@ p {
     }
 
     .app-details-container .name>h2 {
-        font-size: 22px;
-        line-height: 32px;
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 0px;
     }
 
     .app-details .details {
-        font-size: 14px !important;
-        line-height: 25px;
+        font-size: 12px !important;
+        line-height: 20px;
     }
 
     .frame-3 {
