@@ -26,9 +26,9 @@
         </div>
         <div class="frame-2 w-100 h-100" *ngIf="!loadingStatus">
             <div class="container d-flex">
-                <div class="cards row">
+                <div class="cards row ">
                     <div class="categories col-lg-4 col-12">
-                        <div class="card col py-4 my-3 m-lg-3 w-100"
+                        <div class="card py-4 my-3 m-lg-3 w-100"
                             [ngStyle]="{'color':isDarkTheme?'white':'black','background':isDarkTheme?'#111111':'#ECF0FF'}">
                             <div class="card-body ">
                                 <h4 class="card-title card-title1 linear-text d-inline-block ">Categories</h4>
@@ -70,7 +70,7 @@
                                 itemsPerPage: pageSize,
                                 currentPage: currentPage,
                                 totalItems: totalItem }" [routerLink]="['inner-blog/'+blog.id]"
-                                class="card col-lg-5 col-8 my-3 p-0" style="cursor: pointer;height:auto;"
+                                class="card col-lg-5 col-8 my-3 p-0 justify-content-between" style="cursor: pointer;height:auto;"
                                 [ngStyle]="{'color':isDarkTheme?'white':'black','background':isDarkTheme?'#111111':'#ECF0FF'}">
                                 <img style="height: 40%;" [src]="blog.image" class="card-img-top" alt="...">
                                 <div class="px-3 my-3"style="height:auto">
@@ -92,18 +92,18 @@
                                     </div>
                                 </div>
                                 <div class="text-body-secondary px-3 "[ngClass]="isDarkTheme?'card-footer':'card-footer-light'">
-                                    <div class="container d-flex justify-content-between"style="height:auto;min-height:80px;max-height:90px;"
+                                    <div class="container d-flex justify-content-between"style="height:auto;min-height:52px;max-height:90px;"
                                         [ngClass]="isDarkTheme?'text-white':'text-black'">
                                         <div class="profile d-flex justify-content-evenly">
-                                            <div class="img mx-2">
+                                            <div class="img mx-2 align-self-center">
                                                 <img style="object-fit: contain;width: 40px;border-radius: 50%;"
                                                     src="../../../../assets/blog/profile.png" alt="">
                                             </div>
-                                            <div class="name mx-2 ">
+                                            <div class="name mx-2 align-self-center">
                                                 <p>{{blog?.authorName}}</p>
                                             </div>
                                         </div>
-                                        <div style="opacity: 50%;" class="time">
+                                        <div style="opacity: 50%;" class="time align-self-center">
                                             <p class="days mb-0">2 Days Ago</p>
                                         </div>
                                     </div>

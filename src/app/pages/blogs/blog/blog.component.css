@@ -103,7 +103,7 @@
 
 .single-blog>div {
     width: 49%;
-    max-height: 390px;
+    min-height: 500px;
 }
 
 @media(max-width:1366px) and (min-height:1024px) {

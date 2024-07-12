@@ -783,6 +783,7 @@
     .projects-section>.project-sec-one {
         margin-bottom: 20px;
     }
+    
 }
 
 
@@ -824,13 +825,13 @@
     }
 
     .section3>.left-side::before {
-        background-image: url('../../../assets/home/banner.jpg');
+        /* background-image: url('../../../assets/home/banner.jpg'); */
         background-size: cover;
         border-radius: 22px;
         width: 100% !important;
     }
 
-    .section3>.left-side::after {
+    /* .section3>.left-side::after {
         content: "";
         position: absolute;
         width: 117px;
@@ -840,7 +841,7 @@
         border-radius: 100%;
         padding: 26px, 56px, 26px, 56px;
         bottom: 0px;
-    }
+    } */
 
     .section-3>.left-side::before {
         height: 100%;
@@ -933,7 +934,7 @@
 
     .customer-name h5 {
         font-size: 12px;
-        line-height: 18px;
+        line-height: 8px;
 
     }
 
@@ -1153,7 +1154,7 @@
     }
 
     .cards p {
-        font-size: 14px;
+        font-size: 12px;
         font-weight: 600;
     }
 
@@ -1169,6 +1170,11 @@
 
     .services-section {
         margin-top: 5vh;
+    }
+    .profile>img {
+        width: 40px;
+        height: 40px;
+        background: white;
     }
 }
 

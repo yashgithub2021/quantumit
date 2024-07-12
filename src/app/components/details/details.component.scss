@@ -550,7 +550,7 @@
             padding: 5px;
         }
 
-        .our-process-btn {
+        .our-process-btn ,.our-process-btn1 {
             font-size: 10px;
             line-height: 20px;
             padding: 5px 12px 5px 12px;
@@ -558,6 +558,7 @@
 
         .txt {
             width: 100% !important;
+            margin-top: 10px;
         }
 
         .col-details>.title>h5 {
@@ -607,8 +608,8 @@
             width: 100% !important;
         }
 
-        .our-marketing.btn {
-            font-size: 16px;
+        .our-marketing-btn {
+            font-size: 12px;
         }
 
         .text>.title>h4 {
@@ -681,6 +682,7 @@
     @media(max-width:413px) {
         .frame-1 {
             padding: 2rem !important;
+            padding-bottom: 0px!important;
         }
     }
 
@@ -1214,7 +1216,7 @@
             margin-top: 0px !important;
         }
 
-        .our-process-btn {
+        .our-process-btn ,.our-process-btn1{
             font-size: 10px;
             line-height: 20px;
             padding: 5px 12px 5px 12px;

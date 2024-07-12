@@ -48,7 +48,7 @@
         </div>
         <div class="container-fluid ipad-mini-landscape">
             <div class="d-flex flex-column align-items-center">
-                <div class="container pages-container d-none d-sm-flex justify-content-evenly">
+                <div class="container pages-container d-none d-sm-flex justify-content-around">
                     <div class="d-flex flex-column " *ngFor="let page of pageLabels">
                         <div class="heading">
                             <h5 [ngStyle]="{'color': isDarkMode ? 'white' : 'black'}" class=" fw-bold">
@@ -80,7 +80,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="container social-links-container d-flex justify-content-center">
+                <div class="container social-links-container d-flex justify-content-center justify-content-sm-start" >
                     <a href="https://www.linkedin.com/company/quantumit-it-innovation/mycompany/" target="_blank"
                         style="background-color:#0077B5" class="social-icon text-decoration-none  si-one">
                         <div class="follow container align-content-end py-2 w-100 h-100">

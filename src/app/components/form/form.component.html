@@ -89,6 +89,23 @@
                         <div class="row my-3">
                             <div class="col-12">
                                 <div class="input d-flex flex-column">
+                                    <label for="">Enquiry</label>
+
+                                    <select class="enquiry-about" formControlName="about" id=""[ngClass]="isDarkTheme ? 'bg-dark' : 'bg-light'"
+                                    [ngStyle]="{'color':isDarkTheme?'white':'black'}">
+                                        <option value=""disabled>Your Enquiry About</option>
+                                        <option value="Mobile App Development">Mobile App Development</option>
+                                        <option value="Website Design & Development">Website Design & Development</option>
+                                        <option value="Digital Marketing">Digital Marketing</option>
+                                        <option value="Artificial Intelligence">Artificial Intelligence</option>
+                                        <option value="Robotic Process Automation">Robotic Process Automation</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row my-3">
+                            <div class="col-12">
+                                <div class="input d-flex flex-column">
                                     <label for="message">Message</label>
                                     <textarea formControlName="message" id="message"
                                         placeholder="Write your messages in here"
@@ -265,6 +282,26 @@
                                     <div *ngIf="form.get('companyName')?.invalid && form.get('companyName')?.touched"
                                         class="text-danger">
                                         Company Name is required
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row my-3">
+                            <div class="col-12">
+                                <div class="input d-flex flex-column">
+                                    <label for="">Enquiry</label>
+                                    <select class="enquiry-about" formControlName="about" id=""[ngClass]="isDarkTheme ? 'bg-dark' : 'bg-light'"
+                                    [ngStyle]="{'color':isDarkTheme?'white':'black'}">
+                                        <option value=""disabled>Your Enquiry About</option>
+                                        <option value="Mobile App Development">Mobile App Development</option>
+                                        <option value="Website Design & Development">Website Design & Development</option>
+                                        <option value="Digital Marketing">Digital Marketing</option>
+                                        <option value="Artificial Intelligence">Artificial Intelligence</option>
+                                        <option value="Robotic Process Automation">Robotic Process Automation</option>
+                                    </select>
+                                    <div *ngIf="form.get('about')?.invalid && form.get('about')?.touched"
+                                        class="text-danger">
+                                        Select Enquiry About!
                                     </div>
                                 </div>
                             </div>
