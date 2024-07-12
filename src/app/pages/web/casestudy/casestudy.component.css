@@ -17,6 +17,7 @@
 
 figure {
     overflow: hidden;
+    width:81%;
 }
 
 .banner figure img {
@@ -245,6 +246,9 @@ figure {
 @media (max-width: 575.98px) {
     .w-75 {
         width: 100% !important;
+    }
+    figure{
+        width:100%;
     }
 
     .desc {

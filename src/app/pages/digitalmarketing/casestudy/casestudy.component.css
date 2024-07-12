@@ -254,8 +254,8 @@
         padding-bottom: 0px;
     }
     .app-details>.details>.detail:not(:last-child) {
-        border-right: 3px solid white;
-        padding-right: 2%;
+        border-right: none;
+        padding-right: 0%;
     }
     .app-details > .details> .detail:not(:last-child) {
         padding-left: 0%;
