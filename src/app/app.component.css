@@ -42,7 +42,10 @@
     --bs-btn-close-bg: url("../assets/banner-close.svg");
     opacity: 100%;
 }
+.alert-dismissible{
+    font-size: 12px;
 
+}
 .alert-dismissible .btn-close {
     font-size: 30px;
     padding: 13px;

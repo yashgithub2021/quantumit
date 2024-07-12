@@ -60,7 +60,7 @@
 
 .ai-data {
     box-sizing: border-box;
-    height: 300px;
+    height: 220px;
     border: 1px solid #FFFFFF0F;
     box-shadow: 0px 17px 25px 0px #07496F05;
 }
@@ -249,8 +249,8 @@
 }
 
 .title h3 {
-    font-size: 20px;
-    line-height: 34px;
+    font-size: 16px;
+    line-height: 25px;
     font-weight: 400 !important;
 }
 

@@ -22,7 +22,8 @@ export class FormComponent implements OnInit {
       lastName: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
       companyName: ['', [Validators.required]],
-      message: ['', Validators.required]
+      message: ['', Validators.required],
+      about:['',Validators.required]
     });
 
     this.joinform = this.formBuilder.group({
@@ -56,10 +57,11 @@ export class FormComponent implements OnInit {
     formData.append('email', this.form.value.email);
     formData.append('companyName', this.form.value.companyName);
     formData.append('message', this.form.value.message);
+    formData.append('about',this.form.value.about);
 
     // Send the FormData to the backend using an HTTP POST request
     this.api.saveContactForm(formData).subscribe((res: any) => {
-      console.log("Response from backend:", res.message);
+      console.log("Response from backend:", res);
       this.toast.success(res.message)
       this.form.reset()
     }, (err: any) => {

@@ -159,7 +159,8 @@ button {
     padding: 0px;
 }
 .social-links-container{
-    gap:27px;
+    gap:15px;
+    padding-left: 55px;
 }
 
 @media(min-width:1025px) and (max-width:1180px) {
@@ -299,5 +300,6 @@ button {
     }
     .social-links-container{
         gap:0px;
+        padding-left: 0px;
     }
 }

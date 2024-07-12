@@ -261,13 +261,13 @@
     }
 
     .what-we-do .desc p {
-        font-size: 14px;
+        font-size: 12px;
         font-weight: 400;
-        line-height: 25px;
+        line-height: 20px;
     }
 
     .process .text .title h4 {
-        font-size: 14px;
+        font-size: 12px;
         line-height: 20px;
         font-weight: 400;
     }
@@ -339,8 +339,8 @@
     }
 
     .miletone-title {
-        font-size: 14px;
-        line-height: 21px;
+        font-size: 12px;
+        line-height: 20px;
         font-weight: 400 !important;
     }
 
@@ -358,7 +358,7 @@
         line-height: 40px;
     }
     .nums p {
-        font-size: 14px;
+        font-size: 12px;
     }
     .partner-detail {
         min-width: 155px;
@@ -369,6 +369,9 @@
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+    .logo img{
+        width:70px;
     }
     .frame-4 .carousel-indicators li{
         height:6px;

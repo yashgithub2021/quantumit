@@ -5,7 +5,9 @@
 .container {
     margin: 20px 0;
 }
-
+.image img{
+    width:70vw;
+}
 .our-service-btn {
     padding: 7px 15px 7px 15px;
     gap: 0px;
@@ -108,5 +110,7 @@
         font-size: 22px;
         line-height: 28px;
     }
-
+    .image img{
+        width:100vw;
+    }
 }
