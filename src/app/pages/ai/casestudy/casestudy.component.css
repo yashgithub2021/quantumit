@@ -270,7 +270,7 @@
 @media (max-width: 575.98px) {
 
     .banner-img {
-        height: 150px;
+        height: auto;
     }
 
     .w-75,
@@ -288,7 +288,7 @@
     }
 
     .detaile p {
-        font-size: 16px;
+        font-size: 14px;
         line-height: 20px;
     }
 
@@ -313,6 +313,14 @@
         font-size: 18px;
         line-height: 20px;
     }
+    .step-circle{
+        width: 50px;
+        height: 50px;
+
+    }
+    .step-circle img{
+        width:40px;
+    }
 
     .step-title p:first-child {
         font-size: 18px;
@@ -325,14 +333,14 @@
     }
 
     .steps-container-last .step-title p {
-        font-size: 12px !important;
-        line-height: 20px;
+        font-size: 10px !important;
+        line-height: 18px;
         margin: 4px;
     }
 
     .desc p {
-        font-size: 16px !important;
-        line-height: 25px;
+        font-size: 12px !important;
+        line-height: 20px;
     }
 
     .our-marketing-btn {

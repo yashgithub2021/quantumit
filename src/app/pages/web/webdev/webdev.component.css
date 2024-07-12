@@ -616,6 +616,10 @@ p {
     .project-container {
         height: 100% !important;
     }
+    .project-container> .app-details{
+        margin-bottom: 20px;
+        margin-top: 0px;
+    }
 
     .project-one::before,
     .project-two::before,
