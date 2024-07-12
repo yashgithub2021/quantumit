@@ -509,6 +509,14 @@
         .frame-5>.container {
             width: 85% !important;
         }
+        .frame-1::after{
+            background-image: none;
+            height: 0px;
+        }
+        .frame-1::before{
+            background-image: none;
+            height: 0px;
+        }
 
         .tech-stack>div {
             justify-content: center !important;
@@ -530,8 +538,8 @@
 
         .frame-2-head .txt>h1,
         .txt>h1 {
-            font-size: 28px;
-            line-height: 38px;
+            font-size: 22px;
+            line-height: 28px;
         }
 
         .our-marketing-btn {
@@ -735,6 +743,17 @@
         -webkit-text-fill-color: transparent;
         backdrop-filter: blur(2px);
 
+    }
+    .our-process-btn1 {
+        padding: 7px 15px 7px 15px;
+        gap: 0px;
+        border-radius: 32px;
+        border: 1px 0px 0px 0px;
+        opacity: 0px;
+        border: 1px solid #0099FF;
+        box-shadow: 0px -7px 11px 0px #A48FFF1F inset;
+        background-color: transparent;
+        color: #0099FF;
     }
 
     .steps-container {
@@ -1153,8 +1172,8 @@
         }
 
         .frame-1 .txt>h1 {
-            font-size: 28px;
-            line-height: 38px;
+            font-size: 22px;
+            line-height: 28px;
         }
 
         .frame-2>.service-section {
@@ -1178,8 +1197,8 @@
         }
 
         .service-section .text .title h2 {
-            font-size: 22px;
-            line-height: 30px;
+            font-size: 16px;
+            line-height: 25px;
         }
 
         .service-section .image {
@@ -1230,7 +1249,7 @@
         }
 
         .step-title p:first-child {
-            font-size: 16px;
+            font-size: 16px!important;
             line-height: 25px;
         }
 

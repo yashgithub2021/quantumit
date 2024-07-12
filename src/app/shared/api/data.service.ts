@@ -24,7 +24,7 @@ export class DataService implements Resolve<any> {
       return of({ title: 'iPad App', services: iPadAppDevelopment });
     } else if (id === 'mobile-game-development-company') {
       return of({ title: 'mobileGame App', services: mobileGameDevelopment });
-    } else if (id === 'iot') {
+    } else if (id === 'internet-of-things') {
       return of({ title: 'internet of things', services: internetOfThings });
     } else if (id === 'robotic-process-automation') {
       return of({ title: 'RAP', services: roboticProcessAutomation });

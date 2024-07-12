@@ -175,17 +175,28 @@
     }
 
     .miletone-title p {
-        font-size: 16px;
-        line-height: 23px;
+        font-size: 12px;
+        line-height: 20px;
     }
-
+    .miletone-container{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
     .app-detail h3 {
-        font-size: 22px;
-        line-height: 25px;
+        font-size: 12px;
+        line-height: 18px;
     }
 
     .app-detail p {
-        font-size: 16px;
-        line-height: 20px;
+        font-size: 10px;
+        line-height: 16px;
+    }
+    .app2-cont{
+        width:47%;
+    }
+    .app1-cont{
+        width:47%;
     }
 }

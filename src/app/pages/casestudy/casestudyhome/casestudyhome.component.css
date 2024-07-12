@@ -132,8 +132,6 @@
         height: 80px;
         top: 20px;
         right: 20px;
-        rotate: -45deg;
-
     }
 
     .w-75,
@@ -180,17 +178,23 @@
     }
 
     .miletone-title p {
-        font-size: 16px;
-        line-height: 23px;
+        font-size: 12px;
+        line-height: 20px;
     }
 
     .app-detail h3 {
-        font-size: 22px;
+        font-size: 16px;
         line-height: 25px;
     }
 
     .app-detail p {
-        font-size: 16px;
-        line-height: 20px;
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .miletone-container{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
     }
 }

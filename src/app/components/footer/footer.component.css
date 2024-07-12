@@ -246,6 +246,7 @@ button {
         margin: 0px;
         /* padding: 0px; */
         height: 30px;
+        font-size: 14px;
         cursor: pointer;
     }
 
@@ -266,13 +267,13 @@ button {
     }
 
     .heading>h5 {
-        font-size: 16px;
+        font-size: 14px;
         white-space: nowrap;
     }
 
     .pages>p {
         margin-bottom: 10px !important;
-        font-size: 14px;
+        font-size: 12px;
         white-space: nowrap;
         margin-right: 0px;
         margin-left: 0px;

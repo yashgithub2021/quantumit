@@ -76,7 +76,13 @@
         padding: 40px 20px;
         background: linear-gradient(90deg, #43BAFF 0%, #7141B1 100%);
     }
-
+    .numbers-section h4{
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .numbers-section img{
+        width:40px;
+    }
     .desc-txt {
         font-size: 15px;
     }
@@ -98,4 +104,9 @@
         padding: 15px;
         font-size: 10px;
     }
+    .service-tagline{
+        font-size: 22px;
+        line-height: 28px;
+    }
+
 }
