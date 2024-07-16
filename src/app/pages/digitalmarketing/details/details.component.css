@@ -91,8 +91,8 @@
         padding:0px;
     }
     .frame-3{
-        background: linear-gradient(90deg, #43BAFF 0%, #7141B1 100%);
-        padding: 5px;
+        background: none;
+        padding: 0px;
     }
     .our-process-btn {
         font-size: 10px;
@@ -133,7 +133,7 @@
         font-size: 14px;
     }
     .app-details > .details > .detail:not(:last-child) {
-        border-right: 3px solid white;
-        padding-right: 4%;
+        border-right: none;
+        padding-right: 0%;
     }
 }
