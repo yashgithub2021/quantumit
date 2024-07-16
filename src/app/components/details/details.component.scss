@@ -543,7 +543,7 @@
         }
 
         .our-marketing-btn {
-            padding: 15px 20px;
+            padding: 7px 7px;
         }
 
         .our-marketing-btn>i {
@@ -627,6 +627,7 @@
 
         .frame-3 {
             padding: 20px !important;
+            padding-top: 5px!important;
         }
 
         .image {
@@ -675,7 +676,11 @@
             font-size: 12px;
             line-height: 18px;
         }
-
+        .process-square{
+            width: 50px;
+            height: 40px;
+            border-radius: 10px;
+        }
 
     }
 
@@ -1261,7 +1266,8 @@
         }
 
         .our-marketing-btn {
-            padding: 15px 20px;
+            padding: 7px 7px;
+            font-size: 12px;
         }
 
         .steps-container2 {
@@ -1291,13 +1297,9 @@
             line-height: 15px;
         }
 
-        .our-marketing-btn {
-            padding: 15px 20px;
-        }
-
-        .our-marketing-btn>i {
-            padding: 5px;
-        }
+        // .our-marketing-btn>i {
+        //     padding: 5px;
+        // }
 
         .sub-heading {
             font-size: 12px;
@@ -1314,6 +1316,11 @@
             font-size: 12px;
             line-height: 20px;
             opacity: 0.5;
+        }
+        .process-square{
+            width: 50px;
+            height: 40px;
+            border-radius: 10px;
         }
     }
 

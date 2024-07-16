@@ -108,8 +108,8 @@
     }
     
     .desc > p {
-        font-size: 14px;
-        line-height: 20px;
+        font-size: 12px;
+        line-height: 18px;
         text-align: center;
     }
     .details .desc >p{
@@ -117,20 +117,25 @@
         line-height: 18px;
     }
     .about-project .desc >p{
-        font-size: 16px;
-        line-height: 20px;
+        font-size: 12px;
+        line-height: 18px;
         font-weight: 400!important;
     }
+    .about-project .sec4-headline>.service-tagline{
+        font-size: 18px;
+        font-weight: 600!important;
+        line-height: 20px;
+    }
     .title h3 {
-        font-size: 14px;
-        line-height: 25px;
+        font-size: 12px;
+        line-height: 18px;
     }
     .desc-txt {
-        font-size: 14px;
-        line-height: 20.2px;
+        font-size: 12px;
+        line-height: 18px;
     }
     .list-check{
-        font-size: 14px;
+        font-size: 12px;
     }
     .app-details > .details > .detail:not(:last-child) {
         border-right: none;

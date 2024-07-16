@@ -118,6 +118,16 @@ textarea::placeholder {
     .form {
         height: auto;
     }
+    .text h1 {
+        font-size: 16px !important;
+        line-height: 30px;
+    }
+    .input label{
+        font-size: 12px;
+    }
+    .input input::placeholder{
+        font-size: 12px;
+    }
 
     .blue-opt {
         border: none;

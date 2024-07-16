@@ -465,11 +465,16 @@
     .btn-lm {
         font-size: 12px!important;
         padding: 6px 10px !important;
+        border-radius: 5px;
     }
     .heading .buttons .btn{
         font-size: 12px;
     }
-
+    .app-button {
+        border-radius: 8px;
+        padding: 6px 12px;
+        font-size: 12px;
+    }
     .miletone-number {
         font-size: 16px !important;
         line-height: 20px;
