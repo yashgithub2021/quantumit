@@ -40,10 +40,15 @@ export class BlogComponent implements OnInit {
     this.api.getBlogs()
       .subscribe((res: any) => {
         this.blogs = res.blogs;
-
+        this.blogs=this.blogs.map((blog:any)=>{
+          return {
+            ...blog,
+            title1:blog.title.replace(/ /g,'-')
+          }
+        })
         this.categories=this.blogs.map((blog:any)=>{
           return {
-            link:blog.title.replace(/ /g,'-'),
+            link:blog.title1,
             name:blog.category
           }
         });
