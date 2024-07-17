@@ -1,5 +1,5 @@
 <div class="contianer-fluid services">
-    <div class="container frame-1 px-lg-5 pt-lg-5 ps-4 my-4 my-lg-0">
+    <div class="container frame-1 px-lg-5 pt-lg-5 ps-4 my-sm-4 my-2 my-lg-0">
         <div class="heading d-flex flex-column m-0 flex-lg-row justify-content-between align-items-center">
             <div class="text frame-2-head w-100 d-flex align-items-start  flex-column ">
                 <div class="button">
@@ -20,7 +20,7 @@
     <div class="frame-2 container p-0 p-lg-5 my-2">
         <div class="service-section">
             <div class="d-flex align-items-center flex-column h-100 w-100 ">
-                <div class="d-flex align-items-center flex-column flex-lg-row my-5 h-100 w-100">
+                <div class="d-flex align-items-center flex-column flex-lg-row my-sm-5 my-2 h-100 w-100">
                     <!-- <div class="text w-75 pe-lg-5 p-0">
                         <div class="title">
                             <h2 class="mb-3">
@@ -40,7 +40,7 @@
                     </div>
                 </div>
                 <div
-                    class="ipad-width d-flex align-items-center mt-5 my-lg-5 justify-content-start flex-column flex-lg-row-reverse">
+                    class="ipad-width d-flex align-items-center mt-sm-5 my-lg-5 justify-content-start flex-column flex-lg-row-reverse">
                     <div class="text w-100  p-0">
                         <div class="title">
                             <h2 class="mb-3 text-capitalize">
@@ -82,7 +82,7 @@
     </div>
 
     <div class="frame-3 container-fluid px-0 d-flex">
-        <div class="container-fluid d-flex flex-column justify-content-center my-5 px-lg-5">
+        <div class="container-fluid d-flex flex-column justify-content-center my-sm-5 my-2 px-lg-5">
             <div class="heading d-none d-sm-flex justify-content-center align-items-center">
                 <div class="text w-100 d-flex flex-column justify-content-center align-items-center ">
                     <div class="button my-3">
@@ -109,7 +109,7 @@
                         <div class="step-square">Step 03</div>
                         <div class="step-line"></div> -->
                     </div>
-                    <div class="steps-container steps-container2 w-100 mt-5 ">
+                    <div class="steps-container steps-container2 w-100 mt-sm-5 ">
                         <ng-container *ngFor="let step of serviceDetails.steps">
                             <div
                                 class="step-title w-100 mt-3 mt-lg-0 d-flex flex-column align-items-center justify-content-center">
@@ -168,9 +168,9 @@
                                 Our Services
                             </button>
                         </div>
-                        <div class="txt w-75 text-center my-3">
+                        <!-- <div class="txt w-75 text-center my-3">
                             <h1 class="text-capitalize">{{serviceDetails.service}}</h1>
-                        </div>
+                        </div> -->
                     </div>
                     <div class="carousel-item" *ngFor="let step of serviceDetails.steps;let i=index;"
                         [ngClass]="{'active': i === 0}">
@@ -184,7 +184,7 @@
                                 </div>
                             </ng-container>
                         </div>
-                        <div class="steps-container steps-container2 gap-lg-3 w-100 mt-5 ">
+                        <div class="steps-container steps-container2 gap-lg-3 w-100 mt-sm-5 ">
                             <ng-container>
                                 <div
                                     class="step-title w-100 mt-3 mt-lg-0 d-flex flex-column align-items-center justify-content-center">
@@ -199,7 +199,7 @@
 
                     </div>
                 </div>
-                <div class="container button w-100 d-flex mt-5 align-items-center justify-content-center">
+                <div class="container button w-100 d-flex mt-sm-5 align-items-center justify-content-center">
                     <button [ngStyle]="{'background':isDarkTheme?'#111111':'#ECF0FF'}"
                         [ngClass]="isDarkTheme?'text-white':'text-black'" class="our-marketing-btn ">
                         <i [ngClass]="isDarkTheme?'text-white':'text-black'" class="fa-solid fa-arrow-left  mx-2"
@@ -213,7 +213,7 @@
         </div>
     </div>
 
-    <div class="frame-4 my-5 container-fluid our-process">
+    <div class="frame-4 my-sm-5 container-fluid our-process">
         <div
             class="container d-flex flex-column flex-lg-row justify-content-center align-items-center align-items-lg-start">
             <div class="text frame-2-head w-50 d-flex flex-column align-items-center align-items-lg-start ">
@@ -322,7 +322,7 @@
         </div>
     </div>
 
-    <div class="frame-5 my-5">
+    <div class="frame-5 my-sm-5">
         <div class="container px-lg-3 d-flex flex-column align-items-center align-items-lg-start">
             <div class="text my-5 frame-2-head w-100 d-flex flex-column align-items-center  ">
                 <div class="button mb-4">

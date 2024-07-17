@@ -34,7 +34,7 @@
                                 <h4 class="card-title card-title1 linear-text d-inline-block ">Categories</h4>
                             </div>
                             <ng-container *ngFor="let category of categories">
-                                <div class="card-body popular" routerLink="{{category.link}}">
+                                <div class="card-body popular" routerLink="inner-blog/{{category.link}}">
                                     <div class="container d-flex justify-content-between">
                                         <div class="text">
                                             <h4 class="fw-light  w-100 text-capitalize">{{category.name}}</h4>
@@ -50,18 +50,17 @@
                                     </div>
                                 </div>
                             </ng-container>
-                            <div class="card-body popular-last" routerLink="inner-blog/1">
+                            <!-- <div class="card-body popular-last" routerLink="inner-blog/1">
                                 <div class="container d-flex justify-content-between">
                                     <div class="text">
                                         <h4 class="fw-light  w-100 text-capitalize">Robotic Process Automation</h4>
-                                        <!-- <span class=" opacity-50  days">15 Videos</span> -->
                                     </div>
                                     <div class="arrow">
                                         <i [ngClass]="isDarkTheme?'text-white':'text-black'"
                                             class="fa fa-solid fa-arrow-right"></i>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                     <div class="blogs blogs-pagination-container col-lg-8 col-12">
@@ -69,7 +68,7 @@
                             <div *ngFor="let blog of blogs | paginate: { id: 'foo',
                                 itemsPerPage: pageSize,
                                 currentPage: currentPage,
-                                totalItems: totalItem }" [routerLink]="['inner-blog/'+blog.id]"
+                                totalItems: totalItem }" [routerLink]="['inner-blog/'+blog.title]"
                                 class="card col-lg-5 col-8 my-3 p-0 justify-content-between" style="cursor: pointer;height:auto;"
                                 [ngStyle]="{'color':isDarkTheme?'white':'black','background':isDarkTheme?'#111111':'#ECF0FF'}">
                                 <img style="height: 40%;" [src]="blog.image" class="card-img-top" alt="...">
@@ -82,10 +81,10 @@
                                 <div class=" px-3"style="height:auto">
                                     <div class="container d-flex">
                                         <div class="text">
-                                            <h5 class="fw-light ">{{(blog?.title.length>25)?(blog?.title | slice:0:25)+'...':(blog?.title)}}
+                                            <h5 class="fw-light ">{{(blog?.title.length>70)?(blog?.title | slice:0:70)+'...':(blog?.title)}}
                                             </h5>
-                                            <p class="opacity-50"[innerHTML]="(blog?.description.length>70)?(blog?.description |
-                                                slice:0:70)+'...':(blog?.description)">
+                                            <p class="opacity-50"[innerHTML]="(blog?.description.length>130)?(blog?.description |
+                                                slice:0:130)+'...':(blog?.description)">
                                                 
                                             </p>
                                         </div>

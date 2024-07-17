@@ -123,10 +123,10 @@ textarea::placeholder {
         line-height: 30px;
     }
     .input label{
-        font-size: 12px;
+        font-size: 14px;
     }
     .input input::placeholder{
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .blue-opt {

@@ -447,13 +447,13 @@
     }
 
     .frame-2-head .txt>h1 {
-        font-size: 28px;
-        line-height: 38px;
+        font-size: 22px;
+        line-height: 30px;
     }
 
     .frame-1 .txt>h1 {
-        font-size: 28px;
-        line-height: 38px;
+        font-size: 22px;
+        line-height: 30px;
     }
 
     .frame-2>.service-section {
@@ -514,8 +514,8 @@
     }
 
     .step-title p:first-child {
-        font-size: 16px;
-        line-height: 25px;
+        font-size: 14px;
+        line-height: 20px;
     }
 
     .step-title p:last-child {
@@ -524,7 +524,7 @@
     }
 
     .our-marketing-btn {
-        padding: 15px 20px;
+        padding: 7px 7px;
     }
 
     .steps-container2 {
@@ -554,10 +554,6 @@
         line-height: 15px;
     }
 
-    .our-marketing-btn {
-        padding: 15px 20px;
-    }
-
     .our-marketing-btn>i {
         padding: 5px;
     }
@@ -569,7 +565,7 @@
     }
 
     .text>.title>h4 {
-        font-size: 14px;
+        font-size: 12px;
         line-height: 18px;
     }
 

@@ -19,21 +19,7 @@ export class BlogComponent implements OnInit {
   loadingStatus: boolean = true;
 
   categories: any[] = [
-    { link: 'inner-blog/3', name: 'App Development' },
-    { link: 'inner-blog/4', name: 'Website Development' },
-    { link: 'inner-blog/2', name: 'SEO' },
-    { link: 'inner-blog/5', name: 'App Store Optimization' },
-    { link: 'inner-blog/3', name: 'Mobile App Development' },
-    { link: 'inner-blog/3', name: 'Artificial Intelligence' },
-    { link: 'inner-blog/2', name: 'Digital Marketing' },
-    { link: 'inner-blog/3', name: 'ChatBot' },
-    { link: 'inner-blog/2', name: 'ORM SEO' },
-    { link: 'inner-blog/4', name: 'Web Development' },
-    { link: 'inner-blog/2', name: 'Local SEO' },
-    { link: 'inner-blog/3', name: 'Geo Location Mobile App' },
-    { link: 'inner-blog/2', name: 'Social Media Marketing' },
-    { link: 'inner-blog/3', name: 'Android App Development' },
-    { link: 'inner-blog/3', name: 'Mobile Application' },
+    
   ]
 
   constructor(private api: ApiService, private titlecase: TitleCasePipe) { }
@@ -41,7 +27,6 @@ export class BlogComponent implements OnInit {
   ngOnInit(): void {
     this.isDarkTheme = this.api.isDarkTheme();
     this.fetchBlogs()
-    this.fetchContributors()
     this.themechange()
   }
 
@@ -55,19 +40,19 @@ export class BlogComponent implements OnInit {
     this.api.getBlogs()
       .subscribe((res: any) => {
         this.blogs = res.blogs;
+
+        this.categories=this.blogs.map((blog:any)=>{
+          return {
+            link:blog.title.replace(/ /g,'-'),
+            name:blog.category
+          }
+        });
+
         this.totalItem = this.blogs.length;
         this.loadingStatus = false;
         console.log(this.blogs)
       }, err => {
         this.loadingStatus = false;
-      })
-  }
-
-  fetchContributors() {
-    this.api.getContributors()
-      .subscribe((res: any) => {
-        this.contributors = res.contributors
-        console.log(this.contributors)
       })
   }
   pageChanged(currentPage: any) {

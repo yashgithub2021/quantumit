@@ -275,6 +275,9 @@ figure {
         font-size: 12px;
         line-height: 18px;
     }
+    .slide h5 {
+        font-size: 12px;
+    }
 
     .numbers-section {
         padding: 10px

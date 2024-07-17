@@ -1,7 +1,8 @@
 import { AfterViewInit, Component, ElementRef, HostListener, OnDestroy, OnInit, ViewChild } from '@angular/core';
-import { trigger, state, style, transition, animate } from '@angular/animations';
 import AOS from 'aos';
 import { ApiService } from 'src/app/shared/api/api.service';
+import { Title, Meta } from '@angular/platform-browser';
+
 
 
 @Component({
@@ -13,8 +14,11 @@ export class HomeComponent implements OnInit {
   isDarkTheme: boolean;
   showNavigationIndicators = false;
 
+  dynamicTitle = 'Top Mobile & Web Development | AI Solutions | Digital Marketing Services';
+  dynamicDescription = 'Leading AI & Digital Marketing Experts. Top Mobile & Web Development Solutions tailored for growth. Explore Quantum IT Innovation today!';
 
-  constructor(private api: ApiService, private elementRef: ElementRef) {
+  constructor(private titleService: Title,
+    private metaService: Meta,private api: ApiService, private elementRef: ElementRef) {
     this.isDarkTheme = this.api.isDarkTheme();
   }
 
@@ -136,6 +140,10 @@ export class HomeComponent implements OnInit {
   groupedReviews!: any[][];
 
   ngOnInit(): void {
+
+    this.titleService.setTitle(this.dynamicTitle);
+    this.metaService.updateTag({ name: 'description', content: this.dynamicDescription });
+
     AOS.init({
       duration: 2000,
     })

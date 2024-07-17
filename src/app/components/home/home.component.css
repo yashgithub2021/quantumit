@@ -228,6 +228,9 @@
     display: flex;
     align-items: center;
 }
+.slider .slide img{
+    height: 55px;
+}
 
 
 @keyframes scroll {
@@ -812,7 +815,9 @@
         padding-right: 15px;
     }
 
-
+    .slider .slide img{
+        height: 40px;
+    }
     .section3>.left-side {
         height: 35vh;
         width: 100%;

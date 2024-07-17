@@ -72,7 +72,12 @@
 .profile-cont {
     border-radius: 20px;
 }
-
+.service-tagline{
+    font-size: 30px;
+}
+.quote h4{
+    font-size: 16px;
+}
 @media (max-width: 575.98px) {
     .numbers-section {
         padding: 40px 20px;

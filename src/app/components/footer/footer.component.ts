@@ -24,7 +24,9 @@ export class FooterComponent implements OnInit {
       hoverIcon: 'fa-phone-volume',
       label: 'Tel',
       value: '+ 91 971 799 8517',
-      link: 'tel:91 971 799 8517'
+      value2: '+1 877 877 3644',
+      link: 'tel:91 971 799 8517',
+      link2:'tel:1 877 877 3644'
     },
     {
       icon: 'fa-envelope',

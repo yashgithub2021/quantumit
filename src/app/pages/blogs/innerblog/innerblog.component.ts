@@ -10,7 +10,8 @@ import { ApiService } from 'src/app/shared/api/api.service';
 export class InnerblogComponent implements OnInit {
 
   blogDetail!: any
-  blogId: any
+  blogId: any;
+  blogTitle:any;
   isDarkTheme!: boolean;
   nextBlogCount!: number;
   blogs!: any;
@@ -40,7 +41,11 @@ export class InnerblogComponent implements OnInit {
 
   ngOnInit(): void {
     this.isDarkTheme = this.api.isDarkTheme();
-    this.getBlogId();
+    this.api.getBlogs().subscribe((res: any) => {
+      this.blogs = res.blogs;
+      console.log(this.blogs);
+      this.getBlogId();
+    })
     this.themechange();
   }
 
@@ -70,7 +75,12 @@ export class InnerblogComponent implements OnInit {
   }
   getBlogId() {
     this.active.paramMap.subscribe((res: any) => {
-      this.blogId = res.get('id');
+      // this.blogId = res.get('id');
+      this.blogTitle = res.get('id');//here id as and blog title
+      this.blogTitle=this.blogTitle.replace(/-/g,' ');
+      console.log(this.blogTitle);
+      this.blogId=this.blogs.filter((blog:any)=>blog.title ==this.blogTitle)[0].id;
+      console.log(this.blogId);
       this.fetchBlogDetail();
       this.fetchBlogs();
     });
@@ -97,8 +107,9 @@ export class InnerblogComponent implements OnInit {
     }
   }
   findIdOfBlog(index:number){
-    this.blogId=this.blogs[index].id;
-    this.router.navigate(['/blog/inner-blog', this.blogId]);
+    this.blogTitle=this.blogs[index].title;
+    this.blogTitle=this.blogTitle.replace(/ /g,'-')
+    this.router.navigate(['/blog/inner-blog', this.blogTitle]);
   }
 
   next() {

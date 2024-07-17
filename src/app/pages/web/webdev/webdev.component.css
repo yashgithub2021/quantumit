@@ -609,8 +609,8 @@ p {
     }
 
     .sub-heading {
-        font-size: 14px;
-        line-height: 20px;
+        font-size: 12px;
+        line-height: 18px;
     }
 
     .project-container {
@@ -642,8 +642,17 @@ p {
         color: black !important;
     }
     .project{
-        height: 75vh;
+        height: 65vh;
     }
+    .app-details-container .name{
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .project-two > .project-container> .app-details > .app-details-container > .details{
+        font-size: 12px !important;
+        /* margin-bottom: 10px; */
+    }
+
 
     .project-img-container {
         height: 75% !important;
