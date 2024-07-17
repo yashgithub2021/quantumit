@@ -68,7 +68,7 @@
                             <div *ngFor="let blog of blogs | paginate: { id: 'foo',
                                 itemsPerPage: pageSize,
                                 currentPage: currentPage,
-                                totalItems: totalItem }" [routerLink]="['inner-blog/'+blog.title]"
+                                totalItems: totalItem }" [routerLink]="['inner-blog/'+blog.title1]"
                                 class="card col-lg-5 col-8 my-3 p-0 justify-content-between" style="cursor: pointer;height:auto;"
                                 [ngStyle]="{'color':isDarkTheme?'white':'black','background':isDarkTheme?'#111111':'#ECF0FF'}">
                                 <img style="height: 40%;" [src]="blog.image" class="card-img-top" alt="...">
