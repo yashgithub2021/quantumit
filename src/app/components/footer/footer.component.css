@@ -302,4 +302,7 @@ button {
         gap:0px;
         padding-left: 0px;
     }
+    .rights p{
+        font-size: 12px;
+    }
 }

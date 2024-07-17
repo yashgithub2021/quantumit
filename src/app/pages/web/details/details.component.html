@@ -36,7 +36,7 @@
                     </div>
                 </div>
 
-                <div class="container frame-3 my-4">
+                <div class="container frame-3 my-sm-4">
                     <div class="app-details justify-content-center d-flex">
                         <div class="details w-75 justify-content-center gap-3 gap-lg-0  d-flex">
                             <div class="detail hover-card">
@@ -96,16 +96,16 @@
                 </div>
             </div>
 
-            <div class="about-project container w-75">
-                <div class="container d-flex flex-column justify-content-lg-start">
+            <div class="about-project w-75">
+                <div class="d-flex flex-column justify-content-lg-start">
                     <div
-                        class="container heading w-100 h-100 d-flex flex-column align-items-center justify-content-start">
+                        class="heading w-100 h-100 d-flex flex-column align-items-center justify-content-start">
                         <div class="sec4-headline  w-100">
                             <h1 class="service-tagline text-left">
-                                About the project
+                                About The Project
                             </h1>
                         </div>
-                        <div class="desc mt-3">
+                        <div class="desc mt-sm-3 mt-0">
                             <p class="m-0 desc-txt text-left" style="color:#959595">
                                 {{projectDetails.aboutProject}}
                             </p>
@@ -119,17 +119,17 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="project-img-container object-fit-cover w-100 mt-5">
+                        <div class="project-img-container object-fit-cover w-100 mt-sm-5 mt-0">
                             <img width="800" class="rounded-2 project-img border-2 border-white border"
                                 [src]="projectDetails.imageTwo" alt="Project Image">
                         </div>
 
-                        <div class="sec4-headline  w-100 mt-5">
+                        <div class="sec4-headline  w-100 mt-sm-5 mt-1">
                             <h1 class="service-tagline text-left">
                                 Make real time a work improvements
                             </h1>
                         </div>
-                        <div class="desc mt-3">
+                        <div class="desc mt-sm-3 mt-1">
                             <p class="m-0 desc-txt text-left" style="color:#959595">
                                 {{projectDetails.description}}
                             </p>
@@ -149,8 +149,8 @@
         </div>
     </div>
 </div>
-<div class="container-fluid d-flex justify-content-end mb-5 me-5">
-    <div class="buttons d-flex flex-row align-items-end pe-5 gap-3">
+<div class="container-fluid d-flex justify-content-sm-end justify-content-center mb-sm-5 mb-3 me-sm-5">
+    <div class="buttons d-flex flex-row align-items-end pe-sm-5 gap-3">
         <button class="prev our-process-btn cursor-pointer"(click)="prev()"*ngIf="nextProjectCount!=0">Prev</button>
         <button class="next our-process-btn cursor-pointer"(click)="next()"*ngIf="nextProjectCount!=filteredProjects.length-1">Next</button>
     </div>

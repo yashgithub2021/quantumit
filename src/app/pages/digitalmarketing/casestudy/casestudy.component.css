@@ -260,6 +260,9 @@
     .app-details > .details> .detail:not(:last-child) {
         padding-left: 0%;
     }
+    .slide h5 {
+        font-size: 12px;
+    }
     .desc>p {
         font-size: 14px;
         line-height: 20px;

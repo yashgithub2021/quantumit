@@ -103,6 +103,7 @@
 @media (max-width:575.98px) {
     .container {
         padding: 0px;
+        margin: 10px 0px;
     }
 
     .frame-3 {
@@ -111,8 +112,8 @@
     }
 
     .frame-3 .desc p {
-        font-size: 14px;
-        line-height: 20px;
+        font-size: 12px;
+        line-height: 18px;
     }
 
     .our-process-btn {
@@ -122,8 +123,8 @@
     }
 
     .sec4-headline>.service-tagline {
-        font-size: 22px;
-        line-height: 30px;
+        font-size: 18px;
+        line-height: 25px;
     }
 
     .desc {
@@ -136,18 +137,22 @@
     }
 
     .desc>p {
-        font-size: 14px;
-        line-height: 23px;
+        font-size: 12px;
+        line-height: 20px;
         text-align: center;
     }
 
     .title h3 {
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .app-details>.details>.detail:not(:last-child) {
         border-right: none;
         padding-right: 0%;
         padding-left: 0px;
+    }
+    .list-check {
+        font-size: 12px;
+        line-height: 20px;
     }
 }
