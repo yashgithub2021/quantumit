@@ -108,7 +108,7 @@ export class InnerblogComponent implements OnInit {
   }
   findIdOfBlog(index:number){
     this.blogTitle=this.blogs[index].title;
-    this.blogTitle=this.blogTitle.replace(/ /g,'-')
+    this.blogTitle=this.blogTitle.replace(/ /g,'-');
     this.router.navigate(['/blog/inner-blog', this.blogTitle]);
   }
 

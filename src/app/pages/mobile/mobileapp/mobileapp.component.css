@@ -239,6 +239,16 @@
     display: flex;
     justify-content: center;
 }
+.frame-3 .service-section{
+    font-size: 16px;
+    font-weight: 400;
+}
+.frame-3 .service-section .text{
+    background: linear-gradient(120.79deg, #43BAFF -49.01%, rgba(67, 186, 255, 0) 13.65%);
+    border: 1px solid;
+    border-image-source: linear-gradient(117.89deg, #43BAFF 0%, rgba(67, 186, 255, 0) 24%);
+    border-image-slice: 1;
+}
 
 @media(min-width:1024px) and (max-width:1366px) {
     .project-one>.project-container>.app-image>.project-img-container {
@@ -318,9 +328,9 @@
 
 @media (max-width: 992px) {
 
-    .frame-3 {
+    /* .frame-3 {
         height: 35vh;
-    }
+    } */
 
     .w-75 {
         width: 100% !important;
@@ -398,6 +408,10 @@
 
     .mobile-app {
         height: auto;
+    }
+    .frame-3 .service-section{
+        padding:15px;
+        font-size: 12px;
     }
 
     .tagline {
