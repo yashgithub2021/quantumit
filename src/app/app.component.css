@@ -65,7 +65,7 @@ span {
 .move {
     background: linear-gradient(91.58deg, #43BAFF 0.52%, #7044B3 100%);
     position: fixed;
-    bottom: 10px;
+    bottom: 50px;
     right: 10px;
     width: 50px;
     height: 50px;

@@ -31,6 +31,44 @@
         </div>
     </div>
 
+    <div class="frame-3 container p-0 p-lg-5 mb-2">
+        <div class="service-section">
+            <div class="head w-100 h-100 d-flex flex-column align-items-center justify-content-center">
+                <div class="button my-2" data-aos="slide-up">
+                    <button routerLink="/portfolio" class="our-process-btn">Our Process</button>
+                </div>
+
+                <div class="our-process my-2 " data-aos="slide-up">
+                    <h1 class=" text-align-center">Mobile App Development company</h1>
+                </div>
+            </div>
+            <div class="d-flex align-items-center flex-column h-100 w-100 ">
+                <div class="d-flex align-items-center flex-column flex-lg-row my-sm-5 my-1 h-100 w-100 gap-3">
+                    <div class="text w-100 p-3 p-sm-4">
+                        <div class="brief " [ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit qui odit explicabo blanditiis! Mollitia temporibus ullam maiores vero beatae? Sapiente, deserunt molestiae! Voluptatem doloribus maiores fugit suscipit ducimus ratione quaerat. Nisi hic ducimus accusantium.</p>
+                            
+                        </div>
+                        
+                    </div>
+                    <div class="image h-100 w-100 ">
+                        <img class="w-100" style="max-height:60%; object-fit:cover;border-radius:10px;opacity:0.8" src="../../../../assets/services/android/img1.jpg" alt="">
+                    </div>
+                </div>
+                <div class="d-flex align-items-center my-sm-5 my-3 flex-column flex-lg-row-reverse gap-3">
+                    <div class="text w-100 p-0 p-3 p-sm-4">
+                        <div class="brief" [ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error perspiciatis tempora quidem in numquam, autem officia harum sed itaque fuga. Itaque quas eos cumque ducimus quasi alias totam qui, odio adipisci quia temporibus ipsam?</p>
+                        </div>
+                    </div>
+                    <div class="image h-100 w-100 max-height:65%; object-fit:cover;border-radius:10px;opacity:0.8">
+                        <img class="rounded-3" src="../../../../assets/services/android/img1.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="frame-2 w-100 my-5 ">
         <div class="container d-flex flex-column flex-lg-row align-items-center justify-content-center ">
             <div class="image h-100 w-100 order-sm-1 order-2" data-aos="fade-in">
@@ -73,10 +111,10 @@
         </div>
     </div>
 
-    <div class="frame-3 container-fluid p-lg-0 w-100 ">
+    <!-- <div class="frame-3 container-fluid p-lg-0 w-100 ">
         <img *ngIf="isDarkTheme" src="../../../../assets/mobile/service-bg.svg" class="w-100" alt="">
         <img *ngIf="!isDarkTheme" src="../../../../assets/mobile/service-light.svg" class="w-100" alt="">
-    </div>
+    </div> -->
 
     <div class="container d-flex frame-2">
         <div class="container d-flex flex-column justify-content-between my-sm-5 mb-5 what-we-do-title-container">
