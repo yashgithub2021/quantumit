@@ -34,6 +34,7 @@ export class DetailsComponent implements OnInit {
       this.checkForDifferentPageRedirect(data.services);
       this.androidService = data.services.services;
       this.serviceDetails=this.androidService;
+      console.log(this.androidService.metaTitle);
       //for seo
       this.titleService.setTitle(this.androidService.metaTitle || 'Default Title');
       this.metaService.updateTag({ name: 'description', content:this.androidService.metaDescription || 'Default Description' });
