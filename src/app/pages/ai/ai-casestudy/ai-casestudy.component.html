@@ -1,0 +1,183 @@
+<div class="container-fluid frame-1">
+    <div class="ai-header-container d-flex justify-content-start align-items-center">
+        <div class="logo mr-3">
+            <img src="../../../../assets/ai/casestudy/logo.png" style="width:100px" alt="">
+        </div>
+        <div class="ai-header">
+            <h1>Quantum<span> &#x2022; Cuse study</span></h1>
+        </div>
+    </div>
+    <div class="mt-5">
+        <div class="head w-100 h-100 d-flex flex-column align-items-center justify-content-center">
+            <div class="button my-2" data-aos="slide-up">
+                <button class="our-project-btn">About Project</button>
+            </div>
+
+            <div class="our-process my-2 " data-aos="slide-up">
+                <h1 class=" text-align-center">HR Employee On Boarding</h1>
+            </div>
+
+            <div class="success-desc my-2 text-align-center" data-aos="slide-up">
+                <p>This project involves implementing RPA-based automation to streamline HR employee onboarding,
+                    eliminating human errors, increasing process speed by 5 times, reducing cycle time by 90%, and
+                    achieving significant cost savings and ROI.</p>
+            </div>
+        </div>
+    </div>
+    <div class="banner-img-container">
+        <div class="images position-relative">
+            <img class="w-100" src="../../../../assets/ai/casestudy/banner2.png" alt="">
+            <img class="position-absolute bottom-0 view-more"
+                src="../.../../../../../assets/casestudybanner/view-more.jpg" style="width:130px" alt="">
+        </div>
+    </div>
+</div>
+<div class="container frame-2">
+    <div class="pt-5">
+        <div class="head w-100 h-100 d-flex flex-column align-items-center justify-content-center">
+            <div class="d-flex justify-content-between align-tiems-center">
+                <div>
+                    <div class="button my-2" data-aos="slide-up">
+                        <button class="our-process-btn">Problem</button>
+                    </div>
+
+                    <div class="our-process my-2 " data-aos="slide-up">
+                        <h1 class=" text-start">Challenges Faced by <br>client.</h1>
+                    </div>
+                </div>
+                <div class="success-desc my-2 text-start align-self-center" data-aos="slide-up">
+                    <p>One of the leading Healthcare RCM BPO has 500 new joining every month across different cities and
+                        has been facing challenges coping up with the manual day to day  employee on boarding tasks,
+                        which is not only time  consuming but repetitive in nature.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid ">
+    <div class="svg-container">
+        <div>
+            <svg width="1440" height="381" viewBox="0 0 1440 381" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_2487_17039)">
+                    <g filter="url(#filter0_f_2487_17039)">
+                        <path d="M1434.5 237.473C806.1 17.4734 209.667 145.807 -10 237.473V351.473H1434.5V237.473Z"
+                            fill="#43BAFF" />
+                    </g>
+                    <g filter="url(#filter1_f_2487_17039)">
+                        <path d="M1441.5 287.473C813.1 67.4734 216.667 195.807 -3 287.473V401.473H1441.5V287.473Z"
+                            fill="white" fill-opacity="0.25" />
+                    </g>
+                    <path d="M1440 267.229C813.123 47.6714 218.134 175.747 -1 267.229V381H1440V267.229Z"
+                        fill="#070015" />
+                </g>
+                <defs>
+                    <filter id="filter0_f_2487_17039" x="-138.4" y="-12.4" width="1701.3" height="492.273"
+                        filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                        <feGaussianBlur stdDeviation="64.2" result="effect1_foregroundBlur_2487_17039" />
+                    </filter>
+                    <filter id="filter1_f_2487_17039" x="-214.4" y="-45.4" width="1867.3" height="658.273"
+                        filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                        <feGaussianBlur stdDeviation="105.7" result="effect1_foregroundBlur_2487_17039" />
+                    </filter>
+                    <clipPath id="clip0_2487_17039">
+                        <rect width="1443" height="381" fill="white" transform="translate(-1)" />
+                    </clipPath>
+                </defs>
+            </svg>
+
+        </div>
+    </div>
+</div>
+<div class="container-fluid frame-3">
+    <div class="">
+        <div class="head w-100 h-100 d-flex flex-column align-items-center justify-content-center">
+            <div class="button my-2" data-aos="slide-up">
+                <button class="our-process-btn">Solution</button>
+            </div>
+
+            <div class="our-process my-2 " data-aos="slide-up">
+                <h1 class=" text-align-center">Our Solution that make <br> Customer life Easy. </h1>
+            </div>
+
+            <div class="success-desc my-2 text-align-center" data-aos="slide-up">
+                <p>Implemented RPA based automation RPA bots that performs.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container frame-4 pt-5">
+        <ng-cotainer *ngFor="let solution of aiSolution;let i=index;">
+            <div class="d-flex justify-content-between align-items-center gap-5 mt-5" *ngIf="i%2==0">
+                <div class="img-container">
+                    <img src="{{solution.img}}" alt="">
+                </div>
+                <div class="heading-container">
+                    <div>
+                        <h1 class="heading">{{solution.title}}</h1>
+                        <p class="sub-heading">{{solution.subTitle}}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-between align-items-center gap-5 mt-5" *ngIf="i%2!=0">
+                <div class="heading-container">
+                    <div>
+                        <h1 class="heading">{{solution.title}}</h1>
+                        <p class="sub-heading">{{solution.subTitle}}</p>
+                    </div>
+                </div>
+                <div class="img-container">
+                    <img src="{{solution.img}}" alt="">
+                </div>
+            </div>
+        </ng-cotainer>
+    </div>
+</div>
+<div class="container-fluid frame-5 pt-5">
+    <div class="container">
+        <div class="head  d-flex flex-column align-items-start justify-content-center">
+            <div class="d-flex justify-content-start align-tiems-center">
+                <div>
+                    <div class="button my-2" data-aos="slide-up">
+                        <button class="our-process-btn">Impact</button>
+                    </div>
+
+                    <div class="our-process my-2 " data-aos="slide-up">
+                        <h1 class=" text-start">Our Solution That<br>impact on Product</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="progress-container">
+            <div class="progress-data-container">
+                <div class="progress-1">
+                    <div class="data">
+                        <h1>5X</h1>
+                        <p>Increase Process 
+                            speed</p>
+                    </div>
+                </div>
+                <div class="progress-2">
+                    <div class="data">
+                        <h1>90%</h1>
+                        <p>Accuracy</p>
+                    </div>
+                </div>
+                <div class="progress-3">
+                    <div class="data">
+                        <h1>130% of ROI</h1>
+                        <p>Cost saving</p>
+                    </div>
+                </div>
+                <div class="progress-4">
+                    <div class="data">
+                        <h1>90%</h1>
+                        <p>Reduced cycle time</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,194 @@
+* {
+    font-family: 'Helvetica Neue';
+}
+
+.frame-1 {
+    background: linear-gradient(90deg, #43BAFF 0%, #7141B1 100%);
+    /* height: 100vh; */
+    width: 98%;
+    border-radius: 30px;
+    padding: 20px;
+    padding-top: 0px;
+}
+
+.ai-header {
+    background-color: black;
+    position: relative;
+    padding: 20px;
+    border-radius: 0 0 30px 30px;
+}
+
+/* .ai-header::after,.ai-header::before{
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: 0px;
+    width: 50px;
+    height: 50px;
+    border-radius: 0 30px 0 0;
+    background-color: #43BAFF;
+    z-index: -1;
+}
+.ai-header::after{
+    box-shadow: 0 0 0 30px #43BAFF;
+}
+.ai-header::before{
+    left: auto;
+    right: 50px;
+    box-shadow: 0 0 0 30px #43BAFF;
+} */
+.ai-header h1,
+.ai-header span {
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 700;
+    margin-bottom: 0px;
+}
+
+.ai-header span {
+    color: #ffffff;
+    opacity: 0.7;
+}
+
+.head .success-desc>p {
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 400 !important;
+}
+
+.head .success-desc {
+    width: 50%;
+}
+
+.our-process>h1 {
+    font-size: 42px;
+    line-height: 54px;
+    font-weight: 700;
+}
+
+.our-project-btn {
+    padding: 7px 15px 7px 15px;
+    border-radius: 32px;
+    border: 1px solid whitesmoke;
+    color: white;
+    background: transparent;
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 700;
+}
+
+.banner-img-container .view-more {
+    right: 0px;
+    border-radius: 100%;
+}
+
+.frame-2 {
+    background: #070015;
+}
+
+.frame-2 .success-desc p {
+    opacity: 0.8;
+}
+
+.frame-3 {
+    background: #070015;
+}
+
+.frame-3 .success-desc p {
+    opacity: 0.8;
+}
+
+.frame-4 .img-container img {
+    border-radius: 80px;
+}
+
+.frame-4 .heading-container {
+    width: 60%;
+}
+
+.frame-4 .img-container {
+    width: 40%;
+    margin-right: 30px;
+}
+
+.frame-4 .heading-container .heading {
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: 800;
+}
+
+.frame-4 .heading-container .sub-heading {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    opacity: 0.8;
+    width: 75%;
+}
+
+.frame-5 {
+    background: #070015;
+    height: 150vh;
+    position: relative;
+
+}
+.progress-container{
+}
+.progress-1,.progress-2,.progress-3{
+
+    border-radius: 100%;
+    background: linear-gradient(0deg, #20192C, #20192C),
+    linear-gradient(0deg, #20192C, #20192C);
+}
+
+.frame-5 .progress-data-container .progress-1 {
+    width: 240px;
+    height: 240px;
+    position: absolute;
+    left: 50%;
+    top: 25%;
+
+}
+.frame-5 .progress-data-container .progress-2 {
+    width: 270px;
+    height: 270px;
+    position: absolute;
+    top: 30%;
+    left:20%;
+}
+.frame-5 .progress-data-container .progress-3 {
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    bottom: 5%;
+    left: 30%;
+
+}
+.frame-5 .progress-data-container .progress-4 {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    background: linear-gradient(90deg, #43BAFF 0%, #7141B1 100%);
+    position: absolute;
+    right: 20%;
+    top: 50%;
+}
+.progress-data-container .data{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.progress-data-container .data h1{
+    font-size: 52px;
+    line-height: 60px;
+    font-weight: 700;
+}
+.progress-data-container .data p{
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 700;
+    text-align: center;
+}
