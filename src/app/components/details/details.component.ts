@@ -36,9 +36,8 @@ export class DetailsComponent implements OnInit {
       this.serviceDetails=this.androidService;
       console.log(this.androidService.metaTitle);
       //for seo
-      this.titleService.setTitle(this.androidService.metaTitle || 'Default Title');
-      this.metaService.updateTag({ name: 'description', content:this.androidService.metaDescription || 'Default Description' });
-
+      this.titleService.setTitle(this.androidService.metaTitle || 'Web Development Solutions');
+      this.metaService.updateTag({ name: 'description', content:this.androidService.metaDescription || "Top-Tier Web Development Services, Tailored To Perfection For Your Digital Needs." });
     });
 
   }
