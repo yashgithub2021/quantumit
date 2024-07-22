@@ -1741,7 +1741,7 @@ export const GenerativeAiIntegrationServices = {
 export const GenerativeAiConsultingCompany = {
     title1: "generative",
     title2: "AI consulting services",
-    img1: "../../../../assets/services/android/img1.png",
+    img1: "../../../../assets/services/AI_service/aigenerator/img3_3.jpg",
     // img2: "../../../../assets/services/ios_android/img1.jpg",
     descriptionOne: [
         "Make Quantum IT your reliable partner in using the transformative ability of generative AI to improve business operations and product offerings. Our inclusive generative AI consulting services consist of profound expertise in advanced AI technologies and adherence to ethical principles. This means that our AI solutions are not only state-of-the-art but also have the right attitude towards their use."
