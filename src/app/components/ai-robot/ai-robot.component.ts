@@ -63,7 +63,7 @@ export class AiRobotComponent implements OnInit {
     }, {
       img: '../../../assets/services/AI_service/aigenerator/img3.png',
       title: 'Generative Ai consulting company',
-      // link: '/ai/Generative-Ai-consulting-company'
+      link: '/ai/Generative-Ai-consulting-company'
     }, {
       img: '../../../assets/services/AI_service/aigenerator/img4.png',
       title: 'hire generative ai engineers',

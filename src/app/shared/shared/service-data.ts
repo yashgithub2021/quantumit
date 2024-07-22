@@ -1804,6 +1804,9 @@ export const GenerativeAiConsultingCompany = {
     our_steps_title: 'Our Approach to Generative AI Consulting',
     our_steps_description: '',
     our_steps: [
+        
+    ],
+    our_steps2: [
         {
             stepNo: "Step 01",
             title: "Data Analysis and Generative Model Selection",
@@ -1819,9 +1822,6 @@ export const GenerativeAiConsultingCompany = {
             title: "Full-scale Generative AI Deployment",
             desc: "On winning the approval of all stakeholders for the pilot project, our team of experts goes ahead with launching the full-scale generative AI system. Our detailed-oriented approach will ensure a smooth and successful deployment thus enabling you to exploit the transformative power of generative AI to enhance efficiency and meet business goals."
         }
-    ],
-    our_steps2: [
-
     ],
     integrations: [
         {
