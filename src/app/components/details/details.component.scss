@@ -435,6 +435,16 @@
     .txt1 {
         width: 60% !important;
     }
+    .frame-3 .service-section1{
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .frame-3 .service-section1 .text{
+        background: linear-gradient(120.79deg, #43BAFF -49.01%, rgba(67, 186, 255, 0) 13.65%);
+        border: 1px solid;
+        border-image-source: linear-gradient(117.89deg, #43BAFF 0%, rgba(67, 186, 255, 0) 24%);
+        border-image-slice: 1;
+    }
 
     @media (max-width: 1024px) {
 
@@ -535,6 +545,11 @@
     }
 
     @media (max-width: 575.98px) {
+
+        .frame-3 .service-section1{
+            padding:15px;
+            font-size: 12px;
+        }
 
         .frame-2-head .txt>h1,
         .txt>h1 {
