@@ -19,7 +19,7 @@
                     <button class="btn btn-primary mx-3 px-2 px-lg-4 py-3" (click)="scrollToProcess()">Get
                         Started</button>
                     <button class="btn btn-outline-primary mx-3 px-2 px-lg-4 py-3 text-uppercase"
-                        (click)="scrollToForm()"[ngStyle]="{color:isDarkTheme?'':'black'}">learn
+                        (click)="scrollToForm()" [ngStyle]="{color:isDarkTheme?'':'black'}">learn
                         More</button>
                 </div>
             </div>
@@ -303,7 +303,8 @@
 
     <div class="frame-4 container d-flex">
         <div class="container d-flex flex-column justify-content-between my-sm-5 my-1 px-lg-2">
-            <div class="heading d-flex flex-column mb-sm-5 mb-1 mb-lg-0 flex-lg-row justify-content-center align-items-center">
+            <div
+                class="heading d-flex flex-column mb-sm-5 mb-1 mb-lg-0 flex-lg-row justify-content-center align-items-center">
                 <div class="text frame-2-head w-50 d-flex align-items-center justify-content-center flex-column ">
                     <div class="button" data-aos="fade-in">
                         <button class="our-process-btn">
@@ -317,8 +318,7 @@
                 </div>
             </div>
             <div class="what-we-do w-100 h-100 mt-lg-5 d-block d-sm-none">
-                <table class="table table-bordered"
-                    [ngClass]="isDarkTheme?' table-dark':'table-light'">
+                <table class="table table-bordered" [ngClass]="isDarkTheme?' table-dark':'table-light'">
                     <tbody class="">
                         <tr *ngFor="let data of tableData" data-aos="fade-up">
                             <td scope="row" class="align-middle first-td p-4 w-auto">
@@ -330,8 +330,7 @@
                                 <p class="m-0  " [ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">{{data.tail}}</p>
                             </td>
                             <td class="align-middle py-4 px-2 fourth-td w-auto">
-                                <p [routerLink]="[data.link]" (click)="scrollToTop()"
-                                    class="m-0 table-lm learn ">Learn
+                                <p [routerLink]="[data.link]" (click)="scrollToTop()" class="m-0 table-lm learn ">Learn
                                     More <i class="fa-solid fa-arrow-right text-secondary"
                                         style="transform: rotate(325deg);"></i></p>
                             </td>
@@ -368,8 +367,7 @@
                                 </div> -->
                             </td>
                             <td class="align-middle py-4 px-2 fourth-td w-auto">
-                                <p [routerLink]="[data.link]" (click)="scrollToTop()"
-                                    class="m-0 table-lm learn ">Learn
+                                <p [routerLink]="[data.link]" (click)="scrollToTop()" class="m-0 table-lm learn ">Learn
                                     More <i class="fa-solid fa-arrow-right text-secondary"
                                         style="transform: rotate(325deg);"></i></p>
                             </td>
@@ -413,13 +411,16 @@
                 <div class="step-title w-25 mt-3 mt-lg-3 d-flex flex-column align-items-center justify-content-center">
                     <p data-aos="fade-up" class="w-50 fw-lighter fs-5 text-align-center">Client <br> Consultation</p>
                     <p data-aos="fade-up" class="w-75 fw-lighter fs-6 text-align-center"
-                        [ngStyle]="{color: isDarkTheme ? '#B5B5B5':'black'}">Through in-depth consultations, Quantum begins by thoroughly understanding the client's goals, target audience, and unique needs.</p>
+                        [ngStyle]="{color: isDarkTheme ? '#B5B5B5':'black'}">Through in-depth consultations, Quantum
+                        begins by thoroughly understanding the client's goals, target audience, and unique needs.</p>
                 </div>
                 <div class="step-dashed-line visually-hidden"></div>
                 <div class="step-title w-25 mt-3 mt-lg-3 d-flex justify-content-center align-items-center flex-column">
                     <p data-aos="fade-up" class="w-50 fw-lighter fs-5 text-align-center">Strategy Development</p>
                     <p data-aos="fade-up" class="w-75 fw-lighter fs-6 text-align-center"
-                        [ngStyle]="{color: isDarkTheme ? '#B5B5B5':'black'}">Quantum crafts tailored digital marketing strategies based on the insights gained, aligning with the client's objectives and maximizing ROI.                    </p>
+                        [ngStyle]="{color: isDarkTheme ? '#B5B5B5':'black'}">Quantum crafts tailored digital marketing
+                        strategies based on the insights gained, aligning with the client's objectives and maximizing
+                        ROI. </p>
                 </div>
                 <div class="step-dashed-line visually-hidden"></div>
                 <div class="step-title w-25 mt-3 mt-lg-3 d-flex justify-content-center align-items-center flex-column">
@@ -551,7 +552,8 @@
                 </div>
             </div>
 
-            <div class="container w-100 h-100 mt-sm-5 mt-0 d-flex flex-column justify-content-center align-items-center">
+            <div
+                class="container w-100 h-100 mt-sm-5 mt-0 d-flex flex-column justify-content-center align-items-center">
                 <div class="container flex-column flex-lg-row align-items-center d-flex g-3 h-100 w-100">
                     <div class="mx-2 my-sm-4 my-2 my-lg-0 w-100 h-100 our-stories-col hover-card"
                         [ngStyle]="{border:isDarkTheme?'1.5px solid #FFFFFF40':'1.5px solid black'}"
@@ -574,7 +576,7 @@
                                 </div>
                             </div>
                             <div class="details w-100 h-100">
-                                <div class="text d-flex flex-column "routerLink="{{story.link}}">
+                                <div class="text d-flex flex-column " *ngIf="story.link" routerLink="{{story.link}}">
                                     <div data-aos="fade-up" class="name my-2">
                                         <h3 class="">{{story.name}}</h3>
                                     </div>
@@ -594,6 +596,28 @@
                                         <p>Read the Success Stories</p>
                                     </div> -->
                                 </div>
+                                <a [href]="story.href " target="_blank" *ngIf="!(story.link)" style="text-decoration:none;color:unset">
+                                    <div class="text d-flex flex-column ">
+                                        <div data-aos="fade-up" class="name my-2">
+                                            <h3 class="">{{story.name}}</h3>
+                                        </div>
+                                        <div data-aos="fade-up" class="num my-2">
+                                            <h2 class="fw-light " style="color:#43BAFF">{{story.num}}</h2>
+                                        </div>
+                                        <div data-aos="fade-up" class="buttons d-flex justify-content-lg-between my-2"
+                                            style="gap:10px;">
+                                            <button style="white-space:nowrap;"
+                                                [ngClass]="isDarkTheme?'our-gm-btn':'our-gm-btn-light'"
+                                                *ngFor="let type of story.types">
+                                                {{type}}
+                                            </button>
+
+                                        </div>
+                                        <!-- <div data-aos="fade-up" class="desc my-2">
+                                        <p>Read the Success Stories</p>
+                                    </div> -->
+                                    </div>
+                                </a>
                             </div>
                         </div>
                     </div>

@@ -43,7 +43,7 @@ export class DigitalMarketingComponent implements OnInit {
       name: " Online Plants NZ Organic Traffic",
       num: "+319k",
       types: ['Organic Engagement', 'SEO', 'Marketing'],
-      link:'/digital-marketing/casestudy'
+      href:'https://liddlewonder.nz/'
     },
     {
       name: "Seanautic Marine Inc. Organic Traffic",
