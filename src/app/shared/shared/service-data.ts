@@ -59,6 +59,27 @@ export const androidService = {
             img: '../../../../assets/mobile/service/mgd.svg'
         },
     ],
+    ourProcessTitle:'Android app Development company',
+    ourProcessDesc:[
+        {
+            title:"Looking for the best android app development company? Look no further than Quantum IT Innovation. As a leading android app development agency, we specialize in creating innovative, high-performance applications tailored to your specific needs. Our team of expert developers is skilled in custom android app development, ensuring that your app stands out in the crowded marketplace."
+        },
+        {
+            title:"At Quantum IT Innovation, we understand that every business has unique requirements. That's why we offer custom android app development services that are designed to meet your individual goals and objectives. Whether you're looking to develop a new app from scratch or improve an existing one, our team has the expertise to deliver top-notch solutions."
+        },{
+            title:"Why choose us? Our android app development company prides itself on delivering high-quality apps on time and within budget. We use the latest technologies and best practices to ensure your app is not only functional but also user-friendly and engaging."
+        },{
+            title:"Partner with Quantum IT Innovation, a trusted android app development agency, and take the first step towards transforming your app idea into reality. Contact us today to learn more about how we can help you achieve your business goals through exceptional custom android app development services."
+        },
+    ],
+    ourProcessImg:[
+        {
+            img3:'../../../../assets/services/android/img3.png'
+        },
+        {
+            img4:'../../../../assets/services/android/img4.png'
+        }
+    ],
     methodologyBtnTitle: "Our Methodologies",
     methodologyTitle: "Our Methodologies for App Development",
     steps: [
@@ -141,6 +162,27 @@ export const iOsService = {
             desc: "Dive into the world of immersive gaming experiences with captivating titles tailored for iPhones and iPads.",
             img: '../../../../assets/mobile/service/mgd.svg'
         },
+    ],
+    ourProcessTitle:'iOS app Development company',
+    ourProcessDesc:[
+        {
+            title:"In the fast-paced world of technology, having a robust mobile presence is crucial. At Quantum IT Innovation, we specialize in providing top-notch iOS app development services that cater to your unique business needs. As a leading iOS app development agency, we are committed to transforming your ideas into innovative and user-friendly mobile applications."
+        },
+        {
+            title:"Our team of experts understands the intricacies of the iOS platform and leverages their extensive experience to deliver exceptional results. Whether you are a startup or an established business, our iOS app development company offers tailored solutions that enhance your digital presence and boost customer engagement."
+        },{
+            title:"From concept to deployment, we ensure every aspect of your app is meticulously crafted to perfection. Our comprehensive range of iOS app development services includes UI/UX design, custom app development, testing, and maintenance. We pride ourselves on our ability to deliver high-quality apps that not only meet but exceed client expectations."
+        },{
+            title:"Partner with Quantum IT Innovation, the premier iOS app development agency, and let us help you achieve your business goals with our cutting-edge iOS app development services. Contact us today to take the first step towards creating an outstanding mobile experience for your users."
+        },
+    ],
+    ourProcessImg:[
+        {
+            img3:'../../../../assets/services/ios_dev/img3.png'
+        },
+        {
+            img4:'../../../../assets/services/ios_dev/img4.png'
+        }
     ],
     methodologyBtnTitle: "Our Approach",
     methodologyTitle: "Unleash innovation through our proven methodologies",
@@ -1500,10 +1542,11 @@ export const joomlaDevelopmentServices = {
 };
 
 // ai services
+
 export const GenerativeAiDevelopment = {
     title1: "Generative",
     title2: "AI Development",
-    img1: "../../../../assets/services/android/img1.png",
+    img1: "../../../../assets/services/AI_service/aigenerator/img1_1.png",
     // img2: "../../../../assets/services/ios_android/img1.jpg",
     descriptionOne: [
         "At Quantum IT, we tame Generative AI’s disruptive power to reshape your business. Our broad range of generative AI services encompassing strategic consultancy, solution development and continuous support are meticulously developed to bring change within your company."
@@ -1602,7 +1645,7 @@ export const GenerativeAiDevelopment = {
 export const GenerativeAiIntegrationServices = {
     title1: "Generative AI",
     title2: "Integration Services",
-    img1: "../../../../assets/services/android/img1.png",
+    img1: "../../../../assets/services/AI_service/aigenerator/img2_2.png",
     // img2: "../../../../assets/services/ios_android/img1.jpg",
     descriptionOne: [
         "For today’s competitive world, using the power of artificial intelligence is imperative for businesses that want to increase their effectiveness in order to stay ahead. At Quantum IT, we aim at creating more generative AI integration systems to suit different organisations' needs. We have developed integration services that allow you to incorporate AI technologies into your current system thus improving operations and unlocking new growth prospects."
@@ -1761,6 +1804,9 @@ export const GenerativeAiConsultingCompany = {
     our_steps_title: 'Our Approach to Generative AI Consulting',
     our_steps_description: '',
     our_steps: [
+        
+    ],
+    our_steps2: [
         {
             stepNo: "Step 01",
             title: "Data Analysis and Generative Model Selection",
@@ -1776,9 +1822,6 @@ export const GenerativeAiConsultingCompany = {
             title: "Full-scale Generative AI Deployment",
             desc: "On winning the approval of all stakeholders for the pilot project, our team of experts goes ahead with launching the full-scale generative AI system. Our detailed-oriented approach will ensure a smooth and successful deployment thus enabling you to exploit the transformative power of generative AI to enhance efficiency and meet business goals."
         }
-    ],
-    our_steps2: [
-
     ],
     integrations: [
         {

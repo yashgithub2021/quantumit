@@ -79,7 +79,8 @@ export class ServiceComponent implements OnInit {
     });
     this.sectionFourNums.forEach(item => {
       this.incrementNumber(item);
-    })
+    });
+    this.scrollToTop();
   }
 
   themechange() {
@@ -99,6 +100,9 @@ export class ServiceComponent implements OnInit {
         clearInterval(interval);
       }
     }, stepTime);
+  }
+  scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 
 }
