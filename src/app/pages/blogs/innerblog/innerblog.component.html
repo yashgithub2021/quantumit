@@ -78,7 +78,7 @@
                                     [ngStyle]="{'background-color':isDarkTheme?'black !important':'white !important'}"
                                     class="list-group-item d-flex align-items-center my-1 border-0 "
                                     *ngFor="let check of blogDetail.keyInsights">
-                                    <p class="fw-light mb-0 ms-2 list-check">{{check}}</p>
+                                    <p class="fw-light mb-0 ms-2 list-check"[innerHTML]="check"></p>
                                 </li>
                             </ul>
                         </div>

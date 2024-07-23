@@ -73,6 +73,8 @@ export class FormComponent implements OnInit {
     formData.append('companyName', this.form.value.companyName);
     formData.append('message', this.form.value.message);
     formData.append('about', this.form.value.about);
+    formData.append('ip_address', this.form.value.ip_address);
+    formData.append('location', this.form.value.location);
 
     // Send the FormData to the backend using an HTTP POST request
     this.api.saveContactForm(formData).subscribe((res: any) => {
