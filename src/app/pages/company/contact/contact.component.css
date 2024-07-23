@@ -240,14 +240,14 @@
     }
 
     .num-cont>div h1 {
-        font-size: 24px;
+        font-size: 22px;
         line-height: 30px;
     }
 
     .socials .email a,
     .socials .phone a {
-        font-size: 14px;
-        line-height: 23px;
+        font-size: 12px;
+        line-height: 20px;
     }
 
     .w-50,
@@ -286,7 +286,7 @@
     }
 
     .name h4 {
-        font-size: 16px;
+        font-size: 12px;
         line-height: 20px;
     }
 

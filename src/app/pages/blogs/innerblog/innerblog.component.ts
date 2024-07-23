@@ -47,6 +47,7 @@ export class InnerblogComponent implements OnInit {
       this.getBlogId();
     })
     this.themechange();
+    this.scrollToTop();
   }
 
   themechange() {

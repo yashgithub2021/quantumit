@@ -20,10 +20,10 @@
                 </div>
             </div>
 
-            <div class="about-project container w-100 p-0">
-                <div class="container align-self-center d-flex flex-column justify-content-center align-items-center p-0">
+            <div class="about-project  w-100 p-0">
+                <div class=" align-self-center d-flex flex-column justify-content-center align-items-center p-0">
                     <div
-                        class="container heading w-75 h-100 d-flex flex-column align-items-center justify-content-center">
+                        class=" heading w-75 h-100 d-flex flex-column align-items-center justify-content-center">
                         <div class="sec4-headline  w-100">
                             <h1 class="service-tagline text-left">
                                 {{blogDetail.title}}
@@ -59,7 +59,7 @@
                                 massa mattis egestas.
                             </p>
                         </div> -->
-                        <div class="project-img-container d-flex justify-content-center w-100 mt-5">
+                        <div class="project-img-container d-flex justify-content-center w-100 mt-sm-5">
                             <img width="800"
                                 class="rounded-2 w-100 align-self-center project-img border-2 border-white border"
                                 src="{{blogDetail.image2}}" alt=""style="opacity:0.8">
@@ -88,7 +88,7 @@
                                 has survived not only five centuries, but also the leap into electronic typesetting.
                             </p>
                         </div> -->
-                        <div class="quote mt-5 w-100 ">
+                        <div class="quote mt-sm-5 w-100 ">
                             <div class="container-fluid numbers w-100">
                                 <div class="numbers-section rounded-3 container-fluid w-100">
                                     <div class="d-flex gap-3 flex-column justify-content-center align-items-center">
@@ -165,8 +165,8 @@
     </div>
 </div>
 
-<div class="container-fluid d-flex justify-content-end mb-5 me-5">
-    <div class="buttons d-flex flex-row align-items-end pe-5 gap-3">
+<div class="container-fluid d-flex justify-content-sm-end justify-content-center my-3 my-sm-5 me-sm-5">
+    <div class="buttons d-flex flex-row align-items-end  pe-sm-5 gap-3">
         <button class="prev our-process-btn cursor-pointer"(click)="prev()"*ngIf="nextBlogCount!=0">Prev</button>
         <button class="next our-process-btn cursor-pointer"(click)="next()"*ngIf="nextBlogCount!=blogs.length-1">Next</button>
     </div>

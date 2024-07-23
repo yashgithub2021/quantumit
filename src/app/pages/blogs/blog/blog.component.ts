@@ -26,8 +26,9 @@ export class BlogComponent implements OnInit {
 
   ngOnInit(): void {
     this.isDarkTheme = this.api.isDarkTheme();
-    this.fetchBlogs()
-    this.themechange()
+    this.fetchBlogs();
+    this.themechange();
+    this.scrollToTop();
   }
 
   themechange() {
@@ -73,5 +74,8 @@ export class BlogComponent implements OnInit {
     if (element) {
       element.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
+  }
+  scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 }
