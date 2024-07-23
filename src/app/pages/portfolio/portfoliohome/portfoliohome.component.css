@@ -126,7 +126,7 @@
 
     .view-project {
         right: 15px;
-        height: 50px;
+        height: 70px;
         top: 0;
         right: 0;
     }
@@ -194,9 +194,9 @@
         line-height: 16px;
     }
     .app2-cont{
-        width:47%;
+        width:100%;
     }
     .app1-cont{
-        width:47%;
+        width:100%;
     }
 }

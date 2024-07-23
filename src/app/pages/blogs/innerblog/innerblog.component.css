@@ -86,8 +86,8 @@
         background: linear-gradient(90deg, #43BAFF 0%, #7141B1 100%);
     }
     .numbers-section h4{
-        font-size: 16px;
-        line-height: 22px;
+        font-size: 12px;
+        line-height: 20px;
     }
     .numbers-section img{
         width:40px;
@@ -119,5 +119,11 @@
     }
     .image img{
         width:100vw;
+    }
+    .buttons .next, .buttons .prev{
+        font-size: 12px;
+    }
+    .project-img {
+        height: 220px;
     }
 }

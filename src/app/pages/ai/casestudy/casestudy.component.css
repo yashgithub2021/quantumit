@@ -290,6 +290,7 @@
     .detaile p {
         font-size: 14px;
         line-height: 20px;
+        font-weight: 400!important;
     }
 
     .our-process-btn {
@@ -328,8 +329,9 @@
     }
 
     .step-title p:last-child {
-        font-size: 14px !important;
-        line-height: 23px;
+        font-size: 12px !important;
+        line-height: 20px;
+        width:80%!important;
     }
 
     .steps-container-last .step-title p {
@@ -345,6 +347,7 @@
 
     .our-marketing-btn {
         padding: 7px 7px;
+        font-size: 12px;
     }
 
     .our-marketing-btn>i {
