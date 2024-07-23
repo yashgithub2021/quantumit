@@ -12,7 +12,16 @@
   background-color: #000000;
   color: #ffffff !important;
 }
+::selection {
+  background: transparent;
+  color: rgb(151, 160, 160);
+}
 
+/* For Firefox */
+::-moz-selection {
+  background: transparent;
+  color: rgb(151, 160, 160);
+}
 .accordion-button {
   color: white !important;
 }

@@ -23,7 +23,9 @@ export class FormComponent implements OnInit {
       email: ['', [Validators.required, Validators.email]],
       companyName: ['', [Validators.required]],
       message: ['', Validators.required],
-      about:['',Validators.required]
+      about: ['', Validators.required],
+      ip_address: [''],
+      location: ['']
     });
 
     this.joinform = this.formBuilder.group({
@@ -35,9 +37,22 @@ export class FormComponent implements OnInit {
     });
 
     this.isDarkTheme = this.api.isDarkTheme();
-    this.themechange()
+    this.themechange();
+    this.getIpAndLocation();
   }
+  getIpAndLocation(): void {
+    this.api.getIpAddress().subscribe(ipData => {
+      this.form.patchValue({ ip_address: ipData.ip });
+      console.log(ipData);
 
+      this.api.getLocation(ipData).subscribe(locationData => {
+        const location = `${locationData.city}, ${locationData.region}, ${locationData.country}`;
+        this.form.patchValue({ location });
+        console.log(location);
+      });
+    });
+    console.log(this.form);
+  }
   themechange() {
     this.api.themeChanged.subscribe((isDarkTheme: boolean) => {
       this.isDarkTheme = isDarkTheme;
@@ -57,7 +72,7 @@ export class FormComponent implements OnInit {
     formData.append('email', this.form.value.email);
     formData.append('companyName', this.form.value.companyName);
     formData.append('message', this.form.value.message);
-    formData.append('about',this.form.value.about);
+    formData.append('about', this.form.value.about);
 
     // Send the FormData to the backend using an HTTP POST request
     this.api.saveContactForm(formData).subscribe((res: any) => {
@@ -66,7 +81,7 @@ export class FormComponent implements OnInit {
       this.form.reset()
     }, (err: any) => {
       console.log(err.error)
-      this.toast.error(err.error)
+      this.toast.error(err.error.message)
     });
   }
   submitJoinForm() {

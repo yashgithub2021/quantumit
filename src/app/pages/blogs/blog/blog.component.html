@@ -74,7 +74,7 @@
                                 <img style="height: 40%;" [src]="blog.image" class="card-img-top" alt="...">
                                 <div class="px-3 my-3"style="height:auto">
                                     <div class="container">
-                                        <h5 class="card-title text-capitalize fw-lighter">{{blog?.category}}
+                                        <h5 class="card-title text-capitalize fw-lighter"style="font-size:12px;">{{blog?.category}}
                                             - <span class="days opacity-50">{{blog?.readTime}}</span></h5>
                                     </div>
                                 </div>
@@ -83,6 +83,13 @@
                                         <div class="text">
                                             <h5 class="fw-light ">{{(blog?.title.length>70)?(blog?.title | slice:0:70)+'...':(blog?.title)}}
                                             </h5>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" px-3"style="height:auto">
+                                    <div class="container d-flex">
+                                        <div class="text">
                                             <p class="opacity-50"[innerHTML]="(blog?.description.length>130)?(blog?.description |
                                                 slice:0:130)+'...':(blog?.description)">
                                                 

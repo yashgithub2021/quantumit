@@ -3,12 +3,12 @@
     <div class="container-fluid d-flex p-1 p-lg-5 flex-lg-row flex-column">
         <div class="container-fluid d-flex flex-column ipad-mini-landscape1">
             <div class="quantum">
-                <div routerLink="/" class="logo" *ngIf="isDarkMode">
-                    <img [ngStyle]="{'filter': isDarkMode ? 'none' : 'invert(1)'}" height="49" width="114"
+                <div  class="logo " *ngIf="isDarkMode">
+                    <img routerLink="/"class="cursor-pointer" [ngStyle]="{'filter': isDarkMode ? 'none' : 'invert(1)'}" height="49" width="114"
                         src="../../../assets/logo-white.png" alt="">
                 </div>
-                <div routerLink="/" class="logo" *ngIf="!isDarkMode">
-                    <img height="49" width="114" src="../../../assets/Logo light mode app logo.png" alt="">
+                <div class="logo" *ngIf="!isDarkMode">
+                    <img  routerLink="/" class="cursor-pointer" height="49" width="114" src="../../../assets/Logo light mode app logo.png" alt="">
                 </div>
                 <div class="tagline">
                     <p class="text-secondary text-container"
@@ -22,27 +22,77 @@
                 </div>
             </div>
             <div class="contact-info-div d-none d-sm-block">
-                <div class="contanct-info-+content d-flex align-items-center"
-                    *ngFor="let contact of contacts; let i = index">
+                <div class="contanct-info-+content d-flex align-items-center">
                     <button
                         [ngStyle]="{background: isDarkMode ? '#343538' : 'linear-gradient(91.58deg, #43BAFF 0.52%, #7044B3 100%)'}"
-                        class="btn rounded-circle text-align-center" (mouseenter)="isHovering[i] = true"
-                        (mouseleave)="isHovering[i] = false">
+                        class="btn rounded-circle text-align-center" (mouseenter)="isHovering[0] = true"
+                        (mouseleave)="isHovering[0] = false">
                         <i class="m-0 fs-6 fa-solid w-100 text-align-center"
-                            [class]="isHovering[i] ? contact.hoverIcon : contact.icon"></i>
+                            [class]="isHovering[0] ? contacts[0].hoverIcon : contacts[0].icon"></i>
                     </button>
                     <div>
                         <label for="btn" class="text-secondary">
-                            {{contact.label}}
+                            {{contacts[0].label}}
                             <p>
                                 <a [ngStyle]="{'color': isDarkMode ? 'white' : 'black'}"
-                                    class="m-0  text-decoration-none fw-semibold contact-value" [href]="contact.link"
-                                    (mouseenter)="isHovering[i] = true"
-                                    (mouseleave)="isHovering[i] = false">{{contact.value}}</a>
+                                    class="m-0  text-decoration-none fw-semibold contact-value"
+                                    [href]="contacts[0].link" (mouseenter)="isHovering[0] = true"
+                                    (mouseleave)="isHovering[0] = false"><img src="../../../assets/contact/india.png"
+                                        alt="">{{contacts[0].value}}</a>
+
+                                <a [ngStyle]="{'color': isDarkMode ? 'white' : 'black'}" href="tel:1 877 877 3644"
+                                    (mouseenter)="isHovering[0] = true" (mouseleave)="isHovering[0] = false"
+                                    class="m-0 mx-2 text-decoration-none fw-semibold contact-value"><img
+                                        src="../../../assets/contact/usa.png" alt="">+1 877
+                                    877 3644</a>
                             </p>
                         </label>
                     </div>
+                </div>
+                <ng-container *ngFor="let contact of contacts; let i = index">
+                    <div class="contanct-info-+content d-flex align-items-center" *ngIf="i==1">
+                        <button
+                            [ngStyle]="{background: isDarkMode ? '#343538' : 'linear-gradient(91.58deg, #43BAFF 0.52%, #7044B3 100%)'}"
+                            class="btn rounded-circle text-align-center" (mouseenter)="isHovering[i] = true"
+                            (mouseleave)="isHovering[i] = false">
+                            <i class="m-0 fs-6 fa-solid w-100 text-align-center"
+                                [class]="isHovering[i] ? contact.hoverIcon : contact.icon"></i>
+                        </button>
+                        <div>
+                            <label for="btn" class="text-secondary">
+                                {{contact.label}}
+                                <p>
+                                    <a [ngStyle]="{'color': isDarkMode ? 'white' : 'black'}"
+                                        class="m-0  text-decoration-none fw-semibold contact-value"
+                                        [href]="contact.link" (mouseenter)="isHovering[i] = true"
+                                        (mouseleave)="isHovering[i] = false">{{contact.value}}</a>
 
+                                </p>
+                            </label>
+                        </div>
+                    </div>
+                </ng-container>
+
+                <div class="contanct-info-+content d-flex align-items-center">
+                    <button
+                        [ngStyle]="{background: isDarkMode ? '#343538' : 'linear-gradient(91.58deg, #43BAFF 0.52%, #7044B3 100%)'}"
+                        class="btn rounded-circle text-align-center" (mouseenter)="isHovering[2] = true"
+                        (mouseleave)="isHovering[2] = false">
+                        <i class="m-0 fs-6 fa-solid w-100 text-align-center"
+                            [class]="isHovering[2] ? contacts[2].hoverIcon : contacts[2].icon"></i>
+                    </button>
+                    <div>
+                        <label for="btn" class="text-secondary">
+                            {{contacts[2].label}}
+                            <p>
+                                <a [ngStyle]="{'color': isDarkMode ? 'white' : 'black'}"
+                                    class="m-0  text-decoration-none fw-semibold contact-value"
+                                    (click)="openGoogleMaps(contacts[2].value)" (mouseenter)="isHovering[2] = true"
+                                    (mouseleave)="isHovering[2] = false">{{contacts[2].value}}</a>
+
+                            </p>
+                        </label>
+                    </div>
                 </div>
             </div>
         </div>
@@ -80,7 +130,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="container social-links-container d-flex justify-content-center justify-content-sm-start" >
+                <div class="container social-links-container d-flex justify-content-center justify-content-sm-start">
                     <a href="https://www.linkedin.com/company/quantumit-it-innovation/mycompany/" target="_blank"
                         style="background-color:#0077B5" class="social-icon text-decoration-none  si-one">
                         <div class="follow container align-content-end py-2 w-100 h-100">
