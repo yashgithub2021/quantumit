@@ -13,7 +13,7 @@ export class FooterComponent implements OnInit {
 
   constructor(private api: ApiService, private elementRef: ElementRef) { }
 
-  
+
 
 
   facebook = "www.facebook.com/quantumitinnovationindia"
@@ -26,7 +26,7 @@ export class FooterComponent implements OnInit {
       value: '+ 91 971 799 8517',
       value2: '+1 877 877 3644',
       link: 'tel:91 971 799 8517',
-      link2:'tel:1 877 877 3644'
+      link2: 'tel:1 877 877 3644'
     },
     {
       icon: 'fa-envelope',
@@ -125,6 +125,10 @@ export class FooterComponent implements OnInit {
     this.contacts.forEach(() => {
       this.isHovering.push(false);
     });
+  }
+  openGoogleMaps(address: string): void {
+    const url = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)}`;
+    window.open(url, '_blank');
   }
   toggleReadMore() {
     this.isExpanded = !this.isExpanded;

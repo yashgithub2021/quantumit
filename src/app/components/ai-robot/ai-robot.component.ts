@@ -54,27 +54,27 @@ export class AiRobotComponent implements OnInit {
   ourAIGenerative: any[] = [
     {
       img: '../../../assets/services/AI_service/aigenerator/img1.png',
-      title: 'Generative Ai Development',
+      title: 'Generative AI Development',
       link: '/ai/Generative-Ai-Development'
     }, {
       img: '../../../assets/services/AI_service/aigenerator/img2.png',
-      title: 'Generative Ai integration services',
+      title: 'Generative AI integration services',
       link: '/ai/Generative-Ai-Integration-Services'
     }, {
       img: '../../../assets/services/AI_service/aigenerator/img3.png',
-      title: 'Generative Ai consulting company',
+      title: 'Generative AI consulting company',
       link: '/ai/Generative-Ai-consulting-company'
     }, {
       img: '../../../assets/services/AI_service/aigenerator/img4.png',
-      title: 'hire generative ai engineers',
+      title: 'hire generative AI engineers',
       // link: '/ai/hire-generative-ai-engineers'
     }, {
       img: '../../../assets/services/AI_service/aigenerator/img5.png',
-      title: 'Ai Agent Development',
+      title: 'AI Agent Development',
       // link: '/ai/Ai-Agent-Development'
     }, {
       img: '../../../assets/services/AI_service/aigenerator/img6.png',
-      title: 'Ai Copilot Development',
+      title: 'AI Copilot Development',
       // link: '/ai/Ai-Copilot-Development'
     }, {
       img: '../../../assets/services/AI_service/aigenerator/img7.png',
@@ -82,7 +82,7 @@ export class AiRobotComponent implements OnInit {
       // link: '/ai/Hire-Prompt-Engineers'
     }, {
       img: '../../../assets/services/AI_service/aigenerator/img8.png',
-      title: 'Adaptive Ai Development Co.',
+      title: 'Adaptive AI Development Co.',
       // link: '/ai/Adaptive-Ai-Development-Co.'
     }, {
       img: '../../../assets/services/AI_service/aigenerator/img9.png',
@@ -105,15 +105,15 @@ export class AiRobotComponent implements OnInit {
   ourAIServices: any[] = [
     {
       img: '../../../assets/services/AI_service/aiservice/img1.png',
-      title: 'Ai Development',
+      title: 'AI Development',
       link: 'Ai-Development'
     }, {
       img: '../../../assets/services/AI_service/aiservice/img2.png',
-      title: 'Ai Consulting',
+      title: 'AI Consulting',
       link: 'Ai-Consulting'
     }, {
       img: '../../../assets/services/AI_service/aiservice/img3.png',
-      title: 'Ai As A Service',
+      title: 'AI As A Service',
       link: 'Ai-As-A-Service'
     }, {
       img: '../../../assets/services/AI_service/aiservice/img4.png',
@@ -121,7 +121,7 @@ export class AiRobotComponent implements OnInit {
       link: 'Hire-Action-Transformer-Developer'
     }, {
       img: '../../../assets/services/AI_service/aiservice/img5.png',
-      title: 'Ai Agent Development',
+      title: 'AI Agent Development',
       link: 'Ai-Agent-Development'
     }, {
       img: '../../../assets/services/AI_service/aiservice/img6.png',
@@ -129,11 +129,11 @@ export class AiRobotComponent implements OnInit {
       link: 'MLOps-Consulting-service'
     }, {
       img: '../../../assets/services/AI_service/aiservice/img7.png',
-      title: 'Enterprise Ai Development',
+      title: 'Enterprise AI Development',
       link: 'Enterprise-Ai-Development'
     }, {
       img: '../../../assets/services/AI_service/aiservice/img8.png',
-      title: 'Ai Chatbot Development Co.',
+      title: 'AI Chatbot Development Co.',
       link: 'Ai-Chatbot-Development-Co'
     }
   ]
@@ -204,7 +204,13 @@ export class AiRobotComponent implements OnInit {
   scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
-  scrollToForm() {
+  scrollToService() {
+    const footer = this.elementRef.nativeElement.querySelector('.services');
+    if (footer) {
+      footer.scrollIntoView({ behavior: 'smooth', block: 'end' });
+    }
+  }
+  scrollToForm(){
     const footer = this.elementRef.nativeElement.querySelector('#form');
     if (footer) {
       footer.scrollIntoView({ behavior: 'smooth', block: 'end' });

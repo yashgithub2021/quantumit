@@ -57,7 +57,7 @@
             </div>
             <div class="carousel-item">
                 <div class="container-fluid pt-3 mobile-app w-100 frame-1 d-flex justify-content-center align-items-center"
-                     [ngClass]="isDarkTheme?'mobile-app-dark':'mobile-app-light'">
+                    [ngClass]="isDarkTheme?'mobile-app-dark':'mobile-app-light'">
                     <div class="header h-100 container-fluid p-0 d-flex flex-column flex-lg-row">
                         <div class="headline h-100 w-100">
                             <div class="container h-100 d-flex flex-column justify-content-center align-items-center">
@@ -79,7 +79,7 @@
                 </div>
             </div>
             <div class="carousel-item">
-                <div data-aos="fade-in" 
+                <div data-aos="fade-in"
                     class=" digital-marketing d-flex align-items-center justify-content-center container-fluid p-0 w-100 frame-1">
                     <div class="container w-100 h-100">
                         <div
@@ -101,8 +101,7 @@
                 </div>
             </div>
             <div class="carousel-item">
-                <div 
-                    class="container frame-1 d-flex flex-column justify-content-center align-items-end">
+                <div class="container frame-1 d-flex flex-column justify-content-center align-items-end">
                     <div data-aos="fade-in"
                         class="heading container w-100 h-100 d-flex flex-column align-items-center justify-content-center ">
                         <h1 class="tagline text-center fw-bolder w-lg-50">Supreme
@@ -123,8 +122,7 @@
                 </div>
             </div>
             <div class="carousel-item">
-                <div 
-                    class="container frame-1 d-flex flex-column justify-content-center align-items-end">
+                <div class="container frame-1 d-flex flex-column justify-content-center align-items-end">
                     <div data-aos="fade-in"
                         class="heading container w-100 h-100 d-flex flex-column align-items-center justify-content-center ">
                         <h1 class="tagline text-center fw-bolder w-lg-50">Artificial intelligence <br>
@@ -208,12 +206,12 @@
             <div class="slider" [ngClass]="isDarkTheme?'slider-dark':'slider-light'">
                 <div class="slide-track">
                     <div class="slide" *ngFor="let img of brandLogo">
-                        <img [ngStyle]="{filter:isDarkTheme?'invert(0)':'invert(1)'}" 
-                            [src]="img.img" class="d-block w-auto" alt="...">
+                        <img [ngStyle]="{filter:isDarkTheme?'invert(0)':'invert(1)'}" [src]="img.img"
+                            class="d-block w-auto" alt="...">
                     </div>
                     <div class="slide" *ngFor="let img of brandLogo">
-                        <img [ngStyle]="{filter:isDarkTheme?'invert(0)':'invert(1)'}" 
-                            [src]="img.img" class="d-block w-auto" alt="...">
+                        <img [ngStyle]="{filter:isDarkTheme?'invert(0)':'invert(1)'}" [src]="img.img"
+                            class="d-block w-auto" alt="...">
                     </div>
                 </div>
             </div>
@@ -238,7 +236,7 @@
             <div id="services" class="container services w-100 h-100">
                 <div class="row">
                     <ng-container *ngFor="let service of ourServices">
-                        <div data-aos="slide-up"routerLink="{{service.link}}"
+                        <div data-aos="slide-up" routerLink="{{service.link}}"
                             class="service-card col-lg-4 col-md-6  d-flex flex-column align-items-center justify-content-center px-lg-5 px-2 my-4">
                             <div class="image my-3">
                                 <img [src]="service.img" alt="Mobile">
@@ -276,7 +274,7 @@
             <div class="heading d-flex justify-content-between align-items-center">
                 <div class="text d-flex flex-column ">
                     <div class="button" data-aos="slide-up">
-                        <button class="our-service-btn"routerLink="portfolio">
+                        <button class="our-service-btn" routerLink="portfolio">
                             Latest Projects
                         </button>
                     </div>

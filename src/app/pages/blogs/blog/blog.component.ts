@@ -41,9 +41,12 @@ export class BlogComponent implements OnInit {
       .subscribe((res: any) => {
         this.blogs = res.blogs;
         this.blogs=this.blogs.map((blog:any)=>{
+          let tempElement = document.createElement('div');
+          tempElement.innerHTML=blog.description;
           return {
             ...blog,
-            title1:blog.title.replace(/ /g,'-')
+            title1:blog.title.replace(/ /g,'-'),
+            description:tempElement.textContent || tempElement.innerText || ''
           }
         })
         this.categories=this.blogs.map((blog:any)=>{

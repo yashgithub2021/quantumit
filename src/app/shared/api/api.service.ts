@@ -1,6 +1,8 @@
 import { HttpClient } from '@angular/common/http';
 import { EventEmitter, Injectable } from '@angular/core';
 
+const YOUR_ACCESS_KEY='9yykUwGxYq0OK9WtmLoup4edvRRSSAkA';
+
 @Injectable({
   providedIn: 'root'
 })
@@ -69,5 +71,12 @@ export class ApiService {
 
   saveContactForm(form: any) {
     return this.http.post(`${this.baseUrl}api/contactus/contactus`, form)
+  }
+  getIpAddress() {
+    return this.http.get<{ ip: string }>('https://api.ipify.org?format=json')
+
+  }
+  getLocation(ipData:any){
+    return this.http.get<any>(`https://ipinfo.io/${ipData.ip}/json?token=61247512e441c3`);
   }
 }

@@ -91,11 +91,13 @@
                                 <div class="input d-flex flex-column">
                                     <label for="">Enquiry</label>
 
-                                    <select class="enquiry-about" formControlName="about" id=""[ngClass]="isDarkTheme ? 'bg-dark' : 'bg-light'"
-                                    [ngStyle]="{'color':isDarkTheme?'white':'black'}">
-                                        <option value=""disabled>Your Enquiry About</option>
+                                    <select class="enquiry-about" formControlName="about" id=""
+                                        [ngClass]="isDarkTheme ? 'bg-dark' : 'bg-light'"
+                                        [ngStyle]="{'color':isDarkTheme?'white':'black'}">
+                                        <option value="" disabled>Your Enquiry About</option>
                                         <option value="Mobile App Development">Mobile App Development</option>
-                                        <option value="Website Design & Development">Website Design & Development</option>
+                                        <option value="Website Design & Development">Website Design & Development
+                                        </option>
                                         <option value="Digital Marketing">Digital Marketing</option>
                                         <option value="Artificial Intelligence">Artificial Intelligence</option>
                                         <option value="Robotic Process Automation">Robotic Process Automation</option>
@@ -290,11 +292,13 @@
                             <div class="col-12">
                                 <div class="input d-flex flex-column">
                                     <label for="">Enquiry</label>
-                                    <select class="enquiry-about" formControlName="about" id=""[ngClass]="isDarkTheme ? 'bg-dark' : 'bg-light'"
-                                    [ngStyle]="{'color':isDarkTheme?'white':'black'}">
-                                        <option value=""disabled>Your Enquiry About</option>
+                                    <select class="enquiry-about" formControlName="about" id=""
+                                        [ngClass]="isDarkTheme ? 'bg-dark' : 'bg-light'"
+                                        [ngStyle]="{'color':isDarkTheme?'white':'black'}">
+                                        <option value="" disabled>Your Enquiry About</option>
                                         <option value="Mobile App Development">Mobile App Development</option>
-                                        <option value="Website Design & Development">Website Design & Development</option>
+                                        <option value="Website Design & Development">Website Design & Development
+                                        </option>
                                         <option value="Digital Marketing">Digital Marketing</option>
                                         <option value="Artificial Intelligence">Artificial Intelligence</option>
                                         <option value="Robotic Process Automation">Robotic Process Automation</option>
@@ -321,6 +325,8 @@
                                 </div>
                             </div>
                         </div>
+                        <input type="hidden" formControlName="ip_address">
+                        <input type="hidden" formControlName="location">
                         <div class="row my-5">
                             <div class="col-sm-6 col-12">
                                 <button [disabled]="form.invalid" type="submit" class="w-100 btn btn-primary rounded-3"
