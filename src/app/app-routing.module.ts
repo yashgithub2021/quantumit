@@ -10,7 +10,7 @@ import { DetailsComponent } from './components/details/details.component';
 import { DataService } from './shared/api/data.service';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent, },
+  { path: '',loadComponent:()=> import('./components/home/home.component').then(c=>c.HomeComponent) },
   
   { path: 'artificial-intelligence', component: AiRobotComponent },
   {

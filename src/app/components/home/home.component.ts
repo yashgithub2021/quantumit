@@ -2,6 +2,11 @@ import { AfterViewInit, Component, ElementRef, HostListener, OnDestroy, OnInit, 
 import AOS from 'aos';
 import { ApiService } from 'src/app/shared/api/api.service';
 import { Title, Meta } from '@angular/platform-browser';
+import { CommonModule } from '@angular/common';
+import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
+import { RouterModule } from '@angular/router';
+
+
 
 
 
@@ -9,6 +14,8 @@ import { Title, Meta } from '@angular/platform-browser';
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],
+  standalone: true,
+  imports: [CommonModule,NgbCarouselModule,RouterModule]
 })
 export class HomeComponent implements OnInit {
   isDarkTheme: boolean;
