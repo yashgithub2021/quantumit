@@ -224,9 +224,12 @@
             </div> -->
             <div class="d-flex justify-content-center apps-container">
                 <div class="w-100 d-flex justify-content-evenly gap-3 gap-lg-0 flex-sm-row flex-column">
-                    <div class="app1-cont d-flex flex-column gap-3">
-                        <ng-container *ngFor="let filteredProject of filteredProjects;let  i=index;">
-                            <div *ngIf="i%2==0" class="app p-3 rounded-3"
+                    <div class="app1-cont d-flex flex-row flex-wrap justify-content-center gap-3">
+                        <ng-container *ngFor="let filteredProject of filteredProjects | paginate: { id: 'foo',
+                        itemsPerPage: pageSize,
+                        currentPage: currentPage,
+                        totalItems: totalItem };let  i=index;">
+                            <div  class="app p-3 rounded-3"
                                 [ngStyle]="{'background-color':isDarkTheme?'#111111':'#ECF0FF'}">
                                 <img (click)="scrollToTop()"
                                     [routerLink]="(filteredProject.category[0] === 'Web Development' || filteredProject.category[0] === 'Web App'|| filteredProject.category[0] === 'Website') ? '/web-development/details/' + filteredProject._id : filteredProject.category[0]==='Digital Marketing'? '/digital-marketing/details/'+ filteredProject._id : '/app-development/app-details/' + filteredProject._id"
@@ -246,8 +249,15 @@
                                 </div>
                             </div>
                         </ng-container>
+                        <div class="d-flex justify-content-end">
+                            <pagination-controls id="foo" (pageChange)="pageChanged($event)" [maxSize]="9"
+                                [directionLinks]="true" [autoHide]="true" [responsive]="true" previousLabel="Previous"
+                                nextLabel="Next" screenReaderPaginationLabel="Pagination" screenReaderPageLabel="page"
+                                screenReaderCurrentLabel="You're on page">
+                            </pagination-controls>
+                        </div>
                     </div>
-                    <div class="app2-cont gap-3 justify-content-center d-flex flex-column">
+                    <!-- <div class="app2-cont gap-3 justify-content-center d-flex flex-column">
                         <ng-container *ngFor="let filteredProject of filteredProjects;let  i=index;">
                             <div *ngIf="i%2==1" class="app p-3 rounded-3" [ngStyle]="{'background':isDarkTheme?'#111111':'#ECF0FF'}">
                                 <div class="app-img">
@@ -269,7 +279,7 @@
                             </div>
                         </ng-container>
 
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>

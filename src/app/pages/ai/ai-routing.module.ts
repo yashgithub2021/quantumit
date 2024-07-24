@@ -9,9 +9,9 @@ const routes: Routes = [
   {
     path: 'casestudy', component: CasestudyComponent
   },
-  // {
-  //   path: 'ai-casestudy', component: AiCasestudyComponent
-  // },
+  {
+    path: 'ai-casestudy', component: AiCasestudyComponent
+  },
   {
     path: ':id', component: ServiceComponent, resolve: {
       services: DataService // Provide the DataService resolver for the 'services' data

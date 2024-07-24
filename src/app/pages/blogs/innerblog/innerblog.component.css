@@ -78,7 +78,7 @@
     font-weight: 700;
 }
 .quote h4{
-    font-size: 16px;
+    font-size: 20px;
 }
 @media (max-width: 575.98px) {
     .numbers-section {
@@ -86,7 +86,7 @@
         background: linear-gradient(90deg, #43BAFF 0%, #7141B1 100%);
     }
     .numbers-section h4{
-        font-size: 12px;
+        font-size: 14px;
         line-height: 20px;
     }
     .numbers-section img{

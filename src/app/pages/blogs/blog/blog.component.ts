@@ -19,7 +19,7 @@ export class BlogComponent implements OnInit {
   loadingStatus: boolean = true;
 
   categories: any[] = [
-    
+
   ]
 
   constructor(private api: ApiService, private titlecase: TitleCasePipe) { }
@@ -41,21 +41,27 @@ export class BlogComponent implements OnInit {
     this.api.getBlogs()
       .subscribe((res: any) => {
         this.blogs = res.blogs;
-        this.blogs=this.blogs.map((blog:any)=>{
+        this.blogs = this.blogs.map((blog: any) => {
           let tempElement = document.createElement('div');
-          tempElement.innerHTML=blog.description;
+          tempElement.innerHTML = blog.description;
           return {
             ...blog,
-            title1:blog.title.replace(/ /g,'-'),
-            description:tempElement.textContent || tempElement.innerText || ''
+            title1: blog.title.replace(/ /g, '-'),
+            description: tempElement.textContent || tempElement.innerText || ''
           }
         })
-        this.categories=this.blogs.map((blog:any)=>{
-          return {
-            link:blog.title1,
-            name:blog.category
+        const uniqueCategories = new Set();
+
+        this.categories = this.blogs.map((blog: any) => {
+          if (!uniqueCategories.has(blog.category)) {
+            uniqueCategories.add(blog.category);
+            return {
+              link: blog.title1,
+              name: blog.category
+            }
           }
-        });
+          return null;
+        }).filter((category:any)=>category!=null);
 
         this.totalItem = this.blogs.length;
         this.loadingStatus = false;
