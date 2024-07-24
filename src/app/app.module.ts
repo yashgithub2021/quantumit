@@ -21,7 +21,6 @@ import { DetailsComponent } from './components/details/details.component';
   declarations: [
     AppComponent,
     NavbarComponent,
-    HomeComponent,
     FooterComponent,
     WebdevComponent,
     AiRobotComponent,

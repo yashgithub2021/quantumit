@@ -106,6 +106,19 @@
     min-height: 400px;
 }
 
+.categories-scroll{
+    height: 500px;
+    overflow-y: scroll;
+}
+
+.popular {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.popular::after{
+    bottom: 50px;
+}
+
 @media(max-width:1366px) and (min-height:1024px) {
     .frame-1-container>.frame-3 {
         min-height: 50vh !important;
@@ -180,6 +193,19 @@
 
 @media (max-width: 575.98px) {
 
+    .categories-scroll{
+        height: 300px;
+        overflow-y: scroll;
+    }
+
+    .popular {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .popular::after{
+        bottom: 30px;
+    }
+
     .cards,
     .contributors-section {
         align-items: center;
@@ -203,17 +229,20 @@
         font-size: 12px;
         line-height: 15px;
     }
-    .miletone-container{
+
+    .miletone-container {
         display: flex;
         align-items: center;
         flex-direction: column;
         justify-content: center;
     }
+
     .single-blog>div {
         width: 100%;
         /* max-height: 330px; */
         min-height: 330px;
     }
+
     .numbers-section {
         padding: 50px 5px;
     }
@@ -221,27 +250,34 @@
     .contributors {
         width: 100% !important;
     }
+
     .text h4 {
         font-size: 12px;
     }
+
     .card-title1 {
         font-size: 16px;
         line-height: 25px;
     }
-    .card-title{
+
+    .card-title {
         font-size: 16px;
     }
-    .card .text h5{
+
+    .card .text h5 {
         font-size: 16px;
 
     }
-    .card .text p{
+
+    .card .text p {
         font-size: 12px;
     }
-    .name p{
+
+    .name p {
         font-size: 12px;
     }
-    .card >img{
-        width:100%!important;
+
+    .card>img {
+        width: 100% !important;
     }
 }
