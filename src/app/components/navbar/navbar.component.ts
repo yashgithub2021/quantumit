@@ -41,8 +41,11 @@ export class NavbarComponent {
   }
   toggleDropdown(isOpen: boolean) {
     this.isDropdownOpenService = isOpen;    
+    console.log('hi1');
+
   }
   toggleDropdownCaseStudy(isOpen:boolean){
     this.isDropdownOpenCaseStudy=isOpen;
+    console.log('hi');
   }
 }

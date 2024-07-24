@@ -125,8 +125,11 @@ textarea::placeholder {
     .input label{
         font-size: 14px;
     }
-    .input input::placeholder{
+    .input input::placeholder,.enquiry-about,textarea,input{
         font-size: 12px;
+    }
+    .enquiry-about{
+        padding: 15px;
     }
 
     .blue-opt {

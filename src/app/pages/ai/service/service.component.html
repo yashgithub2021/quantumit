@@ -4,7 +4,7 @@
             <div class="text frame-2-head w-100 d-flex align-items-center align-items-lg-start flex-column ">
                 <div class="button">
                     <button class="our-process-btn">
-                        Home > <span style="color: white;" class="">Services Details</span>
+                        <span routerLink="/">Home</span> > <span style="color: white;" class="">Services Details</span>
                     </button>
                 </div>
                 <!-- <div class="txt w-100 mt-3">
@@ -25,11 +25,19 @@
                         <div class="brief ">
                             <div class="txt w-100 mt-3">
                                 <h1 class="text-align-center fw-bolder text-lg-start text-capitalize">
-                                    <span class="linear-text text-decoration-underline ">{{androidService.title1}} </span>
+                                    <span class="linear-text text-decoration-underline ">{{androidService.title1}}
+                                    </span>
                                     {{androidService.title2}}
                                 </h1>
                             </div>
-                            <p *ngFor="let description of androidService.descriptionTwo"[ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">
+                            <ng-container *ngFor="let description of androidService.descriptionOne">
+                                <p [innerHTML]="description"
+                                [ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">
+                                <!-- {{description}} -->
+                            </p>
+                            </ng-container>
+                            <p *ngFor="let description of androidService.descriptionTwo"
+                                [ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">
                                 {{description}}
                             </p>
                         </div>
@@ -95,7 +103,7 @@
                         Services
                     </button>
                 </div>
-                <div class="txt w-100">
+                <div class="txt w-75">
                     <h1 class="text-capitalize text-align-center">{{androidService.serviceTitle}}</h1>
                 </div>
             </div>
@@ -219,11 +227,11 @@
                 <div class="button my-2 d-flex justify-content-start" data-aos="slide-up">
                     <button class="our-process-btn">Our Process</button>
                 </div>
-    
+
                 <div class="our-process my-2 w-100" data-aos="slide-up">
-                    <h1 class=" text-start w-100">{{androidService.our_steps_title}}</h1>
+                    <h1 class=" text-start w-100 letter-spacing-normal">{{androidService.our_steps_title}}</h1>
                 </div>
-    
+
                 <div class="desc w-100 my-2" data-aos="slide-up">
                     <p class="text-left sub-heading" [ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">
                         {{androidService.our_steps_description}}
@@ -231,8 +239,9 @@
                 </div>
             </div>
             <div class="steps mt-lg-4">
-                <div class="row"*ngIf="androidService.our_steps">
-                    <div class="col-12 col-lg-4 hover-card" data-aos="fade-in" *ngFor="let steps of androidService.our_steps">
+                <div class="row" *ngIf="androidService.our_steps">
+                    <div class="col-12 col-lg-4 hover-card" data-aos="fade-in"
+                        *ngFor="let steps of androidService.our_steps">
                         <div class="container">
                             <div class="step-num ">
                                 {{steps.stepNo}}
@@ -248,8 +257,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="row"*ngIf="androidService.our_steps2">
-                    <div class="col-lg-6 col-12 hover-card" data-aos="fade-in" *ngFor="let steps of androidService.our_steps2">
+                <div class="row" *ngIf="androidService.our_steps2">
+                    <div class="col-lg-6 col-12 hover-card" data-aos="fade-in"
+                        *ngFor="let steps of androidService.our_steps2">
                         <div class="container">
                             <div class="step-num ">
                                 {{steps.stepNo}}
@@ -288,7 +298,8 @@
             </div>
             <div class="container w-100 d-flex">
                 <div class="processes w-100  row justify-content-space-evenly">
-                    <div class="process d-flex hover-card col-md-6"*ngFor="let ingegration of androidService.integrations">
+                    <div class="process d-flex hover-card col-md-6"
+                        *ngFor="let ingegration of androidService.integrations">
                         <div class="logo mx-3">
                             <div class="process-square">
                                 <img src="../../../../assets/dm/services/obj.svg" alt="">

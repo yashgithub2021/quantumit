@@ -1744,11 +1744,13 @@ export const GenerativeAiConsultingCompany = {
     img1: "../../../../assets/services/AI_service/aigenerator/img3_3.jpg",
     // img2: "../../../../assets/services/ios_android/img1.jpg",
     descriptionOne: [
-        "Make Quantum IT your reliable partner in using the transformative ability of generative AI to improve business operations and product offerings. Our inclusive generative AI consulting services consist of profound expertise in advanced AI technologies and adherence to ethical principles. This means that our AI solutions are not only state-of-the-art but also have the right attitude towards their use."
+        "At Quantum IT Innovation, we lead the forefront of <b>generative AI consulting</b>, offering cutting-edge solutions to transform your business. As one of the leading <b>genai companies</b>, we specialize in <b>artificial intelligence integration</b> to optimize processes, enhance decision-making, and drive innovation. Our seasoned <b>artificial intelligence consultants</b> collaborate closely with you to understand your unique needs and deliver bespoke AI strategies that align with your objectives.Whether you're looking to implement advanced AI algorithms, automate workflows, or leverage AI for data-driven insights, our expertise ensures seamless integration and maximum impact. Trust Quantum IT Innovation to be your partner in navigating the complexities of AI and unlocking its full potential for your organization."
     ],
     descriptionTwo: [
-        "Make Quantum IT your reliable partner in using the transformative ability of generative AI to improve business operations and product offerings. Our inclusive generative AI consulting services consist of profound expertise in advanced AI technologies and adherence to ethical principles. This means that our AI solutions are not only state-of-the-art but also have the right attitude towards their use."
+        // "Make Quantum IT your reliable partner in using the transformative ability of generative AI to improve business operations and product offerings. Our inclusive generative AI consulting services consist of profound expertise in advanced AI technologies and adherence to ethical principles. This means that our AI solutions are not only state-of-the-art but also have the right attitude towards their use."
     ],
+    metaTitle:'genai Companies | Generative ai Consulting | Artificial Intelligence Consultant',
+    metaDescription:'Leading genai company offering generative AI consulting and artificial intelligence integration. Expert artificial intelligence consultants for innovative AI solutions.',
     serviceTitle: "Quantum IT’s Generative Artificial Intelligence Consulting Services",
     services: [
         {

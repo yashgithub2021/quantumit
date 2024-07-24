@@ -90,7 +90,10 @@ export class InnerblogComponent implements OnInit {
 
     this.api.getBlogDetails(this.blogId).subscribe((res: any) => {
       this.blogDetail = res.blogs
-      console.log(this.blogDetail)
+      // console.log(this.blogDetail);
+
+      this.blogDetail.description=this.blogDetail.description.replace(/[\\n\\r\\t]/g,'');
+      // console.log(this.blogDetail.description);
       this.modifyQuote();
       this.loadingStatus = false;
     }, err => {

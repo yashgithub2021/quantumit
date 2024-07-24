@@ -3,6 +3,8 @@ import { ActivatedRoute } from '@angular/router';
 import { ApiService } from 'src/app/shared/api/api.service';
 import { DataService } from 'src/app/shared/api/data.service';
 import AOS from 'aos';
+import { Title, Meta } from '@angular/platform-browser';
+
 
 
 @Component({
@@ -62,10 +64,11 @@ export class ServiceComponent implements OnInit {
     },
   ]
 
-  
 
 
-  constructor(private api: ApiService, private dataService: DataService, private route: ActivatedRoute) { }
+
+  constructor(private titleService: Title,
+    private metaService: Meta, private api: ApiService, private dataService: DataService, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
     AOS.init({
@@ -81,6 +84,10 @@ export class ServiceComponent implements OnInit {
       this.incrementNumber(item);
     });
     this.scrollToTop();
+
+    this.titleService.setTitle(this.androidService.metaTitle || 'genai Companies | Generative ai Consulting | Artificial Intelligence Consultant');
+    this.metaService.updateTag({ name: 'description', content: this.androidService.metaDescription || "Leading genai company offering generative AI consulting and artificial intelligence integration. Expert artificial intelligence consultants for innovative AI solutions." });
+
   }
 
   themechange() {

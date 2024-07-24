@@ -13,6 +13,11 @@ export class PortfoliohomeComponent implements OnInit {
   projects: any[] = [];
   filteredProjects: any[] = [];
   loadingStatus: boolean = true;
+
+  pageSize: number = 4;
+  currentPage: number = 1;
+  totalItem!: number;
+
   constructor(private api: ApiService, private elementRef: ElementRef) { }
 
   ngOnInit(): void {
@@ -34,6 +39,7 @@ export class PortfoliohomeComponent implements OnInit {
     this.api.getProjects().subscribe(
       (res: any) => {
         this.projects = res.project;
+        this.totalItem=this.projects.length;
         this.filteredProjects = [...this.projects];
         this.filterProjects('all');
         this.loadingStatus = false;
@@ -91,6 +97,18 @@ export class PortfoliohomeComponent implements OnInit {
     const contentMiddle = this.elementRef.nativeElement.querySelector('.app-detail');
     if (contentMiddle) {
       contentMiddle.scrollIntoView({ behavior: 'smooth', block: 'end' });
+    }
+  }
+
+  pageChanged(currentPage: any) {
+    // console.log(currentPage);
+    this.currentPage = currentPage;
+    this.scrollToContent();
+  }
+  scrollToContent(): void {
+    const element = document.querySelector('.single-blog');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
   }
 }

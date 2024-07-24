@@ -26,7 +26,7 @@
         </div>
         <div class="frame-2 w-100 h-100" *ngIf="!loadingStatus">
             <div class="container d-flex">
-                <div class="cards row ">
+                <div class="cards row w-100 ">
                     <div class="categories col-lg-4 col-12">
                         <div class="card py-4 my-3 m-lg-3 w-100"
                             [ngStyle]="{'color':isDarkTheme?'white':'black','background':isDarkTheme?'#111111':'#ECF0FF'}">
@@ -64,7 +64,7 @@
                         </div>
                     </div>
                     <div class="blogs blogs-pagination-container col-lg-8 col-12">
-                        <div class="single-blog row mb-4 ms-md-4" style="gap:10px;">
+                        <div class="single-blog row mb-4 ms-md-4" style="gap:30px;">
                             <div *ngFor="let blog of blogs | paginate: { id: 'foo',
                                 itemsPerPage: pageSize,
                                 currentPage: currentPage,
@@ -90,8 +90,8 @@
                                 <div class=" px-3"style="height:auto">
                                     <div class="container d-flex">
                                         <div class="text">
-                                            <p class="opacity-50"[innerHTML]="(blog?.description.length>130)?(blog?.description |
-                                                slice:0:130)+'...':(blog?.description)">
+                                            <p class="opacity-50"[innerHTML]="(blog?.description.length>110)?(blog?.description |
+                                                slice:0:110)+'...':(blog?.description)">
                                                 
                                             </p>
                                         </div>

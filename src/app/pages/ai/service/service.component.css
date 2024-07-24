@@ -801,7 +801,9 @@
         font-size: 12px;
         line-height: 18px;
     }
-
+    .f3-container{
+        width:100%!important;
+    }
 
 }
 

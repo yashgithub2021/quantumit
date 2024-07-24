@@ -330,7 +330,7 @@
     }
 
     .tech-stack>div>.stack {
-        min-width: 240px;
+        min-width: 230px;
         justify-content: center !important;
     }
 
@@ -537,6 +537,9 @@
             min-width: 275px;
             justify-content: center !important;
         }
+        .stack {
+            padding: 20px 40px;
+        }
 
         .step-title p:last-child {
             padding-left: 0px;
@@ -672,8 +675,11 @@
         }
 
         .tech-stack>div>.stack {
-            min-width: 263px;
+            min-width: 230px;
             justify-content: center !important;
+        }
+        .stack {
+            padding: 20px 40px;
         }
 
         .brief p {
@@ -1305,7 +1311,7 @@
 
         .frame-5 .stack {
             max-width: 300px;
-            width: 300px;
+            width: 230px;
             justify-content: center !important;
         }
 
