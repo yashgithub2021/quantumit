@@ -149,8 +149,9 @@
 }
 
 .frame-5 .progress-data-container .progress-1 {
-    width: 200px;
-    height: 200px;
+    
+    width: 230px;
+    height: 230px;
     position: absolute;
     left: 5%;
     top: 50%;
@@ -158,8 +159,8 @@
 }
 
 .frame-5 .progress-data-container .progress-2 {
-    width: 230px;
-    height: 230px;
+    width: 200px;
+    height: 200px;
     position: absolute;
     top: 30%;
     left: 55%;
