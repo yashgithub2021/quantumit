@@ -55,7 +55,7 @@ export class DigitalMarketingComponent implements OnInit {
       name: "Diva Beauty Of Organic Traffic",
       num: "+991k",
       types: ['Keyword Ranking', 'SEO', 'Marketing'],
-      link:'/digital-marketing/casestudy'
+      href:'https://flagbanner.com.au/'
     },
   ]
 
