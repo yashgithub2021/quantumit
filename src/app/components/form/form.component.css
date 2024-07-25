@@ -164,5 +164,9 @@ textarea::placeholder {
         line-height: 20px;
         font-weight: 400 !important;
     }
+    .text-danger{
+        font-size: 12px;
+        margin-top: 5px;
+    }
 
 }

@@ -79,4 +79,7 @@ export class ApiService {
   getLocation(ipData:any){
     return this.http.get<any>(`https://ipinfo.io/${ipData.ip}/json?token=61247512e441c3`);
   }
+  // getCategoryOfBlogs(){
+  //   return this.http.get<any>(`${this.baseUrl}api/blogs/blogsByCategory`);
+  // }
 }

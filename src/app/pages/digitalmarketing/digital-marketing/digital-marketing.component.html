@@ -556,7 +556,7 @@
                 class="container w-100 h-100 mt-sm-5 mt-0 d-flex flex-column justify-content-center align-items-center">
                 <div class="container flex-column flex-lg-row align-items-center d-flex g-3 h-100 w-100">
                     <div class="mx-2 my-sm-4 my-2 my-lg-0 w-100 h-100 our-stories-col hover-card"
-                        [ngStyle]="{border:isDarkTheme?'1.5px solid #FFFFFF40':'1.5px solid black'}"
+                        [ngStyle]="{border:isDarkTheme?'1.5px solid #FFFFFF40':'1.5px solid gray'}"
                         *ngFor="let story of our_stories">
                         <div class="container d-flex h-100 flex-column p-3">
                             <div class="blank w-100 h-100">
@@ -606,7 +606,7 @@
                                         </div>
                                         <div data-aos="fade-up" class="buttons d-flex justify-content-lg-between my-2"
                                             style="gap:10px;">
-                                            <button style="white-space:nowrap;"
+                                            <button style="white-space:nowrap;"routerLink="/casestudy"
                                                 [ngClass]="isDarkTheme?'our-gm-btn':'our-gm-btn-light'"
                                                 *ngFor="let type of story.types">
                                                 {{type}}

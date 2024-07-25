@@ -27,6 +27,7 @@ export class BlogComponent implements OnInit {
   ngOnInit(): void {
     this.isDarkTheme = this.api.isDarkTheme();
     this.fetchBlogs();
+    // this.getCategories();
     this.themechange();
     this.scrollToTop();
   }
@@ -36,6 +37,12 @@ export class BlogComponent implements OnInit {
       this.isDarkTheme = isDarkTheme;
     });
   }
+
+  // getCategories(){
+  //   this.api.getCategoryOfBlogs().subscribe((data:any)=>{
+  //     console.log(data);
+  //   })
+  // }
 
   fetchBlogs() {
     this.api.getBlogs()

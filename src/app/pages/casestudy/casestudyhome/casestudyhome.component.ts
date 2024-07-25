@@ -45,10 +45,10 @@ export class CasestudyhomeComponent implements OnInit {
       projectName:'Capsule Endoscopy'
     },
     {
-      name: "HR Employee On Boarding",
+      name: "Artificial Intelligence",
       portfolioImage: '../../../../assets/casestudybanner/ai/UR DRIVER3.png',
       link: '/ai/ai-casestudy/HR-Employee-On-Boarding',
-      projectName:''
+      projectName:'HR Employee On Boarding'
     },
     {
       name: "HR Recruitment",

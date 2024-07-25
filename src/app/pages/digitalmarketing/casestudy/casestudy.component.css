@@ -93,7 +93,7 @@
 .numbers-section {
     border-radius: 10px;
     padding: 40px 40px;
-    background: linear-gradient(90deg, #43BAFF 0%, #7141B1 100%);
+    /* background: linear-gradient(90deg, #43BAFF 0%, #7141B1 100%); */
 }
 
 .miletone-number {
@@ -219,12 +219,12 @@
     }
 
     .title h3 {
-        font-size: 14px;
-        line-height: 25px;
+        font-size: 12px;
+        line-height: 20px;
     }
 
     .numbers-section {
-        padding: 10px
+        /* padding: 10px */
     }
 
     .miletone-number {
@@ -269,12 +269,12 @@
         text-align: center;
     }
     .detail .desc p{
-        font-size: 14px;
-        line-height: 20px;
+        font-size: 12px;
+        line-height: 18px;
     }
     .title h5{
-        font-size: 16px;
-        line-height: 23px;
+        font-size: 14px;
+        line-height: 20px;
     }
     .card-body .desc p{
         font-size: 12px;
