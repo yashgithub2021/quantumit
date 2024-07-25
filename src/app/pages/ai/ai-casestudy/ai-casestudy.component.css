@@ -147,6 +147,18 @@
     background: linear-gradient(0deg, #20192C, #20192C),
         linear-gradient(0deg, #20192C, #20192C);
 }
+.progress-1 .data h1,
+.progress-2 .data h1,
+.progress-3 .data h1,
+.progress-4 .data h1{
+    text-align: center;
+}
+.progress-1 .data p,
+.progress-2 .data p,
+.progress-3 .data p,
+.progress-4 .data p{
+    text-align: center;
+}
 
 .frame-5 .progress-data-container .progress-1 {
     
