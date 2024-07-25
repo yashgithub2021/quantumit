@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { ApiService } from 'src/app/shared/api/api.service';
 import { DataService } from 'src/app/shared/api/data.service';
 import AOS from 'aos';
@@ -64,11 +64,26 @@ export class ServiceComponent implements OnInit {
     },
   ]
 
-
+  nextServiceCount:number=0;
+  ourAIGenerative: any[] = [
+    {
+      img: '../../../assets/services/AI_service/aigenerator/img1.png',
+      title: 'Generative AI Development',
+      link: '/ai/Generative-Ai-Development'
+    }, {
+      img: '../../../assets/services/AI_service/aigenerator/img2.png',
+      title: 'Generative AI integration services',
+      link: '/ai/Generative-Ai-Integration-Services'
+    }, {
+      img: '../../../assets/services/AI_service/aigenerator/img3.png',
+      title: 'Generative AI consulting company',
+      link: '/ai/Generative-Ai-consulting-company'
+    }
+  ]
 
 
   constructor(private titleService: Title,
-    private metaService: Meta, private api: ApiService, private dataService: DataService, private route: ActivatedRoute) { }
+    private metaService: Meta, private api: ApiService,private router:Router, private dataService: DataService, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
     AOS.init({
@@ -76,9 +91,18 @@ export class ServiceComponent implements OnInit {
     })
     this.isDarkTheme = this.api.isDarkTheme();
     this.themechange()
+    this.getServiceDetails();
+  }
+
+  themechange() {
+    this.api.themeChanged.subscribe((isDarkTheme: boolean) => {
+      this.isDarkTheme = isDarkTheme;
+    });
+  }
+  getServiceDetails(){
     this.route.data.subscribe((data: any) => {
       console.log(data.services.services)
-      this.androidService = data.services.services
+      this.androidService = data.services.services;
     });
     this.sectionFourNums.forEach(item => {
       this.incrementNumber(item);
@@ -87,13 +111,6 @@ export class ServiceComponent implements OnInit {
 
     this.titleService.setTitle(this.androidService.metaTitle || 'genai Companies | Generative ai Consulting | Artificial Intelligence Consultant');
     this.metaService.updateTag({ name: 'description', content: this.androidService.metaDescription || "Leading genai company offering generative AI consulting and artificial intelligence integration. Expert artificial intelligence consultants for innovative AI solutions." });
-
-  }
-
-  themechange() {
-    this.api.themeChanged.subscribe((isDarkTheme: boolean) => {
-      this.isDarkTheme = isDarkTheme;
-    });
   }
   incrementNumber(item: any) {
     const targetNum = parseInt(item.num.replace('+', ''), 10);
@@ -108,6 +125,30 @@ export class ServiceComponent implements OnInit {
       }
     }, stepTime);
   }
+
+  prev(){
+    if(this.nextServiceCount==0){
+      this.nextServiceCount=0;
+    }
+    else if(this.nextServiceCount>0 && this.nextServiceCount<=this.ourAIGenerative.length-1){
+      this.nextServiceCount--;
+      this.router.navigate([`${this.ourAIGenerative[this.nextServiceCount].link}`]);
+      this.getServiceDetails();
+      this.scrollToTop();
+    }
+  }
+  next(){
+    if(this.nextServiceCount==this.ourAIGenerative.length-1){
+      this.nextServiceCount=this.nextServiceCount;
+    }
+    else if(this.nextServiceCount<=this.ourAIGenerative.length-1){
+      this.nextServiceCount++;
+      this.router.navigate([`${this.ourAIGenerative[this.nextServiceCount].link}`]);
+      this.getServiceDetails();
+      this.scrollToTop();
+    }
+  }
+
   scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }

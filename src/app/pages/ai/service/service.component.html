@@ -299,16 +299,16 @@
             <div class="container w-100 d-flex">
                 <div class="processes w-100  row justify-content-space-evenly">
                     <div class="process d-flex hover-card col-md-6"
-                        *ngFor="let ingegration of androidService.integrations">
+                        *ngFor="let integration of androidService.integrations">
                         <div class="logo mx-3">
                             <div class="process-square">
-                                <img src="../../../../assets/dm/services/obj.svg" alt="">
+                                <img src="{{integration.img}}"style="width:30px;" alt="">
                             </div>
                         </div>
                         <div class="text mx-3 ">
                             <div class="title">
                                 <h4>
-                                    {{ingegration.name}}
+                                    {{integration.name}}
                                 </h4>
                             </div>
 
@@ -479,6 +479,12 @@
                 </div>
             </div>
         </div>
+    </div>
+</div>
+<div class="container-fluid d-flex justify-content-sm-end justify-content-center my-3 my-sm-5 me-sm-5">
+    <div class="buttons d-flex flex-row align-items-end  pe-sm-5 gap-3">
+        <button class="prev our-process-btn cursor-pointer"(click)="prev()"*ngIf="nextServiceCount!=0">Prev</button>
+        <button class="next our-process-btn cursor-pointer"(click)="next()"*ngIf="nextServiceCount!=ourAIGenerative.length-1">Next</button>
     </div>
 </div>
 <app-form></app-form>

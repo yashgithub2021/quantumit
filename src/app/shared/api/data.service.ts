@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { ActivatedRouteSnapshot, Resolve, RouterStateSnapshot } from '@angular/router';
 import { Observable, of } from 'rxjs';
-import { GenerativeAiConsultingCompany, GenerativeAiDevelopment, GenerativeAiIntegrationServices, HireGenerativeAiEngineers, androidService, contentMarketingServices, conversionRateOptimizationServices, crossPlatformAppDevelopment, dotNetDevelopmentServices, emailMarketingServices, iOsService, iPadAppDevelopment, internetOfThings, joomlaDevelopmentServices, mobileDevServices, mobileGameDevelopment, nodejsDevelopmentServices, paidSearchAdvertisingServices, payPerClickServices, phpDevelopmentServices, roboticProcessAutomation, rubyOnRailsDevelopmentServices, seoServices, socialMediaServices, swiftAppDevelopment, websiteDevServices } from '../shared/service-data';
+import { GenerativeAiConsultingCompany, GenerativeAiDevelopment, GenerativeAiIntegrationServices, HREmployeeOnBoarding, HireGenerativeAiEngineers, androidService, contentMarketingServices, conversionRateOptimizationServices, crossPlatformAppDevelopment, dotNetDevelopmentServices, emailMarketingServices, iOsService, iPadAppDevelopment, internetOfThings, joomlaDevelopmentServices, mobileDevServices, mobileGameDevelopment, nodejsDevelopmentServices, paidSearchAdvertisingServices, payPerClickServices, phpDevelopmentServices, roboticProcessAutomation, rubyOnRailsDevelopmentServices, seoServices, serviceAiDevelopment, socialMediaServices, swiftAppDevelopment, websiteDevServices } from '../shared/service-data';
 
 @Injectable({
   providedIn: 'root'
@@ -85,7 +85,7 @@ export class DataService implements Resolve<any> {
     }
     //for ai service
     else if (id === 'Ai-Development') {
-      return of({ title: 'Ai Development', services: joomlaDevelopmentServices });
+      return of({ title: 'Ai Development', services: serviceAiDevelopment });
     }else if (id === 'Ai-Consulting') {
       return of({ title: 'Ai Consulting', services: joomlaDevelopmentServices });
     }else if (id === 'Ai-As-A-Service') {
@@ -100,7 +100,35 @@ export class DataService implements Resolve<any> {
       return of({ title: 'Enterprise Ai Development', services: joomlaDevelopmentServices });
     }else if (id === 'Ai-Chatbot-Development-Co') {
       return of({ title: 'Ai Chatbot Development Co', services: joomlaDevelopmentServices });
-    } else {
+    } 
+    // ai case study page
+    else if(id === 'HR-Employee-On-Boarding'){
+      return of({ title: 'HR Employee On Boarding', services: HREmployeeOnBoarding });
+
+    }else if(id === 'HR-Employee-On-Boarding'){
+      return of({ title: 'HR Employee On Boarding', services: joomlaDevelopmentServices });
+
+    }else if(id === 'HR-Employee-On-Boarding'){
+      return of({ title: 'HR Employee On Boarding', services: joomlaDevelopmentServices });
+
+    }else if(id === 'HR-Employee-On-Boarding'){
+      return of({ title: 'HR Employee On Boarding', services: joomlaDevelopmentServices });
+
+    }else if(id === 'HR-Employee-On-Boarding'){
+      return of({ title: 'HR Employee On Boarding', services: joomlaDevelopmentServices });
+
+    }else if(id === 'HR-Employee-On-Boarding'){
+      return of({ title: 'HR Employee On Boarding', services: joomlaDevelopmentServices });
+
+    }else if(id === 'HR-Employee-On-Boarding'){
+      return of({ title: 'HR Employee On Boarding', services: joomlaDevelopmentServices });
+
+    }else if(id === 'HR-Employee-On-Boarding'){
+      return of({ title: 'HR Employee On Boarding', services: joomlaDevelopmentServices });
+
+    }
+    
+    else {
       return of(null); // Return null for unknown IDs
     }
   }

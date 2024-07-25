@@ -1,5 +1,6 @@
 * {
     font-family: 'Helvetica Neue';
+    color: white;
 }
 
 .frame-1 {
@@ -56,6 +57,9 @@
     font-weight: 400 !important;
 }
 
+.frame-1 .head .success-desc {
+    width: 70%;
+}
 .head .success-desc {
     width: 50%;
 }
@@ -80,6 +84,7 @@
 .banner-img-container .view-more {
     right: 0px;
     border-radius: 100%;
+    width: 130px;
 }
 
 .frame-2 {
@@ -107,7 +112,7 @@
 }
 
 .frame-4 .img-container {
-    width: 40%;
+    width: 25%;
     margin-right: 30px;
 }
 
@@ -131,48 +136,55 @@
     position: relative;
 
 }
-.progress-container{
-}
-.progress-1,.progress-2,.progress-3{
+
+.progress-container {}
+
+.progress-1,
+.progress-2,
+.progress-3 {
 
     border-radius: 100%;
     background: linear-gradient(0deg, #20192C, #20192C),
-    linear-gradient(0deg, #20192C, #20192C);
+        linear-gradient(0deg, #20192C, #20192C);
 }
 
 .frame-5 .progress-data-container .progress-1 {
-    width: 240px;
-    height: 240px;
+    width: 200px;
+    height: 200px;
     position: absolute;
-    left: 50%;
-    top: 25%;
+    left: 5%;
+    top: 50%;
 
 }
+
 .frame-5 .progress-data-container .progress-2 {
-    width: 270px;
-    height: 270px;
+    width: 230px;
+    height: 230px;
     position: absolute;
     top: 30%;
-    left:20%;
+    left: 55%;
 }
+
 .frame-5 .progress-data-container .progress-3 {
-    width: 350px;
-    height: 350px;
+    width: 330px;
+    height: 330px;
     position: absolute;
-    bottom: 5%;
+    bottom: 1%;
     left: 30%;
 
 }
+
 .frame-5 .progress-data-container .progress-4 {
-    width: 200px;
-    height: 200px;
+    width: 190px;
+    height: 190px;
     border-radius: 100%;
     background: linear-gradient(90deg, #43BAFF 0%, #7141B1 100%);
     position: absolute;
-    right: 20%;
-    top: 50%;
+    right: 5%;
+    top: 70%;
 }
-.progress-data-container .data{
+
+.progress-data-container .data {
     width: 100%;
     height: 100%;
     position: relative;
@@ -181,14 +193,220 @@
     justify-content: center;
     align-items: center;
 }
-.progress-data-container .data h1{
+
+.progress-data-container .data h1 {
     font-size: 52px;
     line-height: 60px;
     font-weight: 700;
 }
-.progress-data-container .data p{
+
+.progress-data-container .data p {
     font-size: 18px;
     line-height: 25px;
     font-weight: 700;
     text-align: center;
+}
+
+.frame-4 .img-container img {
+    width: 300px;
+}
+
+.svg-container img {
+    width: 100vw;
+    height: 300px;
+
+}
+
+@media (max-width:1024px) {
+
+    .progress-data-container .data h1 {
+        font-size: 42px;
+        line-height: 50px;
+        font-weight: 700;
+    }
+
+    .progress-data-container .data p {
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 700;
+        text-align: center;
+    }
+}
+
+@media (max-width:768px) {
+
+    .frame-2{
+        max-width:100%!important;
+    }
+
+    .frame-5 .progress-data-container .progress-1 {
+        width: 150px;
+        height: 150px;
+        position: absolute;
+        left: 5%;
+        top: 50%;
+
+    }
+
+    .frame-5 .progress-data-container .progress-2 {
+        width: 180px;
+        height: 180px;
+        position: absolute;
+        top: 30%;
+        left: 55%;
+    }
+
+    .frame-5 .progress-data-container .progress-3 {
+        width: 250px;
+        height: 250px;
+        position: absolute;
+        bottom: 1%;
+        left: 30%;
+
+    }
+
+    .frame-5 .progress-data-container .progress-4 {
+        width: 130px;
+        height: 130px;
+        border-radius: 100%;
+        background: linear-gradient(90deg, #43BAFF 0%, #7141B1 100%);
+        position: absolute;
+        right: 5%;
+        top: 70%;
+    }
+
+    .progress-data-container .data h1 {
+        font-size: 22px;
+        line-height: 30px;
+        font-weight: 700;
+    }
+
+    .progress-data-container .data p {
+        font-size: 12px;
+        line-height: 20px;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    .head .success-desc {
+        width: 100%;
+    }
+
+    .banner-img-container .view-more {
+        width: 70px;
+    }
+
+    .svg-container img {
+        width: 100vw;
+        height: 200px;
+    }
+
+    .frame-4 .img-container {
+        width: 100%;
+        margin-right: 0px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .frame-4 .heading-container {
+        width: 100%;
+        text-align: center;
+
+    }
+
+    .frame-4 .heading-container .sub-heading {
+
+        width: 100%;
+    }
+}
+
+@media (max-width:575px) {
+    .frame-5 {
+        height: auto;
+    }
+
+    .progress-container {
+        height: auto;
+    }
+
+    .progress-container .progress-data-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+        padding-bottom: 10px;
+    }
+
+    .frame-5 .progress-data-container .progress-1 {
+        width: 150px;
+        height: 150px;
+        position: unset;
+
+    }
+
+    .frame-5 .progress-data-container .progress-2 {
+        width: 180px;
+        height: 180px;
+        position: unset;
+    }
+
+    .frame-5 .progress-data-container .progress-3 {
+        width: 250px;
+        height: 250px;
+        position: unset;
+
+    }
+
+    .frame-5 .progress-data-container .progress-4 {
+        width: 130px;
+        height: 130px;
+        position: unset;
+    }
+
+
+    .our-process h1 {
+        font-size: 22px;
+        line-height: 25px;
+        margin-bottom: 0px;
+        letter-spacing: 0px;
+    }
+
+    .our-project-btn,
+    .our-process-btn {
+        font-size: 10px;
+        line-height: 20px;
+        padding: 5px 12px 5px 12px;
+    }
+
+    .head .success-desc>p {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .banner-img-container .view-more {
+        width: 50px;
+    }
+
+    .ai-header {
+        padding: 15px;
+    }
+
+    .ai-header h1,
+    .ai-header span {
+        font-size: 12px;
+        line-height: 18px;
+        font-weight: 700;
+        margin-bottom: 0px;
+    }
+
+    .frame-4 .heading-container .heading {
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    .frame-4 .heading-container .sub-heading {
+        font-size: 12px;
+        line-height: 18px;
+    }
 }

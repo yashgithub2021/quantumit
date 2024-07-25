@@ -791,8 +791,8 @@
 
 
 @media (max-width: 575.98px) {
-    .carousel-indicators[_ngcontent-ng-c2955751263] {
-        bottom: -2px;
+    .carousel-indicators {
+        bottom: 0px;
     }
     .section4 .services-section .heading {
         width: 80% !important;
