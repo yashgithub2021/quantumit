@@ -2178,18 +2178,18 @@ export const HRRecruitment = {
     impactTitle: "Our Solution That impact on Product",
     impacts: [
         {
-            title: "5x",
-            desc: "Increase Process speed"
+            title: "",
+            desc: "Huge improvement in  accuracy and compliance"
         }
         ,
         {
-            title: "90%",
-            desc: "Accuracy"
+            title: "500%",
+            desc: "Improved Productivity"
         }
         ,
         {
-            title: "130% of ROI",
-            desc: "Cost saving"
+            title: "300 %",
+            desc: "ROI return within 6 months"
         },
         {
             title: "90%",
@@ -2198,350 +2198,222 @@ export const HRRecruitment = {
     ],
 }
 export const PurchaseOrder = {
-    title: "HR Employee On Boarding",
-    img: "../../../../assets/ai/casestudy/banner2.png",
+    title: "Purchase Order",
+    img: "../../../../assets/ai/casestudy/page/purchase.png",
     descriptionOne: [
-        "Quantum IT’s AI development services are aimed at optimising your business potential, making workflows smoother and operations more efficient. We cover all segments of AI starting with consultations on how it works ranging to development of custom models for businesses with integration. Our ability in tuning base models such as GPT, Llama, PaLM, Mistral, Gemini etc., helps us design unique domain tailored models to satisfy all your needs."
+        "This project automates purchase order processing for a large US surgical manufacturing company using RPA and OCR tools. It reduces processing time from 8 to 2 minutes, achieving a 90% effort reduction and enhancing efficiency."
     ],
     problemTitle: "Challenges Faced by <br> client.",
-    problemDescription: "One of the leading Healthcare RCM BPO has 500 new joining every month across different cities and has been facing challenges coping up with the manual day to day  employee on boarding tasks, which is not only time  consuming but repetitive in nature.",
+    problemDescription: "One of the largest US surgical manufacturing company is having challenge in handling 100,000 purchase orders yearly. <br>High FTE costs, manual mistakes, varying PO format and high cycle time was their pain point.",
     solutionTitle: "Our Solution that make<br> Customer life Easy.",
-    solutionDescription: "Implemented RPA based automation RPA bots that performs",
+    solutionDescription: "We proposed to implement Robotics Process Automation (RPA) solution to support automation of Purchase order using Automation Anywhere.",
     solutions: [
         {
-            title: "Read relevant documents",
-            desc: "The RPA bots are designed to read and extract information from various documents required during the onboarding process.",
+            title: "OCR tool & BOT development and design on the ERP (SAP) system",
+            desc: "Purchase orders are extracted using OCR tool. BOT development and design on the ERP (SAP) system to  navigate to different sales order system and push respective client data.",
             img: '../../../../assets/ai/casestudy/img1.png'
         },
 
         {
-            title: "Create Email accounts",
-            desc: "RPA bots are programmed to automate the process of creating email accounts for new employees, ensuring a seamless and efficient setup.",
+            title: "BOT validate the PO with SAP billing system",
+            desc: "BOT validate the PO with SAP billing system and send notification in case of any discrepancies.",
             img: '../../../../assets/ai/casestudy/img2.png'
-        },
-
-        {
-            title: "Add employee to mailing",
-            desc: "RPA bots are programmed to automate the process of adding new employees to relevant mailing lists, ensuring that they receive all necessary communications from the start.",
-            img: '../../../../assets/ai/casestudy/img3.png'
-        },
-
-        {
-            title: "list Generate Phone",
-            desc: "RPA bots are programmed to automate the creation and updating of phone lists for new employees, ensuring accurate and up-to-date contact information.",
-            img: '../../../../assets/ai/casestudy/img4.png'
-        }, {
-            title: "Extension Request Card",
-            desc: "RPA bots are programmed to automate the process of handling extension request cards for new employees, ensuring a streamlined and efficient workflow.",
-            img: '../../../../assets/ai/casestudy/img5.png'
-        }, {
-            title: "Create AD accounts",
-            desc: "To automate the process of creating Active Directory (AD) accounts for new employees, ensuring quick and accurate setup.",
-            img: '../../../../assets/ai/casestudy/img6.png'
-        }, {
-            title: "Scrap employment details and push to system",
-            desc: "To automate the extraction and integration of employment details from various sources, ensuring accurate and efficient data handling.",
-            img: '../../../../assets/ai/casestudy/img7.png'
-        }, {
-            title: "Send employment and login details to employee",
-            desc: "To automate the process of sending employment and login details to new employees, ensuring timely and accurate communication.",
-            img: '../../../../assets/ai/casestudy/img8.png'
-        },
+        }
 
     ],
     impactTitle: "Our Solution That<br> impact on Product",
     impacts: [
         {
-            title: "5x",
-            desc: "Increase Process speed"
+            title: "N/A",
+            desc: ""
         }
         ,
         {
-            title: "90%",
-            desc: "Accuracy"
+            title: "24 hours",
+            desc: "Windows"
         }
         ,
         {
-            title: "130% of ROI",
-            desc: "Cost saving"
+            title: "8 mins to 2 mins",
+            desc: "Time to process PO "
         },
         {
             title: "90%",
-            desc: "Reduced cycle time"
+            desc: "Substantial effort reduction"
         },
     ],
 }
 export const AccountPayable = {
-    title: "HR Employee On Boarding",
-    img: "../../../../assets/ai/casestudy/banner2.png",
+    title: "Account Payable",
+    img: "../../../../assets/ai/casestudy/page/account_payable.png",
     descriptionOne: [
-        "Quantum IT’s AI development services are aimed at optimising your business potential, making workflows smoother and operations more efficient. We cover all segments of AI starting with consultations on how it works ranging to development of custom models for businesses with integration. Our ability in tuning base models such as GPT, Llama, PaLM, Mistral, Gemini etc., helps us design unique domain tailored models to satisfy all your needs."
+        "The project is about automating the accounts payable process using Robotic Process Automation (RPA). This  reduced the time to process an invoice from 90 minutes to 4 minutes and achieved a cost saving of $160,000 per year."
     ],
     problemTitle: "Challenges Faced by <br> client.",
-    problemDescription: "One of the leading Healthcare RCM BPO has 500 new joining every month across different cities and has been facing challenges coping up with the manual day to day  employee on boarding tasks, which is not only time  consuming but repetitive in nature.",
+    problemDescription: "Finance Dept. receives multiple invoices from partners in  batches and allocates payments as per rules that was done manually using SAP and Excel. 10k invoices per month and 245 different invoice types used to nightmare for finance to handle.<br>A lot of manual efforts (~ 5 executive ) needed to do the  complete process for 3000 invoices per month.",
     solutionTitle: "Our Solution that make<br> Customer life Easy.",
-    solutionDescription: "Implemented RPA based automation RPA bots that performs",
+    solutionDescription: "We proposed to implement Robotics Process Automation (RPA) solution to support automation of Account payable  process using Blue Prism.",
     solutions: [
         {
-            title: "Read relevant documents",
-            desc: "The RPA bots are designed to read and extract information from various documents required during the onboarding process.",
+            title: "Invoices are extracted using OCR tool.",
+            desc: "An Optical Character Recognition (OCR) tool automates the extraction of data from invoices, converting scanned or digital invoice documents into editable and searchable formats. This enhances accuracy and efficiency in invoice processing workflows.",
             img: '../../../../assets/ai/casestudy/img1.png'
         },
 
         {
-            title: "Create Email accounts",
-            desc: "RPA bots are programmed to automate the process of creating email accounts for new employees, ensuring a seamless and efficient setup.",
+            title: "BOT development and design on the ERP (SAP) system",
+            desc: "BOT development and design on the ERP (SAP) system to  navigate to different AP system and push respective client  data..",
             img: '../../../../assets/ai/casestudy/img2.png'
         },
 
         {
-            title: "Add employee to mailing",
-            desc: "RPA bots are programmed to automate the process of adding new employees to relevant mailing lists, ensuring that they receive all necessary communications from the start.",
+            title: "BOT validate the invoice",
+            desc: "BOT validate the invoice with PO from mainframe billing system and send notification in case of any discrepancies.",
             img: '../../../../assets/ai/casestudy/img3.png'
-        },
-
-        {
-            title: "list Generate Phone",
-            desc: "RPA bots are programmed to automate the creation and updating of phone lists for new employees, ensuring accurate and up-to-date contact information.",
-            img: '../../../../assets/ai/casestudy/img4.png'
-        }, {
-            title: "Extension Request Card",
-            desc: "RPA bots are programmed to automate the process of handling extension request cards for new employees, ensuring a streamlined and efficient workflow.",
-            img: '../../../../assets/ai/casestudy/img5.png'
-        }, {
-            title: "Create AD accounts",
-            desc: "To automate the process of creating Active Directory (AD) accounts for new employees, ensuring quick and accurate setup.",
-            img: '../../../../assets/ai/casestudy/img6.png'
-        }, {
-            title: "Scrap employment details and push to system",
-            desc: "To automate the extraction and integration of employment details from various sources, ensuring accurate and efficient data handling.",
-            img: '../../../../assets/ai/casestudy/img7.png'
-        }, {
-            title: "Send employment and login details to employee",
-            desc: "To automate the process of sending employment and login details to new employees, ensuring timely and accurate communication.",
-            img: '../../../../assets/ai/casestudy/img8.png'
-        },
+        }
 
     ],
     impactTitle: "Our Solution That<br> impact on Product",
     impacts: [
         {
-            title: "5x",
-            desc: "Increase Process speed"
+            title: "",
+            desc: "No person dependency"
         }
         ,
         {
-            title: "90%",
-            desc: "Accuracy"
-        }
-        ,
-        {
-            title: "130% of ROI",
+            title: "$160 K/year",
             desc: "Cost saving"
+        }
+        ,
+        {
+            title: "90 mins to 4 mins",
+            desc: "Time to process invoice"
         },
         {
-            title: "90%",
-            desc: "Reduced cycle time"
-        },
+            title:"90%",
+            desc:"Substantial effort reduction"
+        }
     ],
 }
 export const AccountReceivableRecovery = {
-    title: "HR Employee On Boarding",
-    img: "../../../../assets/ai/casestudy/banner2.png",
+    title: "Account Receivable & recovery",
+    img: "../../../../assets/ai/casestudy/page/account_receive.png",
     descriptionOne: [
-        "Quantum IT’s AI development services are aimed at optimising your business potential, making workflows smoother and operations more efficient. We cover all segments of AI starting with consultations on how it works ranging to development of custom models for businesses with integration. Our ability in tuning base models such as GPT, Llama, PaLM, Mistral, Gemini etc., helps us design unique domain tailored models to satisfy all your needs."
+        "The project  aims to improve account receivable and recovery by implementing Robotic Process Automation (RPA). This  reduced manual efforts from 5 days to 2 hours and achieved a cost saving of $190,000 per year.<br>pen_spark"
     ],
     problemTitle: "Challenges Faced by <br> client.",
-    problemDescription: "One of the leading Healthcare RCM BPO has 500 new joining every month across different cities and has been facing challenges coping up with the manual day to day  employee on boarding tasks, which is not only time  consuming but repetitive in nature.",
+    problemDescription: "Finance Dept. want to send Account receivables summery  to the respective client on schedule basis to close this in  time and reduce the write-off.<br> A lot of manual efforts (~ 5 days ) needed to do the  complete process for 200 Org.",
     solutionTitle: "Our Solution that make<br> Customer life Easy.",
-    solutionDescription: "Implemented RPA based automation RPA bots that performs",
+    solutionDescription: "We proposed to implement Robotics Process Automation (RPA) solution to support automation of Account receivable process using Automation Anywhere.",
     solutions: [
         {
-            title: "Read relevant documents",
-            desc: "The RPA bots are designed to read and extract information from various documents required during the onboarding process.",
+            title: "BOT development and design on the ERP system",
+            desc: "BOT development and design on the ERP system to  navigate to different organization and extract respective client data.",
             img: '../../../../assets/ai/casestudy/img1.png'
         },
 
         {
-            title: "Create Email accounts",
-            desc: "RPA bots are programmed to automate the process of creating email accounts for new employees, ensuring a seamless and efficient setup.",
+            title: "BOT development to extract all the details from ERP and prepared Account receivable sheet.",
+            desc: "RPA development involves creating bots that automate the extraction of comprehensive details from ERP systems, facilitating the preparation of accurate and organized Accounts Receivable (AR) sheets.",
             img: '../../../../assets/ai/casestudy/img2.png'
         },
 
         {
-            title: "Add employee to mailing",
-            desc: "RPA bots are programmed to automate the process of adding new employees to relevant mailing lists, ensuring that they receive all necessary communications from the start.",
+            title: "AR sheet Compilation and Email based on client details.",
+            desc: "RPA tools compile Accounts Receivable (AR) data into organized sheets and automatically generate emails tailored to client specifics.",
             img: '../../../../assets/ai/casestudy/img3.png'
-        },
-
-        {
-            title: "list Generate Phone",
-            desc: "RPA bots are programmed to automate the creation and updating of phone lists for new employees, ensuring accurate and up-to-date contact information.",
-            img: '../../../../assets/ai/casestudy/img4.png'
-        }, {
-            title: "Extension Request Card",
-            desc: "RPA bots are programmed to automate the process of handling extension request cards for new employees, ensuring a streamlined and efficient workflow.",
-            img: '../../../../assets/ai/casestudy/img5.png'
-        }, {
-            title: "Create AD accounts",
-            desc: "To automate the process of creating Active Directory (AD) accounts for new employees, ensuring quick and accurate setup.",
-            img: '../../../../assets/ai/casestudy/img6.png'
-        }, {
-            title: "Scrap employment details and push to system",
-            desc: "To automate the extraction and integration of employment details from various sources, ensuring accurate and efficient data handling.",
-            img: '../../../../assets/ai/casestudy/img7.png'
-        }, {
-            title: "Send employment and login details to employee",
-            desc: "To automate the process of sending employment and login details to new employees, ensuring timely and accurate communication.",
-            img: '../../../../assets/ai/casestudy/img8.png'
-        },
+        }
 
     ],
     impactTitle: "Our Solution That<br> impact on Product",
     impacts: [
         {
-            title: "5x",
-            desc: "Increase Process speed"
+            title: "",
+            desc: "No person dependency"
         }
         ,
         {
-            title: "90%",
-            desc: "Accuracy"
-        }
-        ,
-        {
-            title: "130% of ROI",
+            title: "$160 K/year",
             desc: "Cost saving"
+        }
+        ,
+        {
+            title: "2 hrs from 40 hrs",
+            desc: "Time to market reduced"
         },
         {
-            title: "90%",
-            desc: "Reduced cycle time"
-        },
+            title:"70%",
+            desc:"Substantial effort reduction"
+        }
     ],
 }
 export const InsuranceClaimProcessing = {
-    title: "HR Employee On Boarding",
-    img: "../../../../assets/ai/casestudy/banner2.png",
+    title: "Insurance Claim Processing",
+    img: "../../../../assets/ai/casestudy/page/incurance_claim.png",
     descriptionOne: [
-        "Quantum IT’s AI development services are aimed at optimising your business potential, making workflows smoother and operations more efficient. We cover all segments of AI starting with consultations on how it works ranging to development of custom models for businesses with integration. Our ability in tuning base models such as GPT, Llama, PaLM, Mistral, Gemini etc., helps us design unique domain tailored models to satisfy all your needs."
+        "RPA bots streamline insurance claim processing by automating data extraction, claim validation, and status updates. This improves accuracy, reduces processing time, and enhances customer satisfaction through faster claim resolutions."
     ],
     problemTitle: "Challenges Faced by <br> client.",
-    problemDescription: "One of the leading Healthcare RCM BPO has 500 new joining every month across different cities and has been facing challenges coping up with the manual day to day  employee on boarding tasks, which is not only time  consuming but repetitive in nature.",
+    problemDescription: "When customer submit a claim via fax, email, phone or through a web form. The claim is reviewed and information submitted to claim portal to start the process.<br>The claim processing is manual, time intensive and error prone that leads to errors, slow down the claim cycle time and higher cost.",
     solutionTitle: "Our Solution that make<br> Customer life Easy.",
-    solutionDescription: "Implemented RPA based automation RPA bots that performs",
+    solutionDescription: "Implemented RPA based automation RPA bots that entirely transform manual process to automated claim processing (partial)",
     solutions: [
         {
-            title: "Read relevant documents",
-            desc: "The RPA bots are designed to read and extract information from various documents required during the onboarding process.",
+            title: "Retrieve the data from email using RPA and OCR",
+            desc: "It automates the extraction of data from emails, enabling efficient retrieval and processing of information. This enhances productivity by reducing manual effort and improving data accuracy in workflows.",
             img: '../../../../assets/ai/casestudy/img1.png'
         },
 
         {
-            title: "Create Email accounts",
-            desc: "RPA bots are programmed to automate the process of creating email accounts for new employees, ensuring a seamless and efficient setup.",
+            title: "Use ML algorithm to classify the claim type and route to respective team",
+            desc: "Ensuring accurate categorization and routing to the appropriate teams. This enhances efficiency in claims processing by optimizing workflow distribution based on identified patterns and criteria.",
             img: '../../../../assets/ai/casestudy/img2.png'
         },
 
         {
-            title: "Add employee to mailing",
-            desc: "RPA bots are programmed to automate the process of adding new employees to relevant mailing lists, ensuring that they receive all necessary communications from the start.",
+            title: "Push all the data to the respective system with proper business handling and notification.",
+            desc: "Automate the transfer of data to designated systems, incorporating business rules for validation and generating notifications to ensure seamless integration and informed stakeholders. This enhances operational efficiency and decision-making processes.",
             img: '../../../../assets/ai/casestudy/img3.png'
-        },
-
-        {
-            title: "list Generate Phone",
-            desc: "RPA bots are programmed to automate the creation and updating of phone lists for new employees, ensuring accurate and up-to-date contact information.",
-            img: '../../../../assets/ai/casestudy/img4.png'
-        }, {
-            title: "Extension Request Card",
-            desc: "RPA bots are programmed to automate the process of handling extension request cards for new employees, ensuring a streamlined and efficient workflow.",
-            img: '../../../../assets/ai/casestudy/img5.png'
-        }, {
-            title: "Create AD accounts",
-            desc: "To automate the process of creating Active Directory (AD) accounts for new employees, ensuring quick and accurate setup.",
-            img: '../../../../assets/ai/casestudy/img6.png'
-        }, {
-            title: "Scrap employment details and push to system",
-            desc: "To automate the extraction and integration of employment details from various sources, ensuring accurate and efficient data handling.",
-            img: '../../../../assets/ai/casestudy/img7.png'
-        }, {
-            title: "Send employment and login details to employee",
-            desc: "To automate the process of sending employment and login details to new employees, ensuring timely and accurate communication.",
-            img: '../../../../assets/ai/casestudy/img8.png'
-        },
+        }
 
     ],
     impactTitle: "Our Solution That<br> impact on Product",
     impacts: [
         {
-            title: "5x",
-            desc: "Increase Process speed"
-        }
-        ,
-        {
-            title: "90%",
+            title: "95%",
             desc: "Accuracy"
         }
         ,
         {
-            title: "130% of ROI",
-            desc: "Cost saving"
+            title: "50%",
+            desc: "Reduction in claim processing cost"
+        }
+        ,
+        {
+            title: "15 mins to 3 mins",
+            desc: "Average routing time"
         },
         {
-            title: "90%",
-            desc: "Reduced cycle time"
+            title: "70%",
+            desc: "Speed up"
         },
     ],
 }
 export const InsuranceEligibilityVerification = {
-    title: "HR Employee On Boarding",
-    img: "../../../../assets/ai/casestudy/banner2.png",
+    title: "Insurance Eligibility Verification",
+    img: "../../../../assets/ai/casestudy/page/incurance_verification.png",
     descriptionOne: [
-        "Quantum IT’s AI development services are aimed at optimising your business potential, making workflows smoother and operations more efficient. We cover all segments of AI starting with consultations on how it works ranging to development of custom models for businesses with integration. Our ability in tuning base models such as GPT, Llama, PaLM, Mistral, Gemini etc., helps us design unique domain tailored models to satisfy all your needs."
+        "RPA bots automate the insurance eligibility verification process by checking patient information against insurer databases, ensuring coverage details are accurate and up-to-date. This reduces manual workload, speeds up verification, and minimizes claim denials."
     ],
     problemTitle: "Challenges Faced by <br> client.",
-    problemDescription: "One of the leading Healthcare RCM BPO has 500 new joining every month across different cities and has been facing challenges coping up with the manual day to day  employee on boarding tasks, which is not only time  consuming but repetitive in nature.",
+    problemDescription: "One of the leading Healthcare RCM BPO in India deployed  15 FTE for verifying 1500 eligibility checks daily for their revenue cycle management. <br> Navigating multiple screens,  dealing with multiple vendors, transactions on Citrix machines and verifying within 8 hours windows was a  daunting tasks, that leads to manual mistakes and  revenue leakages.",
     solutionTitle: "Our Solution that make<br> Customer life Easy.",
-    solutionDescription: "Implemented RPA based automation RPA bots that performs",
+    solutionDescription: "Proposed RPA based automation. Automated manual  steps involved in EV process using RPA – UiPath and  deployed the BOTS within 6weeks.",
     solutions: [
         {
-            title: "Read relevant documents",
-            desc: "The RPA bots are designed to read and extract information from various documents required during the onboarding process.",
+            title: "RPA – Ui Path & Bots",
+            desc: "Proposed RPA based automation. Automated manual  steps involved in EV process using RPA – UiPath and  deployed the BOTS within 6weeks.",
             img: '../../../../assets/ai/casestudy/img1.png'
-        },
-
-        {
-            title: "Create Email accounts",
-            desc: "RPA bots are programmed to automate the process of creating email accounts for new employees, ensuring a seamless and efficient setup.",
-            img: '../../../../assets/ai/casestudy/img2.png'
-        },
-
-        {
-            title: "Add employee to mailing",
-            desc: "RPA bots are programmed to automate the process of adding new employees to relevant mailing lists, ensuring that they receive all necessary communications from the start.",
-            img: '../../../../assets/ai/casestudy/img3.png'
-        },
-
-        {
-            title: "list Generate Phone",
-            desc: "RPA bots are programmed to automate the creation and updating of phone lists for new employees, ensuring accurate and up-to-date contact information.",
-            img: '../../../../assets/ai/casestudy/img4.png'
-        }, {
-            title: "Extension Request Card",
-            desc: "RPA bots are programmed to automate the process of handling extension request cards for new employees, ensuring a streamlined and efficient workflow.",
-            img: '../../../../assets/ai/casestudy/img5.png'
-        }, {
-            title: "Create AD accounts",
-            desc: "To automate the process of creating Active Directory (AD) accounts for new employees, ensuring quick and accurate setup.",
-            img: '../../../../assets/ai/casestudy/img6.png'
-        }, {
-            title: "Scrap employment details and push to system",
-            desc: "To automate the extraction and integration of employment details from various sources, ensuring accurate and efficient data handling.",
-            img: '../../../../assets/ai/casestudy/img7.png'
-        }, {
-            title: "Send employment and login details to employee",
-            desc: "To automate the process of sending employment and login details to new employees, ensuring timely and accurate communication.",
-            img: '../../../../assets/ai/casestudy/img8.png'
         },
 
     ],
@@ -2549,95 +2421,79 @@ export const InsuranceEligibilityVerification = {
     impacts: [
         {
             title: "5x",
-            desc: "Increase Process speed"
+            desc: "Save worth of 10 FTE efforts every month"
         }
         ,
         {
-            title: "90%",
-            desc: "Accuracy"
-        }
-        ,
-        {
-            title: "130% of ROI",
+            title: "$50 K/year",
             desc: "Cost saving"
+        }
+        ,
+        {
+            title: "8 hrs to 2 hrs",
+            desc: "Reduce EV Process"
         },
         {
-            title: "90%",
-            desc: "Reduced cycle time"
+            title: "80%",
+            desc: "Reduced revenue leakage"
         },
     ],
 }
 export const ClinicalDocumentProcessing = {
-    title: "HR Employee On Boarding",
-    img: "../../../../assets/ai/casestudy/banner2.png",
+    title: "Clinical Document Processing",
+    img: "../../../../assets/ai/casestudy/page/clinical.png",
     descriptionOne: [
-        "Quantum IT’s AI development services are aimed at optimising your business potential, making workflows smoother and operations more efficient. We cover all segments of AI starting with consultations on how it works ranging to development of custom models for businesses with integration. Our ability in tuning base models such as GPT, Llama, PaLM, Mistral, Gemini etc., helps us design unique domain tailored models to satisfy all your needs."
+        "RPA bots streamline clinical document processing by automating the extraction, classification, and entry of medical data into electronic health records. This enhances data accuracy, reduces manual effort, and improves overall efficiency in healthcare administration."
     ],
     problemTitle: "Challenges Faced by <br> client.",
-    problemDescription: "One of the leading Healthcare RCM BPO has 500 new joining every month across different cities and has been facing challenges coping up with the manual day to day  employee on boarding tasks, which is not only time  consuming but repetitive in nature.",
+    problemDescription: "One of the healthcare client was struggling to maintain and update clinical documents with new patients.<br>In most of the cases, associate was required to analyze the  supporting documents and then create entry into system.  The volume as 20k per month.",
     solutionTitle: "Our Solution that make<br> Customer life Easy.",
-    solutionDescription: "Implemented RPA based automation RPA bots that performs",
+    solutionDescription: "We proposed to implement OCR with RPA to extract the information from the clinical documents (either native document / scanned image).",
     solutions: [
         {
-            title: "Read relevant documents",
-            desc: "The RPA bots are designed to read and extract information from various documents required during the onboarding process.",
+            title: "The OCR engine perform pre and post processing to avoid noise and improve the accuracy.",
+            desc: "Before and after processing, the OCR engine employs techniques to filter out disturbances and refine data extraction, ensuring high accuracy in converting scanned or digital documents into readable formats.",
             img: '../../../../assets/ai/casestudy/img1.png'
         },
 
         {
-            title: "Create Email accounts",
-            desc: "RPA bots are programmed to automate the process of creating email accounts for new employees, ensuring a seamless and efficient setup.",
+            title: "The OCR provides maker checker to review the mistakes and confidence level to send notification in case accuracy  level goes down.",
+            desc: "It allows for review by both a creator and a checker to rectify errors, and notifies stakeholders if accuracy levels drop below a specified threshold.",
             img: '../../../../assets/ai/casestudy/img2.png'
         },
 
         {
-            title: "Add employee to mailing",
-            desc: "RPA bots are programmed to automate the process of adding new employees to relevant mailing lists, ensuring that they receive all necessary communications from the start.",
+            title: "Transforms unstructured clinical document into structure data (spreadsheet).",
+            desc: "And, finally transforms unstructured clinical document  into structure data (spreadsheet).",
             img: '../../../../assets/ai/casestudy/img3.png'
         },
 
         {
-            title: "list Generate Phone",
-            desc: "RPA bots are programmed to automate the creation and updating of phone lists for new employees, ensuring accurate and up-to-date contact information.",
+            title: "Post OCR processing RPA picks up the data and create entry into clinical management data.",
+            desc: "After OCR processing, RPA bots seamlessly retrieve extracted data and input it into clinical management systems, streamlining administrative tasks and improving data accuracy in healthcare operations.",
             img: '../../../../assets/ai/casestudy/img4.png'
-        }, {
-            title: "Extension Request Card",
-            desc: "RPA bots are programmed to automate the process of handling extension request cards for new employees, ensuring a streamlined and efficient workflow.",
-            img: '../../../../assets/ai/casestudy/img5.png'
-        }, {
-            title: "Create AD accounts",
-            desc: "To automate the process of creating Active Directory (AD) accounts for new employees, ensuring quick and accurate setup.",
-            img: '../../../../assets/ai/casestudy/img6.png'
-        }, {
-            title: "Scrap employment details and push to system",
-            desc: "To automate the extraction and integration of employment details from various sources, ensuring accurate and efficient data handling.",
-            img: '../../../../assets/ai/casestudy/img7.png'
-        }, {
-            title: "Send employment and login details to employee",
-            desc: "To automate the process of sending employment and login details to new employees, ensuring timely and accurate communication.",
-            img: '../../../../assets/ai/casestudy/img8.png'
-        },
+        }
 
     ],
     impactTitle: "Our Solution That<br> impact on Product",
     impacts: [
         {
             title: "5x",
-            desc: "Increase Process speed"
+            desc: "Reduced licensing and infrastructure cost"
         }
         ,
         {
-            title: "90%",
-            desc: "Accuracy"
+            title: "30%",
+            desc: "Improved accuracy"
         }
         ,
         {
-            title: "130% of ROI",
+            title: "$300 K/year",
             desc: "Cost saving"
         },
         {
-            title: "90%",
-            desc: "Reduced cycle time"
+            title: "80%",
+            desc: "Substantial effort reduction"
         },
     ],
 }

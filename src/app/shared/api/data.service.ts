@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { ActivatedRouteSnapshot, Resolve, RouterStateSnapshot } from '@angular/router';
 import { Observable, of } from 'rxjs';
-import { GenerativeAiConsultingCompany, GenerativeAiDevelopment, GenerativeAiIntegrationServices, HREmployeeOnBoarding, HireGenerativeAiEngineers, androidService, contentMarketingServices, conversionRateOptimizationServices, crossPlatformAppDevelopment, dotNetDevelopmentServices, emailMarketingServices, iOsService, iPadAppDevelopment, internetOfThings, joomlaDevelopmentServices, mobileDevServices, mobileGameDevelopment, nodejsDevelopmentServices, paidSearchAdvertisingServices, payPerClickServices, phpDevelopmentServices, roboticProcessAutomation, rubyOnRailsDevelopmentServices, seoServices, serviceAiDevelopment, socialMediaServices, swiftAppDevelopment, websiteDevServices } from '../shared/service-data';
+import { AccountPayable, AccountReceivableRecovery, ClinicalDocumentProcessing, GenerativeAiConsultingCompany, GenerativeAiDevelopment, GenerativeAiIntegrationServices, HREmployeeOnBoarding, HRRecruitment, HireGenerativeAiEngineers, InsuranceClaimProcessing, InsuranceEligibilityVerification, PurchaseOrder, androidService, contentMarketingServices, conversionRateOptimizationServices, crossPlatformAppDevelopment, dotNetDevelopmentServices, emailMarketingServices, iOsService, iPadAppDevelopment, internetOfThings, joomlaDevelopmentServices, mobileDevServices, mobileGameDevelopment, nodejsDevelopmentServices, paidSearchAdvertisingServices, payPerClickServices, phpDevelopmentServices, roboticProcessAutomation, rubyOnRailsDevelopmentServices, seoServices, serviceAiDevelopment, socialMediaServices, swiftAppDevelopment, websiteDevServices } from '../shared/service-data';
 
 @Injectable({
   providedIn: 'root'
@@ -105,26 +105,26 @@ export class DataService implements Resolve<any> {
     else if(id === 'HR-Employee-On-Boarding'){
       return of({ title: 'HR Employee On Boarding', services: HREmployeeOnBoarding });
 
-    }else if(id === 'HR-Employee-On-Boarding'){
-      return of({ title: 'HR Employee On Boarding', services: joomlaDevelopmentServices });
+    }else if(id === 'HR-Recruitment'){
+      return of({ title: 'HR Recruitment', services: HRRecruitment });
 
-    }else if(id === 'HR-Employee-On-Boarding'){
-      return of({ title: 'HR Employee On Boarding', services: joomlaDevelopmentServices });
+    }else if(id === 'Purchase-Order'){
+      return of({ title: 'Purchase Order', services: PurchaseOrder });
 
-    }else if(id === 'HR-Employee-On-Boarding'){
-      return of({ title: 'HR Employee On Boarding', services: joomlaDevelopmentServices });
+    }else if(id === 'Account-Payable'){
+      return of({ title: 'Account Payable', services: AccountPayable });
 
-    }else if(id === 'HR-Employee-On-Boarding'){
-      return of({ title: 'HR Employee On Boarding', services: joomlaDevelopmentServices });
+    }else if(id === 'Account-Receivable-Recovery'){
+      return of({ title: 'Account Receivable Recovery', services: AccountReceivableRecovery });
 
-    }else if(id === 'HR-Employee-On-Boarding'){
-      return of({ title: 'HR Employee On Boarding', services: joomlaDevelopmentServices });
+    }else if(id === 'Insurance-Claim-Processing'){
+      return of({ title: 'Insurance Claim Processing', services: InsuranceClaimProcessing });
 
-    }else if(id === 'HR-Employee-On-Boarding'){
-      return of({ title: 'HR Employee On Boarding', services: joomlaDevelopmentServices });
+    }else if(id === 'Insurance-Eligibility-Verification'){
+      return of({ title: 'Insurance Eligibility Verification', services: InsuranceEligibilityVerification });
 
-    }else if(id === 'HR-Employee-On-Boarding'){
-      return of({ title: 'HR Employee On Boarding', services: joomlaDevelopmentServices });
+    }else if(id === 'Clinical-Document-Processing'){
+      return of({ title: 'Clinical Document Processin', services: ClinicalDocumentProcessing });
 
     }
     

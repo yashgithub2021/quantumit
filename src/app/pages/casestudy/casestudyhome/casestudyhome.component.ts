@@ -50,6 +50,42 @@ export class CasestudyhomeComponent implements OnInit {
       link: '/ai/ai-casestudy/HR-Employee-On-Boarding',
       projectName:''
     },
+    {
+      name: "HR Recruitment",
+      portfolioImage: '../../../../assets/casestudybanner/ai/2.png',
+      link: '/ai/ai-casestudy/HR-Recruitment',
+      projectName:''
+    }, {
+      name: "Purchase Order",
+      portfolioImage: '../../../../assets/casestudybanner/ai/3.png',
+      link: '/ai/ai-casestudy/Purchase-Order',
+      projectName:''
+    }, {
+      name: "Account Payable",
+      portfolioImage: '../../../../assets/casestudybanner/ai/4.png',
+      link: '/ai/ai-casestudy/Account-Payable',
+      projectName:''
+    }, {
+      name: "Account Receivable & Recovery",
+      portfolioImage: '../../../../assets/casestudybanner/ai/5.png',
+      link: '/ai/ai-casestudy/Account-Receivable-Recovery',
+      projectName:''
+    }, {
+      name: "Insurance Claim Processing",
+      portfolioImage: '../../../../assets/casestudybanner/ai/6.png',
+      link: '/ai/ai-casestudy/Insurance-Claim-Processing',
+      projectName:''
+    }, {
+      name: "Insurance Eligibility Verification",
+      portfolioImage: '../../../../assets/casestudybanner/ai/7.png',
+      link: '/ai/ai-casestudy/Insurance-Eligibility-Verification',
+      projectName:''
+    }, {
+      name: "Clinical Document Processing",
+      portfolioImage: '../../../../assets/casestudybanner/ai/8.png',
+      link: '/ai/ai-casestudy/Clinical-Document-Processing',
+      projectName:''
+    },
   ]
   // loadingStatus: boolean = true;
   constructor(private api: ApiService, private elementRef: ElementRef) { }
