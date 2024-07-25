@@ -1541,7 +1541,7 @@ export const joomlaDevelopmentServices = {
     ]
 };
 
-// ai services
+// generative ai services
 
 export const GenerativeAiDevelopment = {
     title1: "Generative",
@@ -1626,18 +1626,23 @@ export const GenerativeAiDevelopment = {
     integrations: [
         {
             name: 'Cutting-Edge Technology',
+            img:'../../../../assets/ai/services/ai-development/EDGE TECHNOLOGY.svg'
         },
         {
             name: 'Expertise Across AI Technologies',
+            img:'../../../../assets/ai/services/ai-development/AI.svg'
         },
         {
             name: 'Customised Industry Specific Solutions',
+            img:'../../../../assets/ai/services/ai-development/INDUTRY SOLUTIONS.svg'
         },
         {
             name: 'Proven Track Record',
+            img:'../../../../assets/ai/services/ai-development/TRACK RECORD.svg'
         },
         {
             name: 'Full Support',
+            img:'../../../../assets/ai/services/ai-development/SUPPORT.svg'
         }
     ]
 
@@ -1719,21 +1724,27 @@ export const GenerativeAiIntegrationServices = {
     integrations: [
         {
             name: 'Healthcare',
+            img:'../../../../assets/ai/services/ai-generative-services/healthcare.svg'
         },
         {
             name: 'Finance',
+            img:'../../../../assets/ai/services/ai-generative-services/finance.svg'
         },
         {
             name: 'Retail',
+            img:'../../../../assets/ai/services/ai-generative-services/retail.svg'
         },
         {
             name: 'Manufacturing',
+            img:'../../../../assets/ai/services/ai-generative-services/manufacturing.svg'
         },
         {
             name: 'Telecommunications',
+            img:'../../../../assets/ai/services/ai-generative-services/telecommunication.svg'
         },
         {
             name: 'Education',
+            img:'../../../../assets/ai/services/ai-generative-services/education.svg'
         },
     ]
 
@@ -1828,15 +1839,19 @@ export const GenerativeAiConsultingCompany = {
     integrations: [
         {
             name: 'Generative AI expertise',
+            img:'../../../../assets/ai/services/ai-consulting-company/generative ai.svg'
         },
         {
             name: 'Personalised Approach',
+            img:'../../../../assets/ai/services/ai-consulting-company/personalized approch.svg'
         },
         {
             name: 'Support through the entire process',
+            img:'../../../../assets/ai/services/ai-consulting-company/support_2058768.svg'
         },
         {
             name: 'Ethical Generative AI Development',
+            img:'../../../../assets/ai/services/ai-consulting-company/ethical generative ai.svg'
         }
     ]
 
@@ -1954,4 +1969,170 @@ export const HireGenerativeAiEngineers = {
         },
     ]
 
+}
+
+//ai services
+export const serviceAiDevelopment = {
+    title1: "AI",
+    title2: "Development Company",
+    img1: "../../../../assets/services/AI_service/aigenerator/img1_1.png",
+    // img2: "../../../../assets/services/ios_android/img1.jpg",
+    descriptionOne: [
+        "Quantum IT’s AI development services are aimed at optimising your business potential, making workflows smoother and operations more efficient. We cover all segments of AI starting with consultations on how it works ranging to development of custom models for businesses with integration. Our ability in tuning base models such as GPT, Llama, PaLM, Mistral, Gemini etc., helps us design unique domain tailored models to satisfy all your needs."
+    ],
+    descriptionTwo: [
+        ""
+    ],
+    serviceTitle: "Our AI Development Services",
+    services: [
+        {
+            num: "01.",
+            title: "AI/ML Strategy Consulting",
+            desc: "Trust the expertise and deep tech background of the best minds at Quantum IT to guide you through the complexities of AI implementation. We provide effective development approaches, strategic advice, and ongoing R&D efforts. Our goal is to maximise the value of AI/ML for your business, ensuring sustainable growth in this transformative landscape.",
+            img: '../../../../assets/mobile/service/service-icon1.svg'
+        },
+
+        {
+            num: "02.",
+            title: "PoC and MVP Development",
+            desc: "Our team of experts meticulously crafts Proof of Concepts (PoC) to validate the feasibility of your AI app’s concept, showcasing its potential through scaled-down versions. Moving forward, we design Minimum Viable Products (MVP) that deliver essential functionalities, enabling real user validation, iterative enhancements, and swift market entry.",
+            img: '../../../../assets/mobile/service/md.svg'
+        },
+
+        {
+            num: "03.",
+            title: "Custom AI-Powered Mobile App Development",
+            desc: "Our AI development company will collaborate with you to create AI-powered web and mobile apps that align precisely with your unique business needs. From the user interface to the algorithm, we meticulously engineer every aspect of your solution to guarantee optimal performance. Committed to both security and ethical AI, our development approach prioritises responsible innovation.",
+            img: '../../../../assets/mobile/service/mad.svg'
+        },
+
+        {
+            num: "04.",
+            title: "AI Integration and Deployment",
+            desc: "We seamlessly integrate AI apps into your existing workflows, empowering your business with AI capabilities that align with your established processes. Our team works closely with you to embed AI applications into your operational framework, ensuring a smooth transition and minimal downtime, resulting in remarkable gains in efficiency, productivity, and innovation.",
+            img: '../../../../assets/mobile/service/mat.svg'
+        },
+
+    ],
+    our_steps_title: 'Our Specialised AI Services',
+    our_steps_description: '',
+    our_steps: [
+        {
+            stepNo: "Step 01",
+            title: "LLM Fine-tuning",
+            desc: "We specialise in fine-tuning LLMs so they can meet your specific requirements, be it improving performance in certain domains, adapting them to unique datasets or boosting content generation capabilities. With precision in mind we work closely with you to grasp your objectives before carrying out our fine-tuning process specifically."
+        }
+        ,
+        {
+            stepNo: "Step 02",
+            title: "Generative AI Development",
+            desc: "Leverage our custom generative AI development service to tap into AI’s full potential. We utilise the transformative capabilities of proprietary and open-source LLMs such as GPT, Llama, PaLM, Gemini, Mistral, and Claude to build robust generative AI (GenAI) solutions."
+        },
+        {
+            stepNo: "Step 03",
+            title: "AI Agent and Copilot Development",
+            desc: "We develop intelligent AI agents and copilots using premier tools like AutoGen Studio, Copilot Studio, Vertex AI, and crewAI. Leveraging the capabilities of large language models (LLMs) like GPT-4 and Gemini, and an extensive skills library."
+        },
+    ],
+    our_steps2: [
+
+        {
+            stepNo: "Step 04",
+            title: "Enterprise AI development",
+            desc: "Our service for enterprise AI development helps change the way companies conduct their business operations by creating personalised solutions that simplify processes, elevate decision-making capacity and promote innovation. These services entail consulting and customised AI solution development and deployment as well as advanced data analytics implementation that suits your needs exclusively. By integrating our scalable AI systems into your existing infrastructure we will optimise it thus giving you a competitive advantage."
+        },
+    ],
+    integrations: [
+        {
+            name: 'Extensive Knowledge and Experience in AI',
+            img:'../../../../assets/ai/services/ai-development/EDGE TECHNOLOGY.svg'
+        },
+        {
+            name: 'End-to-End AI Development',
+            img:'../../../../assets/ai/services/ai-development/AI.svg'
+        },
+        {
+            name: 'Security of Great Importance',
+            img:'../../../../assets/ai/services/ai-development/INDUTRY SOLUTIONS.svg'
+        },
+        {
+            name: 'AI Experts at Your Service',
+            img:'../../../../assets/ai/services/ai-development/TRACK RECORD.svg'
+        }
+    ]
+}
+//for ai case study
+export const HREmployeeOnBoarding = {
+    title: "HR Employee On Boarding",
+    img: "../../../../assets/ai/casestudy/banner2.png",
+    descriptionOne: [
+        "Quantum IT’s AI development services are aimed at optimising your business potential, making workflows smoother and operations more efficient. We cover all segments of AI starting with consultations on how it works ranging to development of custom models for businesses with integration. Our ability in tuning base models such as GPT, Llama, PaLM, Mistral, Gemini etc., helps us design unique domain tailored models to satisfy all your needs."
+    ],
+    problemTitle: "Challenges Faced by <br> client.",
+    problemDescription:"One of the leading Healthcare RCM BPO has 500 new joining every month across different cities and has been facing challenges coping up with the manual day to day  employee on boarding tasks, which is not only time  consuming but repetitive in nature.",
+    solutionTitle:"Our Solution that make<br> Customer life Easy.",
+    solutionDescription:"Implemented RPA based automation RPA bots that performs",
+    solutions: [
+        {
+            title: "Read relevant documents",
+            desc: "The RPA bots are designed to read and extract information from various documents required during the onboarding process.",
+            img: '../../../../assets/ai/casestudy/img1.png'
+        },
+
+        {
+            title: "Create Email accounts",
+            desc: "RPA bots are programmed to automate the process of creating email accounts for new employees, ensuring a seamless and efficient setup.",
+            img: '../../../../assets/ai/casestudy/img2.png'
+        },
+
+        {
+            title: "Add employee to mailing",
+            desc: "RPA bots are programmed to automate the process of adding new employees to relevant mailing lists, ensuring that they receive all necessary communications from the start.",
+            img: '../../../../assets/ai/casestudy/img3.png'
+        },
+
+        {
+            title: "list Generate Phone",
+            desc: "RPA bots are programmed to automate the creation and updating of phone lists for new employees, ensuring accurate and up-to-date contact information.",
+            img: '../../../../assets/ai/casestudy/img4.png'
+        },{
+            title: "Extension Request Card",
+            desc: "RPA bots are programmed to automate the process of handling extension request cards for new employees, ensuring a streamlined and efficient workflow.",
+            img: '../../../../assets/ai/casestudy/img5.png'
+        },{
+            title: "Create AD accounts",
+            desc: "To automate the process of creating Active Directory (AD) accounts for new employees, ensuring quick and accurate setup.",
+            img: '../../../../assets/ai/casestudy/img6.png'
+        },{
+            title: "Scrap employment details and push to system",
+            desc: "To automate the extraction and integration of employment details from various sources, ensuring accurate and efficient data handling.",
+            img: '../../../../assets/ai/casestudy/img7.png'
+        },{
+            title: "Send employment and login details to employee",
+            desc: "To automate the process of sending employment and login details to new employees, ensuring timely and accurate communication.",
+            img: '../../../../assets/ai/casestudy/img8.png'
+        },
+
+    ],
+    impactTitle:"Our Solution That<br> impact on Product",
+    impacts: [
+        {
+            title: "5x",
+            desc: "Increase Process speed"
+        }
+        ,
+        {
+            title: "90%",
+            desc: "Accuracy"
+        }
+        ,
+        {
+            title: "130% of ROI",
+            desc: "Cost saving"
+        },
+        {
+            title: "90%",
+            desc: "Reduced cycle time"
+        },
+    ],
 }

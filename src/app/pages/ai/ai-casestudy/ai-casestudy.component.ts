@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import AOS from 'aos';
+import { ApiService } from 'src/app/shared/api/api.service';
+import { DataService } from 'src/app/shared/api/data.service';
 
 @Component({
   selector: 'app-ai-casestudy',
@@ -49,12 +52,18 @@ export class AiCasestudyComponent implements OnInit{
       title:'Send employment and login details to employee',
       subTitle:'To automate the process of sending employment and login details to new employees, ensuring timely and accurate communication.',
     },
-  ]
+  ];
+  aiCaseStudy:any;
 
+  constructor(private api: ApiService, private dataService: DataService, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
     AOS.init({
       duration: 2000,
-    })
+    });
+    this.route.data.subscribe((data: any) => {
+      this.aiCaseStudy = data.services.services;
+      console.log(this.aiCaseStudy);
+    });
   }
 }

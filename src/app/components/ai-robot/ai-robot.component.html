@@ -192,7 +192,8 @@
         </div>
         <div class="what-we-do w-100 h-100 mt-lg-5 container" data-aos="zoom-in">
             <div class="row w-100 h-100 justify-content-center gap-2">
-                <div *ngFor="let data of ourAIServices" data-aos="zoom-out"
+                <ng-container  *ngFor="let data of ourAIServices">
+                    <div data-aos="zoom-out"routerLink="{{data?.link || '/artificial-intelligence'}}"
                     style="box-shadow:0px 0px 1px black;border-radius:10px;"
                     [ngStyle]="{background:isDarkTheme?'#111111':'#ECF0FF'}"
                     class=" col-lg-3 col-6 ai-data2 pt-lg-5 px-lg-5 pb-lg-3 d-flex  align-items-center justify-content-around flex-column">
@@ -203,6 +204,7 @@
                         <h3 class=" fw-lighter text-capitalize">{{data.title}}</h3>
                     </div>
                 </div>
+                </ng-container>
             </div>
         </div>
 

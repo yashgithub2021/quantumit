@@ -129,7 +129,7 @@ export class InnerblogComponent implements OnInit {
   } 
   prev() {
     if(this.nextBlogCount==0){
-      this.nextBlogCount=this.blogs;
+      this.nextBlogCount=0;
     }
     else if(this.nextBlogCount>0 && this.nextBlogCount<=this.blogs.length-1){
       this.nextBlogCount--;

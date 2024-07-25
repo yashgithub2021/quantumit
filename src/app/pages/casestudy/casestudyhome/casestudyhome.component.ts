@@ -43,7 +43,13 @@ export class CasestudyhomeComponent implements OnInit {
       portfolioImage: '../../../../assets/casestudybanner/AI.png',
       link: '/ai/casestudy',
       projectName:'Capsule Endoscopy'
-    }
+    },
+    {
+      name: "HR Employee On Boarding",
+      portfolioImage: '../../../../assets/casestudybanner/ai/UR DRIVER3.png',
+      link: '/ai/ai-casestudy/HR-Employee-On-Boarding',
+      projectName:''
+    },
   ]
   // loadingStatus: boolean = true;
   constructor(private api: ApiService, private elementRef: ElementRef) { }

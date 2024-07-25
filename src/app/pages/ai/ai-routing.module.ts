@@ -10,7 +10,9 @@ const routes: Routes = [
     path: 'casestudy', component: CasestudyComponent
   },
   {
-    path: 'ai-casestudy', component: AiCasestudyComponent
+    path: 'ai-casestudy/:id', component: AiCasestudyComponent, resolve: {
+      services: DataService 
+    }
   },
   {
     path: ':id', component: ServiceComponent, resolve: {

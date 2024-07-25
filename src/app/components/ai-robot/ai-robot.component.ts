@@ -106,35 +106,35 @@ export class AiRobotComponent implements OnInit {
     {
       img: '../../../assets/services/AI_service/aiservice/img1.png',
       title: 'AI Development',
-      link: 'Ai-Development'
+      link: '/ai/Ai-Development'
     }, {
       img: '../../../assets/services/AI_service/aiservice/img2.png',
       title: 'AI Consulting',
-      link: 'Ai-Consulting'
+      // link: 'Ai-Consulting'
     }, {
       img: '../../../assets/services/AI_service/aiservice/img3.png',
       title: 'AI As A Service',
-      link: 'Ai-As-A-Service'
+      // link: 'Ai-As-A-Service'
     }, {
       img: '../../../assets/services/AI_service/aiservice/img4.png',
       title: 'hire Action Transformer Developer',
-      link: 'Hire-Action-Transformer-Developer'
+      // link: 'Hire-Action-Transformer-Developer'
     }, {
       img: '../../../assets/services/AI_service/aiservice/img5.png',
       title: 'AI Agent Development',
-      link: 'Ai-Agent-Development'
+      // link: 'Ai-Agent-Development'
     }, {
       img: '../../../assets/services/AI_service/aiservice/img6.png',
       title: 'MLOps Consulting service',
-      link: 'MLOps-Consulting-service'
+      // link: 'MLOps-Consulting-service'
     }, {
       img: '../../../assets/services/AI_service/aiservice/img7.png',
       title: 'Enterprise AI Development',
-      link: 'Enterprise-Ai-Development'
+      // link: 'Enterprise-Ai-Development'
     }, {
       img: '../../../assets/services/AI_service/aiservice/img8.png',
       title: 'AI Chatbot Development Co.',
-      link: 'Ai-Chatbot-Development-Co'
+      // link: 'Ai-Chatbot-Development-Co'
     }
   ]
 
