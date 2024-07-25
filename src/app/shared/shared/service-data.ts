@@ -2,8 +2,8 @@ export const androidService = {
     title1: "Android App",
     title2: "Development Solutions",
     img1: "../../../../assets/services/android/img1.png",
-    metaTitle:"Android App Development Company | Android App Development Agency",
-    metaDescription:"Quantum IT Innovation: Leading Android app development agency offering top-notch custom Android app development services. Transform your ideas with our expert team today!",
+    metaTitle: "Android App Development Company | Android App Development Agency",
+    metaDescription: "Quantum IT Innovation: Leading Android app development agency offering top-notch custom Android app development services. Transform your ideas with our expert team today!",
     // img2: "../../../../assets/services/ios_android/img1.jpg",
     descriptionOne: [
         "Our Android app development services offer a comprehensive solution for businesses seeking to establish a strong presence on the Android platform. With the widespread adoption of Android devices worldwide, having a customized mobile application tailored to this ecosystem is essential for reaching and engaging with a diverse audience.",
@@ -59,25 +59,25 @@ export const androidService = {
             img: '../../../../assets/mobile/service/mgd.svg'
         },
     ],
-    ourProcessTitle:'Android app Development company',
-    ourProcessDesc:[
+    ourProcessTitle: 'Android app Development company',
+    ourProcessDesc: [
         {
-            title:"Looking for the best android app development company? Look no further than Quantum IT Innovation. As a leading android app development agency, we specialize in creating innovative, high-performance applications tailored to your specific needs. Our team of expert developers is skilled in custom android app development, ensuring that your app stands out in the crowded marketplace."
+            title: "Looking for the best android app development company? Look no further than Quantum IT Innovation. As a leading android app development agency, we specialize in creating innovative, high-performance applications tailored to your specific needs. Our team of expert developers is skilled in custom android app development, ensuring that your app stands out in the crowded marketplace."
         },
         {
-            title:"At Quantum IT Innovation, we understand that every business has unique requirements. That's why we offer custom android app development services that are designed to meet your individual goals and objectives. Whether you're looking to develop a new app from scratch or improve an existing one, our team has the expertise to deliver top-notch solutions."
-        },{
-            title:"Why choose us? Our android app development company prides itself on delivering high-quality apps on time and within budget. We use the latest technologies and best practices to ensure your app is not only functional but also user-friendly and engaging."
-        },{
-            title:"Partner with Quantum IT Innovation, a trusted android app development agency, and take the first step towards transforming your app idea into reality. Contact us today to learn more about how we can help you achieve your business goals through exceptional custom android app development services."
+            title: "At Quantum IT Innovation, we understand that every business has unique requirements. That's why we offer custom android app development services that are designed to meet your individual goals and objectives. Whether you're looking to develop a new app from scratch or improve an existing one, our team has the expertise to deliver top-notch solutions."
+        }, {
+            title: "Why choose us? Our android app development company prides itself on delivering high-quality apps on time and within budget. We use the latest technologies and best practices to ensure your app is not only functional but also user-friendly and engaging."
+        }, {
+            title: "Partner with Quantum IT Innovation, a trusted android app development agency, and take the first step towards transforming your app idea into reality. Contact us today to learn more about how we can help you achieve your business goals through exceptional custom android app development services."
         },
     ],
-    ourProcessImg:[
+    ourProcessImg: [
         {
-            img3:'../../../../assets/services/android/img3.png'
+            img3: '../../../../assets/services/android/img3.png'
         },
         {
-            img4:'../../../../assets/services/android/img4.png'
+            img4: '../../../../assets/services/android/img4.png'
         }
     ],
     methodologyBtnTitle: "Our Methodologies",
@@ -104,8 +104,8 @@ export const androidService = {
 export const iOsService = {
     title1: "Crafting Exceptional",
     title2: "iOS Experiences",
-    metaTitle:"IOS App Development Company | IOS App Development Services",
-    metaDescription:"Quantum IT Innovation offers top-tier iOS app development services. As a leading iOS app development company and agency, we deliver innovative, customized iphone app solutions.",
+    metaTitle: "IOS App Development Company | IOS App Development Services",
+    metaDescription: "Quantum IT Innovation offers top-tier iOS app development services. As a leading iOS app development company and agency, we deliver innovative, customized iphone app solutions.",
     img1: "../../../../assets/services/ios_dev/img1.jpg",
     // img2: "../../../../assets/services/ios_android/img4.jpg",
     descriptionOne: [
@@ -163,25 +163,25 @@ export const iOsService = {
             img: '../../../../assets/mobile/service/mgd.svg'
         },
     ],
-    ourProcessTitle:'iOS app Development company',
-    ourProcessDesc:[
+    ourProcessTitle: 'iOS app Development company',
+    ourProcessDesc: [
         {
-            title:"In the fast-paced world of technology, having a robust mobile presence is crucial. At Quantum IT Innovation, we specialize in providing top-notch iOS app development services that cater to your unique business needs. As a leading iOS app development agency, we are committed to transforming your ideas into innovative and user-friendly mobile applications."
+            title: "In the fast-paced world of technology, having a robust mobile presence is crucial. At Quantum IT Innovation, we specialize in providing top-notch iOS app development services that cater to your unique business needs. As a leading iOS app development agency, we are committed to transforming your ideas into innovative and user-friendly mobile applications."
         },
         {
-            title:"Our team of experts understands the intricacies of the iOS platform and leverages their extensive experience to deliver exceptional results. Whether you are a startup or an established business, our iOS app development company offers tailored solutions that enhance your digital presence and boost customer engagement."
-        },{
-            title:"From concept to deployment, we ensure every aspect of your app is meticulously crafted to perfection. Our comprehensive range of iOS app development services includes UI/UX design, custom app development, testing, and maintenance. We pride ourselves on our ability to deliver high-quality apps that not only meet but exceed client expectations."
-        },{
-            title:"Partner with Quantum IT Innovation, the premier iOS app development agency, and let us help you achieve your business goals with our cutting-edge iOS app development services. Contact us today to take the first step towards creating an outstanding mobile experience for your users."
+            title: "Our team of experts understands the intricacies of the iOS platform and leverages their extensive experience to deliver exceptional results. Whether you are a startup or an established business, our iOS app development company offers tailored solutions that enhance your digital presence and boost customer engagement."
+        }, {
+            title: "From concept to deployment, we ensure every aspect of your app is meticulously crafted to perfection. Our comprehensive range of iOS app development services includes UI/UX design, custom app development, testing, and maintenance. We pride ourselves on our ability to deliver high-quality apps that not only meet but exceed client expectations."
+        }, {
+            title: "Partner with Quantum IT Innovation, the premier iOS app development agency, and let us help you achieve your business goals with our cutting-edge iOS app development services. Contact us today to take the first step towards creating an outstanding mobile experience for your users."
         },
     ],
-    ourProcessImg:[
+    ourProcessImg: [
         {
-            img3:'../../../../assets/services/ios_dev/img3.png'
+            img3: '../../../../assets/services/ios_dev/img3.png'
         },
         {
-            img4:'../../../../assets/services/ios_dev/img4.png'
+            img4: '../../../../assets/services/ios_dev/img4.png'
         }
     ],
     methodologyBtnTitle: "Our Approach",
@@ -208,8 +208,8 @@ export const iOsService = {
 export const swiftAppDevelopment = {
     title1: "Transforming Businesses with",
     title2: "Swift App Development",
-    metaTitle:"App Development with Swift | Swift App Development",
-    metaDescription:"Explore expert Swift app development services at Quantum IT Innovation. We specialize in app development with Swift, delivering cutting-edge solutions globally.",
+    metaTitle: "App Development with Swift | Swift App Development",
+    metaDescription: "Explore expert Swift app development services at Quantum IT Innovation. We specialize in app development with Swift, delivering cutting-edge solutions globally.",
     img1: "../../../../assets/services/shift_app_dev/img1.jpg",
     img2: "../../../../assets/services/shift_app_dev/representation-user-experience-interface-design (2).jpg",
     descriptionOne: [
@@ -291,8 +291,8 @@ export const swiftAppDevelopment = {
 export const crossPlatformAppDevelopment = {
     title1: "Revolutionizing Cross Platform",
     title2: "App Development",
-    metaTitle:"Cross Platform App Development | Cross Platform Mobile App Development",
-    metaDescription:"Explore Quantum IT Innovation for expert cross platform app development solutions. Enhance your reach with top-notch cross platform mobile app development services.",
+    metaTitle: "Cross Platform App Development | Cross Platform Mobile App Development",
+    metaDescription: "Explore Quantum IT Innovation for expert cross platform app development solutions. Enhance your reach with top-notch cross platform mobile app development services.",
     img1: "../../../../assets/services/cross_platform/img1.png",
     img2: "../../../../assets/services/cross_platform/cross-platform-app-d.jpg",
     descriptionOne: [
@@ -374,8 +374,8 @@ export const crossPlatformAppDevelopment = {
 export const iPadAppDevelopment = {
     title1: "Empowering Businesses with",
     title2: "iPad App Development",
-    metaTitle:"Ipad App Development Company | Custom Ipad App Development",
-    metaDescription:"Quantum IT Innovation: Your trusted iPad app development company for custom solutions. Expertise in custom iPad app development tailored to your business needs.",
+    metaTitle: "Ipad App Development Company | Custom Ipad App Development",
+    metaDescription: "Quantum IT Innovation: Your trusted iPad app development company for custom solutions. Expertise in custom iPad app development tailored to your business needs.",
     img1: "../../../../assets/services/ipad_app_deve/img1.png",
     // img2: "../../../../assets/services/ipad_app_deve/a833bbcd2062c2b407db5d92d2ed4824.jpg",
     descriptionOne: [
@@ -457,8 +457,8 @@ export const iPadAppDevelopment = {
 export const mobileGameDevelopment = {
     title1: "Exciting Adventures with",
     title2: "Mobile Game Development",
-    metaTitle:"Mobile Game Development Company | Mobile Game Companies",
-    metaDescription:"Explore Quantum IT Innovation, a leading mobile game development company. Trusted among mobile game companies for innovative solutions.",
+    metaTitle: "Mobile Game Development Company | Mobile Game Companies",
+    metaDescription: "Explore Quantum IT Innovation, a leading mobile game development company. Trusted among mobile game companies for innovative solutions.",
     img1: "../../../../assets/services/mobile_game_dev/img1.png",
     // img2: "../../../../assets/services/mobile_game_dev/person-is-taking-picture-city-while-holding-their-smartphone.jpg",
     descriptionOne: [
@@ -615,8 +615,8 @@ export const internetOfThings = {
 export const roboticProcessAutomation = {
     title1: "Emerging Technology of",
     title2: "Robotic Process Automation",
-    metaTitle:"Robotic Process Automation | RPA Automation | RPA Development",
-    metaDescription:"Discover expert robotic process automation (RPA) solutions with Quantum IT Innovation. We specialize in RPA automation and custom RPA development.",
+    metaTitle: "Robotic Process Automation | RPA Automation | RPA Development",
+    metaDescription: "Discover expert robotic process automation (RPA) solutions with Quantum IT Innovation. We specialize in RPA automation and custom RPA development.",
     img1: "../../../../assets/services/Robitic_process/rpa.jpg",
     img2: "../../../../assets/services/Robitic_process/By-adopting-Robotic-Process-Auto.jpg",
     descriptionOne: [
@@ -1626,23 +1626,23 @@ export const GenerativeAiDevelopment = {
     integrations: [
         {
             name: 'Cutting-Edge Technology',
-            img:'../../../../assets/ai/services/ai-development/EDGE TECHNOLOGY.svg'
+            img: '../../../../assets/ai/services/ai-development/EDGE TECHNOLOGY.svg'
         },
         {
             name: 'Expertise Across AI Technologies',
-            img:'../../../../assets/ai/services/ai-development/AI.svg'
+            img: '../../../../assets/ai/services/ai-development/AI.svg'
         },
         {
             name: 'Customised Industry Specific Solutions',
-            img:'../../../../assets/ai/services/ai-development/INDUTRY SOLUTIONS.svg'
+            img: '../../../../assets/ai/services/ai-development/INDUTRY SOLUTIONS.svg'
         },
         {
             name: 'Proven Track Record',
-            img:'../../../../assets/ai/services/ai-development/TRACK RECORD.svg'
+            img: '../../../../assets/ai/services/ai-development/TRACK RECORD.svg'
         },
         {
             name: 'Full Support',
-            img:'../../../../assets/ai/services/ai-development/SUPPORT.svg'
+            img: '../../../../assets/ai/services/ai-development/SUPPORT.svg'
         }
     ]
 
@@ -1724,27 +1724,27 @@ export const GenerativeAiIntegrationServices = {
     integrations: [
         {
             name: 'Healthcare',
-            img:'../../../../assets/ai/services/ai-generative-services/healthcare.svg'
+            img: '../../../../assets/ai/services/ai-generative-services/healthcare.svg'
         },
         {
             name: 'Finance',
-            img:'../../../../assets/ai/services/ai-generative-services/finance.svg'
+            img: '../../../../assets/ai/services/ai-generative-services/finance.svg'
         },
         {
             name: 'Retail',
-            img:'../../../../assets/ai/services/ai-generative-services/retail.svg'
+            img: '../../../../assets/ai/services/ai-generative-services/retail.svg'
         },
         {
             name: 'Manufacturing',
-            img:'../../../../assets/ai/services/ai-generative-services/manufacturing.svg'
+            img: '../../../../assets/ai/services/ai-generative-services/manufacturing.svg'
         },
         {
             name: 'Telecommunications',
-            img:'../../../../assets/ai/services/ai-generative-services/telecommunication.svg'
+            img: '../../../../assets/ai/services/ai-generative-services/telecommunication.svg'
         },
         {
             name: 'Education',
-            img:'../../../../assets/ai/services/ai-generative-services/education.svg'
+            img: '../../../../assets/ai/services/ai-generative-services/education.svg'
         },
     ]
 
@@ -1760,8 +1760,8 @@ export const GenerativeAiConsultingCompany = {
     descriptionTwo: [
         // "Make Quantum IT your reliable partner in using the transformative ability of generative AI to improve business operations and product offerings. Our inclusive generative AI consulting services consist of profound expertise in advanced AI technologies and adherence to ethical principles. This means that our AI solutions are not only state-of-the-art but also have the right attitude towards their use."
     ],
-    metaTitle:'genai Companies | Generative ai Consulting | Artificial Intelligence Consultant',
-    metaDescription:'Leading genai company offering generative AI consulting and artificial intelligence integration. Expert artificial intelligence consultants for innovative AI solutions.',
+    metaTitle: 'genai Companies | Generative ai Consulting | Artificial Intelligence Consultant',
+    metaDescription: 'Leading genai company offering generative AI consulting and artificial intelligence integration. Expert artificial intelligence consultants for innovative AI solutions.',
     serviceTitle: "Quantum IT’s Generative Artificial Intelligence Consulting Services",
     services: [
         {
@@ -1790,12 +1790,12 @@ export const GenerativeAiConsultingCompany = {
             title: "Data Engineering",
             desc: "In our data engineering expertise, we prepare your data for training models through various advanced tools and techniques. Our machine learning capacities, which we employ, help in developing meaningful customised models with capacities to undertake specific tasks like forecast analysis.",
             img: '../../../../assets/mobile/service/mat.svg'
-        },{
+        }, {
             num: "05.",
             title: "Custom LLM Development",
             desc: "We as one of the leading AI consulting firms, optimise your company-specific large language models (LLMs). We do this by selecting the appropriate pre-trained model, preparing your confidential data and then fine-tuning the system so that it gives responses that are specific to a particular domain.",
             img: '../../../../assets/mobile/service/mat.svg'
-        },{
+        }, {
             num: "06.",
             title: "Generative AI Solution Development",
             desc: "Our generative AI solutions include recommendation systems and due diligence research tools among others. Our AI co-pilots and agents also enable businesses to streamline their operations, have actionable insights and lead to unmatched efficiency in operation.",
@@ -1806,7 +1806,7 @@ export const GenerativeAiConsultingCompany = {
             title: "Generative AI Integration",
             desc: "We work closely with your organisation towards the successful integration of generative AI applications into existing systems as well as processes. This is our aim so that you minimise interruptions while increasing adoption of generative AI’s benefits thus making it possible for you to use its capabilities efficiently.",
             img: '../../../../assets/mobile/service/mat.svg'
-        },{
+        }, {
             num: "08.",
             title: "Maintenance and Support",
             desc: "As one of the best AI consulting firms, we ensure ongoing maintenance functionalities, performance optimization, and adaptability of artificial intelligence software applications as the company demands change. Our goal is to ensure your generative AI solutions are working at their peak by updating, fine-tuning algorithms or offering responsive technical support.",
@@ -1817,7 +1817,7 @@ export const GenerativeAiConsultingCompany = {
     our_steps_title: 'Our Approach to Generative AI Consulting',
     our_steps_description: '',
     our_steps: [
-        
+
     ],
     our_steps2: [
         {
@@ -1839,19 +1839,19 @@ export const GenerativeAiConsultingCompany = {
     integrations: [
         {
             name: 'Generative AI expertise',
-            img:'../../../../assets/ai/services/ai-consulting-company/generative ai.svg'
+            img: '../../../../assets/ai/services/ai-consulting-company/generative ai.svg'
         },
         {
             name: 'Personalised Approach',
-            img:'../../../../assets/ai/services/ai-consulting-company/personalized approch.svg'
+            img: '../../../../assets/ai/services/ai-consulting-company/personalized approch.svg'
         },
         {
             name: 'Support through the entire process',
-            img:'../../../../assets/ai/services/ai-consulting-company/support_2058768.svg'
+            img: '../../../../assets/ai/services/ai-consulting-company/support_2058768.svg'
         },
         {
             name: 'Ethical Generative AI Development',
-            img:'../../../../assets/ai/services/ai-consulting-company/ethical generative ai.svg'
+            img: '../../../../assets/ai/services/ai-consulting-company/ethical generative ai.svg'
         }
     ]
 
@@ -1885,7 +1885,7 @@ export const HireGenerativeAiEngineers = {
 
         {
             num: "03.",
-            title:"Development of Generative AI Solutions",
+            title: "Development of Generative AI Solutions",
             desc: "Our generative AI solutions are created to achieve your goals, whether you want to streamline intricate workflows, modify engagement strategies or improve customer-facing systems. Starting from conceptualization and design to extensive testing and deployment, our development process covers everything. we ensure that delivered solutions are solid, dependable and precisely meet your specific conditions.",
             img: '../../../../assets/mobile/service/mad.svg'
         },
@@ -1913,7 +1913,7 @@ export const HireGenerativeAiEngineers = {
     our_steps_title: 'Why Hire Quantum IT for Generative AI Engineers?',
     our_steps_description: '',
     our_steps: [
-        
+
     ],
     our_steps2: [
         {
@@ -2045,33 +2045,33 @@ export const serviceAiDevelopment = {
     integrations: [
         {
             name: 'Extensive Knowledge and Experience in AI',
-            img:'../../../../assets/ai/services/ai-development/EDGE TECHNOLOGY.svg'
+            img: '../../../../assets/ai/services/ai-development/EDGE TECHNOLOGY.svg'
         },
         {
             name: 'End-to-End AI Development',
-            img:'../../../../assets/ai/services/ai-development/AI.svg'
+            img: '../../../../assets/ai/services/ai-development/AI.svg'
         },
         {
             name: 'Security of Great Importance',
-            img:'../../../../assets/ai/services/ai-development/INDUTRY SOLUTIONS.svg'
+            img: '../../../../assets/ai/services/ai-development/INDUTRY SOLUTIONS.svg'
         },
         {
             name: 'AI Experts at Your Service',
-            img:'../../../../assets/ai/services/ai-development/TRACK RECORD.svg'
+            img: '../../../../assets/ai/services/ai-development/TRACK RECORD.svg'
         }
     ]
 }
 //for ai case study
 export const HREmployeeOnBoarding = {
     title: "HR Employee On Boarding",
-    img: "../../../../assets/ai/casestudy/banner2.png",
+    img: "../../../../assets/ai/casestudy/page/banner2.png",
     descriptionOne: [
         "Quantum IT’s AI development services are aimed at optimising your business potential, making workflows smoother and operations more efficient. We cover all segments of AI starting with consultations on how it works ranging to development of custom models for businesses with integration. Our ability in tuning base models such as GPT, Llama, PaLM, Mistral, Gemini etc., helps us design unique domain tailored models to satisfy all your needs."
     ],
     problemTitle: "Challenges Faced by <br> client.",
-    problemDescription:"One of the leading Healthcare RCM BPO has 500 new joining every month across different cities and has been facing challenges coping up with the manual day to day  employee on boarding tasks, which is not only time  consuming but repetitive in nature.",
-    solutionTitle:"Our Solution that make<br> Customer life Easy.",
-    solutionDescription:"Implemented RPA based automation RPA bots that performs",
+    problemDescription: "One of the leading Healthcare RCM BPO has 500 new joining every month across different cities and has been facing challenges coping up with the manual day to day  employee on boarding tasks, which is not only time  consuming but repetitive in nature.",
+    solutionTitle: "Our Solution that make<br> Customer life Easy.",
+    solutionDescription: "Implemented RPA based automation RPA bots that performs",
     solutions: [
         {
             title: "Read relevant documents",
@@ -2095,26 +2095,531 @@ export const HREmployeeOnBoarding = {
             title: "list Generate Phone",
             desc: "RPA bots are programmed to automate the creation and updating of phone lists for new employees, ensuring accurate and up-to-date contact information.",
             img: '../../../../assets/ai/casestudy/img4.png'
-        },{
+        }, {
             title: "Extension Request Card",
             desc: "RPA bots are programmed to automate the process of handling extension request cards for new employees, ensuring a streamlined and efficient workflow.",
             img: '../../../../assets/ai/casestudy/img5.png'
-        },{
+        }, {
             title: "Create AD accounts",
             desc: "To automate the process of creating Active Directory (AD) accounts for new employees, ensuring quick and accurate setup.",
             img: '../../../../assets/ai/casestudy/img6.png'
-        },{
+        }, {
             title: "Scrap employment details and push to system",
             desc: "To automate the extraction and integration of employment details from various sources, ensuring accurate and efficient data handling.",
             img: '../../../../assets/ai/casestudy/img7.png'
-        },{
+        }, {
             title: "Send employment and login details to employee",
             desc: "To automate the process of sending employment and login details to new employees, ensuring timely and accurate communication.",
             img: '../../../../assets/ai/casestudy/img8.png'
         },
 
     ],
-    impactTitle:"Our Solution That<br> impact on Product",
+    impactTitle: "Our Solution That<br> impact on Product",
+    impacts: [
+        {
+            title: "5x",
+            desc: "Increase Process speed"
+        }
+        ,
+        {
+            title: "90%",
+            desc: "Accuracy"
+        }
+        ,
+        {
+            title: "130% of ROI",
+            desc: "Cost saving"
+        },
+        {
+            title: "90%",
+            desc: "Reduced cycle time"
+        },
+    ],
+}
+export const HRRecruitment = {
+    title: "HR Recruitment",
+    img: "../../../../assets/ai/casestudy/page/hr_requirement.png",
+    descriptionOne: [
+        "This project focuses on using RPA and AI to automate HR recruitment, sourcing 400 resumes daily from Naukri. It reduces cycle time by 90%, boosts productivity by 500%, and achieves a 300% ROI in six months."
+    ],
+    problemTitle: "Challenges Faced by client.",
+    problemDescription: "One of the leading Healthcare RCM BPO has challenge with sourcing 400 resumes daily.<br>This involves searching candidates in Naukri, downloading resumes and finding relevant resumes based on JD. The process was manually, repetitive and painful.",
+    solutionTitle: "Our Solution that make Customer life Easy.",
+    solutionDescription: "Implemented RPA and AI based solution to source the candidates from Naukri and find the relevant candidates based on JD. The Bots perform the following tasks,",
+    solutions: [
+        {
+            title: "Search the Naukri/Indeed based on supplied keyword",
+            desc: "To automate the process of searching for job candidates on platforms like Naukri and Indeed using specific keywords.",
+            img: '../../../../assets/ai/casestudy/img1.png'
+        },
+
+        {
+            title: "Download the right candidate profiles",
+            desc: "The process of downloading candidate profiles from job search platforms, ensuring efficient access to relevant information.",
+            img: '../../../../assets/ai/casestudy/img2.png'
+        },
+
+        {
+            title: "Match the candidate profiles with JD",
+            desc: "RPA bots automate the process of comparing candidate profiles with job descriptions, ensuring alignment of skills, qualifications, and experience criteria specified in the JD. This helps streamline candidate selection and improves the efficiency of the recruitment process.",
+            img: '../../../../assets/ai/casestudy/img3.png'
+        },
+
+        {
+            title: "Find the relevant profiles with match % > 90%",
+            desc: "RPA bots automate the task of identifying candidate profiles that closely match job requirements with a match percentage exceeding 90%. This ensures efficient screening and selection of highly suitable candidates for the specified roles.",
+            img: '../../../../assets/ai/casestudy/img4.png'
+        }, {
+            title: "Send the selected profiles to Recruiters",
+            desc: "RPA bots streamline the process of sending carefully selected candidate profiles directly to recruiters, ensuring swift access to potential hires who closely match job requirements.",
+            img: '../../../../assets/ai/casestudy/img5.png'
+        }
+    ],
+    impactTitle: "Our Solution That impact on Product",
+    impacts: [
+        {
+            title: "5x",
+            desc: "Increase Process speed"
+        }
+        ,
+        {
+            title: "90%",
+            desc: "Accuracy"
+        }
+        ,
+        {
+            title: "130% of ROI",
+            desc: "Cost saving"
+        },
+        {
+            title: "90%",
+            desc: "Reduced cycle time"
+        },
+    ],
+}
+export const PurchaseOrder = {
+    title: "HR Employee On Boarding",
+    img: "../../../../assets/ai/casestudy/banner2.png",
+    descriptionOne: [
+        "Quantum IT’s AI development services are aimed at optimising your business potential, making workflows smoother and operations more efficient. We cover all segments of AI starting with consultations on how it works ranging to development of custom models for businesses with integration. Our ability in tuning base models such as GPT, Llama, PaLM, Mistral, Gemini etc., helps us design unique domain tailored models to satisfy all your needs."
+    ],
+    problemTitle: "Challenges Faced by <br> client.",
+    problemDescription: "One of the leading Healthcare RCM BPO has 500 new joining every month across different cities and has been facing challenges coping up with the manual day to day  employee on boarding tasks, which is not only time  consuming but repetitive in nature.",
+    solutionTitle: "Our Solution that make<br> Customer life Easy.",
+    solutionDescription: "Implemented RPA based automation RPA bots that performs",
+    solutions: [
+        {
+            title: "Read relevant documents",
+            desc: "The RPA bots are designed to read and extract information from various documents required during the onboarding process.",
+            img: '../../../../assets/ai/casestudy/img1.png'
+        },
+
+        {
+            title: "Create Email accounts",
+            desc: "RPA bots are programmed to automate the process of creating email accounts for new employees, ensuring a seamless and efficient setup.",
+            img: '../../../../assets/ai/casestudy/img2.png'
+        },
+
+        {
+            title: "Add employee to mailing",
+            desc: "RPA bots are programmed to automate the process of adding new employees to relevant mailing lists, ensuring that they receive all necessary communications from the start.",
+            img: '../../../../assets/ai/casestudy/img3.png'
+        },
+
+        {
+            title: "list Generate Phone",
+            desc: "RPA bots are programmed to automate the creation and updating of phone lists for new employees, ensuring accurate and up-to-date contact information.",
+            img: '../../../../assets/ai/casestudy/img4.png'
+        }, {
+            title: "Extension Request Card",
+            desc: "RPA bots are programmed to automate the process of handling extension request cards for new employees, ensuring a streamlined and efficient workflow.",
+            img: '../../../../assets/ai/casestudy/img5.png'
+        }, {
+            title: "Create AD accounts",
+            desc: "To automate the process of creating Active Directory (AD) accounts for new employees, ensuring quick and accurate setup.",
+            img: '../../../../assets/ai/casestudy/img6.png'
+        }, {
+            title: "Scrap employment details and push to system",
+            desc: "To automate the extraction and integration of employment details from various sources, ensuring accurate and efficient data handling.",
+            img: '../../../../assets/ai/casestudy/img7.png'
+        }, {
+            title: "Send employment and login details to employee",
+            desc: "To automate the process of sending employment and login details to new employees, ensuring timely and accurate communication.",
+            img: '../../../../assets/ai/casestudy/img8.png'
+        },
+
+    ],
+    impactTitle: "Our Solution That<br> impact on Product",
+    impacts: [
+        {
+            title: "5x",
+            desc: "Increase Process speed"
+        }
+        ,
+        {
+            title: "90%",
+            desc: "Accuracy"
+        }
+        ,
+        {
+            title: "130% of ROI",
+            desc: "Cost saving"
+        },
+        {
+            title: "90%",
+            desc: "Reduced cycle time"
+        },
+    ],
+}
+export const AccountPayable = {
+    title: "HR Employee On Boarding",
+    img: "../../../../assets/ai/casestudy/banner2.png",
+    descriptionOne: [
+        "Quantum IT’s AI development services are aimed at optimising your business potential, making workflows smoother and operations more efficient. We cover all segments of AI starting with consultations on how it works ranging to development of custom models for businesses with integration. Our ability in tuning base models such as GPT, Llama, PaLM, Mistral, Gemini etc., helps us design unique domain tailored models to satisfy all your needs."
+    ],
+    problemTitle: "Challenges Faced by <br> client.",
+    problemDescription: "One of the leading Healthcare RCM BPO has 500 new joining every month across different cities and has been facing challenges coping up with the manual day to day  employee on boarding tasks, which is not only time  consuming but repetitive in nature.",
+    solutionTitle: "Our Solution that make<br> Customer life Easy.",
+    solutionDescription: "Implemented RPA based automation RPA bots that performs",
+    solutions: [
+        {
+            title: "Read relevant documents",
+            desc: "The RPA bots are designed to read and extract information from various documents required during the onboarding process.",
+            img: '../../../../assets/ai/casestudy/img1.png'
+        },
+
+        {
+            title: "Create Email accounts",
+            desc: "RPA bots are programmed to automate the process of creating email accounts for new employees, ensuring a seamless and efficient setup.",
+            img: '../../../../assets/ai/casestudy/img2.png'
+        },
+
+        {
+            title: "Add employee to mailing",
+            desc: "RPA bots are programmed to automate the process of adding new employees to relevant mailing lists, ensuring that they receive all necessary communications from the start.",
+            img: '../../../../assets/ai/casestudy/img3.png'
+        },
+
+        {
+            title: "list Generate Phone",
+            desc: "RPA bots are programmed to automate the creation and updating of phone lists for new employees, ensuring accurate and up-to-date contact information.",
+            img: '../../../../assets/ai/casestudy/img4.png'
+        }, {
+            title: "Extension Request Card",
+            desc: "RPA bots are programmed to automate the process of handling extension request cards for new employees, ensuring a streamlined and efficient workflow.",
+            img: '../../../../assets/ai/casestudy/img5.png'
+        }, {
+            title: "Create AD accounts",
+            desc: "To automate the process of creating Active Directory (AD) accounts for new employees, ensuring quick and accurate setup.",
+            img: '../../../../assets/ai/casestudy/img6.png'
+        }, {
+            title: "Scrap employment details and push to system",
+            desc: "To automate the extraction and integration of employment details from various sources, ensuring accurate and efficient data handling.",
+            img: '../../../../assets/ai/casestudy/img7.png'
+        }, {
+            title: "Send employment and login details to employee",
+            desc: "To automate the process of sending employment and login details to new employees, ensuring timely and accurate communication.",
+            img: '../../../../assets/ai/casestudy/img8.png'
+        },
+
+    ],
+    impactTitle: "Our Solution That<br> impact on Product",
+    impacts: [
+        {
+            title: "5x",
+            desc: "Increase Process speed"
+        }
+        ,
+        {
+            title: "90%",
+            desc: "Accuracy"
+        }
+        ,
+        {
+            title: "130% of ROI",
+            desc: "Cost saving"
+        },
+        {
+            title: "90%",
+            desc: "Reduced cycle time"
+        },
+    ],
+}
+export const AccountReceivableRecovery = {
+    title: "HR Employee On Boarding",
+    img: "../../../../assets/ai/casestudy/banner2.png",
+    descriptionOne: [
+        "Quantum IT’s AI development services are aimed at optimising your business potential, making workflows smoother and operations more efficient. We cover all segments of AI starting with consultations on how it works ranging to development of custom models for businesses with integration. Our ability in tuning base models such as GPT, Llama, PaLM, Mistral, Gemini etc., helps us design unique domain tailored models to satisfy all your needs."
+    ],
+    problemTitle: "Challenges Faced by <br> client.",
+    problemDescription: "One of the leading Healthcare RCM BPO has 500 new joining every month across different cities and has been facing challenges coping up with the manual day to day  employee on boarding tasks, which is not only time  consuming but repetitive in nature.",
+    solutionTitle: "Our Solution that make<br> Customer life Easy.",
+    solutionDescription: "Implemented RPA based automation RPA bots that performs",
+    solutions: [
+        {
+            title: "Read relevant documents",
+            desc: "The RPA bots are designed to read and extract information from various documents required during the onboarding process.",
+            img: '../../../../assets/ai/casestudy/img1.png'
+        },
+
+        {
+            title: "Create Email accounts",
+            desc: "RPA bots are programmed to automate the process of creating email accounts for new employees, ensuring a seamless and efficient setup.",
+            img: '../../../../assets/ai/casestudy/img2.png'
+        },
+
+        {
+            title: "Add employee to mailing",
+            desc: "RPA bots are programmed to automate the process of adding new employees to relevant mailing lists, ensuring that they receive all necessary communications from the start.",
+            img: '../../../../assets/ai/casestudy/img3.png'
+        },
+
+        {
+            title: "list Generate Phone",
+            desc: "RPA bots are programmed to automate the creation and updating of phone lists for new employees, ensuring accurate and up-to-date contact information.",
+            img: '../../../../assets/ai/casestudy/img4.png'
+        }, {
+            title: "Extension Request Card",
+            desc: "RPA bots are programmed to automate the process of handling extension request cards for new employees, ensuring a streamlined and efficient workflow.",
+            img: '../../../../assets/ai/casestudy/img5.png'
+        }, {
+            title: "Create AD accounts",
+            desc: "To automate the process of creating Active Directory (AD) accounts for new employees, ensuring quick and accurate setup.",
+            img: '../../../../assets/ai/casestudy/img6.png'
+        }, {
+            title: "Scrap employment details and push to system",
+            desc: "To automate the extraction and integration of employment details from various sources, ensuring accurate and efficient data handling.",
+            img: '../../../../assets/ai/casestudy/img7.png'
+        }, {
+            title: "Send employment and login details to employee",
+            desc: "To automate the process of sending employment and login details to new employees, ensuring timely and accurate communication.",
+            img: '../../../../assets/ai/casestudy/img8.png'
+        },
+
+    ],
+    impactTitle: "Our Solution That<br> impact on Product",
+    impacts: [
+        {
+            title: "5x",
+            desc: "Increase Process speed"
+        }
+        ,
+        {
+            title: "90%",
+            desc: "Accuracy"
+        }
+        ,
+        {
+            title: "130% of ROI",
+            desc: "Cost saving"
+        },
+        {
+            title: "90%",
+            desc: "Reduced cycle time"
+        },
+    ],
+}
+export const InsuranceClaimProcessing = {
+    title: "HR Employee On Boarding",
+    img: "../../../../assets/ai/casestudy/banner2.png",
+    descriptionOne: [
+        "Quantum IT’s AI development services are aimed at optimising your business potential, making workflows smoother and operations more efficient. We cover all segments of AI starting with consultations on how it works ranging to development of custom models for businesses with integration. Our ability in tuning base models such as GPT, Llama, PaLM, Mistral, Gemini etc., helps us design unique domain tailored models to satisfy all your needs."
+    ],
+    problemTitle: "Challenges Faced by <br> client.",
+    problemDescription: "One of the leading Healthcare RCM BPO has 500 new joining every month across different cities and has been facing challenges coping up with the manual day to day  employee on boarding tasks, which is not only time  consuming but repetitive in nature.",
+    solutionTitle: "Our Solution that make<br> Customer life Easy.",
+    solutionDescription: "Implemented RPA based automation RPA bots that performs",
+    solutions: [
+        {
+            title: "Read relevant documents",
+            desc: "The RPA bots are designed to read and extract information from various documents required during the onboarding process.",
+            img: '../../../../assets/ai/casestudy/img1.png'
+        },
+
+        {
+            title: "Create Email accounts",
+            desc: "RPA bots are programmed to automate the process of creating email accounts for new employees, ensuring a seamless and efficient setup.",
+            img: '../../../../assets/ai/casestudy/img2.png'
+        },
+
+        {
+            title: "Add employee to mailing",
+            desc: "RPA bots are programmed to automate the process of adding new employees to relevant mailing lists, ensuring that they receive all necessary communications from the start.",
+            img: '../../../../assets/ai/casestudy/img3.png'
+        },
+
+        {
+            title: "list Generate Phone",
+            desc: "RPA bots are programmed to automate the creation and updating of phone lists for new employees, ensuring accurate and up-to-date contact information.",
+            img: '../../../../assets/ai/casestudy/img4.png'
+        }, {
+            title: "Extension Request Card",
+            desc: "RPA bots are programmed to automate the process of handling extension request cards for new employees, ensuring a streamlined and efficient workflow.",
+            img: '../../../../assets/ai/casestudy/img5.png'
+        }, {
+            title: "Create AD accounts",
+            desc: "To automate the process of creating Active Directory (AD) accounts for new employees, ensuring quick and accurate setup.",
+            img: '../../../../assets/ai/casestudy/img6.png'
+        }, {
+            title: "Scrap employment details and push to system",
+            desc: "To automate the extraction and integration of employment details from various sources, ensuring accurate and efficient data handling.",
+            img: '../../../../assets/ai/casestudy/img7.png'
+        }, {
+            title: "Send employment and login details to employee",
+            desc: "To automate the process of sending employment and login details to new employees, ensuring timely and accurate communication.",
+            img: '../../../../assets/ai/casestudy/img8.png'
+        },
+
+    ],
+    impactTitle: "Our Solution That<br> impact on Product",
+    impacts: [
+        {
+            title: "5x",
+            desc: "Increase Process speed"
+        }
+        ,
+        {
+            title: "90%",
+            desc: "Accuracy"
+        }
+        ,
+        {
+            title: "130% of ROI",
+            desc: "Cost saving"
+        },
+        {
+            title: "90%",
+            desc: "Reduced cycle time"
+        },
+    ],
+}
+export const InsuranceEligibilityVerification = {
+    title: "HR Employee On Boarding",
+    img: "../../../../assets/ai/casestudy/banner2.png",
+    descriptionOne: [
+        "Quantum IT’s AI development services are aimed at optimising your business potential, making workflows smoother and operations more efficient. We cover all segments of AI starting with consultations on how it works ranging to development of custom models for businesses with integration. Our ability in tuning base models such as GPT, Llama, PaLM, Mistral, Gemini etc., helps us design unique domain tailored models to satisfy all your needs."
+    ],
+    problemTitle: "Challenges Faced by <br> client.",
+    problemDescription: "One of the leading Healthcare RCM BPO has 500 new joining every month across different cities and has been facing challenges coping up with the manual day to day  employee on boarding tasks, which is not only time  consuming but repetitive in nature.",
+    solutionTitle: "Our Solution that make<br> Customer life Easy.",
+    solutionDescription: "Implemented RPA based automation RPA bots that performs",
+    solutions: [
+        {
+            title: "Read relevant documents",
+            desc: "The RPA bots are designed to read and extract information from various documents required during the onboarding process.",
+            img: '../../../../assets/ai/casestudy/img1.png'
+        },
+
+        {
+            title: "Create Email accounts",
+            desc: "RPA bots are programmed to automate the process of creating email accounts for new employees, ensuring a seamless and efficient setup.",
+            img: '../../../../assets/ai/casestudy/img2.png'
+        },
+
+        {
+            title: "Add employee to mailing",
+            desc: "RPA bots are programmed to automate the process of adding new employees to relevant mailing lists, ensuring that they receive all necessary communications from the start.",
+            img: '../../../../assets/ai/casestudy/img3.png'
+        },
+
+        {
+            title: "list Generate Phone",
+            desc: "RPA bots are programmed to automate the creation and updating of phone lists for new employees, ensuring accurate and up-to-date contact information.",
+            img: '../../../../assets/ai/casestudy/img4.png'
+        }, {
+            title: "Extension Request Card",
+            desc: "RPA bots are programmed to automate the process of handling extension request cards for new employees, ensuring a streamlined and efficient workflow.",
+            img: '../../../../assets/ai/casestudy/img5.png'
+        }, {
+            title: "Create AD accounts",
+            desc: "To automate the process of creating Active Directory (AD) accounts for new employees, ensuring quick and accurate setup.",
+            img: '../../../../assets/ai/casestudy/img6.png'
+        }, {
+            title: "Scrap employment details and push to system",
+            desc: "To automate the extraction and integration of employment details from various sources, ensuring accurate and efficient data handling.",
+            img: '../../../../assets/ai/casestudy/img7.png'
+        }, {
+            title: "Send employment and login details to employee",
+            desc: "To automate the process of sending employment and login details to new employees, ensuring timely and accurate communication.",
+            img: '../../../../assets/ai/casestudy/img8.png'
+        },
+
+    ],
+    impactTitle: "Our Solution That<br> impact on Product",
+    impacts: [
+        {
+            title: "5x",
+            desc: "Increase Process speed"
+        }
+        ,
+        {
+            title: "90%",
+            desc: "Accuracy"
+        }
+        ,
+        {
+            title: "130% of ROI",
+            desc: "Cost saving"
+        },
+        {
+            title: "90%",
+            desc: "Reduced cycle time"
+        },
+    ],
+}
+export const ClinicalDocumentProcessing = {
+    title: "HR Employee On Boarding",
+    img: "../../../../assets/ai/casestudy/banner2.png",
+    descriptionOne: [
+        "Quantum IT’s AI development services are aimed at optimising your business potential, making workflows smoother and operations more efficient. We cover all segments of AI starting with consultations on how it works ranging to development of custom models for businesses with integration. Our ability in tuning base models such as GPT, Llama, PaLM, Mistral, Gemini etc., helps us design unique domain tailored models to satisfy all your needs."
+    ],
+    problemTitle: "Challenges Faced by <br> client.",
+    problemDescription: "One of the leading Healthcare RCM BPO has 500 new joining every month across different cities and has been facing challenges coping up with the manual day to day  employee on boarding tasks, which is not only time  consuming but repetitive in nature.",
+    solutionTitle: "Our Solution that make<br> Customer life Easy.",
+    solutionDescription: "Implemented RPA based automation RPA bots that performs",
+    solutions: [
+        {
+            title: "Read relevant documents",
+            desc: "The RPA bots are designed to read and extract information from various documents required during the onboarding process.",
+            img: '../../../../assets/ai/casestudy/img1.png'
+        },
+
+        {
+            title: "Create Email accounts",
+            desc: "RPA bots are programmed to automate the process of creating email accounts for new employees, ensuring a seamless and efficient setup.",
+            img: '../../../../assets/ai/casestudy/img2.png'
+        },
+
+        {
+            title: "Add employee to mailing",
+            desc: "RPA bots are programmed to automate the process of adding new employees to relevant mailing lists, ensuring that they receive all necessary communications from the start.",
+            img: '../../../../assets/ai/casestudy/img3.png'
+        },
+
+        {
+            title: "list Generate Phone",
+            desc: "RPA bots are programmed to automate the creation and updating of phone lists for new employees, ensuring accurate and up-to-date contact information.",
+            img: '../../../../assets/ai/casestudy/img4.png'
+        }, {
+            title: "Extension Request Card",
+            desc: "RPA bots are programmed to automate the process of handling extension request cards for new employees, ensuring a streamlined and efficient workflow.",
+            img: '../../../../assets/ai/casestudy/img5.png'
+        }, {
+            title: "Create AD accounts",
+            desc: "To automate the process of creating Active Directory (AD) accounts for new employees, ensuring quick and accurate setup.",
+            img: '../../../../assets/ai/casestudy/img6.png'
+        }, {
+            title: "Scrap employment details and push to system",
+            desc: "To automate the extraction and integration of employment details from various sources, ensuring accurate and efficient data handling.",
+            img: '../../../../assets/ai/casestudy/img7.png'
+        }, {
+            title: "Send employment and login details to employee",
+            desc: "To automate the process of sending employment and login details to new employees, ensuring timely and accurate communication.",
+            img: '../../../../assets/ai/casestudy/img8.png'
+        },
+
+    ],
+    impactTitle: "Our Solution That<br> impact on Product",
     impacts: [
         {
             title: "5x",
