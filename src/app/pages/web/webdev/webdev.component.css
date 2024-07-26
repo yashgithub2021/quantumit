@@ -626,6 +626,7 @@ p {
         font-size: 12px;
         line-height: 18px;
     }
+    
 
     .project-container {
         height: 100% !important;
@@ -656,7 +657,7 @@ p {
         color: black !important;
     }
     .project{
-        height: 65vh;
+        height: 60vh;
     }
     .app-details-container .name{
         margin-top: 5px;

@@ -60,12 +60,38 @@ export class AboutComponent implements OnInit {
       heading: "social followers"
     },
   ]
+  sectionFourNums1 = [
+    {
+      num: "850 +",
+      heading: "Projects done",
+      currentNum: 0
+    },
+    {
+      num: "400+",
+      heading: "ACTIVE CLIENTS",
+      currentNum: 0
+    },
+    {
+      num: "10+",
+      heading: "glorious years",
+      currentNum: 0
+    },
+    {
+      num: "250+",
+      heading: "team advisors",
+      currentNum: 0
+    },
+    
+  ]
 
 
   ngOnInit(): void {
     this.getMembers()
     this.isDarkTheme = this.api.isDarkTheme();
-    this.themechange()
+    this.themechange();
+    this.sectionFourNums1.forEach(item => {
+      this.incrementNumber(item);
+    })
   }
 
   getMembers() {
@@ -79,5 +105,18 @@ export class AboutComponent implements OnInit {
     this.api.themeChanged.subscribe((isDarkTheme: boolean) => {
       this.isDarkTheme = isDarkTheme;
     });
+  }
+  incrementNumber(item: any) {
+    const targetNum = parseInt(item.num.replace('+', ''), 10);
+    const stepTime = 40; // milliseconds
+    const increment = Math.ceil(targetNum / 100) + 1; // Adjust as needed
+
+    const interval = setInterval(() => {
+      item.currentNum += increment;
+      if (item.currentNum >= targetNum) {
+        item.currentNum = targetNum;
+        clearInterval(interval);
+      }
+    }, stepTime);
   }
 }
