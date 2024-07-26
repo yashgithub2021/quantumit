@@ -11,6 +11,9 @@ import { DataService } from 'src/app/shared/api/data.service';
 })
 export class AiCasestudyComponent implements OnInit{
 
+  isDarkTheme!: boolean;
+
+
   aiSolution:any[]=[
     {
       img:'../../../../assets/ai/casestudy/img1.png',
@@ -61,9 +64,18 @@ export class AiCasestudyComponent implements OnInit{
     AOS.init({
       duration: 2000,
     });
+    this.isDarkTheme = this.api.isDarkTheme();
+    this.themechange();
+
+    console.log(this.isDarkTheme);
     this.route.data.subscribe((data: any) => {
       this.aiCaseStudy = data.services.services;
       console.log(this.aiCaseStudy);
+    });
+  }
+  themechange() {
+    this.api.themeChanged.subscribe((isDarkTheme: boolean) => {
+      this.isDarkTheme = isDarkTheme;
     });
   }
 }

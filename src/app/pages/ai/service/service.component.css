@@ -804,6 +804,9 @@
     .f3-container{
         width:100%!important;
     }
+    .text > .title > h4 {
+        white-space: unset;
+    }
 
 }
 

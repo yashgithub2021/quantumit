@@ -37,6 +37,7 @@ export class CasestudyhomeComponent implements OnInit {
       projectName:'Seanautic marine Inc'
     }
   ]
+  
   aiCaseStudy = [
     {
       name: "Artificial Intelligence",

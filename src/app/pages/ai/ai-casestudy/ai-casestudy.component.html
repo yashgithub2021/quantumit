@@ -27,10 +27,13 @@
             <img class="w-100" src="{{aiCaseStudy.img}}" alt="">
             <img class="position-absolute bottom-0 view-more d-none d-sm-block"
                 src="../.../../../../../assets/casestudybanner/view-more.jpg" alt="">
+
+            <!-- <img class="position-absolute bottom-0 view-more d-none d-sm-block"
+                src="../.../../../../../assets/casestudybanner/view_more2.png" alt=""*ngIf="!isDarkTheme"> -->
         </div>
     </div>
 </div>
-<div class="container frame-2">
+<div class="container frame-2" [ngStyle]="{background:isDarkTheme?'#070015':'white'}">
     <div class="pt-sm-5 pt-3">
         <div class="head w-100 h-100 d-flex flex-column align-items-center justify-content-center">
             <div class="d-flex flex-column flex-sm-row justify-content-between align-tiems-center">
@@ -53,12 +56,13 @@
 <div class="container-fluid p-0">
     <div class="svg-container">
         <div>
-            <img src="../../../../assets/ai/casestudy/banner3.png" alt="" >
+            <img src="../../../../assets/ai/casestudy/banner3.png" alt="" *ngIf="isDarkTheme">
+            <img src="../../../../assets/ai/casestudy/banner4.png" alt="" *ngIf="!isDarkTheme">
 
         </div>
     </div>
 </div>
-<div class="container-fluid frame-3">
+<div class="container-fluid frame-3" [ngStyle]="{background:isDarkTheme?'#070015':'#ECF0FF'}">
     <div class="">
         <div class="head w-100 h-100 d-flex flex-column align-items-center justify-content-center">
             <div class="button my-2 d-flex" data-aos="slide-up">
@@ -66,7 +70,7 @@
             </div>
 
             <div class="our-process my-2 " data-aos="slide-up">
-                <h1 class=" text-align-center  text-capitalize" >Our Solution that make<br> Customer life Easy. </h1>
+                <h1 class=" text-align-center  text-capitalize">Our Solution that make<br> Customer life Easy. </h1>
             </div>
 
             <div class="success-desc my-2 text-align-center" data-aos="slide-up">
@@ -76,7 +80,8 @@
     </div>
     <div class="container frame-4 pt-sm-5 pt-3">
         <ng-cotainer *ngFor="let solution of aiCaseStudy.solutions;let i=index;">
-            <div class="d-flex flex-column flex-sm-row justify-content-center justify-content-sm-between  align-items-center gap-sm-5 gap-3 mt-sm-5 mt-5" *ngIf="i%2==0">
+            <div class="d-flex flex-column flex-sm-row justify-content-center justify-content-sm-between  align-items-center gap-sm-5 gap-3 mt-sm-5 mt-5"
+                *ngIf="i%2==0">
                 <div class="img-container">
                     <img src="{{solution.img}}" alt="">
                 </div>
@@ -87,7 +92,8 @@
                     </div>
                 </div>
             </div>
-            <div class="d-flex flex-column flex-sm-row justify-content-center justify-content-sm-between align-items-center gap-sm-5 gap-3 mt-5" *ngIf="i%2!=0">
+            <div class="d-flex flex-column flex-sm-row justify-content-center justify-content-sm-between align-items-center gap-sm-5 gap-3 mt-5"
+                *ngIf="i%2!=0">
                 <div class="heading-container order-last order-sm-first">
                     <div>
                         <h1 class="heading  text-capitalize">{{solution.title}}</h1>
@@ -101,38 +107,40 @@
         </ng-cotainer>
     </div>
 </div>
-<div class="container-fluid frame-5 pt-sm-5 pt-3">
+<div class="container-fluid frame-5 pt-sm-5 pt-3" [ngStyle]="{background:isDarkTheme?'#070015':'#ECF0FF'}">
     <div class="container">
         <div class="head my-3 d-flex flex-column align-items-sm-start align-items-center justify-content-center ">
             <div class="d-flex justify-content-start align-tiems-center">
                 <div>
-                    <div class="button my-2 d-flex flex-row justify-content-center justify-content-sm-start" data-aos="slide-up">
+                    <div class="button my-2 d-flex flex-row justify-content-center justify-content-sm-start"
+                        data-aos="slide-up">
                         <button class="our-process-btn">Impact</button>
                     </div>
 
                     <div class="our-process my-2 " data-aos="slide-up">
-                        <h1 class=" text-sm-start text-center  text-capitalize">Our Solution That<br> impact on Product</h1>
+                        <h1 class=" text-sm-start text-center  text-capitalize">Our Solution That<br> impact on Product
+                        </h1>
                     </div>
                 </div>
             </div>
         </div>
         <div class="progress-container">
             <div class="progress-data-container">
-                <div class="progress-1">
+                <div class="progress-1 " [ngClass]="isDarkTheme?'bg-progress-dark':'bg-progress-light'">
                     <div class="data">
                         <h1>{{aiCaseStudy.impacts[0].title}}</h1>
                         <p>{{aiCaseStudy.impacts[0].desc}}</p>
                     </div>
                 </div>
-                <div class="progress-2">
+                <div class="progress-2" [ngClass]="isDarkTheme?'bg-progress-dark':'bg-progress-light'">
                     <div class="data">
                         <h1>{{aiCaseStudy.impacts[1].title}}</h1>
                         <p>{{aiCaseStudy.impacts[1].desc}}</p>
                     </div>
                 </div>
-                <div class="progress-3">
+                <div class="progress-3" [ngClass]="isDarkTheme?'bg-progress-dark':'bg-progress-light'">
                     <div class="data">
-                        <h1 >{{aiCaseStudy.impacts[2].title}}</h1>
+                        <h1>{{aiCaseStudy.impacts[2].title}}</h1>
                         <p>{{aiCaseStudy.impacts[2].desc}}</p>
                     </div>
                 </div>
