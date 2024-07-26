@@ -1626,23 +1626,28 @@ export const GenerativeAiDevelopment = {
     integrations: [
         {
             name: 'Cutting-Edge Technology',
-            img: '../../../../assets/ai/services/ai-development/EDGE TECHNOLOGY.svg'
+            img: '../../../../assets/ai/services/ai-development/EDGE TECHNOLOGY.svg',
+            img2: '../../../../assets/ai/services/ai-development/EDGE TECHNOLOGY.png',
         },
         {
             name: 'Expertise Across AI Technologies',
-            img: '../../../../assets/ai/services/ai-development/AI.svg'
+            img: '../../../../assets/ai/services/ai-development/AI.svg',
+            img2: '../../../../assets/ai/services/ai-development/AI.png',
         },
         {
             name: 'Customised Industry Specific Solutions',
-            img: '../../../../assets/ai/services/ai-development/INDUTRY SOLUTIONS.svg'
+            img: '../../../../assets/ai/services/ai-development/INDUTRY SOLUTIONS.svg',
+            img2: '../../../../assets/ai/services/ai-development/INDUTRY SOLUTIONS.png'
         },
         {
             name: 'Proven Track Record',
-            img: '../../../../assets/ai/services/ai-development/TRACK RECORD.svg'
+            img: '../../../../assets/ai/services/ai-development/TRACK RECORD.svg',
+            img2: '../../../../assets/ai/services/ai-development/TRACK RECORD.png'
         },
         {
             name: 'Full Support',
-            img: '../../../../assets/ai/services/ai-development/SUPPORT.svg'
+            img: '../../../../assets/ai/services/ai-development/SUPPORT.svg',
+            img2: '../../../../assets/ai/services/ai-development/SUPPORT.png'
         }
     ]
 
@@ -1724,27 +1729,33 @@ export const GenerativeAiIntegrationServices = {
     integrations: [
         {
             name: 'Healthcare',
-            img: '../../../../assets/ai/services/ai-generative-services/healthcare.svg'
+            img: '../../../../assets/ai/services/ai-generative-services/healthcare.svg',
+            img2:'../../../../assets/ai/services/ai-generative-services/healthcare.png'
         },
         {
             name: 'Finance',
-            img: '../../../../assets/ai/services/ai-generative-services/finance.svg'
+            img: '../../../../assets/ai/services/ai-generative-services/finance.svg',
+            img2:'../../../../assets/ai/services/ai-generative-services/finance.png'
         },
         {
             name: 'Retail',
-            img: '../../../../assets/ai/services/ai-generative-services/retail.svg'
+            img: '../../../../assets/ai/services/ai-generative-services/retail.svg',
+            img2:'../../../../assets/ai/services/ai-generative-services/retail.png'
         },
         {
             name: 'Manufacturing',
-            img: '../../../../assets/ai/services/ai-generative-services/manufacturing.svg'
+            img: '../../../../assets/ai/services/ai-generative-services/manufacturing.svg',
+            img2:'../../../../assets/ai/services/ai-generative-services/manufacturing.png'
         },
         {
             name: 'Telecommunications',
-            img: '../../../../assets/ai/services/ai-generative-services/telecommunication.svg'
+            img: '../../../../assets/ai/services/ai-generative-services/telecommunication.svg',
+            img2:'../../../../assets/ai/services/ai-generative-services/telecommunication.png'
         },
         {
             name: 'Education',
-            img: '../../../../assets/ai/services/ai-generative-services/education.svg'
+            img: '../../../../assets/ai/services/ai-generative-services/education.svg',
+            img2:'../../../../assets/ai/services/ai-generative-services/education.png'
         },
     ]
 
@@ -1839,19 +1850,23 @@ export const GenerativeAiConsultingCompany = {
     integrations: [
         {
             name: 'Generative AI expertise',
-            img: '../../../../assets/ai/services/ai-consulting-company/generative ai.svg'
+            img: '../../../../assets/ai/services/ai-consulting-company/generative ai.svg',
+            img2: '../../../../assets/ai/services/ai-consulting-company/generative ai.png'
         },
         {
             name: 'Personalised Approach',
-            img: '../../../../assets/ai/services/ai-consulting-company/personalized approch.svg'
+            img: '../../../../assets/ai/services/ai-consulting-company/personalized approch.svg',
+            img2: '../../../../assets/ai/services/ai-consulting-company/personalized approch.png',
         },
         {
             name: 'Support through the entire process',
-            img: '../../../../assets/ai/services/ai-consulting-company/support_2058768.svg'
+            img: '../../../../assets/ai/services/ai-consulting-company/support_2058768.svg',
+            img2: '../../../../assets/ai/services/ai-consulting-company/support_2058768.png',
         },
         {
             name: 'Ethical Generative AI Development',
-            img: '../../../../assets/ai/services/ai-consulting-company/ethical generative ai.svg'
+            img: '../../../../assets/ai/services/ai-consulting-company/ethical generative ai.svg',
+            img2: '../../../../assets/ai/services/ai-consulting-company/ethical generative ai.png',
         }
     ]
 
@@ -2045,19 +2060,23 @@ export const serviceAiDevelopment = {
     integrations: [
         {
             name: 'Extensive Knowledge and Experience in AI',
-            img: '../../../../assets/ai/services/ai-development/EDGE TECHNOLOGY.svg'
+            img: '../../../../assets/ai/services/service-ai-development/knowledge_2158451 (1).png',
+            img2: '../../../../assets/ai/services/service-ai-development/knowledge_2158451.png',
         },
         {
             name: 'End-to-End AI Development',
-            img: '../../../../assets/ai/services/ai-development/AI.svg'
+            img: '../../../../assets/ai/services/service-ai-development/solutions_2025097 (1).png',
+            img2: '../../../../assets/ai/services/service-ai-development/solutions_2025097.png',
         },
         {
             name: 'Security of Great Importance',
-            img: '../../../../assets/ai/services/ai-development/INDUTRY SOLUTIONS.svg'
+            img: '../../../../assets/ai/services/service-ai-development/security_1674738 (1).png',
+            img2: '../../../../assets/ai/services/service-ai-development/security_1674738.png',
         },
         {
             name: 'AI Experts at Your Service',
-            img: '../../../../assets/ai/services/ai-development/TRACK RECORD.svg'
+            img: '../../../../assets/ai/services/service-ai-development/algorithm_17335658 (1).png',
+            img2: '../../../../assets/ai/services/service-ai-development/algorithm_17335658.png',
         }
     ]
 }
