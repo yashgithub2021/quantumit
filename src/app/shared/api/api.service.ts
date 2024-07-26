@@ -1,4 +1,4 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpParams } from '@angular/common/http';
 import { EventEmitter, Injectable } from '@angular/core';
 
 const YOUR_ACCESS_KEY='9yykUwGxYq0OK9WtmLoup4edvRRSSAkA';
@@ -9,6 +9,7 @@ const YOUR_ACCESS_KEY='9yykUwGxYq0OK9WtmLoup4edvRRSSAkA';
 export class ApiService {
   baseUrl = 'https://quantumit-backend.onrender.com/'
   private darkTheme = true;
+
   themeChanged: EventEmitter<boolean> = new EventEmitter<boolean>();
 
   constructor(private http: HttpClient) { }
@@ -42,7 +43,7 @@ export class ApiService {
   }
 
   getBlogDetails(id: any) {
-    return this.http.get(`${this.baseUrl}api/blogs/blog?id=${id}`)
+    return this.http.get(`${this.baseUrl}api/blogs/blog?id=${id}`);
   }
 
   getContributors() {
@@ -62,7 +63,7 @@ export class ApiService {
   }
 
   getProjectsById(id: any) {
-    return this.http.get(`${this.baseUrl}api/projects/project?id=${id}`)
+    return this.http.get(`${this.baseUrl}api/projects/project?id=${id}`);
   }
 
   getFAQ() {
@@ -79,7 +80,12 @@ export class ApiService {
   getLocation(ipData:any){
     return this.http.get<any>(`https://ipinfo.io/${ipData.ip}/json?token=61247512e441c3`);
   }
-  // getCategoryOfBlogs(){
-  //   return this.http.get<any>(`${this.baseUrl}api/blogs/blogsByCategory`);
-  // }
+  getCategoryOfBlogs(){
+    return this.http.get<any>(`${this.baseUrl}api/categories/getCategories`);
+  }
+  getBlogsByCategory(category:string){
+    let body={category}
+    return this.http.get<any>(`${this.baseUrl}api/blogs/blogsByCategory`,{params:body});
+
+  }
 }
