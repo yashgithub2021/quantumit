@@ -137,6 +137,13 @@
     .list-check{
         font-size: 12px;
     }
+    .list-check {
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .list-group-item{
+        font-size: 12px;
+    }
     .app-details > .details > .detail:not(:last-child) {
         border-right: none;
         padding-right:0px;

@@ -69,11 +69,11 @@
                 </div>
             </div>
 
-            <div class="what-we-do w-100 h-100 mt-lg-5" data-aos="zoom-in">
+            <div class="what-we-do w-100 h-100 mt-lg-5 " data-aos="zoom-in">
                 <div class="row w-100 h-100 ">
                     <div *ngFor="let data of aiService" data-aos="zoom-out"
                         [ngStyle]="{background:isDarkTheme?'#111111':'#ECF0FF'}"
-                        class=" col-lg-4 col-6 ai-data pt-lg-5 px-lg-5 pb-lg-3 d-flex  align-items-center justify-content-around flex-column">
+                        class=" col-lg-4 col-6 ai-data pt-lg-5 px-lg-5 pb-lg-3 d-flex gap-3 align-items-center justify-content-center flex-column">
                         <div class="image image1">
                             <img [src]="data.img" alt="">
                         </div>
@@ -86,7 +86,7 @@
         </div>
     </div>
 
-    <div class="frame-3 container p-0 p-lg-5 mb-2">
+    <div class="frame-3 container p-0 p-lg-5 sm:mb-2">
         <div class="service-section mt-3">
             <div class="head w-100 h-100 d-flex flex-column align-items-center justify-content-center">
                 <div class="button my-2" data-aos="slide-up">
@@ -158,9 +158,10 @@
         <div class="what-we-do w-100 h-100 mt-lg-5 container" data-aos="zoom-in">
             <div class="row w-100 h-100 gap-2 justify-content-center mb-4">
                 <ng-container *ngFor="let data of ourAIGenerative;let i=index;">
-                    <div routerLink="{{data?.link || '/artificial-intelligence'}}" data-aos="zoom-out" style="box-shadow:0px 0px 1px black;border-radius:10px;"
+                    <div routerLink="{{data?.link || '/artificial-intelligence'}}" data-aos="zoom-out"
+                        style="box-shadow:0px 0px 1px black;border-radius:10px;"
                         [ngStyle]="{background:isDarkTheme?'#111111':'#ECF0FF'}"
-                        class=" col-lg-3 col-sm-4 col-6 ai-data2 pt-lg-5 px-lg-5 pb-lg-3 d-flex  align-items-center justify-content-around flex-column">
+                        class=" col-lg-3 col-sm-4 col-6 ai-data2 pt-lg-5 px-lg-5 pb-lg-3 d-flex gap-3 align-items-center justify-content-center flex-column">
                         <div class="image" *ngIf="i!=9">
                             <img [src]="data.img" alt="" style="height:40px;">
                         </div>
@@ -177,7 +178,7 @@
         </div>
 
     </div>
-    <div class="container my-lg-5">
+    <div class="container my-lg-5 my-3">
         <div class="container d-flex align-items-center justify-content-center">
             <div class="text w-100 d-flex flex-column  justify-content-center align-items-center">
                 <div class="button" data-aos="zoom-in">
@@ -192,25 +193,25 @@
         </div>
         <div class="what-we-do w-100 h-100 mt-lg-5 container" data-aos="zoom-in">
             <div class="row w-100 h-100 justify-content-center gap-2">
-                <ng-container  *ngFor="let data of ourAIServices">
-                    <div data-aos="zoom-out"routerLink="{{data?.link || '/artificial-intelligence'}}"
-                    style="box-shadow:0px 0px 1px black;border-radius:10px;"
-                    [ngStyle]="{background:isDarkTheme?'#111111':'#ECF0FF'}"
-                    class=" col-lg-3 col-6 ai-data2 pt-lg-5 px-lg-5 pb-lg-3 d-flex  align-items-center justify-content-around flex-column">
-                    <div class="image">
-                        <img [src]="data.img" alt="" style="height:40px;">
+                <ng-container *ngFor="let data of ourAIServices">
+                    <div data-aos="zoom-out" routerLink="{{data?.link || '/artificial-intelligence'}}"
+                        style="box-shadow:0px 0px 1px black;border-radius:10px;"
+                        [ngStyle]="{background:isDarkTheme?'#111111':'#ECF0FF'}"
+                        class=" col-lg-3 col-6 ai-data2 pt-lg-5 px-lg-5 pb-lg-3 d-flex gap-3 align-items-center justify-content-center flex-column">
+                        <div class="image">
+                            <img [src]="data.img" alt="" style="height:40px;">
+                        </div>
+                        <div class="title w-100 text-center">
+                            <h3 class=" fw-lighter text-capitalize">{{data.title}}</h3>
+                        </div>
                     </div>
-                    <div class="title w-100 text-center">
-                        <h3 class=" fw-lighter text-capitalize">{{data.title}}</h3>
-                    </div>
-                </div>
                 </ng-container>
             </div>
         </div>
 
     </div>
 
-    <div class="frame-3 container-fluid mt-4 my-lg-5">
+    <div class="frame-3 container-fluid mt-5 my-lg-5">
         <div class="container d-flex align-items-center justify-content-center">
             <div class="text w-100 d-flex flex-column  justify-content-center align-items-center">
                 <div class="button" data-aos="zoom-in">

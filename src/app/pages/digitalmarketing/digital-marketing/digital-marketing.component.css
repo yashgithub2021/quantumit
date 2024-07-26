@@ -777,7 +777,7 @@ td h4 {
     }
 
     .learnMore {
-        padding: 20px;
+        padding-bottom: 20px;
     }
 
     .our-marketing-btn {
@@ -792,5 +792,8 @@ td h4 {
     .sub-heading {
         font-size: 14px;
         line-height: 25px;
+    }
+    .slider .slide img {
+        height: 40px;
     }
 }
