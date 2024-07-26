@@ -132,7 +132,7 @@
 
 .frame-5 {
     background: #070015;
-    height: 150vh;
+    height: 1000px;
     position: relative;
 
 }
@@ -162,39 +162,39 @@
 
 .frame-5 .progress-data-container .progress-1 {
     
-    width: 230px;
-    height: 230px;
+    width: 350px;
+    height: 350px;
     position: absolute;
-    left: 5%;
-    top: 50%;
+    left: 10%;
+    top: 40%;
 
 }
 
 .frame-5 .progress-data-container .progress-2 {
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     position: absolute;
-    top: 30%;
-    left: 55%;
+    top: 15%;
+    left: 50%;
 }
 
 .frame-5 .progress-data-container .progress-3 {
-    width: 330px;
-    height: 330px;
+    width: 430px;
+    height: 430px;
     position: absolute;
     bottom: 1%;
-    left: 30%;
+    left: 40%;
 
 }
 
 .frame-5 .progress-data-container .progress-4 {
-    width: 190px;
-    height: 190px;
+    width: 220px;
+    height: 220px;
     border-radius: 100%;
     background: linear-gradient(90deg, #43BAFF 0%, #7141B1 100%);
     position: absolute;
-    right: 5%;
-    top: 70%;
+    right: 10%;
+    top: 40%;
 }
 
 .progress-data-container .data {
@@ -229,6 +229,45 @@
     height: 300px;
 
 }
+@media (max-width:1100px){
+    .frame-5 .progress-data-container .progress-1 {
+    
+        width: 300px;
+        height: 300px;
+        position: absolute;
+        left: 10%;
+        top: 40%;
+    
+    }
+    
+    .frame-5 .progress-data-container .progress-2 {
+        width: 230px;
+        height: 230px;
+        position: absolute;
+        top: 20%;
+        left: 50%;
+    }
+    
+    .frame-5 .progress-data-container .progress-3 {
+        width: 370px;
+        height: 370px;
+        position: absolute;
+        bottom: 1%;
+        left: 40%;
+    
+    }
+    
+    .frame-5 .progress-data-container .progress-4 {
+        width: 220px;
+        height: 220px;
+        border-radius: 100%;
+        background: linear-gradient(90deg, #43BAFF 0%, #7141B1 100%);
+        position: absolute;
+        right: 10%;
+        top: 40%;
+    }
+    
+}
 
 @media (max-width:1024px) {
 
@@ -244,6 +283,46 @@
         font-weight: 700;
         text-align: center;
     }
+    .frame-5 .progress-data-container .progress-1 {
+    
+        width: 250px;
+        height: 250px;
+        position: absolute;
+        left: 5%;
+        top: 45%;
+    
+    }
+    
+    .frame-5 .progress-data-container .progress-2 {
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        top: 30%;
+        left: 45%;
+    }
+    
+    .frame-5 .progress-data-container .progress-3 {
+        width: 300px;
+        height: 300px;
+        position: absolute;
+        bottom: 1%;
+        left: 40%;
+    
+    }
+    
+    .frame-5 .progress-data-container .progress-4 {
+        width: 200px;
+        height: 200px;
+        border-radius: 100%;
+        background: linear-gradient(90deg, #43BAFF 0%, #7141B1 100%);
+        position: absolute;
+        right: 5%;
+        top: 45%;
+    }
+    .frame-5 {
+        height: 840px;
+    }
+    
 }
 
 @media (max-width:768px) {
@@ -253,39 +332,43 @@
     }
 
     .frame-5 .progress-data-container .progress-1 {
-        width: 150px;
-        height: 150px;
+    
+        width: 200px;
+        height: 200px;
         position: absolute;
         left: 5%;
-        top: 50%;
-
+        top: 45%;
+    
     }
-
+    
     .frame-5 .progress-data-container .progress-2 {
         width: 180px;
         height: 180px;
         position: absolute;
         top: 30%;
-        left: 55%;
+        left: 40%;
     }
-
+    
     .frame-5 .progress-data-container .progress-3 {
         width: 250px;
         height: 250px;
         position: absolute;
         bottom: 1%;
-        left: 30%;
-
+        left: 35%;
+    
     }
-
+    
     .frame-5 .progress-data-container .progress-4 {
-        width: 130px;
-        height: 130px;
+        width: 180px;
+        height: 180px;
         border-radius: 100%;
         background: linear-gradient(90deg, #43BAFF 0%, #7141B1 100%);
         position: absolute;
         right: 5%;
-        top: 70%;
+        top: 45%;
+    }
+    .frame-5 {
+        height:760px;
     }
 
     .progress-data-container .data h1 {
@@ -302,6 +385,9 @@
     }
 
     .head .success-desc {
+        width: 100%;
+    }
+    .frame-1 .head .success-desc{
         width: 100%;
     }
 
@@ -334,11 +420,47 @@
 }
 
 @media (max-width:575px) {
+    .frame-5 .progress-data-container .progress-1 {
+    
+        width: 180px;
+        height: 180px;
+        position: absolute;
+        left: 2%;
+        top: 45%;
+    
+    }
+    
+    .frame-5 .progress-data-container .progress-2 {
+        width: 160px;
+        height: 160px;
+        position: absolute;
+        top: 25%;
+        left: 35%;
+    }
+    
+    .frame-5 .progress-data-container .progress-3 {
+        width: 210px;
+        height: 210px;
+        position: absolute;
+        bottom: 1%;
+        left: 30%;
+    
+    }
+    
+    .frame-5 .progress-data-container .progress-4 {
+        width: 150px;
+        height: 150px;
+        border-radius: 100%;
+        background: linear-gradient(90deg, #43BAFF 0%, #7141B1 100%);
+        position: absolute;
+        right: 2%;
+        top: 45%;
+    }
     .frame-5 {
-        height: auto;
+        height:660px;
     }
 
-    .progress-container {
+    /* .progress-container {
         height: auto;
     }
 
@@ -349,33 +471,7 @@
         flex-direction: column;
         gap: 20px;
         padding-bottom: 10px;
-    }
-
-    .frame-5 .progress-data-container .progress-1 {
-        width: 150px;
-        height: 150px;
-        position: unset;
-
-    }
-
-    .frame-5 .progress-data-container .progress-2 {
-        width: 180px;
-        height: 180px;
-        position: unset;
-    }
-
-    .frame-5 .progress-data-container .progress-3 {
-        width: 250px;
-        height: 250px;
-        position: unset;
-
-    }
-
-    .frame-5 .progress-data-container .progress-4 {
-        width: 130px;
-        height: 130px;
-        position: unset;
-    }
+    } */
 
 
     .our-process h1 {
@@ -421,5 +517,49 @@
     .frame-4 .heading-container .sub-heading {
         font-size: 12px;
         line-height: 18px;
+    }
+    .frame-4 .img-container img {
+        width: 220px;
+    }
+}
+@media (max-width:400px){
+    .frame-5 .progress-data-container .progress-1 {
+    
+        width: 130px;
+        height: 130px;
+        position: absolute;
+        left: 2%;
+        top: 48%;
+    
+    }
+    
+    .frame-5 .progress-data-container .progress-2 {
+        width: 110px;
+        height: 110px;
+        position: absolute;
+        top: 30%;
+        left: 35%;
+    }
+    
+    .frame-5 .progress-data-container .progress-3 {
+        width: 150px;
+        height: 150px;
+        position: absolute;
+        bottom: 2%;
+        left: 30%;
+    
+    }
+    
+    .frame-5 .progress-data-container .progress-4 {
+        width: 110px;
+        height: 110px;
+        border-radius: 100%;
+        background: linear-gradient(90deg, #43BAFF 0%, #7141B1 100%);
+        position: absolute;
+        right: 2%;
+        top: 48%;
+    }
+    .frame-5 {
+        height:520px;
     }
 }
