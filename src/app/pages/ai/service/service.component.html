@@ -302,7 +302,8 @@
                         *ngFor="let integration of androidService.integrations">
                         <div class="logo mx-3">
                             <div class="process-square">
-                                <img src="{{integration.img}}"style="width:30px;" alt="">
+                                <img src="{{integration.img}}"style="width:30px;" alt=""*ngIf="isDarkTheme">
+                                <img src="{{integration.img2}}"style="width:30px;" alt=""*ngIf="!isDarkTheme">
                             </div>
                         </div>
                         <div class="text mx-3 ">
