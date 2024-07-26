@@ -1,6 +1,5 @@
 * {
     font-family: 'Helvetica Neue';
-    color: white;
 }
 
 .frame-1 {
@@ -87,16 +86,13 @@
     width: 130px;
 }
 
-.frame-2 {
+/* .frame-2 {
     background: #070015;
-}
+} */
+
 
 .frame-2 .success-desc p {
     opacity: 0.8;
-}
-
-.frame-3 {
-    background: #070015;
 }
 
 .frame-3 .success-desc p {
@@ -131,22 +127,25 @@
 }
 
 .frame-5 {
-    background: #070015;
     height: 1000px;
     position: relative;
-
 }
-
-.progress-container {}
 
 .progress-1,
 .progress-2,
 .progress-3 {
 
     border-radius: 100%;
+}
+
+.bg-progress-dark{
     background: linear-gradient(0deg, #20192C, #20192C),
         linear-gradient(0deg, #20192C, #20192C);
 }
+.bg-progress-light{
+    background: #ffffff;;
+}
+
 .progress-1 .data h1,
 .progress-2 .data h1,
 .progress-3 .data h1,

@@ -28,6 +28,8 @@ export class BlogComponent implements OnInit {
     this.isDarkTheme = this.api.isDarkTheme();
     this.fetchBlogs();
     // this.getCategories();
+    // this.getBlogsByCategoryName();
+
     this.themechange();
     this.scrollToTop();
   }
@@ -38,11 +40,19 @@ export class BlogComponent implements OnInit {
     });
   }
 
-  // getCategories(){
-  //   this.api.getCategoryOfBlogs().subscribe((data:any)=>{
-  //     console.log(data);
-  //   })
-  // }
+  getCategories(){
+    this.api.getCategoryOfBlogs().subscribe((data:any)=>{
+      console.log(data);
+    })
+  }
+  getBlogsByCategoryName(){
+    this.api.getBlogsByCategory('App Development').subscribe((data:any)=>{
+      console.log(data);
+    },err=>{
+      console.log(err)
+    })
+  }
+
 
   fetchBlogs() {
     this.api.getBlogs()
@@ -60,7 +70,7 @@ export class BlogComponent implements OnInit {
         const uniqueCategories = new Set();
 
         this.categories = this.blogs.map((blog: any) => {
-          if (!uniqueCategories.has(blog.category)) {
+          if (!uniqueCategories.has(blog.category) && blog.category!="") {
             uniqueCategories.add(blog.category);
             return {
               link: blog.title1,

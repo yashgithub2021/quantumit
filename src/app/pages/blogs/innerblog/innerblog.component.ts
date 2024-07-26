@@ -65,6 +65,7 @@ export class InnerblogComponent implements OnInit {
       console.log('Object not found in the array');
     }
   }
+  //this is not in use
   fetchBlogs() {
     this.api.getBlogs().subscribe((res: any) => {
       this.blogs = res.blogs;
@@ -83,7 +84,9 @@ export class InnerblogComponent implements OnInit {
       this.blogId=this.blogs.filter((blog:any)=>blog.title ==this.blogTitle)[0].id;
       console.log(this.blogId);
       this.fetchBlogDetail();
-      this.fetchBlogs();
+      // this.fetchBlogs();
+      this.fetchBlogIndex();
+
     });
   }
   fetchBlogDetail() {
@@ -92,7 +95,7 @@ export class InnerblogComponent implements OnInit {
       this.blogDetail = res.blogs
       // console.log(this.blogDetail);
 
-      this.blogDetail.description=this.blogDetail.description;
+      this.blogDetail.description=this.blogDetail.description.replace(/\\r\\n/g, '');;
       // console.log(this.blogDetail.description);
       this.modifyQuote();
       this.loadingStatus = false;
