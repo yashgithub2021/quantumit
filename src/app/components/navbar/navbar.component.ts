@@ -10,7 +10,7 @@ export class NavbarComponent {
 
   isDarkTheme!: boolean;
   isDropdownOpenService = false;
-  isDropdownOpenCaseStudy=false;
+  isDropdownOpenCaseStudy = false;
 
 
   constructor(private api: ApiService, private cdr: ChangeDetectorRef) {
@@ -26,8 +26,8 @@ export class NavbarComponent {
       // Collapse the navbar
       navToggler.click();
     }
-    this.isDropdownOpenService=false;
-    this.isDropdownOpenCaseStudy=false;
+    this.isDropdownOpenService = false;
+    this.isDropdownOpenCaseStudy = false;
   }
   scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -39,13 +39,33 @@ export class NavbarComponent {
     this.cdr.detectChanges(); // Force change detection
 
   }
-  toggleDropdown(isOpen: boolean) {
-    this.isDropdownOpenService = isOpen;    
-    console.log('hi1');
-
+  handleMouseEnter() {
+    if (!this.isMobileView()) {
+      this.isDropdownOpenService = true;
+      console.log('Dropdown opened on hover');
+    }
   }
-  toggleDropdownCaseStudy(isOpen:boolean){
-    this.isDropdownOpenCaseStudy=isOpen;
+
+  handleMouseLeave() {
+    if (!this.isMobileView()) {
+      this.isDropdownOpenService = false;
+      console.log('Dropdown closed on hover');
+    }
+  }
+
+  handleToggleClick() {
+    if (this.isMobileView()) {
+      this.isDropdownOpenService = !this.isDropdownOpenService;
+      console.log('Dropdown toggled on click');
+    }
+  }
+
+  isMobileView(): boolean {
+    // You can use a media query or any other method to determine if it's a mobile view
+    return window.innerWidth <= 768;
+  }
+  toggleDropdownCaseStudy(isOpen: boolean) {
+    this.isDropdownOpenCaseStudy = isOpen;
     console.log('hi');
   }
 }

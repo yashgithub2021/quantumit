@@ -48,10 +48,10 @@
                                 </li>
                                 <li id="menu-item-1949"
                                         class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown menu-item-1949 nav-item"
-                                        (mouseenter)="toggleDropdown(true)" (mouseleave)="toggleDropdown(false)"(click)="toggleDropdown(!isDropdownOpenService)">
+                                        (mouseenter)="handleMouseEnter()" (mouseleave)="handleMouseLeave()">
                                         <a data-toggle="dropdown" aria-expanded="false"
                                                 class="dropdown-toggle nav-link border-0 " id="menu-item-dropdown-1949">
-                                                <span>Services</span>
+                                                <span (click)="handleToggleClick()">Services</span>
                                         </a>
                                         <div [ngStyle]="{'background':isDarkTheme?'#111111':'#ECF0FF','opacity':isDarkTheme?'0.8':'0.9'}"
                                                 class="dropdown-menu" aria-labelledby="navbarDropdown"

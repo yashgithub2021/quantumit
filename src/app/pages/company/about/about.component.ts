@@ -1,12 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { ApiService } from 'src/app/shared/api/api.service';
-
+declare var $: any;
 @Component({
   selector: 'app-about',
   templateUrl: './about.component.html',
   styleUrls: ['./about.component.css']
 })
-export class AboutComponent implements OnInit {
+export class AboutComponent implements OnInit, AfterViewInit {
   constructor(private api: ApiService) { }
   members: any
   isDarkTheme!: boolean
@@ -81,9 +81,46 @@ export class AboutComponent implements OnInit {
       heading: "team advisors",
       currentNum: 0
     },
-    
+
   ]
 
+  carouselItems = [
+    {
+      link: 'https://www.crunchbase.com/organization/quantum-it-innovation',
+      imgSrc: '../../../../assets/about/crunch.png',
+      title: 'Crunchbase',
+      description: 'Top Mobile App Development'
+    },
+    {
+      link: 'https://www.goodfirms.co/company/quantum-it-innovation',
+      imgSrc: '../../../../assets/about/award2.png',
+      title: 'Good Firms Award',
+      description: 'Top Mobile App Developers'
+    },
+    {
+      link: 'https://upcity.com/local-marketing-agencies/profiles/quantum-it-innovation',
+      imgSrc: '../../../../assets/about/upcity.jpg',
+      title: 'Up City',
+      description: 'Site Of the Month'
+    },
+    {
+      link: 'https://www.yelp.com/biz/quantum-it-innovation-westfield',
+      imgSrc: '../../../../assets/about/yelp.png',
+      title: 'Yelp',
+      description: 'Certified Mobile App Developer'
+    },
+    {
+      link: 'https://clutch.co/profile/quantum-it-innovation-0',
+      imgSrc: '../../../../assets/about/clutch.jpg',
+      title: 'Clutch',
+      description: 'Certified Mobile App Developer'
+    }
+  ];
+  @ViewChild('carousel', { static: false }) _carousel!: ElementRef;
+  ngAfterViewInit(): void {
+    const myCarousel = this._carousel.nativeElement;
+    const carousel = $(myCarousel).carousel();
+  }
 
   ngOnInit(): void {
     this.getMembers()

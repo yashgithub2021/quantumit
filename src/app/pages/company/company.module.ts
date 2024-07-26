@@ -8,6 +8,7 @@ import { ContactComponent } from './contact/contact.component';
 import { RefundCancellationPolicyComponent } from './refund-cancellation-policy/refund-cancellation-policy.component';
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 import { TermsConditionComponent } from './terms-condition/terms-condition.component';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
 
 
 @NgModule({
@@ -16,9 +17,10 @@ import { TermsConditionComponent } from './terms-condition/terms-condition.compo
     ContactComponent,
     RefundCancellationPolicyComponent,
     PrivacyPolicyComponent,
-    TermsConditionComponent
+    TermsConditionComponent,
   ],
   imports: [
+    CarouselModule.forRoot(),
     CommonModule,
     CompanyRoutingModule,
     SharedModule
