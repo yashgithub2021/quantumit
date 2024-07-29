@@ -60,7 +60,7 @@ export class BlogComponent implements OnInit {
         this.blogs = res.blogs;
         this.blogs = this.blogs.map((blog: any) => {
           let tempElement = document.createElement('div');
-          tempElement.innerHTML = blog.description;
+          tempElement.innerHTML = blog.description.replace(/\\r\\n/g, '');
           return {
             ...blog,
             title1: blog.title.replace(/ /g, '-'),

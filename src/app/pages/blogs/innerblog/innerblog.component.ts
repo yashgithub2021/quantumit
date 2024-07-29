@@ -11,13 +11,13 @@ export class InnerblogComponent implements OnInit {
 
   blogDetail!: any
   blogId: any;
-  blogTitle:any;
+  blogTitle: any;
   isDarkTheme!: boolean;
   nextBlogCount!: number;
   blogs!: any;
   loadingStatus: boolean = true;
 
-  constructor(private api: ApiService, private active: ActivatedRoute,private router:Router) { }
+  constructor(private api: ApiService, private active: ActivatedRoute, private router: Router) { }
 
   checks = ["Listen to what they say about you", "Randomised words which don't look even slightly believable.", "Lorem Ipsum generators on the Internet tend to repeat predefined chunks", "Automate multiple scenarios and eliminate tedious tasks. "]
   sectionFourNums = [
@@ -56,7 +56,7 @@ export class InnerblogComponent implements OnInit {
     });
   }
   fetchBlogIndex() {
-    const index = this.blogs.findIndex((object:any) => object.id == this.blogId);
+    const index = this.blogs.findIndex((object: any) => object.id == this.blogId);
 
     if (index !== -1) {
       this.nextBlogCount = index;
@@ -79,9 +79,9 @@ export class InnerblogComponent implements OnInit {
     this.active.paramMap.subscribe((res: any) => {
       // this.blogId = res.get('id');
       this.blogTitle = res.get('id');//here id as and blog title
-      this.blogTitle=this.blogTitle.replace(/-/g,' ');
+      this.blogTitle = this.blogTitle.replace(/-/g, ' ');
       console.log(this.blogTitle);
-      this.blogId=this.blogs.filter((blog:any)=>blog.title ==this.blogTitle)[0].id;
+      this.blogId = this.blogs.filter((blog: any) => blog.title == this.blogTitle)[0].id;
       console.log(this.blogId);
       this.fetchBlogDetail();
       // this.fetchBlogs();
@@ -95,7 +95,7 @@ export class InnerblogComponent implements OnInit {
       this.blogDetail = res.blogs
       // console.log(this.blogDetail);
 
-      this.blogDetail.description=this.blogDetail.description.replace(/\\r\\n/g, '');;
+      this.blogDetail.description = this.blogDetail.description.replace(/\\r\\n/g, '');
       // console.log(this.blogDetail.description);
       this.modifyQuote();
       this.loadingStatus = false;
@@ -113,28 +113,28 @@ export class InnerblogComponent implements OnInit {
       this.blogDetail.quote = `<span class="first-letter fw-bold fs-1">${firstLetter}</span>${this.blogDetail.quote.slice(1)}`;
     }
   }
-  findIdOfBlog(index:number){
-    this.blogTitle=this.blogs[index].title;
-    this.blogTitle=this.blogTitle.replace(/ /g,'-');
+  findIdOfBlog(index: number) {
+    this.blogTitle = this.blogs[index].title;
+    this.blogTitle = this.blogTitle.replace(/ /g, '-');
     this.router.navigate(['/blog/inner-blog', this.blogTitle]);
   }
 
   next() {
-    if(this.nextBlogCount==this.blogs.length-1){
-      this.nextBlogCount=this.nextBlogCount;
+    if (this.nextBlogCount == this.blogs.length - 1) {
+      this.nextBlogCount = this.nextBlogCount;
     }
-    else if(this.nextBlogCount<=this.blogs.length-1){
+    else if (this.nextBlogCount <= this.blogs.length - 1) {
       this.nextBlogCount++;
       this.findIdOfBlog(this.nextBlogCount);
       this.fetchBlogDetail();
       this.scrollToTop();
     }
-  } 
+  }
   prev() {
-    if(this.nextBlogCount==0){
-      this.nextBlogCount=0;
+    if (this.nextBlogCount == 0) {
+      this.nextBlogCount = 0;
     }
-    else if(this.nextBlogCount>0 && this.nextBlogCount<=this.blogs.length-1){
+    else if (this.nextBlogCount > 0 && this.nextBlogCount <= this.blogs.length - 1) {
       this.nextBlogCount--;
       this.findIdOfBlog(this.nextBlogCount);
       this.fetchBlogDetail();

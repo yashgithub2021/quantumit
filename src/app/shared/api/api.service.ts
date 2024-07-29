@@ -7,7 +7,7 @@ const YOUR_ACCESS_KEY='9yykUwGxYq0OK9WtmLoup4edvRRSSAkA';
   providedIn: 'root'
 })
 export class ApiService {
-  baseUrl = 'https://quantumit-backend.onrender.com/'
+  baseUrl = 'https://api.quantumitinnovation.com/'
   private darkTheme = true;
 
   themeChanged: EventEmitter<boolean> = new EventEmitter<boolean>();

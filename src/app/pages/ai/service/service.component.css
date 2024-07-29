@@ -616,6 +616,12 @@
 
 @media (max-width: 575.98px) {
 
+    .slider{
+        height:80px;
+    }
+    .slider .slide{
+        height:80px;
+    }
     .miletone-container {
         display: flex;
         flex-direction: column;
