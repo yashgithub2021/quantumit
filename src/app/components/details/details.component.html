@@ -38,12 +38,14 @@
                 <div class="d-flex align-items-center my-sm-5 my-3 flex-column flex-lg-row-reverse">
                     <div class="text w-100 p-0">
                         <div class="brief" [ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">
-                            <p *ngFor="let description of androidService.descriptionOne">
-                                {{description}}
-                            </p>
-                            <p *ngFor="let description of androidService.descriptionTwo">
-                                {{description}}
-                            </p>
+                            <ng-container *ngFor="let description of androidService.descriptionOne" >
+                                <p [innerHTML]="description">
+                                </p>
+                            </ng-container>
+                            <ng-container *ngFor="let description of androidService.descriptionTwo" >
+                                <p [innerHTML]="description">
+                                </p>
+                            </ng-container>
                         </div>
                     </div>
                     <!-- <div class="image h-100 w-100">
@@ -71,7 +73,7 @@
                     <div class="text w-100 p-3 p-sm-4">
                         <div class="brief " [ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">
                             <p>{{androidService.ourProcessDesc[0].title}}</p>
-                            <p>{{androidService.ourProcessDesc[1].title}}</p>
+                            <p *ngIf="androidService.ourProcessDesc[1]">{{androidService.ourProcessDesc[1].title}}</p>
 
                         </div>
 
@@ -81,12 +83,12 @@
                             src="{{androidService.ourProcessImg[0].img3}}" alt="">
                     </div>
                 </div>
-                <div class="d-flex align-items-center my-sm-5 my-3 flex-column flex-lg-row-reverse gap-3">
+                <div class="d-flex align-items-center my-sm-5 my-3 flex-column flex-lg-row-reverse gap-3"*ngIf="androidService.ourProcessDesc[2]">
                     <div class="text w-100 p-0 p-3 p-sm-4">
                         <div class="brief" [ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">
-                            <p>{{androidService.ourProcessDesc[2].title}}</p>
+                            <p>{{androidService?.ourProcessDesc[2]?.title}}</p>
                             <p>
-                                {{androidService.ourProcessDesc[3].title}}</p>
+                                {{androidService?.ourProcessDesc[3]?.title}}</p>
                         </div>
                     </div>
                     <div class="image h-100 w-100 max-height:65%; object-fit:cover;border-radius:10px;opacity:0.8">
@@ -109,9 +111,8 @@
                     <h1 class="text-capitalize text-align-center">{{androidService.serviceTitle}}</h1>
                 </div>
             </div>
-
             <div class="what-we-do w-100 h-100 mt-sm-5 mt-1">
-                <div class="row w-100 h-100  g-4 align-items-center">
+                <div class="row w-100 h-100  g-4 align-items-center justify-content-center">
                     <div data-aos="fade-up" *ngFor="let data of androidService.services"
                         class="col-lg-4 col-md-6 col-12 hover-card">
                         <div [ngStyle]="{background:isDarkTheme?'#111111':'#ECF0FF'}"

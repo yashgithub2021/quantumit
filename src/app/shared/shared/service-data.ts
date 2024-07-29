@@ -1,7 +1,7 @@
 export const androidService = {
     title1: "Android App",
     title2: "Development Solutions",
-    img1: "../../../../assets/services/android/img1.png",
+    img1: "../../../../assets/services/android/img1.webp",
     metaTitle: "Android App Development Company | Android App Development Agency",
     metaDescription: "Quantum IT Innovation: Leading Android app development agency offering top-notch custom Android app development services. Transform your ideas with our expert team today!",
     // img2: "../../../../assets/services/ios_android/img1.jpg",
@@ -211,7 +211,7 @@ export const swiftAppDevelopment = {
     metaTitle: "App Development with Swift | Swift App Development",
     metaDescription: "Explore expert Swift app development services at Quantum IT Innovation. We specialize in app development with Swift, delivering cutting-edge solutions globally.",
     img1: "../../../../assets/services/shift_app_dev/img1.jpg",
-    img2: "../../../../assets/services/shift_app_dev/representation-user-experience-interface-design (2).jpg",
+    // img2: "../../../../assets/services/shift_app_dev/representation-user-experience-interface-design (2).jpg",
     descriptionOne: [
         "Embark on a journey of innovation with our Swift app development services, meticulously designed to propel your business forward in the mobile landscape.",
         "With Swift gaining prominence as a versatile and powerful programming language, having a custom-built mobile application is crucial for reaching diverse audiences.",
@@ -376,7 +376,7 @@ export const iPadAppDevelopment = {
     title2: "iPad App Development",
     metaTitle: "Ipad App Development Company | Custom Ipad App Development",
     metaDescription: "Quantum IT Innovation: Your trusted iPad app development company for custom solutions. Expertise in custom iPad app development tailored to your business needs.",
-    img1: "../../../../assets/services/ipad_app_deve/img1.png",
+    img1: "../../../../assets/services/ipad_app_deve/img1.webp",
     // img2: "../../../../assets/services/ipad_app_deve/a833bbcd2062c2b407db5d92d2ed4824.jpg",
     descriptionOne: [
         "Step into the realm of innovation with our iPad app development services, designed to elevate your brand presence on the iOS platform and beyond.",
@@ -760,7 +760,7 @@ export const payPerClickServices = {
     serviceTitle: "Maximize ROI with",
     serviceTitle2: "Pay Per Click",
     title1: "Maximize ROI with Pay Per Click",
-    img1: "../../../assets/services/pay_per_click/img1.jpg",
+    img1: "../../../assets/services/pay_per_click/img1.webp",
     // img2: "../../../assets/services/pay_per_click/Wavy_Tech-15_Single-06.jpg",
     descriptionOne: [
         "Elevate your online advertising game with Quantum IT's top-notch Pay Per Click (PPC) services, a cornerstone of our comprehensive digital marketing solutions.",
@@ -823,7 +823,7 @@ export const socialMediaServices = {
     serviceTitle: "Enhance Your Brand's Presence with",
     serviceTitle2: "Social Media Marketing",
     title1: "Enhance Your Brand's Presence with Social Media Marketing",
-    img1: "../../../assets/services/Social_media_mark/img1.jpg",
+    img1: "../../../assets/services/Social_media_mark/img1.webp",
     img2: "../../../assets/services/Social_media_mark/medium-shot-woman-influencer-marketing-concept.jpg",
     descriptionOne: [
         "Step into the realm of social media marketing with Quantum IT's top-tier services, a pivotal component of our comprehensive digital marketing strategies.",
@@ -1245,7 +1245,7 @@ export const phpDevelopmentServices = {
     serviceTitle: "Unleash the Power of",
     serviceTitle2: "PHP Development",
     title1: "Unleash the Power of PHP Development",
-    img1: "../../../assets/services/Php_dev/img.png",
+    img1: "../../../assets/services/Php_dev/img1.webp",
     // img2: "../../../assets/services/Php_dev/7040859.jpg",
     descriptionOne: [
         "Explore the world of PHP development with Quantum IT's expertise, an integral part of our comprehensive web development solutions.",
@@ -1365,7 +1365,7 @@ export const rubyOnRailsDevelopmentServices = {
     serviceTitle: "Unleash the Power of",
     serviceTitle2: "Ruby on Rails (ROR) Development",
     title1: "Unleash the Power of Ruby on Rails (ROR) Development",
-    img1: "../../../assets/services/ror_dev/img.png",
+    img1: "../../../assets/services/ror_dev/img.webp",
     img2: "../../../assets/services/ror_dev/Ruby_On_Rails_Web_Development_Co.jpg",
     descriptionOne: [
         "Experience the dynamic capabilities of Ruby on Rails (ROR) development with Quantum IT's expert services, a cornerstone of our comprehensive software development solutions.",
@@ -1425,7 +1425,7 @@ export const nodejsDevelopmentServices = {
     serviceTitle: "Unleash the Power of",
     serviceTitle2: "Node.js Development",
     title1: "Unleash the Power of Node.js Development",
-    img1: "../../../assets/services/nodejs_dev/img1.png",
+    img1: "../../../assets/services/nodejs_dev/img1.webp",
     // img2: "../../../assets/services/nodejs_dev/nodejs.jpg",
     descriptionOne: [
         "Explore the dynamic capabilities of Node.js development with Quantum IT's expert services, a cornerstone of our comprehensive software development solutions.",
@@ -1485,8 +1485,8 @@ export const joomlaDevelopmentServices = {
     serviceTitle: "Unleash the Power of",
     serviceTitle2: "Joomla Development",
     title1: "Unleash the Power of Joomla Development",
-    img1: "../../../assets/services/joomla_dev/img1.jpg",
-    img2: "../../../assets/services/joomla_dev/Joomla-Development.jpg",
+    img1: "../../../assets/services/joomla_dev/img1.webp",
+    // img2: "../../../assets/services/joomla_dev/Joomla-Development.jpg",
     descriptionOne: [
         "Discover the dynamic capabilities of Joomla development with Quantum IT's expert services, a cornerstone of our comprehensive software development solutions.",
         "Tailored to meet the diverse needs of businesses worldwide, our Joomla development services are engineered to deliver robust, scalable, and feature-rich web applications that drive innovation and efficiency in today's digital landscape."
@@ -1540,6 +1540,84 @@ export const joomlaDevelopmentServices = {
         }
     ]
 };
+export const MobileAppDevelopmentDallasServices = {
+    title1: "Mobile App ",
+    title2: "Development Dallas",
+    img1: "../../../../assets/services/android/img1.webp",
+    metaTitle: "Android App Development Company | Android App Development Agency",
+    metaDescription: "Quantum IT Innovation: Leading Android app development agency offering top-notch custom Android app development services. Transform your ideas with our expert team today!",
+    // img2: "../../../../assets/services/ios_android/img1.jpg",
+    descriptionOne: [
+        "Businesses need to own mobile apps if they want to compete and fully engage with their customers. Based on its innovative solutions and a solid commitment to excellence, Quantum IT has emerged as one of the leading companies in the field of <b>mobile application development Dallas</b>. We are known for developing highly efficient mobile applications for different industries hence having earned trust from businesses across the world over time. This ensures that your app will be seen by all users since we have knowledge in both iOS and Android platforms."
+    ],
+    ourProcessTitle: 'Quantum IT as a Mobile App Development Company',
+    ourProcessDesc: [
+        {
+            title: "We believe that every enterprise has an exceptional account, and it is our aim to ensure that this narrative resonates with your consumers through the use of a mobile phone application. During the entire process- from when it was just an idea till its implementation, we ensure that we work in close collaboration with you so as to understand your vision, mission and target group so that everything about it matches your company’s objectives and values."
+        }
+    ],
+    ourProcessImg: [
+        {
+            img3: '../../../../assets/services/android/img3.png'
+        }
+    ],
+    serviceTitle: "Our Mobile App Development Services",
+    services: [
+        {
+            num: "01.",
+            title: "Tailored Mobile App Development",
+            desc: "We provide custom mobile app development services that suit every specific need. We take our time to get the grasp of your company, sector and target audience and come up with tailor-made solutions.",
+            img: '../../../../assets/mobile/service/service-icon1.svg'
+        },
+
+        {
+            num: "02.",
+            title: "iOS App Development",
+            desc: "We also have iOS developers dedicated to producing excellent applications for the Apple ecosystem. Our developers have Swift as well as Objective-C skills and follow the latest design guidelines for iOS so as to give your app an iPhone look and feeling.",
+            img: '../../../../assets/mobile/service/md.svg'
+        },
+
+        {
+            num: "03.",
+            title: "Android App Development",
+            desc: "Our android app development services are designed for the most popular platform of mobile phones worldwide. We have a team of experienced Java and Kotlin programmers who understand the details of android OS.",
+            img: '../../../../assets/mobile/service/mad.svg'
+        },
+
+        {
+            num: "04.",
+            title: "Cross-Platform App Development",
+            desc: "Our cross-platform development services are suitable for businesses that want to have a greater reach with their application. Frameworks such as React Native and Flutter enable us to create apps that run smoothly on both iOS and Android devices.",
+            img: '../../../../assets/mobile/service/mat.svg'
+        },
+
+        {
+            num: "05.",
+            title: "App Design and UI/UX",
+            desc: "We appreciate good app design at Quantum IT, it is paramount for user engagement and retention. Our talented designers create simple but visually appealing user interfaces that enhance smooth interaction between users.",
+            img: '../../../../assets/mobile/service/ema.svg'
+        }
+    ],
+    methodologyBtnTitle: "Our App Development",
+    methodologyTitle: "Why Quantum IT for Mobile App Development?",
+    steps: [
+        {
+            num: 1,
+            title: "Optimal Partnership",
+            desc: "Your choice of a mobile development partner determines the outcome of your project. With extensive experience in the domain of mobile application development sector."
+        },
+        {
+            num: 2,
+            title: "Client-Centric Innovation",
+            desc: "At Quantum IT, we put our customers first and work closely with them during the development process. "
+        },
+        {
+            num: 3,
+            title: "Uncompromising Quality",
+            desc: "We are committed to providing high-quality products that function excellently. This is made possible through intense testing and quality assurance procedures."
+        }
+    ]
+}
 
 // generative ai services
 

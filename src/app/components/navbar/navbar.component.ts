@@ -42,21 +42,21 @@ export class NavbarComponent {
   handleMouseEnter() {
     if (!this.isMobileView()) {
       this.isDropdownOpenService = true;
-      console.log('Dropdown opened on hover');
+      // console.log('Dropdown opened on hover');
     }
   }
 
   handleMouseLeave() {
     if (!this.isMobileView()) {
       this.isDropdownOpenService = false;
-      console.log('Dropdown closed on hover');
+      // console.log('Dropdown closed on hover');
     }
   }
 
   handleToggleClick() {
     if (this.isMobileView()) {
       this.isDropdownOpenService = !this.isDropdownOpenService;
-      console.log('Dropdown toggled on click');
+      // console.log('Dropdown toggled on click');
     }
   }
 
@@ -66,6 +66,6 @@ export class NavbarComponent {
   }
   toggleDropdownCaseStudy(isOpen: boolean) {
     this.isDropdownOpenCaseStudy = isOpen;
-    console.log('hi');
+    // console.log('hi');
   }
 }
