@@ -238,7 +238,7 @@
 .detaile p {
     font-size: 16px;
     line-height: 22px;
-    font-weight: 500 !important;
+    font-weight: 400 !important;
 }
 
 .frame .heading .txt h1 {
@@ -290,7 +290,6 @@
     .detaile p {
         font-size: 14px;
         line-height: 20px;
-        font-weight: 400!important;
     }
 
     .our-process-btn {
