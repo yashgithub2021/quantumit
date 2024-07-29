@@ -14,16 +14,18 @@
     z-index: -1;
     opacity: 30%;
 }
-.frame-4 .carousel-indicators{
+
+.frame-4 .carousel-indicators {
     bottom: -50px;
 }
-.frame-4 .carousel-indicators li{
+
+.frame-4 .carousel-indicators li {
     /* background: linear-gradient(91.58deg, #43BAFF 0.52%, #7044B3 100%); */
-    height:7px;
+    height: 7px;
     border-top: none;
     border-bottom: none;
     border-radius: 2px;
-    
+
 }
 
 .numbers {
@@ -36,8 +38,9 @@
     padding: 60px 60px;
     background: linear-gradient(90deg, #43BAFF 0%, #7141B1 100%);
 }
-.numbers-section>div{
-    min-height:120px;
+
+.numbers-section>div {
+    min-height: 120px;
 }
 
 .numbers-section div h1 {
@@ -191,7 +194,7 @@
 
     /* .col-12 {
         width: auto;
-    } */ 
+    } */
 
 }
 
@@ -227,7 +230,7 @@
     .about-us>.container>.what-we-do {
         padding-top: 0px !important;
         padding-bottom: 0px !important;
-        
+
     }
 
     .partners {
@@ -241,10 +244,11 @@
 
 @media (max-width: 575.98px) {
 
-    .about-us>.container{
+    .about-us>.container {
         padding-left: 0px;
         padding-right: 0px;
     }
+
     .our-service-btn {
         font-size: 10px;
         line-height: 20px;
@@ -255,9 +259,10 @@
         font-size: 18px;
         line-height: 26px;
     }
+
     .about-us>.container>.what-we-do {
-        padding:0px;
-        
+        padding: 0px;
+
     }
 
     .what-we-do .desc p {
@@ -357,12 +362,14 @@
         padding-top: 15px;
         line-height: 40px;
     }
+
     .nums p {
         font-size: 12px;
     }
+
     .partner-detail {
         min-width: 155px;
-        min-height:175px;
+        min-height: 175px;
     }
 
     .logo {
@@ -370,11 +377,13 @@
         justify-content: center;
         align-items: center;
     }
-    .logo img{
-        width:70px;
+
+    .logo img {
+        width: 70px;
     }
-    .frame-4 .carousel-indicators li{
-        height:6px;
+
+    .frame-4 .carousel-indicators li {
+        height: 6px;
         width: 20px;
     }
 

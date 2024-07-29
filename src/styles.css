@@ -12,6 +12,7 @@
   background-color: #000000;
   color: #ffffff !important;
 }
+
 ::selection {
   background: transparent;
   color: rgb(151, 160, 160);
@@ -22,6 +23,7 @@
   background: transparent;
   color: rgb(151, 160, 160);
 }
+
 .accordion-button {
   color: white !important;
 }
@@ -214,10 +216,18 @@ app-blog .blogs-pagination-container .ngx-pagination .current {
   border-radius: 5px;
 }
 
+app-about .carousel-control-prev-icon {
+  display: none;
+}
+
+app-about .carousel-control-next-icon {
+  display: none;
+}
+
 @media(max-width:575.98px) {
   app-home .section7 .carousel-control-next {
     right: -25px !important;
-    display: none!important;
+    display: none !important;
   }
 
   app-home .section7 .carousel-control-prev {
@@ -225,5 +235,5 @@ app-blog .blogs-pagination-container .ngx-pagination .current {
     display: none;
   }
 
-  
+
 }

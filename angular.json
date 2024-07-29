@@ -34,10 +34,14 @@
               "node_modules/ngx-toastr/toastr.css",
               "node_modules/ngx-spinner/animations/ball-running-dots.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.min.js"
+            ]
           },
           "configurations": {
             "production": {
+              "aot": true,
               "budgets": [
                 {
                   "type": "initial",

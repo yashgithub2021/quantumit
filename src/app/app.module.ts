@@ -17,6 +17,8 @@ import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgxSpinnerModule } from 'ngx-spinner';
 import { DetailsComponent } from './components/details/details.component';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -42,7 +44,8 @@ import { DetailsComponent } from './components/details/details.component';
       progressBar: true
     }),
     NgxSpinnerModule.forRoot({ type: 'ball-running-dots' }),
-    NgbModule
+    NgbModule,
+    CarouselModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent],

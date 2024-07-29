@@ -1,6 +1,5 @@
 <div class="frames h-auto w-100 container-fluid p-0 d-flex flex-column mb-sm-5 mb-2 mb-lg-0">
-    <div data-aos="fade-in"
-        class="digital-marketing d-flex align-items-center justify-content-center container-fluid p-0 w-100 frame-1">
+    <div class="digital-marketing d-flex align-items-center justify-content-center container-fluid p-0 w-100 frame-1">
         <div class="container w-100 h-75">
             <div class="heading w-100 h-100 d-flex flex-column align-items-center justify-content-start ">
                 <div class="button my-2" data-aos="fade-in">
@@ -289,12 +288,12 @@
             <div class="slider" [ngStyle]="{background:isDarkTheme?'#111111':'#ECF0FF'}">
                 <div class="slide-track">
                     <div class="slide" *ngFor="let img of brandLogo">
-                        <img [ngStyle]="{filter:isDarkTheme?'invert(0)':'invert(1)'}" 
-                            [src]="img.img" class="d-block w-auto" alt="...">
+                        <img [ngStyle]="{filter:isDarkTheme?'invert(0)':'invert(1)'}" [src]="img.img"
+                            class="d-block w-auto" alt="...">
                     </div>
                     <div class="slide" *ngFor="let img of brandLogo">
-                        <img [ngStyle]="{filter:isDarkTheme?'invert(0)':'invert(1)'}" 
-                            [src]="img.img" class="d-block w-auto" alt="...">
+                        <img [ngStyle]="{filter:isDarkTheme?'invert(0)':'invert(1)'}" [src]="img.img"
+                            class="d-block w-auto" alt="...">
                     </div>
                 </div>
             </div>
@@ -596,7 +595,8 @@
                                         <p>Read the Success Stories</p>
                                     </div> -->
                                 </div>
-                                <a [href]="story.href " target="_blank" *ngIf="!(story.link)" style="text-decoration:none;color:unset">
+                                <a [href]="story.href " target="_blank" *ngIf="!(story.link)"
+                                    style="text-decoration:none;color:unset">
                                     <div class="text d-flex flex-column ">
                                         <div data-aos="fade-up" class="name my-2">
                                             <h3 class="">{{story.name}}</h3>
@@ -606,7 +606,7 @@
                                         </div>
                                         <div data-aos="fade-up" class="buttons d-flex justify-content-lg-between my-2"
                                             style="gap:10px;">
-                                            <button style="white-space:nowrap;"routerLink="/casestudy"
+                                            <button style="white-space:nowrap;" routerLink="/casestudy"
                                                 [ngClass]="isDarkTheme?'our-gm-btn':'our-gm-btn-light'"
                                                 *ngFor="let type of story.types">
                                                 {{type}}

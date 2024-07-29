@@ -1,4 +1,4 @@
-import { Component, ElementRef, OnInit } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, OnInit, Renderer2 } from '@angular/core';
 import AOS from 'aos';
 import { ApiService } from 'src/app/shared/api/api.service';
 
@@ -7,11 +7,11 @@ import { ApiService } from 'src/app/shared/api/api.service';
   templateUrl: './digital-marketing.component.html',
   styleUrls: ['./digital-marketing.component.css']
 })
-export class DigitalMarketingComponent implements OnInit {
+export class DigitalMarketingComponent implements OnInit, AfterViewInit {
 
   isDarkTheme!: boolean;
 
-  constructor(private elementRef: ElementRef, private api: ApiService) { }
+  constructor(private elementRef: ElementRef, private api: ApiService, private renderer: Renderer2) { }
 
   brandLogo = [
     {
@@ -43,19 +43,19 @@ export class DigitalMarketingComponent implements OnInit {
       name: " Online Plants NZ Organic Traffic",
       num: "+319k",
       types: ['Organic Engagement', 'SEO', 'Marketing'],
-      href:'https://liddlewonder.nz/'
+      href: 'https://liddlewonder.nz/'
     },
     {
       name: "Seanautic Marine Inc. Organic Traffic",
       num: "+34.7k",
       types: ['Keyword Ranking', 'SEO', 'Marketing'],
-      link:'/digital-marketing/casestudy'
+      link: '/digital-marketing/casestudy'
     },
     {
       name: "Diva Beauty Of Organic Traffic",
       num: "+991k",
       types: ['Keyword Ranking', 'SEO', 'Marketing'],
-      href:'https://flagbanner.com.au/'
+      href: 'https://flagbanner.com.au/'
     },
   ]
 
@@ -114,6 +114,24 @@ export class DigitalMarketingComponent implements OnInit {
     this.themechange();
     this.scrollToTop();
   }
+
+  ngAfterViewInit(): void {
+    if (this.isMobileView()) {
+      this.disableAOSOnMobile();
+    }
+  }
+
+  isMobileView(): boolean {
+    return window.innerWidth <= 768; // Define mobile width
+  }
+
+  disableAOSOnMobile(): void {
+    const elements = document.querySelectorAll('[data-aos]');
+    elements.forEach((element) => {
+      this.renderer.removeAttribute(element, 'data-aos');
+    });
+  }
+
 
   themechange() {
     this.api.themeChanged.subscribe((isDarkTheme: boolean) => {
