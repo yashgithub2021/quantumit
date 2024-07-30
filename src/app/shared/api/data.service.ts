@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { ActivatedRouteSnapshot, Resolve, RouterStateSnapshot } from '@angular/router';
 import { Observable, of } from 'rxjs';
-import { AccountPayable, AccountReceivableRecovery, ClinicalDocumentProcessing, GenerativeAiConsultingCompany, GenerativeAiDevelopment, GenerativeAiIntegrationServices, HREmployeeOnBoarding, HRRecruitment, HireGenerativeAiEngineers, InsuranceClaimProcessing, InsuranceEligibilityVerification, MobileAppDevelopmentDallasServices, PurchaseOrder, androidService, contentMarketingServices, conversionRateOptimizationServices, crossPlatformAppDevelopment, dotNetDevelopmentServices, emailMarketingServices, iOsService, iPadAppDevelopment, internetOfThings, joomlaDevelopmentServices, mobileDevServices, mobileGameDevelopment, nodejsDevelopmentServices, paidSearchAdvertisingServices, payPerClickServices, phpDevelopmentServices, roboticProcessAutomation, rubyOnRailsDevelopmentServices, seoServices, serviceAiDevelopment, socialMediaServices, swiftAppDevelopment, websiteDevServices } from '../shared/service-data';
+import { AccountPayable, AccountReceivableRecovery, ClinicalDocumentProcessing, GenerativeAiConsultingCompany, GenerativeAiDevelopment, GenerativeAiIntegrationServices, HREmployeeOnBoarding, HRRecruitment, HireGenerativeAiEngineers, InsuranceClaimProcessing, InsuranceEligibilityVerification, MobileAppDevelopmentDallasServices, PurchaseOrder, WebDevelopmentCompanyUSA, androidService, contentMarketingServices, conversionRateOptimizationServices, crossPlatformAppDevelopment, dotNetDevelopmentServices, emailMarketingServices, iOsService, iPadAppDevelopment, internetOfThings, joomlaDevelopmentServices, mobileDevServices, mobileGameDevelopment, nodejsDevelopmentServices, paidSearchAdvertisingServices, payPerClickServices, phpDevelopmentServices, roboticProcessAutomation, rubyOnRailsDevelopmentServices, seoServices, serviceAiDevelopment, socialMediaServices, swiftAppDevelopment, websiteDevServices } from '../shared/service-data';
 
 @Injectable({
   providedIn: 'root'
@@ -58,6 +58,8 @@ export class DataService implements Resolve<any> {
       return of({ title: 'joomla Services', services: joomlaDevelopmentServices });
     }else if (id === 'mobile-app-development-dallas') {
       return of({ title: 'Mobile App Development Dallas', services: MobileAppDevelopmentDallasServices });
+    }else if (id === 'web-development-company-usa') {
+      return of({ title: 'Web Development Company USA', services: WebDevelopmentCompanyUSA });
     }
     //for ai generative services
     else if (id === 'Generative-Ai-Development') {

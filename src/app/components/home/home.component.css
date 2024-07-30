@@ -155,7 +155,7 @@
 
 .left-side::before {
     content: '';
-    background-image: url('../../../assets/home/desktop_banner.jpg');
+    background-image: url('../../../assets/home/desktop_banner.webp');
     background-size: cover;
     background-position: left;
     background-repeat: no-repeat;

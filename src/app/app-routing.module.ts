@@ -12,7 +12,7 @@ import { DataService } from './shared/api/data.service';
 const routes: Routes = [
   { path: '',loadComponent:()=> import('./components/home/home.component').then(c=>c.HomeComponent) },
   
-  { path: 'artificial-intelligence', component: AiRobotComponent },
+  { path: 'artificial-intelligence', loadComponent:()=> import('./components/ai-robot/ai-robot.component').then(c=>c.AiRobotComponent)},
   {
     path: 'web-development', loadChildren: () => import('./pages/web/web.module').then(m => m.WebModule)
   },

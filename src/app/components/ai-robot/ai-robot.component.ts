@@ -2,12 +2,18 @@ import { Component, OnInit, ElementRef } from '@angular/core';
 import AOS from 'aos';
 import { ApiService } from 'src/app/shared/api/api.service';
 import { Title, Meta } from '@angular/platform-browser';
+import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
+import { FormComponent } from '../form/form.component';
+import { SharedModule } from 'src/app/shared/shared/shared.module';
 
 
 @Component({
   selector: 'app-ai-robot',
   templateUrl: './ai-robot.component.html',
-  styleUrls: ['./ai-robot.component.css']
+  styleUrls: ['./ai-robot.component.css'],
+  standalone: true,
+  imports: [CommonModule,RouterModule,SharedModule]
 })
 export class AiRobotComponent implements OnInit {
 

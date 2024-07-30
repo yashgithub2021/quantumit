@@ -76,6 +76,9 @@ export class DetailsComponent implements OnInit {
     else if (data.title === 'Mobile App Development Dallas') {
       this.differentPageStatus=false;
     }
+    else if (data.title === 'Web Development Company USA') {
+      this.differentPageStatus=false;
+    }
     else{
       this.differentPageStatus=true;
 

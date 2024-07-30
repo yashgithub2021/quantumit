@@ -170,8 +170,8 @@ export class HomeComponent implements OnInit {
       (res: any) => {
         this.reviews = res.feedbacks;
         this.groupReviews();
-        console.log(res);
-        console.log(this.reviews);
+        // console.log(res);
+        // console.log(this.reviews);
       },
       err => {
         console.log(err);

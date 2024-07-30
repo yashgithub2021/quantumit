@@ -26,7 +26,7 @@ export class ApiService {
   }
 
   isDarkTheme(): boolean {
-    console.log(this.darkTheme)
+    // console.log(this.darkTheme)
     return this.darkTheme;
   }
 
