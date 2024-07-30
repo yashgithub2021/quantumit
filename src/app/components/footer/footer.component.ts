@@ -121,7 +121,7 @@ export class FooterComponent implements OnInit {
 
   ngOnInit(): void {
     this.darkModeCheck()
-    console.log(this.isDarkMode)
+    // console.log(this.isDarkMode)
     this.contacts.forEach(() => {
       this.isHovering.push(false);
     });

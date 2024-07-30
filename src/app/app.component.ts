@@ -19,7 +19,7 @@ export class AppComponent implements OnInit {
   ngOnInit() {
     // Check theme preference from local storage or service and apply it
     this.isDarkMode = this.isDarkTheme(); // Example: Get theme preference from local storage or service
-    console.log(this.isDarkMode)
+    // console.log(this.isDarkMode)
     this.setTheme(this.isDarkMode);
     this.themechange()
   }
