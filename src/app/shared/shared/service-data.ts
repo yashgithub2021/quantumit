@@ -1543,9 +1543,9 @@ export const joomlaDevelopmentServices = {
 export const MobileAppDevelopmentDallasServices = {
     title1: "Mobile App ",
     title2: "Development Dallas",
-    img1: "../../../../assets/services/android/img1.webp",
-    metaTitle: "Android App Development Company | Android App Development Agency",
-    metaDescription: "Quantum IT Innovation: Leading Android app development agency offering top-notch custom Android app development services. Transform your ideas with our expert team today!",
+    img1: "../../../../assets/services/mobile_app_dev-dallas/img1.jpg",
+    metaTitle: "Mobile App Development Services Dallas | Custom Mobile App Development",
+    metaDescription: "Discover top mobile app developers near Dallas at Quantum IT Innovation. We offer custom mobile app development services in Dallas, including cross-platform solutions. Your best mobile app development company!",
     // img2: "../../../../assets/services/ios_android/img1.jpg",
     descriptionOne: [
         "Businesses need to own mobile apps if they want to compete and fully engage with their customers. Based on its innovative solutions and a solid commitment to excellence, Quantum IT has emerged as one of the leading companies in the field of <b>mobile application development Dallas</b>. We are known for developing highly efficient mobile applications for different industries hence having earned trust from businesses across the world over time. This ensures that your app will be seen by all users since we have knowledge in both iOS and Android platforms."
@@ -1558,7 +1558,7 @@ export const MobileAppDevelopmentDallasServices = {
     ],
     ourProcessImg: [
         {
-            img3: '../../../../assets/services/android/img3.png'
+            img3: '../../../../assets/services/mobile_app_dev-dallas/img2.jpg'
         }
     ],
     serviceTitle: "Our Mobile App Development Services",
@@ -1618,6 +1618,85 @@ export const MobileAppDevelopmentDallasServices = {
         }
     ]
 }
+export const WebDevelopmentCompanyUSA = {
+    title1: "Web App ",
+    title2: "Development USA",
+    img1: "../../../../assets/services/\web_app_dev/img1.jpg",
+    metaTitle: "Web Development Company USA | Quantum IT",
+    metaDescription: "Quantum IT Innovation is a top Web Development Company in the USA, offering cutting-edge solutions tailored to your business needs. Elevate your digital presence with us!",
+    descriptionOne: [
+        "Quantum IT is a top web development company in the USA, known for its creative solutions and commitment to perfection. In order to meet each client’s unique identity, our well-versed developers, designers and digital strategists work as a team towards achieving quality websites. Through many years of practising it, various projects have been accomplished by us across different industries like e-commerce, healthcare, education among others.Our approach to website creation involves everything from inception through launch to post-launch support. A good site goes beyond just being an online shop, it is an important tool for increasing brand reputation, enhancing user experience and driving growth. We therefore create sites which are not only attractive but also highly usable, safe and optimised for performance improvement."
+    ],
+    ourProcessDesc: [
+        
+    ],
+    ourProcessImg: [
+        
+    ],
+    serviceTitle: "Our Web Development Services",
+    services: [
+        {
+            num: "01.",
+            title: "Custom Web Development",
+            desc: "The aim of our custom web development services is to build individualised websites that correspond with your business goals.",
+            img: '../../../../assets/mobile/service/service-icon1.svg'
+        },
+
+        {
+            num: "02.",
+            title: "E-commerce Development",
+            desc: "It is crucial for any business seeking to make sales through goods or services online in today’s world to have a robust e-commerce platform. Ecommerce websites developed by Quantum IT are user-friendly, secure and conversion-optimised.",
+            img: '../../../../assets/mobile/service/md.svg'
+        },
+
+        {
+            num: "03.",
+            title: "Content Management Systems (CMS)",
+            desc: "One of the most important ways of managing your website’s content correctly is by using a content management system. At Quantum IT, we develop CMS through several popular platforms like WordPress, Joomla, Drupal among others.",
+            img: '../../../../assets/mobile/service/mad.svg'
+        },
+
+        {
+            num: "04.",
+            title: "Responsive Web Design",
+            desc: "Having a responsive site has gone beyond being optional; it has become mandatory due to the increased use of mobile devices. With this service, our responsive web designs are able to facilitate perfect functioning on any device including desktops.",
+            img: '../../../../assets/mobile/service/mat.svg'
+        },
+
+        {
+            num: "05.",
+            title: "Web Application Development",
+            desc: "Quantum IT also creates web applications besides traditional websites for enhancing business operations. Variety of web application development services we offer encompasses customer portals, complex enterprise solutions or booking systems.",
+            img: '../../../../assets/mobile/service/ema.svg'
+        },
+        {
+            num: "06.",
+            title: "SEO and Digital Marketing",
+            desc: "Your better-designed website will only be useful if it is reachable to the target audience. Quantum IT provides comprehensive SEO and digital marketing services aimed at making your site top ranked on search engine results page and attract quality traffic.",
+            img: '../../../../assets/mobile/service/mgd.svg'
+        },
+    ],
+    methodologyBtnTitle: "Our App Development",
+    methodologyTitle: "Why Quantum IT for Mobile App Development?",
+    steps: [
+        {
+            num: 1,
+            title: "Web Excellence",
+            desc: "Selecting the right web development partner is critical to the success of your online presence. Quantum IT comes across as a leading firm in terms of its expertise, customer oriented approach, quality standards, performance standards."
+        },
+        {
+            num: 2,
+            title: "Expertise & Innovation",
+            desc: "Our team has acquired years of experience that gives them the ability to manage any size and complexity of projects. They remain updated with recent industrial trends and technologies in order to provide cutting edge solutions."
+        },
+        {
+            num: 3,
+            title: "Uncompromising Quality",
+            desc: " Quality is our top priority, hence we put websites under strict tests involving bug fixes so as to make sure they are secure and ready for performance in a way that offers users seamless interactions."
+        }
+    ]
+}
+
 
 // generative ai services
 

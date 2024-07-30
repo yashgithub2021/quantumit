@@ -166,7 +166,7 @@
                         [routerLink]="data.link">
                         <i class="fa-solid fa-arrow-right  position-absolute text-secondary"
                             style="transform: rotate(325deg); top:10px; right:10px"></i>
-                        <img [src]="data.img" alt="logo">
+                        <img [src]="data.img" alt="logo"loading="lazy">
                         <p>{{data.label}}</p>
                     </div>
                 </div>
@@ -207,11 +207,11 @@
                 <div class="slide-track">
                     <div class="slide" *ngFor="let img of brandLogo">
                         <img [ngStyle]="{filter:isDarkTheme?'invert(0)':'invert(1)'}" [src]="img.img"
-                            class="d-block w-auto" alt="...">
+                            class="d-block w-auto" alt="..."loading="lazy">
                     </div>
                     <div class="slide" *ngFor="let img of brandLogo">
                         <img [ngStyle]="{filter:isDarkTheme?'invert(0)':'invert(1)'}" [src]="img.img"
-                            class="d-block w-auto" alt="...">
+                            class="d-block w-auto" alt="..."loading="lazy">
                     </div>
                 </div>
             </div>
@@ -239,7 +239,7 @@
                         <div data-aos="slide-up" routerLink="{{service.link}}"
                             class="service-card col-lg-4 col-md-6  d-flex flex-column align-items-center justify-content-center px-lg-5 px-2 my-4">
                             <div class="image my-3">
-                                <img [src]="service.img" alt="Mobile">
+                                <img [src]="service.img" alt="Mobile"loading="lazy">
                             </div>
                             <div class="title my-3 text-align-center">
                                 <h4>
@@ -290,7 +290,7 @@
             </div>
             <div style="cursor: pointer;" class="projects-section d-flex flex-column flex-lg-row container ">
                 <div data-aos="fade-in" (click)="scrollToTop()"
-                    routerLink="/app-development/app-details/6668aa73f53679469939cf7d"
+                    routerLink="/app-development/app-details/f39b117a-06c3-4fcb-b8f4-4de4b6e1435a"
                     class="container p-0 project-sec-one project-one flex-lg-grow-1 position-relative">
                     <div
                         class="project-one-details details d-flex justify-content-between align-items-center position-absolute px-3 ">
@@ -306,7 +306,7 @@
                     </div>
                 </div>
                 <div class="h-100 container d-flex gap-4 flex-column align-items-center justify-content-center">
-                    <div (click)="scrollToTop()" routerLink="/app-development/app-details/663daecc79320d5a5df5ba6d"
+                    <div (click)="scrollToTop()" routerLink="/app-development/app-details/f1205eb0-fd71-4be3-82c6-054779c3c21c"
                         data-aos="fade-in" class="project-two project-sec-two position-relative">
                         <div
                             class="project-two-details details d-flex justify-content-between align-items-center position-absolute px-3 ">
@@ -322,7 +322,7 @@
                         </div>
                     </div>
                     <div (click)="scrollToTop()" data-aos="fade-in"
-                        routerLink="/web-development/details/663db2c579320d5a5df5ba7b"
+                        routerLink="/web-development/details/00000000-663d-b2c5-7932-0d5a5df5ba7b"
                         class="project-three project-sec-two position-relative">
                         <div
                             class="project-three-details details d-flex justify-content-between align-items-center position-absolute px-3 ">
@@ -370,7 +370,7 @@
             </div>
         </div>
         <div class="our-customers d-flex container justify-content-center">
-            <img src="../../../assets/home/map.png" alt="">
+            <img src="../../../assets/home/map.webp" alt=""loading="lazy">
         </div>
     </div>
 
@@ -400,7 +400,7 @@
                                     </div>
                                     <div class="profile">
                                         <img height="50" width="50" style="border-radius: 50px;" class=""
-                                            [src]="review.profileImg" alt="profile">
+                                            [src]="review.profileImg" alt="profile"loading="lazy">
                                     </div>
                                 </div>
                             </div>

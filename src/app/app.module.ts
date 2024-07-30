@@ -4,11 +4,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
-import { HomeComponent } from './components/home/home.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { WebdevComponent } from './pages/web/webdev/webdev.component';
-import { AiRobotComponent } from './components/ai-robot/ai-robot.component';
-import { FormComponent } from './components/form/form.component';
 import { SharedModule } from './shared/shared/shared.module';
 import { HttpClientModule } from '@angular/common/http'
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -25,7 +22,6 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
     NavbarComponent,
     FooterComponent,
     WebdevComponent,
-    AiRobotComponent,
     DetailsComponent,
   ],
   imports: [
