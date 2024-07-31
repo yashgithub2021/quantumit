@@ -1621,7 +1621,7 @@ export const MobileAppDevelopmentDallasServices = {
 export const WebDevelopmentCompanyUSA = {
     title1: "Web App ",
     title2: "Development USA",
-    img1: "../../../../assets/services/\web_app_dev/img1.jpg",
+    img1: "../../../../assets/services/web_app_dev/img1.jpg",
     metaTitle: "Web Development Company USA | Quantum IT",
     metaDescription: "Quantum IT Innovation is a top Web Development Company in the USA, offering cutting-edge solutions tailored to your business needs. Elevate your digital presence with us!",
     descriptionOne: [
@@ -1696,6 +1696,163 @@ export const WebDevelopmentCompanyUSA = {
         }
     ]
 }
+export const ProfessionalSEOServicesCompany = {
+    title1: "Professional SEO",
+    title2: "Services Company",
+    img1: "../../../../assets/services/professional_Seo/img1.jpg",
+    metaTitle: "Professional SEO Services Company | Quantum IT Innovation",
+    metaDescription: "Discover top-notch professional SEO services with Quantum IT Innovation. As a leading SEO services company, we enhance your online presence and drive growth.",
+    descriptionOne: [
+        "For companies that want to reach their target customers and expect to achieve sustainable growth in their business, SEO is an essential tool. We at Quantum IT consider ourselves as one of the best professional SEO services companies whose aim is helping businesses improve their online presence and achieve top rankings on search engines. But what sets us apart? Let’s see how Quantum IT can act as your trusted ally while working your way through the SEO maze.<br><br>SEO is more than just a trendy term; it is actually an integral part of online marketing and can make or break your web presence. In essence, SEO facilitates search engine optimization for example on Google, Bing, Yahoo etc. The better the strategy you have for SEO, the higher will be your site’s ranking on SERPs (Search Engine Results Pages). Resulting in more visibility, traffic and hence conversions in the end.<br><br>However, SEO isn’t a magic bullet for all problems. It necessitates knowledge of algorithms, user behaviour as well as industry trends. This is where Quantum IT’s professional SEO services come into play."
+    ],
+    ourProcessDesc: [
+        
+    ],
+    ourProcessImg: [
+        
+    ],
+    serviceTitle: "Our SEO Services",
+    services: [
+        {
+            num: "01.",
+            title: "Comprehensive SEO Audits",
+            desc: "when we embark on a complete search engine optimization review of your website. We look at all aspects including on-page elements such as meta tags and content quality while off-page factors include backlinks and social signals. ",
+            img: '../../../../assets/mobile/service/service-icon1.svg'
+        },
+
+        {
+            num: "02.",
+            title: "Researching Keywords and Optimising",
+            desc: "Keyword phrases are the backbone of SEO because they represent what potential customers type into search engines when looking for products or services online.",
+            img: '../../../../assets/mobile/service/md.svg'
+        },
+
+        {
+            num: "03.",
+            title: "Creating Content and Promoting",
+            desc: "Content is king in the SEO world. Our team of skilled content writers creates high-quality, engaging and SEO-friendly pieces meant for your specific target market segments.",
+            img: '../../../../assets/mobile/service/mad.svg'
+        },
+
+        {
+            num: "04.",
+            title: "On-page and Technical SEO",
+            desc: "Ok, so if you are to get your site on top of search engine results pages, then it is very important that you optimise its on-page elements.",
+            img: '../../../../assets/mobile/service/mat.svg'
+        },
+
+        {
+            num: "05.",
+            title: "Link Building and Off-Page SEO",
+            desc: "The backbone of a website’s authority and credibility lies in a strong backlink profile.",
+            img: '../../../../assets/mobile/service/ema.svg'
+        },
+        {
+            num: "06.",
+            title: "Continuous Monitoring and Reporting",
+            desc: "SEO is a process that never ends therefore one has to be continuously watchful and adaptable when competitors creep up behind them.",
+            img: '../../../../assets/mobile/service/mgd.svg'
+        },
+    ],
+    methodologyBtnTitle: "Our App Development",
+    methodologyTitle: "Why Quantum IT?",
+    steps: [
+        {
+            num: 1,
+            title: "Quantum SEO",
+            desc: "Quantum IT is an SEO company that delivers quantifiable and substantial outcomes for our clients. Our team of experienced SEO professionals always remain in touch with the recent trends. "
+        },
+        {
+            num: 2,
+            title: "Client-Centric SEO",
+            desc: "On top of this, at Quantum IT, we believe in putting you first and begin by understanding your unique business goals, target audience and competitive climate."
+        },
+        {
+            num: 3,
+            title: "SEO Excellence",
+            desc: "Quantum IT has the capability, prowess and zeal to help you whether you are an emerging business desiring to create a strong online presence from scratch or an already established enterprise that wants to refine its existing SEO strategy."
+        }
+    ]
+}
+export const NJSEOCompany = {
+    title1: "NJ SEO ",
+    title2: "Company",
+    img1: "../../../../assets/services/nj_seo/img1.jpg",
+    metaTitle: "NJ SEO Company | Quantum IT Innovation",
+    metaDescription: "Quantum IT Innovation: Your top NJ SEO company offering expert digital marketing solutions. Boost your online presence with our tailored SEO strategies and services.",
+    descriptionOne: [
+        "Quantum IT, one of the best <b>NJ SEO companies,</b> aims at improving the visibility of all businesses and ensuring they effectively reach their target market. Our specialisation is developing unique SEO strategies that match your business objectives and drive high quality traffic to your website increasing conversion rates.<br><br> Our team of professionals who have been working in this industry for many years employs up-to-date SEO approaches and follows industry best practices to ensure that your website not only ranks highly on search engine results but also offers seamless user experience. At Quantum IT, we know that every enterprise has its own identity so our services are tailored accordingly whether you want us to create your online presence from scratch or revise current SEO plans."
+    ],
+    ourProcessDesc: [
+        
+    ],
+    ourProcessImg: [
+        
+    ],
+    serviceTitle: "Our Services",
+    services: [
+        {
+            num: "01.",
+            title: "Keyword Research and Strategy",
+            desc: " We commence every SEO campaign with complete keyword research at Quantum IT. In this phase, we establish valuable keywords that are relevant to the marketing purpose of the business as well as the user's intent.",
+            img: '../../../../assets/mobile/service/service-icon1.svg'
+        },
+
+        {
+            num: "02.",
+            title: "On-Page SEO",
+            desc: "Our on-page SEO work focuses on optimising different elements in your website such as meta tags, headers, images and internal links to ensure that it is search engine friendly and user friendly at the same time for a better experience that keeps visitors coming back to the site more often.",
+            img: '../../../../assets/mobile/service/md.svg'
+        },
+
+        {
+            num: "03.",
+            title: "Technical SEO",
+            desc: " For SEO success, you must have a technically solid website. We perform comprehensive technical audits which identify and address different problems that may affect the performance of your website, these include slow loading times, mobile responsiveness, broken links etc.",
+            img: '../../../../assets/mobile/service/mad.svg'
+        },
+
+        {
+            num: "04.",
+            title: "Content Creation and Optimization",
+            desc: "Quality content is pivotal in engaging your audience members through improved search rankings online. Our team consisting of skilled writers together with SEO experts provides an informative, engaging content that meets users needs.",
+            img: '../../../../assets/mobile/service/mat.svg'
+        },
+
+        {
+            num: "05.",
+            title: "Link Building",
+            desc: "A strong back link profile is important for raising credibility and authority of websites. Through ethical link building strategy we get high quality backlinks from reliable sources which help to improve ranks in our sites and establish reputation as well.",
+            img: '../../../../assets/mobile/service/ema.svg'
+        },
+        {
+            num: "06.",
+            title: "Local SEO",
+            desc: "Local Search Engine Optimization is intended to enhance local search result visibility, for firms which target specific geographic areas. We do this through managing your internet-based reviews, optimising Google My Business profile.",
+            img: '../../../../assets/mobile/service/mgd.svg'
+        },
+    ],
+    methodologyBtnTitle: "Our App Development",
+    methodologyTitle: "Why Quantum IT?",
+    steps: [
+        {
+            num: 1,
+            title: "Expert SEO",
+            desc: "Our NJ SEO company has been in the SEO industry for a long time and our team knows how it works. Our skilled professionals handle all types and sizes of projects while keeping up with the latest SEO trends and algorithm updates."
+        },
+        {
+            num: 2,
+            title: "Custom SEO",
+            desc: "We prioritise clients’ expectations by providing personalised SEO strategies aligned with their objectives. Our customer-centric approach involves close collaboration with you to understand your goals, issues, and clientele."
+        },
+        {
+            num: 3,
+            title: "Holistic SEO",
+            desc: "Quantum IT strives for perfection in all areas we serve. We look at SEO holistically, mindfully attending to technical optimizations and content strategies among other aspects."
+        }
+    ]
+}
+
 
 
 // generative ai services
@@ -2237,6 +2394,99 @@ export const serviceAiDevelopment = {
         }
     ]
 }
+export const serviceAiConsulting = {
+    title1: "AI",
+    title2: "Consulting",
+    img1: "../../../../assets/ai/services/service-ai-consulting/img1.jpg",
+    // img2: "../../../../assets/services/ios_android/img1.jpg",
+    descriptionOne: [
+        "The world of technology is a dynamic one and Artificial Intelligence (AI) has been at its core. Quantum IT is a key player in this transformation, providing <b>AI consulting services</b>, which enable businesses to fully utilise AI potential. Our technical know-how extends into multiple advanced models including GPT, Gemini, Llama, PaLM and Mistral. Whether you want to automate processes, improve customer interactions or explore the creative potential of generative AI, our solutions will be customised for each user."
+    ],
+    descriptionTwo: [
+        ""
+    ],
+    serviceTitle: "Our AI Consulting Services",
+    services: [
+        {
+            num: "01.",
+            title: "AI Strategy Development",
+            desc: "At our <b>AI consulting firm,</b> we believe that without a clear strategy successful AI implementation can’t happen. We have an AI Strategy Development service where we start by holding an in-depth consultation to understand your unique business needs and objectives. Through engagement with the key stakeholders we get their opinion thus creating a proper roadmap with specific steps and timelines for integrating the operations with AI.",
+            img: '../../../../assets/mobile/service/service-icon1.svg'
+        },
+
+        {
+            num: "02.",
+            title: "AI Opportunity Mapping",
+            desc: "To maximise return on investment it is important to identify high-impact artificial intelligence use cases. Our service of determining AI opportunities involves assessing your current operations and examining data in order to determine those points where artificial intelligence can lead to increased effectiveness, innovation as well as growth. This extensive evaluation helps prioritise long-term-goals related to artificial intelligence.",
+            img: '../../../../assets/mobile/service/md.svg'
+        },
+
+        {
+            num: "03.",
+            title: "Model Development for Specific Domain",
+            desc: "For AI solutions to be effective, it is important that one understands the complexities of their industry. Our AI consulting business extensively reviews your domain and tweaks fundamental models like GPT, Llama, PaLM, Claude, Gemini, Mixtral or Mistral to fit in with your proprietary data. Our model is subjected to rigorous testing and validation so that it can align well with your business needs..",
+            img: '../../../../assets/mobile/service/mad.svg'
+        }
+    ],
+    our_steps_title: 'Our Generative AI Solutions',
+    our_steps_description: 'We are experts in generative AI, we create innovative tools including content generation toolkits, chatbots or virtual assistants among others. Right from UX/UI design up to model integration our end-to-end generative AI solution development is built around you.',
+    our_steps: [
+        
+    ],
+    our_steps2: [
+        {
+            stepNo: "Step 01",
+            title: "Data Engineering",
+            desc: "Artificial Intelligence depends on data. Our data engineering services encompass all aspects of the data lifecycle starting from sourcing and cleansing through structuring and enrichment. As your AI consulting agency, we make sure that your data is optimised for machine learning thus making training models more accurate as well as reliable."
+        }
+        ,
+        {
+            stepNo: "Step 02",
+            title: "AI Integration",
+            desc: "To unlock the full potential of AI systems, seamless integration with existing ones is required. We have a team of professionals who will ensure smooth transition and make AI an integral part of your operations thereby enabling you to effectively exploit its transformative capabilities."
+        }
+    ],
+    integrations: [
+        {
+            name: 'Evaluation Phase',
+            img: '../../../../assets/ai/services/service-ai-consulting/logo1.png',
+            img2: '../../../../assets/ai/services/service-ai-consulting/knowledge_2158451.png',
+        },
+        {
+            name: 'Planning for Success',
+            img: '../../../../assets/ai/services/service-ai-consulting/logo2.png',
+            img2: '../../../../assets/ai/services/service-ai-consulting/solutions_2025097.png',
+        },
+        {
+            name: 'Collecting Data and Preparing it for Analysis',
+            img: '../../../../assets/ai/services/service-ai-consulting/logo6.png',
+            img2: '../../../../assets/ai/services/service-ai-consulting/security_1674738.png',
+        },
+        {
+            name: 'Building Custom Models',
+            img: '../../../../assets/ai/services/service-ai-consulting/logo4.png',
+            img2: '../../../../assets/ai/services/service-ai-consulting/algorithm_17335658.png',
+        },
+        {
+            name: 'Model Integration/ Solution Development',
+            img: '../../../../assets/ai/services/service-ai-consulting/logo5.png',
+            img2: '../../../../assets/ai/services/service-ai-consulting/algorithm_17335658.png',
+        },
+        {
+            name: 'Incorporating Into Existing Workflows',
+            img: '../../../../assets/ai/services/service-ai-consulting/logo3.png',
+            img2: '../../../../assets/ai/services/service-ai-consulting/algorithm_17335658.png',
+        }
+        ,
+        {
+            name: 'Monitor and Maintain',
+            img: '../../../../assets/ai/services/service-ai-consulting/logo7.png',
+            img2: '../../../../assets/ai/services/service-ai-consulting/algorithm_17335658.png',
+        }
+    ]
+}
+
+
 //for ai case study
 export const HREmployeeOnBoarding = {
     title: "HR Employee On Boarding",
