@@ -1,21 +1,21 @@
 <div class="container-fluid h-auto w-100 p-0">
-    <div data-aos="fade-in"
+    <div
         class="container-fluid position-relative p-0 frame-1 d-flex flex-column justify-content-center align-items-center">
         <div class="container frame-1-cont position-absolute w-75 h-75">
             <div class="heading w-100 h-100 d-flex flex-column align-items-center justify-content-center ">
-                <div class="button my-2" data-aos="slide-up">
+                <div class="button my-2">
                     <button class="our-process-btn">Quantum It Innovation</button>
                 </div>
-                <h1 class="tagline text-center fw-bolder" data-aos="slide-up">
+                <h1 class="tagline text-center fw-bolder">
                     <span class="linear-text">Artificial Intelligence </span>
                     Solutions
                     with Unmatched Expertise
                 </h1>
-                <p data-aos="slide-up" class="fs-5 text-align-center w-75 opacity-50">
+                <p class="fs-5 text-align-center w-75 opacity-50">
                     Discover our leading AI solutions' unparalleled expertise and innovation, where cutting-edge
                     technology meets exceptional service.
                 </p>
-                <div data-aos="fade-up" class="buttons d-flex justify-content-center w-100">
+                <div class="buttons d-flex justify-content-center w-100">
                     <button class="btn btn-dark mx-3 px-4" (click)="scrollToService()">Get Started</button>
                 </div>
             </div>
@@ -24,19 +24,19 @@
 
     <div class="frame-5 my-lg-5" id="wwd">
         <div class="text w-100 d-flex flex-column  justify-content-center align-items-center">
-            <div class="button" data-aos="slide-up">
+            <div class="button">
                 <button class="our-process-btn">
                     What We Do
                 </button>
             </div>
-            <div class="txt w-75 text-align-center px-sm-5 px-2 my-lg-5" data-aos="slide-up">
+            <div class="txt w-75 text-align-center px-sm-5 px-2 my-lg-5">
                 <h1>Deliver dynamic business solutions tailored to your needs using data science, machine learning, and
                     AI technologies.</h1>
             </div>
         </div>
         <div class="milestones container my-3">
             <div class="row custom-gap d-flex align-items-center justify-content-lg-center justify-content-evenly">
-                <div *ngFor="let stone of milestones" data-aos="slide-up"
+                <div *ngFor="let stone of milestones"
                     class="col-sm-3 col-8 milestone-col m-lg-2 d-flex align-items-center flex-sm-column flex-row  flex-lg-row justify-content-around h-100"
                     style="max-width:250px;">
                     <div class="image">
@@ -55,8 +55,8 @@
         <div class="container d-flex flex-column justify-content-between my-sm-5 my-0 px-lg-5">
             <div
                 class="heading d-flex flex-column mb-sm-5 mb-2 mb-lg-0 flex-lg-row justify-content-between align-items-center">
-                <div class="text w-75 d-flex frame-2-head align-items-start align-items-sm-center align-items-lg-start flex-column "
-                    data-aos="slide-up">
+                <div
+                    class="text w-75 d-flex frame-2-head align-items-start align-items-sm-center align-items-lg-start flex-column ">
                     <div class="button">
                         <button class="our-process-btn">
                             What We Offer
@@ -69,10 +69,9 @@
                 </div>
             </div>
 
-            <div class="what-we-do w-100 h-100 mt-lg-5 " data-aos="zoom-in">
+            <div class="what-we-do w-100 h-100 mt-lg-5 ">
                 <div class="row w-100 h-100 ">
-                    <div *ngFor="let data of aiService" data-aos="zoom-out"
-                        [ngStyle]="{background:isDarkTheme?'#111111':'#ECF0FF'}"
+                    <div *ngFor="let data of aiService" [ngStyle]="{background:isDarkTheme?'#111111':'#ECF0FF'}"
                         class=" col-lg-4 col-6 ai-data pt-lg-5 px-lg-5 pb-lg-3 d-flex gap-3 align-items-center justify-content-center flex-column">
                         <div class="image image1">
                             <img [src]="data.img" alt="">
@@ -89,11 +88,11 @@
     <div class="frame-3 container p-0 p-lg-5 sm:mb-2">
         <div class="service-section mt-3">
             <div class="head w-100 h-100 d-flex flex-column align-items-center justify-content-center">
-                <div class="button my-2" data-aos="slide-up">
+                <div class="button my-2">
                     <button routerLink="/portfolio" class="our-process-btn">Our Process</button>
                 </div>
 
-                <div class="our-process my-2 txt" data-aos="slide-up">
+                <div class="our-process my-2 txt">
                     <h1 class=" text-align-center">AI Development Company</h1>
                 </div>
             </div>
@@ -145,7 +144,7 @@
     <div class="container my-lg-5 services">
         <div class="container d-flex align-items-center justify-content-center">
             <div class="text w-100 d-flex flex-column  justify-content-center align-items-center">
-                <div class="button" data-aos="zoom-in">
+                <div class="button mb-3 mt-lg-4">
                     <button class="our-process-btn mb-2">
                         Our Services
                     </button>
@@ -155,10 +154,10 @@
                 </div>
             </div>
         </div>
-        <div class="what-we-do w-100 h-100 mt-lg-5 container" data-aos="zoom-in">
+        <div class="what-we-do w-100 h-100 mt-3 mt-lg-4 container">
             <div class="row w-100 h-100 gap-2 justify-content-center mb-4">
                 <ng-container *ngFor="let data of ourAIGenerative;let i=index;">
-                    <div routerLink="{{data?.link || '/artificial-intelligence'}}" data-aos="zoom-out"
+                    <div routerLink="{{data?.link || '/artificial-intelligence'}}"
                         style="box-shadow:0px 0px 1px black;border-radius:10px;"
                         [ngStyle]="{background:isDarkTheme?'#111111':'#ECF0FF'}"
                         class=" col-lg-3 col-sm-4 col-6 ai-data2 pt-lg-5 px-lg-5 pb-lg-3 d-flex gap-3 align-items-center justify-content-center flex-column">
@@ -181,7 +180,7 @@
     <div class="container my-lg-5 my-3">
         <div class="container d-flex align-items-center justify-content-center">
             <div class="text w-100 d-flex flex-column  justify-content-center align-items-center">
-                <div class="button" data-aos="zoom-in">
+                <div class="button">
                     <button class="our-process-btn mb-2">
                         Our Services
                     </button>
@@ -191,7 +190,7 @@
                 </div>
             </div>
         </div>
-        <div class="what-we-do w-100 h-100 mt-lg-5 container" data-aos="zoom-in">
+        <div class="what-we-do w-100 h-100 mt-lg-5 container">
             <div class="row w-100 h-100 justify-content-center gap-2">
                 <ng-container *ngFor="let data of ourAIServices">
                     <div data-aos="zoom-out" routerLink="{{data?.link || '/artificial-intelligence'}}"
@@ -214,7 +213,7 @@
     <div class="frame-3 container-fluid mt-5 my-lg-5">
         <div class="container d-flex align-items-center justify-content-center">
             <div class="text w-100 d-flex flex-column  justify-content-center align-items-center">
-                <div class="button" data-aos="zoom-in">
+                <div class="button">
                     <button class="our-process-btn">
                         Industries
                     </button>

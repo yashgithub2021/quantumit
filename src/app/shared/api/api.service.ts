@@ -1,7 +1,7 @@
 import { HttpClient, HttpParams } from '@angular/common/http';
 import { EventEmitter, Injectable } from '@angular/core';
 
-const YOUR_ACCESS_KEY='9yykUwGxYq0OK9WtmLoup4edvRRSSAkA';
+const YOUR_ACCESS_KEY = '9yykUwGxYq0OK9WtmLoup4edvRRSSAkA';
 
 @Injectable({
   providedIn: 'root'
@@ -39,7 +39,12 @@ export class ApiService {
   }
 
   getBlogs() {
-    return this.http.get(`${this.baseUrl}api/blogs/blog`)
+    const resultPerPage: number = 100;
+    const currentPage: number = 1;
+    const params = new HttpParams()
+      .set('resultPerPage', resultPerPage.toString())
+      .set('currentPage', currentPage.toString());
+    return this.http.get(`${this.baseUrl}api/blogs/blog`, { params })
   }
 
   getBlogDetails(id: any) {
@@ -75,17 +80,15 @@ export class ApiService {
   }
   getIpAddress() {
     return this.http.get<{ ip: string }>('https://api.ipify.org?format=json')
-
   }
-  getLocation(ipData:any){
+  getLocation(ipData: any) {
     return this.http.get<any>(`https://ipinfo.io/${ipData.ip}/json?token=61247512e441c3`);
   }
-  getCategoryOfBlogs(){
+  getCategoryOfBlogs() {
     return this.http.get<any>(`${this.baseUrl}api/categories/getCategories`);
   }
-  getBlogsByCategory(category:string){
-    let body={category}
-    return this.http.get<any>(`${this.baseUrl}api/blogs/blogsByCategory`,{params:body});
-
+  getBlogsByCategory(category: string) {
+    let body = { category }
+    return this.http.get<any>(`${this.baseUrl}api/blogs/blogsByCategory`, { params: body });
   }
 }

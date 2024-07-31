@@ -305,7 +305,7 @@
             <div
                 class="heading d-flex flex-column mb-sm-5 mb-1 mb-lg-0 flex-lg-row justify-content-center align-items-center">
                 <div class="text frame-2-head w-50 d-flex align-items-center justify-content-center flex-column ">
-                    <div class="button" data-aos="fade-in">
+                    <div class="button mb-4" data-aos="fade-in">
                         <button class="our-process-btn">
                             Our Services
                         </button>
@@ -317,9 +317,10 @@
                 </div>
             </div>
             <div class="what-we-do w-100 h-100 mt-lg-5 d-block d-sm-none">
-                <table class="table table-bordered" [ngClass]="isDarkTheme?' table-dark':'table-light'">
+                <table data-aos="fade-in" class="table table-bordered"
+                    [ngClass]="isDarkTheme?' table-dark':'table-light'">
                     <tbody class="">
-                        <tr *ngFor="let data of tableData" data-aos="fade-up">
+                        <tr *ngFor="let data of tableData">
                             <td scope="row" class="align-middle first-td p-4 w-auto">
                                 <img [ngStyle]="{filter:isDarkTheme?'none':'invert(1)'}" [src]="data.img" alt=""
                                     class="w-auto">
@@ -341,7 +342,7 @@
                 <table class="table table-bordered table-responsive-sm"
                     [ngClass]="isDarkTheme?' table-dark':'table-light'">
                     <tbody class="">
-                        <tr *ngFor="let data of tableData" data-aos="fade-up">
+                        <tr *ngFor="let data of tableData">
                             <td scope="row" class="align-middle first-td p-4 w-auto">
                                 <img [ngStyle]="{filter:isDarkTheme?'none':'invert(1)'}" [src]="data.img" alt=""
                                     class="w-auto">

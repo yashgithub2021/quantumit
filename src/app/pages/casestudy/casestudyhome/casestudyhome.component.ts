@@ -18,7 +18,7 @@ export class CasestudyhomeComponent implements OnInit {
       name: "Mobile App Development",
       portfolioImage: '../../../../assets/casestudybanner/AMPSPORTFOLIO.webp',
       link: '/app-development/casestudy',
-      projectName:'AMPS'
+      projectName: 'AMPS'
     }
   ]
   webCaseStudy = [
@@ -26,7 +26,7 @@ export class CasestudyhomeComponent implements OnInit {
       name: "Web App Development",
       portfolioImage: '../../../../assets/casestudybanner/WIKISTRINGS.png',
       link: '/web-development/casestudy',
-      projectName:'WikiString'
+      projectName: 'WikiString'
     }
   ]
   dmCaseStudy = [
@@ -34,58 +34,58 @@ export class CasestudyhomeComponent implements OnInit {
       name: "Digital Marketing",
       portfolioImage: '../../../../assets/casestudybanner/Seanautic.png',
       link: '/digital-marketing/casestudy',
-      projectName:'Seanautic marine Inc'
+      projectName: 'Seanautic marine Inc'
     }
   ]
-  
+
   aiCaseStudy = [
-    {
-      name: "Artificial Intelligence",
-      portfolioImage: '../../../../assets/casestudybanner/AI.png',
-      link: '/ai/casestudy',
-      projectName:'Capsule Endoscopy'
-    },
+    // {
+    //   name: "Artificial Intelligence",
+    //   portfolioImage: '../../../../assets/casestudybanner/AI.png',
+    //   link: '/ai/casestudy',
+    //   projectName:'Capsule Endoscopy'
+    // },
     {
       name: "Artificial Intelligence",
       portfolioImage: '../../../../assets/casestudybanner/ai/UR DRIVER3.png',
       link: '/ai/ai-casestudy/HR-Employee-On-Boarding',
-      projectName:'HR Employee On Boarding'
+      projectName: 'HR Employee On Boarding'
     },
     {
       name: "HR Recruitment",
       portfolioImage: '../../../../assets/casestudybanner/ai/2.png',
       link: '/ai/ai-casestudy/HR-Recruitment',
-      projectName:''
+      projectName: ''
     }, {
       name: "Purchase Order",
       portfolioImage: '../../../../assets/casestudybanner/ai/3.png',
       link: '/ai/ai-casestudy/Purchase-Order',
-      projectName:''
+      projectName: ''
     }, {
       name: "Account Payable",
       portfolioImage: '../../../../assets/casestudybanner/ai/4.png',
       link: '/ai/ai-casestudy/Account-Payable',
-      projectName:''
+      projectName: ''
     }, {
       name: "Account Receivable & Recovery",
       portfolioImage: '../../../../assets/casestudybanner/ai/5.png',
       link: '/ai/ai-casestudy/Account-Receivable-Recovery',
-      projectName:''
+      projectName: ''
     }, {
       name: "Insurance Claim Processing",
       portfolioImage: '../../../../assets/casestudybanner/ai/6.png',
       link: '/ai/ai-casestudy/Insurance-Claim-Processing',
-      projectName:''
+      projectName: ''
     }, {
       name: "Insurance Eligibility Verification",
       portfolioImage: '../../../../assets/casestudybanner/ai/7.png',
       link: '/ai/ai-casestudy/Insurance-Eligibility-Verification',
-      projectName:''
+      projectName: ''
     }, {
       name: "Clinical Document Processing",
       portfolioImage: '../../../../assets/casestudybanner/ai/8.png',
       link: '/ai/ai-casestudy/Clinical-Document-Processing',
-      projectName:''
+      projectName: ''
     },
   ]
   // loadingStatus: boolean = true;

@@ -5,7 +5,8 @@
 .navbar-light {
     background: #ECF0FF;
 }
-.primary-menu-inner{
+
+.primary-menu-inner {
     border-bottom: none;
 }
 
@@ -19,8 +20,8 @@
     -webkit-text-fill-color: transparent;
 }
 
-.active1 >a{
-    color: rgb(93, 93, 212)!important;
+.active1>a {
+    color: rgb(93, 93, 212) !important;
 }
 
 /* styles.css (or your component-specific CSS file) */
@@ -30,7 +31,7 @@
 
 .navbar {
     position: sticky;
-    top: 0;
+    top: -1px;
     z-index: 1000;
 }
 
@@ -43,9 +44,10 @@
 li {
     margin: 0 5px;
 }
-li a img{
-    width:20px;
-    height:20px!important;
+
+li a img {
+    width: 20px;
+    height: 20px !important;
 }
 
 .dropdown-menu {
@@ -57,8 +59,9 @@ li a img{
 .dropdown-menu ul {
     list-style: none;
 }
+
 .dropdown-menu ul:last-child {
-    padding-right:20px;
+    padding-right: 20px;
 }
 
 .dropdown-menu li:first-child a {
@@ -70,7 +73,8 @@ li a img{
 .dropdown-menu li:first-child a:hover {
     opacity: 100%;
 }
-.dropdown-menu li:not(:first-child){
+
+.dropdown-menu li:not(:first-child) {
     margin-bottom: 5px;
 }
 

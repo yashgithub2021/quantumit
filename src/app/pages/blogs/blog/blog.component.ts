@@ -16,19 +16,16 @@ export class BlogComponent implements OnInit {
   pageSize: number = 4;
   currentPage: number = 1;
   totalItem!: number;
-  loadingStatus: boolean = true;
+  loadingStatus: boolean = false;
 
-  categories: any[] = [
-
-  ]
+  categories: any[] = []
 
   constructor(private api: ApiService, private titlecase: TitleCasePipe) { }
 
   ngOnInit(): void {
     this.isDarkTheme = this.api.isDarkTheme();
     this.fetchBlogs();
-    // this.getCategories();
-    // this.getBlogsByCategoryName();
+    this.getCategories();
 
     this.themechange();
     this.scrollToTop();
@@ -40,21 +37,28 @@ export class BlogComponent implements OnInit {
     });
   }
 
-  getCategories(){
-    this.api.getCategoryOfBlogs().subscribe((data:any)=>{
+  getCategories() {
+    this.api.getCategoryOfBlogs().subscribe((data: any) => {
+      this.categories = data.category
       console.log(data);
     })
   }
-  getBlogsByCategoryName(){
-    this.api.getBlogsByCategory('App Development').subscribe((data:any)=>{
+  getBlogsByCategoryName(name: string) {
+    this.loadingStatus = true;
+    this.api.getBlogsByCategory(name).subscribe((data: any) => {
       console.log(data);
-    },err=>{
+      this.blogs = data.blogs
+      this.totalItem = this.blogs.length;
+      this.loadingStatus = false;
+    }, err => {
+      this.loadingStatus = false;
       console.log(err)
     })
   }
 
 
   fetchBlogs() {
+    this.loadingStatus = true;
     this.api.getBlogs()
       .subscribe((res: any) => {
         this.blogs = res.blogs;
@@ -68,17 +72,6 @@ export class BlogComponent implements OnInit {
           }
         })
         const uniqueCategories = new Set();
-
-        this.categories = this.blogs.map((blog: any) => {
-          if (!uniqueCategories.has(blog.category) && blog.category!="") {
-            uniqueCategories.add(blog.category);
-            return {
-              link: blog.title1,
-              name: blog.category
-            }
-          }
-          return null;
-        }).filter((category:any)=>category!=null);
 
         this.totalItem = this.blogs.length;
         this.loadingStatus = false;
