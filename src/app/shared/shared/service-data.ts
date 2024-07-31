@@ -2449,39 +2449,39 @@ export const serviceAiConsulting = {
     integrations: [
         {
             name: 'Evaluation Phase',
-            img: '../../../../assets/ai/services/service-ai-development/knowledge_2158451 (1).png',
-            img2: '../../../../assets/ai/services/service-ai-development/knowledge_2158451.png',
+            img: '../../../../assets/ai/services/service-ai-consulting/logo1.png',
+            img2: '../../../../assets/ai/services/service-ai-consulting/knowledge_2158451.png',
         },
         {
             name: 'Planning for Success',
-            img: '../../../../assets/ai/services/service-ai-development/solutions_2025097 (1).png',
-            img2: '../../../../assets/ai/services/service-ai-development/solutions_2025097.png',
+            img: '../../../../assets/ai/services/service-ai-consulting/logo2.png',
+            img2: '../../../../assets/ai/services/service-ai-consulting/solutions_2025097.png',
         },
         {
             name: 'Collecting Data and Preparing it for Analysis',
-            img: '../../../../assets/ai/services/service-ai-development/security_1674738 (1).png',
-            img2: '../../../../assets/ai/services/service-ai-development/security_1674738.png',
+            img: '../../../../assets/ai/services/service-ai-consulting/logo6.png',
+            img2: '../../../../assets/ai/services/service-ai-consulting/security_1674738.png',
         },
         {
             name: 'Building Custom Models',
-            img: '../../../../assets/ai/services/service-ai-development/algorithm_17335658 (1).png',
-            img2: '../../../../assets/ai/services/service-ai-development/algorithm_17335658.png',
+            img: '../../../../assets/ai/services/service-ai-consulting/logo4.png',
+            img2: '../../../../assets/ai/services/service-ai-consulting/algorithm_17335658.png',
         },
         {
             name: 'Model Integration/ Solution Development',
-            img: '../../../../assets/ai/services/service-ai-development/algorithm_17335658 (1).png',
-            img2: '../../../../assets/ai/services/service-ai-development/algorithm_17335658.png',
+            img: '../../../../assets/ai/services/service-ai-consulting/logo5.png',
+            img2: '../../../../assets/ai/services/service-ai-consulting/algorithm_17335658.png',
         },
         {
             name: 'Incorporating Into Existing Workflows',
-            img: '../../../../assets/ai/services/service-ai-development/algorithm_17335658 (1).png',
-            img2: '../../../../assets/ai/services/service-ai-development/algorithm_17335658.png',
+            img: '../../../../assets/ai/services/service-ai-consulting/logo3.png',
+            img2: '../../../../assets/ai/services/service-ai-consulting/algorithm_17335658.png',
         }
         ,
         {
             name: 'Monitor and Maintain',
-            img: '../../../../assets/ai/services/service-ai-development/algorithm_17335658 (1).png',
-            img2: '../../../../assets/ai/services/service-ai-development/algorithm_17335658.png',
+            img: '../../../../assets/ai/services/service-ai-consulting/logo7.png',
+            img2: '../../../../assets/ai/services/service-ai-consulting/algorithm_17335658.png',
         }
     ]
 }

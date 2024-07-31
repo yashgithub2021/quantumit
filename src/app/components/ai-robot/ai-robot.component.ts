@@ -116,7 +116,7 @@ export class AiRobotComponent implements OnInit {
     }, {
       img: '../../../assets/services/AI_service/aiservice/img2.png',
       title: 'AI Consulting',
-      // link: '/ai/Ai-Consulting'
+      link: '/ai/Ai-Consulting'
     }, {
       img: '../../../assets/services/AI_service/aiservice/img3.png',
       title: 'AI As A Service',
