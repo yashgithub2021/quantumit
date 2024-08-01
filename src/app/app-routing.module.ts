@@ -1,12 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './components/home/home.component';
-import { WebdevComponent } from './pages/web/webdev/webdev.component';
-import { AiRobotComponent } from './components/ai-robot/ai-robot.component';
-import { DigitalMarketingComponent } from './pages/digitalmarketing/digital-marketing/digital-marketing.component';
 import { FormComponent } from './components/form/form.component';
-import { MobileModule } from './pages/mobile/mobile.module';
-import { DetailsComponent } from './components/details/details.component';
 import { DataService } from './shared/api/data.service';
 
 const routes: Routes = [
@@ -42,7 +36,8 @@ const routes: Routes = [
   },
   { path: 'form', component: FormComponent },
 
-  { path:':id',component:DetailsComponent, resolve: {
+  { path:':id',    loadComponent: () => import('./components/details/details.component').then(m => m.DetailsComponent),
+    resolve: {
     services: DataService 
   }},
 ];

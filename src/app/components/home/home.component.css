@@ -558,8 +558,6 @@
 @media(min-width:1181px) and (min-height:1024px) {
     .section3>.left-side {
         height: 57vh;
-        width: 75%;
-        position: relative;
     }
 
     .section-3>.right-side {
@@ -576,7 +574,6 @@
     .section3>.left-side {
         height: 85vh;
         width: 85%;
-        position: relative;
     }
 
 }

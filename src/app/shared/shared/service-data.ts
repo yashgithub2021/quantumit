@@ -459,7 +459,7 @@ export const mobileGameDevelopment = {
     title2: "Mobile Game Development",
     metaTitle: "Mobile Game Development Company | Mobile Game Companies",
     metaDescription: "Explore Quantum IT Innovation, a leading mobile game development company. Trusted among mobile game companies for innovative solutions.",
-    img1: "../../../../assets/services/mobile_game_dev/img1.png",
+    img1: "../../../../assets/services/mobile_game_dev/img1.webp",
     // img2: "../../../../assets/services/mobile_game_dev/person-is-taking-picture-city-while-holding-their-smartphone.jpg",
     descriptionOne: [
         "Expand your gaming horizons with our comprehensive suite of Quantum IT’s services designed to support your game throughout its lifecycle.",

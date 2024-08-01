@@ -4,12 +4,16 @@ import { ApiService } from 'src/app/shared/api/api.service';
 import { DataService } from 'src/app/shared/api/data.service';
 import AOS from 'aos';
 import { Title, Meta } from '@angular/platform-browser';
+import { CommonModule } from '@angular/common';
+import { SharedModule } from 'src/app/shared/shared/shared.module';
 
 
 @Component({
   selector: 'app-details',
   templateUrl: './details.component.html',
-  styleUrls: ['./details.component.scss']
+  styleUrls: ['./details.component.scss'],
+  standalone: true,
+  imports: [CommonModule,SharedModule],
 })
 export class DetailsComponent implements OnInit {
 

@@ -13,7 +13,6 @@ import { ToastrModule } from 'ngx-toastr';
 import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgxSpinnerModule } from 'ngx-spinner';
-import { DetailsComponent } from './components/details/details.component';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 
 @NgModule({
@@ -22,7 +21,6 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
     NavbarComponent,
     FooterComponent,
     WebdevComponent,
-    DetailsComponent,
   ],
   imports: [
     BrowserModule,
