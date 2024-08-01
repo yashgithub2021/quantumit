@@ -224,6 +224,14 @@ app-about .carousel-control-next-icon {
   display: none;
 }
 
+app-about .carousel-control-next {
+  display: none;
+}
+
+app-about .carousel-indicators {
+  margin-bottom: 0rem;
+}
+
 @media(max-width:575.98px) {
   app-home .section7 .carousel-control-next {
     right: -25px !important;

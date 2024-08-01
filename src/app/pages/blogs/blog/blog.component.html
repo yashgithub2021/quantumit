@@ -30,12 +30,29 @@
                     <div class="categories col-lg-4 col-12">
                         <div class="card py-4 my-3 m-lg-3 w-100 categories-scroll"
                             [ngStyle]="{'color':isDarkTheme?'white':'black','background':isDarkTheme?'#111111':'#ECF0FF'}">
-                            <div class="card-body  "style="padding-bottom:30px;">
+                            <div class="card-body  " style="padding-bottom:30px;">
                                 <h4 class="card-title card-title1 linear-text d-inline-block ">Categories</h4>
                             </div>
+                            <ng-container>
+                                <div class="card-body popular" (click)="fetchBlogs()">
+                                    <div class="container d-flex justify-content-between text-border">
+                                        <div class="text">
+                                            <h4 class="fw-light  w-100 text-capitalize">All</h4>
+                                            <!-- <span class=" opacity-50  days">15 Videos</span> -->
+                                        </div>
+                                        <div class="arrow">
+                                            <!-- <i [ngClass]="isDarkTheme?'text-white':'text-black'"
+                                                [routerLink]="['inner-blog/'+blogs[0]._id]"
+                                                class="fa fa-solid fa-arrow-right"></i> -->
+                                            <i [ngClass]="isDarkTheme?'text-white':'text-black'"
+                                                class="fa fa-solid fa-arrow-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </ng-container>
                             <ng-container *ngFor="let category of categories">
-                                <div class="card-body popular" routerLink="inner-blog/{{category.link}}">
-                                    <div class="container d-flex justify-content-between">
+                                <div class="card-body popular" (click)="getBlogsByCategoryName(category.name)">
+                                    <div class="container d-flex justify-content-between text-border">
                                         <div class="text">
                                             <h4 class="fw-light  w-100 text-capitalize">{{category.name}}</h4>
                                             <!-- <span class=" opacity-50  days">15 Videos</span> -->
@@ -69,30 +86,34 @@
                                 itemsPerPage: pageSize,
                                 currentPage: currentPage,
                                 totalItems: totalItem }" [routerLink]="['inner-blog/'+blog.title1]"
-                                class="card col-lg-5 col-8 my-sm-3 p-0 justify-content-between" style="cursor: pointer;height:auto;"
+                                class="card col-lg-5 col-8 my-sm-3 p-0 justify-content-between"
+                                style="cursor: pointer;height:auto;"
                                 [ngStyle]="{'color':isDarkTheme?'white':'black','background':isDarkTheme?'#111111':'#ECF0FF'}">
-                                <img style="height: 40%;" [src]="blog.image" class="card-img-top" alt="...">
-                                <div class="px-3 my-3"style="height:auto">
+                                <img style="height: 40%;" [src]="blog.image" class="card-img-top" alt="..."
+                                    loading="lazy">
+                                <div class="px-3 my-3" style="height:auto">
                                     <div class="container">
-                                        <h5 class="card-title text-capitalize fw-lighter"style="font-size:12px;">{{blog?.category}}
+                                        <h5 class="card-title text-capitalize fw-lighter" style="font-size:12px;">
+                                            {{blog?.category}}
                                             - <span class="days opacity-50">{{blog?.readTime}}</span></h5>
                                     </div>
                                 </div>
-                                <div class=" px-3"style="height:auto">
+                                <div class=" px-3" style="height:auto">
                                     <div class="container d-flex">
                                         <div class="text">
-                                            <h5 class="fw-light ">{{(blog?.title.length>90)?(blog?.title | slice:0:90)+'...':(blog?.title)}}
+                                            <h5 class="fw-light ">
+                                                {{(blog?.title.length>90)?(blog?.title | slice:0:90)+'...':(blog?.title)}}
                                             </h5>
-                                            
+
                                         </div>
                                     </div>
                                 </div>
-                                <div class=" px-3"style="height:auto">
+                                <div class=" px-3" style="height:auto">
                                     <div class="container d-flex">
                                         <div class="text">
-                                            <p class="opacity-50"[innerHTML]="(blog?.description.length>110)?(blog?.description |
+                                            <p class="opacity-50" [innerHTML]="(blog?.description.length>110)?(blog?.description |
                                                 slice:0:110)+'...':(blog?.description)">
-                                                
+
                                             </p>
                                         </div>
                                     </div>
