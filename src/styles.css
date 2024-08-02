@@ -204,6 +204,32 @@ button .carousel-control-prev {
   font-style: italic;
 }
 
+app-home .carousel-item.active {
+  display: flex;
+  align-items: center;
+}
+
+app-home .item.active {
+  width: 100%;
+}
+
+app-home .carousel-indicators li {
+  height: 7px;
+  border-radius: 5px;
+}
+
+app-home .carousel-control-next {
+  display: none;
+}
+
+app-home .carousel-control-prev {
+  display: none;
+}
+
+app-home slide {
+  min-height: 75vh;
+}
+
 app-home .section7 .carousel-control-next {
   right: -50px !important;
 }
@@ -233,6 +259,15 @@ app-about .carousel-indicators {
 }
 
 @media(max-width:575.98px) {
+  app-home slide {
+    min-height: 40vh;
+  }
+
+  app-about .carousel-indicators {
+    margin-bottom: 0rem;
+    margin-top: 3rem;
+  }
+
   app-home .section7 .carousel-control-next {
     right: -25px !important;
     display: none !important;

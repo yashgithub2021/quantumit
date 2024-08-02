@@ -1,7 +1,25 @@
 <div class="d-flex flex-column" style="overflow:hidden">
-   
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="3000">
-        <ol class="carousel-indicators">
+    <!-- Section One -->
+    <!-- <div class="section1" [ngClass]="isDarkTheme ? 'dark' : 'light'">
+        <div class=" container d-flex flex-column align-items-center justify-content-center">
+            <div class="container w-lg-50 d-flex align-items-center justify-content-center my-3">
+                <h1 class="tagline text-center fw-bolder">Pioneering Your
+                    <span class="linear-text">Digital Transformation Journey</span>
+                </h1>
+            </div>
+            <div class="container d-flex align-items-center justify-content-center my-3">
+                <h1 class="text-center sub-heading fs-5 fw-light w-lg-50 text-capitalize">Comprehensive solutions for
+                    seamless
+                    development and
+                    maintenance<br class="d-none d-sm-block"> of your digital platforms.</h1>
+            </div>
+            <div class="container d-flex align-items-center justify-content-center my-3">
+                <button (click)="scrollToGetStarted()" class="btn btn-primary fs-6 rounded-3 p-3">Let’s Begin</button>
+            </div>
+        </div>
+    </div> -->
+    <!-- scrollbar -->
+    <!-- <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"
                 [ngStyle]="{'background':isDarkTheme ?'#FFFFFF':'black'}"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="1" class=""
@@ -12,120 +30,118 @@
                 [ngStyle]="{'background':isDarkTheme ?'#FFFFFF':'black'}"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="4" class=""
                 [ngStyle]="{'background':isDarkTheme ?'#FFFFFF':'black'}"></li>
-        </ol>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <div class="section1" [ngClass]="isDarkTheme ? 'dark' : 'light'">
-                    <div class=" container d-flex flex-column align-items-center justify-content-center">
-                        <div class="container w-lg-50 d-flex align-items-center justify-content-center my-3">
-                            <h1 class="tagline text-center fw-bolder">Pioneering Your
-                                <span class="linear-text">Digital Transformation Journey</span>
-                            </h1>
-                        </div>
-                        <div class="container d-flex align-items-center justify-content-center my-3">
-                            <h1 class="text-center sub-heading fs-5 fw-light w-lg-50 text-capitalize">Comprehensive
-                                solutions for
-                                seamless
-                                development and
-                                maintenance<br class="d-none d-sm-block"> of your digital platforms.</h1>
-                        </div>
-                        <div class="container d-flex align-items-center justify-content-center my-3">
-                            <button (click)="scrollToGetStarted()" class="btn btn-primary fs-6 rounded-3 p-3">Let’s
-                                Begin</button>
-                        </div>
+        </ol> -->
+    <carousel class="carousel-inner" [interval]="3000" [noWrap]="false">
+        <slide class="carousel-item active">
+            <div class="section1" [ngClass]="isDarkTheme ? 'dark' : 'light'">
+                <div class=" container d-flex flex-column align-items-center justify-content-center">
+                    <div class="container w-lg-50 d-flex align-items-center justify-content-center my-3">
+                        <h1 class="tagline text-center fw-bolder">Pioneering Your
+                            <span class="linear-text">Digital Transformation Journey</span>
+                        </h1>
+                    </div>
+                    <div class="container d-flex align-items-center justify-content-center my-3">
+                        <h1 class="text-center sub-heading fs-5 fw-light w-lg-50 text-capitalize">Comprehensive
+                            solutions for
+                            seamless
+                            development and
+                            maintenance<br class="d-none d-sm-block"> of your digital platforms.</h1>
+                    </div>
+                    <div class="container d-flex align-items-center justify-content-center my-3">
+                        <button (click)="scrollToGetStarted()" class="btn btn-primary fs-6 rounded-3 p-3">Let’s
+                            Begin</button>
                     </div>
                 </div>
             </div>
-            <div class="carousel-item">
-                <div class="container-fluid pt-3 mobile-app w-100 frame-1 d-flex justify-content-center align-items-center"
-                    [ngClass]="isDarkTheme?'mobile-app-dark':'mobile-app-light'">
-                    <div class="header h-100 container-fluid p-0 d-flex flex-column flex-lg-row">
-                        <div class="headline h-100 w-100">
-                            <div class="container h-100 d-flex flex-column justify-content-center align-items-center">
-                                <div
-                                    class="heading container pl-lg-5 w-100 h-100 d-flex flex-column align-items-center justify-content-center ">
-                                    <h1 class="tagline text-center fw-bolder w-lg-50">Premier
-                                        <span class="linear-text">Mobile App Development </span>Innovations
-                                    </h1>
-                                    <p class="fs-4 text-center sub-heading mobile-sub-heading w-100">
-                                        Our Mobile App Development services redefine the digital landscape,<br
-                                            class="d-none d-lg-block"> pushing boundaries with
-                                        revolutionary solutions that drive success.
-                                    </p>
+        </slide>
+        <slide class="carousel-item">
+            <div class="container-fluid pt-3 mobile-app w-100 frame-1 d-flex justify-content-center align-items-center"
+                [ngClass]="isDarkTheme?'mobile-app-dark':'mobile-app-light'">
+                <div class="header h-100 container-fluid p-0 d-flex flex-column flex-lg-row">
+                    <div class="headline h-100 w-100">
+                        <div class="container h-100 d-flex flex-column justify-content-center align-items-center">
+                            <div
+                                class="heading container pl-lg-5 w-100 h-100 d-flex flex-column align-items-center justify-content-center ">
+                                <h1 class="tagline text-center fw-bolder w-lg-50">Premier
+                                    <span class="linear-text">Mobile App Development </span>Innovations
+                                </h1>
+                                <p class="fs-4 text-center sub-heading mobile-sub-heading w-100">
+                                    Our Mobile App Development services redefine the digital landscape,<br
+                                        class="d-none d-lg-block"> pushing boundaries with
+                                    revolutionary solutions that drive success.
+                                </p>
 
-                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="carousel-item">
+        </slide>
+        <slide class="carousel-item">
+            <div data-aos="fade-in"
+                class=" digital-marketing d-flex align-items-center justify-content-center container-fluid p-0 w-100 frame-1">
+                <div class="container w-100 h-100">
+                    <div
+                        class="heading container w-100 h-100 d-flex flex-column align-items-center justify-content-start ">
+                        <h1 data-aos="fade-in" class="tagline text-center fw-bolder w-100 ">Experience our services
+                            and
+                            foresee
+                            the future of <br class=" d-none d-sm-block d-lg-none">
+                            <span class="linear-text"> Digital Marketing</span>
+                        </h1>
+                        <p data-aos="fade-in"
+                            class="head-desc text-align-center w-75 sub-heading digital-sub-heading my-0">
+                            Delve into our comprehensive array of services to witness the transformative evolution
+                            of digital
+                            marketing, where innovation meets strategy, and possibilities are limitless.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </slide>
+        <slide class="carousel-item">
+            <div class="container frame-1 d-flex flex-column justify-content-center align-items-end">
                 <div data-aos="fade-in"
-                    class=" digital-marketing d-flex align-items-center justify-content-center container-fluid p-0 w-100 frame-1">
-                    <div class="container w-100 h-100">
-                        <div
-                            class="heading container w-100 h-100 d-flex flex-column align-items-center justify-content-start ">
-                            <h1 data-aos="fade-in" class="tagline text-center fw-bolder w-100 ">Experience our services
-                                and
-                                foresee
-                                the future of <br class=" d-none d-sm-block d-lg-none">
-                                <span class="linear-text"> Digital Marketing</span>
-                            </h1>
-                            <p data-aos="fade-in"
-                                class="head-desc text-align-center w-75 sub-heading digital-sub-heading my-0">
-                                Delve into our comprehensive array of services to witness the transformative evolution
-                                of digital
-                                marketing, where innovation meets strategy, and possibilities are limitless.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="container frame-1 d-flex flex-column justify-content-center align-items-end">
-                    <div data-aos="fade-in"
-                        class="heading container w-100 h-100 d-flex flex-column align-items-center justify-content-center ">
-                        <h1 class="tagline text-center fw-bolder w-lg-50">Supreme
-                            <span class="linear-text">Web <br> Development </span>Solutions
-                        </h1>
-                        <p
-                            class="fs-4 text-align-center text-capitalize d-none d-lg-block sub-heading mobile-sub-heading">
-                            Top-tier web development services, tailored to perfection <br>
-                            for your digital needs.
-                        </p>
-                        <p
-                            class="fs-4 text-align-center text-capitalize d-block d-lg-none sub-heading mobile-sub-heading">
-                            Top-tier web development services, tailored to perfection
-                            for your digital needs.
-                        </p>
+                    class="heading container w-100 h-100 d-flex flex-column align-items-center justify-content-center ">
+                    <h1 class="tagline text-center fw-bolder w-lg-50">Supreme
+                        <span class="linear-text">Web <br> Development </span>Solutions
+                    </h1>
+                    <p class="fs-4 text-align-center text-capitalize d-none d-lg-block sub-heading mobile-sub-heading">
+                        Top-tier web development services, tailored to perfection <br>
+                        for your digital needs.
+                    </p>
+                    <p class="fs-4 text-align-center text-capitalize d-block d-lg-none sub-heading mobile-sub-heading">
+                        Top-tier web development services, tailored to perfection
+                        for your digital needs.
+                    </p>
 
-                    </div>
                 </div>
             </div>
-            <div class="carousel-item">
-                <div class="container frame-1 d-flex flex-column justify-content-center align-items-end">
-                    <div data-aos="fade-in"
-                        class="heading container w-100 h-100 d-flex flex-column align-items-center justify-content-center ">
-                        <h1 class="tagline text-center fw-bolder w-lg-50">Artificial intelligence <br>
-                            <span class="linear-text"> Solutions
-                                with Unmatched Expertise</span>
-                        </h1>
-                        <p
-                            class="fs-4 w-75 text-align-center text-capitalize d-none d-lg-block sub-heading mobile-sub-heading">
-                            Discover the unparalleled expertise and innovation offered by our leading AI solutions,
-                            where cutting-edge technology meets exceptional service.
-                        </p>
-                        <p
-                            class="fs-4 w-75 text-align-center text-capitalize d-block d-lg-none sub-heading mobile-sub-heading">
-                            Discover the unparalleled expertise and innovation offered by our leading AI solutions,
-                            where cutting-edge technology meets exceptional service.
-                        </p>
+        </slide>
+        <slide class="carousel-item">
+            <div class="container frame-1 d-flex flex-column justify-content-center align-items-end">
+                <div data-aos="fade-in"
+                    class="heading container w-100 h-100 d-flex flex-column align-items-center justify-content-center ">
+                    <h1 class="tagline text-center fw-bolder w-lg-50">Artificial intelligence <br>
+                        <span class="linear-text"> Solutions
+                            with Unmatched Expertise</span>
+                    </h1>
+                    <p
+                        class="fs-4 w-75 text-align-center text-capitalize d-none d-lg-block sub-heading mobile-sub-heading">
+                        Discover the unparalleled expertise and innovation offered by our leading AI solutions,
+                        where cutting-edge technology meets exceptional service.
+                    </p>
+                    <p
+                        class="fs-4 w-75 text-align-center text-capitalize d-block d-lg-none sub-heading mobile-sub-heading">
+                        Discover the unparalleled expertise and innovation offered by our leading AI solutions,
+                        where cutting-edge technology meets exceptional service.
+                    </p>
 
-                    </div>
                 </div>
             </div>
-        </div>
-        <!-- <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        </slide>
+    </carousel>
+    <!-- <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
         </a>
@@ -133,7 +149,6 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
         </a> -->
-    </div>
     <!-- Section One Ends -->
 
     <!-- Section Two -->
@@ -147,7 +162,7 @@
                         [routerLink]="data.link">
                         <i class="fa-solid fa-arrow-right  position-absolute text-secondary"
                             style="transform: rotate(325deg); top:10px; right:10px"></i>
-                        <img [src]="data.img" alt="logo"loading="lazy">
+                        <img [src]="data.img" alt="logo" loading="lazy">
                         <p>{{data.label}}</p>
                     </div>
                 </div>
@@ -188,11 +203,11 @@
                 <div class="slide-track">
                     <div class="slide" *ngFor="let img of brandLogo">
                         <img [ngStyle]="{filter:isDarkTheme?'invert(0)':'invert(1)'}" [src]="img.img"
-                            class="d-block w-auto" alt="..."loading="lazy">
+                            class="d-block w-auto" alt="..." loading="lazy">
                     </div>
                     <div class="slide" *ngFor="let img of brandLogo">
                         <img [ngStyle]="{filter:isDarkTheme?'invert(0)':'invert(1)'}" [src]="img.img"
-                            class="d-block w-auto" alt="..."loading="lazy">
+                            class="d-block w-auto" alt="..." loading="lazy">
                     </div>
                 </div>
             </div>
@@ -220,7 +235,7 @@
                         <div data-aos="slide-up" routerLink="{{service.link}}"
                             class="service-card col-lg-4 col-md-6  d-flex flex-column align-items-center justify-content-center px-lg-5 px-2 my-4">
                             <div class="image my-3">
-                                <img [src]="service.img" alt="Mobile"loading="lazy">
+                                <img [src]="service.img" alt="Mobile" loading="lazy">
                             </div>
                             <div class="title my-3 text-align-center">
                                 <h4>
@@ -287,7 +302,8 @@
                     </div>
                 </div>
                 <div class="h-100 container d-flex gap-4 flex-column align-items-center justify-content-center">
-                    <div (click)="scrollToTop()" routerLink="/app-development/app-details/f1205eb0-fd71-4be3-82c6-054779c3c21c"
+                    <div (click)="scrollToTop()"
+                        routerLink="/app-development/app-details/f1205eb0-fd71-4be3-82c6-054779c3c21c"
                         data-aos="fade-in" class="project-two project-sec-two position-relative">
                         <div
                             class="project-two-details details d-flex justify-content-between align-items-center position-absolute px-3 ">
@@ -351,7 +367,7 @@
             </div>
         </div>
         <div class="our-customers d-flex container justify-content-center">
-            <img src="../../../assets/home/map.webp" alt=""loading="lazy">
+            <img src="../../../assets/home/map.webp" alt="" loading="lazy">
         </div>
     </div>
 
@@ -380,8 +396,8 @@
                                             {{review.designation}}</p>
                                     </div>
                                     <div class="profile">
-                                        <img  style="border-radius: 50px; width:50px;height:50px;" class=""
-                                            [src]="review.profileImg" alt="profile"loading="lazy">
+                                        <img style="border-radius: 50px; width:50px;height:50px;" class=""
+                                            [src]="review.profileImg" alt="profile" loading="lazy">
                                     </div>
                                 </div>
                             </div>

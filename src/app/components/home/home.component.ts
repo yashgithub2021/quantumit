@@ -5,6 +5,8 @@ import { Title, Meta } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
 import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
 import { RouterModule } from '@angular/router';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
+import { CarouselComponent } from 'ngx-bootstrap/carousel';
 
 
 
@@ -14,8 +16,6 @@ import { RouterModule } from '@angular/router';
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],
-  standalone: true,
-  imports: [CommonModule,NgbCarouselModule,RouterModule]
 })
 export class HomeComponent implements OnInit {
   isDarkTheme: boolean;
@@ -23,10 +23,65 @@ export class HomeComponent implements OnInit {
 
   dynamicTitle = 'Top Mobile & Web Development | AI Solutions | Digital Marketing Services';
   dynamicDescription = 'Leading AI & Digital Marketing Experts. Top Mobile & Web Development Solutions tailored for growth. Explore Quantum IT Innovation today!';
-
+  noWrap = true
   constructor(private titleService: Title,
-    private metaService: Meta,private api: ApiService, private elementRef: ElementRef) {
+    private metaService: Meta, private api: ApiService, private elementRef: ElementRef) {
     this.isDarkTheme = this.api.isDarkTheme();
+  }
+  @ViewChild(CarouselComponent) carousel!: CarouselComponent;
+  carouselItems = [
+    {
+      title: 'Pioneering Your Digital Transformation Journey',
+      subtitle: 'Comprehensive solutions for seamless development and maintenance of your digital platforms.',
+      imgSrc: 'path/to/image1.jpg',
+      link: 'https://example.com/link1',
+    },
+    {
+      title: 'Premier Mobile App Development Innovations',
+      subtitle: 'Our Mobile App Development services redefine the digital landscape, pushing boundaries with revolutionary solutions that drive success.',
+      imgSrc: 'path/to/image2.jpg',
+      link: 'https://example.com/link2',
+    },
+    {
+      title: 'Experience our services and foresee the future of Digital Marketing',
+      subtitle: 'Delve into our comprehensive array of services to witness the transformative evolution of digital marketing, where innovation meets strategy, and possibilities are limitless.',
+      imgSrc: 'path/to/image3.jpg',
+      link: 'https://example.com/link3',
+    },
+    {
+      title: 'Supreme Web Development Solutions',
+      subtitle: 'Top-tier web development services, tailored to perfection for your digital needs.',
+      imgSrc: 'path/to/image4.jpg',
+      link: 'https://example.com/link4',
+    },
+    {
+      title: 'Artificial Intelligence Solutions with Unmatched Expertise',
+      subtitle: 'Discover the unparalleled expertise and innovation offered by our leading AI solutions, where cutting-edge technology meets exceptional service.',
+      imgSrc: 'path/to/image5.jpg',
+      link: 'https://example.com/link5',
+    },
+  ];
+
+  activeIndex = 0;
+
+  onSlide(event: any) {
+    this.activeIndex = event.slideIndex;
+  }
+
+  // scrollToGetStarted() {
+  //   // Your scroll logic
+  // }
+
+  // previousSlide() {
+  //   this.carousel.prev();
+  // }
+
+  // nextSlide() {
+  //   this.carousel.next();
+  // }
+
+  selectSlide(index: number) {
+    this.carousel.selectSlide(index);
   }
 
   services = [
@@ -81,41 +136,41 @@ export class HomeComponent implements OnInit {
       img: '../../../assets/services-icons/Vector.svg',
       title: 'Web Development',
       desc: "Crafting engaging online experiences through bespoke web development solutions, tailored to elevate your brand's digital presence.",
-      link:'/web-development'
+      link: '/web-development'
     },
     {
       img: '../../../assets/services-icons/mobile.svg',
       title: 'Mobile App',
       desc: 'Transform your ideas into intuitive mobile experiences with our expert app development services, driving engagement and growth.',
-      link:'/app-development'
+      link: '/app-development'
 
     },
     {
       img: '../../../assets/services-icons/uiux.svg',
       title: 'Software Development',
       desc: 'Redefine your business landscape with our tailored software solutions, engineered for efficiency and scalability.',
-      link:'/web-development'
+      link: '/web-development'
 
     },
     {
       img: '../../../assets/services-icons/qa.svg',
       title: 'Social Media Optimization',
       desc: 'Enhance your online presence and interaction with our targeted social media optimization services, crafted for optimal impact and visibility.',
-      link:'/digital-marketing'
+      link: '/digital-marketing'
 
     },
     {
       img: '../../../assets/services-icons/it-consultancy.svg',
       title: 'Artificial Intelligence',
       desc: 'Utilize our advanced artificial intelligence solutions, customized to meet your specific needs, to fuel innovation and streamline efficiency throughout your business processes.',
-      link:'/artificial-intelligence'
+      link: '/artificial-intelligence'
 
     },
     {
       img: '../../../assets/services-icons/dedicated-team.svg',
       title: 'Digital Marketing',
       desc: "Boost your brand's online presence and reach with our effective digital marketing strategies, crafted to enhance visibility, engagement, and conversions.",
-      link:'/digital-marketing'
+      link: '/digital-marketing'
 
     },
   ]

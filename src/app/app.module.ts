@@ -14,9 +14,11 @@ import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgxSpinnerModule } from 'ngx-spinner';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
   declarations: [
+    HomeComponent,
     AppComponent,
     NavbarComponent,
     FooterComponent,

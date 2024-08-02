@@ -212,7 +212,10 @@
 @media(max-width:768px) {
     .service-tagline {
         font-size: 34px;
+    }
 
+    .process {
+        padding: 25px 0;
     }
 
     .miletone-number {

@@ -31,7 +31,8 @@
                         
                     </div> -->
                     <div class="image h-100 w-100 ">
-                        <img class="w-100"loading="lazy" style="max-height:65vh; object-fit:cover;border-radius:10px;opacity:0.8"
+                        <img class="w-100" loading="lazy"
+                            style="max-height:65vh; object-fit:cover;border-radius:10px;opacity:0.8"
                             [src]="androidService.img1" alt="banner">
                     </div>
                 </div>
@@ -60,11 +61,11 @@
     <div class="frame-3 container p-0 mb-2" *ngIf="androidService.ourProcessTitle">
         <div class="service-section service-section1">
             <div class="head w-100 h-100 d-flex flex-column align-items-center justify-content-center">
-                <div class="button my-2" data-aos="slide-up">
+                <div class="button my-2">
                     <button routerLink="/portfolio" class="our-process-btn">Our Process</button>
                 </div>
 
-                <div class="our-process my-2 " data-aos="slide-up">
+                <div class="our-process my-2 ">
                     <h1 class=" text-align-center">{{androidService.ourProcessTitle}}</h1>
                 </div>
             </div>
@@ -78,7 +79,8 @@
                         </div>
                     </div>
                     <div class="image h-100 w-100 ">
-                        <img class="w-100"loading="lazy" style="max-height:60%; object-fit:cover;border-radius:10px;opacity:0.8"
+                        <img class="w-100" loading="lazy"
+                            style="max-height:60%; object-fit:cover;border-radius:10px;opacity:0.8"
                             src="{{androidService.ourProcessImg[0].img3}}" alt="processes image">
                     </div>
                 </div>
@@ -92,7 +94,8 @@
                         </div>
                     </div>
                     <div class="image h-100 w-100 max-height:65%; object-fit:cover;border-radius:10px;opacity:0.8">
-                        <img class="rounded-3"loading="lazy" src="{{androidService.ourProcessImg[1].img4}}" alt="processes image">
+                        <img class="rounded-3" loading="lazy" src="{{androidService.ourProcessImg[1].img4}}"
+                            alt="processes image">
                     </div>
                 </div>
             </div>
@@ -113,8 +116,7 @@
             </div>
             <div class="what-we-do w-100 h-100 mt-sm-5 mt-1">
                 <div class="row w-100 h-100  g-4 align-items-center justify-content-center">
-                    <div data-aos="fade-up" *ngFor="let data of androidService.services"
-                        class="col-lg-4 col-md-6 col-12 hover-card">
+                    <div *ngFor="let data of androidService.services" class="col-lg-4 col-md-6 col-12 hover-card">
                         <div [ngStyle]="{background:isDarkTheme?'#111111':'#ECF0FF'}"
                             class="col-details px-4 ai-data py-4 py-lg-2 d-flex align-items-start justify-content-evenly flex-column">
                             <div class="title w-75">
@@ -124,7 +126,7 @@
                                 <p [ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">{{data.desc}}</p>
                             </div>
                             <div class="image-container">
-                                <img [src]="data.img"loading="lazy" alt="Service Image" class="corner-image">
+                                <img [src]="data.img" loading="lazy" alt="Service Image" class="corner-image">
                             </div>
                         </div>
                     </div>
@@ -723,7 +725,7 @@
                 </div>
                 <div class="container w-100 d-flex">
                     <div class="processes d-flex flex-column">
-                        <div data-aos="fade-up" *ngFor="let approach of serviceDetails.ourApproach"
+                        <div *ngFor="let approach of serviceDetails.ourApproach"
                             class="process d-flex justify-content-between hover-card ">
                             <div class="logo mx-3">
                                 <div class="process-square">
@@ -825,7 +827,7 @@
                 </div>
                 <div class="tech-stack my-sm-5 my-2 w-100">
                     <div class="d-flex flex-wrap w-100 justify-content-between m-auto  align-items-center">
-                        <div data-aos="fade-up" [ngStyle]="{background:isDarkTheme?'#111111':'#ECF0FF'}"
+                        <div [ngStyle]="{background:isDarkTheme?'#111111':'#ECF0FF'}"
                             class="stack d-flex align-items-center justify-content-between hover-card">
                             <div class="logo mx-3">
                                 <img loading="lazy" src="../../../../assets/dm/services/figma.svg" alt="logo">
@@ -834,7 +836,7 @@
                                 <h5 class=" fw-light text-uppercase">Figma</h5>
                             </div>
                         </div>
-                        <div data-aos="fade-down" [ngStyle]="{background:isDarkTheme?'#111111':'#ECF0FF'}"
+                        <div [ngStyle]="{background:isDarkTheme?'#111111':'#ECF0FF'}"
                             class="stack d-flex align-items-center justify-content-between hover-card">
                             <div class="logo mx-3">
                                 <img loading="lazy" src="../../../../assets/dm/services/vs.svg" alt="logo">
@@ -843,7 +845,7 @@
                                 <h5 class=" fw-light text-uppercase">Visual Studio</h5>
                             </div>
                         </div>
-                        <div data-aos="fade-up" [ngStyle]="{background:isDarkTheme?'#111111':'#ECF0FF'}"
+                        <div [ngStyle]="{background:isDarkTheme?'#111111':'#ECF0FF'}"
                             class="stack d-flex align-items-center justify-content-between hover-card">
                             <div class="logo mx-3">
                                 <img loading="lazy" src="../../../../assets/dm/services/react.svg" alt="logo">
@@ -852,7 +854,7 @@
                                 <h5 class=" fw-light text-uppercase">React</h5>
                             </div>
                         </div>
-                        <div data-aos="fade-down" [ngStyle]="{background:isDarkTheme?'#111111':'#ECF0FF'}"
+                        <div [ngStyle]="{background:isDarkTheme?'#111111':'#ECF0FF'}"
                             class="stack d-flex align-items-center justify-content-between hover-card">
                             <div class="logo mx-3">
                                 <img loading="lazy" src="../../../../assets/dm/services/git.svg" alt="logo">

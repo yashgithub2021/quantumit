@@ -34,6 +34,8 @@ export class DataService implements Resolve<any> {
       return of({ title: 'payPerClick Services', services: payPerClickServices });
     } else if (id === 'social-media-marketing') {
       return of({ title: 'socialMedia Services', services: socialMediaServices });
+    } else if (id === 'content-marketing') {
+      return of({ title: 'contentMarketing Services', services: contentMarketingServices });
     } else if (id === 'emailMarketing') {
       return of({ title: 'emailMarketing Services', services: emailMarketingServices });
     } else if (id === 'conversionRateOptimization') {
@@ -56,86 +58,86 @@ export class DataService implements Resolve<any> {
       return of({ title: 'node Services', services: nodejsDevelopmentServices });
     } else if (id === 'joomla-development-company') {
       return of({ title: 'joomla Services', services: joomlaDevelopmentServices });
-    }else if (id === 'mobile-app-development-dallas') {
+    } else if (id === 'mobile-app-development-dallas') {
       return of({ title: 'Mobile App Development Dallas', services: MobileAppDevelopmentDallasServices });
-    }else if (id === 'web-development-company-usa') {
+    } else if (id === 'web-development-company-usa') {
       return of({ title: 'Web Development Company USA', services: WebDevelopmentCompanyUSA });
-    }else if (id === 'professional-seo-services-company') {
+    } else if (id === 'professional-seo-services-company') {
       return of({ title: 'Professional SEO Services Company', services: ProfessionalSEOServicesCompany });
-    }else if (id === 'nj-seo-company') {
+    } else if (id === 'nj-seo-company') {
       return of({ title: 'NJ SEO Company', services: NJSEOCompany });
     }
     //for ai generative services
     else if (id === 'Generative-Ai-Development') {
       return of({ title: 'Generative Ai Development', services: GenerativeAiDevelopment });
-    }else if (id === 'Generative-Ai-Integration-Services') {
+    } else if (id === 'Generative-Ai-Integration-Services') {
       return of({ title: 'Generative Ai Integration Services', services: GenerativeAiIntegrationServices });
-    }else if (id === 'Generative-Ai-consulting-company') {
+    } else if (id === 'Generative-Ai-consulting-company') {
       return of({ title: 'Generative Ai consulting company', services: GenerativeAiConsultingCompany });
-    }else if (id === 'hire-generative-ai-engineers') {
+    } else if (id === 'hire-generative-ai-engineers') {
       return of({ title: 'hire generative ai engineers', services: HireGenerativeAiEngineers });
-    }else if (id === 'Ai-Agent-Development') {
+    } else if (id === 'Ai-Agent-Development') {
       return of({ title: 'Ai Agent Development', services: joomlaDevelopmentServices });
-    }else if (id === 'Ai-Copilot-Development') {
+    } else if (id === 'Ai-Copilot-Development') {
       return of({ title: 'Ai Copilot Development', services: joomlaDevelopmentServices });
-    }else if (id === 'Hire-Prompt-Engineers') {
+    } else if (id === 'Hire-Prompt-Engineers') {
       return of({ title: 'Hire Prompt Engineers', services: joomlaDevelopmentServices });
-    }else if (id === 'Adaptive-Ai-Development-Co.') {
+    } else if (id === 'Adaptive-Ai-Development-Co.') {
       return of({ title: 'Adaptive Ai Development Co.', services: joomlaDevelopmentServices });
-    }else if (id === 'ChatGPT-Developers') {
+    } else if (id === 'ChatGPT-Developers') {
       return of({ title: 'ChatGPT Developers', services: joomlaDevelopmentServices });
-    }else if (id === 'Stable-Diffusion-Developers') {
+    } else if (id === 'Stable-Diffusion-Developers') {
       return of({ title: 'Stable Diffusion Developers', services: joomlaDevelopmentServices });
-    }else if (id === 'ChatGPT-Integration-Service') {
+    } else if (id === 'ChatGPT-Integration-Service') {
       return of({ title: 'ChatGPT Integration Service', services: joomlaDevelopmentServices });
-    }else if (id === 'Large-Language-Model') {
+    } else if (id === 'Large-Language-Model') {
       return of({ title: 'Large Language Model', services: joomlaDevelopmentServices });
     }
     //for ai service
     else if (id === 'Ai-Development') {
       return of({ title: 'Ai Development', services: serviceAiDevelopment });
-    }else if (id === 'Ai-Consulting') {
+    } else if (id === 'Ai-Consulting') {
       return of({ title: 'Ai Consulting', services: serviceAiConsulting });
-    }else if (id === 'Ai-As-A-Service') {
+    } else if (id === 'Ai-As-A-Service') {
       return of({ title: 'Ai As A Service', services: joomlaDevelopmentServices });
-    }else if (id === 'Hire-Action-Transformer-Developer') {
+    } else if (id === 'Hire-Action-Transformer-Developer') {
       return of({ title: 'Hire Action Transformer Developer', services: joomlaDevelopmentServices });
-    }else if (id === 'Ai-Agent-Development') {
+    } else if (id === 'Ai-Agent-Development') {
       return of({ title: 'Ai Agent Development', services: joomlaDevelopmentServices });
     } else if (id === 'MLOps-Consulting-service') {
       return of({ title: 'MLOps Consulting service', services: joomlaDevelopmentServices });
-    }else if (id === 'Enterprise-Ai-Development') {
+    } else if (id === 'Enterprise-Ai-Development') {
       return of({ title: 'Enterprise Ai Development', services: joomlaDevelopmentServices });
-    }else if (id === 'Ai-Chatbot-Development-Co') {
+    } else if (id === 'Ai-Chatbot-Development-Co') {
       return of({ title: 'Ai Chatbot Development Co', services: joomlaDevelopmentServices });
-    } 
+    }
     // ai case study page
-    else if(id === 'HR-Employee-On-Boarding'){
+    else if (id === 'HR-Employee-On-Boarding') {
       return of({ title: 'HR Employee On Boarding', services: HREmployeeOnBoarding });
 
-    }else if(id === 'HR-Recruitment'){
+    } else if (id === 'HR-Recruitment') {
       return of({ title: 'HR Recruitment', services: HRRecruitment });
 
-    }else if(id === 'Purchase-Order'){
+    } else if (id === 'Purchase-Order') {
       return of({ title: 'Purchase Order', services: PurchaseOrder });
 
-    }else if(id === 'Account-Payable'){
+    } else if (id === 'Account-Payable') {
       return of({ title: 'Account Payable', services: AccountPayable });
 
-    }else if(id === 'Account-Receivable-Recovery'){
+    } else if (id === 'Account-Receivable-Recovery') {
       return of({ title: 'Account Receivable Recovery', services: AccountReceivableRecovery });
 
-    }else if(id === 'Insurance-Claim-Processing'){
+    } else if (id === 'Insurance-Claim-Processing') {
       return of({ title: 'Insurance Claim Processing', services: InsuranceClaimProcessing });
 
-    }else if(id === 'Insurance-Eligibility-Verification'){
+    } else if (id === 'Insurance-Eligibility-Verification') {
       return of({ title: 'Insurance Eligibility Verification', services: InsuranceEligibilityVerification });
 
-    }else if(id === 'Clinical-Document-Processing'){
+    } else if (id === 'Clinical-Document-Processing') {
       return of({ title: 'Clinical Document Processin', services: ClinicalDocumentProcessing });
 
     }
-    
+
     else {
       return of(null); // Return null for unknown IDs
     }

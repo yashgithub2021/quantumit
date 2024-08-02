@@ -23,7 +23,7 @@
     "aos": "^2.3.4",
     "bootstrap": "^5.3.3",
     "jquery": "^3.7.1",
-    "ngx-bootstrap": "^18.0.2",
+    "ngx-bootstrap": "^11.0.2",
     "ngx-pagination": "^6.0.3",
     "ngx-spinner": "^16.0.2",
     "ngx-toastr": "^18.0.0",

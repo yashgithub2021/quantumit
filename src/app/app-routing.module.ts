@@ -2,11 +2,12 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { FormComponent } from './components/form/form.component';
 import { DataService } from './shared/api/data.service';
+import { HomeComponent } from './components/home/home.component';
 
 const routes: Routes = [
-  { path: '',loadComponent:()=> import('./components/home/home.component').then(c=>c.HomeComponent) },
-  
-  { path: 'artificial-intelligence', loadComponent:()=> import('./components/ai-robot/ai-robot.component').then(c=>c.AiRobotComponent)},
+  { path: '', component: HomeComponent },
+
+  { path: 'artificial-intelligence', loadComponent: () => import('./components/ai-robot/ai-robot.component').then(c => c.AiRobotComponent) },
   {
     path: 'web-development', loadChildren: () => import('./pages/web/web.module').then(m => m.WebModule)
   },
@@ -32,14 +33,16 @@ const routes: Routes = [
     path: 'portfolio', loadChildren: () => import('./pages/portfolio/portfolio.module').then(m => m.PortfolioModule)
   },
   {
-    path:'payment',loadChildren:()=> import('./pages/payment/payment.module').then(m=>m.PaymentModule)
+    path: 'payment', loadChildren: () => import('./pages/payment/payment.module').then(m => m.PaymentModule)
   },
   { path: 'form', component: FormComponent },
 
-  { path:':id',    loadComponent: () => import('./components/details/details.component').then(m => m.DetailsComponent),
+  {
+    path: ':id', loadComponent: () => import('./components/details/details.component').then(m => m.DetailsComponent),
     resolve: {
-    services: DataService 
-  }},
+      services: DataService
+    }
+  },
 ];
 
 @NgModule({
