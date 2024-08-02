@@ -4,7 +4,7 @@ import { FormComponent } from './components/form/form.component';
 import { DataService } from './shared/api/data.service';
 
 const routes: Routes = [
-  { path: '',loadComponent:()=> import('./components/home/home.component').then(c=>c.HomeComponent) },
+  { path: '', loadComponent:()=> import('./components/home/home.component').then(c=>c.HomeComponent) },
   
   { path: 'artificial-intelligence', loadComponent:()=> import('./components/ai-robot/ai-robot.component').then(c=>c.AiRobotComponent)},
   {
@@ -34,7 +34,7 @@ const routes: Routes = [
   {
     path:'payment',loadChildren:()=> import('./pages/payment/payment.module').then(m=>m.PaymentModule)
   },
-  { path: 'form', component: FormComponent },
+  { path: 'form', loadComponent:()=>import('./components/form/form.component').then(f=>f.FormComponent) },
 
   { path:':id',    loadComponent: () => import('./components/details/details.component').then(m => m.DetailsComponent),
     resolve: {

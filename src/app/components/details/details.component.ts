@@ -6,6 +6,7 @@ import AOS from 'aos';
 import { Title, Meta } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
 import { SharedModule } from 'src/app/shared/shared/shared.module';
+import { FormComponent } from '../form/form.component';
 
 
 @Component({
@@ -13,7 +14,7 @@ import { SharedModule } from 'src/app/shared/shared/shared.module';
   templateUrl: './details.component.html',
   styleUrls: ['./details.component.scss'],
   standalone: true,
-  imports: [CommonModule,SharedModule],
+  imports: [CommonModule,SharedModule,FormComponent],
 })
 export class DetailsComponent implements OnInit {
 

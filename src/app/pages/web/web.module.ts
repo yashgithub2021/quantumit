@@ -4,7 +4,7 @@ import { CommonModule } from '@angular/common';
 import { WebRoutingModule } from './web-routing.module';
 import { CasestudyComponent } from './casestudy/casestudy.component';
 import { DetailsComponent } from './details/details.component';
-import { TruncateAtPointPipe } from 'src/app/shared/pipes/truncate-at-point.pipe';
+import { FormComponent } from 'src/app/components/form/form.component';
 
 
 @NgModule({
@@ -14,7 +14,8 @@ import { TruncateAtPointPipe } from 'src/app/shared/pipes/truncate-at-point.pipe
   ],
   imports: [
     CommonModule,
-    WebRoutingModule
+    WebRoutingModule,
+    FormComponent
   ]
 })
 export class WebModule { }
