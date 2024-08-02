@@ -6,8 +6,8 @@ export const androidService = {
     metaDescription: "Quantum IT Innovation: Leading Android app development agency offering top-notch custom Android app development services. Transform your ideas with our expert team today!",
     // img2: "../../../../assets/services/ios_android/img1.jpg",
     descriptionOne: [
-        "Our Android app development services offer a comprehensive solution for businesses seeking to establish a strong presence on the Android platform. With the widespread adoption of Android devices worldwide, having a customized mobile application tailored to this ecosystem is essential for reaching and engaging with a diverse audience.",
-        "Our team of experienced Android app developers leverages the latest technologies and best practices to build robust, scalable, and user-friendly applications.",
+        "<b>Our Android app development services</b> offer a comprehensive solution for businesses seeking to establish a strong presence on the Android platform. With the widespread adoption of Android devices worldwide, having a customized mobile application tailored to this ecosystem is essential for reaching and engaging with a diverse audience.",
+        "Our team of experienced <b>Android app developers</b> leverages the latest technologies and best practices to build robust, scalable, and user-friendly applications.",
         "Whether you need a simple utility app or a complex enterprise-level solution, we have the expertise to deliver results that drive engagement and deliver value to your users."
     ],
     descriptionTwo: [
@@ -62,10 +62,10 @@ export const androidService = {
     ourProcessTitle: 'Android app Development company',
     ourProcessDesc: [
         {
-            title: "Looking for the best android app development company? Look no further than Quantum IT Innovation. As a leading android app development agency, we specialize in creating innovative, high-performance applications tailored to your specific needs. Our team of expert developers is skilled in custom android app development, ensuring that your app stands out in the crowded marketplace."
+            title: "Looking for the best <b>android application development company</b>? Look no further than Quantum IT Innovation. As a leading <b>android app development agency</b>, we specialize in creating innovative, high-performance applications tailored to your specific needs. Our team of expert developers is skilled in custom android app development, ensuring that your app stands out in the crowded marketplace."
         },
         {
-            title: "At Quantum IT Innovation, we understand that every business has unique requirements. That's why we offer custom android app development services that are designed to meet your individual goals and objectives. Whether you're looking to develop a new app from scratch or improve an existing one, our team has the expertise to deliver top-notch solutions."
+            title: "At Quantum IT Innovation, we understand that every business has unique requirements. That's why we offer custom <b>android app development</b> services that are designed to meet your individual goals and objectives. Whether you're looking to develop a new app from scratch or improve an existing one, our team has the expertise to deliver top-notch solutions."
         }, {
             title: "Why choose us? Our android app development company prides itself on delivering high-quality apps on time and within budget. We use the latest technologies and best practices to ensure your app is not only functional but also user-friendly and engaging."
         }, {
@@ -109,7 +109,7 @@ export const iOsService = {
     img1: "../../../../assets/services/ios_dev/img1.jpg",
     // img2: "../../../../assets/services/ios_android/img4.jpg",
     descriptionOne: [
-        "Embark on a journey of innovation with our iOS app development services, designed to propel your business to new heights on the iOS platform.",
+        "Embark on a journey of innovation with our <b>iOS app development services</b>, designed to propel your business to new heights on the iOS platform.",
         "With iOS devices being widely embraced worldwide, a bespoke mobile application tailored to this ecosystem is imperative for connecting with a diverse audience.",
         "Our iOS app development services deliver tailored, high-performance applications designed to meet your unique business needs. We specialize in creating intuitive, user-friendly interfaces and robust backend systems, ensuring seamless performance across all iOS devices. Our team of expert developers leverages the latest technologies and best practices to build secure, scalable, and innovative apps that enhance user engagement and drive business growth."
     ],
@@ -166,10 +166,10 @@ export const iOsService = {
     ourProcessTitle: 'iOS app Development company',
     ourProcessDesc: [
         {
-            title: "In the fast-paced world of technology, having a robust mobile presence is crucial. At Quantum IT Innovation, we specialize in providing top-notch iOS app development services that cater to your unique business needs. As a leading iOS app development agency, we are committed to transforming your ideas into innovative and user-friendly mobile applications."
+            title: "In the fast-paced world of technology, having a robust mobile presence is crucial. At Quantum IT Innovation, we specialize in providing top-notch iOS app development services that cater to your unique business needs. As a leading <b>iOS app development agency</b>, we are committed to transforming your ideas into innovative and user-friendly mobile applications."
         },
         {
-            title: "Our team of experts understands the intricacies of the iOS platform and leverages their extensive experience to deliver exceptional results. Whether you are a startup or an established business, our iOS app development company offers tailored solutions that enhance your digital presence and boost customer engagement."
+            title: "Our team of experts understands the intricacies of the iOS platform and leverages their extensive experience to deliver exceptional results. Whether you are a startup or an established business, our <b>iOS app development company</b> offers tailored solutions that enhance your digital presence and boost customer engagement."
         }, {
             title: "From concept to deployment, we ensure every aspect of your app is meticulously crafted to perfection. Our comprehensive range of iOS app development services includes UI/UX design, custom app development, testing, and maintenance. We pride ourselves on our ability to deliver high-quality apps that not only meet but exceed client expectations."
         }, {
@@ -1628,10 +1628,10 @@ export const WebDevelopmentCompanyUSA = {
         "Quantum IT is a top web development company in the USA, known for its creative solutions and commitment to perfection. In order to meet each client’s unique identity, our well-versed developers, designers and digital strategists work as a team towards achieving quality websites. Through many years of practising it, various projects have been accomplished by us across different industries like e-commerce, healthcare, education among others.Our approach to website creation involves everything from inception through launch to post-launch support. A good site goes beyond just being an online shop, it is an important tool for increasing brand reputation, enhancing user experience and driving growth. We therefore create sites which are not only attractive but also highly usable, safe and optimised for performance improvement."
     ],
     ourProcessDesc: [
-        
+
     ],
     ourProcessImg: [
-        
+
     ],
     serviceTitle: "Our Web Development Services",
     services: [
@@ -1706,10 +1706,10 @@ export const ProfessionalSEOServicesCompany = {
         "For companies that want to reach their target customers and expect to achieve sustainable growth in their business, SEO is an essential tool. We at Quantum IT consider ourselves as one of the best professional SEO services companies whose aim is helping businesses improve their online presence and achieve top rankings on search engines. But what sets us apart? Let’s see how Quantum IT can act as your trusted ally while working your way through the SEO maze.<br><br>SEO is more than just a trendy term; it is actually an integral part of online marketing and can make or break your web presence. In essence, SEO facilitates search engine optimization for example on Google, Bing, Yahoo etc. The better the strategy you have for SEO, the higher will be your site’s ranking on SERPs (Search Engine Results Pages). Resulting in more visibility, traffic and hence conversions in the end.<br><br>However, SEO isn’t a magic bullet for all problems. It necessitates knowledge of algorithms, user behaviour as well as industry trends. This is where Quantum IT’s professional SEO services come into play."
     ],
     ourProcessDesc: [
-        
+
     ],
     ourProcessImg: [
-        
+
     ],
     serviceTitle: "Our SEO Services",
     services: [
@@ -1784,10 +1784,10 @@ export const NJSEOCompany = {
         "Quantum IT, one of the best <b>NJ SEO companies,</b> aims at improving the visibility of all businesses and ensuring they effectively reach their target market. Our specialisation is developing unique SEO strategies that match your business objectives and drive high quality traffic to your website increasing conversion rates.<br><br> Our team of professionals who have been working in this industry for many years employs up-to-date SEO approaches and follows industry best practices to ensure that your website not only ranks highly on search engine results but also offers seamless user experience. At Quantum IT, we know that every enterprise has its own identity so our services are tailored accordingly whether you want us to create your online presence from scratch or revise current SEO plans."
     ],
     ourProcessDesc: [
-        
+
     ],
     ourProcessImg: [
-        
+
     ],
     serviceTitle: "Our Services",
     services: [
@@ -2044,32 +2044,32 @@ export const GenerativeAiIntegrationServices = {
         {
             name: 'Healthcare',
             img: '../../../../assets/ai/services/ai-generative-services/healthcare.svg',
-            img2:'../../../../assets/ai/services/ai-generative-services/healthcare.png'
+            img2: '../../../../assets/ai/services/ai-generative-services/healthcare.png'
         },
         {
             name: 'Finance',
             img: '../../../../assets/ai/services/ai-generative-services/finance.svg',
-            img2:'../../../../assets/ai/services/ai-generative-services/finance.png'
+            img2: '../../../../assets/ai/services/ai-generative-services/finance.png'
         },
         {
             name: 'Retail',
             img: '../../../../assets/ai/services/ai-generative-services/retail.svg',
-            img2:'../../../../assets/ai/services/ai-generative-services/retail.png'
+            img2: '../../../../assets/ai/services/ai-generative-services/retail.png'
         },
         {
             name: 'Manufacturing',
             img: '../../../../assets/ai/services/ai-generative-services/manufacturing.svg',
-            img2:'../../../../assets/ai/services/ai-generative-services/manufacturing.png'
+            img2: '../../../../assets/ai/services/ai-generative-services/manufacturing.png'
         },
         {
             name: 'Telecommunications',
             img: '../../../../assets/ai/services/ai-generative-services/telecommunication.svg',
-            img2:'../../../../assets/ai/services/ai-generative-services/telecommunication.png'
+            img2: '../../../../assets/ai/services/ai-generative-services/telecommunication.png'
         },
         {
             name: 'Education',
             img: '../../../../assets/ai/services/ai-generative-services/education.svg',
-            img2:'../../../../assets/ai/services/ai-generative-services/education.png'
+            img2: '../../../../assets/ai/services/ai-generative-services/education.png'
         },
     ]
 
@@ -2431,7 +2431,7 @@ export const serviceAiConsulting = {
     our_steps_title: 'Our Generative AI Solutions',
     our_steps_description: 'We are experts in generative AI, we create innovative tools including content generation toolkits, chatbots or virtual assistants among others. Right from UX/UI design up to model integration our end-to-end generative AI solution development is built around you.',
     our_steps: [
-        
+
     ],
     our_steps2: [
         {
@@ -2716,8 +2716,8 @@ export const AccountPayable = {
             desc: "Time to process invoice"
         },
         {
-            title:"90%",
-            desc:"Substantial effort reduction"
+            title: "90%",
+            desc: "Substantial effort reduction"
         }
     ],
 }
@@ -2768,8 +2768,8 @@ export const AccountReceivableRecovery = {
             desc: "Time to market reduced"
         },
         {
-            title:"70%",
-            desc:"Substantial effort reduction"
+            title: "70%",
+            desc: "Substantial effort reduction"
         }
     ],
 }
