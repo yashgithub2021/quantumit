@@ -257,6 +257,9 @@ app-about .carousel-control-next {
 app-about .carousel-indicators {
   margin-bottom: 0rem;
 }
+app-service .frame-3 .ai-service-desc b{
+  color:rgb(115, 115, 218);;
+}
 
 @media(max-width:575.98px) {
   app-home slide {

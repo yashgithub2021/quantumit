@@ -31,7 +31,7 @@
                                 </h1>
                             </div>
                             <ng-container *ngFor="let description of androidService.descriptionOne">
-                                <p [innerHTML]="description"
+                                <p class="ai-service-desc" [innerHTML]="description"
                                 [ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">
                                 <!-- {{description}} -->
                             </p>
@@ -118,7 +118,7 @@
                                 <h5 class="">{{data.title}}</h5>
                             </div>
                             <div class="desc w-100">
-                                <p [ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">{{data.desc}}</p>
+                                <p [ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}"[innerHTML]="data.desc"></p>
                             </div>
                             <div class="image-container">
                                 <img [src]="data.img" alt="Image" class="corner-image">
