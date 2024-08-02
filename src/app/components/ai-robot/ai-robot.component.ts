@@ -13,7 +13,7 @@ import { SharedModule } from 'src/app/shared/shared/shared.module';
   templateUrl: './ai-robot.component.html',
   styleUrls: ['./ai-robot.component.css'],
   standalone: true,
-  imports: [CommonModule,RouterModule,SharedModule]
+  imports: [CommonModule,RouterModule,SharedModule,FormComponent]
 })
 export class AiRobotComponent implements OnInit {
 

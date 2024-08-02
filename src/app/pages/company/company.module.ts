@@ -9,6 +9,7 @@ import { RefundCancellationPolicyComponent } from './refund-cancellation-policy/
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 import { TermsConditionComponent } from './terms-condition/terms-condition.component';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
+import { FormComponent } from "../../components/form/form.component";
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
     CarouselModule.forRoot(),
     CommonModule,
     CompanyRoutingModule,
-    SharedModule
-  ]
+    SharedModule,
+    FormComponent
+]
 })
 export class CompanyModule { }

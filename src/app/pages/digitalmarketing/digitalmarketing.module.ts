@@ -21,7 +21,8 @@ import { DetailsComponent } from './details/details.component';
   imports: [
     SharedModule,
     CommonModule,
-    DigitalmarketingRoutingModule
+    DigitalmarketingRoutingModule,
+    FormComponent
   ]
 })
 export class DigitalmarketingModule { }

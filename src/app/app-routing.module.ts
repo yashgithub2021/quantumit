@@ -35,7 +35,7 @@ const routes: Routes = [
   {
     path: 'payment', loadChildren: () => import('./pages/payment/payment.module').then(m => m.PaymentModule)
   },
-  { path: 'form', component: FormComponent },
+  { path: 'form', loadComponent: () => import('./components/form/form.component').then(f => f.FormComponent) },
 
   {
     path: ':id', loadComponent: () => import('./components/details/details.component').then(m => m.DetailsComponent),

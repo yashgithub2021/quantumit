@@ -617,7 +617,7 @@ export const roboticProcessAutomation = {
     title2: "Robotic Process Automation",
     metaTitle: "Robotic Process Automation | RPA Automation | RPA Development",
     metaDescription: "Discover expert robotic process automation (RPA) solutions with Quantum IT Innovation. We specialize in RPA automation and custom RPA development.",
-    img1: "../../../../assets/services/Robitic_process/rpa.jpg",
+    img1: "../../../../assets/services/Robitic_process/rpa.webp",
     img2: "../../../../assets/services/Robitic_process/By-adopting-Robotic-Process-Auto.jpg",
     descriptionOne: [
         "Revolutionize your business processes with Quantum IT's Robotic Process Automation (RPA) services, designed to streamline operations, increase efficiency, and drive productivity.",
