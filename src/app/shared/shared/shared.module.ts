@@ -10,7 +10,6 @@ import { TruncateAtPointPipe } from '../pipes/truncate-at-point.pipe';
 
 @NgModule({
   declarations: [
-    FormComponent,
     TruncateAtPointPipe
   ],
   imports: [
@@ -26,7 +25,7 @@ import { TruncateAtPointPipe } from '../pipes/truncate-at-point.pipe';
     NgxSpinnerModule.forRoot({ type: 'ball-running-dots' }),
   
   ],
-  exports: [FormComponent,TruncateAtPointPipe],
+  exports: [TruncateAtPointPipe],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class SharedModule { }
