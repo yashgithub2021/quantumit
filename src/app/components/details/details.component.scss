@@ -2,7 +2,12 @@
     font-family: 'Plus Jakarta Sans';
 }
 
+
 .appdev-page {
+
+    .brief p a {
+        text-decoration: none;
+    }
 
     .services::before {
         height: 100%;
@@ -22,6 +27,7 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
+
     .our-process-btn1 {
         padding: 7px 15px 7px 15px;
         gap: 0px;
@@ -63,7 +69,7 @@
     }
 
 
-    .frame-4::before{
+    .frame-4::before {
         height: 100%;
         width: 99%;
         background-image: url("../../../assets/backgroungimages/section4-bg-image.png"), url("../../../assets/backgroungimages/section4-bg-image.png");
@@ -75,7 +81,8 @@
         z-index: -1;
         opacity: 30%;
     }
-    .frame-1::before{
+
+    .frame-1::before {
         height: 100%;
         width: 99%;
         background-image: url("../../../assets/backgroungimages/section4-bg-image.png");
@@ -89,7 +96,8 @@
         left: 0px;
         top: 0px;
     }
-    .frame-1::after{
+
+    .frame-1::after {
         height: 100%;
         width: 99%;
         background-image: url("../../../assets/backgroungimages/section4-bg-image.png");
@@ -104,6 +112,7 @@
         // right: 0px;
         top: -150px;
     }
+
     .image-container {
         position: absolute;
         top: 0px;
@@ -435,11 +444,13 @@
     .txt1 {
         width: 60% !important;
     }
-    .frame-3 .service-section1{
+
+    .frame-3 .service-section1 {
         font-size: 16px;
         font-weight: 400;
     }
-    .frame-3 .service-section1 .text{
+
+    .frame-3 .service-section1 .text {
         background: linear-gradient(120.79deg, #43BAFF -49.01%, rgba(67, 186, 255, 0) 13.65%);
         border: 1px solid;
         border-image-source: linear-gradient(117.89deg, #43BAFF 0%, rgba(67, 186, 255, 0) 24%);
@@ -519,11 +530,13 @@
         .frame-5>.container {
             width: 85% !important;
         }
-        .frame-1::after{
+
+        .frame-1::after {
             background-image: none;
             height: 0px;
         }
-        .frame-1::before{
+
+        .frame-1::before {
             background-image: none;
             height: 0px;
         }
@@ -537,6 +550,7 @@
             min-width: 275px;
             justify-content: center !important;
         }
+
         .stack {
             padding: 20px 40px;
         }
@@ -549,8 +563,8 @@
 
     @media (max-width: 575.98px) {
 
-        .frame-3 .service-section1{
-            padding:15px;
+        .frame-3 .service-section1 {
+            padding: 15px;
             font-size: 12px;
         }
 
@@ -562,14 +576,15 @@
 
         .our-marketing-btn {
             padding: 7px 7px;
-            font-size: 12px!important;
+            font-size: 12px !important;
         }
 
         .our-marketing-btn>i {
             padding: 5px;
         }
 
-        .our-process-btn ,.our-process-btn1 {
+        .our-process-btn,
+        .our-process-btn1 {
             font-size: 10px;
             line-height: 20px;
             padding: 5px 12px 5px 12px;
@@ -646,8 +661,8 @@
 
         .frame-3 {
             padding: 20px !important;
-            padding-top: 5px!important;
-            padding-bottom: 0px!important;
+            padding-top: 5px !important;
+            padding-bottom: 0px !important;
         }
 
         .image {
@@ -678,6 +693,7 @@
             min-width: 230px;
             justify-content: center !important;
         }
+
         .stack {
             padding: 20px 40px;
         }
@@ -699,7 +715,8 @@
             font-size: 12px;
             line-height: 18px;
         }
-        .process-square{
+
+        .process-square {
             width: 50px;
             height: 40px;
             border-radius: 10px;
@@ -710,7 +727,7 @@
     @media(max-width:413px) {
         .frame-1 {
             padding: 2rem !important;
-            padding-bottom: 0px!important;
+            padding-bottom: 0px !important;
         }
     }
 
@@ -774,6 +791,7 @@
         backdrop-filter: blur(2px);
 
     }
+
     .our-process-btn1 {
         padding: 7px 15px 7px 15px;
         gap: 0px;
@@ -1244,7 +1262,8 @@
             margin-top: 0px !important;
         }
 
-        .our-process-btn ,.our-process-btn1{
+        .our-process-btn,
+        .our-process-btn1 {
             font-size: 10px;
             line-height: 20px;
             padding: 5px 12px 5px 12px;
@@ -1253,8 +1272,9 @@
         .txt {
             width: 100% !important;
         }
-        .frame-1::after{
-            top:0px;
+
+        .frame-1::after {
+            top: 0px;
         }
 
         .frame-2-head,
@@ -1279,7 +1299,7 @@
         }
 
         .step-title p:first-child {
-            font-size: 16px!important;
+            font-size: 16px !important;
             line-height: 25px;
         }
 
@@ -1290,7 +1310,7 @@
 
         .our-marketing-btn {
             padding: 7px 7px;
-            font-size: 12px!important;
+            font-size: 12px !important;
         }
 
         .steps-container2 {
@@ -1340,11 +1360,13 @@
             line-height: 20px;
             opacity: 0.5;
         }
-        .process-square{
+
+        .process-square {
             width: 50px;
             height: 40px;
             border-radius: 10px;
         }
+
         .frame-1 {
             padding-top: 15px;
         }

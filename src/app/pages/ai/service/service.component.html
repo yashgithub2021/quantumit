@@ -32,14 +32,43 @@
                             </div>
                             <ng-container *ngFor="let description of androidService.descriptionOne">
                                 <p class="ai-service-desc" [innerHTML]="description"
-                                [ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">
-                                <!-- {{description}} -->
-                            </p>
+                                    [ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">
+                                    <!-- {{description}} -->
+                                </p>
                             </ng-container>
-                            <p *ngFor="let description of androidService.descriptionTwo"
-                                [ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">
-                                {{description}}
-                            </p>
+                        </div>
+                    </div>
+                    <div class="image h-100 w-100 ">
+                        <img class="w-100" style=" object-fit:cover;border-radius:10px;opacity:0.8"
+                            [src]="androidService.img1" alt="">
+                    </div>
+                </div>
+                <div *ngIf="androidService?.descriptionTwo?.length>0"
+                    class="d-flex gap-5 align-items-center flex-column flex-lg-row-reverse my-sm-5 h-100 w-100">
+                    <div class="text w-100 p-0">
+                        <div class="brief ">
+                            <ng-container *ngFor="let description of androidService.descriptionTwo">
+                                <p [innerHTML]="description" class="ai-service-desc"
+                                    [ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">
+                                </p>
+                            </ng-container>
+                        </div>
+                    </div>
+                    <div class="image h-100 w-100 ">
+                        <img class="w-100" style=" object-fit:cover;border-radius:10px;opacity:0.8"
+                            [src]="androidService.img1" alt="">
+                    </div>
+                </div>
+                <div *ngIf="androidService?.descriptionThree?.length>0"
+                    class="d-flex gap-5 align-items-center flex-column flex-lg-row my-sm-5 h-100 w-100">
+                    <div class="text w-100 p-0">
+                        <div class="brief ">
+                            <ng-container *ngFor="let description of androidService.descriptionThree">
+                                <p class="ai-service-desc" [innerHTML]="description"
+                                    [ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">
+                                    <!-- {{description}} -->
+                                </p>
+                            </ng-container>
                         </div>
                     </div>
                     <div class="image h-100 w-100 ">
@@ -72,12 +101,12 @@
             <div class="slider" [ngClass]="isDarkTheme?'slider-dark':'slider-light'">
                 <div class="slide-track">
                     <div class="slide" *ngFor="let img of brandLogo">
-                        <img [ngStyle]="{filter:isDarkTheme?'invert(0)':'invert(1)'}" 
-                            [src]="img.img" class="d-block w-auto" alt="...">
+                        <img [ngStyle]="{filter:isDarkTheme?'invert(0)':'invert(1)'}" [src]="img.img"
+                            class="d-block w-auto" alt="...">
                     </div>
                     <div class="slide" *ngFor="let img of brandLogo">
-                        <img [ngStyle]="{filter:isDarkTheme?'invert(0)':'invert(1)'}" 
-                            [src]="img.img" class="d-block w-auto" alt="...">
+                        <img [ngStyle]="{filter:isDarkTheme?'invert(0)':'invert(1)'}" [src]="img.img"
+                            class="d-block w-auto" alt="...">
                     </div>
                 </div>
             </div>
@@ -118,7 +147,7 @@
                                 <h5 class="">{{data.title}}</h5>
                             </div>
                             <div class="desc w-100">
-                                <p [ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}"[innerHTML]="data.desc"></p>
+                                <p [ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}" [innerHTML]="data.desc"></p>
                             </div>
                             <div class="image-container">
                                 <img [src]="data.img" alt="Image" class="corner-image">
@@ -302,8 +331,8 @@
                         *ngFor="let integration of androidService.integrations">
                         <div class="logo mx-3">
                             <div class="process-square">
-                                <img src="{{integration.img}}"style="width:30px;" alt=""*ngIf="isDarkTheme">
-                                <img src="{{integration.img2}}"style="width:30px;" alt=""*ngIf="!isDarkTheme">
+                                <img src="{{integration.img}}" style="width:30px;" alt="" *ngIf="isDarkTheme">
+                                <img src="{{integration.img2}}" style="width:30px;" alt="" *ngIf="!isDarkTheme">
                             </div>
                         </div>
                         <div class="text mx-3 ">
@@ -484,8 +513,9 @@
 </div>
 <div class="container-fluid d-flex justify-content-sm-end justify-content-center my-3 my-sm-5 me-sm-5">
     <div class="buttons d-flex flex-row align-items-end  pe-sm-5 gap-3">
-        <button class="prev our-process-btn cursor-pointer"(click)="prev()"*ngIf="nextServiceCount!=0">Prev</button>
-        <button class="next our-process-btn cursor-pointer"(click)="next()"*ngIf="nextServiceCount!=ourAIGenerative.length-1">Next</button>
+        <button class="prev our-process-btn cursor-pointer" (click)="prev()" *ngIf="nextServiceCount!=0">Prev</button>
+        <button class="next our-process-btn cursor-pointer" (click)="next()"
+            *ngIf="nextServiceCount!=ourAIGenerative.length-1">Next</button>
     </div>
 </div>
 <app-form></app-form>
