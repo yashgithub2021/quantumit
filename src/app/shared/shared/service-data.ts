@@ -1646,7 +1646,7 @@ export const WebDevelopmentCompanyUSA = {
     ourProcessImg: [
         {
             img3: '../../../../assets/webdev/details/section2img2.webp',
-            img4: '../../../../assets/webdev/details/section2img1.avif',
+            img4: '../../../../assets/webdev/details/section2img1.webp',
             img5: '../../../../assets/webdev/details/section2img2.webp',
         }
     ],
