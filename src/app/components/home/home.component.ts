@@ -173,6 +173,27 @@ export class HomeComponent implements OnInit {
       link: '/digital-marketing'
 
     },
+    {
+      img: '../../../assets/services/AI_service/aigenerator/img1.png',
+      title: 'Generative AI',
+      desc: "Quantum IT offers expert generative AI consulting services, making us one of the top GenAI companies for innovative AI solutions.",
+      link: '/ai/Generative-Ai-Development'
+
+    },
+    {
+      img: '../../../assets/services/AI_service/aiservice/img1.png',
+      title: 'AI Development',
+      desc: "Quantum IT offers premier AI/ML development services, providing innovative AI development services tailored to meet your business's unique needs.",
+      link: '/ai/Generative-Ai-Development'
+
+    },
+    {
+      img: '../../../assets/services/AI_service/aiservice/img2.png',
+      title: 'AI Consulting',
+      desc: "Discover top AI consulting services at Quantum IT. Our expert AI consultants from leading AI consulting firms offer premier AI consultancy and consultation.",
+      link: '/ai/Ai-Consulting'
+
+    },
   ]
 
   sectionFourNums = [

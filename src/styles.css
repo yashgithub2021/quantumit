@@ -257,8 +257,22 @@ app-about .carousel-control-next {
 app-about .carousel-indicators {
   margin-bottom: 0rem;
 }
-app-service .frame-3 .ai-service-desc b{
-  color:rgb(115, 115, 218);;
+
+app-service .frame-3 .ai-service-desc b {
+  color: rgb(115, 115, 218);
+  ;
+}
+
+app-details .brief p a {
+  text-decoration: none;
+}
+
+app-service .brief p a {
+  text-decoration: none;
+}
+
+app-details .brief p a:hover {
+  color: #0099FF;
 }
 
 @media(max-width:575.98px) {

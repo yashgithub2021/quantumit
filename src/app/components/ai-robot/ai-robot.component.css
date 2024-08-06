@@ -7,6 +7,10 @@
 
 }
 
+.brief p b {
+    cursor: pointer;
+}
+
 .frame-1::before {
     background-image: url("../../../assets/ai/banner.png");
     background-position: center;
@@ -194,7 +198,7 @@
 }
 
 .ai-showcase-inner-light {
-    background:rgb(231, 228, 228);
+    background: rgb(231, 228, 228);
     border: 1px solid #FFFFFF1A;
     border-radius: 25px;
 }
@@ -266,11 +270,13 @@
     line-height: 25px;
     font-weight: 400 !important;
 }
-.frame-3 .service-section{
+
+.frame-3 .service-section {
     font-size: 16px;
     font-weight: 400;
 }
-.frame-3 .service-section .text{
+
+.frame-3 .service-section .text {
     background: linear-gradient(120.79deg, #43BAFF -49.01%, rgba(67, 186, 255, 0) 13.65%);
     border: 1px solid;
     border-image-source: linear-gradient(117.89deg, #43BAFF 0%, rgba(67, 186, 255, 0) 24%);
@@ -300,7 +306,8 @@
         border-radius: 15px;
     }
 }
-@media (max-width:768px){
+
+@media (max-width:768px) {
     .ai-data2 {
         max-width: 30%;
     }
@@ -308,15 +315,17 @@
 
 @media (max-width: 575.98px) {
 
-    .image1 img{
+    .image1 img {
         height: 40px;
     }
-    .ai-showcase-inner-light{
+
+    .ai-showcase-inner-light {
         padding: 14px;
         border-radius: 15px;
     }
-    .frame-3 .service-section{
-        padding:15px;
+
+    .frame-3 .service-section {
+        padding: 15px;
         padding-bottom: 0px;
         font-size: 12px;
     }
@@ -366,12 +375,14 @@
     .txt h1 {
         margin-top: 15px;
     }
+
     .txt h1 {
         font-size: 18px !important;
         line-height: 26px;
         letter-spacing: 0px;
-        font-weight: 700!important;
+        font-weight: 700 !important;
     }
+
     .slide h5 {
         font-size: 12px !important;
     }
@@ -400,7 +411,7 @@
     }
 
     .title h3 {
-        font-size: 14px!important;
+        font-size: 14px !important;
         line-height: 20px;
         text-align: center;
     }
@@ -485,6 +496,7 @@
         font-weight: 400 !important;
         letter-spacing: 0.6px;
     }
+
     .ai-data2 {
         max-width: 46%;
     }
