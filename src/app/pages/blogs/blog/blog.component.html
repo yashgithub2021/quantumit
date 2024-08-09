@@ -89,8 +89,9 @@
                                 class="card col-lg-5 col-8 my-sm-3 p-0 justify-content-between"
                                 style="cursor: pointer;height:auto;"
                                 [ngStyle]="{'color':isDarkTheme?'white':'black','background':isDarkTheme?'#111111':'#ECF0FF'}">
-                                <img style="height: 40%;" [src]="blog.image" class="card-img-top" alt="..."
-                                    loading="lazy">
+                                <img [srcset]="blog.image + ' 600w, ' + blog.image + '?size=1200 1200w'"
+                                    sizes="(max-width: 600px) 100vw, 50vw" style="height: 40%;" [src]="blog.image"
+                                    class="card-img-top" alt="..." loading="lazy">
                                 <div class="px-3 my-3" style="height:auto">
                                     <div class="container">
                                         <h5 class="card-title text-capitalize fw-lighter" style="font-size:12px;">

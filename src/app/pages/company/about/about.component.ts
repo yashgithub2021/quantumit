@@ -114,6 +114,24 @@ export class AboutComponent implements OnInit, AfterViewInit {
       imgSrc: '../../../../assets/about/clutch.jpg',
       title: 'Clutch',
       description: 'Certified Mobile App Developer'
+    },
+    {
+      link: 'https://www.trustpilot.com/review/quantumitinnovation.com',
+      imgSrc: '../../../../assets/about/topseo.webp',
+      title: 'Trustpilot',
+      description: 'See our Profile'
+    },
+    {
+      link: 'https://www.glassdoor.co.in/Reviews/Quantum-IT-Innovation-Reviews-E2166781.htm',
+      imgSrc: '../../../../assets/about/glassdoor.webp',
+      title: 'Glassdoor',
+      description: 'See our Profile'
+    },
+    {
+      link: 'https://www.topseobrands.com/profile/quantum-it-innovation-0',
+      imgSrc: '../../../../assets/about/trust.webp',
+      title: 'Top SEO Brands',
+      description: 'See our Profile'
     }
   ];
   @ViewChild('carousel', { static: false }) _carousel!: ElementRef;

@@ -22,6 +22,21 @@
     border-radius: 0 0 20px 20px;
 }
 
+.heading {
+    width: 100vw;
+}
+
+.heading::before {
+    background-image: url("../../../assets/ai/banner/ai-robot.webp");
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: "";
+    height: 100%;
+    width: 100%;
+    border-radius: 0 0 20px 20px;
+}
+
 .our-process-btn {
     padding: 7px 15px 7px 15px;
     gap: 0px;
@@ -314,6 +329,15 @@
 }
 
 @media (max-width: 575.98px) {
+
+    .heading {
+        width: 97vw;
+    }
+
+    .heading::before {
+        display: none;
+        background-image: none;
+    }
 
     .image1 img {
         height: 40px;

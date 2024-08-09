@@ -151,16 +151,19 @@ button {
 .quantum .tagline p {
     font-size: 16px;
 }
-.ipad-mini-landscape1{
-    width:40%;
+
+.ipad-mini-landscape1 {
+    width: 40%;
 }
-.ipad-mini-landscape{
-    width:64%;
+
+.ipad-mini-landscape {
+    width: 64%;
     padding: 0px;
 }
-.social-links-container{
-    gap:15px;
-    padding-left: 55px;
+
+.social-links-container {
+    gap: 15px;
+    /* padding-left: 55px; */
 }
 
 @media(min-width:1025px) and (max-width:1180px) {
@@ -199,11 +202,13 @@ button {
     .follow>span {
         font-size: 8px;
     }
-    .ipad-mini-landscape1{
-        width:100%;
+
+    .ipad-mini-landscape1 {
+        width: 100%;
     }
-    .ipad-mini-landscape{
-        width:100%;
+
+    .ipad-mini-landscape {
+        width: 100%;
     }
 }
 
@@ -255,7 +260,7 @@ button {
         font-size: 14px;
     }
 
-    .contact-icon-info a{
+    .contact-icon-info a {
         width: 48px;
         height: 48px;
         display: flex;
@@ -298,11 +303,13 @@ button {
         line-height: 24px;
         font-weight: 400 !important;
     }
-    .social-links-container{
-        gap:0px;
+
+    .social-links-container {
+        gap: 0px;
         padding-left: 0px;
     }
-    .rights p{
+
+    .rights p {
         font-size: 12px;
     }
 }

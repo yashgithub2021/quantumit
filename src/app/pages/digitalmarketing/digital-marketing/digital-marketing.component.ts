@@ -52,7 +52,7 @@ export class DigitalMarketingComponent implements OnInit, AfterViewInit {
       link: '/digital-marketing/casestudy'
     },
     {
-      name: "Diva Beauty Of Organic Traffic",
+      name: "Flag Banner",
       num: "+991k",
       types: ['Keyword Ranking', 'SEO', 'Marketing'],
       href: 'https://flagbanner.com.au/'

@@ -52,40 +52,40 @@ export class CasestudyhomeComponent implements OnInit {
       projectName: 'HR Employee On Boarding'
     },
     {
-      name: "HR Recruitment",
+      name: "Artificial Intelligence",
       portfolioImage: '../../../../assets/casestudybanner/ai/2.png',
       link: '/ai/ai-casestudy/HR-Recruitment',
-      projectName: ''
+      projectName: 'HR Recruitment'
     }, {
-      name: "Purchase Order",
+      name: "Artificial Intelligence",
       portfolioImage: '../../../../assets/casestudybanner/ai/3.png',
       link: '/ai/ai-casestudy/Purchase-Order',
-      projectName: ''
+      projectName: 'Purchase Order'
     }, {
-      name: "Account Payable",
+      name: "Artificial Intelligence",
       portfolioImage: '../../../../assets/casestudybanner/ai/4.png',
       link: '/ai/ai-casestudy/Account-Payable',
-      projectName: ''
+      projectName: 'Account Payable'
     }, {
-      name: "Account Receivable & Recovery",
+      name: "Artificial Intelligence",
       portfolioImage: '../../../../assets/casestudybanner/ai/5.png',
       link: '/ai/ai-casestudy/Account-Receivable-Recovery',
-      projectName: ''
+      projectName: 'Account Receivable & Recovery'
     }, {
-      name: "Insurance Claim Processing",
+      name: "Artificial Intelligence",
       portfolioImage: '../../../../assets/casestudybanner/ai/6.png',
       link: '/ai/ai-casestudy/Insurance-Claim-Processing',
-      projectName: ''
+      projectName: 'Insurance Claim Processing'
     }, {
-      name: "Insurance Eligibility Verification",
+      name: "Artificial Intelligence",
       portfolioImage: '../../../../assets/casestudybanner/ai/7.png',
       link: '/ai/ai-casestudy/Insurance-Eligibility-Verification',
-      projectName: ''
+      projectName: 'Insurance Eligibility Verification'
     }, {
-      name: "Clinical Document Processing",
+      name: "Artificial Intelligence",
       portfolioImage: '../../../../assets/casestudybanner/ai/8.png',
       link: '/ai/ai-casestudy/Clinical-Document-Processing',
-      projectName: ''
+      projectName: 'Clinical Document Processing'
     },
   ]
   // loadingStatus: boolean = true;

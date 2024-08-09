@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { ActivatedRouteSnapshot, Resolve, RouterStateSnapshot } from '@angular/router';
 import { Observable, of } from 'rxjs';
-import { AccountPayable, AccountReceivableRecovery, ClinicalDocumentProcessing, GenerativeAiConsultingCompany, GenerativeAiDevelopment, GenerativeAiIntegrationServices, HREmployeeOnBoarding, HRRecruitment, HireGenerativeAiEngineers, InsuranceClaimProcessing, InsuranceEligibilityVerification, MobileAppDevelopmentDallasServices, NJSEOCompany, ProfessionalSEOServicesCompany, PurchaseOrder, WebDevelopmentCompanyUSA, androidService, contentMarketingServices, conversionRateOptimizationServices, crossPlatformAppDevelopment, dotNetDevelopmentServices, emailMarketingServices, iOsService, iPadAppDevelopment, internetOfThings, joomlaDevelopmentServices, mobileDevServices, mobileGameDevelopment, nodejsDevelopmentServices, paidSearchAdvertisingServices, payPerClickServices, phpDevelopmentServices, roboticProcessAutomation, rubyOnRailsDevelopmentServices, seoServices, serviceAiConsulting, serviceAiDevelopment, socialMediaServices, swiftAppDevelopment, websiteDevServices } from '../shared/service-data';
+import { AccountPayable, AccountReceivableRecovery, ClinicalDocumentProcessing, GenerativeAiConsultingCompany, GenerativeAiDevelopment, GenerativeAiIntegrationServices, HREmployeeOnBoarding, HRRecruitment, HireGenerativeAiEngineers, InsuranceClaimProcessing, InsuranceEligibilityVerification, MobileAppDevelopmentDallasServices, NJSEOCompany, ProfessionalSEOServicesCompany, PurchaseOrder, WebDevelopmentCompanyUSA, aiAndSoftDevelopment, androidService, contentMarketingServices, conversionRateOptimizationServices, crossPlatformAppDevelopment, dotNetDevelopmentServices, emailMarketingServices, iOsService, iPadAppDevelopment, internetOfThings, joomlaDevelopmentServices, mobileDevServices, mobileGameDevelopment, nodejsDevelopmentServices, paidSearchAdvertisingServices, payPerClickServices, phpDevelopmentServices, roboticProcessAutomation, rubyOnRailsDevelopmentServices, seoServices, serviceAiConsulting, serviceAiDevelopment, socialMediaServices, swiftAppDevelopment, websiteDevServices } from '../shared/service-data';
 
 @Injectable({
   providedIn: 'root'
@@ -28,6 +28,8 @@ export class DataService implements Resolve<any> {
       return of({ title: 'internet of things', services: internetOfThings });
     } else if (id === 'robotic-process-automation') {
       return of({ title: 'RAP', services: roboticProcessAutomation });
+    } else if (id === 'ai-and-software-development') {
+      return of({ title: 'AI', services: aiAndSoftDevelopment });
     } else if (id === 'seo-services-company') {
       return of({ title: 'seo Services', services: seoServices });
     } else if (id === 'ppc-campaign-management-services') {

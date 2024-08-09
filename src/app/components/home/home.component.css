@@ -67,7 +67,7 @@
 }
 
 .dark::before {
-    background-image: url('../../../assets/backgroungimages/section1-bg-img.png');
+    background-image: url('../../../assets/backgroungimages/section1-bg-img.webp');
     z-index: -1;
     content: '';
     position: absolute;
@@ -361,7 +361,7 @@
     content: "";
     height: 100%;
     width: 100%;
-    background-image: url("../../../assets/backgroungimages/project1-bg.png");
+    background-image: url("../../../assets/backgroungimages/project1-bg.webp");
     background-size: cover;
     background-repeat: no-repeat;
     display: block;
@@ -397,7 +397,7 @@
     content: "";
     height: 100%;
     width: 100%;
-    background-image: url("../../../assets/backgroungimages/project2bg.png");
+    background-image: url("../../../assets/backgroungimages/project2bg.webp");
     background-size: cover;
     background-repeat: no-repeat;
     display: block;
@@ -411,7 +411,7 @@
     content: "";
     height: 100%;
     width: 100%;
-    background-image: url("../../../assets/backgroungimages/project3-bg.png");
+    background-image: url("../../../assets/backgroungimages/project3-bg.webp");
     background-size: cover;
     background-repeat: no-repeat;
     display: block;

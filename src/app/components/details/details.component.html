@@ -114,20 +114,91 @@
                     <div class="image h-100 w-100 ">
                         <img class="w-100" loading="lazy"
                             style="max-height:60%; object-fit:cover;border-radius:10px;opacity:0.8"
-                            src="{{androidService.ourProcessImg[0].img5}}" alt="processes image">
+                            src="{{androidService.ourProcessImg[0].img3}}" alt="processes image">
                     </div>
                 </div>
+                <div *ngIf="androidService.ourProcessTitle2" class="our-process my-2 ">
+                    <h1 class=" text-align-center">{{androidService.ourProcessTitle2}}</h1>
+                </div>
                 <div class="d-flex align-items-center my-sm-5 my-3 flex-column flex-lg-row-reverse gap-3"
-                    *ngIf="androidService.ourProcessDesc[2]">
+                    *ngIf="androidService.ourProcessDesc[1]">
                     <div class="text w-100 p-0 p-3 p-sm-4">
                         <div class="brief" [ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">
-                            <p>{{androidService?.ourProcessDesc[2]?.title}}</p>
-                            <p>
-                                {{androidService?.ourProcessDesc[3]?.title}}</p>
+                            <p [innerHTML]="androidService?.ourProcessDesc[1]?.title"></p>
+                            <!-- <p>
+                                {{androidService?.ourProcessDesc[3]?.title}}</p> -->
                         </div>
                     </div>
                     <div class="image h-100 w-100 max-height:65%; object-fit:cover;border-radius:10px;opacity:0.8">
                         <img class="rounded-3" loading="lazy" src="{{androidService.ourProcessImg[1].img4}}"
+                            alt="processes image">
+                    </div>
+                </div>
+                <div *ngIf="androidService.ourProcessTitle3" class="our-process my-2 ">
+                    <h1 class=" text-align-center">{{androidService.ourProcessTitle3}}</h1>
+                </div>
+                <div class="d-flex align-items-center my-sm-5 my-3 flex-column flex-lg-row gap-3"
+                    *ngIf="androidService.ourProcessDesc[2]">
+                    <div class="text w-100 p-0 p-3 p-sm-4">
+                        <div class="brief" [ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">
+                            <p [innerHTML]="androidService?.ourProcessDesc[2]?.title"></p>
+                            <!-- <p>
+                                {{androidService?.ourProcessDesc[3]?.title}}</p> -->
+                        </div>
+                    </div>
+                    <div class="image h-100 w-100 max-height:65%; object-fit:cover;border-radius:10px;opacity:0.8">
+                        <img class="rounded-3" loading="lazy" src="{{androidService.ourProcessImg[2].img5}}"
+                            alt="processes image">
+                    </div>
+                </div>
+                <div *ngIf="androidService.ourProcessTitle4" class="our-process my-2 ">
+                    <h1 class=" text-align-center">{{androidService.ourProcessTitle4}}</h1>
+                </div>
+                <div class="d-flex align-items-center my-sm-5 my-3 flex-column flex-lg-row-reverse gap-3"
+                    *ngIf="androidService.ourProcessDesc[3]">
+                    <div class="text w-100 p-0 p-3 p-sm-4">
+                        <div class="brief" [ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">
+                            <p [innerHTML]="androidService?.ourProcessDesc[3]?.title"></p>
+                            <!-- <p>
+                                {{androidService?.ourProcessDesc[3]?.title}}</p> -->
+                        </div>
+                    </div>
+                    <div class="image h-100 w-100 max-height:65%; object-fit:cover;border-radius:10px;opacity:0.8">
+                        <img class="rounded-3" loading="lazy" src="{{androidService.ourProcessImg[3].img6}}"
+                            alt="processes image">
+                    </div>
+                </div>
+                <div *ngIf="androidService.ourProcessTitle5" class="our-process my-2 ">
+                    <h1 class=" text-align-center">{{androidService.ourProcessTitle5}}</h1>
+                </div>
+                <div class="d-flex align-items-center my-sm-5 my-3 flex-column flex-lg-row gap-3"
+                    *ngIf="androidService.ourProcessDesc[4]">
+                    <div class="text w-100 p-0 p-3 p-sm-4">
+                        <div class="brief" [ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">
+                            <p [innerHTML]="androidService?.ourProcessDesc[4]?.title"></p>
+                            <!-- <p>
+                                {{androidService?.ourProcessDesc[3]?.title}}</p> -->
+                        </div>
+                    </div>
+                    <div class="image h-100 w-100 max-height:65%; object-fit:cover;border-radius:10px;opacity:0.8">
+                        <img class="rounded-3" loading="lazy" src="{{androidService.ourProcessImg[4].img7}}"
+                            alt="processes image">
+                    </div>
+                </div>
+                <div *ngIf="androidService.ourProcessTitle6" class="our-process my-2 ">
+                    <h1 class=" text-align-center">{{androidService.ourProcessTitle6}}</h1>
+                </div>
+                <div class="d-flex align-items-center my-sm-5 my-3 flex-column flex-lg-row-reverse gap-3"
+                    *ngIf="androidService.ourProcessDesc[5]">
+                    <div class="text w-100 p-0 p-3 p-sm-4">
+                        <div class="brief" [ngStyle]="{'opacity':isDarkTheme?'0.5':'1'}">
+                            <p [innerHTML]="androidService?.ourProcessDesc[5]?.title"></p>
+                            <!-- <p>
+                                {{androidService?.ourProcessDesc[5]?.title}}</p> -->
+                        </div>
+                    </div>
+                    <div class="image h-100 w-100 max-height:65%; object-fit:cover;border-radius:10px;opacity:0.8">
+                        <img class="rounded-3" loading="lazy" src="{{androidService.ourProcessImg[5].img8}}"
                             alt="processes image">
                     </div>
                 </div>
@@ -168,7 +239,7 @@
         </div>
     </div>
 
-    <div class="frame-3 container-fluid px-0 d-flex">
+    <div *ngIf="androidService.methodologyBtnTitle" class="frame-3 container-fluid px-0 d-flex">
         <div class="container-fluid d-flex flex-column justify-content-center my-sm-5 my-4 px-lg-5">
             <div class="heading d-none  d-lg-flex justify-content-center align-items-center">
                 <div class="text w-100 d-flex flex-column justify-content-center align-items-center ">
