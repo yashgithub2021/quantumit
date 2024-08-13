@@ -82,6 +82,10 @@ export class DetailsComponent implements OnInit {
       this.differentPageStatus = false;
 
     }
+    else if (data.title === 'UIUX') {
+      this.differentPageStatus = false;
+
+    }
     else if (data.title === 'Mobile App Development Dallas') {
       this.differentPageStatus = false;
     }

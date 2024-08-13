@@ -222,6 +222,7 @@
 .project-two>.project-container>.app-details>.app-details-container {
     color: black;
 }
+
 /* 
 p {
     font-size: 20px;
@@ -256,11 +257,13 @@ p {
     font-weight: 600 !important;
     line-height: 44px;
 }
-.frame-3 .service-section{
+
+.frame-3 .service-section {
     font-size: 16px;
     font-weight: 400;
 }
-.frame-3 .service-section .text{
+
+.frame-3 .service-section .text {
     background: linear-gradient(120.79deg, #43BAFF -49.01%, rgba(67, 186, 255, 0) 13.65%);
     border: 1px solid;
     border-image-source: linear-gradient(117.89deg, #43BAFF 0%, rgba(67, 186, 255, 0) 24%);
@@ -286,7 +289,7 @@ p {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: start;
+        align-items: flex-start;
     }
 
     .our-process,
@@ -509,8 +512,8 @@ p {
 
 @media (max-width: 575.98px) {
 
-    .frame-3 .service-section{
-        padding:15px;
+    .frame-3 .service-section {
+        padding: 15px;
         font-size: 12px;
     }
 
@@ -615,7 +618,7 @@ p {
     .heading-process {
         display: flex;
         flex-direction: column;
-        align-items: start;
+        align-items: flex-start;
     }
 
     .desc {
@@ -626,12 +629,13 @@ p {
         font-size: 12px;
         line-height: 18px;
     }
-    
+
 
     .project-container {
         height: 100% !important;
     }
-    .project-container> .app-details{
+
+    .project-container>.app-details {
         margin-bottom: 20px;
         margin-top: 0px;
     }
@@ -656,14 +660,17 @@ p {
     .text-white {
         color: black !important;
     }
-    .project{
+
+    .project {
         height: 60vh;
     }
-    .app-details-container .name{
+
+    .app-details-container .name {
         margin-top: 5px;
         margin-bottom: 5px;
     }
-    .project-two > .project-container> .app-details > .app-details-container > .details{
+
+    .project-two>.project-container>.app-details>.app-details-container>.details {
         font-size: 12px !important;
         /* margin-bottom: 10px; */
     }
@@ -678,7 +685,7 @@ p {
         height: 50% !important;
         display: flex;
         justify-content: center;
-        align-items:center;
+        align-items: center;
     }
 
 

@@ -12,7 +12,7 @@
 .steps-container-1 {
     display: flex;
     justify-content: center;
-    align-items: start;
+    align-items: flex-start;
 }
 
 .step {
@@ -227,9 +227,12 @@
     margin-right: 20px;
     transition: transform 0.2s ease;
 }
-.step-circle:hover,.step-circle-light{
-    transform:scale(1.2);
+
+.step-circle:hover,
+.step-circle-light {
+    transform: scale(1.2);
 }
+
 .steps-container-1 {
     justify-content: center;
 }
@@ -313,13 +316,15 @@
         font-size: 18px;
         line-height: 20px;
     }
-    .step-circle{
+
+    .step-circle {
         width: 50px;
         height: 50px;
 
     }
-    .step-circle img{
-        width:40px;
+
+    .step-circle img {
+        width: 40px;
     }
 
     .step-title p:first-child {
@@ -330,7 +335,7 @@
     .step-title p:last-child {
         font-size: 12px !important;
         line-height: 20px;
-        width:80%!important;
+        width: 80% !important;
     }
 
     .steps-container-last .step-title p {

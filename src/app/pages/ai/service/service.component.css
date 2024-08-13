@@ -35,7 +35,8 @@
     backdrop-filter: blur(2px);
 
 }
-.image> img{
+
+.image>img {
     min-height: 340px;
 }
 
@@ -67,6 +68,7 @@
     display: flex;
     align-items: center;
 }
+
 @keyframes scroll {
     0% {
         transform: translateY(0);
@@ -76,11 +78,13 @@
         transform: translate(calc(-250px*7));
     }
 }
+
 .numbers {
     height: 100%;
     width: 100%;
     position: relative;
 }
+
 .numbers::before {
     content: '';
     background-image: url("../../../../assets/backgroungimages/section4-bg-image2.png");
@@ -99,6 +103,7 @@
     padding: 82px 60px;
     background: linear-gradient(90deg, #43BAFF 0%, #7141B1 100%);
 }
+
 .miletone-number {
     font-size: 48px;
     line-height: 48px;
@@ -468,7 +473,7 @@
 }
 
 .steps-container2 {
-    align-items: start;
+    align-items: flex-start;
 }
 
 .step-title p:first-child {
@@ -533,6 +538,7 @@
     .miletone-number {
         font-size: 35px;
     }
+
     .numbers-section {
         padding: 35px 60px;
     }
@@ -594,7 +600,8 @@
     .frame-5>.container {
         width: 85% !important;
     }
-    .image> img{
+
+    .image>img {
         min-height: auto;
     }
 
@@ -616,19 +623,21 @@
 
 @media (max-width: 575.98px) {
 
-    .slider{
-        height:80px;
+    .slider {
+        height: 80px;
     }
-    .slider .slide{
-        height:80px;
+
+    .slider .slide {
+        height: 80px;
     }
+
     .miletone-container {
         display: flex;
         flex-direction: column;
         justify-content: center;
         /* align-items: center; */
         text-align: start;
-        padding-left: 33%!important;
+        padding-left: 33% !important;
         margin-bottom: 20px;
         margin-top: 20px;
     }
@@ -642,6 +651,7 @@
         font-size: 14px;
         line-height: 16px;
     }
+
     .numbers-section {
         padding: 10px 5px;
     }
@@ -800,17 +810,19 @@
     }
 
     .steps-container2 {
-        align-items: start;
+        align-items: flex-start;
     }
 
     .sub-heading {
         font-size: 12px;
         line-height: 18px;
     }
-    .f3-container{
-        width:100%!important;
+
+    .f3-container {
+        width: 100% !important;
     }
-    .text > .title > h4 {
+
+    .text>.title>h4 {
         white-space: unset;
     }
 

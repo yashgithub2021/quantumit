@@ -528,7 +528,7 @@
     }
 
     .steps-container2 {
-        align-items: start;
+        align-items: flex-start;
     }
 
     .circles {

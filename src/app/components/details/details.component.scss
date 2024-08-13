@@ -399,7 +399,7 @@
     }
 
     .steps-container2 {
-        align-items: start;
+        align-items: flex-start;
     }
 
     .step-title p:first-child {
@@ -430,6 +430,7 @@
     }
 
     .hover-card {
+        scale: 1;
         transition: all 0.5s ease-in-out;
     }
 
@@ -708,7 +709,7 @@
         }
 
         .steps-container2 {
-            align-items: start;
+            align-items: flex-start;
         }
 
         .sub-heading {
@@ -1314,7 +1315,7 @@
         }
 
         .steps-container2 {
-            align-items: start;
+            align-items: flex-start;
         }
 
         .circles {

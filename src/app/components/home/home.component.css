@@ -8,6 +8,8 @@
     z-index: 1;
     width: 100%;
     height: auto;
+    overflow: hidden;
+    /* Prevents layout shifts */
 }
 
 .section1>div {
@@ -44,15 +46,13 @@
     z-index: -1;
     content: '';
     position: absolute;
-    /* display: flex; */
     width: 100%;
     height: 100%;
-    /* background-image: url('../../../assets/backgroungimages/section1-bg-img.png'); */
-    background-size: contain;
+    background-size: cover;
+    /* Changed to cover for better scaling */
     background-position: center;
     background-repeat: no-repeat;
-    animation: fadeInOpacity 5.5s ease-in-out forwards infinite;
-    /* Apply the animation */
+    /* Removed animation for critical CSS */
 }
 
 .light::before {
@@ -67,15 +67,16 @@
 }
 
 .dark::before {
-    background-image: url('../../../assets/backgroungimages/section1-bg-img.webp');
     z-index: -1;
     content: '';
     position: absolute;
     width: 100%;
     height: 100%;
-    background-size: contain;
+    background-size: cover;
+    /* Changed to cover for better scaling */
     background-position: center;
     background-repeat: no-repeat;
+    /* Consider removing the animation if it delays the paint */
 }
 
 .tagline {
@@ -549,7 +550,7 @@
     }
 
     .section-3>.right-side {
-        align-items: start !important;
+        align-items: flex-start !important;
     }
 
     .text>.section-3-tagline {

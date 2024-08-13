@@ -228,7 +228,7 @@ export class HomeComponent implements OnInit {
     this.metaService.updateTag({ name: 'description', content: this.dynamicDescription });
 
     AOS.init({
-      duration: 2000,
+      duration: 1000,
     })
     this.fetchReviews()
     this.isDarkTheme = this.api.isDarkTheme();

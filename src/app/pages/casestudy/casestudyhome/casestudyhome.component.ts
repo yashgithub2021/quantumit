@@ -39,12 +39,12 @@ export class CasestudyhomeComponent implements OnInit {
   ]
 
   aiCaseStudy = [
-    // {
-    //   name: "Artificial Intelligence",
-    //   portfolioImage: '../../../../assets/casestudybanner/AI.png',
-    //   link: '/ai/casestudy',
-    //   projectName:'Capsule Endoscopy'
-    // },
+    {
+      name: "Artificial Intelligence",
+      portfolioImage: '../../../../assets/casestudybanner/AI.webp',
+      link: '/ai/casestudy',
+      projectName: 'Capsule Endoscopy'
+    },
     {
       name: "Artificial Intelligence",
       portfolioImage: '../../../../assets/casestudybanner/ai/UR DRIVER3.png',
