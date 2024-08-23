@@ -1,0 +1,250 @@
+.about-us {
+  display: flex;
+  width: 100%;
+}
+
+.left-side,
+.right-side {
+  padding: 20px;
+}
+
+.left-side {
+  width: 40%;
+  display: block;
+}
+
+.right-side {
+  width: 60%;
+  margin-right: 50px;
+}
+.image {
+  width: 70%;
+  margin-left: 80px;
+  margin-top: 150px;
+}
+.image2 {
+  width: 100%;
+  border-radius: 30px;
+  margin-top: 50px;
+  margin-right: 50px;
+  height: 400px;
+  object-fit: cover;
+}
+.image3 {
+  width: 50%;
+  border-radius: 30px;
+  margin-top: 170px;
+  margin-left: 100px;
+  height: 300px;
+  object-fit: cover;
+}
+h1 {
+  margin: 0;
+  font-size: 2em;
+  font-weight: 600;
+  margin-left: 50px;
+  margin-top: 20px;
+}
+
+.right-side > p {
+  margin: 0;
+  line-height: 1.6;
+  font-size: 1.2em;
+  color: rgb(181, 181, 181);
+  word-spacing: 5px;
+}
+.container1 {
+  margin-top: 80px;
+}
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #444;
+}
+.item:last-child {
+  border-bottom: none;
+}
+.item-number {
+  margin-right: 50px;
+  color: #888;
+}
+.item-text {
+  flex-grow: 1;
+  padding-left: 10px;
+  color: #aeaeae;
+  font-size: large;
+}
+.arrow {
+  color: #fff;
+  font-size: 36px;
+}
+.container2 {
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 40px;
+}
+
+.container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.p {
+  font-size: 1rem;
+  margin-bottom: 30px;
+  color: #888;
+  word-spacing: normal;
+}
+.container {
+  width: 80%;
+  margin-bottom: 100px;
+}
+
+.top-row,
+.bottom-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+
+  gap: 20px;
+}
+
+.category {
+  background-color: rgb(17, 17, 17);
+  padding: 30px;
+  text-align: center;
+  border-radius: 30px;
+}
+
+.top-row .category {
+  flex: 1;
+}
+
+.bottom-row .category {
+  flex: 1;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.top-row {
+  flex: 2;
+}
+
+.bottom-row {
+  flex: 1;
+}
+.category > div > img {
+  width: 50px;
+  align-items: center;
+  margin: auto;
+  margin-top: 10px;
+}
+.category > div + div {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.highlight-category {
+  background: linear-gradient(90deg, #43baff 0%, #7141b1 100%);
+}
+.container3 {
+  display: flex;
+  justify-content: space-between;
+  padding: 80px;
+  padding-top: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.text {
+  flex: 1;
+  padding: 60px;
+  margin-right: 30px;
+  text-align: justify;
+  background: linear-gradient(90deg, #43baff 0%, #7141b1 100%);
+  border-radius: 30px;
+  line-height: 32px;
+  margin-left: 50px;
+  padding-bottom: 100px;
+}
+
+.image4 {
+  margin-left: 30px;
+  margin-right: 50px;
+  flex: 1;
+}
+
+.image4 img {
+  max-width: 100%;
+  height: auto;
+
+  border-radius: 30px 30px 0px 0px;
+}
+.last-text {
+  font-size: 28px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.stats-section {
+  position: absolute;
+  top: 2880px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  padding: 20px;
+  border-radius: 30px;
+  width: 38%;
+  text-align: center;
+  background-color: rgb(17, 17, 17);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.stat-item h2 {
+  font-size: 1.8rem;
+  margin-bottom: 5px;
+  margin-top: 8px;
+  display: flex;
+  margin-left: 10px;
+  background: linear-gradient(90deg, #43baff 0%, #7141b1 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.stat-item h2 span {
+  font-size: 1.8rem;
+}
+
+.stat-item p {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-left: 20px;
+
+  text-align: start;
+}
+.stat-item {
+  display: flex;
+}
+.our-service-btn {
+  margin-left: 60px;
+  margin-top: 20px;
+  padding: 7px 15px 7px 15px;
+  gap: 0px;
+  border-radius: 32px;
+  border: 1px 0px 0px 0px;
+  opacity: 0px;
+  border: 1px solid #0099ff;
+  box-shadow: 0px -7px 11px 0px #a48fff1f inset;
+  background: linear-gradient(91.58deg, #43baff 0.52%, #7044b3 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  backdrop-filter: blur(2px);
+}

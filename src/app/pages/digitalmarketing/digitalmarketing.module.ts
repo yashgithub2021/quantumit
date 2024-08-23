@@ -8,6 +8,7 @@ import { FormComponent } from 'src/app/components/form/form.component';
 import { SharedModule } from 'src/app/shared/shared/shared.module';
 import { CasestudyComponent } from './casestudy/casestudy.component';
 import { DetailsComponent } from './details/details.component';
+import { HealthcareComponent } from './healthcare/healthcare.component';
 
 
 @NgModule({
@@ -16,6 +17,7 @@ import { DetailsComponent } from './details/details.component';
     ServicesComponent,
     CasestudyComponent,
     DetailsComponent,
+    HealthcareComponent,
 
   ],
   imports: [

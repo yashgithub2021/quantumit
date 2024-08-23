@@ -1,101 +1,37 @@
 import { Component, ElementRef, OnInit } from '@angular/core';
 import { ApiService } from 'src/app/shared/api/api.service';
+import {
+  aiCaseStudy,
+  CaseStudy,
+  dmCaseStudy,
+  mobileCaseStudy,
+  webCaseStudy,
+} from './casestudy';
 
 @Component({
   selector: 'app-casestudyhome',
   templateUrl: './casestudyhome.component.html',
-  styleUrls: ['./casestudyhome.component.css']
+  styleUrls: ['./casestudyhome.component.css'],
 })
 export class CasestudyhomeComponent implements OnInit {
-
-  isDarkTheme!: boolean
-  activeTab: string = 'Mobile App'
+  isDarkTheme!: boolean;
+  activeTab: string = 'Mobile App';
   projects: any[] = [];
   filteredProjects: any[] = [];
 
-  mobileCaseStudy = [
-    {
-      name: "Mobile App Development",
-      portfolioImage: '../../../../assets/casestudybanner/AMPSPORTFOLIO.webp',
-      link: '/app-development/casestudy',
-      projectName: 'AMPS'
-    }
-  ]
-  webCaseStudy = [
-    {
-      name: "Web App Development",
-      portfolioImage: '../../../../assets/casestudybanner/WIKISTRINGS.png',
-      link: '/web-development/casestudy',
-      projectName: 'WikiString'
-    }
-  ]
-  dmCaseStudy = [
-    {
-      name: "Digital Marketing",
-      portfolioImage: '../../../../assets/casestudybanner/Seanautic.png',
-      link: '/digital-marketing/casestudy',
-      projectName: 'Seanautic marine Inc'
-    }
-  ]
+  mobileCaseStudy: CaseStudy[] = mobileCaseStudy;
 
-  aiCaseStudy = [
-    {
-      name: "Artificial Intelligence",
-      portfolioImage: '../../../../assets/casestudybanner/AI.webp',
-      link: '/ai/casestudy',
-      projectName: 'Capsule Endoscopy'
-    },
-    {
-      name: "Artificial Intelligence",
-      portfolioImage: '../../../../assets/casestudybanner/ai/UR DRIVER3.png',
-      link: '/ai/ai-casestudy/HR-Employee-On-Boarding',
-      projectName: 'HR Employee On Boarding'
-    },
-    {
-      name: "Artificial Intelligence",
-      portfolioImage: '../../../../assets/casestudybanner/ai/2.png',
-      link: '/ai/ai-casestudy/HR-Recruitment',
-      projectName: 'HR Recruitment'
-    }, {
-      name: "Artificial Intelligence",
-      portfolioImage: '../../../../assets/casestudybanner/ai/3.png',
-      link: '/ai/ai-casestudy/Purchase-Order',
-      projectName: 'Purchase Order'
-    }, {
-      name: "Artificial Intelligence",
-      portfolioImage: '../../../../assets/casestudybanner/ai/4.png',
-      link: '/ai/ai-casestudy/Account-Payable',
-      projectName: 'Account Payable'
-    }, {
-      name: "Artificial Intelligence",
-      portfolioImage: '../../../../assets/casestudybanner/ai/5.png',
-      link: '/ai/ai-casestudy/Account-Receivable-Recovery',
-      projectName: 'Account Receivable & Recovery'
-    }, {
-      name: "Artificial Intelligence",
-      portfolioImage: '../../../../assets/casestudybanner/ai/6.png',
-      link: '/ai/ai-casestudy/Insurance-Claim-Processing',
-      projectName: 'Insurance Claim Processing'
-    }, {
-      name: "Artificial Intelligence",
-      portfolioImage: '../../../../assets/casestudybanner/ai/7.png',
-      link: '/ai/ai-casestudy/Insurance-Eligibility-Verification',
-      projectName: 'Insurance Eligibility Verification'
-    }, {
-      name: "Artificial Intelligence",
-      portfolioImage: '../../../../assets/casestudybanner/ai/8.png',
-      link: '/ai/ai-casestudy/Clinical-Document-Processing',
-      projectName: 'Clinical Document Processing'
-    },
-  ]
+  webCaseStudy: CaseStudy[] = webCaseStudy;
+  dmCaseStudy: CaseStudy[] = dmCaseStudy;
+  aiCaseStudy: CaseStudy[] = aiCaseStudy;
   // loadingStatus: boolean = true;
-  constructor(private api: ApiService, private elementRef: ElementRef) { }
+  constructor(private api: ApiService, private elementRef: ElementRef) {}
 
   ngOnInit(): void {
     this.isDarkTheme = this.api.isDarkTheme();
     this.themechange();
     this.scrollToTop();
-    this.filteredProjects = this.mobileCaseStudy
+    this.filteredProjects = this.mobileCaseStudy;
   }
 
   themechange() {
@@ -105,24 +41,24 @@ export class CasestudyhomeComponent implements OnInit {
   }
 
   ChangeCaseStudy(caseStudy: string) {
-    this.scrollToMiddeleOfProjectCard()
+    this.scrollToMiddeleOfProjectCard();
     switch (caseStudy) {
       case 'Mobile App':
-        this.filteredProjects = this.mobileCaseStudy
-        this.activeTab = caseStudy
+        this.filteredProjects = this.mobileCaseStudy;
+        this.activeTab = caseStudy;
         break;
       case 'Web Development':
-        this.filteredProjects = this.webCaseStudy
-        this.activeTab = caseStudy
+        this.filteredProjects = this.webCaseStudy;
+        this.activeTab = caseStudy;
         break;
       case 'Digital Marketing':
-        this.filteredProjects = this.dmCaseStudy
-        this.activeTab = caseStudy
-        break
+        this.filteredProjects = this.dmCaseStudy;
+        this.activeTab = caseStudy;
+        break;
       case 'Artificial Intilligence':
-        this.filteredProjects = this.aiCaseStudy
-        this.activeTab = caseStudy
-        break
+        this.filteredProjects = this.aiCaseStudy;
+        this.activeTab = caseStudy;
+        break;
     }
   }
 
@@ -176,10 +112,10 @@ export class CasestudyhomeComponent implements OnInit {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
   scrollToMiddeleOfProjectCard() {
-    const contentMiddle = this.elementRef.nativeElement.querySelector('.app-detail');
+    const contentMiddle =
+      this.elementRef.nativeElement.querySelector('.app-detail');
     if (contentMiddle) {
       contentMiddle.scrollIntoView({ behavior: 'smooth', block: 'end' });
     }
   }
-
 }
