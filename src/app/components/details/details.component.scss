@@ -1374,3 +1374,87 @@
     }
 
 }
+
+.questions button {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+  }
+  
+  .question h4 {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+  }
+  
+  .ans p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+  }
+  
+  .list p {
+    font-size: 16px;
+    font-weight: 400 !important;
+    line-height: 25px;
+  }
+  
+  .accordion {
+    --bs-accordion-bg: #000000;
+    --bs-accordion-color: white;
+    --bs-accordion-active-bg: black;
+    --bs-accordion-btn-bg: black;
+  }
+  
+  .accordion-button:not(.collapsed)::after {
+    --bs-accordion-btn-active-icon: url("../../../assets/contact/acc-body.svg");
+  }
+  
+  .accordion-button::after {
+    --bs-accordion-btn-icon: url("../../../assets/contact/acc-btn.svg");
+  }
+  
+  .accordion-light {
+    --bs-accordion-bg: #ffffff;
+    --bs-accordion-color: black;
+    --bs-accordion-active-bg: #ecf0ff;
+    --bs-accordion-btn-bg: #ecf0ff;
+    /* --bs-accordion-btn-icon: url("../../../../assets/contact/acc-btn.svg");
+      --bs-accordion-btn-active-icon: url("../../../../assets/contact/acc-body.svg"); */
+  }
+  
+  .accordion-body {
+    padding: 35px;
+  }
+  
+  .accordion-item {
+    border: none !important;
+  }
+  
+  .accordion-header {
+    border: 1px solid;
+    border-radius: 10px;
+    background: black;
+  }
+  
+  .accordion-button:focus,
+  .accordion-button:active {
+    outline: none !important;
+    box-shadow: none !important;
+    border: none !important;
+  }
+  
+  .accordion-button {
+    padding: 25px;
+    border-radius: 10px;
+  }
+  
+  .accordion-button,
+  .collapsed {
+    border-radius: 10px;
+  }
+  
+  .accordion-item:first-of-type > .accordion-header .accordion-button,
+  .accordion-item:last-of-type > .accordion-header .accordion-button.collapsed {
+    border-radius: 10px;
+  }
