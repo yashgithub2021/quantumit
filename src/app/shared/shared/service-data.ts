@@ -774,7 +774,7 @@ export const mobileGameDevelopment = {
 export const internetOfThings = {
   title1: 'Revolutionize your business with',
   title2: 'Internet of Things Solutions',
-  img1: '../../../../assets/services/IOT/img.png',
+  img1: '../../../../assets/services/IOT/img.webp',
   // img2: "../../../../assets/services/IOT/internet_of_things_concept.jpg",
   descriptionOne: [
     "Unlock the potential of connected devices and data with Quantum IT's Internet of Things (IoT) services, aimed at revolutionizing your business operations and enhancing decision-making capabilities.",
@@ -2436,8 +2436,8 @@ export const GenerativeAiConsultingCompany = {
 export const HireGenerativeAiEngineers = {
   title1: 'Hire Generative',
   title2: ' AI Engineers from Quantum IT',
-  img1: '../../../../assets/services/android/img1.png',
-  // img2: "../../../../assets/services/ios_android/img1.jpg",
+  img1: '../../../../assets/services/AI_service/aigenerator/img1_1.png',
+  img2: '../../../../assets/services/ios_android/img1.jpg',
   descriptionOne: [
     'The rapidly evolving world of technology has generative AI as a revolutionary force that can change industries. We are experts in generative AI at Quantum IT, and we have advanced technology-savvy engineers who can help you develop custom-made AI solutions. In order to ensure continuity and efficiency of your already existing infrastructure with minimal interruption, our software engineers focus on developing subject-specific models which could be seamlessly integrated into your system. We are experienced in building foundational models like GPT-4, Llama 3 and Mistral which combine cutting-edge technologies with human artistry to foster innovation in your operations.',
   ],
@@ -2486,60 +2486,918 @@ export const HireGenerativeAiEngineers = {
       img: '../../../../assets/mobile/service/mat.svg',
     },
   ],
-  our_steps_title: 'Why Hire Quantum IT for Generative AI Engineers?',
-  our_steps_description: '',
-  our_steps: [],
-  our_steps2: [
+
+  our_steps: [
     {
       stepNo: 'Step 01',
-      title: 'Collaborative Excellence & Problem-Solving Skills',
-      desc: 'We are known for collaborative excellence and the skilled problem-solving of our generative AI engineers. As a result, they become part of your team and allow innovation and teamwork that can drive successful projects. They prove themselves an indispensable asset in any AI project by handling complex challenges as well as creating innovative solutions.',
+      title: 'Requirement Assessment',
+      desc: 'The starting point in our process involves identification and documentation of the specific needs, objectives, and constraints of the project. Knowing what others want from the final product or system is crucial for delivering AI solutions that work.',
     },
     {
       stepNo: 'Step 02',
-      title: 'Knowledge of ML and Other Relevant Technologies',
-      desc: 'These generative AI models include machine learning (ML), deep learning, neural network architectures and many other relevant techniques. By using these skills, they can develop generative AI solutions which generate creative content with respect to contexts. Knowing how to apply these technologies makes your AI solutions up-to-date and efficient.',
+      title: 'Building Strategy',
+      desc: 'Then we proceed to develop the plan which states how the generative AI model is selected, training technique applied, allocation of resources, and deployment strategy. This plan will be tailored to meet the objectives of the project and show the implementation path.',
     },
     {
       stepNo: 'Step 03',
-      title: 'Proficiency in Key Generative AI Tools',
-      desc: 'Our top-notch AI solutions and custom models are built by our generative AI engineers who have experience in Python language, frameworks like TensorFlow and PyTorch, advanced models such as DALL-E, Midjourney as well as ChatGPT. Creating with these tools ensures that you’re working on your AI projects using the most effective technological methods available.',
+      title: 'Designing and Development',
+      desc: 'Detailed specifications and architectures are created by our engineers for the solution. After that, it is developed through a fine-tuned model. This stage ensures that your requirements have been perfectly met by its solution.',
     },
-
     {
       stepNo: 'Step 04',
-      title: 'Expertise in AI Algorithms',
-      desc: 'Our engineers are very experienced in key machine learning algorithms like Generative Adversarial Networks (GANs), Variational Autoencoders (VAEs), and Recurrent Neural Networks (RNNs). This means that they can develop solutions tailor-made to your exact requirements, thereby ensuring their maximum efficiency.',
+      title: 'Testing',
+      desc: 'The generative AI solution undergoes tough iteration cycles that improve it, thus enhancing output quality while minimizing bias. This ensures that the final solution is strong enough and can be relied upon.',
     },
     {
       stepNo: 'Step 05',
-      title: 'Data Mining and Analytics',
-      desc: 'Our engineers present a strong understanding of elementary mathematics that includes linear algebra, calculus, probability, and statistics. This fundamental knowledge is vital for competent data mining and analytics which help them to extract important insights from intricate datasets thus improving your AI strategies.',
+      title: 'Optimization and Deployment',
+      desc: 'After preparation of readiness in the production environment for deploying the product under discussion, our developers embark on continuous optimization activities aimed at enhancing performance as well as getting a better output quality of maximum value.',
     },
     {
       stepNo: 'Step 06',
-      title: 'We are Committed to Excellence',
-      desc: 'Driven by a passion for innovation as well as excellence, our generative AI engineers ensure every project has optimal results. They aim to create high-quality solutions throughout the process that align with your business objectives, making it successful at delivery.',
+      title: 'Integration and Support',
+      desc: 'Lastly, after integrating your generative AI solution into your present ecosystem, we offer support and maintenance services continuously. This ensures that the solution stays current with your changing demands and continues to work optimally.',
     },
   ],
+
   integrations: [
     {
       name: 'Requirement Assessment',
+      img: '../../../../assets/ai/services/ai-development/EDGE TECHNOLOGY.svg',
+      img2: '../../../../assets/ai/services/ai-development/EDGE TECHNOLOGY.png',
     },
     {
       name: 'Building Strategy',
+      img: '../../../../assets/ai/services/ai-development/EDGE TECHNOLOGY.svg',
+      img2: '../../../../assets/ai/services/ai-development/EDGE TECHNOLOGY.png',
     },
     {
       name: 'Designing and Development',
+      img: '../../../../assets/ai/services/ai-development/EDGE TECHNOLOGY.svg',
+      img2: '../../../../assets/ai/services/ai-development/EDGE TECHNOLOGY.png',
     },
     {
       name: 'Test',
+      img: '../../../../assets/ai/services/ai-development/EDGE TECHNOLOGY.svg',
+      img2: '../../../../assets/ai/services/ai-development/EDGE TECHNOLOGY.png',
     },
     {
       name: 'Optimization and Deployment',
+      img: '../../../../assets/ai/services/ai-development/EDGE TECHNOLOGY.svg',
+      img2: '../../../../assets/ai/services/ai-development/EDGE TECHNOLOGY.png',
     },
     {
       name: 'Integration and Support',
+      img: '../../../../assets/ai/services/ai-development/EDGE TECHNOLOGY.svg',
+      img2: '../../../../assets/ai/services/ai-development/EDGE TECHNOLOGY.png',
+    },
+  ],
+};
+
+// ai agent development
+
+export const AIAgentDevelopment = {
+  title1: 'AI Agent Development',
+  img1: '../../../../assets/services/AI_service/aigenerator/img1_1.png',
+  descriptionOne: [
+    'Technology is changing rapidly today, and corporations are looking to come up with fresh ideas to increase efficiency. Quantum IT’s focus lies on smart AI agent development intended to amplify business results by automating tasks and optimizing processes. We use high-quality tools such as AutoGen Studio, Vertex AI agent builder, and crewAI to design AI agents that operate effectively in various areas including research, analysis, code generation, reviews, audits, online search, and segmentation. Our AI agents help improve operational efficiency and foster business growth.',
+  ],
+  serviceTitle: 'Services Offered – Development of an AI Agent',
+  services: [
+    {
+      num: '01.',
+      title: 'AI Agent Strategy Consulting',
+      desc: 'The first step for any successful AI agent implementation is a solid strategy. Our service aims to evaluate your current AI setup and identify areas where AI agents can be implemented effectively. We assist in deciding the type of AI agent that suits your needs, choosing the right Large Language Model (LLM), applying prompt engineering techniques, defining the required tech stack, and assessing integration options.',
+      img: '../../../../assets/mobile/service/service-icon1.svg',
+    },
+    {
+      num: '02.',
+      title: 'Development of Custom AI Agents',
+      desc: 'Each business has unique needs, so we offer custom AI agent development services using advanced tools such as AutoGen Studio and crewAI. Our team designs AI agents tailored to your specific requirements, adaptable to future changes, and integrated into your business processes to boost efficiency and productivity.',
+      img: '../../../../assets/mobile/service/service-icon1.svg',
+    },
+    {
+      num: '03.',
+      title: 'Integration of an AI Agent',
+      desc: 'Ensuring smooth integration of AI agents into your existing workflows is crucial. At Quantum IT, we excel in integrating single-agent or multi-agent systems using API architecture, microservices, and containerization techniques. This approach streamlines data flow, reduces latency, and promotes seamless collaboration between AI agents and your current systems.',
+      img: '../../../../assets/mobile/service/service-icon1.svg',
+    },
+    {
+      num: '04.',
+      title: 'Ongoing Enhancement and Maintenance',
+      desc: 'An AI agent requires continuous upgrades to remain effective. We perform regular model fine-tuning and performance monitoring to ensure that your AI solution stays current with technological advancements and maintains high efficiency over time.',
+      img: '../../../../assets/mobile/service/service-icon1.svg',
+    },
+  ],
+  our_steps_title: 'Why Choose Us?',
+  our_steps_description:
+    'Here are some reasons why you should choose Quantum IT-',
+  our_steps: [
+    {
+      stepNo: '01.',
+      title: 'Extensive Skills Library',
+      desc: 'Our AI agents come with an extensive skills library that allows them to excel in tasks such as researching, analyzing, code generation, reviewing, auditing, online searching, and segmentation. This adaptability ensures that our AI agents can handle various needs your firm may have.',
+    },
+    {
+      stepNo: '02.',
+      title: 'Leveraging Large Language Models (LLMs)',
+      desc: 'By harnessing the powerful capabilities of Large Language Models (LLMs), we develop intelligent AI agents that understand and generate human-like text. This makes them ideal for automating complex tasks and enhancing decision-making processes.',
+    },
+    {
+      stepNo: '03.',
+      title: 'Customized Solutions for Your Business',
+      desc: 'We understand that every business has unique requirements. Our AI agent development services are customized to align with your specific business goals, ensuring that the solutions deliver maximum value and effectiveness.',
+    },
+    {
+      stepNo: '04.',
+      title: 'Focus on Continuous Improvement',
+      desc: 'Our commitment to continuous improvement ensures that your AI agents remain up-to-date with the latest technological advancements. Regular updates, performance monitoring, and fine-tuning keep your AI solutions performing at their best while adapting to evolving business needs.',
+    },
+  ],
+  faqs_title: 'FAQs',
+  faqs: [
+    {
+      question: 'What are AI agents?',
+      answer:
+        'AI agents are intelligent computer programs that automate tasks, streamline processes, and enhance decision-making using advanced algorithms and machine learning models. They perform functions such as research, analysis, and data processing.',
+    },
+    {
+      question: 'How can AI agents benefit my business?',
+      answer:
+        'AI agents can automate repetitive tasks, enhance operational efficiency, improve customer engagement, and support smarter decision-making. This helps save time and resources, allowing employees to focus on more strategic activities.',
+    },
+    {
+      question: 'What tools does Quantum IT use for AI agent development?',
+      answer:
+        'We use top-notch tools such as AutoGen Studio, Vertex AI agent builder, and crewAI to build high-quality AI agents that meet your specific needs.',
+    },
+    {
+      question: 'How does Quantum IT ensure seamless integration of AI agents?',
+      answer:
+        'We use sophisticated techniques in API architecture, microservices, and containerization to ensure smooth integration of AI agents into your existing workflows, resulting in a streamlined data flow and efficient collaboration.',
+    },
+    {
+      question: 'How does one develop a custom AI agent?',
+      answer:
+        'Our process includes strategy consulting, AI agent design and development, integration into your workflows, and ongoing improvement and maintenance. This approach ensures that the AI agent meets your specific requirements and delivers optimal results.',
+    },
+  ],
+};
+
+// ai copilet development
+export const AICopilotDevelopment = {
+  title1: 'AI Copilot',
+  title2: 'Development Company',
+  img1: '../../../../assets/services/android/aiimg1.webp',
+  descriptionOne: [
+    'Quantum IT utilizes the latest AI technology, such as machine learning (ML) and natural language processing (NLP), to create intelligent<b> AI copilots<b> that can help facilitate your business process and stimulate innovation. These kinds of sophisticated AI systems offer instant support in matters such as code generation, error detection, content creation, and many others. Our AI copilots reduce the rate of repetitive activities while allowing you to concentrate on more valuable tasks, which increase efficiency and improve customer service.',
+  ],
+  serviceTitle: 'Our Services',
+  services: [
+    {
+      num: '01.',
+      title: 'Consulting and Strategy Development',
+      desc: 'We start off by thoroughly studying the challenges that your organization faces. We pinpoint areas where AI copilots can make a difference so as to streamline processes, thereby increasing efficiency levels. We plan with you on how these devices would be implemented smoothly, considering aspects like resource allocation, technology integration, or change management among others for better results.',
+      img: '../../../../assets/mobile/service/service-icon1.svg',
+    },
+    {
+      num: '02.',
+      title: 'Data Analysis',
+      desc: 'We study your private data in depth in order to determine patterns, trends, and issues peculiar to it. This guarantees that the resultant copilot is customized perfectly for your specific needs. Data analysis helps in developing an AI copilot which can handle ordinary tasks and perform specialized and complex functions efficiently and accurately.',
+      img: '../../../../assets/mobile/service/service-icon1.svg',
+    },
+    {
+      num: '03.',
+      title: 'MVP and PoC Development',
+      desc: 'To speed up the development, we will make rapid prototypes and validate your AI copilot’s concept. This could be making a Minimum Viable Product (MVP) to demonstrate key features or creating a Proof of Concept (PoC) to test for viability and potential value; all activities aimed at prompting faster iterations that further assist in laying the foundation for full-scale implementation by our competent team.',
+      img: '../../../../assets/mobile/service/service-icon1.svg',
+    },
+    {
+      num: '04.',
+      title: 'Custom AI Copilot Development',
+      desc: 'We work with you to evaluate your requirements, using your proprietary data sources, in order to build an AI copilot that is capable of addressing the exact needs and challenges of your organization. Starting from conceptualization through system integration, we take care of everything so as to ensure that each step is organically coherent with what you have envisioned.',
+      img: '../../../../assets/mobile/service/service-icon1.svg',
+    },
+    {
+      num: '05.',
+      title: 'AI Copilot Integration',
+      desc: 'We concentrate on making sure that these AI copilots are incorporated into existing systems smoothly without causing much disruption. Our approach is meant to complement and augment what you already have in place right from the beginning; it also ensures smooth transition with maximum impact because it adheres to data security protocols during regulatory compliance while upholding them.',
+      img: '../../../../assets/mobile/service/service-icon1.svg',
+    },
+    {
+      num: '06.',
+      title: 'Maintenance and Support',
+      desc: 'Our AI copilot models enable uninterrupted service of the product. The whole team undertakes a proactive approach towards monitoring as well as regular updates and troubleshooting to assist the clients in concentrating on their core business with a lot of confidence.',
+      img: '../../../../assets/mobile/service/service-icon1.svg',
+    },
+  ],
+
+  our_steps_title: 'Why Choose Quantum IT for AI Copilot Development?',
+  our_steps: [
+    {
+      stepNo: '01.',
+      title: 'Initial Consultation and Goal Alignment',
+      desc: 'Our journey begins with understanding all aspects regarding your business objectives as well as requirements. Thus we delve into details on your vision which should effectively serve as the foundation for this project in line with your desired strategy.',
+    },
+    {
+      stepNo: '02.',
+      title: 'Research and Custom Solution Design',
+      desc: 'Our group embarks on an extensive study attempt aimed at identifying the most relevant solution that will best meet your needs. Besides this is supported by a deeper industry knowledge base and technological experience thereby ensuring the AI copilot concept aligns with business objectives.',
+    },
+    {
+      stepNo: '03.',
+      title: ' Prototyping',
+      desc: 'We make detailed prototypes plus design mock-ups to give you a clear visualisation of how your AI copilot should work. This is followed by a collaborative review phase which ensures that the final product can easily fit into operations without limitations.',
+    },
+    {
+      stepNo: '04.',
+      title: 'Development and Testing',
+      desc: 'Our developers create AI copilot, which is matched by intense scrutiny on each component. This guarantees a pilot who meets and exceeds the performance and reliability standards so that it can transform your operations.',
+    },
+    {
+      stepNo: '05.',
+      title: 'Seamless Integration',
+      desc: 'At this point, we majorly focus on the seamless integration of the AI copilot into your existing systems and workflows, planning and executing its deployment with minimum disruptions. The level of integration we undertake makes sure that the AI co-pilot begins to boost productivity and efficiency right from the start.',
+    },
+    {
+      stepNo: '06.',
+      title: 'Ongoing Support and Maintenance',
+      desc: 'Our commitment to you does not stop at initial deployment. We also provide round-the-clock assistance and support in order to ensure prompt service delivery. We deal with any difficulties, update features, or modify as required by changing business circumstances.',
+    },
+  ],
+  areas_of_specialization: [
+    {
+      stepNo: '01.',
+      title: 'Machine Learning & Deep Learning',
+      desc: 'We develop models that lead to accuracy in every interaction.',
+    },
+    {
+      stepNo: '02.',
+      title: 'Natural Language Processing',
+      desc: 'Our vast experience in NLP empowers artificial intelligence pilots to understand human language as well as to speak like them thereby helping facilitate natural communication.',
+    },
+    {
+      stepNo: '03.',
+      title: 'Data Science & Analytics',
+      desc: 'We unlock actionable insights from vast datasets, boosting decision-making prowess for unmatched versatility and accuracy.',
+    },
+    {
+      stepNo: '04.',
+      title: 'Cloud & Edge Computing',
+      desc: 'Our AI co-pilots are highly efficient, reliable, and can work in various challenging environments.',
+    },
+    {
+      stepNo: '05.',
+      title: 'APIs & System Integration',
+      desc: 'We create rock-solid APIs as well as employing cutting-edge integration technologies to ensure that our AI co-pilots can smoothly integrate into your existing workflows.',
+    },
+    {
+      stepNo: '06.',
+      title: 'Advanced Development Frameworks',
+      desc: 'Leveraging top-tier AI and ML frameworks to expedite the development of advanced AI models, we facilitate the move from concept to deployment.',
+    },
+  ],
+
+  faqs_title: 'FAQs',
+  faqs: [
+    {
+      question: 'What is an AI copilot, and how does it help my business?',
+      answer:
+        'An intelligent assistant powered by technologies like ML and NLP is called an AI copilot, which enables a lot of automation and supports real-time assistance with insight that supports streamlining operations. Some of these advantages include increased productivity, cost savings, as well as improved accuracy.',
+    },
+    {
+      question: 'How do you achieve security and regulatory compliance?',
+      answer:
+        'This is done through continuous checks, sophisticated encryption systems, and tight control over access. Our products meet the requirements of industry standards and regulations, thus protecting your data as well as intellectual property.',
+    },
+    {
+      question: 'Do you have customized AI copilots for my business needs?',
+      answer:
+        'Yes, we make custom AI copilots to suit your specific needs. We assess your needs while using internal information to craft a solution that addresses your business challenges and grows with them.',
+    },
+    {
+      question:
+        'What kind of ongoing support do you offer after implementation?',
+      answer:
+        'We provide full maintenance and support, including 24/7 proactive monitoring, timely updates as well as troubleshooting helpdesk. Our team ensures that the artificial intelligence copilot functions optimally and adjusts to your changing operational context.',
+    },
+  ],
+};
+
+// hiring prompt engineers
+export const hiringPromptEngineers = {
+  title1: 'Boost the Performance',
+  title2:
+    'of your Generative AI Projects by Hiring Quantum IT’s Prompt Engineers.',
+  img1: '../../../../assets/services/AI_service/aigenerator/img1_1.png',
+  descriptionOne: [
+    'AI has rapidly evolved so much and caused a revolution across various domains starting from content production to customer service. However, harnessing these powerful tools necessitates effective prompt engineering. Your generative AI models can be well elaborated by Quantum IT through their quality prompt engineering services. We have a dedicated team of prompt engineers who are experts in customising prompts for different models such as OpenAI, Imagen, Midjourney, DALL-E and Stable Diffusion.',
+  ],
+  serviceTitle: 'Prompt Engineering Services',
+  services: [
+    {
+      num: '01.',
+      title: 'Strategy and Consulting',
+      desc: 'Good prompt engineering begins with having a good strategy. We offer comprehensive strategy and consulting services at Quantum IT to help you make better decisions for your AI initiatives. Our consultants always keep up with the latest advancements in AI technology which ensures that our customers get cutting edge solutions. Our consulting services cater for those who are new to generative AI as well as those who want to improve on their existing models by providing guidance on how to effectively navigate this ever changing landscape.',
+      img: '../../../../assets/mobile/service/service-icon1.svg',
+      benefits: [
+        'Customized strategies towards specific business objectives',
+        'Professional guidance concerning the most recent AI trends',
+        'AI initiatives based on sound judgement',
+      ],
+    },
+    {
+      num: '02.',
+      title: 'Analysis Service',
+      desc: 'Conducting a detailed analysis during the development of an AI project is crucial. These generative AI models are created and trained by our group of experienced prompt engineers who work closely with clients to identify tasks and activities. Data sources, target audience, and expected results are some aspects that we look into when evaluating your project as a whole. We then conduct a task analysis to ensure that the resulting model prompts are tuned appropriately to meet our client’s unique requirements.',
+      img: '../../../../assets/mobile/service/service-icon1.svg',
+      benefits: [
+        'Task analysis in great detail that is tailored to the task at hand',
+        'Key performance indicators (KPIs) identification',
+        'Superior model performance through focused prompt engineering',
+      ],
+    },
+    {
+      num: '03.',
+      title: 'Design and Testing',
+      desc: 'Prompt engineering process has two important components; design and testing. Our team is adept at creating custom prompt designs using advanced Natural Language Processing (NLP) as well as Natural Language Generation (NLG) techniques. The performance of this model is tested exhaustively so as to ensure that it meets its intended goals. This is how we create high-quality prompt engineering services, designed iteratively according to their purpose for each client because this guarantees quality work for them within their specific needs.',
+      img: '../../../../assets/mobile/service/service-icon1.svg',
+      benefits: [
+        'Prompt designs which are customized',
+        'Thorough testing to ensure the best model performance',
+        'Repetitive adjustment of increasing prompt efficiency',
+      ],
+    },
+    {
+      num: '04.',
+      title: 'Integration and Optimization',
+      desc: 'Integration and optimization are important considerations in deploying generative AI models. Hire our prompt engineers as they have extensive knowledge in integrating as well as optimising generative AI models on diverse systems and software. We keep clients involved all the way to develop custom solutions that fit their unique needs without fail while optimising performance. We ensure that clients gain maximum value from their generative AI models with outstanding results.',
+      img: '../../../../assets/mobile/service/service-icon1.svg',
+      benefits: [
+        'Smooth integration with current systems',
+        'Bespoke approaches for customers who have one-of-a-kind requirements',
+        'Continual refinement of the model to improve its performance further',
+      ],
+    },
+  ],
+  our_steps_title: 'Process Flow That Our Prompt Engineers Follow',
+  our_steps_description:
+    'At Quantum IT, we follow a step-by-step process to ensure that our prompt engineering projects succeed. Our process flow includes:',
+  our_steps: [
+    {
+      stepNo: '01',
+      title: 'Requirement Gathering',
+      desc: 'We commence by getting into details of what the client wants, hoping to meet their needs and analysing any problems they face through discussions and documentation so as not to miss out on any vital requirement.',
+    },
+    {
+      stepNo: '02',
+      title: 'Strategy',
+      desc: 'Depending on the gathered information, we offer strategic advisory and consulting services to assist our clients in making informed judgments concerning their AI projects.',
+    },
+    {
+      stepNo: '03',
+      title: 'Design',
+      desc: 'Our group creates personalised prompts and conducts thorough testing to make sure that the design meets the required outcomes. This iterative process entails refining prompts according to feedback and performance metrics.',
+    },
+    {
+      stepNo: '04',
+      title: 'Integration and Optimization',
+      desc: 'We incorporate an AI generative model into client’s existing systems for smooth functioning and utmost utility.',
+    },
+    {
+      stepNo: '05',
+      title: 'Delivery and Deployment',
+      desc: 'Then we provide a ready-to-use generative AI model with full optimization supporting deployment activities for easy transition and immediate benefits.',
+    },
+  ],
+
+  faqs: [
+    {
+      question: 'What is prompt engineering and why should I care about it?',
+      answer:
+        'Prompt engineering entails creating inputs (prompts) for generative AI models that lead to the desired outputs. It is important as well-designed prompts can significantly improve AI models’ effectiveness, thus producing better results more efficiently.',
+    },
+    {
+      question:
+        'What are the potential advantages of prompt engineering for my company?',
+      answer:
+        'If done effectively, prompt engineering can improve how generative AI models perform resulting in more precise and appropriate outcomes. Customer experiences can be enhanced, operations streamlined, and business innovation propelled by this initiative.',
+    },
+    {
+      question: 'With what generative AI models do your prompt engineers work?',
+      answer:
+        'Imagen, Midjourney, Stable Diffusion, DALL-E and OpenAI. These are some of the models we use.',
+    },
+    {
+      question:
+        'How do you ensure the quality of your prompt engineering services?',
+      answer:
+        'We ensure quality through a process that involves requirement gathering, strategic consulting, iterative design and testing, seamless integration and continuous optimization. By doing so, our prompt engineering services become highly reliable.',
+    },
+    {
+      question: 'What kind of ongoing support do you provide after deployment?',
+      answer:
+        'We offer comprehensive maintenance and support for all types of AI models that we develop after they have been deployed into production mode. In addition to proactive monitoring, we also update the systems timely and offer trouble-shooting guidance whenever required.',
+    },
+  ],
+};
+
+// adaptive ai development company
+export const adaptiveAI = {
+  title1: 'Revolutionise Your Business ',
+  title2: 'with Our Adaptive AI Development Company',
+  img1: '../../../../assets/services/AI_service/aigenerator/img1_1.png',
+
+  descriptionOne: [
+    'Business operations can be changed and consumer satisfaction improved by using adaptive AI. It is made possible by using advanced technologies such as deep learning, neural networks, machine learning and natural language processing (NLP). In a highly competitive environment, Quantum IT is one of the best adaptive AI development companies as we come up with personalised solutions to give you a competitive edge.',
+  ],
+
+  services: [
+    {
+      num: '01.',
+      title: 'Consulting and Strategy Development',
+      desc: 'Every successful AI initiative begins with a well-articulated strategy. Our consulting services at Quantum IT are designed to help businesses unleash their AI potential by developing their implementation plan.',
+      img: '../../../../assets/mobile/service/service-icon1.svg',
+    },
+    {
+      num: '02.',
+      title: 'Designing Customised Solutions Based on Adaptive AI Models',
+      desc: 'Quantum IT develops custom adaptive AI solutions for your specific needs.',
+      img: '../../../../assets/mobile/service/service-icon1.svg',
+    },
+    {
+      num: '03.',
+      title: 'Maintenance/Upgrading',
+      desc: 'AI solutions must be maintained to keep functioning perfectly. Quantum IT offers full support and maintenance services.',
+      img: '../../../../assets/mobile/service/service-icon1.svg',
+    },
+    {
+      num: '04.',
+      title: 'Model Integration and Deployment',
+      desc: 'Integrating AI models into existing systems can be challenging. Quantum IT makes it seamless.',
+      img: '../../../../assets/mobile/service/service-icon1.svg',
+    },
+    {
+      num: '05.',
+      title: 'Data Engineering',
+      desc: 'Data is the backbone of any AI system. Our developers who create adaptive AI processes are good at processing large amounts of high-quality data.',
+      img: '../../../../assets/mobile/service/service-icon1.svg',
+    },
+  ],
+
+  our_steps_title: 'Our Adaptive AI Systems Development Process',
+  our_steps_description:
+    'To ensure a successful AI project, we have a systematic development process as below:',
+  our_steps: [
+    {
+      stepNo: '01',
+      title: 'Identify the Problem',
+      desc: 'This relates to the business need or user requirement that will be met by AI.',
+    },
+    {
+      stepNo: '02',
+      title: 'Collect Data',
+      desc: 'We will obtain data required for training the model from various sources.',
+    },
+    {
+      stepNo: '03',
+      title: 'Clean and Process Data',
+      desc: 'Duplicate elimination, missing value handling and proper formatting make data ready for the model learning process.',
+    },
+    {
+      stepNo: '04',
+      title: 'Model Construction and Training',
+      desc: 'Picking an algorithm, optimising its hyperparameters and having it learn on pre-processed data.',
+    },
+    {
+      stepNo: '05',
+      title: 'Validate and Test the Model',
+      desc: 'Reviewing how accurate as well as reliable a model is to improve it where necessary.',
+    },
+    {
+      stepNo: '06',
+      title: 'Deploy Model',
+      desc: 'This entails combining it with other systems in the production environment to work together seamlessly.',
+    },
+    {
+      stepNo: '07',
+      title: 'Monitor & Update Model',
+      desc: 'Monitor its performance while making adjustments based on new insights or user responses.',
+    },
+  ],
+
+  faqs: [
+    {
+      question: 'How does adaptive AI differ from traditional AI?',
+      answer:
+        'Traditional AI systems use static models once deployed whereas adaptive AI models keep improving with time through learning from new data as well as interacting with users.',
+    },
+    {
+      question:
+        'In what way can data used in adaptive AI models be made secure and private?',
+      answer:
+        'We adhere to strict security measures and regulations governing data privacy. Our approach to data handling involves encryption, access controls, and regular checks that are intended to safeguard confidential information.',
+    },
+    {
+      question:
+        'Can the integration of adaptive AI systems be done with existing software and applications?',
+      answer:
+        'Yes, we have designed our adaptive AI models for smooth integration with your existing software and applications to increase their potential without affecting your current workflows.',
+    },
+    {
+      question: 'What is the scalability status of adaptive AI solutions?',
+      answer:
+        'Our adaptive AI solutions are scalable, they use technologies such as Amazon Web Services (AWS), Google Cloud Platform (GCP) and Microsoft Azure for handling increasing numbers of data as well as users.',
+    },
+    {
+      question:
+        'What type of data is typically required for training an adaptive AI model?',
+      answer:
+        'The kind of data that is needed depends on how the specific application will use the AI model; however, it generally consists of historical information, user-created content, or other relevant datasets reflecting the conditions in which the system will be deployed.',
+    },
+  ],
+};
+
+//chatgpt developers
+export const chatGPTDevelopers = {
+  title1: 'Hire Quantum IT’s ChatGPT Developers ',
+  title2: 'to Boost Your Business',
+  img1: '../../../../assets/services/AI_service/aigenerator/img1_1.png',
+
+  descriptionOne: [
+    'At Quantum IT, we have a team of skilled ChatGPT AI developers who can help you leverage the power of advanced conversational AI. Our developers are experts in developing custom OpenAI model powered solutions to deliver excellent conversation experiences, minimise time taken to retrieve information and thus enhance customer satisfaction and engagement. Specifically developed for automation tasks or customer support, our solutions would streamline your business processes towards higher levels of achievements by empowering your team.',
+  ],
+
+  services: [
+    {
+      num: '01.',
+      title: 'Increase Your Operational Efficiency',
+      desc: 'Our ChatGPT developers possess an extensive knowledge base in the field such as data engineering, NLP libraries, deep learning frameworks, cloud computing services, and GPT models like GPT-4 which enable them to create robust GPT-powered solutions that are suited to the unique needs of your business. We offer all-inclusive services starting with initial consulting and strategy building through fine-tuning to integration so as to ensure seamless deployment and maximise efficiency.',
+      img: '../../../../assets/mobile/service/service-icon1.svg',
+    },
+    {
+      num: '02.',
+      title: 'Consulting & Strategy Building',
+      desc: 'In order for us to best serve you and meet your goals we need a complete understanding of what is happening at our own end. We will recommend the most suitable GPT model-powered solution based on your requirements plus our detailed implementation process is also crafted. This ensures that the solution is seamlessly integrated into your goals hence ensuring that the business succeeds in the rapidly changing technology field.',
+      img: '../../../../assets/mobile/service/service-icon1.svg',
+    },
+    {
+      num: '03.',
+      title: 'Data Science Engineering',
+      desc: 'With careful data engineering, we make your organisation’s precious data a strong asset. Our knowledgeable AI developers carefully groom your proprietary data so that it satisfies all requirements for fine-tuning the GPT model. This is important for boosting the model performance and enabling it to give appropriate and meaningful responses within the specific context around you.',
+      img: '../../../../assets/mobile/service/service-icon1.svg',
+    },
+    {
+      num: '04.',
+      title: 'GPT Model-driven Solution Development',
+      desc: 'Our skillfully developed solutions powered by GPT models bring about innovation, efficiency, as well as competitive edge. When you require chatbots for personalised customer interactions, smart content creators or context aware recommendation systems then our carefully developed AI chatbot development services are tailored to enhance your company’s abilities in the dynamic AI world.',
+      img: '../../../../assets/mobile/service/service-icon1.svg',
+    },
+    {
+      num: '05.',
+      title: 'Integration into Workflows',
+      desc: 'Our aim is to ensure that the GPT model-based solutions we design easily fit into your existing processes. We study your work flows, locate integration points and establish an appropriate integration strategy that minimises disruptions but maximises the value of our products. This will let your organisation make a smooth transition to a more efficient operational environment which has been greatly boosted by artificial intelligence.',
+      img: '../../../../assets/mobile/service/service-icon1.svg',
+    },
+    {
+      num: '06.',
+      title: 'Upgrade and Maintenance',
+      desc: 'We provide upgrade and maintenance services to keep your GPT model-powered application up-to-date and optimised for performance. We are always following emerging trends, security patches and improvements in AI technology so that your application remains at par with competition as well as secure. Trust us with the post-deployment needs of your application for it to run at peak efficiency.',
+      img: '../../../../assets/mobile/service/service-icon1.svg',
+    },
+  ],
+
+  our_steps_title: 'Our Areas of Expertise',
+  our_steps: [
+    {
+      stepNo: '01',
+      title: 'Large Language Models',
+      desc: 'The skill set of our best developers is profound when working with Large Language Models (LLMs). We have great technical expertise across several large language models including GPT-4, LLaMA, and PaLM 2 that enable us to fine-tune them for specific tasks and achieve high performance in natural language understanding and generation.',
+    },
+    {
+      stepNo: '02',
+      title: 'Natural Language Processing (NLP)',
+      desc: 'Our knowledge of NLP allows us to develop multi-purpose GPT model-based applications for text-related tasks. These range from generating coherent texts, sentiment analysis in different contexts, summarising long documents as well as ensuring language barrier free communication with other languages.',
+    },
+    {
+      stepNo: '03',
+      title: 'Machine Learning',
+      desc: 'This involves various machine learning techniques such as supervised, unsupervised and reinforcement which our AI developers are well versed with enabling to build robust AI products over a wide range of applications. We can provide tailored OpenAI model-powered apps that are highly customised and efficient enough to solve specific business hurdles given our experience in machine learning.',
+    },
+    {
+      stepNo: '04',
+      title: 'Deep Learning',
+      desc: 'Our deep learning expertise centres on our in-depth understanding of complex neural network architectures and algorithms. Our proficiency in deep learning is what makes it possible for us to offer personalised solutions specifically designed for your needs whether you want an NLP application developed or optimization of a recommendation system or any challenging AI related problem that you might have.',
+    },
+  ],
+
+  faqs: [
+    {
+      question: 'How can ChatGPT improve my business?',
+      answer:
+        'ChatGPT can help your business in a variety of ways, including automating customer service, streamlining information retrieval, increasing user engagement, and providing personalised experiences all aimed at improving operational efficiency and customer satisfaction.',
+    },
+    {
+      question: 'What industries can benefit from ChatGPT solutions?',
+      answer:
+        'By automating their customer support services, providing instant support to customers or moving towards more interactive platforms; retailing, healthcare provision, financial services or even education are some of the industries that should take advantage of the ChatGPT technology.',
+    },
+    {
+      question: 'How long does it take to develop a ChatGPT-powered solution?',
+      answer:
+        'The development timeline depends on how complex the project is and its specific requirements with many taking weeks or months after which they get deployed from initial consultation.',
+    },
+    {
+      question: 'What kind of support do you provide post-deployment?',
+      answer:
+        'We ensure regular updates as well as performance enhancement among other optimizations through our continuous support plan which helps identify any possible bottlenecks and fix them quickly so as not to waste any resources.',
+    },
+  ],
+};
+
+// stable diffusion developer
+
+export const stableDiffusionDeveloper = {
+  title1: 'Stable Diffusion',
+  title2: 'Cutting Edge AI Development Services',
+  img1: '../../../../assets/services/AI_service/aigenerator/img1_1.png',
+
+  descriptionOne:
+    'Being the leading provider of development services powered by a stable diffusion model, we have an in-depth understanding of the different platforms and frameworks used for developing stable diffusion-based applications. Employing the latest stable diffusion models, we help you create bespoke, highly-tailored AI models that meet specific business needs.',
+  services: [
+    {
+      num: '02.',
+      title: 'Custom Mobile App Development with Artificial Intelligence',
+      desc: 'Our team is skilled at adapting Stable Diffusion models so that they can address your unique requirements. Using recent frameworks and technologies our stable diffusion developers work together with you during all stages of the development process to ensure everything runs smoothly.',
+      img: '../../../../assets/mobile/service/service-icon1.svg',
+    },
+    {
+      num: '02.',
+      title: 'Model Integration and Deployment',
+      desc: 'We are going to evaluate your requirements thoroughly and understand them so that we can have a secure method of integrating and deploying the model. Our integration and deployment service takes you through the entire process from choosing the model, configuring it, integrating, testing it, as well as deploying.',
+      img: '../../../../assets/mobile/service/service-icon1.svg',
+    },
+    {
+      num: '03.',
+      title: 'Consulting and Strategy Building',
+      desc: 'We will help you identify Stable Diffusion model use cases in your domain and guide you on how to integrate them into your system with our AI experts. We can highlight your needs, pinpoint problems that could be addressed with stable diffusion models, and propose ongoing improvement insights after implementing this solution.',
+      img: '../../../../assets/mobile/service/service-icon1.svg',
+    },
+    {
+      num: '04.',
+      title: 'Support and Maintenance',
+      desc: 'Our AI developers offer continuous technical assistance, updates, upgrade services, and maintenance packages that will keep your Stable Diffusion Model-driven solution up-to-date with best performance for an extended period.',
+      img: '../../../../assets/mobile/service/service-icon1.svg',
+    },
+  ],
+  our_steps_title: 'Our AI Expertise for Stable Diffusion Model',
+  our_steps_description:
+    'With deep experience in various aspects of artificial intelligence solutions we create powerful stable diffusion driven by a range of AI technologies. These are some areas where our strengths lie:',
+
+  our_steps: [
+    {
+      stepNo: 'Step 01',
+      title: 'Integrating Machine Learning',
+      desc: 'Our developers have experience in a range of AI development services that allow them to repeatedly apply machine learning concepts such as predictive modelling, NLP, and deep learning for the creation of Stable Diffusion model-driven solutions that turn unstructured text data into visual data.',
+    },
+    {
+      stepNo: 'Step 02',
+      title: 'Stabilising a Diffusion Model',
+      desc: 'To adapt Stable Diffusion models to specific tasks, we use fine-tuning with smaller datasets. In terms of applications, this is called transfer learning which enables us to train high-quality models on few iterations and usage scenarios.',
+    },
+    {
+      stepNo: 'Step 03',
+      title: 'Deep Learning',
+      desc: 'We fully understand how deep-learning models work using multi-layered artificial neural networks for capturing intricate relationships in data patterns. Our designated Stable Diffusion deep learning architecture for NLP projects guarantees highly effective deployments.',
+    },
+    {
+      stepNo: 'Step 04',
+      title: 'Transfer Learning',
+      desc: 'Transfer learning is our specialty; a technique in AI whereby pre-trained models are reused on similar tasks thereby improving performance and reducing training time. We excel in solving particular problems by making good use of pre-trained models thereby ensuring effective and efficient results.',
+    },
+  ],
+
+  faqs: [
+    {
+      question: 'What is Stable Diffusion?',
+      answer:
+        'This AI model is used in various applications such as creative content generation and image manipulation due to its ability of producing high-quality images from textual descriptions.',
+    },
+    {
+      question: 'How can Stable Diffusion models benefit my business?',
+      answer:
+        'Creative processes automation, improvement of content creation, streamlining of workflows, personalised user experiences or enhancing operational efficiency and engaging customers are some of many ways through which businesses can gain from Stable Diffusion models.',
+    },
+    {
+      question:
+        'How long does it take to develop a Stable Diffusion-powered solution?',
+      answer:
+        "The development timeline varies based on the project's complexity and specific requirements, typically ranging from a few weeks to a few months.",
+    },
+    {
+      question: 'What kind of support do you provide post-deployment?',
+      answer:
+        'We offer continuous support and optimization services, including regular updates, performance monitoring, and addressing any issues to ensure the solution remains efficient and effective.',
+    },
+  ],
+};
+
+// chatgpt integration service
+
+export const chatGPTIntegrationService = {
+  title1: 'Comprehensive ChatGPT Integration Services ',
+  title2: 'by Quantum IT to Transform Your Business',
+  img1: '../../../../assets/services/AI_service/aigenerator/img1_1.png',
+
+  descriptionOne:
+    'Businesses are always on the lookout for new ways of improving customer experiences, streamlining their operations, and keeping at par with their competitors in a technology-led world. The recent advancement has been incorporating conversational AI through OpenAI’s ChatGPT models. Within Quantum IT, our major focus is providing unparalleled AI integration services that will change the way you communicate with customers and operate your business.',
+
+  serviceTitle: 'Complete ChatGPT Integration Services',
+  services: [
+    {
+      num: '01.',
+      title: 'ChatGPT Consultancy',
+      desc: 'Natural language processing problems of various types are solved by our AI consulting service that takes advantage of ChatGPT models. Our adept consultants provide the know-how and direction to help you integrate ChatGPT into your software in such a manner that customer experience will improve smoothly.',
+      img: '../../../../assets/mobile/service/mat.svg',
+    },
+    {
+      num: '02.',
+      title: 'API GPT-3.5 Fusion',
+      desc: 'We work closely with you at every stage, from analysing your existing system, to creating a tailor-made roadmap for integrating ChatGPT. This makes sure the integration is personalised specifically for your unique company requirements enabling you to deliver an exceptional customer experience.',
+      img: '../../../../assets/mobile/service/mat.svg',
+    },
+    {
+      num: '03.',
+      title: 'Services For Developing GPT Applications',
+      desc: 'Make use of ChatGPT’s power to build native or cross-platform applications that have better user experiences. Our professionals are here to help you develop applications that fit your particular business requirements and keep up with the ever-changing technology world.',
+      img: '../../../../assets/mobile/service/mat.svg',
+    },
+    {
+      num: '04.',
+      title: 'Integrating GPT Into Your Existing Product',
+      desc: 'Through seamless integration of ChatGPT APIs, you can boost functionality and user experience on your app or site. Our experienced team of artificial intelligence integrators ensures that your current products get elevated to another level.',
+      img: '../../../../assets/mobile/service/mat.svg',
+    },
+    {
+      num: '05.',
+      title: 'Development of Customised Applications with ChatGPT',
+      desc: 'We are experts at developing personalised apps that match your exact specifications. By adjusting the GPT models to suit your specific requirements, we create tailor-made applications which maximise business efficiency.',
+      img: '../../../../assets/mobile/service/mat.svg',
+    },
+    {
+      num: '06.',
+      title: 'Chatbot Integration',
+      desc: 'Our team has expertise in chatbot development powered by GPT that generates human-like responses to clients. These chatbots increase satisfaction and decrease workloads on businesses thus allowing their teams to work effectively.',
+      img: '../../../../assets/mobile/service/mat.svg',
+    },
+  ],
+
+  our_steps_title: 'Applications for integrating ChatGPT',
+  our_steps_description:
+    'There are various use cases where ChatGPT can be integrated thereby transforming the way businesses operate across industries. For instance:',
+  our_steps: [
+    {
+      stepNo: 'Step 01',
+      title: 'E-commerce Support',
+      desc: 'Integration of ChatGPT into e-commerce platforms gives them conversational capabilities such as being a virtual shopping assistant, customer support channel and order tracking system. This leads to increased customer engagement and satisfaction, freeing human agents to focus on more complex tasks.',
+    },
+    {
+      stepNo: 'Step 02',
+      title: 'Better Learning Experience',
+      desc: 'In the education sector, ChatGPT serves as a virtual tutor offering personalised advice and feedback on assignments and projects. This integration improves student engagement and satisfaction resulting in enhanced learning outcomes.',
+    },
+    {
+      stepNo: 'Step 03',
+      title: 'Healthcare Aid',
+      desc: 'By being a virtual assistant, integration of ChatGPT in healthcare improves patient care. It guides patients on specific medical conditions and treatment with a view to improving their involvement in the process as well as increasing their adherence rates.',
+    },
+    {
+      stepNo: 'Step 04',
+      title: 'Competitor Analysis',
+      desc: 'ChatGPT allows users to collect big amounts of market trends and competitor activity information. In this manner, one can make decisions based on data thereby making any necessary adjustments to their strategies aiming at keeping ahead of the competition.',
+    },
+    {
+      stepNo: 'Step 05',
+      title: 'Personalized Marketing',
+      desc: 'ChatGPT uses vast amounts of customer information to understand preferences and behaviour. Thus, businesses can come up with personalised advertising campaigns that will resonate with customers leading to increased conversion rates.',
+    },
+  ],
+
+  faqs: [
+    {
+      question:
+        'What types of businesses will benefit from ChatGPT integration?',
+      answer:
+        'Businesses in various sectors such as e-commerce, health care, education, content creation, marketing and customer support among others can benefit from ChatGPT integration. Enterprises that interact with clients or require efficient handling for repetitive tasks may use ChatGPT to improve their service delivery and customer involvement.',
+    },
+    {
+      question: 'How does Quantum IT approach ChatGPT integration?',
+      answer:
+        'Quantum IT approaches ChatGPT integration from a comprehensive point of view that includes consulting, API integration and its applications development as well as customised solutions development. Our experts will work closely with you to understand your business requirements resulting in an individualised product roadmap which guarantees smooth incorporation and maximisation of efficiency.',
+    },
+    {
+      question:
+        'Is it possible to integrate ChatGPT into existing software and applications?',
+      answer:
+        'Yes, integration of your present software and apps with ChatGPT is easy. Our team of AI engineers and developers will enhance your site or app without causing any hitch and improve its functionality for users.',
+    },
+    {
+      question:
+        'What happens if I need ongoing support from Quantum IT after integration?',
+      answer:
+        'We at Quantum IT provide post-integration maintenance and support services aimed at ensuring that your integrated solutions maintain their optimal performance with ChatGPT. Our dedicated team also addresses any post-deployment issues that may arise while keeping your app up to date with the newest developments in AI technology.',
+    },
+  ],
+};
+
+//llm
+
+export const llmDevelopmentInfo = {
+  title1: 'Your Companion in Large Language Model Development',
+  img1: '../../../../assets/services/AI_service/aigenerator/img1_1.png',
+
+  descriptionOne:
+    'Large Language Models are vital aspects of the artificial intelligence revolution that is transforming how businesses operate, communicate, and innovate. We offer services aimed at large language model development at Quantum IT. Our capabilities include developing LLMs from scratch as well as fine-tuning pre-trained models to improve their efficiency, effectiveness, and productivity. Our team of AI professionals is committed to delivering outcomes that generate operational excellence and strategic growth whether you need a new model or would like to optimise an existing one.',
+
+  services: [
+    {
+      num: '01.',
+      title: 'Advisory Services/Strategy Building',
+      desc: 'The development process for your LLM begins by understanding exactly what you want it for; the contexts where it will be used and the rules of those industry sectors. We work closely with you during this stage to develop a personalised strategy on how best we can build an LLM specific for your needs without compromising on any of our objectives.',
+      img: '../../../../assets/mobile/service/md.svg',
+    },
+    {
+      num: '02.',
+      title: 'Development of Large Language Models',
+      desc: 'Building LLMs from scratch is our area of expertise. We ensure that companies have a competitive advantage by increasing insights and streamlining workflows. We adopt a careful data-driven approach to development that begins with accurate data preparation, followed by model training so as to meet your specific business requirements.',
+      img: '../../../../assets/mobile/service/md.svg',
+    },
+    {
+      num: '03.',
+      title: 'LLM Language Models Refining',
+      desc: 'Our area of expertise is in tweaking large-scale language models such as GPT, LLaMA or PaLM to make them suitable for various business-specific purposes. Our improved LLMs can generate far more precise and contextually accurate responses that cannot be surpassed.',
+      img: '../../../../assets/mobile/service/md.svg',
+    },
+    {
+      num: '04.',
+      title: 'LLM-Powered Development of Solutions',
+      desc: 'We design robust AI solutions which leverage LLMs’ power to revolutionise your operations, communication, and innovation. These encompass chatbots and virtual assistants, sentiment analysis tools, speech recognition systems among others designed for the needs of your business.',
+      img: '../../../../assets/mobile/service/md.svg',
+    },
+    {
+      num: '05.',
+      title: 'Support and Maintenance',
+      desc: 'To ensure that your LLM’s function smoothly over time, we offer comprehensive support and maintenance services for LLMs. This covers everything from continuously monitoring and adjusting models to changing data or use cases through implementing bug fixes up-to-date software releases timely.',
+      img: '../../../../assets/mobile/service/md.svg',
+    },
+  ],
+  our_steps_title:
+    'Our AI is Here to Help You Unlock Strategic Business Growth',
+
+  our_steps: [
+    {
+      stepNo: '01',
+      title: 'NLP (Natural Language Processing)',
+      desc: 'We create NLP models with advanced Natural Language Understanding (NLU) and Natural Language Generation (NLG) capabilities using NLP tools and frameworks like NLTK, spaCy, TensorFlow that our developers leverage. These models are effective at analysing, interpreting and generating human language for various applications.',
+    },
+    {
+      stepNo: '02',
+      title: 'ML (Machine Learning)',
+      desc: 'We have expertise in ML development kits like scikit-learn, Keras, PyTorch which means we can provide integrated solutions powered by ML that employ advanced techniques such as supervised learning including reinforcement and unsupervised learning that guarantee efficiency as well as effectiveness.',
+    },
+    {
+      stepNo: '03',
+      title: 'Transfer Learning',
+      desc: 'We apply sophisticated transfer learning methods in creating bespoke LLMs for businesses. We begin by fine-tuning pre-trained models including GPT, LLaMA, PaLM, LaMDA, BLOOM before coming up with customised models specifically suited to your domain specific language tasks.',
+    },
+    {
+      stepNo: '04',
+      title: 'In-context Learning',
+      desc: 'By using methods such as PyText, FastText or Flair, we train our language models with new data sets ensuring continuous adaptation to changing contexts or domains or users. This adaptive approach improves the model’s effectiveness over time.',
+    },
+  ],
+
+  faqs: [
+    {
+      question: 'How Do LLM’s Benefit My Business?',
+      answer:
+        'Efficiency and innovation can be driven by LLMs automating repetitive tasks, chatbots and virtual assistants improving customer service, content generation, sentiment analysis and insights from big datasets.',
+    },
+    {
+      question: 'Which sectors can benefit from LLMs?',
+      answer:
+        'Professional services, healthcare, retailing and manufacturing, advocacy, and others are a few of the industries that stand to gain from LLMs. They can be tailor-made for each industry’s needs and challenges.',
+    },
+    {
+      question:
+        'How do you ensure the security and privacy of the data used for LLM development?',
+      answer:
+        'We have laid down data privacy measures as well as strict security protocols which include encryption of data, access controls and compliance with appropriate legislation to ensure safety as well as privacy of data used in developing them.',
+    },
+    {
+      question: 'How long does it take to develop and integrate an LLM?',
+      answer:
+        'The amount of time it takes for Large Language Model development depends on how complicated the project is, amount of data in question and peculiar requirements given by the client. The company provides details after having initial consultations with clients.',
     },
   ],
 };
@@ -2643,6 +3501,606 @@ export const serviceAiDevelopment = {
     },
   ],
 };
+
+// ai consulting
+export const aiConsulting = {
+  title: 'AI Consulting',
+
+  introduction:
+    'The world of technology is a dynamic one and Artificial Intelligence (AI) has been at its core. Quantum IT is a key player in this transformation, providing AI consulting services, which enable businesses to fully utilise AI potential. Our technical know-how extends into multiple advanced models including GPT, Gemini, Llama, PaLM and Mistral. Whether you want to automate processes, improve customer interactions or explore the creative potential of generative AI, our solutions will be customised for each user.',
+  services_title: 'Our AI Consulting Services',
+  services: [
+    {
+      title: 'AI Strategy Development',
+      description:
+        'At our AI consulting firm, we believe that without a clear strategy successful AI implementation can’t happen. We have an AI Strategy Development service where we start by holding an in-depth consultation to understand your unique business needs and objectives. Through engagement with the key stakeholders we get their opinion thus creating a proper roadmap with specific steps and timelines for integrating the operations with AI.',
+    },
+    {
+      title: 'AI Opportunity Mapping',
+      description:
+        'To maximise return on investment it is important to identify high-impact artificial intelligence use cases. Our service of determining AI opportunities involves assessing your current operations and examining data in order to determine those points where artificial intelligence can lead to increased effectiveness, innovation as well as growth. This extensive evaluation helps prioritise long-term-goals related to artificial intelligence.',
+    },
+    {
+      title: 'Model Development for Specific Domain',
+      description:
+        'For AI solutions to be effective, it is important that one understands the complexities of their industry. Our AI consulting business extensively reviews your domain and tweaks fundamental models like GPT, Llama, PaLM, Claude, Gemini, Mixtral or Mistral to fit in with your proprietary data. Our model is subjected to rigorous testing and validation so that it can align well with your business needs.',
+    },
+  ],
+
+  generativeAI: {
+    title: 'Our Generative AI Solutions',
+    description:
+      'We are experts in generative AI, we create innovative tools including content generation toolkits, chatbots or virtual assistants among others. Right from UX/UI design up to model integration our end-to-end generative AI solution development is built around you.',
+  },
+  solutions: [
+    {
+      title: 'Data Engineering',
+      description:
+        'Artificial Intelligence depends on data. Our data engineering services encompass all aspects of the data lifecycle starting from sourcing and cleansing through structuring and enrichment. As your AI consulting agency, we make sure that your data is optimised for machine learning thus making training models more accurate as well as reliable.',
+    },
+    {
+      title: 'AI Integration',
+      description:
+        'To unlock the full potential of AI systems, seamless integration with existing ones is required. We have a team of professionals who will ensure smooth transition and make AI an integral part of your operations thereby enabling you to effectively exploit its transformative capabilities.',
+    },
+  ],
+  process: {
+    title: 'Our Process for AI Consulting',
+    phases: [
+      {
+        title: 'Evaluation Phase',
+        description:
+          'First, we will understand the state and needs of your company so that these will form the bedrock of a successful AI strategy.',
+      },
+      {
+        title: 'Planning for Success',
+        description:
+          'As one of the best AI consulting firms, we will design a comprehensive and clear AI approach for your use case including cost, duration, security and privacy.',
+      },
+      {
+        title: 'Collecting Data and Preparing it for Analysis',
+        description:
+          'The availability of high-quality relevant data is crucial to the success of artificial intelligence projects. We get your data ready for training models.',
+      },
+      {
+        title: 'Building Custom Models',
+        description:
+          'We develop an AI model that is specific to its context by retraining it with your privately owned information to fill in gaps in your business requirements.',
+      },
+      {
+        title: 'Model Integration/ Solution Development',
+        description:
+          'Advanced solutions like chatbots or recommendation systems can be built based on fine tuning the model.',
+      },
+      {
+        title: 'Incorporating Into Existing Workflows',
+        description:
+          'We simplify the adoption process by integrating our solution into your previous infrastructure.',
+      },
+      {
+        title: 'Monitor and Maintain',
+        description:
+          'Continuous oversight as well as regular maintenance ensures that such Artificial Intelligence (AI) solutions remain functional over time and adapt to changes.',
+      },
+    ],
+  },
+
+  faqs: [
+    {
+      question: 'Can you customise small business’s AI solutions?',
+      answer:
+        'Indeed, we offer AI consulting for small businesses regardless of their size. We work together with you closely so that we build a plan within your budget so that you can afford it and achieve what you want.',
+    },
+    {
+      question:
+        'What are your techniques for dealing with data integration from many different sources?',
+      answer:
+        'We use sophisticated engineering of data to integrate multiple sources. The information is made clean, structured and enriched by our team in order to be effectively used for AI model training.',
+    },
+    {
+      question: 'Which areas of AI do you focus on?',
+      answer:
+        'There are different types of AI in which we have expertise like machine learning, natural language processing, computer vision and generative AI models (e.g GPT, Llama, PaLM etc).',
+    },
+    {
+      question: 'What is Generative AI and why would my business need it?',
+      answer:
+        'Generative AI entails creating new content or data using AI models. This can add creativity to your business as well as automate content creation besides improving interactions between customers and advanced chatbots/virtual assistants.',
+    },
+    {
+      question: 'How do you ensure the ethical use of AI?',
+      answer:
+        'We follow principles that make sure that development of ethical artificial intelligence takes precedence before everything else which include transparency, fairness, accountability and privacy. We also ensure adherence to any relevant regulations or guidelines so as to safeguard users and society at large.',
+    },
+  ],
+};
+
+// hire ai engineers
+
+export const hireAIEngineers = {
+  title: 'Unlock the Full Potential of AI by Hiring Quantum IT’s AI Engineers',
+
+  introduction:
+    'If your journey into AI has just started or even if you are already on the next level, Quantum IT’s qualified AI engineers are always there to tackle any problem for you. Our engineers understand different aspects of AI and can create bespoke AI models and solutions that fit your business needs. We will integrate it seamlessly with your current systems using end-to-end services provided by us as well as guide you through the intricate world of AI.',
+
+  expertise: {
+    title: 'Our AI Engineers’ Expertise',
+    sections: [
+      {
+        title: 'Various Artificial Intelligence Technologies',
+        description:
+          'You should hire AI engineers from our company as they have a deep command over several artificial intelligence technologies such as machine learning, deep learning, natural language processing, computer vision and data science. This enables them to build a wide range of industry-specific artificial intelligence systems and solutions. They have all the necessary information and tools to assist in decision-making procedures, automate customer service or predictive analytics implementation.',
+      },
+      {
+        title: 'Mastery of Programming Languages & Frameworks',
+        description:
+          'Proficiency in languages like Python and R coupled with frameworks like TensorFlow, PyTorch, Scikit-Learn make our organisation unique through our engineers’ expertise in this field. These tools enable us to create AI solutions that are high performing and scalable so that the business can leverage on the capability of AI. The skills our team has in creating difficult algorithms and deploying reliable models makes sure that your AI solutions are both state-of-the-art and dependable.',
+      },
+      {
+        title: 'Data Engineering Excellence',
+        description:
+          'The success of any artificial intelligence (AI) project is based on data, which is not different from any other projects. Our data scientists specialise in data engineering, where they successfully handle data preparation, transformation as well as management. This expertise is needed for training machine learning models, carrying out comprehensive analytics of the data plus making accurate predictions. We do this by ensuring that your Enterprise Data Warehouse (EDW) is clean, structured properly and ready for analysis, thus setting the stage for successful artificial intelligence applications.',
+      },
+      {
+        title: 'LLM Fine-tuning',
+        description:
+          'Artificial Intelligence has been transformed by Large Language Models (LLMs), such as GPT, Llama 2 etc. Our engineers have great experience with fine-tuning these models to meet your exact business needs. This involves the re-engineering or tweaking of pretrained models to improve their understanding and responding abilities towards specific types of input text. Whether it’s a conversational AI system, content generation tool or any other use case you might think of, we have fine-tuning capabilities that would deliver an optimum performance.',
+      },
+      {
+        title: 'Expertise in Prompt Engineering',
+        description:
+          'In conversational AI, crafting good prompts that adapt to context is important. We have trained our AI engineers on prompt engineering because it improves user’s experience while interacting with chatbots, virtual assistants and other AI-driven interfaces. This skillset enhances user experience and ensures that you get responses that are human-like from your AI systems.',
+      },
+    ],
+  },
+
+  industries: {
+    title: 'Industries We Serve',
+    sections: [
+      {
+        title: 'Retail & Ecommerce',
+        description:
+          'Our retail and e-commerce oriented AI solutions optimise inventory management, personalised product recommendations, and automate customer service processes. By studying market trends and customer behaviour we help enterprises increase customer interaction as well as improve sales.',
+      },
+      {
+        title: 'Automotive',
+        description:
+          'In the automotive industry, our AI solutions can predict, prevent issues related to vehicles, optimise inventory management and enhance customer experiences. By using data-driven processes we guide you in this direction ensuring high standards of quality control.',
+      },
+      {
+        title: 'Education',
+        description:
+          'We are experts in designing intelligent tutoring systems, personalised learning platforms, and data driven curriculum for the education sector. For students our AI solutions will make learning more enjoyable while teachers will have administrative tasks simplified through its use.',
+      },
+    ],
+  },
+
+  faqs: [
+    {
+      question: 'Which are the industries that can benefit from AI solutions?',
+      answer:
+        'AI Solutions can be beneficial to a vast number of sectors such as retail, health care, finance, automotive, education and many others. Each industry has the potential to leverage artificial intelligence for bettering processes, enhancing customer experience and providing insights into their operations.',
+    },
+    {
+      question:
+        'How do Quantum IT’s AI engineers ensure data privacy and security?',
+      answer:
+        'We protect user data by implementing strict security policies which follow relevant laws across the globe. Our solutions have been created for concealing sensitive details and maintaining data validity.',
+    },
+    {
+      question: 'Can Quantum IT integrate AI solutions into existing systems?',
+      answer:
+        'Definitely yes, our team specialises in seamless integration of AI solutions with existing systems, our collaboration will resemble yours’ during this time so that your running activities aren’t affected much.',
+    },
+    {
+      question: 'What kind of AI solutions does Quantum IT offer?',
+      answer:
+        'The range of our offerings includes predictive analytics, natural language processing and computer vision among others. As such we provide services customised particularly for your enterprise needs.',
+    },
+  ],
+};
+
+// ai as a service
+export const aiAsAService = {
+  title: "Empower Business with Quantum IT's AI-as-a-Service",
+
+  introduction:
+    'At Quantum IT, we empower businesses to harness the full potential of artificial intelligence through our all-inclusive AI-as-a-Service (AIaaS) offers. From smart virtual assistants that enhance customer service to advanced software applications that can assess your data and extract valuable insights, our AI services company can help you develop robust applications without requiring any in-house artificial intelligence skills. Our solutions easily blend with what you have got running, while being easy-to-use and give a competitive edge.',
+
+  benefits: {
+    title: 'Enjoy the Benefits of AI Without Complexity',
+    description:
+      'Our AIaaS offerings have been tailored to simplify artificial intelligence for businesses of all sizes. With Quantum IT, you don’t need designers or developers teaming up to tap into the power of artificial intelligence. We have a user-friendly infrastructure without codes that allows effortless development of AI applications even without coding or any technical knowhow. This method ensures that users can benefit from Artificial Intelligence without facing typical technological limitations associated with its adoption.',
+  },
+
+  keyCapabilities: {
+    title: 'Key Capabilities of Our AI-as-a-Service Offerings',
+    sections: [
+      {
+        title: 'Create No-code Custom Models',
+        description:
+          'Our AIaaS solutions do not require sophisticated coding skills or expertise in data science. We are offering customizable app templates, pre-trained models and intuitive drag-and-drop features that make it simple for users to build custom AI models. This reduces the complexities often associated with tweaking AI models, so that you can focus on business challenges rather than technical minutiae.',
+      },
+      {
+        title: 'Build Intelligent Applications',
+        description:
+          'Use your proprietary data to make intelligent applications through our AIaaS solutions. Our platforms enable you to develop apps that give accurate responses and are aware of their context whether it is building smarter chatbots or data analysis tools. These applications enhance productivity and bring value in terms of how your business functions.',
+      },
+      {
+        title: 'Secure Private Deployment',
+        description:
+          'We know the significance of protecting data and control over it. Our AIaaS platforms come with private deployment options, which let you host and use your applications within a secure environment. Consequently, only authorised people from within your organisation can reach these AI apps hence ensuring security measures such as confidentiality and integrity of personal information.',
+      },
+      {
+        title: 'Seamless Integration into Workflows',
+        description:
+          "Integrating artificial intelligence applications into your existing workflow is easy if you use our solutions. The removal of technical barriers is one of the many advantages of our AIaaS platforms. You don't need to have a team of AI experts in your organization since our platforms deal with every technicality. This makes AI more accessible and efficient by decreasing implementation time, reducing costs, and enabling you to focus on the necessary steps toward achieving business goals.",
+      },
+    ],
+  },
+
+  usp: {
+    title: 'What Sets Quantum IT’s AI-as-a-service apart from others?',
+    sections: [
+      {
+        title: 'Quantum IT’s Proven Expertise',
+        description:
+          'Our AI services company is one of the major players in the field of AIaaS having developed an impressive portfolio of successful AI & Machine learning implementations. We have vast experience in delivery quality-focused outcomes which meet and exceed your expectations every single time.',
+      },
+      {
+        title: 'Hardware Cost Savings',
+        description:
+          'AIaaS solutions provide a platform for creating AI applications with advanced infrastructure without having to spend on expensive hardware. These can be customised using your data and therefore result in better performance and accuracy all at no upfront costs associated with setting up an AI infrastructure.',
+      },
+      {
+        title: 'Transparency in Every Way',
+        description:
+          'With pay-per-usage pricing, you know exactly how much each cost is. This way you only pay for what you use so that it can become easier for you to manage the budget and resources. On one hand, businesses will find this as a useful tool when they wish to make sure their investments bring maximum returns.',
+      },
+      {
+        title: 'Applications that are ready for use',
+        description:
+          'Our platforms enable you to create apps which are ready for immediate use. You can start without any formal training, since the easy-to-use interface, pre-trained models and comprehensive templates make it easy to develop and deploy AI applications quickly. This type of accessibility allows you to start using AI technology within no time.',
+      },
+      {
+        title: 'Integration across the entire organisation',
+        description:
+          'The applications on our AIaaS platforms blend perfectly well with other existing systems. This implies that you can implement AI in your company without interfering with your current workflows. As a result, upgrading into AI driven processes brings about efficiency gains and improved productivity in all areas.',
+      },
+      {
+        title: 'Building long-term worth',
+        description:
+          'Operating on a zero code basis will not only bring immediate operational efficiencies but also lay a foundation for future value. It is important to note that our solutions help decrease errors while also enhancing output as well as provide ongoing support and maintenance so that your Artificial Intelligence applications continue being useful assets over time.',
+      },
+    ],
+  },
+
+  faqs: [
+    {
+      question:
+        'Do I need to be technical in order to use Quantum IT’s AIaaS platforms?',
+      answer:
+        'No, our AIaaS platforms have been developed with a user-friendly manner and they are actually codeless based. This allows you as an individual who has no specific coding or technical skills to develop and implement artificial intelligence applications.',
+    },
+    {
+      question: 'Can existing systems be integrated into AIaaS solutions?',
+      answer:
+        'Yes, the aim of our developed AIaaS platform is to make them fit with your current systems during switching such that there will be no disruptions for the company processes.',
+    },
+    {
+      question: 'Why Use AI-as-a-Service?',
+      answer:
+        'Using this technology avoids the need for upfront investments in hardware and expert knowledge on software solutions. In terms of costs, by using a pay-per-usage pricing model for charging customers it brings transparency in costs aligning expenses with usage making it cheaper to use Ai.',
+    },
+    {
+      question:
+        'Are Quantum IT’s AIaaS products designed specifically for industries?',
+      answer:
+        'Certainly, each quantum tool can be modified according to customer specifications in various sectors such as retail, healthcare or finance among others.',
+    },
+  ],
+};
+
+// hire action transformer developer
+
+export const actionTransformerDeveloper = {
+  title:
+    'Hire Action Transformer Developers at Quantum IT to Enhance Your Business',
+
+  introduction:
+    'At Quantum IT, we specialise in providing cutting-edge AI solutions including distinguished applications powered by Action Transformer. Our team of expert developers is ready to assist you in utilising this technology to its full potential and addressing your specific business requirements.',
+
+  whatAreActionTransformers: {
+    title: 'What are Action Transformers?',
+    description:
+      'Action Transformers (AcT) are advanced models of AI designed for performing various tasks based on high-level user inputs. With a wide range of functionality, it can be used for anything from securing an optimal property deal to scheduling a dental appointment. By making sense and interpreting what users ask for, Action Transformers can effortlessly perform intricate operations thus making them valuable tools in process automation and improved efficiency.',
+    description2:
+      ' The versatility of Action Transformers arises from their integration with different subsets of AI such as machine learning (ML), natural language processing (NLP), and deep learning. These features enable them to take up different tasks in various areas of application, making them a favourite for firms that would like to automate and streamline their services.',
+  },
+
+  Services: {
+    title: 'Quantum IT’s Action Transformer Development Services',
+    description:
+      'Quantum IT provides holistic Action Transformer development solutions that are tailor made to your business needs. Our team is skilled in deploying and managing solutions based on Action Transformers thus ensuring that you get quality applications which are also efficient and highly scalable.',
+    services: [
+      {
+        title: 'Streamlined Deployment',
+        description:
+          'Deploying action transformer models can be quite complicated but our team ensures that it is easy and fast. We make sure there is no disruption as your AI solution is smoothly integrated into the existing systems. So, you will start to enjoy the benefits of new technology much sooner due to the minimised disruptions through our deployment process being smooth and hassle-free.',
+      },
+      {
+        title: 'Dialog Management System Development',
+        description:
+          'Action transformers have an inherent ability to carry out actions through natural language dialogue. Developers use NLP techniques and conversational management frameworks such as RASA or Microsoft Bot Framework, among others, when building robust conversational agents. Virtual assistants designed with such abilities understand user prompts at a higher level and execute the required actions accordingly.',
+      },
+      {
+        title: 'Custom Adaptive AI Model-based Solution Development',
+        description:
+          'Every business has different requirements and our Action Transformer development services are aimed at addressing these. We design personalised solutions employing PyTorch and TensorFlow deep learning frameworks, adapting the model to your specific business objectives. If you need an AI model to analyse data, engage customers, or streamline operations, we can create one that is exactly in line with your objectives.',
+      },
+      {
+        title: 'Enterprise Integration',
+        description:
+          'Integrating AI solutions into already-existing systems might be difficult but it’s seamless for our experts. We ensure that your Action Transformer applications blend well with the current infrastructure forming a single effective system. This integration helps optimise workflows, reduce manual efforts, and improve productivity.',
+      },
+      {
+        title: 'Ongoing Maintenance & Support',
+        description:
+          'At Quantum IT, we see the use of Artificial Intelligence as a mere starting point. For this reason, we offer extensive support and maintenance to make sure that they continue functioning effectively. Our team monitors performance metrics, retrains models when necessary, and updates them whenever there are changes in data or business needs.',
+      },
+    ],
+  },
+
+  expertise: {
+    title: 'Quantum IT’s Expertise on Action Transformer Development in Action',
+    description:
+      'Our Action Transformer development team at Quantum IT has great skill in AI and machine learning that puts the company on top choice for such a model.',
+    details: [
+      {
+        title: 'Machine Learning',
+        description:
+          'We have built up expertise with modern machine learning techniques utilised to develop, train, test, and deploy advanced models of the action transformer. These models can also be trained using supervised as well as unsupervised learning methods, where they learn from data used for making accurate predictions or decisions.',
+      },
+      {
+        title: 'Natural Language Processing',
+        description:
+          'NLP is an integral part of Action Transformer models that allows them to understand and process natural language data. The developers are equipped with the knowledge of how to pre-process, tokenize, and encode language data using famous NLP libraries like SpaCy, NLTK, Stanford CoreNLP amongst others. Consequently, this enables us to create programs which can communicate with users in their natural way.',
+      },
+      {
+        title: 'Intent Recognition',
+        description:
+          'Any conversational agent must understand user intent. RASA and DialogFlow are some of the intent recognition frameworks our developers utilise to assist the Dialog Management System in identifying what a user intends as well as responding appropriately. With this capability, your Action Transformer applications will be able to handle a wide range of user requests accurately and efficiently.',
+      },
+      {
+        title: 'Data Engineering',
+        description:
+          'Making ready and pooling data is an underlying step in constructing AI models. Our team has experience with the use of data engineering tools including ETL processes, data pipelines, and databases to achieve this purpose. This skill guarantees high-quality training datasets for Action Transformer models, hence better performance and accuracy.',
+      },
+      {
+        title: 'Deep Learning',
+        description:
+          'Our developers are experts in deep learning techniques which include using neural networks and optimization algorithms. We use deep learning frameworks like PyTorch and TensorFlow to develop strong Action Transformer solutions enabling your applications to handle complicated tasks easily.',
+      },
+      {
+        title: 'Self-Attentional Architecture',
+        description:
+          'One of the major innovations in Action Transformers is the introduction of self-attention mechanisms that include dot-product attention as well as multi-head attention. These architectures are engineered by our AI engineers allowing the model to assess different parts of the input data capturing critical patterns being put in place. Such capability is highly effective especially when dealing with text summarization, translation among others.',
+      },
+    ],
+  },
+
+  whyChoose: {
+    title: 'Why Choose Quantum IT for Action Transformer Development?',
+    description:
+      'Selecting a suitable partner for your AI development requirements is significant and Quantum IT excels on various grounds.',
+    reasons: [
+      {
+        title: 'Domain Expertise',
+        description:
+          'Our collective background is in AI solutions development for different fields such as finance, medicine, and shipping sectors. This all-round familiarity lets us know that various areas of operations come with unique problems and constraints; thus we can deliver customised answers that bring about actual business benefits.',
+      },
+      {
+        title: 'Use of Advanced Technologies',
+        description:
+          'We apply up-to-date technologies and frameworks like TensorFlow and PyTorch to create top-notch AI applications. Our developers can work with a variety of programming languages, AI algorithms, and neural network designs which guarantees you receive the finest quality solution.',
+      },
+      {
+        title: 'End-to-End Solution Development',
+        description:
+          'At Quantum IT, we offer end-to-end solution development. From brainstorming to deploying, our collaboration guarantees that your Action Transformer application is able to meet your company’s necessities. By taking a comprehensive approach, we assure you will have a complete working system.',
+      },
+      {
+        title: 'Proven Track Record',
+        description:
+          'Clients from other industries have received our successful AI solutions. It has been through our dedication in quality service delivery and customer satisfaction that made us become reliable partners when it comes to AI creation.',
+      },
+    ],
+  },
+
+  conclusion:
+    'The future of your business can be enhanced by hiring Action Transformer developers from Quantum IT. Employ the services of AI and machine learning experts like us and enjoy a high quality solution that will be delivered to you. In order to automate complicated tasks, improve customer experience or simplify operations among others, our Action Transformer development services offer appropriate solutions in today’s competitive market.',
+};
+
+// ml ops consulting
+
+export const mlopsConsulting = {
+  title: 'MLOps Consulting Services',
+
+  introduction:
+    'Quantum IT’s area of specialty is in optimising your company’s machine learning operations to ensure greater productivity and efficiency. Our MLOps consulting services come with holistic offerings ranging from automating ML pipelines to AutoML platform implementation. Help better your planning and development, achieve reproducibility during the training and operationalization phase, and enhance scalability through easy access to essential instruments and resources. A seamless production flow from end-to-end has been established by our MLOps solutions which enable smooth running of machine learning operations.',
+
+  services: {
+    title: 'Our MLOps Consulting Services',
+    offerings: [
+      {
+        title: 'ML Pipeline Development',
+        description:
+          'We possess know-how in building automated ML pipelines that make it possible for seamless training of machine learning models. In designing pipelines, we account for input data as well as code so as to facilitate proper data processing leading to accurate model training. Hence, our MLOps are customised with regard to what suits your business requirements therefore ensuring that your models have robustness and reliability.',
+      },
+      {
+        title: 'Model Deployment and Implementation',
+        description:
+          'Quantum IT has vast experience deploying machine learning models on cloud-native infrastructure. If you use Amazon Web Services (AWS), Microsoft Azure, or Google Cloud Platform (GCP), our MLOps consulting services guarantee high availability, scalability, and reliability for your models. For you, we optimise your ML workloads for maximum performance and cost-effectiveness, bringing to you a full MLOps solution.',
+      },
+      {
+        title: 'Continuous Delivery for Machine Learning',
+        description:
+          'Our CI/CD services enable your data science team to generate many models quickly. They streamline the development of your machine learning by automating the construction, testing, and deployment of pipeline components so that it helps you accelerate time-to-market. Our MLOps services make sure that models are constantly improved and aligned with your business objectives.',
+      },
+      {
+        title: 'Model Monitoring',
+        description:
+          'Among our observability solutions are distributed tracing, log analysis, anomaly detection, as well as so on providing real-time insights into how AI systems perform. We make sure your models become more accurate and efficient. For optimal model performance and meeting business expectations we offer extensive model monitoring in our MLOps consulting services.',
+      },
+      {
+        title: 'Data Engineering and Management Services',
+        description:
+          'Quantum IT provides professional guidance on secure data handling approaches that maintain dataset integrity and usability for ML models. We can help in defining acquisition strategies for data, implementing effective cleaning methods for this kind of information as well as setting up reliable workflows for processing received data. Our MLOps company ensures that the data you provide us with is of the highest quality which makes your models more efficient and less prone to making mistakes.',
+      },
+      {
+        title: 'Model Governance and Compliance',
+        description:
+          'Security is a priority; hence our governance structure is strong and can be relied upon in ensuring integrity of your ML applications. Our MLOps consulting services involve putting in place monitoring systems to guarantee that model fairness, biases are identified and performance diligently appraised. We make sure that your machine learning operations comply with data privacy, ethical standards, and regulatory requirements.',
+      },
+    ],
+  },
+
+  aligningMLObjectives: {
+    title: 'Aligning Machine Learning Objectives with Business Goals',
+    description:
+      'At Quantum IT, we believe that aligning machine learning objectives with business goals will result in successful projects. This involves these major steps:',
+    steps: [
+      {
+        title: 'Understanding Your Business Needs',
+        description:
+          'First, we seek to understand your organisation’s goals, challenges, and opportunities thoroughly. Through this we can customise our MLOps consulting services to solve your particular issues as well as supply real business worth driving resolution.',
+      },
+      {
+        title: 'Defining the Problem Statement',
+        description:
+          'We work hand-in-hand with your team in defining succinctly what problem statement machine learning aims at solving. This means identifying the fundamental business questions and objectives that the ML models must address to keep the focus firmly on achieving measurable outcomes.',
+      },
+      {
+        title: 'Identification of Data Sources',
+        description:
+          'Any successful ML project is data-dependent. We help in identifying and collating relevant sources of data that may be internal or external, structured or unstructured. Specialists ensure the received data is high-quality, complete, and appropriate for ML models envisaged.',
+      },
+      {
+        title: 'Building a Comprehensive Plan',
+        description:
+          'A detailed plan is drafted by us on how to build, test, deploy, and monitor the ML models. This includes choosing suitable algorithms, designing data pipelines, and putting up infrastructure as well as workflows that facilitate iterative development and continuous improvement.',
+      },
+      {
+        title: 'Testing and Validation',
+        description:
+          'Rigorous testing and validation are vital in order to ensure the trustworthiness and accuracy of an ML model. Our robust frameworks for testing assess model performance against predetermined metrics while we adjust them to enhance their precision and generalisation.',
+      },
+    ],
+  },
+
+  contactUs: {
+    title: 'Contact Us',
+    description:
+      'With our MLOps consulting services, Quantum IT invites you to unlock your machine learning operations’ full potential. If you are striving to maximise current processes or introduce new ones, our team of professionals will always be glad to assist you with any issues. Contact us today for more information about our MLOps services as well as how they can benefit your organisation’s objectives.',
+  },
+};
+// enterpriseAIDevelopment.ts
+
+export const enterpriseAIDevelopment = {
+  title: 'Enterprise AI Development',
+
+  description:
+    'Many businesses are incorporating artificial intelligence into their business practices to keep up with the ever-changing digital world. Quantum IT provides advanced enterprise AI development services using various technologies. Our team of experts will help you transform business processes by addressing workflow challenges and accelerating your journey towards digital transformation. We provide reliable AI-powered solutions that meet various requirements like predictive maintenance, fraud detection, inventory optimization, and customer service improvement.<br /> Quantum IT understands that every enterprise is unique and offers customized AI solutions based on your business goals. We provide a complete package of services for AI integration including strategic consulting through deployment. We believe in ethical AI practices; hence our solutions are effective as well as being compliant with industry regulations.For instance when an organisation wants to automate workflows they can choose us because we know how to navigate through difficult situations associated with enterprise AI which can either enhance decision-making or improve customer interactions',
+
+  services: {
+    title: 'Our Enterprise AI Development Services',
+    offerings: [
+      {
+        title: 'Strategic AI Consulting',
+        description:
+          'Our expert consulting services help you navigate the intricacies of AI incorporation. We ensure that our AI solutions help you meet your business goals, and that responsible AI practices are in place for compliance and sustainability.',
+      },
+      {
+        title: 'PoC and MVP Development',
+        description:
+          'We validate your AI ideas through Proof of Concepts (PoCs) and Minimum Viable Products (MVPs). These initial versions assess the feasibility of your AI solutions and support quick market entry with some minimum features.',
+      },
+      {
+        title: 'Enterprise-Grade AI Solutions Development',
+        description:
+          'Together with your organisation, our team develops tailor-made enterprise AI solutions. We prioritise scalability, performance, and security to ensure our AI systems meet your requirements while being adaptable for future challenges.',
+      },
+      {
+        title: 'Custom AI Solutions Development',
+        description:
+          'We create personalised web and mobile apps that run on artificial intelligence technology. The entire process is covered from user interface design up to algorithm engineering which makes it possible to achieve good performance as well as security.',
+      },
+      {
+        title: 'Custom Model Development',
+        description:
+          'From data preparation to model deployment we handle every step involved in developing an AI model. Our expert knowledge in optimising models assures that they serve their intended purpose effectively as well as accurately.',
+      },
+      {
+        title: 'Seamless AI Integration',
+        description:
+          'We merge innovative artificial intelligence skills into your setup without any hitches and interruptions. Our integration services are well thought out to support better efficiency and productivity.',
+      },
+      {
+        title: 'Generative AI Development',
+        description:
+          'Utilise our generative AI development services to experiment on novel ideas with foundational models like GPT, Llama, among others. This helps in the automation of workflows thus improving productivity, operational excellence, etc.',
+      },
+      {
+        title: 'Data Analysis',
+        description:
+          'Our data analysis services convert raw information into valuable insights. We help you discover actionable knowledge that informs decision-making and drives business growth.',
+      },
+    ],
+  },
+
+  aiSolutions: {
+    title: 'Enterprise AI Solutions We Develop',
+    offerings: [
+      {
+        title: 'Conversational AI Solutions',
+        description:
+          'Our enterprise AI chatbot development services enhance customer engagement through natural language understanding. These systems learn from user experience providing customised feedback and recommendations. They serve a variety of functions including answering questions or assisting with transactions which can improve customer satisfaction alongside operational effectiveness.',
+      },
+      {
+        title: 'AI Image & Speech Recognition Solutions',
+        description:
+          'These involve advanced image recognition technologies like speech-to-text transcription, voice-controlled assistant, and picture analysis developed by our experts. We make objects evident, faces familiarise and also comprehend dialogue, which is the reason why they are suitable for various security applications, retail, etc. This helps automate company procedures, enhance user interaction and interpretation of visual and audio data.',
+      },
+      {
+        title: 'Solutions on Predictive Analytics',
+        description:
+          'Our predictive analytics solutions use machine learning to make forecasts based on past information. These tools enable firms to predict equipment maintenance requirements as well as market trends. In addition, they provide actionable insights that lead to proactive decision-making which reduces downtimes and improves productivity rates.',
+      },
+      {
+        title: 'Solutions on Fraud Detection & Prevention',
+        description:
+          'Our enterprise AI company’s fraud detection systems using AI help businesses avoid financial losses by recognizing abnormalities in real-time. Thus, these platforms rely upon complicated mathematics to monitor transactions and actions used in detecting possible cases of deceitfulness. They play big roles in industries such as finance or e-commerce by acting as strong countermeasures against evolving threats thus creating safety.',
+      },
+      {
+        title: 'Customer Service Automation Solutions',
+        description:
+          'Efficiency is what is emphasised upon during automation of customer service. Our customer service solutions handle tasks like support ticketing systems, order tracking, and feedback collection reducing response times and mistakes.',
+      },
+      {
+        title: 'Recommendation Systems',
+        description:
+          'Our recommendation systems, through analysis of behaviour and preference, incorporate each user’s personal experience with the service. For e-commerce and content platforms, these systems’ recommendations ensure more relevant content or products for higher engagement and conversion rates. They are reliant on big data to provide accurate instant recommendations to help businesses connect more effectively with their audience so as to improve customer satisfaction.',
+      },
+    ],
+  },
+
+  whyChooseUs: {
+    title: 'Why Choose Us?',
+    description:
+      'Enterprise AI development at Quantum IT is about excellence. Our team has deep expertise in various AI technologies that enable us to create innovative solutions that work across many sectors. We offer services at all stages of development up to the point of deployment, ensuring they fit your business objectives exactly. We have a strong background in technology, coupled with efficient project management and rigorous quality assurance, which makes our solutions both cutting-edge and dependable. <br />Ethical AI practices are central to our approach alongside data security, as we ensure that our projects meet the highest privacy and compliance standards. This client-centric focus lets us understand your requirements better so that our enterprise AI company can develop personalised AI systems tailored for your specific outcomes that make sense beyond just offering them as general-purpose tools.',
+  },
+};
+
 export const serviceAiConsulting = {
   title1: 'AI',
   title2: 'Consulting',
@@ -3225,4 +4683,172 @@ export const capsuleEndoscopy = {
   ],
   aiDescription:
     'AI Compare the captured image with its database. "AI can predict the future risk of your disease." AI helps the doctor to predict medical events and the chance of relapse of disease and thus gives the doctor more time to act. When the report is generated Doctors tells the cause of diagnosis to patient',
+};
+export const faqs = {
+  aiConsulting: [
+    {
+      title: 'What does an AI consultant do for businesses?',
+      description:
+        'An AI consultant specializes in helping businesses leverage artificial intelligence to solve complex problems and enhance operational efficiency. At Quantum IT Innovation, our team of AI consultants provides comprehensive services, including chatbot consulting services, data analysis, and generative AI consulting, ensuring that your business stays ahead in the competitive market.',
+    },
+
+    {
+      title:
+        'Why should I choose Quantum IT Innovation over other AI consulting firms?',
+      description:
+        'Quantum IT Innovation differentiates itself from other AI consulting firms by offering personalized, cutting-edge solutions tailored to your business needs. Our team of artificial intelligence consultants brings a wealth of experience across various industries, ensuring that we deliver effective and innovative AI strategies. Whether you need chatbot consulting services or generative AI consulting, our AI consulting firm is dedicated to helping your business succeed.',
+    },
+
+    {
+      title: 'How can chatbot consulting services improve customer engagement?',
+      description:
+        'Chatbot consulting services help businesses create AI-powered chatbots that enhance customer engagement and streamline operations. At Quantum IT Innovation, our AI consultancy designs and implements chatbots tailored to your specific needs, ensuring that they provide valuable interactions for your customers. Our AI consultants use the latest AI and natural language processing technologies to develop chatbots that can handle customer inquiries, process transactions, and more.',
+    },
+
+    {
+      title:
+        'What is generative AI consulting and how can it benefit my company?',
+      description:
+        'Generative AI consulting involves using advanced AI models to create new content, designs, or solutions based on existing data. Our generative AI consultants at Quantum IT Innovation help your business explore the potential of these technologies, enabling you to automate content creation, improve decision-making, and foster innovation. With our AI consultant company by your side, you can harness the power of generative AI to drive growth and efficiency.',
+    },
+
+    {
+      title: 'What industries do your AI consulting companies specialize in?',
+      description:
+        'Quantum IT Innovation is one of the leading AI consulting companies with expertise across multiple industries, including finance, healthcare, retail, and more. Our AI consultants have extensive experience in delivering tailored AI solutions that address the unique challenges of each industry. Whether you need an AI consultancy for data analysis, chatbot consulting services, or generative AI consulting, our team is equipped to meet your specific needs.',
+    },
+  ],
+  uiUxDesignService: [
+    {
+      title: 'What are the key components of your UI/UX design services?',
+      description:
+        'At Quantum IT Innovation, our UI/UX design services focus on creating user-friendly and visually appealing interfaces. We employ a comprehensive approach that includes research, wireframing, prototyping, and usability testing to ensure our designs meet your business objectives and resonate with your target audience.',
+    },
+
+    {
+      title:
+        'How can UI and UX design services improve my website or application?',
+      description:
+        'Our UI and UX design services enhance the look and feel of your website or application, ensuring intuitive navigation and interaction. By refining the user interface (UI) and user experience (UX), we boost customer satisfaction, engagement, and conversion rates, leading to a more effective digital presence.',
+    },
+
+    {
+      title: 'What industries do you cater to with your UI/UX design services?',
+      description:
+        'Quantum IT Innovation offers UI/UX design services across diverse industries such as e-commerce, healthcare, finance, and education. We customize our design process to fit the specific needs and standards of each industry, ensuring the final product aligns with user expectations and industry norms.',
+    },
+
+    {
+      title:
+        'How do your UI/UX design and development services differ from other companies?',
+      description:
+        'Our services stand out due to our holistic approach that integrates both design and development processes. This ensures seamless collaboration between our designers and developers, resulting in a cohesive, functional end product that delivers an exceptional user experience.',
+    },
+
+    {
+      title: 'What is the process for engaging your UX design services?',
+      description:
+        'To engage our UX design services, contact us via our website or phone. We’ll start with an initial consultation to understand your business goals and user needs. Our team will then craft a customized UX design strategy to enhance your overall user journey and meet your objectives.',
+    },
+  ],
+  genAiCompany: [
+    {
+      title: 'What do genAI companies like Quantum IT Innovation offer?',
+      description:
+        'GenAI companies like Quantum IT Innovation specialize in developing and implementing generative AI solutions tailored to your business needs. Our offerings include generative AI consulting, where experts help you leverage AI to create innovative content, enhance decision-making, and automate complex tasks.',
+    },
+
+    {
+      title: 'How can generative AI consulting benefit my business?',
+      description:
+        'Generative AI consulting helps businesses explore new possibilities by using AI to generate content, designs, and systems. At Quantum IT Innovation, our consultants work with you to identify opportunities for AI to add value, from automating routine tasks to crafting personalized customer experiences.',
+    },
+
+    {
+      title:
+        'What makes Quantum IT Innovation one of the leading genAI companies?',
+      description:
+        'Quantum IT Innovation is recognized as a leader among genAI companies due to our deep expertise in AI technologies and commitment to innovation. Our generative AI consultants are skilled in various industries, allowing us to deliver tailored solutions that address your specific business needs.',
+    },
+
+    {
+      title: 'What is the role of a generative AI consultant?',
+      description:
+        'A generative AI consultant helps your business explore and implement AI technologies that generate new content, designs, or solutions. At Quantum IT Innovation, our consultants guide you through the entire process, from identifying potential applications to developing and deploying customized AI solutions that drive growth.',
+    },
+
+    {
+      title:
+        'How does Quantum IT Innovation approach generative AI consulting?',
+      description:
+        'Our approach to generative AI consulting emphasizes collaboration and customization. We begin by understanding your business objectives and then work with you to develop AI solutions aligned with your goals. As a top genAI company, we ensure that our consultants provide support throughout the entire process, from concept to implementation.',
+    },
+  ],
+  mobileApp: [
+    {
+      title:
+        'What services do you offer for mobile application development in Dallas?',
+      description:
+        'At Quantum IT Innovation, we offer comprehensive mobile application development services in Dallas. Our end-to-end solutions include design, development, testing, and maintenance. We focus on creating functional, user-friendly, and scalable apps tailored to the unique needs of your business.',
+    },
+
+    {
+      title: 'How do I choose the right mobile app developer in Dallas?',
+      description:
+        'To choose the right mobile app developer in Dallas, consider their experience, portfolio, and collaborative approach. Quantum IT Innovation boasts a team of skilled developers with a proven track record of successful mobile applications across various industries, ensuring your project is handled with expertise.',
+    },
+
+    {
+      title: 'Why is Dallas app development crucial for local businesses?',
+      description:
+        'Dallas app development is key for local businesses aiming to remain competitive in a digital-centric world. By partnering with Quantum IT Innovation, you benefit from local developers who understand the Dallas market, helping you create a mobile app that engages your target audience and fosters business growth.',
+    },
+
+    {
+      title:
+        'What industries do you serve with your app development Dallas services?',
+      description:
+        'Our app development services in Dallas cater to a broad range of industries, including healthcare, finance, retail, education, and more. Quantum IT Innovation customizes each app to meet industry-specific needs, ensuring that the final product aligns with your business goals and delivers meaningful value to users.',
+    },
+
+    {
+      title:
+        'How long does it take to complete a mobile application development Dallas project?',
+      description:
+        'The timeline for a mobile application development project in Dallas depends on the app’s complexity and specific requirements. Quantum IT Innovation provides a detailed project plan and timeline upfront for transparency. Generally, projects range from a few weeks to several months, depending on scope and complexity.',
+    },
+  ],
+  appDev: [
+    {
+      title: 'What is included in your custom mobile app development services?',
+      description:
+        'At Quantum IT Innovation, our custom mobile app development services encompass everything from initial concept design to final deployment. Our expert app developers work closely with you to craft a solution tailored to your specific needs, whether it’s an iOS app, Android app, or cross-platform solution. We focus on creating user-friendly, secure, and high-performance apps.',
+    },
+
+    {
+      title: 'How do I find the best app developers for my project?',
+      description:
+        'To find the best app developers, look for a team with a proven track record, diverse expertise, and a commitment to understanding your business goals. Quantum IT Innovation stands out as a top custom mobile app development company with skilled developers experienced in various technologies. Whether you’re searching locally or globally, we provide the expertise and reliability needed for your project.',
+    },
+
+    {
+      title:
+        'What are the advantages of working with a React Native app development company?',
+      description:
+        'Partnering with a React Native app development company like Quantum IT Innovation offers the benefit of building high-performance apps that function seamlessly on both iOS and Android platforms. Our React Native services enable faster development and cost efficiency, making it an ideal choice for reaching a broader audience with a single codebase without sacrificing quality.',
+    },
+
+    {
+      title:
+        'Why should I consider a custom mobile app development company instead of an off-the-shelf solution?',
+      description:
+        'Opting for a custom mobile app development company provides a solution specifically designed to meet your business needs. Off-the-shelf apps often have limitations that may not align with your goals. Custom development ensures that every feature and functionality is tailored to your requirements, offering a competitive edge and a unique user experience.',
+    },
+
+    {
+      title: 'Can Quantum IT Innovation assist with iOS app development?',
+      description:
+        'Yes, Quantum IT Innovation excels in iOS app development. We specialize in creating custom iOS apps that are visually appealing, highly functional, and user-friendly. Our team offers end-to-end software development services, ensuring your app meets business objectives and complies with the latest iOS standards.',
+    },
+  ],
 };
