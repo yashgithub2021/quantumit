@@ -23,7 +23,7 @@ export class DetailsComponent implements OnInit {
   androidService!: any;
   serviceDetails!: any;
   differentPageStatus: boolean = true;
-  page: boolean = false;
+  page!: boolean;
   data: any;
 
   constructor(
@@ -42,16 +42,15 @@ export class DetailsComponent implements OnInit {
     this.themechange();
     this.route.data.subscribe((data: any) => {
       const titlemeta = data['services'];
-      if (titlemeta.title === 'UIUX') {
-        this.page = true;
+      if (titlemeta.title == 'UIUX') {
         this.data = this.faqdata.uiUxDesignService;
-      }
-      if (titlemeta.title === 'Mobile App Development Dallas') {
         this.page = true;
+      } else if (titlemeta.title == 'Mobile App Development Dallas') {
         this.data = this.faqdata.mobileApp;
+        this.page = true;
+      } else {
+        this.page = false;
       }
-      console.log(titlemeta);
-
       this.checkForDifferentPageRedirect(data.services);
       this.androidService = data.services.services;
       this.serviceDetails = this.androidService;

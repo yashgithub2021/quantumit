@@ -7,157 +7,185 @@ import { RouterModule } from '@angular/router';
 import { FormComponent } from '../form/form.component';
 import { SharedModule } from 'src/app/shared/shared/shared.module';
 
-
 @Component({
   selector: 'app-ai-robot',
   templateUrl: './ai-robot.component.html',
   styleUrls: ['./ai-robot.component.css'],
   standalone: true,
-  imports: [CommonModule,RouterModule,SharedModule,FormComponent]
+  imports: [CommonModule, RouterModule, SharedModule, FormComponent],
 })
 export class AiRobotComponent implements OnInit {
-
   isDarkTheme!: boolean;
 
-  dynamicTitle = 'AI Development Services | AI Development Company | AI Consulting';
-  dynamicDescription = 'Explore Quantum IT Innovation for expert AI consulting services, chatbot development, and generative AI solutions. Leading AI development company for enterprise solutions.';
+  dynamicTitle =
+    'AI Development Services | AI Development Company | AI Consulting';
+  dynamicDescription =
+    'Explore Quantum IT Innovation for expert AI consulting services, chatbot development, and generative AI solutions. Leading AI development company for enterprise solutions.';
 
-  constructor(private titleService: Title,
-    private metaService: Meta,private elementRef: ElementRef, private api: ApiService) { }
+  constructor(
+    private titleService: Title,
+    private metaService: Meta,
+    private elementRef: ElementRef,
+    private api: ApiService
+  ) {}
 
   aiService = [
     {
-      img: "../../../assets/ai/Frame1.png",
-      title: "Predictive Analysis"
+      img: '../../../assets/ai/Frame1.png',
+      title: 'Predictive Analysis',
     },
 
     {
-      img: "../../../assets/ai/Frame2.png",
-      title: "Data Engineers"
+      img: '../../../assets/ai/Frame2.png',
+      title: 'Data Engineers',
     },
 
     {
-      img: "../../../assets/ai/Frame3.png",
-      title: "Deep Learning"
+      img: '../../../assets/ai/Frame3.png',
+      title: 'Deep Learning',
     },
 
     {
-      img: "../../../assets/ai/Frame4.png",
-      title: "Healthcare"
+      img: '../../../assets/ai/Frame4.png',
+      title: 'Healthcare',
     },
 
     {
-      img: "../../../assets/ai/Frame5.png",
-      title: "Data Mining"
+      img: '../../../assets/ai/Frame5.png',
+      title: 'Data Mining',
     },
 
     {
-      img: "../../../assets/ai/Frame6.png",
-      title: "Statistical Modeling"
+      img: '../../../assets/ai/Frame6.png',
+      title: 'Statistical Modeling',
     },
-
-  ]
+  ];
   ourAIGenerative: any[] = [
     {
       img: '../../../assets/services/AI_service/aigenerator/img1.png',
       title: 'Generative AI Development',
-      link: '/ai/Generative-Ai-Development'
-    }, {
+      link: '/ai/Generative-Ai-Development',
+    },
+    {
       img: '../../../assets/services/AI_service/aigenerator/img2.png',
       title: 'Generative AI integration services',
-      link: '/ai/Generative-Ai-Integration-Services'
-    }, {
+      link: '/ai/Generative-Ai-Integration-Services',
+    },
+    {
       img: '../../../assets/services/AI_service/aigenerator/img3.png',
       title: 'Generative AI consulting company',
-      link: '/ai/Generative-Ai-consulting-company'
-    }, {
+      link: '/ai/Generative-Ai-consulting-company',
+    },
+    {
       img: '../../../assets/services/AI_service/aigenerator/img4.png',
       title: 'hire generative AI engineers',
-      // link: '/ai/hire-generative-ai-engineers'
-    }, {
+      link: '/ai/hire-generative-ai-engineers',
+    },
+    {
       img: '../../../assets/services/AI_service/aigenerator/img5.png',
       title: 'AI Agent Development',
-      // link: '/ai/Ai-Agent-Development'
-    }, {
+      link: '/ai/Ai-Agent-Development',
+    },
+    {
       img: '../../../assets/services/AI_service/aigenerator/img6.png',
       title: 'AI Copilot Development',
-      // link: '/ai/Ai-Copilot-Development'
-    }, {
+      link: '/ai/Ai-Copilot-Development',
+    },
+    {
       img: '../../../assets/services/AI_service/aigenerator/img7.png',
       title: 'Hire Prompt Engineers',
-      // link: '/ai/Hire-Prompt-Engineers'
-    }, {
+      link: '/ai/Hire-Prompt-Engineers',
+    },
+    {
       img: '../../../assets/services/AI_service/aigenerator/img8.png',
       title: 'Adaptive AI Development Co.',
-      // link: '/ai/Adaptive-Ai-Development-Co.'
-    }, {
+      link: '/ai/Adaptive-Ai-Development-Co.',
+    },
+    {
       img: '../../../assets/services/AI_service/aigenerator/img9.png',
       title: 'ChatGPT Developers',
-      // link: '/ai/ChatGPT-Developers'
-    }, {
+      link: '/ai/ChatGPT-Developers',
+    },
+    {
       img: '../../../assets/services/AI_service/aigenerator/img10.png',
       title: 'Stable Diffusion Developers',
-      // link: '/ai/Stable-Diffusion-Developers'
-    }, {
+      link: '/ai/Stable-Diffusion-Developers',
+    },
+    {
       img: '../../../assets/services/AI_service/aigenerator/img11.png',
       title: 'ChatGPT Integration Service',
-      // link: '/ai/ChatGPT-Integration-Service'
-    }, {
+      link: '/ai/ChatGPT-Integration-Service',
+    },
+    {
       img: '../../../assets/services/AI_service/aigenerator/img12.png',
       title: 'Large Language Model',
-      // link: '/ai/Large-Language-Model'
+      link: '/ai/Large-Language-Model',
     },
-  ]
+  ];
   ourAIServices: any[] = [
     {
       img: '../../../assets/services/AI_service/aiservice/img1.png',
       title: 'AI Development',
-      link: '/ai/Ai-Development'
-    }, {
+      link: '/ai/Ai-Development',
+    },
+    {
       img: '../../../assets/services/AI_service/aiservice/img2.png',
       title: 'AI Consulting',
-      link: '/ai/Ai-Consulting'
-    }, {
+      link: '/ai/Ai-Consulting',
+    },
+    {
       img: '../../../assets/services/AI_service/aiservice/img3.png',
       title: 'AI As A Service',
       // link: 'Ai-As-A-Service'
-    }, {
+    },
+    {
       img: '../../../assets/services/AI_service/aiservice/img4.png',
       title: 'hire Action Transformer Developer',
       // link: 'Hire-Action-Transformer-Developer'
-    }, {
+    },
+    {
       img: '../../../assets/services/AI_service/aiservice/img5.png',
       title: 'AI Agent Development',
       // link: 'Ai-Agent-Development'
-    }, {
+    },
+    {
       img: '../../../assets/services/AI_service/aiservice/img6.png',
       title: 'MLOps Consulting service',
       // link: 'MLOps-Consulting-service'
-    }, {
+    },
+    {
       img: '../../../assets/services/AI_service/aiservice/img7.png',
       title: 'Enterprise AI Development',
       // link: 'Enterprise-Ai-Development'
-    }, {
+    },
+    {
       img: '../../../assets/services/AI_service/aiservice/img8.png',
       title: 'AI Chatbot Development Co.',
       // link: 'Ai-Chatbot-Development-Co'
-    }
-  ]
+    },
+  ];
 
   ngOnInit(): void {
-
     this.titleService.setTitle(this.dynamicTitle);
-    this.metaService.updateTag({ name: 'description', content: this.dynamicDescription });
+    this.metaService.updateTag({
+      name: 'description',
+      content: this.dynamicDescription,
+    });
 
     AOS.init({
       duration: 2000,
-    })
+    });
     this.isDarkTheme = this.api.isDarkTheme();
     this.themechange();
     this.scrollToTop();
   }
 
-  checks = ["Chatbot API", "Facial Recognition API", "Natural language processing APIs", "AWS ML Solutions"]
+  checks = [
+    'Chatbot API',
+    'Facial Recognition API',
+    'Natural language processing APIs',
+    'AWS ML Solutions',
+  ];
 
   // milestones = [
   //   {
@@ -178,29 +206,26 @@ export class AiRobotComponent implements OnInit {
   // ]
   milestones = [
     {
-      num: "400+",
-      title: "Active Clients",
-      img: "../../../assets/ai/25.svg",
-
+      num: '400+',
+      title: 'Active Clients',
+      img: '../../../assets/ai/25.svg',
     },
     {
-      num: "850 +",
-      title: "Projects Done",
-      img: "../../../assets/ai/1200.svg",
-
+      num: '850 +',
+      title: 'Projects Done',
+      img: '../../../assets/ai/1200.svg',
     },
     {
-      num: "250+",
-      title: "Team Advisors",
-      img: "../../../assets/ai/140.svg",
-
+      num: '250+',
+      title: 'Team Advisors',
+      img: '../../../assets/ai/140.svg',
     },
     {
-      num: "10+",
-      title: "Glorious Years",
+      num: '10+',
+      title: 'Glorious Years',
       img: '../../../assets/services/AI_service/aigenerator/img8.png',
     },
-  ]
+  ];
 
   themechange() {
     this.api.themeChanged.subscribe((isDarkTheme: boolean) => {
@@ -216,7 +241,7 @@ export class AiRobotComponent implements OnInit {
       footer.scrollIntoView({ behavior: 'smooth', block: 'end' });
     }
   }
-  scrollToForm(){
+  scrollToForm() {
     const footer = this.elementRef.nativeElement.querySelector('#form');
     if (footer) {
       footer.scrollIntoView({ behavior: 'smooth', block: 'end' });
