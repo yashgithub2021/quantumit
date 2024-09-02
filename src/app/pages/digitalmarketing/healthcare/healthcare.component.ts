@@ -7,8 +7,9 @@ import { Component } from '@angular/core';
 })
 export class HealthcareComponent {
   images = {
-    doctorImage: '../../../../assets/healthcare/doctor.jpeg',
-    discussionImage: '../../../../assets/healthcare/discussion.jpeg',
-    nurseImage: '../../../../assets/healthcare/nurse.jpeg',
+    doctorImage: '../../../../assets/healthcare/doctor.webp',
+    discussionImage: '../../../../assets/healthcare/discussion.webp',
+    discussionImage2: '../../../../assets/healthcare/discussion2.webp',
+    nurseImage: '../../../../assets/healthcare/nurse.webp',
   };
 }
