@@ -9,5 +9,6 @@ export class HealthcareComponent {
   images = {
     doctorImage: '../../../../assets/healthcare/doctor.jpeg',
     discussionImage: '../../../../assets/healthcare/discussion.jpeg',
+    nurseImage: '../../../../assets/healthcare/nurse.jpeg',
   };
 }

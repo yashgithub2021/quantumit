@@ -391,3 +391,115 @@ body {
     margin-left: 10px;
   }
 }
+.get-started-btn {
+  padding: 15px;
+  background-color: #0099ff;
+  border-radius: 12px;
+  padding-left: 30px;
+  padding-right: 30px;
+  color: white;
+  display: none;
+}
+.banner {
+  height: 500px;
+  width: 100%;
+}
+.banner-image1 {
+  rotate: -13deg;
+  width: 20%;
+  clip-path: polygon(0 10%, 100% 10%, 100% 90%, 0 90%);
+  position: absolute;
+  left: 10%;
+  top: 30%;
+}
+.banner-image2 {
+  rotate: 13deg;
+  width: 20%;
+  clip-path: polygon(10% 10%, 90% 10%, 90% 90%, 10% 90%);
+  position: absolute;
+  right: 10%;
+  top: 30%;
+}
+.banner-button {
+  margin-bottom: 20px;
+}
+.banner-text {
+  text-align: center;
+  padding-top: 70px;
+}
+.banner-h1 {
+  font-weight: 400;
+  font-size: 45px;
+}
+.healthcare {
+  position: relative;
+  display: inline-block;
+
+  color: white;
+  z-index: 1;
+}
+.healthcare::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #0099ff;
+  border-radius: 50px;
+  transform: rotate(3deg);
+  z-index: -1;
+  padding: 0px 0px;
+  margin: 0px -10px;
+}
+.banner-p {
+  padding-top: 30px;
+  display: flex;
+  width: 50%;
+  margin: auto;
+  padding-left: 10%;
+  padding-right: 10%;
+  color: gainsboro;
+  text-align: left;
+  font-size: 14px;
+}
+.banner-span {
+  color: #008cbf;
+  margin-right: 80px;
+}
+@media screen and (max-width: 768px) {
+  .banner-h1 {
+    font-size: 30px;
+  }
+  .banner-button > button {
+    display: none;
+  }
+  .banner-image1 {
+    top: 130px;
+    width: 25%;
+  }
+  .banner-image2 {
+    top: 130px;
+    width: 25%;
+  }
+  .scroll-down {
+    display: none;
+  }
+  .banner-p {
+    margin-top: 20px;
+    padding: 0;
+    text-align: left;
+    width: 80%;
+    margin-bottom: 30px;
+    color: white;
+  }
+  .banner {
+    height: auto;
+  }
+  .get-started-btn {
+    display: block;
+    align-items: center;
+    width: fit-content;
+    margin: auto;
+  }
+}
