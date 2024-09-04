@@ -522,6 +522,14 @@
   font-size: 20px;
   line-height: 30.32px;
 }
+.left-carousel {
+  left: 50px;
+  top: 40%;
+}
+.right-carousel {
+  right: 50px;
+  top: 40%;
+}
 
 @media (min-width: 1181px) {
   .section3 > .left-side {
@@ -718,6 +726,12 @@
 
   .projects-section > .project-sec-one {
     margin-bottom: 20px;
+  }
+  .left-carousel {
+    left: 2px;
+  }
+  .right-carousel {
+    right: 2px;
   }
 }
 
