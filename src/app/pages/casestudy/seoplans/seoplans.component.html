@@ -16,12 +16,27 @@
   </div>
 </div>
 <div class="pricing-container">
-  <div class="pricing-card">
-    <div class="button align-self-start">
-      <div class="our-service-btn">Professional</div>
+  <div
+    class="pricing-card"
+    [ngStyle]="{
+      'background-color': isDarkTheme ? 'rgb(17, 17, 17)' : '#ECF0FF'
+    }"
+  >
+    <div class="button">
+      <div class="button">
+        <div class="our-service-btn">Professional</div>
+      </div>
+      <img src="{{ cursorImg }}" alt="cursor" class="cursor" />
     </div>
+    <img src="{{ cursorImg }}" alt="cursor" class="cursor" />
+
     <div style="display: flex; margin-top: 20px">
-      <div class="currency">$</div>
+      <div
+        class="currency"
+        [ngStyle]="{ color: isDarkTheme ? 'rgb(179, 179, 179)' : 'black' }"
+      >
+        $
+      </div>
       <div class="price">56</div>
     </div>
     <div class="description">
@@ -66,15 +81,28 @@
     </ul>
   </div>
 
-  <div class="pricing-card best-value">
+  <div
+    class="pricing-card best-value"
+    [ngStyle]="{
+      'background-color': isDarkTheme ? 'rgb(17, 17, 17)' : '#ECF0FF'
+    }"
+  >
     <div>
       <div class="badge">Best value</div>
     </div>
     <div class="button align-self-start">
-      <div class="our-service-btn">Professional</div>
+      <div class="button">
+        <div class="our-service-btn">Professional</div>
+      </div>
+      <img src="{{ cursorImg }}" alt="cursor" class="cursor" />
     </div>
     <div style="display: flex; margin-top: 20px">
-      <div class="currency">$</div>
+      <div
+        class="currency"
+        [ngStyle]="{ color: isDarkTheme ? 'rgb(179, 179, 179)' : 'black' }"
+      >
+        $
+      </div>
       <div class="price">56</div>
     </div>
     <div class="description">
@@ -119,12 +147,25 @@
     </ul>
   </div>
 
-  <div class="pricing-card">
+  <div
+    class="pricing-card"
+    [ngStyle]="{
+      'background-color': isDarkTheme ? 'rgb(17, 17, 17)' : '#ECF0FF'
+    }"
+  >
     <div class="button align-self-start">
-      <div class="our-service-btn">Professional</div>
+      <div class="button">
+        <div class="our-service-btn">Professional</div>
+      </div>
+      <img src="{{ cursorImg }}" alt="cursor" class="cursor" />
     </div>
     <div style="display: flex; margin-top: 20px">
-      <div class="currency">$</div>
+      <div
+        class="currency"
+        [ngStyle]="{ color: isDarkTheme ? 'rgb(179, 179, 179)' : 'black' }"
+      >
+        $
+      </div>
       <div class="price">56</div>
     </div>
     <div class="description">
@@ -169,12 +210,25 @@
     </ul>
   </div>
 
-  <div class="pricing-card">
+  <div
+    class="pricing-card"
+    [ngStyle]="{
+      'background-color': isDarkTheme ? 'rgb(17, 17, 17)' : '#ECF0FF'
+    }"
+  >
     <div class="button align-self-start">
-      <div class="our-service-btn">Professional</div>
+      <div class="button">
+        <div class="our-service-btn">Professional</div>
+      </div>
+      <img src="{{ cursorImg }}" alt="cursor" class="cursor" />
     </div>
     <div style="display: flex; margin-top: 20px">
-      <div class="currency">$</div>
+      <div
+        class="currency"
+        [ngStyle]="{ color: isDarkTheme ? 'rgb(179, 179, 179)' : 'black' }"
+      >
+        $
+      </div>
       <div class="price">56</div>
     </div>
     <div class="description">
@@ -220,8 +274,13 @@
   </div>
 </div>
 
-<div class="pricing-container" style="margin-top: 150px">
-  <div class="pricing-card">
+<div class="pricing-container d-none" style="margin-top: 150px">
+  <div
+    class="pricing-card"
+    [ngStyle]="{
+      'background-color': isDarkTheme ? 'rgb(17, 17, 17)' : '#ECF0FF'
+    }"
+  >
     <div class="button align-self-start">
       <div class="our-service-btn">First Hand SEO Analysis</div>
     </div>
@@ -247,7 +306,12 @@
       </li>
     </ul>
   </div>
-  <div class="pricing-card">
+  <div
+    class="pricing-card"
+    [ngStyle]="{
+      'background-color': isDarkTheme ? 'rgb(17, 17, 17)' : '#ECF0FF'
+    }"
+  >
     <div class="button align-self-start">
       <div class="our-service-btn">First Hand SEO Analysis</div>
     </div>
@@ -272,7 +336,12 @@
       </li>
     </ul>
   </div>
-  <div class="pricing-card">
+  <div
+    class="pricing-card"
+    [ngStyle]="{
+      'background-color': isDarkTheme ? 'rgb(17, 17, 17)' : '#ECF0FF'
+    }"
+  >
     <div class="button align-self-start">
       <div class="our-service-btn">First Hand SEO Analysis</div>
     </div>
@@ -298,7 +367,12 @@
       </li>
     </ul>
   </div>
-  <div class="pricing-card">
+  <div
+    class="pricing-card"
+    [ngStyle]="{
+      'background-color': isDarkTheme ? 'rgb(17, 17, 17)' : '#ECF0FF'
+    }"
+  >
     <div class="button align-self-start">
       <div class="our-service-btn">First Hand SEO Analysis</div>
     </div>
@@ -325,8 +399,16 @@
     </ul>
   </div>
 </div>
-<div class="pricing-container" style="margin-top: 150px; margin-bottom: 100px">
-  <div class="pricing-card">
+<div
+  class="pricing-container d-none"
+  style="margin-top: 150px; margin-bottom: 100px"
+>
+  <div
+    class="pricing-card"
+    [ngStyle]="{
+      'background-color': isDarkTheme ? 'rgb(17, 17, 17)' : '#ECF0FF'
+    }"
+  >
     <div class="button align-self-start">
       <div class="our-service-btn">First Hand SEO Analysis</div>
     </div>
@@ -352,7 +434,12 @@
       </li>
     </ul>
   </div>
-  <div class="pricing-card">
+  <div
+    class="pricing-card"
+    [ngStyle]="{
+      'background-color': isDarkTheme ? 'rgb(17, 17, 17)' : '#ECF0FF'
+    }"
+  >
     <div class="button align-self-start">
       <div class="our-service-btn">First Hand SEO Analysis</div>
     </div>
@@ -378,7 +465,12 @@
       </li>
     </ul>
   </div>
-  <div class="pricing-card">
+  <div
+    class="pricing-card"
+    [ngStyle]="{
+      'background-color': isDarkTheme ? 'rgb(17, 17, 17)' : '#ECF0FF'
+    }"
+  >
     <div class="button align-self-start">
       <div class="our-service-btn">First Hand SEO Analysis</div>
     </div>
@@ -404,7 +496,12 @@
       </li>
     </ul>
   </div>
-  <div class="pricing-card">
+  <div
+    class="pricing-card"
+    [ngStyle]="{
+      'background-color': isDarkTheme ? 'rgb(17, 17, 17)' : '#ECF0FF'
+    }"
+  >
     <div class="button align-self-start">
       <div class="our-service-btn">First Hand SEO Analysis</div>
     </div>

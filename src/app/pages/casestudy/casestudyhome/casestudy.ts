@@ -39,7 +39,7 @@ export const dmCaseStudy = [
     name: 'Digital Marketing',
     portfolioImage:
       'https://karmill.s3.us-east-1.amazonaws.com/profile_pictures/CityLandscapeSupplies.png',
-    link: '/casestudy/citilandscape',
+    link: '/casestudy/citylandscape',
     projectName: 'Citilandscape Supplies',
   },
 ];

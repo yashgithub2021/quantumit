@@ -1,153 +1,265 @@
-<nav id="pr-nav" class=" navbar navbar-expand-lg nav-white-desktop p-0"
-        [ngClass]="isDarkTheme?'navbar-dark':'navbar-light'" id="navbarColor01">
-        <div class="container-fluid primary-menu-inner px-0 ">
-                <div class="top-wrap w-auto">
-                        <button class="navbar-toggler border-0" type="button" data-toggle="collapse"
-                                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                                aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <a class="custom-logo-link navbar-brand m-0 m-lg-auto" *ngIf="isDarkTheme">
-                                <img routerLink="/" height="49" [ngClass]="{ 'black-image': !isDarkTheme }" width="114"
-                                        src="../../../assets/logo-white.png">
-                        </a>
-                        <a class="custom-logo-link navbar-brand m-0 m-lg-auto" *ngIf="!isDarkTheme">
-                                <img routerLink="/" height="49" width="114"
-                                        src="../../../assets/Logo light mode app logo.png">
-                        </a>
-                        <div class="d-flex align-items-center justifycontent-center d-lg-none w-auto pe-3 ">
-                                <div class="form-check ps-0 ">
-
-                                        <input (click)="toggleTheme()" [checked]="isDarkTheme" type="checkbox"
-                                                class="checkbox" id="checkbox">
-                                        <label for="checkbox" class="checkbox-label mb-0"
-                                                [ngStyle]="{'background':isDarkTheme?'#111':'white'}">
-                                                <img style="filter: invert(1);" src="../../../assets/sun.svg" alt="">
-                                                <i class="fa-regular fa-moon text-black"></i>
-                                                <span class="ball">
-                                                        <img *ngIf="!isDarkTheme" src="../../../assets/sun.svg" alt="">
-                                                        <i *ngIf="isDarkTheme" class="fa-regular fa-moon"></i>
-                                                </span>
-                                        </label>
-                                </div>
-                        </div>
-                </div>
-                <div class="collapse navbar-collapse w-100 justify-content-start justify-content-lg-center"
-                        id="navbarSupportedContent">
-                        <ul class="navbar-nav m-0 ps-3">
-                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1553 nav-item"
-                                        routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
-                                        <a class="nav-link border-0" routerLink="/"
-                                                (click)="closeNavbar()"><span>Home</span></a>
-                                </li>
-                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1553 nav-item"
-                                        routerLinkActive="active">
-                                        <a class="nav-link border-0" routerLink="company/about"
-                                                (click)="closeNavbar()"><span>About
-                                                        Us</span></a>
-                                </li>
-                                <li id="menu-item-1949"
-                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown menu-item-1949 nav-item"
-                                        (mouseenter)="handleMouseEnter()" (mouseleave)="handleMouseLeave()">
-                                        <a data-toggle="dropdown" aria-expanded="false"
-                                                class="dropdown-toggle nav-link border-0 " id="menu-item-dropdown-1949">
-                                                <span (click)="handleToggleClick()">Services</span>
-                                        </a>
-                                        <div [ngStyle]="{'background':isDarkTheme?'#111111':'#ECF0FF','opacity':isDarkTheme?'0.9':'0.9'}"
-                                                class="dropdown-menu" aria-labelledby="navbarDropdown"
-                                                [ngClass]="{'show': isDropdownOpenService}">
-                                                <ul>
-                                                        <li>
-                                                                <a [ngClass]="isDarkTheme?'text-white':'text-black'"
-                                                                        class="dropdown-item border-0"
-                                                                        routerLink="app-development"
-                                                                        (click)="closeNavbar()">Mobile
-                                                                        App Development
-                                                                </a>
-                                                        </li>
-                                                        <li routerLinkActive="active1">
-                                                                <a [ngClass]="isDarkTheme?'text-white':'text-black'"
-                                                                        class="dropdown-item border-0"
-                                                                        [routerLink]="['android-application-development-company']"
-                                                                        (click)="closeNavbar()">
-                                                                        <img class="me-2"
-                                                                                src="../../../assets/navbar/android.svg"
-                                                                                alt="">
-                                                                        Android App
-                                                                        Development
-                                                                </a>
-                                                        </li>
-                                                        <li routerLinkActive="active1"><a
-                                                                        [ngClass]="isDarkTheme?'text-white':'text-black'"
-                                                                        class="dropdown-item border-0"
-                                                                        [routerLink]="['iphone-application-development-company']"
-                                                                        (click)="closeNavbar()"> <img class="me-2"
-                                                                                src="../../../assets/navbar/ios.svg"
-                                                                                alt="">
-                                                                        iOS App Development</a>
-                                                        </li>
-                                                        <li routerLinkActive="active1"><a
-                                                                        [ngClass]="isDarkTheme?'text-white':'text-black'"
-                                                                        class="dropdown-item border-0"
-                                                                        [routerLink]="['swift-application-development-company']"
-                                                                        (click)="closeNavbar()"> <img class="me-2"
-                                                                                src="../../../assets/navbar/swift.svg"
-                                                                                alt="">
-                                                                        Swift App
-                                                                        Development</a></li>
-                                                        <li routerLinkActive="active1"><a
-                                                                        [ngClass]="isDarkTheme?'text-white':'text-black'"
-                                                                        class="dropdown-item border-0"
-                                                                        [routerLink]="['cross-platform-mobile-app-development']"
-                                                                        (click)="closeNavbar()"> <img class="me-2"
-                                                                                src="../../../assets/navbar/cross.svg"
-                                                                                alt="">
-                                                                        Cross Platform App</a>
-                                                        </li>
-                                                        <li routerLinkActive="active1"><a
-                                                                        [ngClass]="isDarkTheme?'text-white':'text-black'"
-                                                                        class="dropdown-item border-0"
-                                                                        [routerLink]="['ipad-app-development-company']"
-                                                                        (click)="closeNavbar()"> <img class="me-2"
-                                                                                src="../../../assets/navbar/iPad.svg"
-                                                                                alt="">
-                                                                        iPad App
-                                                                        Development</a></li>
-                                                        <li routerLinkActive="active1"><a
-                                                                        [ngClass]="isDarkTheme?'text-white':'text-black'"
-                                                                        class="dropdown-item border-0"
-                                                                        [routerLink]="['mobile-game-development-company']"
-                                                                        (click)="closeNavbar()"> <img class="me-2"
-                                                                                src="../../../assets/navbar/game.svg"
-                                                                                alt="">
-                                                                        Mobile Game
-                                                                        Development</a></li>
-                                                        <li routerLinkActive="active1"><a
-                                                                        [ngClass]="isDarkTheme?'text-white':'text-black'"
-                                                                        class="dropdown-item border-0"
-                                                                        [routerLink]="['mobile-app-development-dallas']"
-                                                                        (click)="closeNavbar()"> <img class="me-2"
-                                                                                src="../../../assets/navbar/dallas.png"
-                                                                                alt="">
-                                                                        Mobile App Development Dallas</a></li>
-
-                                                </ul>
-                                                <ul>
-                                                        <li><a [ngClass]="isDarkTheme?'text-white':'text-black'"
-                                                                        class="dropdown-item border-0"
-                                                                        routerLink="web-development"
-                                                                        (click)="closeNavbar()">Web App
-                                                                        Development</a></li>
-                                                        <li routerLinkActive="active1"><a
-                                                                        [ngClass]="isDarkTheme?'text-white':'text-black'"
-                                                                        class="dropdown-item border-0"
-                                                                        [routerLink]="['php-development-company']"
-                                                                        (click)="closeNavbar()"> <img class="me-2"
-                                                                                src="../../../assets/navbar/php.svg"
-                                                                                alt="">
-                                                                        PHP Development</a>
-                                                        </li>
-                                                        <!-- <li routerLinkActive="active1"><a
+<nav
+  id="pr-nav"
+  class="navbar navbar-expand-lg nav-white-desktop p-0"
+  [ngClass]="isDarkTheme ? 'navbar-dark' : 'navbar-light'"
+  id="navbarColor01"
+>
+  <div class="container-fluid primary-menu-inner px-0">
+    <div class="top-wrap w-auto">
+      <button
+        class="navbar-toggler border-0"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a
+        class="custom-logo-link navbar-brand m-0 m-lg-auto"
+        *ngIf="isDarkTheme"
+      >
+        <img
+          routerLink="/"
+          height="49"
+          [ngClass]="{ 'black-image': !isDarkTheme }"
+          width="114"
+          src="../../../assets/logo-white.png"
+        />
+      </a>
+      <a
+        class="custom-logo-link navbar-brand m-0 m-lg-auto"
+        *ngIf="!isDarkTheme"
+      >
+        <img
+          routerLink="/"
+          height="49"
+          width="114"
+          src="../../../assets/Logo light mode app logo.png"
+        />
+      </a>
+      <div
+        class="d-flex align-items-center justifycontent-center d-lg-none w-auto pe-3"
+      >
+        <div class="form-check ps-0">
+          <input
+            (click)="toggleTheme()"
+            [checked]="isDarkTheme"
+            type="checkbox"
+            class="checkbox"
+            id="checkbox"
+          />
+          <label
+            for="checkbox"
+            class="checkbox-label mb-0"
+            [ngStyle]="{ background: isDarkTheme ? '#111' : 'white' }"
+          >
+            <img
+              style="filter: invert(1)"
+              src="../../../assets/sun.svg"
+              alt=""
+            />
+            <i class="fa-regular fa-moon text-black"></i>
+            <span class="ball">
+              <img *ngIf="!isDarkTheme" src="../../../assets/sun.svg" alt="" />
+              <i *ngIf="isDarkTheme" class="fa-regular fa-moon"></i>
+            </span>
+          </label>
+        </div>
+      </div>
+    </div>
+    <div
+      class="collapse navbar-collapse w-100 justify-content-start justify-content-lg-center"
+      id="navbarSupportedContent"
+    >
+      <ul class="navbar-nav m-0 ps-3">
+        <li
+          class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1553 nav-item"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+        >
+          <a class="nav-link border-0" routerLink="/" (click)="closeNavbar()"
+            ><span>Home</span></a
+          >
+        </li>
+        <li
+          class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1553 nav-item"
+          routerLinkActive="active"
+        >
+          <a
+            class="nav-link border-0"
+            routerLink="company/about"
+            (click)="closeNavbar()"
+            ><span>About Us</span></a
+          >
+        </li>
+        <li
+          id="menu-item-1949"
+          class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown menu-item-1949 nav-item"
+          (mouseenter)="handleMouseEnter()"
+          (mouseleave)="handleMouseLeave()"
+        >
+          <a
+            data-toggle="dropdown"
+            aria-expanded="false"
+            class="dropdown-toggle nav-link border-0"
+            id="menu-item-dropdown-1949"
+          >
+            <span (click)="handleToggleClick()">Services</span>
+          </a>
+          <div
+            [ngStyle]="{
+              background: isDarkTheme ? '#111111' : '#ECF0FF',
+              opacity: isDarkTheme ? '0.9' : '0.9'
+            }"
+            class="dropdown-menu"
+            aria-labelledby="navbarDropdown"
+            [ngClass]="{ show: isDropdownOpenService }"
+          >
+            <ul>
+              <li>
+                <a
+                  [ngClass]="isDarkTheme ? 'text-white' : 'text-black'"
+                  class="dropdown-item border-0"
+                  routerLink="app-development"
+                  (click)="closeNavbar()"
+                  >Mobile App Development
+                </a>
+              </li>
+              <li routerLinkActive="active1">
+                <a
+                  [ngClass]="isDarkTheme ? 'text-white' : 'text-black'"
+                  class="dropdown-item border-0"
+                  [routerLink]="['android-application-development-company']"
+                  (click)="closeNavbar()"
+                >
+                  <img
+                    class="me-2"
+                    src="../../../assets/navbar/android.svg"
+                    alt=""
+                  />
+                  Android App Development
+                </a>
+              </li>
+              <li routerLinkActive="active1">
+                <a
+                  [ngClass]="isDarkTheme ? 'text-white' : 'text-black'"
+                  class="dropdown-item border-0"
+                  [routerLink]="['iphone-application-development-company']"
+                  (click)="closeNavbar()"
+                >
+                  <img
+                    class="me-2"
+                    src="../../../assets/navbar/ios.svg"
+                    alt=""
+                  />
+                  iOS App Development</a
+                >
+              </li>
+              <li routerLinkActive="active1">
+                <a
+                  [ngClass]="isDarkTheme ? 'text-white' : 'text-black'"
+                  class="dropdown-item border-0"
+                  [routerLink]="['swift-application-development-company']"
+                  (click)="closeNavbar()"
+                >
+                  <img
+                    class="me-2"
+                    src="../../../assets/navbar/swift.svg"
+                    alt=""
+                  />
+                  Swift App Development</a
+                >
+              </li>
+              <li routerLinkActive="active1">
+                <a
+                  [ngClass]="isDarkTheme ? 'text-white' : 'text-black'"
+                  class="dropdown-item border-0"
+                  [routerLink]="['cross-platform-mobile-app-development']"
+                  (click)="closeNavbar()"
+                >
+                  <img
+                    class="me-2"
+                    src="../../../assets/navbar/cross.svg"
+                    alt=""
+                  />
+                  Cross Platform App</a
+                >
+              </li>
+              <li routerLinkActive="active1">
+                <a
+                  [ngClass]="isDarkTheme ? 'text-white' : 'text-black'"
+                  class="dropdown-item border-0"
+                  [routerLink]="['ipad-app-development-company']"
+                  (click)="closeNavbar()"
+                >
+                  <img
+                    class="me-2"
+                    src="../../../assets/navbar/iPad.svg"
+                    alt=""
+                  />
+                  iPad App Development</a
+                >
+              </li>
+              <li routerLinkActive="active1">
+                <a
+                  [ngClass]="isDarkTheme ? 'text-white' : 'text-black'"
+                  class="dropdown-item border-0"
+                  [routerLink]="['mobile-game-development-company']"
+                  (click)="closeNavbar()"
+                >
+                  <img
+                    class="me-2"
+                    src="../../../assets/navbar/game.svg"
+                    alt=""
+                  />
+                  Mobile Game Development</a
+                >
+              </li>
+              <li routerLinkActive="active1">
+                <a
+                  [ngClass]="isDarkTheme ? 'text-white' : 'text-black'"
+                  class="dropdown-item border-0"
+                  [routerLink]="['mobile-app-development-dallas']"
+                  (click)="closeNavbar()"
+                >
+                  <img
+                    class="me-2"
+                    src="../../../assets/navbar/dallas.png"
+                    alt=""
+                  />
+                  Mobile App Development Dallas</a
+                >
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <a
+                  [ngClass]="isDarkTheme ? 'text-white' : 'text-black'"
+                  class="dropdown-item border-0"
+                  routerLink="web-development"
+                  (click)="closeNavbar()"
+                  >Web App Development</a
+                >
+              </li>
+              <li routerLinkActive="active1">
+                <a
+                  [ngClass]="isDarkTheme ? 'text-white' : 'text-black'"
+                  class="dropdown-item border-0"
+                  [routerLink]="['php-development-company']"
+                  (click)="closeNavbar()"
+                >
+                  <img
+                    class="me-2"
+                    src="../../../assets/navbar/php.svg"
+                    alt=""
+                  />
+                  PHP Development</a
+                >
+              </li>
+              <!-- <li routerLinkActive="active1"><a
                                                                         [ngClass]="isDarkTheme?'text-white':'text-black'"
                                                                         class="dropdown-item border-0"
                                                                         [routerLink]="['dotnet-development-company']"
@@ -156,110 +268,183 @@
                                                                                 alt="">
                                                                         .Net Development</a>
                                                         </li> -->
-                                                        <li routerLinkActive="active1"><a
-                                                                        [ngClass]="isDarkTheme?'text-white':'text-black'"
-                                                                        class="dropdown-item border-0"
-                                                                        [routerLink]="['ruby-on-rails-development-company']"
-                                                                        (click)="closeNavbar()"> <img class="me-2"
-                                                                                src="../../../assets/navbar/ror.svg"
-                                                                                alt="">
-                                                                        ROR Development</a>
-                                                        </li>
-                                                        <li routerLinkActive="active1"><a
-                                                                        [ngClass]="isDarkTheme?'text-white':'text-black'"
-                                                                        class="dropdown-item border-0"
-                                                                        [routerLink]="['node-js-development']"
-                                                                        (click)="closeNavbar()"> <img class="me-2"
-                                                                                src="../../../assets/navbar/node.svg"
-                                                                                alt="">
-                                                                        NODE.js Development</a>
-                                                        </li>
-                                                        <li routerLinkActive="active1"><a
-                                                                        [ngClass]="isDarkTheme?'text-white':'text-black'"
-                                                                        class="dropdown-item border-0"
-                                                                        [routerLink]="['joomla-development-company']"
-                                                                        (click)="closeNavbar()"> <img class="me-2"
-                                                                                src="../../../assets/navbar/joomla.svg"
-                                                                                alt="">
-                                                                        Joomla Development</a>
-                                                        </li>
-                                                        <li routerLinkActive="active1"><a
-                                                                        [ngClass]="isDarkTheme?'text-white':'text-black'"
-                                                                        class="dropdown-item border-0"
-                                                                        [routerLink]="['web-development-company-usa']"
-                                                                        (click)="closeNavbar()"> <img class="me-2"
-                                                                                src="../../../assets/navbar/web_usa.png"
-                                                                                alt="">
-                                                                        Web Development Company USA</a>
-                                                        </li>
-                                                        <li routerLinkActive="active1"><a
-                                                                        [ngClass]="isDarkTheme?'text-white':'text-black'"
-                                                                        class="dropdown-item border-0"
-                                                                        [routerLink]="['ui-ux-design-services']"
-                                                                        (click)="closeNavbar()"> <img class="me-2"
-                                                                                src="../../../assets/navbar/uiux.svg"
-                                                                                alt="">
-                                                                        UI UX Design Services</a>
-                                                        </li>
-                                                </ul>
-                                                <ul>
-                                                        <li><a [ngClass]="isDarkTheme?'text-white':'text-black'"
-                                                                        class="dropdown-item border-0"
-                                                                        routerLink="digital-marketing"
-                                                                        (click)="closeNavbar()">Digital Marketing</a>
-                                                        </li>
-                                                        <li routerLinkActive="active1"><a
-                                                                        [ngClass]="isDarkTheme?'text-white':'text-black'"
-                                                                        class="dropdown-item border-0"
-                                                                        [routerLink]="['seo-services-company']"
-                                                                        (click)="closeNavbar()"> <img class="me-2"
-                                                                                src="../../../assets/navbar/seo.svg"
-                                                                                alt="">
-                                                                        SEO</a></li>
-                                                        <li routerLinkActive="active1"><a
-                                                                        [ngClass]="isDarkTheme?'text-white':'text-black'"
-                                                                        class="dropdown-item border-0"
-                                                                        [routerLink]="['ppc-campaign-management-services']"
-                                                                        (click)="closeNavbar()"> <img class="me-2"
-                                                                                src="../../../assets/navbar/ppp.svg"
-                                                                                alt="">
-                                                                        Pay Per Click</a>
-                                                        </li>
-                                                        <li routerLinkActive="active1"><a
-                                                                        [ngClass]="isDarkTheme?'text-white':'text-black'"
-                                                                        class="dropdown-item border-0"
-                                                                        [routerLink]="['social-media-marketing']"
-                                                                        (click)="closeNavbar()"> <img class="me-2"
-                                                                                src="../../../assets/navbar/marketing.svg"
-                                                                                alt="">
-                                                                        Social Media
-                                                                        Marketing</a></li>
-                                                        <li routerLinkActive="active1"><a
-                                                                        [ngClass]="isDarkTheme?'text-white':'text-black'"
-                                                                        class="dropdown-item border-0"
-                                                                        [routerLink]="['content-marketing']"
-                                                                        (click)="closeNavbar()"> <img class="me-2"
-                                                                                src="../../../assets/navbar/cm.svg"
-                                                                                alt="">
-                                                                        Content
-                                                                        Marketing</a></li>
-                                                        <li routerLinkActive="active1"><a
-                                                                        [ngClass]="isDarkTheme?'text-white':'text-black'"
-                                                                        class="dropdown-item border-0"
-                                                                        [routerLink]="['professional-seo-services-company']"
-                                                                        (click)="closeNavbar()"> <img class="me-2"
-                                                                                src="../../../assets/navbar/professional_seo.png"
-                                                                                alt="">
-                                                                        Professional SEO Services Company</a></li>
-                                                        <li routerLinkActive="active1"><a
-                                                                        [ngClass]="isDarkTheme?'text-white':'text-black'"
-                                                                        class="dropdown-item border-0"
-                                                                        [routerLink]="['nj-seo-company']"
-                                                                        (click)="closeNavbar()"> <img class="me-2"
-                                                                                src="../../../assets/navbar/nj_seo.png"
-                                                                                alt="">
-                                                                        NJ SEO Company</a></li>
-                                                        <!-- <li routerLinkActive="active1"><a [ngClass]="isDarkTheme?'text-white':'text-black'"
+              <li routerLinkActive="active1">
+                <a
+                  [ngClass]="isDarkTheme ? 'text-white' : 'text-black'"
+                  class="dropdown-item border-0"
+                  [routerLink]="['ruby-on-rails-development-company']"
+                  (click)="closeNavbar()"
+                >
+                  <img
+                    class="me-2"
+                    src="../../../assets/navbar/ror.svg"
+                    alt=""
+                  />
+                  ROR Development</a
+                >
+              </li>
+              <li routerLinkActive="active1">
+                <a
+                  [ngClass]="isDarkTheme ? 'text-white' : 'text-black'"
+                  class="dropdown-item border-0"
+                  [routerLink]="['node-js-development']"
+                  (click)="closeNavbar()"
+                >
+                  <img
+                    class="me-2"
+                    src="../../../assets/navbar/node.svg"
+                    alt=""
+                  />
+                  NODE.js Development</a
+                >
+              </li>
+              <li routerLinkActive="active1">
+                <a
+                  [ngClass]="isDarkTheme ? 'text-white' : 'text-black'"
+                  class="dropdown-item border-0"
+                  [routerLink]="['joomla-development-company']"
+                  (click)="closeNavbar()"
+                >
+                  <img
+                    class="me-2"
+                    src="../../../assets/navbar/joomla.svg"
+                    alt=""
+                  />
+                  Joomla Development</a
+                >
+              </li>
+              <li routerLinkActive="active1">
+                <a
+                  [ngClass]="isDarkTheme ? 'text-white' : 'text-black'"
+                  class="dropdown-item border-0"
+                  [routerLink]="['web-development-company-usa']"
+                  (click)="closeNavbar()"
+                >
+                  <img
+                    class="me-2"
+                    src="../../../assets/navbar/web_usa.png"
+                    alt=""
+                  />
+                  Web Development Company USA</a
+                >
+              </li>
+              <li routerLinkActive="active1">
+                <a
+                  [ngClass]="isDarkTheme ? 'text-white' : 'text-black'"
+                  class="dropdown-item border-0"
+                  [routerLink]="['ui-ux-design-services']"
+                  (click)="closeNavbar()"
+                >
+                  <img
+                    class="me-2"
+                    src="../../../assets/navbar/uiux.svg"
+                    alt=""
+                  />
+                  UI UX Design Services</a
+                >
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <a
+                  [ngClass]="isDarkTheme ? 'text-white' : 'text-black'"
+                  class="dropdown-item border-0"
+                  routerLink="digital-marketing"
+                  (click)="closeNavbar()"
+                  >Digital Marketing</a
+                >
+              </li>
+              <li routerLinkActive="active1">
+                <a
+                  [ngClass]="isDarkTheme ? 'text-white' : 'text-black'"
+                  class="dropdown-item border-0"
+                  [routerLink]="['seo-services-company']"
+                  (click)="closeNavbar()"
+                >
+                  <img
+                    class="me-2"
+                    src="../../../assets/navbar/seo.svg"
+                    alt=""
+                  />
+                  SEO</a
+                >
+              </li>
+              <li routerLinkActive="active1">
+                <a
+                  [ngClass]="isDarkTheme ? 'text-white' : 'text-black'"
+                  class="dropdown-item border-0"
+                  [routerLink]="['ppc-campaign-management-services']"
+                  (click)="closeNavbar()"
+                >
+                  <img
+                    class="me-2"
+                    src="../../../assets/navbar/ppp.svg"
+                    alt=""
+                  />
+                  Pay Per Click</a
+                >
+              </li>
+              <li routerLinkActive="active1">
+                <a
+                  [ngClass]="isDarkTheme ? 'text-white' : 'text-black'"
+                  class="dropdown-item border-0"
+                  [routerLink]="['social-media-marketing']"
+                  (click)="closeNavbar()"
+                >
+                  <img
+                    class="me-2"
+                    src="../../../assets/navbar/marketing.svg"
+                    alt=""
+                  />
+                  Social Media Marketing</a
+                >
+              </li>
+              <li routerLinkActive="active1">
+                <a
+                  [ngClass]="isDarkTheme ? 'text-white' : 'text-black'"
+                  class="dropdown-item border-0"
+                  [routerLink]="['content-marketing']"
+                  (click)="closeNavbar()"
+                >
+                  <img
+                    class="me-2"
+                    src="../../../assets/navbar/cm.svg"
+                    alt=""
+                  />
+                  Content Marketing</a
+                >
+              </li>
+              <li routerLinkActive="active1">
+                <a
+                  [ngClass]="isDarkTheme ? 'text-white' : 'text-black'"
+                  class="dropdown-item border-0"
+                  [routerLink]="['professional-seo-services-company']"
+                  (click)="closeNavbar()"
+                >
+                  <img
+                    class="me-2"
+                    src="../../../assets/navbar/professional_seo.png"
+                    alt=""
+                  />
+                  Professional SEO Services Company</a
+                >
+              </li>
+              <li routerLinkActive="active1">
+                <a
+                  [ngClass]="isDarkTheme ? 'text-white' : 'text-black'"
+                  class="dropdown-item border-0"
+                  [routerLink]="['nj-seo-company']"
+                  (click)="closeNavbar()"
+                >
+                  <img
+                    class="me-2"
+                    src="../../../assets/navbar/nj_seo.png"
+                    alt=""
+                  />
+                  NJ SEO Company</a
+                >
+              </li>
+              <!-- <li routerLinkActive="active1"><a [ngClass]="isDarkTheme?'text-white':'text-black'"
                                                                         class="dropdown-item border-0"
                                                                         [routerLink]="['digital-marketing', 'services', 'websiteDev']"
                                                                         (click)="closeNavbar()"> <img class="me-2"
@@ -267,7 +452,7 @@
                                                                                 alt="">
                                                                         Website
                                                                         Development</a></li> -->
-                                                        <!-- <li routerLinkActive="active1"><a [ngClass]="isDarkTheme?'text-white':'text-black'"
+              <!-- <li routerLinkActive="active1"><a [ngClass]="isDarkTheme?'text-white':'text-black'"
                                                                         class="dropdown-item border-0"
                                                                         [routerLink]="['digital-marketing', 'services', 'mobileDev']"
                                                                         (click)="closeNavbar()"> <img class="me-2"
@@ -275,68 +460,104 @@
                                                                                 alt="">
                                                                         Mobile App
                                                                         Development</a></li> -->
-                                                </ul>
-                                                <ul>
-                                                        <li><a routerLink="artificial-intelligence"
-                                                                        (click)="closeNavbar()"
-                                                                        [ngClass]="isDarkTheme?'text-white':'text-black'"
-                                                                        class="dropdown-item border-0">Emerging
-                                                                        Technology</a>
-                                                        </li>
-                                                        <li routerLinkActive="active1"><a
-                                                                        [ngClass]="isDarkTheme?'text-white':'text-black'"
-                                                                        class="dropdown-item border-0"
-                                                                        routerLink="artificial-intelligence"
-                                                                        (click)="closeNavbar()"><img
-                                                                                class="me-2 rounded" width="20px"
-                                                                                src="../../../assets/ai/ai_header_logo.png"
-                                                                                alt="">
-                                                                        Artificial
-                                                                        Intelligence</a></li>
-                                                        <li routerLinkActive="active1"><a
-                                                                        [ngClass]="isDarkTheme?'text-white':'text-black'"
-                                                                        class="dropdown-item border-0"
-                                                                        [routerLink]="['internet-of-things']"
-                                                                        (click)="closeNavbar()"><img
-                                                                                class="me-2 rounded" width="20px"
-                                                                                src="../../../assets/ai/internet_of_thing_header.png"
-                                                                                alt="">
-                                                                        Internet Of Things</a>
-                                                        </li>
-                                                        <li routerLinkActive="active1"><a
-                                                                        [ngClass]="isDarkTheme?'text-white':'text-black'"
-                                                                        class="dropdown-item border-0"
-                                                                        [routerLink]="['robotic-process-automation']"
-                                                                        (click)="closeNavbar()"><img
-                                                                                class="me-2 rounded" width="20px"
-                                                                                src="../../../assets/ai/robotic_process_header.png"
-                                                                                alt="">
-                                                                        Robotic Process
-                                                                        Automation</a></li>
-                                                        <li routerLinkActive="active1"><a
-                                                                        [ngClass]="isDarkTheme?'text-white':'text-black'"
-                                                                        class="dropdown-item border-0"
-                                                                        [routerLink]="['ai-and-software-development']"
-                                                                        (click)="closeNavbar()"><img
-                                                                                class="me-2 rounded" width="20px"
-                                                                                src="../../../assets/navbar/aidev.svg"
-                                                                                alt="">
-                                                                        AI and Software Development <br> Solutions</a>
-                                                        </li>
-                                                </ul>
-                                        </div>
-                                </li>
-                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1675 nav-item"
-                                        routerLinkActive="active">
-                                        <a class="nav-link border-0" routerLink="portfolio"
-                                                (click)="closeNavbar()"><span>Portfolio</span></a>
-                                </li>
-                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1675 nav-item"
-                                        routerLinkActive="active">
-                                        <a class="nav-link border-0" routerLink="casestudy"
-                                                (click)="closeNavbar()"><span>Case Study</span></a>
-                                </li>
-                                <!-- <li id="menu-item-1949"
+            </ul>
+            <ul>
+              <li>
+                <a
+                  routerLink="artificial-intelligence"
+                  (click)="closeNavbar()"
+                  [ngClass]="isDarkTheme ? 'text-white' : 'text-black'"
+                  class="dropdown-item border-0"
+                  >Emerging Technology</a
+                >
+              </li>
+              <li routerLinkActive="active1">
+                <a
+                  [ngClass]="isDarkTheme ? 'text-white' : 'text-black'"
+                  class="dropdown-item border-0"
+                  routerLink="artificial-intelligence"
+                  (click)="closeNavbar()"
+                  ><img
+                    class="me-2 rounded"
+                    width="20px"
+                    src="../../../assets/ai/ai_header_logo.png"
+                    alt=""
+                  />
+                  Artificial Intelligence</a
+                >
+              </li>
+              <li routerLinkActive="active1">
+                <a
+                  [ngClass]="isDarkTheme ? 'text-white' : 'text-black'"
+                  class="dropdown-item border-0"
+                  [routerLink]="['internet-of-things']"
+                  (click)="closeNavbar()"
+                  ><img
+                    class="me-2 rounded"
+                    width="20px"
+                    src="../../../assets/ai/internet_of_thing_header.png"
+                    alt=""
+                  />
+                  Internet Of Things</a
+                >
+              </li>
+              <li routerLinkActive="active1">
+                <a
+                  [ngClass]="isDarkTheme ? 'text-white' : 'text-black'"
+                  class="dropdown-item border-0"
+                  [routerLink]="['robotic-process-automation']"
+                  (click)="closeNavbar()"
+                  ><img
+                    class="me-2 rounded"
+                    width="20px"
+                    src="../../../assets/ai/robotic_process_header.png"
+                    alt=""
+                  />
+                  Robotic Process Automation</a
+                >
+              </li>
+              <li routerLinkActive="active1">
+                <a
+                  [ngClass]="isDarkTheme ? 'text-white' : 'text-black'"
+                  class="dropdown-item border-0"
+                  [routerLink]="['ai-and-software-development']"
+                  (click)="closeNavbar()"
+                  ><img
+                    class="me-2 rounded"
+                    width="20px"
+                    src="../../../assets/navbar/aidev.svg"
+                    alt=""
+                  />
+                  AI and Software Development <br />
+                  <span style="margin-left: 33px">Solutions</span></a
+                >
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li
+          class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1675 nav-item"
+          routerLinkActive="active"
+        >
+          <a
+            class="nav-link border-0"
+            routerLink="portfolio"
+            (click)="closeNavbar()"
+            ><span>Portfolio</span></a
+          >
+        </li>
+        <li
+          class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1675 nav-item"
+          routerLinkActive="active"
+        >
+          <a
+            class="nav-link border-0"
+            routerLink="casestudy"
+            (click)="closeNavbar()"
+            ><span>Case Study</span></a
+          >
+        </li>
+        <!-- <li id="menu-item-1949"
                                         class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown menu-item-1949 nav-item"
                                         (mouseenter)="toggleDropdownCaseStudy(true)"
                                         (mouseleave)="toggleDropdownCaseStudy(false)">
@@ -379,33 +600,49 @@
                                                 </ul>
                                         </div>
                                 </li> -->
-                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1675 nav-item"
-                                        routerLinkActive="active">
-                                        <a class="nav-link border-0" routerLink="blog"
-                                                (click)="closeNavbar()"><span>Insights</span></a>
-                                </li>
-                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1675 nav-item"
-                                        routerLinkActive="active">
-                                        <a class="nav-link border-0" routerLink="company/contact"
-                                                (click)="closeNavbar()"><span>Contact</span></a>
-                                </li>
-                        </ul>
-                </div>
-                <div class="collapse navbar-collapse justify-content-end w-auto">
-                        <div class="form-check form-switch">
-
-                                <input (click)="toggleTheme()" [checked]="isDarkTheme" type="checkbox" class="checkbox"
-                                        id="checkbox">
-                                <label for="checkbox" class="checkbox-label mb-0"
-                                        [ngStyle]="{'background':isDarkTheme?'#111':'white'}">
-                                        <img style="filter: invert(1);" src="../../../assets/sun.svg" alt="">
-                                        <i class="fa-regular fa-moon text-black"></i>
-                                        <span class="ball">
-                                                <img *ngIf="!isDarkTheme" src="../../../assets/sun.svg" alt="">
-                                                <i *ngIf="isDarkTheme" class="fa-regular fa-moon"></i>
-                                        </span>
-                                </label>
-                        </div>
-                </div>
-        </div>
+        <li
+          class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1675 nav-item"
+          routerLinkActive="active"
+        >
+          <a class="nav-link border-0" routerLink="blog" (click)="closeNavbar()"
+            ><span>Insights</span></a
+          >
+        </li>
+        <li
+          class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1675 nav-item"
+          routerLinkActive="active"
+        >
+          <a
+            class="nav-link border-0"
+            routerLink="company/contact"
+            (click)="closeNavbar()"
+            ><span>Contact</span></a
+          >
+        </li>
+      </ul>
+    </div>
+    <div class="collapse navbar-collapse justify-content-end w-auto">
+      <div class="form-check form-switch">
+        <input
+          (click)="toggleTheme()"
+          [checked]="isDarkTheme"
+          type="checkbox"
+          class="checkbox"
+          id="checkbox"
+        />
+        <label
+          for="checkbox"
+          class="checkbox-label mb-0"
+          [ngStyle]="{ background: isDarkTheme ? '#111' : 'white' }"
+        >
+          <img style="filter: invert(1)" src="../../../assets/sun.svg" alt="" />
+          <i class="fa-regular fa-moon text-black"></i>
+          <span class="ball">
+            <img *ngIf="!isDarkTheme" src="../../../assets/sun.svg" alt="" />
+            <i *ngIf="isDarkTheme" class="fa-regular fa-moon"></i>
+          </span>
+        </label>
+      </div>
+    </div>
+  </div>
 </nav>

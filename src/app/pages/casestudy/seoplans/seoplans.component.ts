@@ -7,18 +7,8 @@ import { ApiService } from 'src/app/shared/api/api.service';
   styleUrls: ['./seoplans.component.css'],
 })
 export class SeoplansComponent implements OnInit {
-  isDarkTheme: boolean;
-  constructor(private api: ApiService) {
-    this.isDarkTheme = this.api.isDarkTheme();
-  }
+  isDarkTheme!: boolean;
 
-  ngOnInit(): void {
-    this.isDarkTheme = this.api.isDarkTheme();
-    this.api.themeChanged.subscribe((isDarkTheme: boolean) => {
-      this.isDarkTheme = isDarkTheme;
-      // Perform actions based on theme change
-    });
-  }
   features = [
     'Single user license',
     'Lifetime updates',
@@ -29,4 +19,16 @@ export class SeoplansComponent implements OnInit {
     'IconJar & SVG library',
     'Unlimited projects',
   ];
+  cursorImg = '../../../../assets/cursor.png';
+
+  constructor(private api: ApiService) {}
+  ngOnInit(): void {
+    this.isDarkTheme = this.api.isDarkTheme();
+    this.themechange();
+  }
+  themechange() {
+    this.api.themeChanged.subscribe((isDarkTheme: boolean) => {
+      this.isDarkTheme = isDarkTheme;
+    });
+  }
 }

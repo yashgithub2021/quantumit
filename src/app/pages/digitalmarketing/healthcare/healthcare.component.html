@@ -16,25 +16,38 @@
     </div>
     <div class="banner-p">
       <div style="margin-right: 40px">
-        <span style="color: #0099ff">100+ </span> healpful
-        <br />
-        businesses
+        <span style="color: #0099ff">100+ </span
+        ><span [ngStyle]="{ color: isDarkTheme ? '' : '#333333' }">
+          healpful
+          <br />
+          businesses
+        </span>
       </div>
-      <div style="">
+      <div [ngStyle]="{ color: isDarkTheme ? '' : '#333333' }">
         Let AI be the catalyst for unparalleled digital marketing excellence,
         propelling your business to new heights of success.
       </div>
     </div>
     <div class="scroll-down" style="padding-top: 20px">
-      Scroll Down<svg style="
+      Scroll Down<svg
+        style="
           background-color: #0099ff;
           border-radius: 40px;
           margin-left: 5px;
           padding: 2px;
-        " width="16" height="16" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path style=""
+        "
+        width="16"
+        height="16"
+        viewBox="0 0 8 8"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          style=""
           d="M1.15527 3.88986L4.11406 6.8457M4.11406 6.8457L7.25236 3.71052M4.11406 6.8457L4.15704 0.748616"
-          stroke="white" stroke-miterlimit="10" />
+          stroke="white"
+          stroke-miterlimit="10"
+        />
       </svg>
     </div>
     <div>
@@ -48,10 +61,15 @@
     <h1>About Us</h1>
   </div>
   <div class="description">
-    <p class="p-desc">
+    <p
+      class="p-desc"
+      [ngStyle]="{ color: isDarkTheme ? 'rgb(181, 181, 181)' : ' #333333' }"
+    >
       Become a remarkable healthcare practitioner with GMP healthcare marketing
       strategies.
-      <span style="color: white">Gain More Patients (GMP) </span>
+      <span [ngStyle]="{ color: isDarkTheme ? 'white' : ' black' }"
+        >Gain More Patients (GMP)
+      </span>
       healthcare digital marketing agency provides marketing strategies for your
       healthcare services to support you in growing your practice and get
       recognized easily. We enhance your web presence by optimizing your web
@@ -61,7 +79,16 @@
 
   <section class="image-section">
     <div class="image-container left-image">
-      <img src="../../../../assets/download.png" alt="Left Image" />
+      <img
+        src="../../../../assets/download.png"
+        alt="Left Image"
+        *ngIf="isDarkTheme"
+      />
+      <img
+        src="../../../../assets/healthcare/stat20.jpeg"
+        alt="Left Image"
+        *ngIf="!isDarkTheme"
+      />
     </div>
     <div class="image-container right-image">
       <img src="{{ images.doctorImage }}" alt="Right Image" />
@@ -79,7 +106,10 @@
         <div class="item-text">Mobile-responsive websites</div>
         <div class="arrow">→</div>
       </div>
-      <div class="item">
+      <div
+        class="item highlight"
+        [ngStyle]="{ color: isDarkTheme ? 'white' : 'black' }"
+      >
         <div class="item-number">02.</div>
         <div class="item-text">Influential social media presence</div>
         <div class="arrow">→</div>
@@ -108,19 +138,32 @@
   </div>
 </section>
 <section>
-  <div class="container2">
+  <div
+    class="container2"
+    [ngStyle]="{ 'text-align': isDarkTheme ? '' : 'left', 'margin-left': '8%' }"
+  >
     <button class="our-service-btn">Our Services</button>
 
-    <h1 class="h1">Oue Top Class Services</h1>
+    <h1 class="h1">Our Top Class Services</h1>
     <p class="p">
       Our refined methodology guarantees premium website development, elevating
       brands with precision.
     </p>
+    <p class="p">Let's do great work together</p>
   </div>
   <div>
-    <div class="container">
+    <div
+      class="container"
+      [ngStyle]="{
+        color: isDarkTheme ? 'white' : 'black',
+       
+      }"
+    >
       <div class="top-row">
-        <div class="category">
+        <div
+          class="category"
+          [ngStyle]="{ backgroundColor: isDarkTheme ? '' : '#ECF0FF' }"
+        >
           <div>
             <img src="../../../../assets/healthcare/1st.png" alt="" />
           </div>
@@ -129,7 +172,10 @@
             Website Design
           </div>
         </div>
-        <div class="category">
+        <div
+          class="category"
+          [ngStyle]="{ backgroundColor: isDarkTheme ? '' : '#ECF0FF' }"
+        >
           <div>
             <img src="../../../../assets/healthcare/2nd.png" alt="" />
           </div>
@@ -138,7 +184,10 @@
             SEO Service
           </div>
         </div>
-        <div class="category highlight-category">
+        <div
+          class="category highlight-category"
+          [ngStyle]="{ color: isDarkTheme ? 'white' : 'white' }"
+        >
           <div>
             <img src="../../../../assets/healthcare/3rd.png" alt="" />
           </div>
@@ -147,7 +196,10 @@
             Paid Ads
           </div>
         </div>
-        <div class="category">
+        <div
+          class="category"
+          [ngStyle]="{ backgroundColor: isDarkTheme ? '' : '#ECF0FF' }"
+        >
           <div>
             <img src="../../../../assets/healthcare/4th.png" alt="" />
           </div>
@@ -158,19 +210,28 @@
         </div>
       </div>
       <div class="bottom-row">
-        <div class="category">
+        <div
+          class="category"
+          [ngStyle]="{ backgroundColor: isDarkTheme ? '' : '#ECF0FF' }"
+        >
           <div>
             <img src="../../../../assets/healthcare/5th.png" alt="" />
           </div>
           <div>Healthcare Local <br />Business Targeting</div>
         </div>
-        <div class="category">
+        <div
+          class="category"
+          [ngStyle]="{ backgroundColor: isDarkTheme ? '' : '#ECF0FF' }"
+        >
           <div>
             <img src="../../../../assets/healthcare/6th.png" alt="" />
           </div>
           <div>Healthcare Social <br />Media Marketing</div>
         </div>
-        <div class="category">
+        <div
+          class="category"
+          [ngStyle]="{ backgroundColor: isDarkTheme ? '' : '#ECF0FF' }"
+        >
           <div>
             <img src="../../../../assets/healthcare/7th.png" alt="" />
           </div>
@@ -181,7 +242,10 @@
   </div>
 </section>
 <section>
-  <div class="container2">
+  <div
+    class="container2"
+    [ngStyle]="{ 'text-align': isDarkTheme ? '' : 'left', 'margin-left': '6%' }"
+  >
     <button class="our-service-btn">Our Process</button>
 
     <h1>How Quantum develops top-notch websites</h1>
@@ -189,10 +253,14 @@
       Our refined methodology guarantees premium website development, elevating
       brands with precision.
     </p>
+    <p class="p">Let's do great work together</p>
   </div>
   <div class="container3">
     <div class="text">
-      <div class="last-text">
+      <div
+        class="last-text"
+        [ngStyle]="{ color: isDarkTheme ? 'white' : 'white' }"
+      >
         The new marketing trend involves reaching out to new patients and
         connecting with the existing ones. With a large magnitude of data
         available out there, new and innovative digital marketing strategies
@@ -206,7 +274,10 @@
     </div>
     <div class="image4">
       <img src="{{ images.nurseImage }}" alt="Placeholder Image" />
-      <div class="stats-section">
+      <div
+        class="stats-section"
+        [ngStyle]="{ 'background-color': isDarkTheme ? '' : '#ECF0FF' }"
+      >
         <div class="stat-item">
           <h2>80 <span>%</span></h2>
           <p>
