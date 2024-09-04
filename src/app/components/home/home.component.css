@@ -132,7 +132,7 @@
 
 .left-side::before {
   content: "";
-  background-image: url("https://s3-alpha-sig.figma.com/img/7d11/d6fc/c57c2c3612202f0e529fea7a50146624?Expires=1725235200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=cTHzjg4MmsgSP7DOecJE5nCxp40~m8b~LyLNSckhLkjqWYIxBZIW9FA7uKeJ4FB~Yoe796amXUCoX6JweTpfKxxllqMIWyPidaSO1ixDLoVP-7wlDfOGECcsWwPY6NxxxpolS7BkzShQE9DYfny6IG3~LHKH4eb-YrxQlY0dH-q8LG82SNH4T-HJ1m-qm7kCTaqDaBDDT77~TDpeW0pc9odYCHvBhuFmdGRjEiyNnwS1Cup87NE~fknUbvLhd5CFrT7ZR4dcTKTU7wkajEdw0Ce0hvc88PbaiASi52BfRE382fRB5tzA47KB8kOKm-LuEbV7tKfAQnoKWgDkgiQWqQ__");
+  background-image: url("../../../assets/homepage.jpeg");
   background-size: cover;
   background-position: left;
   background-repeat: no-repeat;
