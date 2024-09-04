@@ -4105,7 +4105,8 @@ export const serviceAiConsulting = {
   title1: 'AI',
   title2: 'Consulting',
   img1: '../../../../assets/ai/services/service-ai-consulting/img1.jpg',
-  // img2: "../../../../assets/services/ios_android/img1.jpg",
+  img2: '../../../../assets/ai/casestudy/page/banner2.png',
+  img3: 'http://localhost:4200/assets/services/android/aiim2.webp',
   descriptionOne: [
     'At Quantum IT Innovation, we specialize in providing cutting-edge AI solutions tailored to your business needs. As a leading <b>AI consulting firm</b>, our team of expert <b>AI consultants</b> is dedicated to transforming your business through innovative technologies. We offer comprehensive <b>AI business consulting</b> services, helping you leverage the power of artificial intelligence to optimize operations, enhance customer experiences, and drive growth.<br><br>Our <b>chatbot consulting services</b> are designed to create intelligent conversational agents that improve customer engagement and streamline support processes. With a deep understanding of the latest AI trends and technologies, our <b>artificial intelligence</b> consultants work closely with you to develop and implement customized AI strategies that align with your business objectives.<br><br>Whether you are looking to integrate AI into your existing systems or explore new opportunities, Quantum IT Innovation is your trusted partner in the rapidly evolving world of AI.',
   ],
