@@ -474,78 +474,81 @@
   <!-- Section7 -->
   <div class="container-fluid section7 w-100 my-sm-5 pb-sm-5" id="customers">
     <div class="container-fluid h-100">
-      <ngb-carousel
-        [showNavigationIndicators]="showNavigationIndicators"
-        [ngStyle]="{ filter: isDarkTheme ? 'none' : 'invert(1)' }"
-        #myCarousel
-      >
-        <ng-template ngbSlide *ngFor="let reviewPair of groupedReviews">
-          <div
-            class="d-flex flex-column flex-md-row justify-content-center h-100 w-100"
-          >
-            <span
-              (click)="myCarousel.prev()"
-              class="left-carousel"
-              style="position: absolute; font-size: 46px; cursor: pointer"
-            >
-              &#8249;</span
-            >
+      <div class="position-relative">
+        <span
+          (click)="myCarousel.prev()"
+          class="carousel-arrow carousel-arrow-left"
+          style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%); font-size: 46px; cursor: pointer; z-index: 1000;"
+        >
+          &#8249;
+        </span>
+        <span
+          (click)="myCarousel.next()"
+          class="carousel-arrow carousel-arrow-right"
+          style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); font-size: 46px; cursor: pointer; z-index: 1000;"
+        >
+          &#8250;
+        </span>
+        <ngb-carousel
+          [showNavigationIndicators]="showNavigationIndicators"
+          [ngStyle]="{ filter: isDarkTheme ? 'none' : 'invert(1)' }"
+          #myCarousel
+        >
+          <ng-template ngbSlide *ngFor="let reviewPair of groupedReviews">
             <div
-              *ngFor="let review of reviewPair"
-              class="customer-feedback h-100 w-auto p-5 p-md-3"
-              data-aos="fade-up"
+              class="d-flex flex-column flex-md-row justify-content-center h-100 w-100"
             >
               <div
-                [ngStyle]="{ filter: isDarkTheme ? 'none' : 'invert(1)' }"
-                [ngClass]="isDarkTheme ? 'cf-cont-dark' : 'cf-cont-light'"
-                class="container cf-cont d-flex flex-column justify-content-around align-items-start"
+                *ngFor="let review of reviewPair"
+                class="customer-feedback h-100 w-auto p-5 p-md-3"
+                data-aos="fade-up"
               >
-                <div class="stars">
-                  <i
-                    *ngFor="let star of getStars(review.stars)"
-                    class="fa-solid fa-star mx-1"
-                    [ngStyle]="{ color: isDarkTheme ? 'white' : '#212529' }"
-                  ></i>
-                </div>
                 <div
-                  class="feedback"
-                  [ngStyle]="{ opacity: isDarkTheme ? '0.5' : '1' }"
+                  [ngStyle]="{ filter: isDarkTheme ? 'none' : 'invert(1)' }"
+                  [ngClass]="isDarkTheme ? 'cf-cont-dark' : 'cf-cont-light'"
+                  class="container cf-cont d-flex flex-column justify-content-around align-items-start"
                 >
-                  {{ review.message }}
-                </div>
-                <div
-                  class="customer d-flex justify-content-between w-100 align-items-end"
-                >
-                  <div class="customer-name">
-                    <h5>{{ review.name }}</h5>
-                    <p
-                      class="m-0"
-                      [ngStyle]="{ opacity: isDarkTheme ? '0.5' : '1' }"
-                    >
-                      {{ review.designation }}
-                    </p>
+                  <div class="stars">
+                    <i
+                      *ngFor="let star of getStars(review.stars)"
+                      class="fa-solid fa-star mx-1"
+                      [ngStyle]="{ color: isDarkTheme ? 'white' : '#212529' }"
+                    ></i>
                   </div>
-                  <div class="profile">
-                    <img
-                      style="border-radius: 50px; width: 50px; height: 50px"
-                      class=""
-                      [src]="review.profileImg"
-                      alt="profile"
-                      loading="lazy"
-                    />
+                  <div
+                    class="feedback"
+                    [ngStyle]="{ opacity: isDarkTheme ? '0.5' : '1' }"
+                  >
+                    {{ review.message }}
+                  </div>
+                  <div
+                    class="customer d-flex justify-content-between w-100 align-items-end"
+                  >
+                    <div class="customer-name">
+                      <h5>{{ review.name }}</h5>
+                      <p
+                        class="m-0"
+                        [ngStyle]="{ opacity: isDarkTheme ? '0.5' : '1' }"
+                      >
+                        {{ review.designation }}
+                      </p>
+                    </div>
+                    <div class="profile">
+                      <img
+                        style="border-radius: 50px; width: 50px; height: 50px"
+                        class=""
+                        [src]="review.profileImg"
+                        alt="profile"
+                        loading="lazy"
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <span
-              (click)="myCarousel.next()"
-              class="right-carousel"
-              style="position: absolute; font-size: 46px; cursor: pointer"
-              >&#8250;
-            </span>
-          </div>
-        </ng-template>
-      </ngb-carousel>
+          </ng-template>
+        </ngb-carousel>
+      </div>
     </div>
   </div>
 </div>
