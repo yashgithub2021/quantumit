@@ -1,36 +1,37 @@
 <div class="contianer-fluid casestudy">
   <div class="container frame-1 p-3 mt-sm-5 mt-4">
-    <div
-      class="heading d-flex flex-column flex-lg-row justify-content-between align-items-center"
-    >
-      <div
-        class="text frame-2-head w-100 d-flex align-items-start align-items-sm-center align-items-lg-start flex-column"
-      >
-        <div class="button">
+    <div class="d-flex flex-column flex-lg-row mt-2">
+      <div class="w-100 d-flex justify-content-center flex-column">
+        <div
+          class="button d-flex d-lg-block justify-content-sm-center justify-content-start"
+        >
           <button class="our-process-btn">Digital Marketing</button>
         </div>
-        <div class="txt w-100 mt-3">
+        <div class="txt w-75 mt-3">
           <h1 class="text-start text-sm-center text-lg-start text-capitalize">
             Citilandscape Supplies
           </h1>
         </div>
-        <div class="desc w-100">
-          <p [ngStyle]="{ opacity: isDarkTheme ? '0.5' : '1' }">
-            We partnered with The AMPS Institute to develop a customized app
-            supporting their entrepreneurial excellence programs, aligning with
-            their vision for empowering aspiring entrepreneurs.
+        <div class="desc w-100 d-flex align-items-center">
+          <p class=" " [ngStyle]="{ opacity: isDarkTheme ? '0.5' : '1' }">
+            Seanautic Marine Inc. / We partnered with The AMPS Institute to
+            develop a customized app supporting their entrepreneurial excellence
+            programs, aligning with their vision for empowering aspiring
+            entrepreneurs.
           </p>
         </div>
       </div>
+
+      <div
+        class="desc w-100 d-flex align-items-center justify-content-end pb-3 pb-sm-0"
+      >
+        <img
+          class="rounded-3"
+          src="https://karmill.s3.us-east-1.amazonaws.com/profile_pictures/citi2.webp"
+          alt="image"
+        />
+      </div>
     </div>
-  </div>
-  <div class="container frame-2 d-flex justify-content-center banner rounded-2">
-    <figure class="rounded-2 vandan">
-      <img
-        src="https://karmill.s3.us-east-1.amazonaws.com/profile_pictures/citi2.webp"
-        alt="image banner"
-      />
-    </figure>
   </div>
 
   <div class="container frame-3 my-sm-5 my-2">
@@ -154,24 +155,53 @@
       </div>
     </div>
   </div>
-
-  <div class="frame-5 container p-3 p-sm-5">
+  <div class="d-flex justify-content-center align-items-center">
+    <div class="slider">
+      <div class="slide-track">
+        <div class="slide" *ngFor="let img of aiService">
+          <h5
+            [ngStyle]="{ background: isDarkTheme ? '#111111' : '#ECF0FF' }"
+            class="fw-lighter"
+          >
+            {{ img.title }}
+          </h5>
+        </div>
+        <div class="slide" *ngFor="let img of aiService">
+          <h5
+            [ngStyle]="{ background: isDarkTheme ? '#111111' : '#ECF0FF' }"
+            class="fw-lighter"
+          >
+            {{ img.title }}
+          </h5>
+        </div>
+        <div class="slide" *ngFor="let img of aiService">
+          <h5
+            [ngStyle]="{ background: isDarkTheme ? '#111111' : '#ECF0FF' }"
+            class="fw-lighter"
+          >
+            {{ img.title }}
+          </h5>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="heading d-flex flex-column mb-lg-5 mb-lg-0 flex-lg-row justify-content-between align-items-center mt-sm-5 mt-1"
+  >
     <div
-      class="heading d-flex flex-column mb-lg-5 mb-lg-0 flex-lg-row justify-content-between align-items-center"
+      class="text frame-2-head w-100 d-flex align-items-start align-items-sm-center flex-column"
     >
-      <div
-        class="text frame-2-head w-100 d-flex align-items-start align-items-sm-center align-items-lg-start flex-column"
-      >
-        <div class="button">
-          <button class="our-process-btn">Solution</button>
-        </div>
-        <div class="txt w-100 mt-3">
-          <h1 class="text-start text-sm-center text-lg-start text-capitalize">
-            Solution Implementation
-          </h1>
-        </div>
+      <div class="button">
+        <button class="our-process-btn left20">Solution</button>
+      </div>
+      <div class="txt w-100 mt-3">
+        <h1 class="text-sm-center text-start text-capitalize left20">
+          Solution Implementation
+        </h1>
+      </div>
+      <div class="desc w-75 align-items-center">
         <div class="desc w-100 mt-sm-3">
-          <p class="" [ngStyle]="{ opacity: isDarkTheme ? '0.5' : '1' }">
+          <p class="left20" [ngStyle]="{ opacity: isDarkTheme ? '0.5' : '1' }">
             Citi Landscape Supplies addresses this problem with a comprehensive
             solution tailored to meet the needs of Auckland's landscaping
             community:
@@ -201,7 +231,7 @@
             </li>
           </ol>
 
-          <p class="opacity-50">
+          <p class="opacity-50 left20">
             By addressing these key areas, Citi Landscape Supplies effectively
             meets the needs of its customers, offering them a reliable,
             cost-effective, and convenient solution for their landscaping needs.
@@ -210,11 +240,215 @@
       </div>
     </div>
   </div>
-  <div class="container app-img d-flex justify-content-center mt-2">
-    <img
-      src="https://karmill.s3.us-east-1.amazonaws.com/profile_pictures/citi.webp"
-      alt=""
-    />
+  <div class="container d-flex justify-content-center">
+    <div
+      class="container w-75 d-flex flex-column flex-lg-row justify-content-between gap-3 p-0"
+    >
+      <div class="cards d-flex gap-3 flex-column justify-content-between">
+        <div
+          class="card p-0 p-sm-3 rounded-3"
+          [ngStyle]="{ background: isDarkTheme ? '#111111' : '#ECF0FF' }"
+          [ngClass]="isDarkTheme ? 'text-white' : 'text-black'"
+        >
+          <div class="container card-body">
+            <div class="image my-3">
+              <img src="../../../../assets/dm/casestudy/icon.svg" alt="" />
+            </div>
+            <div class="title my-3">
+              <h5>Enhanced Online Visibility</h5>
+            </div>
+            <div class="desc my-3">
+              <p class="" [ngStyle]="{ opacity: isDarkTheme ? '0.5' : '1' }">
+                Quantum IT implemented SEO strategies to improve search engine
+                rankings.
+              </p>
+            </div>
+            <div
+              class="link align-items-center d-flex justify-content-between w-100"
+            >
+              <p class="link-desc">
+                Check out more than 600 scripts from the community.
+              </p>
+              <i class="fa fa-solid fa-arrow-right mx-2"></i>
+            </div>
+          </div>
+        </div>
+        <div
+          class="card rounded-3"
+          [ngStyle]="{ background: isDarkTheme ? '#111111' : '#ECF0FF' }"
+        >
+          <div class="card-body p-0 rounded-top-3 numbers-section">
+            <div class="card-header border-0 d-flex justify-content-between">
+              <i class="fa-solid fa-xmark"></i>
+              <i class="fa-solid fa-arrow-up-from-bracket"></i>
+            </div>
+            <div class="p-4">
+              <div class="title my-3">
+                <h5 style="color: white">Result-Oriented Approach</h5>
+              </div>
+              <p class="card-text">
+                The overarching goal was to generate tangible results, such as
+                increased website traffic and lead generation.
+              </p>
+            </div>
+            <div
+              class="card-footer align-items-center rounded-0 text-body-secondary d-flex justify-content-between border-0"
+            >
+              <i class="fa-solid fa-paintbrush"></i>
+              <p class="jetbrains m-0">31 words · 125 characters</p>
+            </div>
+          </div>
+          <div
+            [ngStyle]="{ background: isDarkTheme ? '#111111' : '#ECF0FF' }"
+            [ngClass]="isDarkTheme ? 'text-white' : 'text-black'"
+            class="container card-body p-4"
+          >
+            <div class="image my-3">
+              <img src="../../../../assets/dm/casestudy/text.svg" alt="" />
+            </div>
+            <div class="title my-3">
+              <h5>Targeted Content Creation</h5>
+            </div>
+            <div class="desc my-3">
+              <p class="" [ngStyle]="{ opacity: isDarkTheme ? '0.5' : '1' }">
+                Tailored content marketing efforts were employed to create
+                engaging and informative content.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cards d-flex flex-column gap-3 justify-content-between">
+        <div
+          [ngStyle]="{ background: isDarkTheme ? '#111111' : '#ECF0FF' }"
+          [ngClass]="isDarkTheme ? 'text-white' : 'text-black'"
+          class="card p-0 p-sm-3 rounded-3"
+        >
+          <div class="container card-body">
+            <div class="image my-3">
+              <img src="../../../../assets/dm/casestudy/sk.svg" alt="" />
+            </div>
+            <div class="title my-3">
+              <h5>Social Media Management</h5>
+            </div>
+            <div class="desc my-3">
+              <p class="" [ngStyle]="{ opacity: isDarkTheme ? '0.5' : '1' }">
+                Quantum IT managed and optimized social media profiles to boost
+                brand awareness and engagement.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          [ngStyle]="{ background: isDarkTheme ? '#111111' : '#ECF0FF' }"
+          [ngClass]="isDarkTheme ? 'text-white' : 'text-black'"
+          class="card p-0 p-sm-3 rounded-3"
+        >
+          <div class="container card-body p-3">
+            <div class="title my-3">
+              <h5>Paid Advertising Campaigns</h5>
+            </div>
+            <div class="desc my-3">
+              <p class="" [ngStyle]="{ opacity: isDarkTheme ? '0.5' : '1' }">
+                Strategic pay-per-click (PPC) and display advertising campaigns
+                were launched to target specific audience segments.
+              </p>
+            </div>
+          </div>
+          <div class="container p-0 card-body">
+            <div class="image my-3">
+              <img
+                class="w-100"
+                src="../../../../assets/dm/casestudy/script-cmd.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          [ngStyle]="{ background: isDarkTheme ? '#111111' : '#ECF0FF' }"
+          [ngClass]="isDarkTheme ? 'text-white' : 'text-black'"
+          class="card rounded-3"
+        >
+          <div class="container text-center my-1 card-body">
+            <div class="image">
+              <img src="../../../../assets/dm/casestudy/icon2.svg" alt="" />
+            </div>
+          </div>
+          <div class="container text-center card-body">
+            <div class="d-flex justify-content-center align-items-center">
+              <p class="link-desc mx-2 mb-0">Build Your Own</p>
+              <i
+                class="fa fa-solid fa-arrow-right mx-2"
+                [ngClass]="isDarkTheme ? 'text-white' : 'text-black'"
+              ></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="cards d-flex flex-column justify-content-between gap-3 gap-lg-0"
+      >
+        <div
+          [ngStyle]="{ background: isDarkTheme ? '#111111' : '#ECF0FF' }"
+          [ngClass]="isDarkTheme ? 'text-white' : 'text-black'"
+          class="card p-0 p-sm-3 rounded-3"
+        >
+          <div class="container card-body">
+            <div class="image my-3">
+              <img src="../../../../assets/dm/casestudy/fs.svg" alt="" />
+            </div>
+            <div class="title my-3">
+              <h5>Data-Driven Analytics</h5>
+            </div>
+            <div class="desc my-3">
+              <p class="" [ngStyle]="{ opacity: isDarkTheme ? '0.5' : '1' }">
+                Advanced analytics tools were utilized to track campaign
+                performance and analyze user behavior.
+              </p>
+            </div>
+            <div
+              class="image p-3 container align-items-center d-flex justify-content-between w-100"
+            >
+              <img
+                src="../../../../assets/dm/casestudy/file-search.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          [ngStyle]="{ background: isDarkTheme ? '#111111' : '#ECF0FF' }"
+          [ngClass]="isDarkTheme ? 'text-white' : 'text-black'"
+          class="card rounded-3 p-0 p-sm-3"
+        >
+          <div class="container p-3 card-body">
+            <div class="image my-3">
+              <img src="../../../../assets/dm/casestudy/ql.svg" alt="" />
+            </div>
+            <div class="title my-3">
+              <h5>Continuous Optimization</h5>
+            </div>
+            <div class="desc my-3">
+              <p class="" [ngStyle]="{ opacity: isDarkTheme ? '0.5' : '1' }">
+                Quantum IT conducted ongoing optimization of digital marketing
+                efforts based on performance insights.
+              </p>
+              <!-- <p class="opacity-50">
+                            Use queries to perform
+                            searches on Google, Dribbble
+                            or other websites, like below.
+                        </p> -->
+            </div>
+          </div>
+          <div
+            class="image mt-4 container align-items-center d-flex justify-content-between w-100"
+          >
+            <img src="../../../../assets/dm/casestudy/quicklink.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
   <!-- <div class="result-heading container d-flex flex-column flex-lg-row justify-content-between align-items-center">
           <div class="text frame-2-head w-100 d-flex align-items-center align-items-lg-start flex-column ">
@@ -245,7 +479,6 @@
           </div>
       </div> -->
 </div>
-
 <div
   class="container-fluid d-flex justify-content-sm-end justify-content-center mb-sm-5 mb-3 me-sm-5"
 >

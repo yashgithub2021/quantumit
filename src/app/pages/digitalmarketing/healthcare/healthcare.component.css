@@ -164,7 +164,17 @@ body {
   padding: 30px 30px 40px 30px;
   text-align: center;
   border-radius: 30px;
+  transition: background 0.3s ease-in, color 0.3s ease-in;
 }
+.category:hover {
+  background: linear-gradient(90deg, #43baff 0%, #7141b1 100%);
+  color: white;
+  transition: background 0.3s ease-out, color 0.3s ease-out;
+}
+.category:hover img {
+  filter: brightness(0) invert(1);
+}
+
 .top-row .category {
   padding-left: 70px;
   padding-right: 70px;
@@ -199,10 +209,6 @@ body {
 .category > div + div {
   margin-top: 30px;
   margin-bottom: 10px;
-}
-
-.highlight-category {
-  background: linear-gradient(90deg, #43baff 0%, #7141b1 100%);
 }
 
 .container3 {
@@ -249,7 +255,7 @@ body {
 
 .stats-section {
   position: absolute;
-  top: 3673px;
+  top: 3773px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;
@@ -475,7 +481,7 @@ body {
 }
 
 .banner {
-  height: 500px;
+  height: 600px;
   width: 100%;
 }
 

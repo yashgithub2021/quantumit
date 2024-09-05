@@ -13,6 +13,37 @@ export class CitylandscapeComponent implements OnInit {
 
   allCaseStudyNevigate: CaseStudy[] = allCaseStudy;
   nextProjectCount: number = 0;
+  aiService = [
+    {
+      img: '../../../assets/ai/Frame1.png',
+      title: 'Search Engine Optimization (SEO)',
+    },
+
+    {
+      img: '../../../assets/ai/Frame2.png',
+      title: 'Content Marketing',
+    },
+
+    {
+      img: '../../../assets/ai/Frame3.png',
+      title: 'Pay-Per-Click (PPC) Advertising',
+    },
+
+    {
+      img: '../../../assets/ai/Frame4.png',
+      title: 'Social Media Marketing (SMM)',
+    },
+
+    {
+      img: '../../../assets/ai/Frame5.png',
+      title: 'Email Marketing',
+    },
+
+    {
+      img: '../../../assets/ai/Frame6.png',
+      title: 'Affiliate Marketing',
+    },
+  ];
 
   sectionFourNums = [
     {
