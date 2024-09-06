@@ -400,7 +400,50 @@
       </div>
     </div>
   </div>
+  <div class="container d-flex frame-3" *ngIf="androidService.why_choose_title">
+    <div
+      class="container d-flex flex-column justify-content-between my-5 px-lg-5"
+    >
+      <div
+        class="text frame-2-head w-100 d-flex align-items-center flex-column"
+      >
+        <div class="button">
+          <button class="our-process-btn">Why Choose?</button>
+        </div>
+        <div class="txt w-75">
+          <h1 class="text-capitalize text-align-center">
+            {{ androidService.why_choose_title }}
+          </h1>
+        </div>
+      </div>
 
+      <div class="what-we-do w-100 h-100 mt-5">
+        <div class="row w-100 h-100 g-4 align-items-center">
+          <div
+            data-aos="fade-up"
+            *ngFor="let data of androidService.why_choose"
+            class="col-lg-6 col-md-6 col-12 hover-card"
+          >
+            <div
+              [ngStyle]="{ background: isDarkTheme ? '#111111' : '#ECF0FF' }"
+              class="col-details px-4 ai-data py-4 py-lg-2 d-flex align-items-start justify-content-evenly flex-column"
+            >
+              <div class="title w-75">
+                <h5 class="">{{ data.title }}</h5>
+              </div>
+              <div class="desc w-100 ai-service-desc">
+                <p
+                  class="rgb115"
+                  [ngStyle]="{ opacity: isDarkTheme ? '0.5' : '1' }"
+                  [innerHTML]="data.desc"
+                ></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <div
     *ngIf="androidService.methodologyBtnTitle"
     class="frame-3 container-fluid px-0 d-flex"
