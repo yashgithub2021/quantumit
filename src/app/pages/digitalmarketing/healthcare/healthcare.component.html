@@ -1,4 +1,4 @@
-<section class="banner">
+<section [ngClass]="isDarkTheme ? 'banner' : 'light-banner'">
   <div>
     <img src="{{ images.doctorImage }}" alt="image" class="banner-image1" />
     <img src="{{ images.discussionImage }}" alt="image" class="banner-image2" />
@@ -15,12 +15,17 @@
       </h1>
     </div>
     <div class="banner-p">
-      <div style="margin-right: 40px">
-        <span style="color: #0099ff">100+ </span
-        ><span [ngStyle]="{ color: isDarkTheme ? '' : '#333333' }">
-          healpful
-          <br />
-          businesses
+      <div style="margin-right: 30px">
+        <span>
+          <div style="display: flex">
+            <span style="color: #0099ff"> 100+ </span>
+            <span [ngStyle]="{ color: isDarkTheme ? '' : '#333333' }"
+              >healpful</span
+            >
+          </div>
+          <span [ngStyle]="{ color: isDarkTheme ? '' : '#333333' }"
+            >businesses</span
+          >
         </span>
       </div>
       <div [ngStyle]="{ color: isDarkTheme ? '' : '#333333' }">
@@ -28,7 +33,11 @@
         propelling your business to new heights of success.
       </div>
     </div>
-    <div class="scroll-down" style="padding-top: 20px">
+    <div
+      class="scroll-down"
+      style="padding-top: 20px; cursor: pointer"
+      (click)="scrollDown()"
+    >
       Scroll Down<svg
         style="
           background-color: #0099ff;
@@ -51,11 +60,13 @@
       </svg>
     </div>
     <div>
-      <button class="get-started-btn">Get Started</button>
+      <button class="get-started-btn" (click)="scrollDown()">
+        Get Started
+      </button>
     </div>
   </div>
 </section>
-<section class="about-us">
+<section class="about-us" id="about-us">
   <div class="heading">
     <button class="our-service-btn">About Us</button>
     <h1>About Us</h1>
@@ -85,7 +96,7 @@
         *ngIf="isDarkTheme"
       />
       <img
-        src="../../../../assets/healthcare/stat20.jpeg"
+        src="../../../../assets/healthcare/stat20.webp"
         alt="Left Image"
         *ngIf="!isDarkTheme"
       />
@@ -138,10 +149,7 @@
   </div>
 </section>
 <section>
-  <div
-    class="container2"
-    [ngStyle]="{ 'text-align': isDarkTheme ? '' : 'left', 'margin-left': '8%' }"
-  >
+  <div class="container2">
     <button class="our-service-btn">Our Services</button>
 
     <h1 class="h1">Our Top Class Services</h1>
@@ -246,10 +254,7 @@
   </div>
 </section>
 <section>
-  <div
-    class="container2"
-    [ngStyle]="{ 'text-align': isDarkTheme ? '' : 'left', 'margin-left': '6%' }"
-  >
+  <div class="container2">
     <button class="our-service-btn">Our Process</button>
 
     <h1>How Quantum develops top-notch websites</h1>

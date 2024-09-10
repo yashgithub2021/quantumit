@@ -132,7 +132,7 @@
 
 .left-side::before {
   content: "";
-  background-image: url("../../../assets/homepage.jpeg");
+  background-image: url("../../../assets/homepage.webp");
   background-size: cover;
   background-position: left;
   background-repeat: no-repeat;

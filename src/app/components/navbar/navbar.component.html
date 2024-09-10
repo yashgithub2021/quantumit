@@ -444,6 +444,21 @@
                   NJ SEO Company</a
                 >
               </li>
+              <li routerLinkActive="active1">
+                <a
+                  [ngClass]="isDarkTheme ? 'text-white' : 'text-black'"
+                  class="dropdown-item border-0"
+                  [routerLink]="['digital-marketing', 'healthcare']"
+                  (click)="closeNavbar()"
+                >
+                  <img
+                    class="me-2"
+                    src="../../../assets/navbar/healthcare.svg"
+                    alt=""
+                  />
+                  Healthcare</a
+                >
+              </li>
               <!-- <li routerLinkActive="active1"><a [ngClass]="isDarkTheme?'text-white':'text-black'"
                                                                         class="dropdown-item border-0"
                                                                         [routerLink]="['digital-marketing', 'services', 'websiteDev']"

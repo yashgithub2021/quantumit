@@ -24,4 +24,10 @@ export class HealthcareComponent implements OnInit {
       this.isDarkTheme = isDarkTheme;
     });
   }
+  scrollDown(): void {
+    const target = document.getElementById('about-us');
+    if (target) {
+      target.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
 }

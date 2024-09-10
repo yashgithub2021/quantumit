@@ -191,7 +191,7 @@
                 border-radius: 10px;
                 opacity: 0.8;
               "
-              src="{{ androidService.ourProcessImg[0].img3 }}"
+              src="{{ androidService.ourProcessImg[0].img5 }}"
               alt="processes image"
             />
           </div>
@@ -350,7 +350,7 @@
     </div>
   </div>
 
-  <div class="container d-flex frame-2">
+  <div class="container d-flex frame-2" *ngIf="androidService.serviceTitle">
     <div
       class="container d-flex flex-column justify-content-between my-sm-5 my-0 px-lg-5"
     >
@@ -991,7 +991,10 @@
       </div>
     </div>
 
-    <div class="frame-3 container-fluid px-0 d-flex">
+    <div
+      class="frame-3 container-fluid px-0 d-flex"
+      *ngIf="serviceDetails.service"
+    >
       <div
         class="container-fluid d-flex flex-column justify-content-center my-sm-5 px-lg-5"
       >
@@ -1212,7 +1215,10 @@
       </div>
     </div>
 
-    <div class="frame-4 my-sm-5 my-3 container-fluid our-process">
+    <div
+      class="frame-4 my-sm-5 my-3 container-fluid our-process"
+      *ngIf="serviceDetails.ourApproach"
+    >
       <div
         class="container d-flex flex-column flex-lg-row justify-content-center align-items-center align-items-lg-start"
       >

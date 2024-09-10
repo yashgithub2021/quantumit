@@ -93,6 +93,12 @@ export class DetailsComponent implements OnInit {
       this.differentPageStatus = false;
     } else if (data.title === 'NJ SEO Company') {
       this.differentPageStatus = false;
+    } else if (data.title === 'SEO Services Indianapolis USA') {
+      this.differentPageStatus = false;
+    } else if (data.title === 'SEO Company USA') {
+      this.differentPageStatus = false;
+    } else if (data.title === 'AI Consulting Newyork') {
+      this.differentPageStatus = false;
     } else {
       this.differentPageStatus = true;
     }

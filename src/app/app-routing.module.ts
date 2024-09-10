@@ -7,46 +7,83 @@ import { HomeComponent } from './components/home/home.component';
 const routes: Routes = [
   { path: '', component: HomeComponent },
 
-  { path: 'artificial-intelligence', loadComponent: () => import('./components/ai-robot/ai-robot.component').then(c => c.AiRobotComponent) },
   {
-    path: 'web-development', loadChildren: () => import('./pages/web/web.module').then(m => m.WebModule)
+    path: 'artificial-intelligence',
+    loadComponent: () =>
+      import('./components/ai-robot/ai-robot.component').then(
+        (c) => c.AiRobotComponent
+      ),
   },
   {
-    path: 'ai', loadChildren: () => import('./pages/ai/ai.module').then(m => m.AiModule)
+    path: 'web-development',
+    loadChildren: () =>
+      import('./pages/web/web.module').then((m) => m.WebModule),
   },
   {
-    path: 'app-development', loadChildren: () => import('./pages/mobile/mobile.module').then(m => m.MobileModule)
+    path: 'ai',
+    loadChildren: () => import('./pages/ai/ai.module').then((m) => m.AiModule),
   },
   {
-    path: 'blog', loadChildren: () => import('./pages/blogs/blogs.module').then(m => m.BlogsModule)
+    path: 'app-development',
+    loadChildren: () =>
+      import('./pages/mobile/mobile.module').then((m) => m.MobileModule),
   },
   {
-    path: 'casestudy', loadChildren: () => import('./pages/casestudy/casestudy.module').then(m => m.CasestudyModule)
+    path: 'blog',
+    loadChildren: () =>
+      import('./pages/blogs/blogs.module').then((m) => m.BlogsModule),
   },
   {
-    path: 'digital-marketing', loadChildren: () => import('./pages/digitalmarketing/digitalmarketing.module').then(m => m.DigitalmarketingModule)
+    path: 'casestudy',
+    loadChildren: () =>
+      import('./pages/casestudy/casestudy.module').then(
+        (m) => m.CasestudyModule
+      ),
   },
   {
-    path: 'company', loadChildren: () => import('./pages/company/company.module').then(m => m.CompanyModule)
+    path: 'digital-marketing',
+    loadChildren: () =>
+      import('./pages/digitalmarketing/digitalmarketing.module').then(
+        (m) => m.DigitalmarketingModule
+      ),
   },
   {
-    path: 'portfolio', loadChildren: () => import('./pages/portfolio/portfolio.module').then(m => m.PortfolioModule)
+    path: 'company',
+    loadChildren: () =>
+      import('./pages/company/company.module').then((m) => m.CompanyModule),
   },
   {
-    path: 'payment', loadChildren: () => import('./pages/payment/payment.module').then(m => m.PaymentModule)
+    path: 'portfolio',
+    loadChildren: () =>
+      import('./pages/portfolio/portfolio.module').then(
+        (m) => m.PortfolioModule
+      ),
   },
-  { path: 'form', loadComponent: () => import('./components/form/form.component').then(f => f.FormComponent) },
+  {
+    path: 'payment',
+    loadChildren: () =>
+      import('./pages/payment/payment.module').then((m) => m.PaymentModule),
+  },
+  {
+    path: 'form',
+    loadComponent: () =>
+      import('./components/form/form.component').then((f) => f.FormComponent),
+  },
 
   {
-    path: ':id', loadComponent: () => import('./components/details/details.component').then(m => m.DetailsComponent),
+    path: ':id',
+    loadComponent: () =>
+      import('./components/details/details.component').then(
+        (m) => m.DetailsComponent
+      ),
     resolve: {
-      services: DataService
-    }
+      services: DataService,
+    },
   },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

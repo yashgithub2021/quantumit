@@ -1,5 +1,5 @@
-body {
-  margin: 0;
+* {
+  font-family: "Plus Jakarta Sans";
 }
 
 .about-us {
@@ -34,7 +34,7 @@ body {
 .p-desc {
   margin: 0;
   line-height: 1.6;
-  font-size: 1.5em;
+  font-size: 20px;
   color: rgb(181, 181, 181);
   text-align: justify;
 }
@@ -91,9 +91,9 @@ body {
 }
 
 .container1 {
-  margin-left: 33%;
+  margin-left: 32%;
   font-size: larger;
-  width: 170%;
+  width: 159%;
   margin-top: 30px;
 }
 
@@ -176,8 +176,8 @@ body {
 }
 
 .top-row .category {
-  padding-left: 70px;
-  padding-right: 70px;
+  padding-left: 63px;
+  padding-right: 63px;
 }
 .bottom-row .category {
   flex: 1;
@@ -246,7 +246,7 @@ body {
 }
 
 .last-text {
-  font-size: 32px;
+  font-size: 30px;
   font-weight: 400;
   line-height: 36px;
   margin-top: 20px;
@@ -255,7 +255,7 @@ body {
 
 .stats-section {
   position: absolute;
-  top: 3773px;
+  top: 3821px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;
@@ -320,7 +320,169 @@ body {
   color: white;
 }
 
-@media (max-width: 768px) {
+.get-started-btn {
+  padding: 15px;
+  background-color: #0099ff;
+  border-radius: 12px;
+  padding-left: 30px;
+  padding-right: 30px;
+  color: white;
+  display: none;
+}
+
+.banner {
+  z-index: -1;
+  height: 680px;
+  width: 100%;
+  background-image: url("../../../../assets/healthcare/vector1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.light-banner {
+  z-index: 0;
+  height: 680px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-image: url("../../../../assets/healthcare/lightVector1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+.banner-image1 {
+  position: absolute;
+  rotate: -13deg;
+  width: 20%;
+  clip-path: polygon(0 10%, 100% 10%, 100% 90%, 0 90%);
+  left: 6%;
+  top: 28%;
+}
+
+.banner-image2 {
+  position: absolute;
+  width: 20%;
+  right: 10%;
+  top: 30%;
+}
+.scroll-down {
+  cursor: pointer;
+}
+.banner-button {
+  margin-bottom: 20px;
+}
+
+.banner-text {
+  text-align: center;
+  padding-top: 70px;
+}
+
+.banner-h1 {
+  font-weight: 100;
+  font-size: 68px;
+}
+
+.healthcare {
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+}
+
+.healthcare::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: -5px;
+  right: 0;
+  bottom: -5px;
+  background-color: #0099ff;
+  border-radius: 36px;
+  transform: rotate(3deg);
+  z-index: -1;
+  padding: 0px 0px;
+  margin: 0px -10px;
+}
+
+.banner-p {
+  padding-top: 30px;
+  display: flex;
+  width: 50%;
+  margin: auto;
+  padding-left: 10%;
+  padding-right: 10%;
+  color: gainsboro;
+  text-align: left;
+  font-size: 14px;
+}
+
+.banner-span {
+  color: #008cbf;
+  margin-right: 80px;
+}
+
+.scroll-down {
+  cursor: pointer;
+  z-index: 1200;
+}
+
+@media screen and (max-width: 768px) {
+  .banner-h1 {
+    font-size: 22px;
+  }
+
+  .banner-button > button {
+    display: none;
+  }
+
+  .banner-image1 {
+    top: 20%;
+    width: 20%;
+    left: 2%;
+  }
+
+  .banner-image2 {
+    top: 170px;
+    width: 20%;
+    right: 1%;
+    z-index: 0;
+  }
+
+  .scroll-down {
+    display: none;
+  }
+
+  .banner-p {
+    margin-top: 20px;
+    padding: 0;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: left;
+    width: 80%;
+    font-size: 8px;
+    margin-bottom: 30px;
+    color: white;
+  }
+
+  .banner {
+    height: auto;
+  }
+  .light-banner {
+    height: fit-content;
+  }
+
+  .get-started-btn {
+    display: block;
+    border-color: #0099ff;
+    align-items: center;
+    width: fit-content;
+    margin: auto;
+    padding: 10px 12px 10px 12px;
+    font-size: 10px;
+  }
   .container2 p + p {
     display: block;
   }
@@ -368,14 +530,16 @@ body {
   .container1 {
     margin-top: 0;
     margin-left: 0;
-    width: 130% !important;
+    width: 133% !important;
     font-size: small;
+    align-items: center;
+    margin-left: 9%;
   }
 
   .item-text,
   .item-number,
   .item-text {
-    font-size: medium !important;
+    font-size: 12px !important;
   }
 
   .item-text {
@@ -415,7 +579,7 @@ body {
 
   .text {
     height: 344px;
-    width: 347px;
+    width: 329px;
     border-radius: 30px;
     margin: 0;
     padding: 30px;
@@ -445,7 +609,7 @@ body {
     position: static;
     padding: 20px;
     height: 142.2px;
-    width: 347px;
+    width: 332px;
     border-radius: 0px 0px 30px 30px;
     text-align: center;
     background-color: rgb(17, 17, 17);
@@ -457,7 +621,7 @@ body {
   .stat-item p,
   .stat-item h2 span,
   .stat-item h2 {
-    font-size: medium !important;
+    font-size: 12px;
   }
 
   .stat-item p,
@@ -468,140 +632,250 @@ body {
     font-weight: 600;
     line-height: normal;
   }
-}
-
-.get-started-btn {
-  padding: 15px;
-  background-color: #0099ff;
-  border-radius: 12px;
-  padding-left: 30px;
-  padding-right: 30px;
-  color: white;
-  display: none;
-}
-
-.banner {
-  height: 600px;
-  width: 100%;
-}
-
-.banner-image1 {
-  rotate: -13deg;
-  width: 20%;
-  clip-path: polygon(0 10%, 100% 10%, 100% 90%, 0 90%);
-  position: absolute;
-  left: 10%;
-  top: 30%;
-}
-
-.banner-image2 {
-  /* rotate: 13deg; */
-  width: 20%;
-  /* clip-path: polygon(10% 10%, 90% 10%, 90% 90%, 10% 90%); */
-  position: absolute;
-  right: 10%;
-  top: 30%;
-}
-
-.banner-button {
-  margin-bottom: 20px;
-}
-
-.banner-text {
-  text-align: center;
-  padding-top: 70px;
-}
-
-.banner-h1 {
-  font-weight: 100;
-  font-size: 68px;
-}
-
-.healthcare {
-  position: relative;
-  display: inline-block;
-
-  color: white;
-  z-index: 1;
-}
-
-.healthcare::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #0099ff;
-  border-radius: 50px;
-  transform: rotate(3deg);
-  z-index: -1;
-  padding: 0px 0px;
-  margin: 0px -10px;
-}
-
-.banner-p {
-  padding-top: 30px;
-  display: flex;
-  width: 50%;
-  margin: auto;
-  padding-left: 10%;
-  padding-right: 10%;
-  color: gainsboro;
-  text-align: left;
-  font-size: 14px;
-}
-
-.banner-span {
-  color: #008cbf;
-  margin-right: 80px;
-}
-
-@media screen and (max-width: 768px) {
-  .banner-h1 {
-    font-size: 22px;
-  }
-
-  .banner-button > button {
-    display: none;
-  }
-
-  .banner-image1 {
-    top: 180px;
-    width: 25%;
-    left: 2%;
-  }
-
-  .banner-image2 {
-    top: 175px;
-    width: 23%;
-    right: 3%;
+  .healthcare::before {
+    content: "";
+    position: absolute;
+    top: 0px !important;
+    left: 5px !important;
+    right: 5px !important;
+    bottom: -5px;
+    background-color: #0099ff;
+    border-radius: 36px;
+    transform: rotate(3deg);
     z-index: -1;
+    padding: 0px 0px;
+    margin: 0px -10px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .banner-image1 {
+    top: 15%;
+  }
+  .banner-image2 {
+    top: 12%;
+    right: 5%;
+  }
+  .our-service-btn {
+    margin: auto;
+  }
+  .about-us {
+    padding: 15px;
+  }
+
+  .heading {
+    width: 40%;
+    margin-left: 30px;
+    padding: 15px;
+  }
+
+  .description {
+    width: 55%;
+    padding: 15px;
+  }
+
+  .heading + h1 {
+    font-size: 1.8em;
+  }
+  .container2 h1 {
+    margin-top: 10px;
+  }
+
+  .p-desc {
+    font-size: 18px;
+  }
+
+  .image-section {
+    padding: 15px;
+  }
+
+  .image-container {
+    padding: 5px;
+  }
+
+  .left-image {
+    flex: 0 0 40%;
+    margin-right: 20px;
+    margin-top: 15px;
+  }
+
+  .right-image {
+    width: 80%;
+    margin-top: 20px;
+    margin-left: 10px;
+    height: 400px;
+  }
+
+  .image3 {
+    width: 60%;
+    margin-top: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+    height: 250px;
+  }
+
+  .container1 {
+    margin-left: 25%;
+    width: 120%;
+  }
+
+  .item {
+    padding: 8px 0;
+  }
+
+  .item-number {
+    margin-right: 30px;
+    font-size: 14px;
+  }
+
+  .item-text {
+    font-size: 14px;
+  }
+
+  .arrow {
+    font-size: 35px;
+  }
+
+  .container2 {
+    padding: 10%;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .container h1 {
+    font-size: 36px;
+    line-height: 50px;
+  }
+
+  .p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+
+  .container {
+    width: 90%;
+    margin-bottom: 80px;
+  }
+
+  .top-row,
+  .bottom-row {
+    gap: 15px;
+  }
+
+  .category {
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  .top-row {
+    margin-bottom: 0;
+  }
+
+  .bottom-row .category {
+    flex: 1;
+  }
+
+  .top-row,
+  .bottom-row {
+    display: block;
+  }
+  .category > div > img {
+    width: 40px;
+  }
+
+  .container3 {
+    margin: auto;
+    width: 90%;
+    padding: 40px;
+    flex-direction: column;
+  }
+
+  .text {
+    width: 642px;
+    height: auto;
+    padding: 20px;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .image4 {
+    margin-right: 0;
+    align-items: center;
+  }
+
+  .image4 img {
+    height: auto;
+    width: 642px;
+    margin-left: 50px;
+    border-radius: 30px 30px 0px 0px;
+  }
+
+  .last-text {
+    font-size: 20px;
+    line-height: 28px;
+    margin-top: 20px;
+  }
+
+  .stats-section {
+    align-items: center;
+    position: static;
+    width: 642px;
+    margin: auto;
+    margin-left: 50px;
+    height: auto;
+    padding: 20px;
+    border-radius: 0px 0px 30px 30px;
+    text-align: center;
+    background-color: rgb(17, 17, 17);
+  }
+
+  .stat-item {
+    margin-left: 0;
+  }
+
+  .healthcare::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #0099ff;
+    border-radius: 36px;
+    transform: rotate(3deg);
+  }
+
+  .banner {
+    height: fit-content;
+    background-size: cover;
+  }
+  .light-banner {
+    height: fit-content;
+  }
+
+  .get-started-btn {
+    display: block;
+    border-color: #0099ff;
+    margin: auto;
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .banner-p {
+    padding: 20px;
+    font-size: 12px;
+    color: white;
+  }
+
+  .banner-h1 {
+    font-size: 36px;
   }
 
   .scroll-down {
     display: none;
   }
 
-  .banner-p {
-    margin-top: 20px;
-    padding: 0;
-    text-align: left;
-    width: 80%;
-    margin-bottom: 30px;
-    color: white;
-  }
-
-  .banner {
-    height: auto;
-  }
-
-  .get-started-btn {
+  .banner-button > button {
     display: block;
-    border-color: #0099ff;
-
-    align-items: center;
-    width: fit-content;
-    margin: auto;
   }
 }

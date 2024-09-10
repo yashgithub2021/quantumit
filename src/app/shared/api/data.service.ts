@@ -7,6 +7,7 @@ import {
 import { Observable, of } from 'rxjs';
 import {
   AIAgentDevelopment,
+  AIConsultingNetwork,
   AICopilotDevelopment,
   AccountPayable,
   AccountReceivableRecovery,
@@ -23,6 +24,8 @@ import {
   NJSEOCompany,
   ProfessionalSEOServicesCompany,
   PurchaseOrder,
+  SEOCompanyUSA,
+  SEOServicesIndonapolisUSA,
   WebDevelopmentCompanyUSA,
   adaptiveAI,
   aiAndSoftDevelopment,
@@ -178,6 +181,21 @@ export class DataService implements Resolve<any> {
         title: 'Mobile App Development Dallas',
         services: MobileAppDevelopmentDallasServices,
       });
+    } else if (id === 'seo-services-indianapolis-usa') {
+      return of({
+        title: 'SEO Services Indianapolis USA',
+        services: SEOServicesIndonapolisUSA,
+      });
+    } else if (id === 'seo-company-usa') {
+      return of({
+        title: 'SEO Company USA',
+        services: SEOCompanyUSA,
+      });
+    } else if (id === 'ai-consulting-newyork') {
+      return of({
+        title: 'AI Consulting Newyork',
+        services: AIConsultingNetwork,
+      });
     } else if (id === 'web-development-company-usa') {
       return of({
         title: 'Web Development Company USA',
@@ -185,8 +203,7 @@ export class DataService implements Resolve<any> {
       });
     } else if (id === 'professional-seo-services-company') {
       return of({
-        title:
-          'Search Engine Optimization Services | SEO ServicesSearch Engine Optimization Services | SEO Services',
+        title: 'Professional SEO Services Company',
         services: ProfessionalSEOServicesCompany,
         description:
           "Boost your online presence with expert Search Engine Optimization Services from Quantum IT Innovation. Discover top-notch SEO services to enhance your website's visibility.",
