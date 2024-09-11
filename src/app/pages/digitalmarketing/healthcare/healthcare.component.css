@@ -14,6 +14,9 @@
   width: 35%;
   margin-left: 70px;
   box-sizing: border-box;
+  padding: 20px;
+  padding-bottom: 0px;
+  padding-top: 0px;
 }
 
 .description {
@@ -22,19 +25,15 @@
   padding: 20px;
 }
 
-.heading {
-  padding: 20px;
-}
-
-.heading+h1 {
+.heading + h1 {
   margin: 0;
-  font-size: 2em;
+  font-size: 42px;
 }
 
 .p-desc {
   margin: 0;
   line-height: 1.6;
-  font-size: 20px;
+  font-size: 16px;
   color: rgb(181, 181, 181);
   text-align: justify;
 }
@@ -74,7 +73,7 @@
   height: 450px;
 }
 
-.image-container>img {
+.image-container > img {
   height: auto;
   display: block;
   border-radius: 30px;
@@ -91,9 +90,9 @@
 }
 
 .container1 {
-  margin-left: 32%;
+  margin-left: 39%;
   font-size: larger;
-  width: 150%;
+  width: 173%;
   margin-top: 30px;
 }
 
@@ -101,7 +100,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 0;
+  padding: 15px 0;
   border-bottom: 2px solid #9f9f9f;
   color: #9f9f9f;
 }
@@ -112,18 +111,18 @@
 
 .item-number {
   margin-right: 50px;
-  font-size: larger;
+  font-size: 20px;
 }
 
 .item-text {
   flex-grow: 1;
   padding-left: 10px;
 
-  font-size: larger;
+  font-size: 20px;
 }
 
 .arrow {
-  font-size: 40px;
+  font-size: 25px;
 }
 
 .container2 {
@@ -178,6 +177,7 @@
 }
 
 .top-row .category {
+  flex: 1;
   padding-left: 63px;
   padding-right: 63px;
 }
@@ -190,7 +190,7 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  font-size: 26px;
+  font-size: 20px;
   font-weight: 600;
 }
 
@@ -202,14 +202,14 @@
   flex: 1;
 }
 
-.category>div>img {
+.category > div > img {
   width: 50px;
   align-items: center;
   margin: auto;
   margin-top: 10px;
 }
 
-.category>div+div {
+.category > div + div {
   margin-top: 30px;
   margin-bottom: 10px;
 }
@@ -225,7 +225,7 @@
 
 .text {
   width: 642px;
-  height: 840px;
+  height: 738px;
   padding: 60px;
   margin-right: 30px;
   text-align: justify;
@@ -242,14 +242,14 @@
 
 .image4 img {
   border-radius: 40px 40px 0px 0px;
-  height: 605px;
+  height: auto;
   width: 700px;
   top: 361px;
   left: 795px;
 }
 
 .last-text {
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 400;
   line-height: 36px;
   margin-top: 20px;
@@ -258,7 +258,7 @@
 
 .stats-section {
   position: absolute;
-  top: 3821px;
+  top: 3550px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;
@@ -317,11 +317,11 @@
   backdrop-filter: blur(2px);
 }
 
-.container2 p+p {
+.container2 p + p {
   display: none;
 }
 
-.container1>.item+.highlight {
+.container1 > .item + .highlight {
   color: white;
 }
 
@@ -441,7 +441,7 @@
     font-size: 22px;
   }
 
-  .banner-button>button {
+  .banner-button > button {
     display: none;
   }
 
@@ -492,7 +492,7 @@
     font-size: 10px;
   }
 
-  .container2 p+p {
+  .container2 p + p {
     display: block;
   }
 
@@ -591,15 +591,14 @@
   }
 
   .text {
-    height: 344px;
+    height: 470px;
     width: 329px;
     border-radius: 30px;
-    margin: 0;
+    margin: auto;
     padding: 30px;
   }
 
   .last-text {
-    height: 264px;
     line-height: 22px;
     font-size: 12px;
     font-weight: 400;
@@ -608,13 +607,13 @@
   }
 
   .image4 {
-    margin: 0;
+    margin: auto;
     padding: 0;
   }
 
   .image4 img {
     height: 224px;
-    width: 347px;
+    width: 332px;
     border-radius: 40px 40px 0px 0px;
     margin-top: 20px;
   }
@@ -693,7 +692,7 @@
     padding: 15px;
   }
 
-  .heading+h1 {
+  .heading + h1 {
     font-size: 1.8em;
   }
 
@@ -735,7 +734,7 @@
   }
 
   .container1 {
-    margin-left: 25%;
+    margin-left: 6%;
     width: 120%;
   }
 
@@ -800,27 +799,24 @@
     display: block;
   }
 
-  .category>div>img {
+  .category > div > img {
     width: 40px;
   }
 
   .container3 {
-    margin: auto;
-    width: 90%;
     padding: 40px;
     flex-direction: column;
+    align-items: center;
   }
 
   .text {
     width: 642px;
     height: auto;
     padding: 20px;
-    margin-right: 0;
     margin-bottom: 30px;
   }
 
   .image4 {
-    margin-right: 0;
     align-items: center;
   }
 
@@ -834,7 +830,7 @@
   .last-text {
     font-size: 20px;
     line-height: 28px;
-    margin-top: 20px;
+    margin: 20px;
   }
 
   .stats-section {
@@ -851,7 +847,17 @@
   }
 
   .stat-item {
-    margin-left: 0;
+    margin-left: 40px;
+    font-size: 16px;
+  }
+  .stat-item > p {
+    font-size: 16px;
+  }
+  .stat-item > h2 {
+    font-size: 16px;
+  }
+  .stat-item > h2 > span {
+    font-size: 16px;
   }
 
   .healthcare::before {
@@ -897,7 +903,7 @@
     display: none;
   }
 
-  .banner-button>button {
+  .banner-button > button {
     display: block;
   }
 }
