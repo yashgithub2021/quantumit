@@ -26,7 +26,7 @@
   padding: 20px;
 }
 
-.heading + h1 {
+.heading+h1 {
   margin: 0;
   font-size: 2em;
 }
@@ -74,7 +74,7 @@
   height: 450px;
 }
 
-.image-container > img {
+.image-container>img {
   height: auto;
   display: block;
   border-radius: 30px;
@@ -93,7 +93,7 @@
 .container1 {
   margin-left: 32%;
   font-size: larger;
-  width: 159%;
+  width: 150%;
   margin-top: 30px;
 }
 
@@ -166,11 +166,13 @@
   border-radius: 30px;
   transition: background 0.3s ease-in, color 0.3s ease-in;
 }
+
 .category:hover {
   background: linear-gradient(90deg, #43baff 0%, #7141b1 100%);
   color: white;
   transition: background 0.3s ease-out, color 0.3s ease-out;
 }
+
 .category:hover img {
   filter: brightness(0) invert(1);
 }
@@ -179,6 +181,7 @@
   padding-left: 63px;
   padding-right: 63px;
 }
+
 .bottom-row .category {
   flex: 1;
 }
@@ -199,14 +202,14 @@
   flex: 1;
 }
 
-.category > div > img {
+.category>div>img {
   width: 50px;
   align-items: center;
   margin: auto;
   margin-top: 10px;
 }
 
-.category > div + div {
+.category>div+div {
   margin-top: 30px;
   margin-bottom: 10px;
 }
@@ -313,10 +316,12 @@
   -webkit-text-fill-color: transparent;
   backdrop-filter: blur(2px);
 }
-.container2 p + p {
+
+.container2 p+p {
   display: none;
 }
-.container1 > .item + .highlight {
+
+.container1>.item+.highlight {
   color: white;
 }
 
@@ -366,12 +371,14 @@
 .banner-image2 {
   position: absolute;
   width: 20%;
-  right: 10%;
+  right: 8%;
   top: 30%;
 }
+
 .scroll-down {
   cursor: pointer;
 }
+
 .banner-button {
   margin-bottom: 20px;
 }
@@ -434,7 +441,7 @@
     font-size: 22px;
   }
 
-  .banner-button > button {
+  .banner-button>button {
     display: none;
   }
 
@@ -470,6 +477,7 @@
   .banner {
     height: auto;
   }
+
   .light-banner {
     height: fit-content;
   }
@@ -483,18 +491,22 @@
     padding: 10px 12px 10px 12px;
     font-size: 10px;
   }
-  .container2 p + p {
+
+  .container2 p+p {
     display: block;
   }
+
   .container2 p {
     display: none;
   }
+
   .heading {
     margin-left: 0px;
     box-sizing: border-box;
     padding-bottom: 0px;
     border-radius: 10px;
   }
+
   .container2 {
     margin-bottom: 0;
   }
@@ -567,6 +579,7 @@
     margin-left: 15px;
     margin-right: 15px;
   }
+
   .container {
     margin-bottom: 0;
   }
@@ -598,6 +611,7 @@
     margin: 0;
     padding: 0;
   }
+
   .image4 img {
     height: 224px;
     width: 347px;
@@ -614,6 +628,7 @@
     text-align: center;
     background-color: rgb(17, 17, 17);
   }
+
   .stat-item {
     margin-left: 0;
   }
@@ -632,6 +647,7 @@
     font-weight: 600;
     line-height: normal;
   }
+
   .healthcare::before {
     content: "";
     position: absolute;
@@ -652,13 +668,16 @@
   .banner-image1 {
     top: 15%;
   }
+
   .banner-image2 {
     top: 12%;
     right: 5%;
   }
+
   .our-service-btn {
     margin: auto;
   }
+
   .about-us {
     padding: 15px;
   }
@@ -674,9 +693,10 @@
     padding: 15px;
   }
 
-  .heading + h1 {
+  .heading+h1 {
     font-size: 1.8em;
   }
+
   .container2 h1 {
     margin-top: 10px;
   }
@@ -779,7 +799,8 @@
   .bottom-row {
     display: block;
   }
-  .category > div > img {
+
+  .category>div>img {
     width: 40px;
   }
 
@@ -849,6 +870,7 @@
     height: fit-content;
     background-size: cover;
   }
+
   .light-banner {
     height: fit-content;
   }
@@ -875,7 +897,7 @@
     display: none;
   }
 
-  .banner-button > button {
+  .banner-button>button {
     display: block;
   }
 }
