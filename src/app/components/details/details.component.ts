@@ -99,6 +99,10 @@ export class DetailsComponent implements OnInit {
       this.differentPageStatus = false;
     } else if (data.title === 'AI Consulting Newyork') {
       this.differentPageStatus = false;
+    } else if (data.title === 'AI Consulting and Development Los Angeles') {
+      this.differentPageStatus = false;
+    } else if (data.title === 'AI Consulting Dallas') {
+      this.differentPageStatus = false;
     } else {
       this.differentPageStatus = true;
     }

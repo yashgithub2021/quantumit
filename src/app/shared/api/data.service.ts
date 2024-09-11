@@ -7,7 +7,9 @@ import {
 import { Observable, of } from 'rxjs';
 import {
   AIAgentDevelopment,
+  AIConsultingDallas,
   AIConsultingNetwork,
+  AIConsultingandDevelopmentLosAngeles,
   AICopilotDevelopment,
   AccountPayable,
   AccountReceivableRecovery,
@@ -195,6 +197,16 @@ export class DataService implements Resolve<any> {
       return of({
         title: 'AI Consulting Newyork',
         services: AIConsultingNetwork,
+      });
+    } else if (id === 'ai-consulting-and_development-los-angeles') {
+      return of({
+        title: 'AI Consulting and Development Los Angeles',
+        services: AIConsultingandDevelopmentLosAngeles,
+      });
+    } else if (id === 'ai-consulting-dallas') {
+      return of({
+        title: 'AI Consulting Dallas',
+        services: AIConsultingDallas,
       });
     } else if (id === 'web-development-company-usa') {
       return of({

@@ -257,7 +257,7 @@ app-about .carousel-indicators {
 }
 
 app-service .frame-3 .ai-service-desc b,
-.rgb115 > b {
+.rgb115 b {
   color: rgb(115, 115, 218);
 }
 
