@@ -1,16 +1,23 @@
-import { Component, HostListener, OnInit, Renderer2 } from '@angular/core';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  HostListener,
+  OnInit,
+  Renderer2,
+} from '@angular/core';
 import { ApiService } from './shared/api/api.service';
 
 @Component({
   selector: 'app-root',
+  changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
 })
 export class AppComponent implements OnInit {
-  constructor(private renderer: Renderer2, private api: ApiService) { }
+  constructor(private renderer: Renderer2, private api: ApiService) {}
 
   title = 'quantumit';
-  theme = 'dark'
+  theme = 'dark';
   isDarkMode!: boolean;
   //this is for show and hide arrow button on window
   isVisible = true;
@@ -21,7 +28,10 @@ export class AppComponent implements OnInit {
     this.isDarkMode = this.isDarkTheme(); // Example: Get theme preference from local storage or service
     // console.log(this.isDarkMode)
     this.setTheme(this.isDarkMode);
-    this.themechange()
+    this.themechange();
+  }
+  onCloseBanner() {
+    this.api.setBannerState(false); // Notify that the banner should be closed
   }
   setTheme(isDarkTheme: boolean) {
     // Add or remove CSS class based on theme preference
@@ -48,11 +58,11 @@ export class AppComponent implements OnInit {
 
   @HostListener('window:scroll', [])
   onWindowScroll() {
-    const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    if(currentScrollTop==0){
-      this.isVisible=true;
-    }
-    else if (currentScrollTop < this.previousScrollTop) {
+    const currentScrollTop =
+      window.pageYOffset || document.documentElement.scrollTop;
+    if (currentScrollTop == 0) {
+      this.isVisible = true;
+    } else if (currentScrollTop < this.previousScrollTop) {
       // Scrolling up
       this.isVisible = false;
     } else {

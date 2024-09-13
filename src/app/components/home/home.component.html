@@ -172,7 +172,7 @@
       >
         <div class="row gap-lg-0 gap-3" data-aos="fade-up">
           <div
-            *ngFor="let data of services"
+            *ngFor="let data of services; trackBy: trackByFn"
             [ngClass]="isDarkTheme ? 'dark-card' : 'light-card'"
             class="position-relative col cards d-flex flex-column align-items-center justify-content-evenly"
             [routerLink]="data.link"
@@ -242,7 +242,7 @@
         [ngClass]="isDarkTheme ? 'slider-dark' : 'slider-light'"
       >
         <div class="slide-track">
-          <div class="slide" *ngFor="let img of brandLogo">
+          <div class="slide" *ngFor="let img of brandLogo; trackBy: trackByFn">
             <img
               [ngStyle]="{ filter: isDarkTheme ? 'invert(0)' : 'invert(1)' }"
               [src]="img.img"
@@ -251,7 +251,7 @@
               loading="lazy"
             />
           </div>
-          <div class="slide" *ngFor="let img of brandLogo">
+          <div class="slide" *ngFor="let img of brandLogo; trackBy: trackByFn">
             <img
               [ngStyle]="{ filter: isDarkTheme ? 'invert(0)' : 'invert(1)' }"
               [src]="img.img"
@@ -282,7 +282,7 @@
       </div>
       <div id="services" class="container services w-100 h-100">
         <div class="row">
-          <ng-container *ngFor="let service of ourServices">
+          <ng-container *ngFor="let service of ourServices; trackBy: trackByFn">
             <div
               data-aos="slide-up"
               routerLink="{{ service.link }}"
@@ -312,7 +312,7 @@
           class="row text-align-center justify-content-center align-content-center"
         >
           <div
-            *ngFor="let nums of sectionFourNums"
+            *ngFor="let nums of sectionFourNums; trackBy: trackByFn"
             class="miletone-container col-sm-3 col-12 text-white"
           >
             <div class="miletone-number fw-bolder">{{ nums.currentNum }} +</div>
@@ -510,12 +510,15 @@
           [ngStyle]="{ filter: isDarkTheme ? 'none' : 'invert(1)' }"
           #myCarousel
         >
-          <ng-template ngbSlide *ngFor="let reviewPair of groupedReviews">
+          <ng-template
+            ngbSlide
+            *ngFor="let reviewPair of groupedReviews; trackBy: trackByFn"
+          >
             <div
               class="d-flex flex-column flex-md-row justify-content-center h-100 w-100"
             >
               <div
-                *ngFor="let review of reviewPair"
+                *ngFor="let review of reviewPair; trackBy: trackByFn"
                 class="customer-feedback h-100 w-auto p-5 p-md-3"
                 data-aos="fade-up"
               >
@@ -526,7 +529,10 @@
                 >
                   <div class="stars">
                     <i
-                      *ngFor="let star of getStars(review.stars)"
+                      *ngFor="
+                        let star of getStars(review.stars);
+                        trackBy: trackByFn
+                      "
                       class="fa-solid fa-star mx-1"
                       [ngStyle]="{ color: isDarkTheme ? 'white' : '#212529' }"
                     ></i>

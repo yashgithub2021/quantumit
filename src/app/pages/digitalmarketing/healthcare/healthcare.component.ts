@@ -8,6 +8,7 @@ import { ApiService } from 'src/app/shared/api/api.service';
 })
 export class HealthcareComponent implements OnInit {
   isDarkTheme: boolean = false;
+  bannerVisible: boolean = true;
   images = {
     doctorImage: '../../../../assets/healthcare/doctor.webp',
     discussionImage: '../../../../assets/healthcare/discussion.webp',
@@ -18,6 +19,9 @@ export class HealthcareComponent implements OnInit {
   ngOnInit(): void {
     this.isDarkTheme = this.api.isDarkTheme();
     this.themechange();
+    this.api.bannerState$.subscribe((isVisible) => {
+      this.bannerVisible = isVisible;
+    });
   }
   themechange() {
     this.api.themeChanged.subscribe((isDarkTheme: boolean) => {

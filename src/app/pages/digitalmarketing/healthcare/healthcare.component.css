@@ -73,12 +73,6 @@
   height: 450px;
 }
 
-.image-container > img {
-  height: auto;
-  display: block;
-  border-radius: 30px;
-}
-
 .image3 {
   width: 50%;
   border-radius: 30px;
@@ -349,9 +343,6 @@
   z-index: 0;
   height: 680px;
   width: 100%;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
   background-image: url("../../../../assets/healthcare/lightVector1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -374,7 +365,12 @@
   right: 8%;
   top: 30%;
 }
-
+.banner-false-left {
+  top: 23%;
+}
+.banner-false-right {
+  top: 25%;
+}
 .scroll-down {
   cursor: pointer;
 }
@@ -436,7 +432,21 @@
   z-index: 1200;
 }
 
-@media screen and (max-width: 768px) {
+@media (max-height: 500px) {
+  .banner-image1 {
+    top: 40% !important;
+  }
+  .banner-image2 {
+    top: 30% !important;
+  }
+  .banner-false-left {
+    top: 35% !important;
+  }
+  .banner-false-right {
+    top: 100px !important;
+  }
+}
+@media screen and (max-width: 766px) {
   .banner-h1 {
     font-size: 22px;
   }
@@ -444,7 +454,12 @@
   .banner-button > button {
     display: none;
   }
-
+  .banner-false-left {
+    top: 13% !important;
+  }
+  .banner-false-right {
+    top: 120px !important;
+  }
   .banner-image1 {
     top: 20%;
     width: 20%;
@@ -512,7 +527,7 @@
   }
 
   .right-image {
-    height: 200px;
+    height: auto;
     margin-top: 20px;
     margin-left: 0px;
   }
@@ -527,16 +542,13 @@
   }
 
   .image-container {
-    flex: 1 0 100%;
     padding: 0px;
+    margin: 0;
+    margin: auto;
   }
 
   .p-desc {
-    font-size: medium;
-  }
-
-  .image3 {
-    display: none;
+    font-size: 14px;
   }
 
   .container1 {
@@ -646,7 +658,12 @@
     font-weight: 600;
     line-height: normal;
   }
-
+  .image-section {
+    display: block;
+  }
+  .image3 {
+    display: none;
+  }
   .healthcare::before {
     content: "";
     position: absolute;
@@ -663,14 +680,20 @@
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 767px) and (max-width: 1024px) {
   .banner-image1 {
-    top: 15%;
+    top: 21%;
   }
 
   .banner-image2 {
-    top: 12%;
+    top: 20%;
     right: 5%;
+  }
+  .banner-false-left {
+    top: 16%;
+  }
+  .banner-false-right {
+    top: 18%;
   }
 
   .our-service-btn {
@@ -711,23 +734,24 @@
   .image-container {
     padding: 5px;
   }
-
+  .image-container > img {
+    border-radius: 20px;
+  }
   .left-image {
-    flex: 0 0 40%;
     margin-right: 20px;
     margin-top: 15px;
+    width: 50%;
   }
 
   .right-image {
-    width: 80%;
+    width: 50%;
     margin-top: 20px;
     margin-left: 10px;
-    height: 400px;
   }
 
   .image3 {
     width: 60%;
-    margin-top: 100px;
+    margin-top: 10px !important;
     margin-left: 50px;
     margin-right: 50px;
     height: 250px;

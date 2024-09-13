@@ -1,19 +1,23 @@
 import { HttpClient, HttpParams } from '@angular/common/http';
 import { EventEmitter, Injectable } from '@angular/core';
+import { Subject } from 'rxjs';
 
 const YOUR_ACCESS_KEY = '9yykUwGxYq0OK9WtmLoup4edvRRSSAkA';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class ApiService {
-  baseUrl = 'https://api.quantumitinnovation.com/'
+  baseUrl = 'https://api.quantumitinnovation.com/';
   private darkTheme = true;
-
+  private bannerStateSubject = new Subject<boolean>();
+  bannerState$ = this.bannerStateSubject.asObservable();
   themeChanged: EventEmitter<boolean> = new EventEmitter<boolean>();
 
-  constructor(private http: HttpClient) { }
-
+  constructor(private http: HttpClient) {}
+  setBannerState(isVisible: boolean) {
+    this.bannerStateSubject.next(isVisible);
+  }
   setDarkTheme(isDarkTheme: boolean): void {
     this.darkTheme = isDarkTheme;
     document.body.classList.toggle('dark-theme', isDarkTheme);
@@ -31,11 +35,11 @@ export class ApiService {
   }
 
   getMembers() {
-    return this.http.get(`${this.baseUrl}api/team/team`)
+    return this.http.get(`${this.baseUrl}api/team/team`);
   }
 
   getReviews() {
-    return this.http.get(`${this.baseUrl}api/feedback/feedback`)
+    return this.http.get(`${this.baseUrl}api/feedback/feedback`);
   }
 
   getBlogs() {
@@ -44,7 +48,7 @@ export class ApiService {
     const params = new HttpParams()
       .set('resultPerPage', resultPerPage.toString())
       .set('currentPage', currentPage.toString());
-    return this.http.get(`${this.baseUrl}api/blogs/blog`, { params })
+    return this.http.get(`${this.baseUrl}api/blogs/blog`, { params });
   }
 
   getBlogDetails(id: any) {
@@ -52,19 +56,19 @@ export class ApiService {
   }
 
   getContributors() {
-    return this.http.get(`${this.baseUrl}api/contributor/contributor`)
+    return this.http.get(`${this.baseUrl}api/contributor/contributor`);
   }
 
   getProjects() {
-    return this.http.get(`${this.baseUrl}api/projects/project`)
+    return this.http.get(`${this.baseUrl}api/projects/project`);
   }
 
   getMobileAppProjects() {
-    return this.http.get(`${this.baseUrl}api/projects/mobile-app-projects`)
+    return this.http.get(`${this.baseUrl}api/projects/mobile-app-projects`);
   }
 
   getWebAppProjects() {
-    return this.http.get(`${this.baseUrl}api/projects/web-app-projects`)
+    return this.http.get(`${this.baseUrl}api/projects/web-app-projects`);
   }
 
   getProjectsById(id: any) {
@@ -76,19 +80,23 @@ export class ApiService {
   }
 
   saveContactForm(form: any) {
-    return this.http.post(`${this.baseUrl}api/contactus/contactus`, form)
+    return this.http.post(`${this.baseUrl}api/contactus/contactus`, form);
   }
   getIpAddress() {
-    return this.http.get<{ ip: string }>('https://api.ipify.org?format=json')
+    return this.http.get<{ ip: string }>('https://api.ipify.org?format=json');
   }
   getLocation(ipData: any) {
-    return this.http.get<any>(`https://ipinfo.io/${ipData.ip}/json?token=61247512e441c3`);
+    return this.http.get<any>(
+      `https://ipinfo.io/${ipData.ip}/json?token=61247512e441c3`
+    );
   }
   getCategoryOfBlogs() {
     return this.http.get<any>(`${this.baseUrl}api/categories/getCategories`);
   }
   getBlogsByCategory(category: string) {
-    let body = { category }
-    return this.http.get<any>(`${this.baseUrl}api/blogs/blogsByCategory`, { params: body });
+    let body = { category };
+    return this.http.get<any>(`${this.baseUrl}api/blogs/blogsByCategory`, {
+      params: body,
+    });
   }
 }

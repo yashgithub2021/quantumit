@@ -1,7 +1,17 @@
 <section [ngClass]="isDarkTheme ? 'banner' : 'light-banner'">
   <div>
-    <img src="{{ images.doctorImage }}" alt="image" class="banner-image1" />
-    <img src="{{ images.discussionImage }}" alt="image" class="banner-image2" />
+    <img
+      src="{{ images.doctorImage }}"
+      alt="image"
+      class="banner-image1"
+      [ngClass]="bannerVisible ? '' : 'banner-false-left'"
+    />
+    <img
+      src="{{ images.discussionImage }}"
+      alt="image"
+      class="banner-image2"
+      [ngClass]="bannerVisible ? '' : 'banner-false-right'"
+    />
   </div>
   <div class="banner-text">
     <div class="banner-button">

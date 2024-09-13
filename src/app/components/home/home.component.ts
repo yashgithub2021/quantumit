@@ -83,6 +83,9 @@ export class HomeComponent implements OnInit {
   onSlide(event: any) {
     this.activeIndex = event.slideIndex;
   }
+  trackByFn(index: number, item: any): number {
+    return index;
+  }
 
   // scrollToGetStarted() {
   //   // Your scroll logic
