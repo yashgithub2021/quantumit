@@ -8,10 +8,14 @@ import {
 import { FormComponent } from './components/form/form.component';
 import { DataService } from './shared/api/data.service';
 import { HomeComponent } from './components/home/home.component';
+import { RealEstateComponent } from './pages/real-estate/real-estate.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
-
+  {
+    path: 'real-estate-digital-marketing',
+    component: RealEstateComponent,
+  },
   {
     path: 'artificial-intelligence',
     loadComponent: () =>

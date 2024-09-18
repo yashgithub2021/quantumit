@@ -15,6 +15,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgxSpinnerModule } from 'ngx-spinner';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { HomeComponent } from './components/home/home.component';
+import { RealEstateComponent } from './pages/real-estate/real-estate.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { HomeComponent } from './components/home/home.component';
     NavbarComponent,
     FooterComponent,
     WebdevComponent,
+    RealEstateComponent,
   ],
   imports: [
     BrowserModule,

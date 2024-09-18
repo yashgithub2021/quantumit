@@ -13,15 +13,11 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "allowedCommonJsDependencies": [
-              "aos"
-            ],
+            "allowedCommonJsDependencies": ["aos"],
             "outputPath": "dist/quantumit",
             "index": "src/index.html",
             "main": "src/main.ts",
-            "polyfills": [
-              "zone.js"
-            ],
+            "polyfills": ["zone.js"],
             "tsConfig": "tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
@@ -39,7 +35,15 @@
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js",
-              "node_modules/bootstrap/dist/js/bootstrap.min.js"
+              "node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "/src/app/pages/real-estate/js/app.js",
+              "/src/app/pages/real-estate/js/bootstrap.bundle.min.js",
+              "/src/app/pages/real-estate/js/feather.min.js",
+              "/src/app/pages/real-estate/js/gumshoe.polyfills.min.js",
+              "/src/app/pages/real-estate/js/plugins.init.js",
+              "/src/app/pages/real-estate/js/shuffle.min.js",
+              "/src/app/pages/real-estate/js/tiny-slider.js",
+              "/src/app/pages/real-estate/js/tobii.min.js"
             ]
           },
           "configurations": {
@@ -96,18 +100,10 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
-            ],
+            "polyfills": ["zone.js", "zone.js/testing"],
             "tsConfig": "tsconfig.spec.json",
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
-            "styles": [
-              "src/styles.css"
-            ],
+            "assets": ["src/favicon.ico", "src/assets"],
+            "styles": ["src/styles.css"],
             "scripts": []
           }
         }
