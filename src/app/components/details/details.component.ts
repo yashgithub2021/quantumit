@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, RouterLink, RouterOutlet } from '@angular/router';
 import { ApiService } from 'src/app/shared/api/api.service';
 import { DataService } from 'src/app/shared/api/data.service';
 import AOS from 'aos';
 import { Title, Meta } from '@angular/platform-browser';
+
 import { CommonModule } from '@angular/common';
 import { SharedModule } from 'src/app/shared/shared/shared.module';
 import { FormComponent } from '../form/form.component';
@@ -14,7 +15,13 @@ import { faqs } from 'src/app/shared/shared/service-data';
   templateUrl: './details.component.html',
   styleUrls: ['./details.component.scss'],
   standalone: true,
-  imports: [CommonModule, SharedModule, FormComponent],
+  imports: [
+    CommonModule,
+    SharedModule,
+    FormComponent,
+    RouterLink,
+    RouterOutlet,
+  ],
 })
 export class DetailsComponent implements OnInit {
   isDarkTheme!: boolean;
@@ -25,7 +32,17 @@ export class DetailsComponent implements OnInit {
   differentPageStatus: boolean = true;
   page!: boolean;
   data: any;
-
+  features = [
+    'Single user license',
+    'Lifetime updates',
+    '5,000+ icons',
+    '6 unique styles',
+    'Live stroke & corners',
+    'Powered by variants',
+    'IconJar & SVG library',
+    'Unlimited projects',
+  ];
+  cursorImg = '../../../../assets/cursor.png';
   constructor(
     private titleService: Title,
     private metaService: Meta,
@@ -63,6 +80,9 @@ export class DetailsComponent implements OnInit {
           'Top-Tier Web Development Services, Tailored To Perfection For Your Digital Needs.',
       });
     });
+  }
+  scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   }
   checkForDifferentPageRedirect(data: any) {
     if (data.title === 'Android App') {

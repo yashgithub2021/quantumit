@@ -1061,6 +1061,7 @@ export const seoServices = {
       img: '../../../../assets/dm/services/key.svg',
     },
   ],
+  seoplans: true,
 };
 
 export const payPerClickServices = {
