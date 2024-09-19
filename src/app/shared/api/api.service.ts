@@ -83,7 +83,7 @@ export class ApiService {
     return this.http.post(`${this.baseUrl}api/contactus/contactus`, form);
   }
   getIpAddress() {
-    return this.http.get<{ ip: string }>('https://api.ipify.org?format=json');
+    return this.http.get('https://ipapi.co/json/');
   }
   getLocation(ipData: any) {
     return this.http.get<any>(

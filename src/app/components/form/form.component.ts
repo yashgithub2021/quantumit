@@ -1,6 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
+import {
+  FormBuilder,
+  FormGroup,
+  ReactiveFormsModule,
+  Validators,
+} from '@angular/forms';
 import { ToastrService } from 'ngx-toastr';
 import { ApiService } from 'src/app/shared/api/api.service';
 
@@ -12,12 +17,15 @@ import { ApiService } from 'src/app/shared/api/api.service';
   imports: [CommonModule, ReactiveFormsModule],
 })
 export class FormComponent implements OnInit {
-
-  visibleForm = 'project'
+  visibleForm = 'project';
   form!: FormGroup;
   joinform!: FormGroup;
-  isDarkTheme!: boolean
-  constructor(private formBuilder: FormBuilder, private api: ApiService, private toast: ToastrService) { }
+  isDarkTheme!: boolean;
+  constructor(
+    private formBuilder: FormBuilder,
+    private api: ApiService,
+    private toast: ToastrService
+  ) {}
 
   ngOnInit(): void {
     this.form = this.formBuilder.group({
@@ -28,7 +36,7 @@ export class FormComponent implements OnInit {
       message: ['', Validators.required],
       about: ['', Validators.required],
       ip_address: [''],
-      location: ['']
+      location: [''],
     });
 
     this.joinform = this.formBuilder.group({
@@ -36,7 +44,7 @@ export class FormComponent implements OnInit {
       lastName: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
       resume: ['', [Validators.required]],
-      message: ['', Validators.required]
+      message: ['', Validators.required],
     });
 
     this.isDarkTheme = this.api.isDarkTheme();
@@ -44,17 +52,15 @@ export class FormComponent implements OnInit {
     this.getIpAndLocation();
   }
   getIpAndLocation(): void {
-    this.api.getIpAddress().subscribe(ipData => {
+    this.api.getIpAddress().subscribe((ipData: any) => {
       this.form.patchValue({ ip_address: ipData.ip });
-      console.log(ipData);
-
-      this.api.getLocation(ipData).subscribe(locationData => {
+      console.log(this.form.value.ip_address);
+      this.api.getLocation(ipData).subscribe((locationData) => {
         const location = `${locationData.city}, ${locationData.region}, ${locationData.country}`;
         this.form.patchValue({ location });
-        console.log(location);
+        console.log(this.form.value.location);
       });
     });
-    console.log(this.form);
   }
   themechange() {
     this.api.themeChanged.subscribe((isDarkTheme: boolean) => {
@@ -63,7 +69,7 @@ export class FormComponent implements OnInit {
   }
 
   changeForm(form: string) {
-    this.visibleForm = form
+    this.visibleForm = form;
   }
   submitForm() {
     // Create a new FormData object
@@ -80,14 +86,17 @@ export class FormComponent implements OnInit {
     formData.append('location', this.form.value.location);
 
     // Send the FormData to the backend using an HTTP POST request
-    this.api.saveContactForm(formData).subscribe((res: any) => {
-      console.log("Response from backend:", res);
-      this.toast.success(res.message)
-      this.form.reset()
-    }, (err: any) => {
-      console.log(err.error)
-      this.toast.error(err.error.message)
-    });
+    this.api.saveContactForm(formData).subscribe(
+      (res: any) => {
+        console.log('Response from backend:', res);
+        this.toast.success(res.message);
+        this.form.reset();
+      },
+      (err: any) => {
+        console.log(err.error);
+        this.toast.error(err.error.message);
+      }
+    );
   }
   submitJoinForm() {
     // Create a new FormData object
@@ -99,16 +108,20 @@ export class FormComponent implements OnInit {
     formData.append('email', this.joinform.value.email);
     formData.append('message', this.joinform.value.message);
     formData.append('resume', this.joinform.value.resume);
+    formData.append('ip_address', this.form.value.ip_address);
+    formData.append('location', this.form.value.location);
 
     // Send the FormData to the backend using an HTTP POST request
-    this.api.saveContactForm(formData).subscribe((res: any) => {
-      console.log("Response from backend:", res.message);
-      this.toast.success(res.message)
-      this.joinform.reset()
-    }, (err: any) => {
-      console.log(err.error)
-      this.toast.error(err.error)
-    });
+    this.api.saveContactForm(formData).subscribe(
+      (res: any) => {
+        console.log('Response from backend:', res.message);
+        this.toast.success(res.message);
+        this.joinform.reset();
+      },
+      (err: any) => {
+        console.log(err.error.message);
+        this.toast.error(err.error.message);
+      }
+    );
   }
-
 }

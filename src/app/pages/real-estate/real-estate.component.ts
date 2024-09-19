@@ -39,5 +39,6 @@ export class RealEstateComponent implements OnInit {
     script.src = src;
     script.async = true;
     script.defer = true;
+    this.renderer.appendChild(document.body, script);
   }
 }
