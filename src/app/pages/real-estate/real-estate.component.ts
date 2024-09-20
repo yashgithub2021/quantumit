@@ -1,4 +1,6 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit, Renderer2 } from '@angular/core';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-real-estate',
@@ -13,12 +15,21 @@ import { Component, OnInit, Renderer2 } from '@angular/core';
   ],
 })
 export class RealEstateComponent implements OnInit {
-  constructor(private renderer: Renderer2) {}
+  formData = {
+    message: '',
+    email: '',
+    phone_no: '',
+  };
+  constructor(
+    private renderer: Renderer2,
+    private http: HttpClient,
+    private toast: ToastrService
+  ) {}
 
   ngOnInit(): void {
     // Call loadScripts with an array of JS file paths
     this.loadScripts([
-      '/src/app/pages/real-estate/js/app.js"',
+      '/src/app/pages/real-estate/js/app.js',
       '/src/app/pages/real-estate/js/tiny-slider.js',
       '/src/app/pages/real-estate/js/tobii.min.js',
       '/src/app/pages/real-estate/js/feather.min.js',
@@ -26,8 +37,23 @@ export class RealEstateComponent implements OnInit {
       '/src/app/pages/real-estate/js/gumshoe.polyfills.min.js',
       '/src/app/pages/real-estate/js/suffle.min.js',
       '/src/app/pages/real-estate/js/plugins.init.js',
-      '/src/app/pages/real-estate/js/app.js',
     ]);
+  }
+  onSubmit() {
+    const apiUrl =
+      'https://quantumit-backend.onrender.com/api/real-estates/real-estate';
+
+    this.http.post(apiUrl, this.formData).subscribe(
+      (response) => {
+        this.formData = { message: '', email: '', phone_no: '' };
+        console.log('Form submitted successfully', response);
+        this.toast.success('Form submitted successfully');
+      },
+      (error) => {
+        console.error('Error submitting form', error);
+        this.toast.error(error.message);
+      }
+    );
   }
 
   loadScripts(scripts: string[]): void {
