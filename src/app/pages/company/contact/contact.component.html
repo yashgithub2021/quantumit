@@ -1,164 +1,238 @@
 <div class="container-fluid about-us">
-    <div class="container p-0 p-lg-auto">
-        <div class="quote mt-lg-5 mt-3 w-100 ">
-            <div class="container-fluid  p-0 p-lg-auto numbers w-100">
-                <div class="numbers-section p-0 p-lg-auto position-relative rounded-3 container-fluid h-100 w-100">
-                    <div class="num-cont">
-                        <div class="d-flex gap-3  flex-column justify-content-center align-items-center">
-                            <h1 class="text-white">Get In Touch</h1>
-                            <div
-                                class="socials d-flex flex-wrap w-50 justify-content-lg-evenly gap-3 justify-content-center">
-                                <div (mouseenter)="isHoveringMail = false" (mouseleave)="isHoveringMail= true"
-                                    class="email d-flex justify-content-start align-items-end">
-                                    <i *ngIf="isHoveringMail" class="fa-solid fa-envelope mx-2 fs-5"></i>
-                                    <i *ngIf="!isHoveringMail" class="fa-solid fa-envelope-open mx-2 fs-5"></i>
-                                    <a style="color: white;" href="mailto:sales@quantumitinnovation.com"
-                                        class="mb-0  mx-2 text-decoration-underline ">
-                                        sales@quantumitinnovation.com
-                                    </a>
-                                </div>
-                                <div (mouseenter)="isHoveringPhone = false" (mouseleave)="isHoveringPhone= true"
-                                    class="phone d-flex justify-content-start align-items-end">
-                                    <i *ngIf="isHoveringPhone" class="fa-solid fa-phone mx-2 fs-5"></i>
-                                    <i *ngIf="!isHoveringPhone" class="fa-solid fa-phone-volume mx-2 fs-5"></i>
-                                    <a style="color: white;" href="tel:91 971 799 8517"
-                                        class="mb-0 mx-2 text-decoration-none "> <img
-                                            src="../../../../assets/contact/india.png" alt="">+ 91
-                                        971 799 8517</a>
-
-                                    <a style="color: white;" href="tel:1 877 877 3644"
-                                        class="mb-0 mx-2 text-decoration-none "><img
-                                            src="../../../../assets/contact/usa.png" alt="">+1 877 877 3644</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="container p-0 p-lg-auto pt-5 rounded-5 form-container"
-                            [ngStyle]="{'background':isDarkMode?'#111111':'#ECF0FF'}">
-                            <app-form></app-form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+  <div class="container p-0 p-lg-auto">
+    <div class="quote mt-lg-5 mt-3 w-100">
+      <div class="container-fluid p-0 p-lg-auto numbers w-100">
         <div
-            class="heading d-flex flex-column mb-lg-5 mb-lg-0 mt-4 mt-lg-0 flex-lg-row justify-content-between align-items-center">
-            <div class="text frame-2-head w-100 d-flex align-items-center flex-column ">
-                <div class="button align-self-center">
-                    <button class="our-process-btn">
-                        Our Availability
-                    </button>
+          class="numbers-section p-0 p-lg-auto position-relative rounded-3 container-fluid h-100 w-100"
+        >
+          <div class="num-cont">
+            <div
+              class="d-flex gap-3 flex-column justify-content-center align-items-center"
+            >
+              <h1 class="text-white">Get In Touch</h1>
+              <div
+                class="socials d-flex flex-wrap w-50 justify-content-lg-evenly gap-3 justify-content-center"
+              >
+                <div
+                  (mouseenter)="isHoveringMail = false"
+                  (mouseleave)="isHoveringMail = true"
+                  class="email d-flex justify-content-start align-items-end"
+                >
+                  <i
+                    *ngIf="isHoveringMail"
+                    class="fa-solid fa-envelope mx-2 fs-5"
+                  ></i>
+                  <i
+                    *ngIf="!isHoveringMail"
+                    class="fa-solid fa-envelope-open mx-2 fs-5"
+                  ></i>
+                  <a
+                    style="color: white"
+                    href="mailto:sales@quantumitinnovation.com"
+                    class="mb-0 mx-2 text-decoration-underline"
+                  >
+                    sales@quantumitinnovation.com
+                  </a>
                 </div>
-                <div class="txt w-100 mt-3">
-                    <h1 class="text-align-center text-capitalize">
-                        We’re Global and Growing
-                    </h1>
-                </div>
-                <div class="desc w-50 align-items-center mt-3">
-                    <p class="text-align-center" [ngStyle]="{'opacity':isDarkMode ?'0.5':'1'}">
-                        Building an enterprise level site doesn't need nightmare or cost your thousands. Felix is
-                        purpose built
-                    </p>
-                </div>
-            </div>
-        </div>
+                <div
+                  (mouseenter)="isHoveringPhone = false"
+                  (mouseleave)="isHoveringPhone = true"
+                  class="phone d-flex justify-content-start align-items-end"
+                >
+                  <i
+                    *ngIf="isHoveringPhone"
+                    class="fa-solid fa-phone mx-2 fs-5"
+                  ></i>
+                  <i
+                    *ngIf="!isHoveringPhone"
+                    class="fa-solid fa-phone-volume mx-2 fs-5"
+                  ></i>
+                  <a
+                    style="color: white"
+                    href="tel:91 971 799 8517"
+                    class="mb-0 mx-2 text-decoration-none"
+                  >
+                    <img src="../../../../assets/contact/india.png" alt="" />+
+                    91 971 799 8517</a
+                  >
 
-        <div class="container addresses mb-5">
-            <div class="d-flex mb-3 justify-content-center align-items-center">
-                <div class="addr-cont gap-3 d-flex flex-wrap justify-content-center">
-                    <div [ngStyle]="{'background':isDarkMode?'#111111':'#ECF0FF'}"
-                        class="address p-4 addr-col-2 hover-card rounded-3 align-items-center flex-column d-flex justify-content-center">
-                        <div class="image">
-                            <img src="../../../../assets/contact/USA.svg" alt="">
-                        </div>
-                        <div class="name my-2">
-                            <h4>United States</h4>
-                        </div>
-                        <div class="address address-details ">
-                            <p class=" text-align-center" [ngStyle]="{'opacity':isDarkMode ?'0.5':'1'}">
-                                173 E Columbine LN, Westfield, Indiana 46074-9741.
-                            </p>
-                        </div>
-                    </div>
-                    <div [ngStyle]="{'background':isDarkMode?'#111111':'#ECF0FF'}"
-                        class="address p-4 addr-col-2 hover-card rounded-3 align-items-center flex-column d-flex justify-content-center position-relative">
-                        <div class="image">
-                            <img src="../../../../assets/contact/IND.svg" alt="">
-                        </div>
-                        <div class="name my-2">
-                            <h4>India</h4>
-                        </div>
-                        <div class="address address-details">
-                            <p class="text-align-center" [ngStyle]="{'opacity':isDarkMode ?'0.5':'1'}">
-                                India: H-11, 1st Floor, Sector 63, Noida - 201301
-                            </p>
-                        </div>
-                        <button class="btn position-absolute text-white rounded-5">Main Office</button>
-                    </div>
-                    <div [ngStyle]="{'background':isDarkMode?'#111111':'#ECF0FF'}"
-                        class="address addr-col-2 p-4 hover-card rounded-3 align-items-center flex-column  d-flex justify-content-center">
-                        <div class="image">
-                            <img src="../../../../assets/contact/USA.svg" alt="">
-                        </div>
-                        <div class="name my-2">
-                            <h4>United States</h4>
-                        </div>
-                        <div class="address address-details">
-                            <p class="  text-align-center" [ngStyle]="{'opacity':isDarkMode ?'0.5':'1'}">
-                                1001 Avenida Pico Suite C -256 San Clemente, CA 92673.
-                            </p>
-                        </div>
-                    </div>
+                  <a
+                    style="color: white"
+                    href="tel:1 877 877 3644"
+                    class="mb-0 mx-2 text-decoration-none"
+                    ><img src="../../../../assets/contact/usa.png" alt="" />+1
+                    877 877 3644</a
+                  >
                 </div>
+              </div>
             </div>
-            <div class="d-flex justify-content-center align-items-center">
-                <div class="addr-cont gap-3 d-flex flex-wrap justify-content-center">
-                    <div [ngStyle]="{'background':isDarkMode?'#111111':'#ECF0FF'}"
-                        class="address addr-col-2 p-4 hover-card rounded-3 align-items-center flex-column  d-flex justify-content-center">
-                        <div class="image">
-                            <img src="../../../../assets/contact/can.svg" alt="">
-                        </div>
-                        <div class="name my-2">
-                            <h4>Ontario Canada</h4>
-                        </div>
-                        <div class="address address-details">
-                            <p class=" text-align-center" [ngStyle]="{'opacity':isDarkMode ?'0.5':'1'}">
-                                +1 587 603 6054 Ext - 101
-                            </p>
-                        </div>
-                    </div>
-                    <div [ngStyle]="{'background':isDarkMode?'#111111':'#ECF0FF'}"
-                        class="address addr-col-2 p-4 hover-card rounded-3 align-items-center flex-column  d-flex justify-content-center position-relative">
-                        <div class="image">
-                            <img src="../../../../assets/contact/USA.svg" alt="">
-                        </div>
-                        <div class="name my-2">
-                            <h4>California USA</h4>
-                        </div>
-                        <div class="address address-details">
-                            <p class="text-align-center" [ngStyle]="{'opacity':isDarkMode ?'0.5':'1'}">
-                                +1 213 341 0348 Ext - 101
-                            </p>
-                        </div>
-                        <!-- <button class="btn position-absolute text-white rounded-5">Main Office</button> -->
-                    </div>
-                    <div [ngStyle]="{'background':isDarkMode?'#111111':'#ECF0FF'}"
-                        class="address addr-col-2 p-4 hover-card rounded-3 align-items-center flex-column  d-flex justify-content-center">
-                        <div class="image">
-                            <img src="../../../../assets/contact/aus.svg" alt="">
-                        </div>
-                        <div class="name my-2">
-                            <h4>Melbourne Australia</h4>
-                        </div>
-                        <div class="address address-details">
-                            <p class="  text-align-center" [ngStyle]="{'opacity':isDarkMode ?'0.5':'1'}">
-                                +61 370 424 786
-                        </div>
-                    </div>
-                </div>
+            <div
+              class="container p-0 p-lg-auto pt-5 rounded-5 form-container"
+              [ngStyle]="{ background: isDarkMode ? '#111111' : '#ECF0FF' }"
+            >
+              <app-form></app-form>
             </div>
+          </div>
         </div>
+      </div>
+    </div>
+    <div
+      class="heading d-flex flex-column mb-lg-5 mb-lg-0 mt-4 mt-lg-0 flex-lg-row justify-content-between align-items-center"
+    >
+      <div
+        class="text frame-2-head w-100 d-flex align-items-center flex-column"
+      >
+        <div class="button align-self-center">
+          <button class="our-process-btn">Our Availability</button>
+        </div>
+        <div class="txt w-100 mt-3">
+          <h1 class="text-align-center text-capitalize">
+            We’re Global and Growing
+          </h1>
+        </div>
+        <div class="desc w-50 align-items-center mt-3">
+          <p
+            class="text-align-center"
+            [ngStyle]="{ opacity: isDarkMode ? '0.5' : '1' }"
+          >
+            Building an enterprise level site doesn't need nightmare or cost
+            your thousands. Felix is purpose built
+          </p>
+        </div>
+      </div>
+    </div>
 
-        <!-- <div
+    <div class="container addresses mb-5">
+      <div class="d-flex mb-3 justify-content-center align-items-center">
+        <div class="addr-cont gap-3 d-flex flex-wrap justify-content-center">
+          <div
+            [ngStyle]="{ background: isDarkMode ? '#111111' : '#ECF0FF' }"
+            class="address p-4 addr-col-2 hover-card rounded-3 align-items-center flex-column d-flex justify-content-center"
+          >
+            <div class="image">
+              <img src="../../../../assets/contact/USA.svg" alt="" />
+            </div>
+            <div class="name my-2">
+              <h4>United States</h4>
+            </div>
+            <div class="address address-details">
+              <p
+                class="text-align-center"
+                [ngStyle]="{ opacity: isDarkMode ? '0.5' : '1' }"
+              >
+                173 E Columbine LN, Westfield, Indiana 46074-9741.
+              </p>
+            </div>
+          </div>
+          <div
+            [ngStyle]="{ background: isDarkMode ? '#111111' : '#ECF0FF' }"
+            class="address p-4 addr-col-2 hover-card rounded-3 align-items-center flex-column d-flex justify-content-center position-relative"
+          >
+            <div class="image">
+              <img src="../../../../assets/contact/IND.svg" alt="" />
+            </div>
+            <div class="name my-2">
+              <h4>India</h4>
+            </div>
+            <div class="address address-details">
+              <p
+                class="text-align-center"
+                [ngStyle]="{ opacity: isDarkMode ? '0.5' : '1' }"
+              >
+                India: H-11, 1st Floor, Sector 63, Noida - 201301
+              </p>
+            </div>
+            <button class="btn position-absolute text-white rounded-5">
+              Main Office
+            </button>
+          </div>
+          <div
+            [ngStyle]="{ background: isDarkMode ? '#111111' : '#ECF0FF' }"
+            class="address addr-col-2 p-4 hover-card rounded-3 align-items-center flex-column d-flex justify-content-center"
+          >
+            <div class="image">
+              <img src="../../../../assets/contact/USA.svg" alt="" />
+            </div>
+            <div class="name my-2">
+              <h4>United States</h4>
+            </div>
+            <div class="address address-details">
+              <p
+                class="text-align-center"
+                [ngStyle]="{ opacity: isDarkMode ? '0.5' : '1' }"
+              >
+                1001 Avenida Pico Suite C -256 San Clemente, CA 92673.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex justify-content-center align-items-center">
+        <div class="addr-cont gap-3 d-flex flex-wrap justify-content-center">
+          <div
+            [ngStyle]="{ background: isDarkMode ? '#111111' : '#ECF0FF' }"
+            class="address addr-col-2 p-4 hover-card rounded-3 align-items-center flex-column d-flex justify-content-center"
+          >
+            <div class="image">
+              <img src="../../../../assets/contact/can.svg" alt="" />
+            </div>
+            <div class="name my-2">
+              <h4>Ontario Canada</h4>
+            </div>
+            <div class="address address-details">
+              <p
+                class="text-align-center"
+                [ngStyle]="{ opacity: isDarkMode ? '0.5' : '1' }"
+              >
+                6-425 Hespeler Road , Cambridge , Unit 303 , N1R8J6 <br />
+                +1 587 603 6054 Ext - 101
+              </p>
+            </div>
+          </div>
+          <div
+            [ngStyle]="{ background: isDarkMode ? '#111111' : '#ECF0FF' }"
+            class="address addr-col-2 p-4 hover-card rounded-3 align-items-center flex-column d-flex justify-content-center position-relative"
+          >
+            <div class="image">
+              <img src="../../../../assets/contact/USA.svg" alt="" />
+            </div>
+            <div class="name my-2">
+              <h4>California USA</h4>
+            </div>
+            <div class="address address-details">
+              <p
+                class="text-align-center"
+                [ngStyle]="{ opacity: isDarkMode ? '0.5' : '1' }"
+              >
+                +1 213 341 0348 Ext - 101
+              </p>
+            </div>
+            <!-- <button class="btn position-absolute text-white rounded-5">Main Office</button> -->
+          </div>
+          <div
+            [ngStyle]="{ background: isDarkMode ? '#111111' : '#ECF0FF' }"
+            class="address addr-col-2 p-4 hover-card rounded-3 align-items-center flex-column d-flex justify-content-center"
+          >
+            <div class="image">
+              <img src="../../../../assets/contact/aus.svg" alt="" />
+            </div>
+            <div class="name my-2">
+              <h4>Melbourne Australia</h4>
+            </div>
+            <div class="address address-details">
+              <p
+                class="text-align-center"
+                [ngStyle]="{ opacity: isDarkMode ? '0.5' : '1' }"
+              >
+                +61 370 424 786
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div
             class="heading d-flex flex-column mt-5 mb-lg-5 mb-lg-0 flex-lg-row justify-content-between align-items-center">
             <div class="text frame-2-head w-100 d-flex align-items-center flex-column ">
                 <div class="button align-self-center">
@@ -174,7 +248,7 @@
             </div>
         </div> -->
 
-        <!-- <div class="container questions">
+    <!-- <div class="container questions">
             <div class="container w-75">
                 <div class="accordion" [ngClass]="isDarkMode ? '' : 'accordion-light'"
                     id="accordionPanelsStayOpenExample">
@@ -214,5 +288,5 @@
                 </div>
             </div>
         </div> -->
-    </div>
+  </div>
 </div>
