@@ -1,8 +1,9 @@
 {
   "name": "string-geo-test-hdfc",
   "version": "1.0.0",
-  "main": "ccavRequestHandler.js",
+  "main": "run_node.js",
   "scripts": {
+    "start": "node run_node.js",
     "dev": "nodemon run_node.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
