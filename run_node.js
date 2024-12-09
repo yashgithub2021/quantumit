@@ -25,6 +25,10 @@ app.post('/ccavResponseHandler', function (request, response) {
     ccavResHandler.postRes(request, response);
 });
 
+app.get("/", (req, res) =>
+    res.send(`<h1>Its working. Click to visit Link.!!!</h1>`)
+);
+
 app.listen(3001, () => {
     console.log("App Running on 3001")
 });
