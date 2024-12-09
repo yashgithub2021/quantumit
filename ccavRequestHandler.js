@@ -5,8 +5,8 @@ const crypto = require('crypto')
 
 exports.postReq = function (request, response) {
     let body = '';
-    const workingKey = '7893BFACB46DBEFB3B25F5C9FB8032B9'; // Put in the 32-Bit key shared by CCAvenues.
-    const accessCode = 'AVUX01LG79AH65XUHA'; // Put in the Access Code shared by CCAvenues.
+    const workingKey = '77CF8CE38F7B75AC22E01293CC460342'; // Put in the 32-Bit key shared by CCAvenues.
+    const accessCode = 'AVKY01LG79AH73YKHA'; // Put in the Access Code shared by CCAvenues.
     let encRequest = '';
     let formbody = '';
     var ivBase64 = Buffer.from([0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x0a, 0x0b, 0x0c, 0x0d, 0x0e, 0x0f]).toString('base64');
